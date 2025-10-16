@@ -20,7 +20,8 @@ app.post('/helius', async (req, res) => {
       if (hdr !== process.env.HELIUS_AUTH) return res.status(401).send('Unauthorized');
     }
     const events = Array.isArray(req.body?.data) ? req.body.data : [];
-    console.log('Webhook received:', JSON.stringify(req.body, null, 2));
+    console.log('Webhook headers:', JSON.stringify(req.headers, null, 2));
+    console.log('Webhook body:', JSON.stringify(req.body, null, 2));
     for (const ev of events) {
     console.log('Processing event:', JSON.stringify(ev, null, 2));
       const wallet    = ev.feePayer;
