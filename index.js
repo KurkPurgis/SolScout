@@ -98,11 +98,12 @@ app.post('/helius', async (req, res) => {
   }
 });
 
-const PORT = process.env.PORT || 8080;
-// Railway nõue: kuula 0.0.0.0 ja nende PORT’i peal
+
+const PORT = Number(process.env.PORT) || 3000;
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`🚀 Listening on 0.0.0.0:${PORT}`);
 });
+
 
 process.on('SIGTERM', () => {
   console.log('↘️  SIGTERM received, exiting...');
