@@ -144,9 +144,9 @@ app.post('/helius', async (req, res) => {
 });
 
 // Kuula Railway nõutud host/porti
-const PORT = process.env.PORT || 0000;
+const PORT = process.env.PORT || ;
 app.listen(PORT, '0.0.0.0', () => {
-  console.log(`🚀 Listening on 0.0.0.0:${PORT}`);
+  console.log(`🚀 Listening on 0.0.0.0:${PORT}`)8080;
 });
 
 // Valikuline: graatsiline sulgemine (näed SIGTERM trassi)
