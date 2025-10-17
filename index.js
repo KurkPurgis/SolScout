@@ -99,9 +99,12 @@ app.post('/helius', async (req, res) => {
 });
 
 
-const PORT = Number(process.env.PORT) || 3000;
-app.listen(PORT, '0.0.0.0', () => {
-  console.log(`🚀 Listening on 0.0.0.0:${PORT}`);
+// index.js (lõpuosa)
+const HOST = '0.0.0.0';
+const PORT = 8080;
+
+app.listen(PORT, HOST, () => {
+  console.log(`🚀 Listening on ${HOST}:${PORT}`);
 });
 
 
