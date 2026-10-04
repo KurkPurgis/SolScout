@@ -5,7 +5,7 @@ Updated: 2026-10-04 22:03
 
 ## Current step
 
-Phase 3 finishing: lobby/room/sign models building, then a full rebuild of all 7 categories with the final kit (queue jobs 121-127), then tools/run_phase4.sh (AFTER scene + renders with the BEFORE cameras, lineups, comparisons, contact sheets, REPORT.md, IMPORT_PLAN.md). Review verdicts are applied after the rebuild (list in the session scratchpad: verdicts.txt; re-review the contact sheets if it is lost).
+Phase 3 finishing: lobby/room/sign models building, then a full rebuild of all 7 categories with the final kit (queue jobs 121-127), then tools/run_phase4.sh (AFTER scene + renders with the BEFORE cameras, lineups, comparisons, contact sheets, REPORT.md, IMPORT_PLAN.md). Review verdicts are kept in data/review_verdicts.txt and applied after the rebuild with tools/apply_verdicts.py (a rebuild resets a model to 'built').
 
 ## How to continue
 
@@ -16,7 +16,7 @@ Phase 3 finishing: lobby/room/sign models building, then a full rebuild of all 7
 
 ## Summary
 
-alias: 10, built: 95, not_started: 30
+alias: 10, built: 96, not_started: 29
 
 ## Phases
 
@@ -125,7 +125,7 @@ alias: 10, built: 95, not_started: 30
 | 93 | Lobby_Spawn | ground | not_started |  |  |  |
 | 94 | FastTrack_Gate | decoration | built | 736 | 0.25 |  |
 | 95 | Lux_Sofa | props | built | 612 | 0.05 |  |
-| 96 | Lux_GlassTable | props | not_started |  |  |  |
+| 96 | Lux_GlassTable | props | built | 228 | 0.0 |  |
 | 97 | Lux_Safe | props | not_started |  |  |  |
 | 98 | Lux_Piano | props | not_started |  |  |  |
 | 99 | Lux_Chandelier | decoration | built | 572 | 0.38 |  |

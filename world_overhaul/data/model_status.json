@@ -2233,6 +2233,62 @@
   "tris_ok": true,
   "warnings": []
  },
+ "Lux_GlassTable": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   -0.0,
+   0.0
+  ],
+  "bbox_max_dev": 0.0,
+  "bbox_new": [
+   [
+    -2.5,
+    0.0,
+    -1.5
+   ],
+   [
+    2.5,
+    1.2,
+    1.5
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -2.5,
+    0.0,
+    -1.5
+   ],
+   [
+    2.5,
+    1.2,
+    1.5
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 22:02",
+  "category": "props",
+  "export_name": "Lux_GlassTable",
+  "fbx": "export/props/Lux_GlassTable.fbx",
+  "meshes": [
+   "Lux_GlassTable",
+   "Lux_GlassTable_Glass"
+  ],
+  "renders": [
+   "renders/objects/Lux_GlassTable/Lux_GlassTable_front34.jpg",
+   "renders/objects/Lux_GlassTable/Lux_GlassTable_back34.jpg",
+   "renders/objects/Lux_GlassTable/Lux_GlassTable_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Lux_GlassTable.jpg",
+  "triangles": 228,
+  "tris_ok": true,
+  "warnings": []
+ },
  "Lux_Sofa": {
   "bbox_dev": [
    -0.05,

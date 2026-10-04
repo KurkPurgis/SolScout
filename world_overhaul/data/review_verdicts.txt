@@ -1,0 +1,67 @@
+Dream_Yacht|done|chunky white yacht, navy hull, wood deck, sun loungers
+Dream_BeachVilla|done|front edge 0.22 shallower than the original box (the old stair parts); villa, pool, palms
+Dream_PrivateIsland|done|island, palms, dock, hut; water ring
+Maker_MiniGolf|done|green with flag, windmill obstacle
+Maker_GoldCoin|done|icon coin on a stand
+Maker_GoldBar|done|icon gold bars stacked 3-2-1
+Maker_GoldTreasureChest|done|lock moved inside the box
+Maker_PokeBloxCard|done|icon card in a glass case
+Maker_ShinyPokeBloxCard|done|glowing pink case
+Maker_RarePokeBloxCard|done|same model, case color per rarity
+Maker_RarePokeBloxCard_v2|done|same model, case color per rarity
+Maker_RarePokeBloxCard_v3|done|same model, case color per rarity
+Maker_RarePokeBloxCard_v4|done|same model, case color per rarity
+Kid|done|hair fixed (was z-fighting), smaller eyes
+Kid_v2|done|blue shirt variant
+Kid_v3|done|yellow shirt variant
+Debt_CreditCard|done|rebuilt at the copy's size (amount scale)
+Debt_CarLoan|done|grey toy car with red LOAN tag
+Debt_SchoolLoan|done|cap lowered to the original height
+Debt_BankLoan|done|rebuilt at the copy's size
+Debt_OtherDebt|done|straps no longer coplanar
+Computer|done|desk with monitor and a red mug
+Garage_TireStack|done|4 fat tires
+School_StudentDesk|done|desk with a pencil
+Clinic_Chair|done|swivel chair
+Police_Car|done|white toy car, navy doors with a gold star, red/blue lights
+Garage_CarLift|done|red car up on a two-post lift with hazard stripes
+Maker_ThemePark|done|ferris wheel with colorful gondolas
+Hospital_WallCross|done|chunky red cross
+HospitalBed|done|cross moved onto the blanket
+Pizzeria_Oven|done|clay dome, brick mouth, fire glow, logs; fits the original box now
+School_TeacherDesk|done|top at the original height; apple badge and exercise book
+Clinic_Cabinet|done|red cross from non-overlapping pieces; doors inside the box
+Maker_VendingMachine|done|snacks on lit shelves, no z-fight on the top
+Maker_UnknownMaker|done|orange question marks on the sides
+Maker_ToyShop|done|roof rim no longer z-fights; toy blocks by the door
+Maker_HouseToRent|done|door and windows sunk into the wall to keep the box; chimney with cap
+Maker_CoffeeShop|done|wood shop, cream awning, cafe table with a cup
+Maker_BowlingAlley|done|giant bowling ball and pin on the roof
+Maker_Hotel|done|lit window grid, gold frames, red entrance canopy
+Maker_GameStudio|done|game controller in front of the glowing window
+Maker_ShoppingMall|done|banners above the awning
+Maker_ApartmentBuilding|done|brick tower with lit windows
+Maker_PizzaRestaurant|done|pizza slice on the wall beside the sign
+Maker_Apartment|done|stone plinth instead of a step that stuck out
+Maker_CarWash|done|brushes and soap bubbles; sign fits the roof beam
+Maker_FoodTruck|done|rebuilt inside the original box: cab, windshield, hatch, taco
+Maker_LemonadeStand|done|umbrella, lemons and glasses
+School_Blackboard|done|1 + 1 = 2 reads left to right from the room
+Clinic_WallScreen|done|heartbeat line, no overlapping bars
+Office_Screen|done|bar chart grows to the right
+Garage_ToolBoard|done|wrench, hammer, screwdriver
+Depot_Bus|done|yellow bus, windows, door, lights
+Dream_Supercar|done|wheels inside the original box
+Dream_PrivateJet|done|tailplane inside the box
+Lobby_RoomBooth|done|platform, two pillars, glowing portal pane, name beam with a star
+Lobby_RoomBooth_v2|done|room color variant
+Lobby_RoomBooth_v3|done|room color variant
+Lobby_RoomBooth_v4|done|room color variant
+Lobby_Pillar|done|marble column with gold cap, base and a lamp
+FastTrack_Gate|done|gold FREE! gate with stars, plinths inside the box
+Lux_Chandelier|done|glowing ball with a gold ring, small bulbs and a drop finial
+AuctionRoom_Lamp|done|ceiling panel with a warm glow underneath
+PodiumRoom_LightStrip|done|gold glowing strip on a dark rail
+Lobby_Trophy|done|icon trophy on a marble pedestal
+Lobby_Bench|done|wooden bench, dark legs, gold plaque
+Lux_Sofa|done|cream sofa with gold feet and pillow

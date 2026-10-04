@@ -1,5 +1,5 @@
 {
- "current_step": "Phase 3 finishing: lobby/room/sign models building, then a full rebuild of all 7 categories with the final kit (queue jobs 121-127), then tools/run_phase4.sh (AFTER scene + renders with the BEFORE cameras, lineups, comparisons, contact sheets, REPORT.md, IMPORT_PLAN.md). Review verdicts are applied after the rebuild (list in the session scratchpad: verdicts.txt; re-review the contact sheets if it is lost).",
+ "current_step": "Phase 3 finishing: lobby/room/sign models building, then a full rebuild of all 7 categories with the final kit (queue jobs 121-127), then tools/run_phase4.sh (AFTER scene + renders with the BEFORE cameras, lineups, comparisons, contact sheets, REPORT.md, IMPORT_PLAN.md). Review verdicts are kept in data/review_verdicts.txt and applied after the rebuild with tools/apply_verdicts.py (a rebuild resets a model to 'built').",
  "phases": [
   {
    "name": "Phase 1 - inventory (world extracted, INVENTORY.md, BEFORE renders)",
