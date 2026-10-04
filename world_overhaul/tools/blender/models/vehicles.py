@@ -244,8 +244,8 @@ def toy_car(m, body, cabin_shift=0.5, y0=0.0):
     m.box((0.3, 0.9, 2.8), (cabin_shift - 2.0, y0 + 2.7, 0), "WINDOW", bevel="S", bottom=True)
     m.box((0.3, 0.9, 2.8), (cabin_shift + 2.0, y0 + 2.7, 0), "WINDOW", bevel="S", bottom=True)
     for z in (-1.3, 1.3):
-        m.box((0.3, 0.45, 0.8), (-4.02, y0 + 1.5, z), "GLOW_WARM", glow="GLOW_WARM", bevel="XS")
-        m.box((0.3, 0.45, 0.8), (4.02, y0 + 1.5, z), "RED", bevel="XS")
+        m.box((0.3, 0.45, 0.8), (-3.97, y0 + 1.5, z), "GLOW_WARM", glow="GLOW_WARM", bevel="XS")
+        m.box((0.3, 0.45, 0.8), (3.97, y0 + 1.5, z), "RED", bevel="XS")
     for x in (-2.6, 2.6):
         for z in (-2.05, 2.05):
             parts.wheel(m, (x, y0 + 0.8, z), 0.8, 0.7, axis="Z", cap=None)

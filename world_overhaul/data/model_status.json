@@ -1226,7 +1226,7 @@
    ]
   ],
   "budget": 4000,
-  "built_at": "2026-10-04 21:51",
+  "built_at": "2026-10-04 22:17",
   "category": "vehicles",
   "export_name": "Depot_Bus",
   "fbx": "export/vehicles/Depot_Bus.fbx",
@@ -1506,7 +1506,7 @@
    0.029,
    0.09,
    0.098,
-   0.0,
+   -0.01,
    0.0
   ],
   "bbox_max_dev": 0.098,
@@ -1518,7 +1518,7 @@
    ],
    [
     14.414,
-    12.46,
+    12.45,
     19.1
    ]
   ],
@@ -1536,7 +1536,7 @@
    ]
   ],
   "budget": 4000,
-  "built_at": "2026-10-04 21:43",
+  "built_at": "2026-10-04 22:16",
   "category": "vehicles",
   "export_name": "PrivateJet",
   "fbx": "export/vehicles/PrivateJet.fbx",
@@ -1757,7 +1757,7 @@
    ]
   ],
   "budget": 4000,
-  "built_at": "2026-10-04 21:28",
+  "built_at": "2026-10-04 22:18",
   "category": "vehicles",
   "export_name": "Garage_CarLift",
   "fbx": "export/vehicles/Garage_CarLift.fbx",
@@ -3570,7 +3570,7 @@
    ]
   ],
   "budget": 4000,
-  "built_at": "2026-10-04 21:52",
+  "built_at": "2026-10-04 22:17",
   "category": "vehicles",
   "export_name": "Food Truck",
   "fbx": "export/vehicles/Food Truck.fbx",
@@ -5323,7 +5323,7 @@
    0.0,
    -0.06,
    0.17,
-   0.0,
+   0.05,
    0.06
   ],
   "bbox_max_dev": 0.17,
@@ -5335,7 +5335,7 @@
    ],
    [
     4.17,
-    4.4,
+    4.45,
     2.46
    ]
   ],
@@ -5353,7 +5353,7 @@
    ]
   ],
   "budget": 4000,
-  "built_at": "2026-10-04 21:28",
+  "built_at": "2026-10-04 22:17",
   "category": "vehicles",
   "export_name": "Police_Car",
   "fbx": "export/vehicles/Police_Car.fbx",
@@ -5576,7 +5576,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:21",
+  "built_at": "2026-10-04 22:18",
   "category": "nature",
   "export_name": "Tree",
   "fbx": "export/nature/Tree.fbx",
