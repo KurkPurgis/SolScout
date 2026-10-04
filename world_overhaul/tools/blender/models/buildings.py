@@ -45,8 +45,8 @@ def workplace_building(m, theme_name):
     m.box((47, 0.95, 11), (0, 14.05, 18.5), wall, bevel="M", bottom=True)
     m.box((48, 0.5, 0.7), (0, 15, 23.65), trim, bevel="S", bottom=True)
     m.box((48, 0.5, 0.7), (0, 15, 13.35), trim, bevel="S", bottom=True)
-    for x in (-23.65, 23.65):
-        m.box((0.7, 0.5, 11), (x, 15, 18.5), trim, bevel="S", bottom=True)
+    for x in (-23.65, 23.65):  # side rims end at the front/back rims (no overlapping faces)
+        m.box((0.7, 0.5, 9.6), (x, 15, 18.5), trim, bevel="S", bottom=True)
     # front trim above the beam, left and right of the sign (y 14..14.6)
     for x0, x1 in ((-24, -13.6), (13.6, 24)):  # 14.05..14.5: no face shared with the pillar caps (z-fight)
         m.box((x1 - x0, 0.45, 1.4), ((x0 + x1) / 2, 14.05, 6.5), accent, bevel="S", bottom=True)
@@ -70,7 +70,7 @@ def workplace_building(m, theme_name):
         m.cyl(3.2, 0.3, (12, 15, 18.5), "SLATE", bevel="S", bottom=True, verts=20)
         m.box((0.6, 0.31, 2.6), (11.0, 15.0, 18.5), "WHITE", bevel="XS", bottom=True, min_thick=False)
         m.box((0.6, 0.31, 2.6), (13.0, 15.0, 18.5), "WHITE", bevel="XS", bottom=True, min_thick=False)
-        m.box((2.0, 0.31, 0.6), (12, 15.0, 18.5), "WHITE", bevel="XS", bottom=True, min_thick=False)
+        m.box((1.4, 0.31, 0.6), (12, 15.0, 18.5), "WHITE", bevel="XS", bottom=True, min_thick=False)  # H bar
     elif roof_detail == "bell":  # a little school bell tower
         m.box((2.4, 2.2, 2.4), (0, 15, 20), "WHITE", bevel="M", bottom=True)
         m.prism([(-1.7, 0), (1.7, 0), (0, 1.1)], 2.8, (0, 17.2, 20), "RED", bevel="S")
@@ -132,8 +132,8 @@ def dream_beach_villa(m):
     m.box((15.2, 0.4, 7.2), (px, top - 0.15, pz), "WATER", bevel="S", bottom=True)
     for dz in (-4.1, 4.1):
         m.box((16.6, 0.45, 0.8), (px, top, pz + dz), "STONE", bevel="S", bottom=True)
-    for dx in (-8.1, 8.1):
-        m.box((0.8, 0.45, 8.2), (px + dx, top, pz), "STONE", bevel="S", bottom=True)
+    for dx in (-8.1, 8.1):  # ends butt against the long edge stones
+        m.box((0.8, 0.45, 7.4), (px + dx, top, pz), "STONE", bevel="S", bottom=True)
     for x in (-0.5, 0.5):
         m.cyl(0.15, 1.4, (px + 7 + x, top, pz + 3.8), "STEEL", bevel="XS", bottom=True, verts=8)
     m.sphere(0.45, (px - 3, top + 0.55, pz - 1), "GOLD_LIGHT", scale=(1, 0.8, 1.2), segs=10, rings=6)
@@ -201,14 +201,16 @@ def lobby_room_booth(m, color):
 def lobby_walls(m):
     """Lobby.luau:343-348: the hall walls (26 tall) with gold trim; inside: a dark wainscot band and a gold rail."""
     w, d = 148, 100
-    for (x, z, sx, sz) in ((0, -49, w, 2), (0, 49, w, 2), (-73, 0, 2, d), (73, 0, 2, d)):
+    # the side walls and their caps end where the front/back ones begin (no overlapping faces at the corners)
+    for (x, z, sx, sz) in ((0, -49, w, 2), (0, 49, w, 2), (-73, 0, 2, d - 4), (73, 0, 2, d - 4)):
         m.box((sx, 26, sz), (x, 0, z), "NAVY", bevel="L", bottom=True)
-        m.box((sx + 0.8 if sx > 2 else 2.8, 1, sz + 0.8 if sz > 2 else 2.8), (x, 26, z), "GOLD", bevel="M", bottom=True)
+        m.box((sx + 0.8 if sx > 2 else 2.8, 1, sz + 0.8 if sx > 2 else sz - 0.8), (x, 26, z), "GOLD", bevel="M",
+              bottom=True)
     # inside faces: wainscot (INK) and a gold chair rail at hand height (detail)
     for (x, z, sx, sz) in ((0, -47.85, 143.6, 0.3), (0, 47.85, 143.6, 0.3), (-71.85, 0, 0.3, 95.4),
                            (71.85, 0, 0.3, 95.4)):
         m.box((sx, 6.0, sz), (x, 1.0, z), "INK", bevel="XS", bottom=True)
-        m.box((sx + (0.2 if sx > 1 else 0.15), 0.4, sz + (0.2 if sz > 1 else 0.15)), (x, 7.0, z), "GOLD",
+        m.box((sx + (0.2 if sx > 1 else 0.15), 0.4, sz - 0.2 if sz > 1 else 0.45), (x, 7.0, z), "GOLD",
               bevel="XS", bottom=True)
 
 
@@ -217,7 +219,8 @@ def lobby_window(m):
     m.box((0.4, 10, 14), (-0.1, 0, 0), "WHITE", bevel="S", bottom=True)
     m.box((0.3, 9.0, 13.0), (0.25, 0.5, 0), "SKY", glass=True, bevel="XS", bottom=True)
     m.box((0.3, 8.9, 0.4), (0.3, 0.55, 0), "WHITE", bevel=None, bottom=True)
-    m.box((0.3, 0.4, 12.9), (0.3, 4.8, 0), "WHITE", bevel=None, bottom=True)
+    for s_ in (-1, 1):  # the cross bar in two halves, so the bars do not overlap
+        m.box((0.3, 0.4, 6.25), (0.3, 4.8, s_ * 3.325), "WHITE", bevel=None, bottom=True)
 
 
 def auction_room_shell(m):

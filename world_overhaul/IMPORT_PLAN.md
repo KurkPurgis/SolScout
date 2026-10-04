@@ -1,6 +1,6 @@
 # Import plan - how to swap the new look into the game (NOT executed)
 
-Written 2026-10-04 21:49. Nothing here has been done: nothing was uploaded, published or changed in `src/`.
+Written 2026-10-04 22:02. Nothing here has been done: nothing was uploaded, published or changed in `src/`.
 
 ## The idea in one paragraph
 
@@ -107,7 +107,7 @@ end
 
 ## Step 5 - add the two modules
 
-Copy `world_overhaul/export/roblox/WorldSkin.luau` and `WorldSkinPlacements.luau` to `src/server/World/`. `WorldSkinPlacements` is generated from the world data: every kit model's frame relative to the base CFrame of the code that builds it.
+Copy `world_overhaul/export/roblox/WorldSkin.luau` and `WorldSkinPlacements.luau` to `src/server/World/`. `WorldSkinPlacements` is generated from the world data: every kit model's frame relative to the base CFrame of the code that builds it. Checked with `tools/verify_placements.py`: for all 35 places the game builds (4 plazas, 9 workplaces, 4 auction rooms, 4 podium rooms, the lobby, furniture, showcases), the list puts exactly the objects that are there, at exactly their frames (0 mismatches).
 
 ## Step 6 - the calls (one line each)
 
@@ -163,29 +163,29 @@ Set `WorldSkin.ENABLED = false` (or remove the calls): nothing is hidden and no 
 
 | template (= WorldKit name) | FBX | meshes | how it is placed | built by (game code) | script-referenced |
 |---|---|---|---|---|---|
-| Workplace_Building_PIZZERIA | `export/buildings/Workplace_Building_PIZZERIA.fbx` | `Workplace_Building_PIZZERIA`, `Workplace_Building_PIZZERIA_Glow_GLOW_WARM` | `WorldSkin.context("Workplace:PIZZERIA")` | Plots.luau:131,135,136,137,138,143,144,147,148,153,154,155,162,166,167,169 |  |
-| Workplace_Building_BUSDEPOT | `export/buildings/Workplace_Building_BUSDEPOT.fbx` | `Workplace_Building_BUSDEPOT`, `Workplace_Building_BUSDEPOT_Glow_GLOW_WARM` | `WorldSkin.context("Workplace:BUS DEPOT")` | Plots.luau:131,135,136,137,138,143,144,147,148,153,154,155,162,166,167,169 |  |
-| Workplace_Building_HOSPITAL | `export/buildings/Workplace_Building_HOSPITAL.fbx` | `Workplace_Building_HOSPITAL`, `Workplace_Building_HOSPITAL_Glow_GLOW_WARM` | `WorldSkin.context("Workplace:HOSPITAL")` | Plots.luau:131,135,136,137,138,143,144,147,148,153,154,155,162,166,167,169 |  |
-| Workplace_Building_CLINIC | `export/buildings/Workplace_Building_CLINIC.fbx` | `Workplace_Building_CLINIC`, `Workplace_Building_CLINIC_Glow_GLOW_WARM` | `WorldSkin.context("Workplace:CLINIC")` | Plots.luau:131,135,136,137,138,143,144,147,148,153,154,155,162,166,167,169 |  |
-| Workplace_Building_SCHOOL | `export/buildings/Workplace_Building_SCHOOL.fbx` | `Workplace_Building_SCHOOL`, `Workplace_Building_SCHOOL_Glow_GLOW_WARM` | `WorldSkin.context("Workplace:SCHOOL")` | Plots.luau:131,135,136,137,138,143,144,147,148,153,154,155,162,166,167,169 |  |
-| Workplace_Building_POLICE | `export/buildings/Workplace_Building_POLICE.fbx` | `Workplace_Building_POLICE`, `Workplace_Building_POLICE_Glow_GLOW_WARM` | `WorldSkin.context("Workplace:POLICE")` | Plots.luau:131,135,136,137,138,143,144,147,148,153,154,155,162,166,167,169 |  |
-| Workplace_Building_OFFICE | `export/buildings/Workplace_Building_OFFICE.fbx` | `Workplace_Building_OFFICE`, `Workplace_Building_OFFICE_Glow_GLOW_WARM` | `WorldSkin.context("Workplace:OFFICE")` | Plots.luau:131,135,136,137,138,143,144,147,148,153,154,155,162,166,167,169 |  |
-| Workplace_Building_GARAGE | `export/buildings/Workplace_Building_GARAGE.fbx` | `Workplace_Building_GARAGE`, `Workplace_Building_GARAGE_Glow_GLOW_WARM` | `WorldSkin.context("Workplace:GARAGE")` | Plots.luau:131,135,136,137,138,143,144,147,148,153,154,155,162,166,167,169 |  |
-| Workplace_Building_FASTTRACK | `export/buildings/Workplace_Building_FASTTRACK.fbx` | `Workplace_Building_FASTTRACK`, `Workplace_Building_FASTTRACK_Glow_GLOW_WARM` | `WorldSkin.context("Workplace:FAST TRACK")` | Plots.luau:131,135,136,137,138,143,144,147,148,153,154,155,162,166,167,169 |  |
-| Workplace_Yard_v2 | `export/ground/Workplace_Yard_v2.fbx` | `Workplace_Yard_v2` | `WorldSkin.context("Workplace:PIZZERIA")` | Plots.luau:130,132 |  |
-| Workplace_Yard | `export/ground/Workplace_Yard.fbx` | `Workplace_Yard` | `WorldSkin.context("Workplace:FAST TRACK")` | Plots.luau:130,132 | yes |
-| Workplace_MakerLot | `export/ground/Workplace_MakerLot.fbx` | `Workplace_MakerLot` | `WorldSkin.context("Workplace:FAST TRACK")` | Plots.luau:176 | yes |
-| Workplace_Fence | `export/decoration/Workplace_Fence.fbx` | `Workplace_Fence` | `WorldSkin.context("Workplace:FAST TRACK")` | Plots.luau:183,186 | yes |
-| Workplace_LampPost | `export/decoration/Workplace_LampPost.fbx` | `Workplace_LampPost`, `Workplace_LampPost_Glow_GLOW_WARM` | `WorldSkin.context("Workplace:FAST TRACK")` | Plots.luau:189,190 | yes |
-| Workplace_FlowerBox | `export/decoration/Workplace_FlowerBox.fbx` | `Workplace_FlowerBox` | `WorldSkin.context("Workplace:FAST TRACK")` | Plots.luau:200,202 | yes |
-| Workplace_Sandbox | `export/props/Workplace_Sandbox.fbx` | `Workplace_Sandbox` | `WorldSkin.context("Workplace:FAST TRACK")` | Plots.luau:207,209 | yes |
-| Workplace_DebtPad | `export/ground/Workplace_DebtPad.fbx` | `Workplace_DebtPad` | `WorldSkin.context("Workplace:PIZZERIA")` | Plots.luau:218 | yes |
-| Plaza_Fountain | `export/decoration/Plaza_Fountain.fbx` | `Plaza_Fountain`, `Plaza_Fountain_Glass`, `Plaza_Fountain_Glow_GLOW_COOL` | `WorldSkin.context("Plaza")` | Plaza.luau:69,70,71,72 |  |
+| Workplace_Building_PIZZERIA | `export/buildings/Workplace_Building_PIZZERIA.fbx` | `Workplace_Building_PIZZERIA`, `Workplace_Building_PIZZERIA_Glow_GLOW_WARM` | `WorldSkin.context` in Workplace:PIZZERIA | Plots.luau:131,135,136,137,138,143,144,147,148,153,154,155,162,166,167,169 |  |
+| Workplace_Building_BUSDEPOT | `export/buildings/Workplace_Building_BUSDEPOT.fbx` | `Workplace_Building_BUSDEPOT`, `Workplace_Building_BUSDEPOT_Glow_GLOW_WARM` | `WorldSkin.context` in Workplace:BUS DEPOT | Plots.luau:131,135,136,137,138,143,144,147,148,153,154,155,162,166,167,169 |  |
+| Workplace_Building_HOSPITAL | `export/buildings/Workplace_Building_HOSPITAL.fbx` | `Workplace_Building_HOSPITAL`, `Workplace_Building_HOSPITAL_Glow_GLOW_WARM` | `WorldSkin.context` in Workplace:HOSPITAL | Plots.luau:131,135,136,137,138,143,144,147,148,153,154,155,162,166,167,169 |  |
+| Workplace_Building_CLINIC | `export/buildings/Workplace_Building_CLINIC.fbx` | `Workplace_Building_CLINIC`, `Workplace_Building_CLINIC_Glow_GLOW_WARM` | `WorldSkin.context` in Workplace:CLINIC | Plots.luau:131,135,136,137,138,143,144,147,148,153,154,155,162,166,167,169 |  |
+| Workplace_Building_SCHOOL | `export/buildings/Workplace_Building_SCHOOL.fbx` | `Workplace_Building_SCHOOL`, `Workplace_Building_SCHOOL_Glow_GLOW_WARM` | `WorldSkin.context` in Workplace:SCHOOL | Plots.luau:131,135,136,137,138,143,144,147,148,153,154,155,162,166,167,169 |  |
+| Workplace_Building_POLICE | `export/buildings/Workplace_Building_POLICE.fbx` | `Workplace_Building_POLICE`, `Workplace_Building_POLICE_Glow_GLOW_WARM` | `WorldSkin.context` in Workplace:POLICE | Plots.luau:131,135,136,137,138,143,144,147,148,153,154,155,162,166,167,169 |  |
+| Workplace_Building_OFFICE | `export/buildings/Workplace_Building_OFFICE.fbx` | `Workplace_Building_OFFICE`, `Workplace_Building_OFFICE_Glow_GLOW_WARM` | `WorldSkin.context` in Workplace:OFFICE | Plots.luau:131,135,136,137,138,143,144,147,148,153,154,155,162,166,167,169 |  |
+| Workplace_Building_GARAGE | `export/buildings/Workplace_Building_GARAGE.fbx` | `Workplace_Building_GARAGE`, `Workplace_Building_GARAGE_Glow_GLOW_WARM` | `WorldSkin.context` in Workplace:GARAGE | Plots.luau:131,135,136,137,138,143,144,147,148,153,154,155,162,166,167,169 |  |
+| Workplace_Building_FASTTRACK | `export/buildings/Workplace_Building_FASTTRACK.fbx` | `Workplace_Building_FASTTRACK`, `Workplace_Building_FASTTRACK_Glow_GLOW_WARM` | `WorldSkin.context` in Workplace:FAST TRACK | Plots.luau:131,135,136,137,138,143,144,147,148,153,154,155,162,166,167,169 |  |
+| Workplace_Yard_v2 | `export/ground/Workplace_Yard_v2.fbx` | `Workplace_Yard_v2` | `WorldSkin.context` in Workplace:* (8) | Plots.luau:130,132 |  |
+| Workplace_Yard | `export/ground/Workplace_Yard.fbx` | `Workplace_Yard` | `WorldSkin.context` in Workplace:FAST TRACK | Plots.luau:130,132 | yes |
+| Workplace_MakerLot | `export/ground/Workplace_MakerLot.fbx` | `Workplace_MakerLot` | `WorldSkin.context` in Workplace:* (9) | Plots.luau:176 | yes |
+| Workplace_Fence | `export/decoration/Workplace_Fence.fbx` | `Workplace_Fence` | `WorldSkin.context` in Workplace:* (9) | Plots.luau:183,186 | yes |
+| Workplace_LampPost | `export/decoration/Workplace_LampPost.fbx` | `Workplace_LampPost`, `Workplace_LampPost_Glow_GLOW_WARM` | `WorldSkin.context` in Workplace:* (9) | Plots.luau:189,190 | yes |
+| Workplace_FlowerBox | `export/decoration/Workplace_FlowerBox.fbx` | `Workplace_FlowerBox` | `WorldSkin.context` in Workplace:* (9) | Plots.luau:200,202 | yes |
+| Workplace_Sandbox | `export/props/Workplace_Sandbox.fbx` | `Workplace_Sandbox` | `WorldSkin.context` in Workplace:* (9) | Plots.luau:207,209 | yes |
+| Workplace_DebtPad | `export/ground/Workplace_DebtPad.fbx` | `Workplace_DebtPad` | `WorldSkin.context` in Workplace:* (8) | Plots.luau:218 | yes |
+| Plaza_Fountain | `export/decoration/Plaza_Fountain.fbx` | `Plaza_Fountain`, `Plaza_Fountain_Glass`, `Plaza_Fountain_Glow_GLOW_COOL` | `WorldSkin.context` in Plaza | Plaza.luau:69,70,71,72 |  |
 | Tree | `export/nature/Tree.fbx` | `Tree` | `WorldSkin.object` | Props.tree (Props.luau:352) |  |
-| Plaza_Disc | `export/ground/Plaza_Disc.fbx` | `Plaza_Disc` | `WorldSkin.context("Plaza")` | Plaza.luau:52 |  |
-| Plaza_Path | `export/ground/Plaza_Path.fbx` | `Plaza_Path` | `WorldSkin.context("Plaza")` | Plaza.luau:58 |  |
-| City_Ground | `export/ground/City_Ground.fbx` | `City_Ground` | `WorldSkin.context("Plaza")` | Plaza.luau:35 |  |
-| City_Wall | `export/decoration/City_Wall.fbx` | `City_Wall` | `WorldSkin.context("Plaza")` | Plaza.luau:43,44 |  |
+| Plaza_Disc | `export/ground/Plaza_Disc.fbx` | `Plaza_Disc` | `WorldSkin.context` in Plaza | Plaza.luau:52 |  |
+| Plaza_Path | `export/ground/Plaza_Path.fbx` | `Plaza_Path` | `WorldSkin.context` in Plaza | Plaza.luau:58 |  |
+| City_Ground | `export/ground/City_Ground.fbx` | `City_Ground` | `WorldSkin.context` in Plaza | Plaza.luau:35 |  |
+| City_Wall | `export/decoration/City_Wall.fbx` | `City_Wall` | `WorldSkin.context` in Plaza | Plaza.luau:43,44 |  |
 | Dream_Supercar | `export/vehicles/Supercar.fbx` | `Supercar`, `Supercar_Glow_GLOW_WARM` | `WorldSkin.object` | Props.dream (Props.luau:604) | yes |
 | Dream_Yacht | `export/vehicles/Yacht.fbx` | `Yacht` | `WorldSkin.object` | Props.dream (Props.luau:604) | yes |
 | Dream_BeachVilla | `export/buildings/BeachVilla.fbx` | `BeachVilla`, `BeachVilla_Glass`, `BeachVilla_Glow_GLOW_WARM` | `WorldSkin.object` | Props.dream (Props.luau:604) | yes |
@@ -225,56 +225,56 @@ Set `WorldSkin.ENABLED = false` (or remove the calls): nothing is hidden and no 
 | Debt_SchoolLoan | `export/props/School Loan.fbx` | `Debt_SchoolLoan` | `WorldSkin.stretched` | Props.debtModel (Props.luau:325) | yes |
 | Debt_BankLoan | `export/props/Bank Loan.fbx` | `Debt_BankLoan` | `WorldSkin.stretched` | Props.debtModel (Props.luau:325) | yes |
 | Debt_OtherDebt | `export/props/Debt Crate.fbx` | `Debt_OtherDebt` | `WorldSkin.stretched` | Props.debtModel (Props.luau:325) | yes |
-| Depot_Bus | `export/vehicles/Depot_Bus.fbx` | `Depot_Bus`, `Depot_Bus_Glow_GLOW_WARM` | `WorldSkin.context("Furnish:BUS DEPOT")` | Themes.luau:71,73,77 |  |
-| Police_Car | `export/vehicles/Police_Car.fbx` | `Police_Car`, `Police_Car_Glow_BLUE`, `Police_Car_Glow_GLOW_WARM`, `Police_Car_Glow_RED` | `WorldSkin.context("Furnish:POLICE")` | Themes.luau:144,145 |  |
-| Garage_CarLift | `export/vehicles/Garage_CarLift.fbx` | `Garage_CarLift`, `Garage_CarLift_Glow_GLOW_WARM` | `WorldSkin.context("Furnish:GARAGE")` | Themes.luau:175,176 |  |
-| Computer | `export/props/Computer.fbx` | `Computer`, `Computer_Glow_GLOW_COOL` | `WorldSkin.context("Furnish:CLINIC")` | Themes.luau:31,36,37 |  |
-| HospitalBed | `export/props/HospitalBed.fbx` | `HospitalBed` | `WorldSkin.context("Furnish:HOSPITAL")` | Themes.luau:41,42,43 |  |
-| Pizzeria_Counter | `export/props/Pizzeria_Counter.fbx` | `Pizzeria_Counter` | `WorldSkin.context("Furnish:PIZZERIA")` | Themes.luau:54,55,58 |  |
-| Pizzeria_Oven | `export/props/Pizzeria_Oven.fbx` | `Pizzeria_Oven`, `Pizzeria_Oven_Glow_ORANGE` | `WorldSkin.context("Furnish:PIZZERIA")` | Themes.luau:56,57 |  |
-| School_Blackboard | `export/decoration/School_Blackboard.fbx` | `School_Blackboard` | `WorldSkin.context("Furnish:SCHOOL")` | Themes.luau:124 |  |
-| School_TeacherDesk | `export/props/School_TeacherDesk.fbx` | `School_TeacherDesk` | `WorldSkin.context("Furnish:SCHOOL")` | Themes.luau:31 |  |
-| School_StudentDesk | `export/props/School_StudentDesk.fbx` | `School_StudentDesk` | `WorldSkin.context("Furnish:SCHOOL")` | Themes.luau:128 |  |
-| Clinic_Chair | `export/props/Clinic_Chair.fbx` | `Clinic_Chair` | `WorldSkin.context("Furnish:CLINIC")` | Themes.luau:109 |  |
-| Clinic_Cabinet | `export/props/Clinic_Cabinet.fbx` | `Clinic_Cabinet` | `WorldSkin.context("Furnish:CLINIC")` | Themes.luau:110 |  |
-| Clinic_WallScreen | `export/decoration/Clinic_WallScreen.fbx` | `Clinic_WallScreen`, `Clinic_WallScreen_Glow_GREEN` | `WorldSkin.context("Furnish:CLINIC")` | Themes.luau:111,112 |  |
-| Hospital_WallCross | `export/decoration/Hospital_WallCross.fbx` | `Hospital_WallCross` | `WorldSkin.context("Furnish:HOSPITAL")` | Themes.luau:94,95 |  |
-| Office_Screen | `export/decoration/Office_Screen.fbx` | `Office_Screen`, `Office_Screen_Glow_GLOW_COOL` | `WorldSkin.context("Furnish:OFFICE")` | Themes.luau:162,163 |  |
-| Garage_ToolBoard | `export/decoration/Garage_ToolBoard.fbx` | `Garage_ToolBoard` | `WorldSkin.context("Furnish:GARAGE")` | Themes.luau:178 |  |
-| Garage_TireStack | `export/props/Garage_TireStack.fbx` | `Garage_TireStack` | `WorldSkin.context("Furnish:GARAGE")` | Themes.luau:180 |  |
-| Lobby_RoomBooth | (not modelled) | | | | |
-| Lobby_RoomBooth_v2 | (not modelled) | | | | |
-| Lobby_RoomBooth_v3 | (not modelled) | | | | |
-| Lobby_RoomBooth_v4 | (not modelled) | | | | |
-| Lobby_Pillar | (not modelled) | | | | |
-| Lobby_Trophy | (not modelled) | | | | |
+| Depot_Bus | `export/vehicles/Depot_Bus.fbx` | `Depot_Bus`, `Depot_Bus_Glow_GLOW_WARM` | `WorldSkin.context` in Furnish:BUS DEPOT | Themes.luau:71,73,77 |  |
+| Police_Car | `export/vehicles/Police_Car.fbx` | `Police_Car`, `Police_Car_Glow_BLUE`, `Police_Car_Glow_GLOW_WARM`, `Police_Car_Glow_RED` | `WorldSkin.context` in Furnish:POLICE | Themes.luau:144,145 |  |
+| Garage_CarLift | `export/vehicles/Garage_CarLift.fbx` | `Garage_CarLift`, `Garage_CarLift_Glow_GLOW_WARM` | `WorldSkin.context` in Furnish:GARAGE | Themes.luau:175,176 |  |
+| Computer | `export/props/Computer.fbx` | `Computer`, `Computer_Glow_GLOW_COOL` | `WorldSkin.context` in Furnish:* (3) | Themes.luau:31,36,37 |  |
+| HospitalBed | `export/props/HospitalBed.fbx` | `HospitalBed` | `WorldSkin.context` in Furnish:CLINIC, Furnish:HOSPITAL | Themes.luau:41,42,43 |  |
+| Pizzeria_Counter | `export/props/Pizzeria_Counter.fbx` | `Pizzeria_Counter` | `WorldSkin.context` in Furnish:PIZZERIA | Themes.luau:54,55,58 |  |
+| Pizzeria_Oven | `export/props/Pizzeria_Oven.fbx` | `Pizzeria_Oven`, `Pizzeria_Oven_Glow_ORANGE` | `WorldSkin.context` in Furnish:PIZZERIA | Themes.luau:56,57 |  |
+| School_Blackboard | `export/decoration/School_Blackboard.fbx` | `School_Blackboard` | `WorldSkin.context` in Furnish:SCHOOL | Themes.luau:124 |  |
+| School_TeacherDesk | `export/props/School_TeacherDesk.fbx` | `School_TeacherDesk` | `WorldSkin.context` in Furnish:SCHOOL | Themes.luau:31 |  |
+| School_StudentDesk | `export/props/School_StudentDesk.fbx` | `School_StudentDesk` | `WorldSkin.context` in Furnish:SCHOOL | Themes.luau:128 |  |
+| Clinic_Chair | `export/props/Clinic_Chair.fbx` | `Clinic_Chair` | `WorldSkin.context` in Furnish:CLINIC | Themes.luau:109 |  |
+| Clinic_Cabinet | `export/props/Clinic_Cabinet.fbx` | `Clinic_Cabinet` | `WorldSkin.context` in Furnish:CLINIC | Themes.luau:110 |  |
+| Clinic_WallScreen | `export/decoration/Clinic_WallScreen.fbx` | `Clinic_WallScreen`, `Clinic_WallScreen_Glow_GREEN` | `WorldSkin.context` in Furnish:CLINIC | Themes.luau:111,112 |  |
+| Hospital_WallCross | `export/decoration/Hospital_WallCross.fbx` | `Hospital_WallCross` | `WorldSkin.context` in Furnish:HOSPITAL | Themes.luau:94,95 |  |
+| Office_Screen | `export/decoration/Office_Screen.fbx` | `Office_Screen`, `Office_Screen_Glow_GLOW_COOL` | `WorldSkin.context` in Furnish:OFFICE | Themes.luau:162,163 |  |
+| Garage_ToolBoard | `export/decoration/Garage_ToolBoard.fbx` | `Garage_ToolBoard` | `WorldSkin.context` in Furnish:GARAGE | Themes.luau:178 |  |
+| Garage_TireStack | `export/props/Garage_TireStack.fbx` | `Garage_TireStack` | `WorldSkin.context` in Furnish:GARAGE | Themes.luau:180 |  |
+| Lobby_RoomBooth | `export/buildings/Lobby_RoomBooth.fbx` | `Lobby_RoomBooth`, `Lobby_RoomBooth_Glow_GOLD`, `Lobby_RoomBooth_Glow_RED_T45`, `Lobby_RoomBooth_Glow_RED_T70` | `WorldSkin.context` in Lobby | Lobby.luau:420,421,426,427,429,430,432,433 | yes |
+| Lobby_RoomBooth_v2 | `export/buildings/Lobby_RoomBooth_v2.fbx` | `Lobby_RoomBooth_v2`, `Lobby_RoomBooth_v2_Glow_BLUE_T45`, `Lobby_RoomBooth_v2_Glow_BLUE_T70`, `Lobby_RoomBooth_v2_Glow_GOLD` | `WorldSkin.context` in Lobby | Lobby.luau:420,421,426,427,429,430,432,433 |  |
+| Lobby_RoomBooth_v3 | `export/buildings/Lobby_RoomBooth_v3.fbx` | `Lobby_RoomBooth_v3`, `Lobby_RoomBooth_v3_Glow_GOLD`, `Lobby_RoomBooth_v3_Glow_GREEN_T45`, `Lobby_RoomBooth_v3_Glow_GREEN_T70` | `WorldSkin.context` in Lobby | Lobby.luau:420,421,426,427,429,430,432,433 |  |
+| Lobby_RoomBooth_v4 | `export/buildings/Lobby_RoomBooth_v4.fbx` | `Lobby_RoomBooth_v4`, `Lobby_RoomBooth_v4_Glow_GOLD`, `Lobby_RoomBooth_v4_Glow_GOLD_T45`, `Lobby_RoomBooth_v4_Glow_GOLD_T70` | `WorldSkin.context` in Lobby | Lobby.luau:420,421,426,427,429,430,432,433 |  |
+| Lobby_Pillar | `export/decoration/Lobby_Pillar.fbx` | `Lobby_Pillar`, `Lobby_Pillar_Glow_GLOW_WARM` | `WorldSkin.context` in Lobby | Lobby.luau:358,359,360 |  |
+| Lobby_Trophy | `export/props/Lobby_Trophy.fbx` | `Lobby_Trophy`, `Lobby_Trophy_Glow_GOLD_LIGHT` | `WorldSkin.context` in Lobby | Lobby.luau:393,394,395,396,397,398 |  |
 | Lobby_PottedPalm | (not modelled) | | | | |
-| Lobby_Bench | (not modelled) | | | | |
-| Lobby_Walls | (not modelled) | | | | |
+| Lobby_Bench | `export/props/Lobby_Bench.fbx` | `Lobby_Bench` | `WorldSkin.context` in Lobby | Lobby.luau:373,374,375 |  |
+| Lobby_Walls | `export/buildings/Lobby_Walls.fbx` | `Lobby_Walls` | `WorldSkin.context` in Lobby | Lobby.luau:345,346 |  |
 | Lobby_Floor | (not modelled) | | | | |
 | Lobby_Carpet | (not modelled) | | | | |
 | Lobby_TitleSign | (not modelled) | | | | |
-| Lobby_Window | (not modelled) | | | | |
+| Lobby_Window | `export/buildings/Lobby_Window.fbx` | `Lobby_Window`, `Lobby_Window_Glass` | `WorldSkin.context` in Lobby | Lobby.luau:368 |  |
 | Lobby_Spawn | (not modelled) | | | | |
-| FastTrack_Gate | (not modelled) | | | | |
+| FastTrack_Gate | `export/decoration/FastTrack_Gate.fbx` | `FastTrack_Gate` | `WorldSkin.context` in Workplace:FAST TRACK | Plots.luau:214,215,216 |  |
 | Lux_Sofa | (not modelled) | | | | |
 | Lux_GlassTable | (not modelled) | | | | |
 | Lux_Safe | (not modelled) | | | | |
 | Lux_Piano | (not modelled) | | | | |
-| Lux_Chandelier | (not modelled) | | | | |
+| Lux_Chandelier | `export/decoration/Lux_Chandelier.fbx` | `Lux_Chandelier`, `Lux_Chandelier_Glow_GLOW_WARM` | `WorldSkin.context` in Furnish:FAST TRACK | Themes.luau:214,219 |  |
 | Dream_Pedestal | (not modelled) | | | | |
 | Dream_Chains | (not modelled) | | | | |
 | Collection_Showcase | (not modelled) | | | | |
-| AuctionRoom_Shell | (not modelled) | | | | |
+| AuctionRoom_Shell | `export/buildings/AuctionRoom_Shell.fbx` | `AuctionRoom_Shell` | `WorldSkin.context` in AuctionRoom | AuctionRoom.luau:44,45,46,47,48,49 |  |
 | AuctionRoom_Stage | (not modelled) | | | | |
 | AuctionRoom_BidderDesk | (not modelled) | | | | |
 | AuctionRoom_BidderPad | (not modelled) | | | | |
-| AuctionRoom_Lamp | (not modelled) | | | | |
+| AuctionRoom_Lamp | `export/decoration/AuctionRoom_Lamp.fbx` | `AuctionRoom_Lamp`, `AuctionRoom_Lamp_Glow_GLOW_WARM` | `WorldSkin.context` in AuctionRoom | AuctionRoom.luau:53 |  |
 | AuctionRoom_TitleSign | (not modelled) | | | | |
 | AuctionRoom_InfoBoard | (not modelled) | | | | |
-| PodiumRoom_Shell | (not modelled) | | | | |
+| PodiumRoom_Shell | `export/buildings/PodiumRoom_Shell.fbx` | `PodiumRoom_Shell` | `WorldSkin.context` in PodiumRoom | PodiumRoom.luau:66,67 |  |
 | PodiumRoom_Block | (not modelled) | | | | |
-| PodiumRoom_LightStrip | (not modelled) | | | | |
+| PodiumRoom_LightStrip | `export/decoration/PodiumRoom_LightStrip.fbx` | `PodiumRoom_LightStrip`, `PodiumRoom_LightStrip_Glow_GOLD_T55` | `WorldSkin.context` in PodiumRoom | PodiumRoom.luau:69 |  |
 | PodiumRoom_TitleSign | (not modelled) | | | | |
 | PodiumRoom_Board | (not modelled) | | | | |
 | Baseplate | (not modelled) | | | | |

@@ -65,9 +65,10 @@ def city_wall(m):
     The invisible tall barrier part inside it stays as it is. Chunky stone wall, lighter rounded cap,
     pillars at the corners and in the middle of each side with gold ball finials (detail)."""
     half = 183.0
-    for (x, z, sx, sz) in ((0, half, 368, 2), (0, -half, 368, 2), (half, 0, 2, 368), (-half, 0, 2, 368)):
+    # the east/west walls (and caps) end where the north/south ones begin: no overlapping faces at the corners
+    for (x, z, sx, sz) in ((0, half, 368, 2), (0, -half, 368, 2), (half, 0, 2, 364), (-half, 0, 2, 364)):
         m.box((sx, 6, sz), (x, 0, z), "STONE_DARK", bevel="L", bottom=True)
-        m.box((sx + 0.6 if sx > 2 else 2.6, 0.8, sz + 0.6 if sz > 2 else 2.6), (x, 6.0, z), "STONE", bevel="M",
+        m.box((sx + 0.6 if sx > 2 else 2.6, 0.8, sz + 0.6 if sx > 2 else sz - 0.6), (x, 6.0, z), "STONE", bevel="M",
               bottom=True)
     spots = [(sx * half, sz * half) for sx in (-1, 1) for sz in (-1, 1)]
     spots += [(0, half), (0, -half), (half, 0), (-half, 0)]
@@ -169,9 +170,9 @@ def lobby_pillar(m):
 def fast_track_gate(m):
     """Plots.luau:214-216: the golden FREE! gate (Fast Track only). The text stays on the old sign part."""
     for x in (-7, 7):
-        m.box((2.0, 0.8, 2.0), (x, 0, 0), "CREAM", bevel="M", bottom=True)
+        m.box((2.0, 0.8, 1.7), (x, 0, 0), "CREAM", bevel="M", bottom=True)
         m.box((1.5, 11.2, 1.5), (x, 0.8, 0), "GOLD", bevel="M", bottom=True)
-        m.prism(star_points_dec(0.55, 0.25, cx=x, cy=7.0), 0.3, (0, 0, -0.85), "GOLD_LIGHT", plane="XY", bevel=None)
+        m.prism(star_points_dec(0.55, 0.25, cx=x, cy=7.0), 0.3, (0, 0, -0.72), "GOLD_LIGHT", plane="XY", bevel=None)
     parts.sign_board(m, (0, 12.5, 0), 15.0, 2.6, "GOLD", frame="CREAM", frame_w=0.2, depth=0.6, text_plane_z=-0.5,
                      bolts=True)
 
@@ -189,6 +190,7 @@ def lux_chandelier(m):
     m.cyl(0.15, 1.8, (0, 1.6, 0), "GOLD", bevel=None, bottom=True, verts=6)
     m.sphere(0.72, (0, 1.1, 0), "GLOW_WARM", glow="GLOW_WARM", segs=12, rings=8)
     m.torus(0.92, 0.15, (0, 0.9, 0), "GOLD", axis="Y", segs=16, ring_segs=6)
+    m.cyl(0.15, 0.45, (0, 0, 0), "GOLD", bevel=None, bottom=True, verts=8, radius_top=0.32)  # drop finial
     for k in range(6):
         a = 2 * math.pi * k / 6
         m.sphere(0.18, (0.92 * math.cos(a), 1.12, 0.92 * math.sin(a)), "GLOW_WARM", glow="GLOW_WARM", segs=6, rings=4)

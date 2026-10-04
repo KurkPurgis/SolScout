@@ -41,7 +41,23 @@ def build_page(templates, names, phase, page_col):
     made = []
     extra = []
     for name, pos in placed:
+        t = templates[name]
         sources, is_new = source_objects(templates, name, phase)
+        # the sign text (SurfaceGui) stays on the old parts in both looks: it is copied next to the model
+        texts = []
+        canon = bpy.data.objects.get(t["canonical"])
+        if canon is not None:
+            inv = canon.matrix_world.inverted()
+            for pid in t.get("canonical_part_ids", []):
+                text = bpy.data.objects.get("Text_%d" % pid)
+                if text is not None:
+                    texts.append((text, inv @ text.matrix_world))
+        # text on the back (Roblox +Z = Blender -Y): turn the object around its box center to face the camera
+        flip = Matrix.Identity(4)
+        if texts and all(rel.translation.y < -0.01 for _, rel in texts):
+            lo, hi = t["bbox_min"], t["bbox_max"]
+            c = Vector(((lo[0] + hi[0]) / 2, -(lo[2] + hi[2]) / 2, 0))
+            flip = Matrix.Translation(c) @ Matrix.Rotation(math.pi, 4, "Z") @ Matrix.Translation(-c)
         for src in sources:
             if src.type not in ("MESH", "FONT", "CURVE"):
                 continue
@@ -55,9 +71,13 @@ def build_page(templates, names, phase, page_col):
                 local = src.get("template_local")
                 m = Matrix(local) if local is not None else Matrix.Identity(4)
             copy.parent = None
-            copy.matrix_world = Matrix.Translation(pos) @ m
+            copy.matrix_world = Matrix.Translation(pos) @ flip @ m
             made.append(copy)
-        t = templates[name]
+        for text, rel in texts:
+            copy = text.copy()
+            page_col.objects.link(copy)
+            copy.hide_render = False
+            copy.matrix_world = Matrix.Translation(pos) @ flip @ rel
         front = -t["bbox_min"][2]  # Roblox -Z (front) -> Blender +Y
         size = max(0.7, min(2.5, t["size"][0] / 7))
         lpos = pos + Vector(((t["bbox_min"][0] + t["bbox_max"][0]) / 2, front + 1.2, 0.03))

@@ -1,5 +1,5 @@
 {
- "current_step": "Phase 3 - reviewing built models and fixing (bbox, z-fighting, mirrored details); new models for lobby/rooms/signs in the build queue; then a full rebuild with the final kit. Phase 4 assembly script (tools/blender/build_after.py) and fixed lineup cameras are written.",
+ "current_step": "Phase 3 finishing: lobby/room/sign models building, then a full rebuild of all 7 categories with the final kit (queue jobs 121-127), then tools/run_phase4.sh (AFTER scene + renders with the BEFORE cameras, lineups, comparisons, contact sheets, REPORT.md, IMPORT_PLAN.md). Review verdicts are applied after the rebuild (list in the session scratchpad: verdicts.txt; re-review the contact sheets if it is lost).",
  "phases": [
   {
    "name": "Phase 1 - inventory (world extracted, INVENTORY.md, BEFORE renders)",

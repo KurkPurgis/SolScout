@@ -93,7 +93,7 @@ def lobby_floor(m):
 
 def lobby_carpet(m):
     """Lobby.luau:333-334: the red carpets (top at 1.1) with gold edges (detail)."""
-    for (x, z, sx, sz) in ((0, 8, 8, 56), (0, -20, 132, 6)):
+    for (x, z, sx, sz) in ((0, 9.5, 8, 53), (0, -20, 132, 6)):  # the long carpet starts at the cross carpet
         m.box((sx, 0.3, sz), (x, 0.8, z), "BRICK", bevel="S", bottom=True)
     for x in (-3.9, 3.9):  # edges stand 0.05 proud of the carpet sides (no shared face)
         m.box((0.3, 0.3, 50), (x, 0.82, 11.0), "GOLD", bevel=None, bottom=True)

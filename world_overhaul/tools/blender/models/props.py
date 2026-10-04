@@ -195,8 +195,7 @@ def game_studio(m):
     # a giant game controller in front of the glowing shop window (detail)
     cx, cy, cz = -1.3, 2.2, -3.95
     m.capsule(0.45, 2.0, (cx, cy, cz), "CHARCOAL", axis="X", segs=12)
-    m.box((0.5, 0.3, 0.3), (cx - 0.55, cy, cz - 0.4), "WHITE", bevel="XS")
-    m.box((0.3, 0.5, 0.3), (cx - 0.55, cy, cz - 0.4), "WHITE", bevel="XS")
+    parts.plus_sign(m, (cx - 0.5, cy, cz - 0.4), 0.9, 0.3, "WHITE", plane="XY", bevel="XS")
     for dx, c in ((0.4, "RED"), (0.75, "GREEN")):
         m.sphere(0.15, (cx + dx, cy + 0.05, cz - 0.38), c, segs=8, rings=5)
 
@@ -370,7 +369,7 @@ def computer(m):
         m.box((0.5, 2.1, 2.3), (x, 0, 0), "WHITE", bevel="S", bottom=True)
     m.box((3.0, 1.2, 0.3), (0, 0.6, 1.0), "STEEL", bevel="XS", bottom=True)  # modesty panel
     m.box((0.6, 0.35, 0.5), (0, 2.5, 0.55), "CHARCOAL", bevel="XS", bottom=True)
-    m.box((2.2, 1.6, 0.35), (0, 2.5, 0.5), "CHARCOAL", bevel="S", bottom=True)
+    m.box((2.2, 1.6, 0.35), (0, 2.6, 0.5), "CHARCOAL", bevel="S", bottom=True)
     m.box((1.9, 1.2, 0.3), (0, 2.7, 0.33), "GLOW_COOL", glow="GLOW_COOL", bevel="XS", bottom=True)
     m.box((1.8, 0.3, 0.6), (0, 2.5, -0.55), "WHITE", bevel="XS", bottom=True)
     m.cyl(0.2, 0.4, (1.45, 2.5, -0.5), "RED", bevel=None, bottom=True, verts=8)
@@ -621,7 +620,7 @@ def lux_sofa(m):
     for x in (-1.65, 1.65):
         m.box((3.2, 0.45, 2.3), (x, 1.2, -0.3), "CREAM", bevel="M", bottom=True)
     m.box((7, 1.8, 0.8), (0, 1.6, 1.15), "CREAM", bevel="M", bottom=True)
-    for x in (-3.15, 3.15):
+    for x in (-3.2, 3.2):  # arms stand 0.05 out from the back's ends (no shared face)
         m.box((0.7, 1.0, 3), (x, 1.2, -0.05), "CREAM", bevel="M", bottom=True)
     m.box((1.0, 0.9, 0.4), (-2.0, 1.7, 0.6), "GOLD", bevel="M", bottom=True)
 
@@ -727,10 +726,10 @@ MODELS.update({
 
 # ----------------------------------------------------------------------------
 # Dream chains and padlock (Plots.luau addChains): generated around the dream's bounding box by code.
-# Kit pieces: Dream_ChainSegment (2 studs, two links, along +Z... see IMPORT_PLAN) and Dream_Padlock.
+# Kit pieces: Dream_ChainSegment (3 studs = two links along +Z, tiled by code) and Dream_Padlock.
 # ----------------------------------------------------------------------------
 
-def chain_segment(m, length=2.4):
+def chain_segment(m, length=3.0):
     """Two chunky oval links, one standing, one lying, along local Z from 0 to `length` (tiled by code)."""
     step = length / 2
     m.torus(0.5, 0.15, (0, 0, step * 0.5), "CHARCOAL", axis="X", segs=6, ring_segs=4, scale=(1, 1, 1.3))
@@ -778,7 +777,7 @@ def dream_chains(m):
     for name, size, cf in _canonical_parts("Dream_Chains"):
         if name == "Chain":
             length = size[2]
-            n = max(1, int(round(length / 2.4)))
+            n = max(1, int(round(length / 3.0)))  # 1.5-stud links: under the 8,000 budget
             rot_rb = _M(((cf[3], cf[4], cf[5]), (cf[6], cf[7], cf[8]), (cf[9], cf[10], cf[11])))
             rot_bl = _C @ rot_rb @ _CT
             axis = _V((cf[5], cf[8], cf[11]))  # the bar's local Z in Roblox coords

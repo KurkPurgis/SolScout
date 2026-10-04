@@ -209,8 +209,8 @@ class Model:
             lo1, hi1, k1, n1, b1 = self.boxes[i]
             for j in range(i + 1, len(self.boxes)):
                 lo2, hi2, k2, n2, b2 = self.boxes[j]
-                if k1 == k2:
-                    continue  # same color on the same plane: the fight is invisible
+                # (same color too: in the renders the overlap gets black shadow specks, and in Roblox the two
+                # faces can still flicker when their normals differ)
                 for a in range(3):
                     o = [k for k in range(3) if k != a]
                     # only the flat part of each face counts (the bevel curves away from the plane)

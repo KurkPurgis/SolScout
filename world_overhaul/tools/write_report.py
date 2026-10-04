@@ -65,7 +65,12 @@ NOT_DONE = [
     "from Blender with lighting similar to the game; Studio's Future lighting will look a bit different.",
     "**Words on signs** are drawn in the renders as simple 3D text so the pictures make sense; in the game the "
     "real SurfaceGui text stays on the old parts.",
-    "**Particle effects, sounds, UI and the players' avatars** are not part of this overhaul.",
+    "**Particle effects, sounds, UI and the players' avatars** are not part of this overhaul. The ball and chain "
+    "on a player's leg (`DebtChain.luau`) is a physics object attached to the character during a match; it is "
+    "not part of the world and was left as it is.",
+    "**The swap itself was not run** (not allowed tonight). What I could check without Studio: the generated "
+    "`WorldSkin` modules compile with the Luau compiler, and the placement lists reproduce all 35 places the game "
+    "builds exactly (`tools/verify_placements.py`).",
 ]
 
 
@@ -119,8 +124,9 @@ def main():
     w("- I rebuilt **every visible object** of the world in the style of the 3D icons: chunky, rounded, bright, "
       "one palette, the same bevels and parts everywhere.")
     w("- **%d models** were made and exported as FBX (`export/<category>/`); %d are reviewed and done, %d need "
-      "your review (listed below). Together they have %d triangles (each model is far below Roblox's limit)."
-      % (len(built), len(done), len(review), total_tris))
+      "your review (listed below). Counted once each, the models have %d triangles together; the biggest single "
+      "model has %d (Roblox allows 20,000 per mesh)."
+      % (len(built), len(done), len(review), total_tris, max(e.get("triangles", 0) for e in status.values())))
     w("- **Nothing in the game was changed.** Every new model has the same name, position, rotation and size as "
       "the original object, so swapping it in is mechanical (`IMPORT_PLAN.md`, not executed).")
     w("- The whole world uses **one small texture** (`palette/palette_color.png`, 32 colors). See `STYLE_GUIDE.md`.")

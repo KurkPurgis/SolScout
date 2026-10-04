@@ -1,4 +1,126 @@
 {
+ "AuctionRoom_Lamp": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "bbox_max_dev": 0.0,
+  "bbox_new": [
+   [
+    -3.0,
+    0.0,
+    -3.0
+   ],
+   [
+    3.0,
+    0.5,
+    3.0
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -3.0,
+    0.0,
+    -3.0
+   ],
+   [
+    3.0,
+    0.5,
+    3.0
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 21:58",
+  "category": "decoration",
+  "export_name": "AuctionRoom_Lamp",
+  "fbx": "export/decoration/AuctionRoom_Lamp.fbx",
+  "meshes": [
+   "AuctionRoom_Lamp",
+   "AuctionRoom_Lamp_Glow_GLOW_WARM"
+  ],
+  "renders": [
+   "renders/objects/AuctionRoom_Lamp/AuctionRoom_Lamp_front34.jpg",
+   "renders/objects/AuctionRoom_Lamp/AuctionRoom_Lamp_back34.jpg",
+   "renders/objects/AuctionRoom_Lamp/AuctionRoom_Lamp_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/AuctionRoom_Lamp.jpg",
+  "triangles": 112,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "AuctionRoom_Shell": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "bbox_max_dev": 0.0,
+  "bbox_new": [
+   [
+    -32.5,
+    -1.0,
+    -25.5
+   ],
+   [
+    32.5,
+    25.0,
+    25.5
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -32.5,
+    -1.0,
+    -25.5
+   ],
+   [
+    32.5,
+    25.0,
+    25.5
+   ]
+  ],
+  "budget": 6000,
+  "built_at": "2026-10-04 21:55",
+  "category": "buildings",
+  "export_name": "AuctionRoom_Shell",
+  "fbx": "export/buildings/AuctionRoom_Shell.fbx",
+  "meshes": [
+   "AuctionRoom_Shell"
+  ],
+  "renders": [
+   "renders/objects/AuctionRoom_Shell/AuctionRoom_Shell_front34.jpg",
+   "renders/objects/AuctionRoom_Shell/AuctionRoom_Shell_back34.jpg",
+   "renders/objects/AuctionRoom_Shell/AuctionRoom_Shell_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/AuctionRoom_Shell.jpg",
+  "triangles": 1752,
+  "tris_ok": true,
+  "warnings": [
+   "coplanar -z faces: [BRICK (0, 12.0, -25)] and [BRICK (-32, 12.0, 0)]",
+   "coplanar +z faces: [BRICK (0, 12.0, -25)] and [BRICK (-32, 12.0, 0)]",
+   "coplanar -z faces: [BRICK (0, 12.0, -25)] and [BRICK (32, 12.0, 0)]",
+   "coplanar +z faces: [BRICK (0, 12.0, -25)] and [BRICK (32, 12.0, 0)]",
+   "coplanar -z faces: [BRICK (0, 12.0, 25)] and [BRICK (-32, 12.0, 0)]",
+   "coplanar +z faces: [BRICK (0, 12.0, 25)] and [BRICK (-32, 12.0, 0)]",
+   "coplanar -z faces: [BRICK (0, 12.0, 25)] and [BRICK (32, 12.0, 0)]",
+   "coplanar +z faces: [BRICK (0, 12.0, 25)] and [BRICK (32, 12.0, 0)]",
+   "coplanar -z faces: [GOLD (0, 5.2, -24.35)] and [GOLD (-31.35, 5.2, 0)]",
+   "coplanar +z faces: [GOLD (0, 5.2, -24.35)] and [GOLD (-31.35, 5.2, 0)]"
+  ]
+ },
  "City_Ground": {
   "bbox_dev": [
    0.0,
@@ -1019,6 +1141,61 @@
    "thin torus r=0.13 at (0, 10.6, 2.0)"
   ]
  },
+ "FastTrack_Gate": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   -0.25,
+   0.0,
+   0.07,
+   0.25
+  ],
+  "bbox_max_dev": 0.25,
+  "bbox_new": [
+   [
+    -8.0,
+    0.0,
+    -1.0
+   ],
+   [
+    8.0,
+    14.07,
+    1.0
+   ]
+  ],
+  "bbox_ok": false,
+  "bbox_old": [
+   [
+    -8.0,
+    0.0,
+    -0.75
+   ],
+   [
+    8.0,
+    14.0,
+    0.75
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 21:57",
+  "category": "decoration",
+  "export_name": "FastTrack_Gate",
+  "fbx": "export/decoration/FastTrack_Gate.fbx",
+  "meshes": [
+   "FastTrack_Gate"
+  ],
+  "renders": [
+   "renders/objects/FastTrack_Gate/FastTrack_Gate_front34.jpg",
+   "renders/objects/FastTrack_Gate/FastTrack_Gate_back34.jpg",
+   "renders/objects/FastTrack_Gate/FastTrack_Gate_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/FastTrack_Gate.jpg",
+  "triangles": 736,
+  "tris_ok": true,
+  "warnings": []
+ },
  "Garage_CarLift": {
   "bbox_dev": [
    -0.02,
@@ -1460,6 +1637,117 @@
   "tris_ok": true,
   "warnings": []
  },
+ "Lobby_Bench": {
+  "bbox_dev": [
+   -0.05,
+   0.0,
+   0.0,
+   -0.05,
+   0.05,
+   0.0
+  ],
+  "bbox_max_dev": 0.05,
+  "bbox_new": [
+   [
+    -1.25,
+    0.0,
+    -3.0
+   ],
+   [
+    1.15,
+    3.55,
+    3.0
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -1.2,
+    0.0,
+    -3.0
+   ],
+   [
+    1.2,
+    3.5,
+    3.0
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 22:01",
+  "category": "props",
+  "export_name": "Lobby_Bench",
+  "fbx": "export/props/Lobby_Bench.fbx",
+  "meshes": [
+   "Lobby_Bench"
+  ],
+  "renders": [
+   "renders/objects/Lobby_Bench/Lobby_Bench_front34.jpg",
+   "renders/objects/Lobby_Bench/Lobby_Bench_back34.jpg",
+   "renders/objects/Lobby_Bench/Lobby_Bench_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Lobby_Bench.jpg",
+  "triangles": 564,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Lobby_Pillar": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   0.0,
+   -0.034,
+   0.0,
+   0.0
+  ],
+  "bbox_max_dev": 0.034,
+  "bbox_new": [
+   [
+    -2.3,
+    0.0,
+    -2.0
+   ],
+   [
+    2.266,
+    26.0,
+    2.0
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -2.3,
+    0.0,
+    -2.0
+   ],
+   [
+    2.3,
+    26.0,
+    2.0
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 21:57",
+  "category": "decoration",
+  "export_name": "Lobby_Pillar",
+  "fbx": "export/decoration/Lobby_Pillar.fbx",
+  "meshes": [
+   "Lobby_Pillar",
+   "Lobby_Pillar_Glow_GLOW_WARM"
+  ],
+  "renders": [
+   "renders/objects/Lobby_Pillar/Lobby_Pillar_front34.jpg",
+   "renders/objects/Lobby_Pillar/Lobby_Pillar_back34.jpg",
+   "renders/objects/Lobby_Pillar/Lobby_Pillar_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Lobby_Pillar.jpg",
+  "triangles": 628,
+  "tris_ok": true,
+  "warnings": []
+ },
  "Lobby_RoomBooth": {
   "bbox_dev": [
    -0.0,
@@ -1703,6 +1991,302 @@
    "coplanar -z faces: [GOLD (0, 15.3, 9.02)] and [WHITE (0, 15.3, -10.2)]",
    "coplanar +z faces: [GOLD (0, 15.3, 9.02)] and [WHITE (0, 15.3, -10.2)]"
   ]
+ },
+ "Lobby_Trophy": {
+  "bbox_dev": [
+   -0.05,
+   0.0,
+   -0.05,
+   0.05,
+   -0.055,
+   0.05
+  ],
+  "bbox_max_dev": 0.055,
+  "bbox_new": [
+   [
+    -3.05,
+    0.0,
+    -3.05
+   ],
+   [
+    3.05,
+    9.845,
+    3.05
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -3.0,
+    0.0,
+    -3.0
+   ],
+   [
+    3.0,
+    9.9,
+    3.0
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 22:00",
+  "category": "props",
+  "export_name": "Lobby_Trophy",
+  "fbx": "export/props/Lobby_Trophy.fbx",
+  "meshes": [
+   "Lobby_Trophy",
+   "Lobby_Trophy_Glow_GOLD_LIGHT"
+  ],
+  "renders": [
+   "renders/objects/Lobby_Trophy/Lobby_Trophy_front34.jpg",
+   "renders/objects/Lobby_Trophy/Lobby_Trophy_back34.jpg",
+   "renders/objects/Lobby_Trophy/Lobby_Trophy_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Lobby_Trophy.jpg",
+  "triangles": 1040,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Lobby_Walls": {
+  "bbox_dev": [
+   -0.0,
+   0.0,
+   -0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "bbox_max_dev": 0.0,
+  "bbox_new": [
+   [
+    -74.4,
+    0.0,
+    -50.4
+   ],
+   [
+    74.4,
+    27.0,
+    50.4
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -74.4,
+    0.0,
+    -50.4
+   ],
+   [
+    74.4,
+    27.0,
+    50.4
+   ]
+  ],
+  "budget": 6000,
+  "built_at": "2026-10-04 21:54",
+  "category": "buildings",
+  "export_name": "Lobby_Walls",
+  "fbx": "export/buildings/Lobby_Walls.fbx",
+  "meshes": [
+   "Lobby_Walls"
+  ],
+  "renders": [
+   "renders/objects/Lobby_Walls/Lobby_Walls_front34.jpg",
+   "renders/objects/Lobby_Walls/Lobby_Walls_back34.jpg",
+   "renders/objects/Lobby_Walls/Lobby_Walls_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Lobby_Walls.jpg",
+  "triangles": 896,
+  "tris_ok": true,
+  "warnings": [
+   "coplanar -x faces: [NAVY (0, 13.0, -49)] and [NAVY (-73, 13.0, 0)]",
+   "coplanar +y faces: [NAVY (0, 13.0, -49)] and [NAVY (-73, 13.0, 0)]",
+   "coplanar +z faces: [NAVY (0, 13.0, -49)] and [NAVY (-73, 13.0, 0)]",
+   "coplanar +x faces: [NAVY (0, 13.0, -49)] and [NAVY (73, 13.0, 0)]",
+   "coplanar +y faces: [NAVY (0, 13.0, -49)] and [NAVY (73, 13.0, 0)]",
+   "coplanar +z faces: [NAVY (0, 13.0, -49)] and [NAVY (73, 13.0, 0)]",
+   "coplanar -x faces: [GOLD (0, 26.5, -49)] and [GOLD (-73, 26.5, 0)]",
+   "coplanar +y faces: [GOLD (0, 26.5, -49)] and [GOLD (-73, 26.5, 0)]",
+   "coplanar -z faces: [GOLD (0, 26.5, -49)] and [GOLD (-73, 26.5, 0)]",
+   "coplanar +z faces: [GOLD (0, 26.5, -49)] and [GOLD (-73, 26.5, 0)]"
+  ]
+ },
+ "Lobby_Window": {
+  "bbox_dev": [
+   -0.0,
+   0.0,
+   0.0,
+   0.15,
+   0.0,
+   0.0
+  ],
+  "bbox_max_dev": 0.15,
+  "bbox_new": [
+   [
+    -0.3,
+    0.0,
+    -7.0
+   ],
+   [
+    0.45,
+    10.0,
+    7.0
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -0.3,
+    0.0,
+    -7.0
+   ],
+   [
+    0.3,
+    10.0,
+    7.0
+   ]
+  ],
+  "budget": 6000,
+  "built_at": "2026-10-04 21:55",
+  "category": "buildings",
+  "export_name": "Lobby_Window",
+  "fbx": "export/buildings/Lobby_Window.fbx",
+  "meshes": [
+   "Lobby_Window",
+   "Lobby_Window_Glass"
+  ],
+  "renders": [
+   "renders/objects/Lobby_Window/Lobby_Window_front34.jpg",
+   "renders/objects/Lobby_Window/Lobby_Window_back34.jpg",
+   "renders/objects/Lobby_Window/Lobby_Window_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Lobby_Window.jpg",
+  "triangles": 136,
+  "tris_ok": true,
+  "warnings": [
+   "coplanar -z faces: [SKY (0.25, 5.0, 0)] and [WHITE (0.3, 5.0, 0)]",
+   "coplanar +z faces: [SKY (0.25, 5.0, 0)] and [WHITE (0.3, 5.0, 0)]",
+   "coplanar -y faces: [SKY (0.25, 5.0, 0)] and [WHITE (0.3, 5.0, 0)]",
+   "coplanar +y faces: [SKY (0.25, 5.0, 0)] and [WHITE (0.3, 5.0, 0)]",
+   "coplanar -x faces: [WHITE (0.3, 5.0, 0)] and [WHITE (0.3, 5.0, 0)]",
+   "coplanar +x faces: [WHITE (0.3, 5.0, 0)] and [WHITE (0.3, 5.0, 0)]"
+  ]
+ },
+ "Lux_Chandelier": {
+  "bbox_dev": [
+   0.024,
+   0.38,
+   0.03,
+   -0.024,
+   0.0,
+   -0.03
+  ],
+  "bbox_max_dev": 0.38,
+  "bbox_new": [
+   [
+    -1.076,
+    0.38,
+    -1.07
+   ],
+   [
+    1.076,
+    3.6,
+    1.07
+   ]
+  ],
+  "bbox_ok": false,
+  "bbox_old": [
+   [
+    -1.1,
+    0.0,
+    -1.1
+   ],
+   [
+    1.1,
+    3.6,
+    1.1
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 21:58",
+  "category": "decoration",
+  "export_name": "Lux_Chandelier",
+  "fbx": "export/decoration/Lux_Chandelier.fbx",
+  "meshes": [
+   "Lux_Chandelier",
+   "Lux_Chandelier_Glow_GLOW_WARM"
+  ],
+  "renders": [
+   "renders/objects/Lux_Chandelier/Lux_Chandelier_front34.jpg",
+   "renders/objects/Lux_Chandelier/Lux_Chandelier_back34.jpg",
+   "renders/objects/Lux_Chandelier/Lux_Chandelier_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Lux_Chandelier.jpg",
+  "triangles": 572,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Lux_Sofa": {
+  "bbox_dev": [
+   -0.05,
+   0.0,
+   0.0,
+   0.05,
+   0.0,
+   -0.0
+  ],
+  "bbox_max_dev": 0.05,
+  "bbox_new": [
+   [
+    -3.55,
+    0.0,
+    -1.55
+   ],
+   [
+    3.55,
+    3.4,
+    1.55
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -3.5,
+    0.0,
+    -1.55
+   ],
+   [
+    3.5,
+    3.4,
+    1.55
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 22:01",
+  "category": "props",
+  "export_name": "Lux_Sofa",
+  "fbx": "export/props/Lux_Sofa.fbx",
+  "meshes": [
+   "Lux_Sofa"
+  ],
+  "renders": [
+   "renders/objects/Lux_Sofa/Lux_Sofa_front34.jpg",
+   "renders/objects/Lux_Sofa/Lux_Sofa_back34.jpg",
+   "renders/objects/Lux_Sofa/Lux_Sofa_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Lux_Sofa.jpg",
+  "triangles": 612,
+  "tris_ok": true,
+  "warnings": []
  },
  "Maker_Apartment": {
   "bbox_dev": [
@@ -3487,6 +4071,120 @@
   "triangles": 684,
   "tris_ok": true,
   "warnings": []
+ },
+ "PodiumRoom_LightStrip": {
+  "bbox_dev": [
+   -0.0,
+   0.0,
+   0.03,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "bbox_max_dev": 0.03,
+  "bbox_new": [
+   [
+    -0.4,
+    0.0,
+    -0.27
+   ],
+   [
+    0.4,
+    30.0,
+    0.3
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -0.4,
+    0.0,
+    -0.3
+   ],
+   [
+    0.4,
+    30.0,
+    0.3
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 21:59",
+  "category": "decoration",
+  "export_name": "PodiumRoom_LightStrip",
+  "fbx": "export/decoration/PodiumRoom_LightStrip.fbx",
+  "meshes": [
+   "PodiumRoom_LightStrip",
+   "PodiumRoom_LightStrip_Glow_GOLD_T55"
+  ],
+  "renders": [
+   "renders/objects/PodiumRoom_LightStrip/PodiumRoom_LightStrip_front34.jpg",
+   "renders/objects/PodiumRoom_LightStrip/PodiumRoom_LightStrip_back34.jpg",
+   "renders/objects/PodiumRoom_LightStrip/PodiumRoom_LightStrip_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/PodiumRoom_LightStrip.jpg",
+  "triangles": 72,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "PodiumRoom_Shell": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "bbox_max_dev": 0.0,
+  "bbox_new": [
+   [
+    -40.0,
+    -1.0,
+    -27.0
+   ],
+   [
+    40.0,
+    33.0,
+    37.0
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -40.0,
+    -1.0,
+    -27.0
+   ],
+   [
+    40.0,
+    33.0,
+    37.0
+   ]
+  ],
+  "budget": 6000,
+  "built_at": "2026-10-04 21:56",
+  "category": "buildings",
+  "export_name": "PodiumRoom_Shell",
+  "fbx": "export/buildings/PodiumRoom_Shell.fbx",
+  "meshes": [
+   "PodiumRoom_Shell"
+  ],
+  "renders": [
+   "renders/objects/PodiumRoom_Shell/PodiumRoom_Shell_front34.jpg",
+   "renders/objects/PodiumRoom_Shell/PodiumRoom_Shell_back34.jpg",
+   "renders/objects/PodiumRoom_Shell/PodiumRoom_Shell_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/PodiumRoom_Shell.jpg",
+  "triangles": 916,
+  "tris_ok": true,
+  "warnings": [
+   "coplanar -x faces: [NAVY (0, -0.5, 5)] and [INK (0, 16.0, -20)]",
+   "coplanar +x faces: [NAVY (0, -0.5, 5)] and [INK (0, 16.0, -20)]"
+  ]
  },
  "Police_Car": {
   "bbox_dev": [

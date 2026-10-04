@@ -74,7 +74,7 @@ def cf_lua(c):
 
 def placements(objects, templates):
     """context key -> list of {template, frame (12 numbers), scale}"""
-    out = {}
+    out, first = {}, {}
     for o in objects:
         ctx = o["context"]
         if not ctx or ctx in ("Kids", "Debts", "MoneyMakers", "ForSale", "Catalog"):
@@ -89,11 +89,11 @@ def placements(objects, templates):
         if base in ("Collection", "DreamArea"):
             ctx = base
         key = ctx
-        frame = [round(v, 4) for v in o["frame_in_ctx"]]
-        entry = {"template": o["template"], "frame": frame, "scale": o.get("scale", 1.0)}
-        lst = out.setdefault(key, [])
-        if entry not in lst:
-            lst.append(entry)
+        where = o["key"].split("/")[0]  # one instance of the context (e.g. one plot) is the pattern for all
+        if first.setdefault(key, where) != where:
+            continue
+        frame = [round(v, 3) + 0.0 for v in o["frame_in_ctx"]]
+        out.setdefault(key, []).append({"template": o["template"], "frame": frame, "scale": o.get("scale", 1.0)})
     return out
 
 
@@ -360,7 +360,9 @@ def main():
     w("")
     w("Copy `world_overhaul/export/roblox/WorldSkin.luau` and `WorldSkinPlacements.luau` to "
       "`src/server/World/`. `WorldSkinPlacements` is generated from the world data: every kit model's frame "
-      "relative to the base CFrame of the code that builds it.")
+      "relative to the base CFrame of the code that builds it. Checked with `tools/verify_placements.py`: for all 35 "
+      "places the game builds (4 plazas, 9 workplaces, 4 auction rooms, 4 podium rooms, the lobby, furniture, "
+      "showcases), the list puts exactly the objects that are there, at exactly their frames (0 mismatches).")
     w("")
     w("## Step 6 - the calls (one line each)")
     w("")
@@ -441,9 +443,13 @@ def main():
             how = "`WorldSkin.%s`" % ("stretched" if name.startswith("Debt_") else "object")
             src = b[0]
         else:
-            ctx = t.get("context", "")
-            how = "`WorldSkin.context(\"%s\")`" % (ctx.split(":")[0] if ctx.startswith(("Collection", "DreamArea"))
-                                                  else ctx) if ctx else "(by hand: one object)"
+            keys = sorted(k for k, lst in places.items() if any(p["template"] == name for p in lst))
+            if len(keys) > 2:
+                groups = sorted({k.split(":")[0] for k in keys})
+                label = ", ".join("%s:* (%d)" % (g, sum(1 for k in keys if k.startswith(g + ":"))) for g in groups)
+            else:
+                label = ", ".join(keys)
+            how = "`WorldSkin.context` in %s" % label if keys else "(by hand: one object)"
             src = source_of(t.get("type", name)) or ""
         fbx = e.get("fbx", "")
         meshes = ", ".join("`%s`" % m for m in e.get("meshes", []))

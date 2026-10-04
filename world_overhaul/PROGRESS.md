@@ -1,11 +1,11 @@
 # Progress
 
 If you (or I after a restart) pick this up: read this file and STYLE_GUIDE.md first.
-Updated: 2026-10-04 21:42
+Updated: 2026-10-04 22:03
 
 ## Current step
 
-Phase 3 - reviewing built models and fixing (bbox, z-fighting, mirrored details); new models for lobby/rooms/signs in the build queue; then a full rebuild with the final kit. Phase 4 assembly script (tools/blender/build_after.py) and fixed lineup cameras are written.
+Phase 3 finishing: lobby/room/sign models building, then a full rebuild of all 7 categories with the final kit (queue jobs 121-127), then tools/run_phase4.sh (AFTER scene + renders with the BEFORE cameras, lineups, comparisons, contact sheets, REPORT.md, IMPORT_PLAN.md). Review verdicts are applied after the rebuild (list in the session scratchpad: verdicts.txt; re-review the contact sheets if it is lost).
 
 ## How to continue
 
@@ -16,7 +16,7 @@ Phase 3 - reviewing built models and fixing (bbox, z-fighting, mirrored details)
 
 ## Summary
 
-alias: 10, built: 79, not_started: 46
+alias: 10, built: 95, not_started: 30
 
 ## Phases
 
@@ -53,19 +53,19 @@ alias: 10, built: 79, not_started: 46
 | 21 | Plaza_Path | ground | built | 684 | 0.0 |  |
 | 22 | City_Ground | ground | built | 76 | 0.0 |  |
 | 23 | City_Wall | decoration | built | 2016 | 0.1 |  |
-| 24 | Dream_Supercar | vehicles | built | 3896 | 0.125 |  |
+| 24 | Dream_Supercar | vehicles | built | 2696 | 0.125 |  |
 | 25 | Dream_Yacht | vehicles | built | 3856 | 0.15 |  |
 | 26 | Dream_BeachVilla | buildings | built | 5528 | 0.218 |  |
-| 27 | Dream_PrivateJet | vehicles | built | 3600 | 0.3 |  |
+| 27 | Dream_PrivateJet | vehicles | built | 3600 | 0.098 |  |
 | 28 | Dream_PrivateIsland | nature | built | 5608 | 0.15 |  |
 | 29 | Maker_LemonadeStand | props | built | 1340 | 0.023 |  |
-| 30 | Maker_VendingMachine | props | built | 720 | 0.08 |  |
-| 31 | Maker_Apartment | buildings | built | 860 | 0.3 |  |
-| 32 | Maker_CarWash | buildings | built | 1132 | 0.25 |  |
-| 33 | Maker_FoodTruck | vehicles | built | 2280 | 0.63 |  |
+| 30 | Maker_VendingMachine | props | built | 720 | 0.13 |  |
+| 31 | Maker_Apartment | buildings | built | 900 | 0.12 |  |
+| 32 | Maker_CarWash | buildings | built | 1132 | 0.06 |  |
+| 33 | Maker_FoodTruck | vehicles | built | 2344 | 0.13 |  |
 | 34 | Maker_ToyShop | buildings | built | 1308 | 0.027 |  |
 | 35 | Maker_MiniGolf | props | built | 952 | 0.0 |  |
-| 36 | Maker_HouseToRent | buildings | built | 1492 | 0.5 |  |
+| 36 | Maker_HouseToRent | buildings | built | 1276 | 0.133 |  |
 | 37 | Maker_PizzaRestaurant | buildings | built | 1268 | 0.027 |  |
 | 38 | Maker_CoffeeShop | buildings | built | 1280 | 0.05 |  |
 | 39 | Maker_BowlingAlley | buildings | built | 1516 | 0.027 |  |
@@ -83,7 +83,7 @@ alias: 10, built: 79, not_started: 46
 | 51 | Maker_GoldCoin | props | built | 884 | 0.0 |  |
 | 52 | Maker_GoldBar | props | built | 648 | 0.029 |  |
 | 53 | Maker_GoldTreasureChest | props | built | 856 | 0.077 |  |
-| 54 | Maker_UnknownMaker | props | built | 752 | 0.19 |  |
+| 54 | Maker_UnknownMaker | props | built | 752 | 0.14 |  |
 | 55 | Kid | props | built | 538 | 0.113 |  |
 | 56 | Kid_v2 | props | built | 538 | 0.113 |  |
 | 57 | Kid_v3 | props | built | 538 | 0.113 |  |
@@ -92,56 +92,56 @@ alias: 10, built: 79, not_started: 46
 | 60 | Debt_SchoolLoan | props | built | 512 | 0.042 |  |
 | 61 | Debt_BankLoan | props | built | 384 | 0.017 |  |
 | 62 | Debt_OtherDebt | props | built | 336 | 0.12 |  |
-| 63 | Depot_Bus | vehicles | built | 2832 | 0.29 |  |
+| 63 | Depot_Bus | vehicles | built | 2832 | 0.13 |  |
 | 64 | Police_Car | vehicles | built | 1700 | 0.17 |  |
 | 65 | Garage_CarLift | vehicles | built | 1744 | 0.06 |  |
 | 66 | Computer | props | built | 468 | 0.0 |  |
 | 67 | HospitalBed | props | built | 496 | 0.025 |  |
-| 68 | Pizzeria_Counter | props | built | 516 | 0.16 |  |
+| 68 | Pizzeria_Counter | props | built | 516 | 0.07 |  |
 | 69 | Pizzeria_Oven | props | built | 462 | 0.1 |  |
-| 70 | School_Blackboard | decoration | built | 256 | 0.45 |  |
+| 70 | School_Blackboard | decoration | built | 268 | 0.275 |  |
 | 71 | School_TeacherDesk | props | built | 264 | 0.13 |  |
 | 72 | School_StudentDesk | props | built | 264 | 0.13 |  |
 | 73 | Clinic_Chair | props | built | 272 | 0.05 |  |
 | 74 | Clinic_Cabinet | props | built | 288 | 0.0 |  |
-| 75 | Clinic_WallScreen | decoration | built | 184 | 0.275 |  |
+| 75 | Clinic_WallScreen | decoration | built | 184 | 0.245 |  |
 | 76 | Hospital_WallCross | decoration | built | 332 | 0.0 |  |
-| 77 | Office_Screen | decoration | built | 232 | 0.37 |  |
-| 78 | Garage_ToolBoard | decoration | built | 372 | 0.375 |  |
+| 77 | Office_Screen | decoration | built | 232 | 0.25 |  |
+| 78 | Garage_ToolBoard | decoration | built | 372 | 0.3 |  |
 | 79 | Garage_TireStack | props | built | 1052 | 0.05 |  |
-| 80 | Lobby_RoomBooth | buildings | not_started |  |  |  |
-| 81 | Lobby_RoomBooth_v2 | buildings | not_started |  |  |  |
-| 82 | Lobby_RoomBooth_v3 | buildings | not_started |  |  |  |
-| 83 | Lobby_RoomBooth_v4 | buildings | not_started |  |  |  |
-| 84 | Lobby_Pillar | decoration | not_started |  |  |  |
-| 85 | Lobby_Trophy | props | not_started |  |  |  |
+| 80 | Lobby_RoomBooth | buildings | built | 1440 | 0.065 |  |
+| 81 | Lobby_RoomBooth_v2 | buildings | built | 1440 | 0.065 |  |
+| 82 | Lobby_RoomBooth_v3 | buildings | built | 1440 | 0.065 |  |
+| 83 | Lobby_RoomBooth_v4 | buildings | built | 1440 | 0.065 |  |
+| 84 | Lobby_Pillar | decoration | built | 628 | 0.034 |  |
+| 85 | Lobby_Trophy | props | built | 1040 | 0.055 |  |
 | 86 | Lobby_PottedPalm | nature | not_started |  |  |  |
-| 87 | Lobby_Bench | props | not_started |  |  |  |
-| 88 | Lobby_Walls | buildings | not_started |  |  |  |
+| 87 | Lobby_Bench | props | built | 564 | 0.05 |  |
+| 88 | Lobby_Walls | buildings | built | 896 | 0.0 |  |
 | 89 | Lobby_Floor | ground | not_started |  |  |  |
 | 90 | Lobby_Carpet | ground | not_started |  |  |  |
 | 91 | Lobby_TitleSign | signs | not_started |  |  |  |
-| 92 | Lobby_Window | buildings | not_started |  |  |  |
+| 92 | Lobby_Window | buildings | built | 136 | 0.15 |  |
 | 93 | Lobby_Spawn | ground | not_started |  |  |  |
-| 94 | FastTrack_Gate | decoration | not_started |  |  |  |
-| 95 | Lux_Sofa | props | not_started |  |  |  |
+| 94 | FastTrack_Gate | decoration | built | 736 | 0.25 |  |
+| 95 | Lux_Sofa | props | built | 612 | 0.05 |  |
 | 96 | Lux_GlassTable | props | not_started |  |  |  |
 | 97 | Lux_Safe | props | not_started |  |  |  |
 | 98 | Lux_Piano | props | not_started |  |  |  |
-| 99 | Lux_Chandelier | decoration | not_started |  |  |  |
+| 99 | Lux_Chandelier | decoration | built | 572 | 0.38 |  |
 | 100 | Dream_Pedestal | props | not_started |  |  |  |
 | 101 | Dream_Chains | props | not_started |  |  |  |
 | 102 | Collection_Showcase | props | not_started |  |  |  |
-| 103 | AuctionRoom_Shell | buildings | not_started |  |  |  |
+| 103 | AuctionRoom_Shell | buildings | built | 1752 | 0.0 |  |
 | 104 | AuctionRoom_Stage | props | not_started |  |  |  |
 | 105 | AuctionRoom_BidderDesk | props | not_started |  |  |  |
 | 106 | AuctionRoom_BidderPad | ground | not_started |  |  |  |
-| 107 | AuctionRoom_Lamp | decoration | not_started |  |  |  |
+| 107 | AuctionRoom_Lamp | decoration | built | 112 | 0.0 |  |
 | 108 | AuctionRoom_TitleSign | signs | not_started |  |  |  |
 | 109 | AuctionRoom_InfoBoard | signs | not_started |  |  |  |
-| 110 | PodiumRoom_Shell | buildings | not_started |  |  |  |
+| 110 | PodiumRoom_Shell | buildings | built | 916 | 0.0 |  |
 | 111 | PodiumRoom_Block | props | not_started |  |  |  |
-| 112 | PodiumRoom_LightStrip | decoration | not_started |  |  |  |
+| 112 | PodiumRoom_LightStrip | decoration | built | 72 | 0.03 |  |
 | 113 | PodiumRoom_TitleSign | signs | not_started |  |  |  |
 | 114 | PodiumRoom_Board | signs | not_started |  |  |  |
 | 115 | Baseplate | ground | not_started |  |  |  |
