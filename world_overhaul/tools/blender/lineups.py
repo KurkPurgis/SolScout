@@ -27,6 +27,8 @@ import wo  # noqa: E402
 
 
 MODELS = {}
+# signs whose readable side faces +Z; some get their words only at runtime, so there is no text to detect
+FACES_BACK = {"Lobby_TitleSign", "AuctionRoom_TitleSign", "AuctionRoom_InfoBoard", "PodiumRoom_TitleSign"}
 
 
 def source_objects(templates, name, phase):
@@ -56,7 +58,7 @@ def build_page(templates, names, phase, page_col):
                     texts.append((text, inv @ text.matrix_basis))
         # text on the back (Roblox +Z = Blender -Y): turn the object around its box center to face the camera
         flip = Matrix.Identity(4)
-        if texts and all(rel.translation.y < -0.01 for _, rel in texts):
+        if name in FACES_BACK or (texts and all(rel.translation.y < -0.01 for _, rel in texts)):
             lo, hi = t["bbox_min"], t["bbox_max"]
             c = Vector(((lo[0] + hi[0]) / 2, -(lo[2] + hi[2]) / 2, 0))
             flip = Matrix.Translation(c) @ Matrix.Rotation(math.pi, 4, "Z") @ Matrix.Translation(-c)
