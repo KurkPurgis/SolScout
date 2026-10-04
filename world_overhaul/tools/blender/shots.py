@@ -45,6 +45,31 @@ WORLD_SHOTS = {
 }
 
 
+# Closed rooms get a soft ceiling fill that stands in for the game's Lighting.Ambient (0.16, 0.16, 0.18),
+# which Blender does not have. Same light for BEFORE and AFTER. name: (center, size, watts)
+FILLS = {
+    "auction_room": ((CITY, 0.0, 423.0), (60.0, 46.0), 2000.0),
+}
+
+
+def _fill(name):
+    spec = FILLS.get(name)
+    if spec is None:
+        return None
+    obj = bpy.data.objects.get("Fill_" + name)
+    if obj is None:
+        data = bpy.data.lights.new("Fill_" + name, "AREA")
+        data.shape = "RECTANGLE"
+        obj = bpy.data.objects.new("Fill_" + name, data)
+        bpy.context.scene.collection.objects.link(obj)
+    (x, y, z), (sx, sy), watts = spec
+    obj.location = (x, y, z)
+    obj.rotation_euler = (0, 0, 0)  # an area light shines down (-Z)
+    obj.data.size, obj.data.size_y, obj.data.energy = sx, sy, watts
+    obj.data.color = (1.0, 0.97, 0.92)
+    return obj
+
+
 def make_cameras():
     for name, (loc, target, lens, _, _) in WORLD_SHOTS.items():
         wo.camera("CAM_" + name, loc, target, lens=lens)
@@ -69,7 +94,11 @@ def render_world_shots(out_dir, names=None, samples=48):
             continue
         scene.render.resolution_x, scene.render.resolution_y = w, h
         cam = bpy.data.objects.get("CAM_" + name) or wo.camera("CAM_" + name, loc, target, lens=lens)
+        fill = _fill(name)
         wo.render(os.path.join(out_dir, name + ".png"), cam)
+        if fill is not None:
+            fill.hide_render = True
+            bpy.data.objects.remove(fill, do_unlink=True)
         print("rendered", name)
 
 
