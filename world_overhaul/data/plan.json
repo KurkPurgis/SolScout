@@ -1,5 +1,5 @@
 {
- "current_step": "Phase 5 - handover: REPORT.md and IMPORT_PLAN.md are generated (tools/write_report.py, tools/write_import_plan.py); final review of the report text, then commit and push. All 122 models are reviewed and done; AFTER renders, lineups, comparisons and contact sheets are in renders/.",
+ "current_step": "Done. All 125 object types are covered (115 own models + 10 copies; 122 FBX incl. 7 extra pieces), all reviewed. AFTER scene, renders, comparisons, contact sheets, REPORT.md and IMPORT_PLAN.md are final. Open questions for the owner are in REPORT.md (Decisions I need from you).",
  "phases": [
   {
    "name": "Phase 1 - inventory (world extracted, INVENTORY.md, BEFORE renders)",
@@ -19,7 +19,7 @@
   },
   {
    "name": "Phase 5 - handover (REPORT.md, IMPORT_PLAN.md)",
-   "done": false
+   "done": true
   }
  ],
  "order": [

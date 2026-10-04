@@ -1,11 +1,11 @@
 # Progress
 
 If you (or I after a restart) pick this up: read this file and STYLE_GUIDE.md first.
-Updated: 2026-10-04 23:56
+Updated: 2026-10-04 23:59
 
 ## Current step
 
-Phase 5 - handover: REPORT.md and IMPORT_PLAN.md are generated (tools/write_report.py, tools/write_import_plan.py); final review of the report text, then commit and push. All 122 models are reviewed and done; AFTER renders, lineups, comparisons and contact sheets are in renders/.
+Done. All 125 object types are covered (115 own models + 10 copies; 122 FBX incl. 7 extra pieces), all reviewed. AFTER scene, renders, comparisons, contact sheets, REPORT.md and IMPORT_PLAN.md are final. Open questions for the owner are in REPORT.md (Decisions I need from you).
 
 ## How to continue
 
@@ -24,7 +24,7 @@ alias: 10, done: 115
 - [x] Phase 2 - style guide, palette, kit
 - [x] Phase 3 - model everything
 - [x] Phase 4 - whole world check (AFTER renders)
-- [ ] Phase 5 - handover (REPORT.md, IMPORT_PLAN.md)
+- [x] Phase 5 - handover (REPORT.md, IMPORT_PLAN.md)
 
 ## Models (in modelling order: most visible first)
 
