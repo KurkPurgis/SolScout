@@ -91,7 +91,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 22:12",
+  "built_at": "2026-10-04 22:22",
   "category": "ground",
   "export_name": "AuctionRoom_BidderPad",
   "fbx": "export/ground/AuctionRoom_BidderPad.fbx",
@@ -434,7 +434,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 22:12",
+  "built_at": "2026-10-04 22:23",
   "category": "ground",
   "export_name": "Baseplate",
   "fbx": "export/ground/Baseplate.fbx",
@@ -489,7 +489,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:02",
+  "built_at": "2026-10-04 22:21",
   "category": "ground",
   "export_name": "City_Ground",
   "fbx": "export/ground/City_Ground.fbx",
@@ -2237,7 +2237,7 @@
     36.0
    ]
   ],
-  "bbox_ok": false,
+  "bbox_ok": true,
   "bbox_old": [
    [
     -66.0,
@@ -2251,7 +2251,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 22:10",
+  "built_at": "2026-10-04 22:22",
   "category": "ground",
   "export_name": "Lobby_Carpet",
   "fbx": "export/ground/Lobby_Carpet.fbx",
@@ -2306,7 +2306,7 @@
    ]
   ],
   "budget": 6000,
-  "built_at": "2026-10-04 22:10",
+  "built_at": "2026-10-04 22:21",
   "category": "ground",
   "export_name": "Lobby_Floor",
   "fbx": "export/ground/Lobby_Floor.fbx",
@@ -2716,7 +2716,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 22:11",
+  "built_at": "2026-10-04 22:22",
   "category": "ground",
   "export_name": "Lobby_Spawn",
   "fbx": "export/ground/Lobby_Spawn.fbx",
@@ -4905,7 +4905,7 @@
    ]
   ],
   "budget": 6000,
-  "built_at": "2026-10-04 21:01",
+  "built_at": "2026-10-04 22:20",
   "category": "ground",
   "export_name": "Plaza_Disc",
   "fbx": "export/ground/Plaza_Disc.fbx",
@@ -4920,7 +4920,7 @@
   "round": 0,
   "status": "built",
   "strip": "renders/objects/strips/Plaza_Disc.jpg",
-  "triangles": 3000,
+  "triangles": 2744,
   "tris_ok": true,
   "warnings": []
  },
@@ -5017,7 +5017,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:02",
+  "built_at": "2026-10-04 22:21",
   "category": "ground",
   "export_name": "Plaza_Path",
   "fbx": "export/ground/Plaza_Path.fbx",
@@ -6133,7 +6133,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:01",
+  "built_at": "2026-10-04 22:20",
   "category": "ground",
   "export_name": "Workplace_DebtPad",
   "fbx": "export/ground/Workplace_DebtPad.fbx",
@@ -6354,7 +6354,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:01",
+  "built_at": "2026-10-04 22:20",
   "category": "ground",
   "export_name": "Workplace_MakerLot",
   "fbx": "export/ground/Workplace_MakerLot.fbx",
@@ -6369,7 +6369,7 @@
   "round": 0,
   "status": "built",
   "strip": "renders/objects/strips/Workplace_MakerLot.jpg",
-  "triangles": 260,
+  "triangles": 188,
   "tris_ok": true,
   "warnings": []
  },
@@ -6464,7 +6464,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:08",
+  "built_at": "2026-10-04 22:19",
   "category": "ground",
   "export_name": "Workplace_Yard",
   "fbx": "export/ground/Workplace_Yard.fbx",
@@ -6519,7 +6519,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:07",
+  "built_at": "2026-10-04 22:19",
   "category": "ground",
   "export_name": "Workplace_Yard_v2",
   "fbx": "export/ground/Workplace_Yard_v2.fbx",

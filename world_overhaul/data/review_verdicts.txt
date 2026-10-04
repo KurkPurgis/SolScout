@@ -90,3 +90,10 @@ AuctionRoom_InfoBoard|done|dark board in a gold frame; text set by the game stay
 PodiumRoom_TitleSign|done|ink board in a gold frame; text stays on the old part
 PodiumRoom_Board|done|ink scoreboard in a purple frame; frame kept inside the original depth
 Tree|done|round icon tree with two greens and a few apples on a tall trunk
+City_Ground|done|matte grass slab (the city ground)
+Plaza_Disc|done|stone plaza disc with a darker rim and gold studs
+Plaza_Path|done|stone path tiles with a darker edge
+Workplace_Yard|done|Fast Track yard: cream marble with a red carpet and gold edges (the luxury version)
+Workplace_Yard_v2|done|workplace yard: warm grey slab with a tiled path to the door
+Workplace_MakerLot|done|sand lot with a gold coin marker
+Workplace_DebtPad|done|slate pad with a lighter rim
