@@ -65,3 +65,22 @@ PodiumRoom_LightStrip|done|gold glowing strip on a dark rail
 Lobby_Trophy|done|icon trophy on a marble pedestal
 Lobby_Bench|done|wooden bench, dark legs, gold plaque
 Lux_Sofa|done|cream sofa with gold feet and pillow
+Lux_GlassTable|done|glass top on a gold frame
+Lux_Safe|done|gold safe with a dial and bolts
+Lux_Piano|done|upright piano inside the original block: cabinet, keys, gold ledge and pedals
+Dream_Pedestal|done|marble pedestal with a gold top (the dream stands at 1.8)
+Collection_Showcase|done|wooden table with drawers and gold knobs, gold top at 2.6
+AuctionRoom_Stage|done|wooden stage with a glowing gold edge and stars
+AuctionRoom_BidderDesk|done|wooden desk with a gold line; hidden gold glow shell for the top bidder
+PodiumRoom_Block|done|gold / white / bronze blocks with stars, tops at 9, 7, 5.5
+Dream_Chains|done|chunky chain links along every original bar, icon padlock; how to import is question 2
+Lobby_Walls|done|navy walls, gold caps, dark wainscot and a gold rail; corners without overlaps
+Lobby_Window|done|white frame, glass, cross bars in non-overlapping pieces
+AuctionRoom_Shell|done|wood plank floor, dark red walls, slate ceiling
+PodiumRoom_Shell|done|navy floor, dark backdrop with a glow arc
+Lobby_Floor|done|marble checker floor
+Lobby_Carpet|done|red carpets with gold edges; sunk 0.2 into the floor (DECISIONS #13)
+Lobby_Spawn|done|marble disc with a gold ring and star
+AuctionRoom_BidderPad|done|wood pad with a gold rim
+Baseplate|done|plain grass slab (it is under everything)
+Lobby_PottedPalm|done|icon palm in a terracotta pot, leaves sized to the original

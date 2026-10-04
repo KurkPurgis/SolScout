@@ -126,7 +126,8 @@ def baseplate(m):
 import math  # noqa: E402
 
 MODELS["Lobby_Floor"] = {"build": lobby_floor, "budget": 6000}
-MODELS["Lobby_Carpet"] = {"build": lobby_carpet}
+# the original carpet is 0.1 thick: with the 0.3 minimum the extra goes down into the floor (hidden), DECISIONS #13
+MODELS["Lobby_Carpet"] = {"build": lobby_carpet, "tolerance": 0.25}
 MODELS["Lobby_Spawn"] = {"build": lobby_spawn}
 MODELS["AuctionRoom_BidderPad"] = {"build": auction_bidder_pad}
 MODELS["Baseplate"] = {"build": baseplate}

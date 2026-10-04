@@ -55,6 +55,61 @@
   "tris_ok": true,
   "warnings": []
  },
+ "AuctionRoom_BidderPad": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.02,
+   0.0
+  ],
+  "bbox_max_dev": 0.02,
+  "bbox_new": [
+   [
+    -2.25,
+    0.0,
+    -2.0
+   ],
+   [
+    2.25,
+    0.42,
+    2.0
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -2.25,
+    0.0,
+    -2.0
+   ],
+   [
+    2.25,
+    0.4,
+    2.0
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 22:12",
+  "category": "ground",
+  "export_name": "AuctionRoom_BidderPad",
+  "fbx": "export/ground/AuctionRoom_BidderPad.fbx",
+  "meshes": [
+   "AuctionRoom_BidderPad"
+  ],
+  "renders": [
+   "renders/objects/AuctionRoom_BidderPad/AuctionRoom_BidderPad_front34.jpg",
+   "renders/objects/AuctionRoom_BidderPad/AuctionRoom_BidderPad_back34.jpg",
+   "renders/objects/AuctionRoom_BidderPad/AuctionRoom_BidderPad_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/AuctionRoom_BidderPad.jpg",
+  "triangles": 152,
+  "tris_ok": true,
+  "warnings": []
+ },
  "AuctionRoom_Lamp": {
   "bbox_dev": [
    0.0,
@@ -230,6 +285,61 @@
   "status": "built",
   "strip": "renders/objects/strips/AuctionRoom_Stage.jpg",
   "triangles": 336,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Baseplate": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "bbox_max_dev": 0.0,
+  "bbox_new": [
+   [
+    -256.0,
+    -20.0,
+    -256.0
+   ],
+   [
+    256.0,
+    0.0,
+    256.0
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -256.0,
+    -20.0,
+    -256.0
+   ],
+   [
+    256.0,
+    0.0,
+    256.0
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 22:12",
+  "category": "ground",
+  "export_name": "Baseplate",
+  "fbx": "export/ground/Baseplate.fbx",
+  "meshes": [
+   "Baseplate"
+  ],
+  "renders": [
+   "renders/objects/Baseplate/Baseplate_front34.jpg",
+   "renders/objects/Baseplate/Baseplate_back34.jpg",
+   "renders/objects/Baseplate/Baseplate_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Baseplate.jpg",
+  "triangles": 76,
   "tris_ok": true,
   "warnings": []
  },
@@ -1999,6 +2109,61 @@
   "tris_ok": true,
   "warnings": []
  },
+ "Lobby_Carpet": {
+  "bbox_dev": [
+   0.0,
+   -0.2,
+   -0.05,
+   0.0,
+   0.02,
+   0.0
+  ],
+  "bbox_max_dev": 0.2,
+  "bbox_new": [
+   [
+    -66.0,
+    0.8,
+    -23.05
+   ],
+   [
+    66.0,
+    1.12,
+    36.0
+   ]
+  ],
+  "bbox_ok": false,
+  "bbox_old": [
+   [
+    -66.0,
+    1.0,
+    -23.0
+   ],
+   [
+    66.0,
+    1.1,
+    36.0
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 22:10",
+  "category": "ground",
+  "export_name": "Lobby_Carpet",
+  "fbx": "export/ground/Lobby_Carpet.fbx",
+  "meshes": [
+   "Lobby_Carpet"
+  ],
+  "renders": [
+   "renders/objects/Lobby_Carpet/Lobby_Carpet_front34.jpg",
+   "renders/objects/Lobby_Carpet/Lobby_Carpet_back34.jpg",
+   "renders/objects/Lobby_Carpet/Lobby_Carpet_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Lobby_Carpet.jpg",
+  "triangles": 200,
+  "tris_ok": true,
+  "warnings": []
+ },
  "Lobby_Floor": {
   "bbox_dev": [
    0.0,
@@ -2408,6 +2573,61 @@
    "coplanar -z faces: [GOLD (0, 15.3, 9.02)] and [WHITE (0, 15.3, -10.2)]",
    "coplanar +z faces: [GOLD (0, 15.3, 9.02)] and [WHITE (0, 15.3, -10.2)]"
   ]
+ },
+ "Lobby_Spawn": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.123,
+   0.0
+  ],
+  "bbox_max_dev": 0.123,
+  "bbox_new": [
+   [
+    -5.0,
+    0.0,
+    -5.0
+   ],
+   [
+    5.0,
+    1.123,
+    5.0
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -5.0,
+    0.0,
+    -5.0
+   ],
+   [
+    5.0,
+    1.0,
+    5.0
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 22:11",
+  "category": "ground",
+  "export_name": "Lobby_Spawn",
+  "fbx": "export/ground/Lobby_Spawn.fbx",
+  "meshes": [
+   "Lobby_Spawn"
+  ],
+  "renders": [
+   "renders/objects/Lobby_Spawn/Lobby_Spawn_front34.jpg",
+   "renders/objects/Lobby_Spawn/Lobby_Spawn_back34.jpg",
+   "renders/objects/Lobby_Spawn/Lobby_Spawn_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Lobby_Spawn.jpg",
+  "triangles": 608,
+  "tris_ok": true,
+  "warnings": []
  },
  "Lobby_Trophy": {
   "bbox_dev": [
