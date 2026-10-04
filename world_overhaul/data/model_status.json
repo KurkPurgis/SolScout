@@ -1479,7 +1479,7 @@
    ]
   ],
   "budget": 6000,
-  "built_at": "2026-10-04 21:20",
+  "built_at": "2026-10-04 22:18",
   "category": "nature",
   "export_name": "PrivateIsland",
   "fbx": "export/nature/PrivateIsland.fbx",
@@ -1496,9 +1496,7 @@
   "strip": "renders/objects/strips/Dream_PrivateIsland.jpg",
   "triangles": 5608,
   "tris_ok": true,
-  "warnings": [
-   "thin cylinder r=0.12 at (7, 4.75, -3)"
-  ]
+  "warnings": []
  },
  "Dream_PrivateJet": {
   "bbox_dev": [
@@ -2385,27 +2383,27 @@
  },
  "Lobby_PottedPalm": {
   "bbox_dev": [
-   0.382,
+   -0.048,
    0.0,
-   0.305,
-   -0.382,
-   -0.198,
-   -0.305
+   -0.134,
+   0.048,
+   0.041,
+   0.134
   ],
-  "bbox_max_dev": 0.382,
+  "bbox_max_dev": 0.134,
   "bbox_new": [
    [
-    -4.036,
+    -4.466,
     0.0,
-    -4.113
+    -4.552
    ],
    [
-    4.036,
-    9.537,
-    4.113
+    4.466,
+    9.776,
+    4.552
    ]
   ],
-  "bbox_ok": false,
+  "bbox_ok": true,
   "bbox_old": [
    [
     -4.418,
@@ -2419,7 +2417,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 22:09",
+  "built_at": "2026-10-04 22:19",
   "category": "nature",
   "export_name": "Lobby_PottedPalm",
   "fbx": "export/nature/Lobby_PottedPalm.fbx",

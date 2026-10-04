@@ -89,3 +89,4 @@ AuctionRoom_TitleSign|done|dark board in a gold frame; text stays on the old par
 AuctionRoom_InfoBoard|done|dark board in a gold frame; text set by the game stays on the old part
 PodiumRoom_TitleSign|done|ink board in a gold frame; text stays on the old part
 PodiumRoom_Board|done|ink scoreboard in a purple frame; frame kept inside the original depth
+Tree|done|round icon tree with two greens and a few apples on a tall trunk
