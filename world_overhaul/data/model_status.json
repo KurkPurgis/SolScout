@@ -35,7 +35,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 22:07",
+  "built_at": "2026-10-04 22:59",
   "category": "props",
   "export_name": "AuctionRoom_BidderDesk",
   "fbx": "export/props/AuctionRoom_BidderDesk.fbx",
@@ -312,7 +312,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 22:06",
+  "built_at": "2026-10-04 22:59",
   "category": "props",
   "export_name": "AuctionRoom_Stage",
   "fbx": "export/props/AuctionRoom_Stage.fbx",
@@ -588,7 +588,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:41",
+  "built_at": "2026-10-04 22:51",
   "category": "props",
   "export_name": "Clinic_Cabinet",
   "fbx": "export/props/Clinic_Cabinet.fbx",
@@ -643,7 +643,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:26",
+  "built_at": "2026-10-04 22:50",
   "category": "props",
   "export_name": "Clinic_Chair",
   "fbx": "export/props/Clinic_Chair.fbx",
@@ -722,17 +722,17 @@
   "bbox_dev": [
    0.0,
    0.0,
-   -0.19,
+   -0.12,
    -0.0,
    0.0,
    0.0
   ],
-  "bbox_max_dev": 0.19,
+  "bbox_max_dev": 0.12,
   "bbox_new": [
    [
     -5.6,
     0.0,
-    -1.79
+    -1.72
    ],
    [
     5.6,
@@ -740,7 +740,7 @@
     1.6
    ]
   ],
-  "bbox_ok": false,
+  "bbox_ok": true,
   "bbox_old": [
    [
     -5.6,
@@ -754,7 +754,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 22:05",
+  "built_at": "2026-10-04 22:59",
   "category": "props",
   "export_name": "Collection_Showcase",
   "fbx": "export/props/Collection_Showcase.fbx",
@@ -779,10 +779,10 @@
    0.0,
    0.0,
    0.0,
-   -0.0,
+   0.1,
    0.0
   ],
-  "bbox_max_dev": 0.0,
+  "bbox_max_dev": 0.1,
   "bbox_new": [
    [
     -2.0,
@@ -791,7 +791,7 @@
    ],
    [
     2.0,
-    4.1,
+    4.2,
     1.25
    ]
   ],
@@ -809,7 +809,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:24",
+  "built_at": "2026-10-04 22:48",
   "category": "props",
   "export_name": "Computer",
   "fbx": "export/props/Computer.fbx",
@@ -865,7 +865,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:33",
+  "built_at": "2026-10-04 22:54",
   "category": "props",
   "export_name": "Bank Loan",
   "fbx": "export/props/Bank Loan.fbx",
@@ -920,7 +920,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:23",
+  "built_at": "2026-10-04 22:53",
   "category": "props",
   "export_name": "Car Loan",
   "fbx": "export/props/Car Loan.fbx",
@@ -975,7 +975,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:32",
+  "built_at": "2026-10-04 22:53",
   "category": "props",
   "export_name": "Credit Card",
   "fbx": "export/props/Credit Card.fbx",
@@ -1030,7 +1030,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:42",
+  "built_at": "2026-10-04 22:54",
   "category": "props",
   "export_name": "Debt Crate",
   "fbx": "export/props/Debt Crate.fbx",
@@ -1038,9 +1038,9 @@
    "Debt_OtherDebt"
   ],
   "renders": [
-   "renders/objects/Debt_OtherDebt/Debt_OtherDebt_front34.png",
-   "renders/objects/Debt_OtherDebt/Debt_OtherDebt_back34.png",
-   "renders/objects/Debt_OtherDebt/Debt_OtherDebt_eye.png"
+   "renders/objects/Debt_OtherDebt/Debt_OtherDebt_front34.jpg",
+   "renders/objects/Debt_OtherDebt/Debt_OtherDebt_back34.jpg",
+   "renders/objects/Debt_OtherDebt/Debt_OtherDebt_eye.jpg"
   ],
   "round": 0,
   "status": "built",
@@ -1085,7 +1085,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:33",
+  "built_at": "2026-10-04 22:53",
   "category": "props",
   "export_name": "School Loan",
   "fbx": "export/props/School Loan.fbx",
@@ -1106,75 +1106,105 @@
  },
  "Debt_SchoolLoan_books2": {
   "budget": 1500,
-  "built_at": "2026-10-04 21:28",
+  "built_at": "2026-10-04 22:54",
   "category": "props",
   "export_name": "School Loan (2 books)",
   "fbx": "export/props/School Loan (2 books).fbx",
   "meshes": [
    "Debt_SchoolLoan_books2"
   ],
+  "renders": [
+   "renders/objects/Debt_SchoolLoan_books2/Debt_SchoolLoan_books2_front34.jpg",
+   "renders/objects/Debt_SchoolLoan_books2/Debt_SchoolLoan_books2_back34.jpg",
+   "renders/objects/Debt_SchoolLoan_books2/Debt_SchoolLoan_books2_eye.jpg"
+  ],
   "round": 0,
   "status": "built",
+  "strip": "renders/objects/strips/Debt_SchoolLoan_books2.jpg",
   "triangles": 392,
   "tris_ok": true,
   "warnings": []
  },
  "Debt_SchoolLoan_books4": {
   "budget": 1500,
-  "built_at": "2026-10-04 21:28",
+  "built_at": "2026-10-04 22:55",
   "category": "props",
   "export_name": "School Loan (4 books)",
   "fbx": "export/props/School Loan (4 books).fbx",
   "meshes": [
    "Debt_SchoolLoan_books4"
   ],
+  "renders": [
+   "renders/objects/Debt_SchoolLoan_books4/Debt_SchoolLoan_books4_front34.jpg",
+   "renders/objects/Debt_SchoolLoan_books4/Debt_SchoolLoan_books4_back34.jpg",
+   "renders/objects/Debt_SchoolLoan_books4/Debt_SchoolLoan_books4_eye.jpg"
+  ],
   "round": 0,
   "status": "built",
+  "strip": "renders/objects/strips/Debt_SchoolLoan_books4.jpg",
   "triangles": 632,
   "tris_ok": true,
   "warnings": []
  },
  "Debt_SchoolLoan_books5": {
   "budget": 1500,
-  "built_at": "2026-10-04 21:28",
+  "built_at": "2026-10-04 22:55",
   "category": "props",
   "export_name": "School Loan (5 books)",
   "fbx": "export/props/School Loan (5 books).fbx",
   "meshes": [
    "Debt_SchoolLoan_books5"
   ],
+  "renders": [
+   "renders/objects/Debt_SchoolLoan_books5/Debt_SchoolLoan_books5_front34.jpg",
+   "renders/objects/Debt_SchoolLoan_books5/Debt_SchoolLoan_books5_back34.jpg",
+   "renders/objects/Debt_SchoolLoan_books5/Debt_SchoolLoan_books5_eye.jpg"
+  ],
   "round": 0,
   "status": "built",
+  "strip": "renders/objects/strips/Debt_SchoolLoan_books5.jpg",
   "triangles": 752,
   "tris_ok": true,
   "warnings": []
  },
  "Debt_SchoolLoan_books6": {
   "budget": 1500,
-  "built_at": "2026-10-04 21:28",
+  "built_at": "2026-10-04 22:55",
   "category": "props",
   "export_name": "School Loan (6 books)",
   "fbx": "export/props/School Loan (6 books).fbx",
   "meshes": [
    "Debt_SchoolLoan_books6"
   ],
+  "renders": [
+   "renders/objects/Debt_SchoolLoan_books6/Debt_SchoolLoan_books6_front34.jpg",
+   "renders/objects/Debt_SchoolLoan_books6/Debt_SchoolLoan_books6_back34.jpg",
+   "renders/objects/Debt_SchoolLoan_books6/Debt_SchoolLoan_books6_eye.jpg"
+  ],
   "round": 0,
   "status": "built",
+  "strip": "renders/objects/strips/Debt_SchoolLoan_books6.jpg",
   "triangles": 872,
   "tris_ok": true,
   "warnings": []
  },
  "Debt_SchoolLoan_books7": {
   "budget": 1500,
-  "built_at": "2026-10-04 21:28",
+  "built_at": "2026-10-04 22:56",
   "category": "props",
   "export_name": "School Loan (7 books)",
   "fbx": "export/props/School Loan (7 books).fbx",
   "meshes": [
    "Debt_SchoolLoan_books7"
   ],
+  "renders": [
+   "renders/objects/Debt_SchoolLoan_books7/Debt_SchoolLoan_books7_front34.jpg",
+   "renders/objects/Debt_SchoolLoan_books7/Debt_SchoolLoan_books7_back34.jpg",
+   "renders/objects/Debt_SchoolLoan_books7/Debt_SchoolLoan_books7_eye.jpg"
+  ],
   "round": 0,
   "status": "built",
+  "strip": "renders/objects/strips/Debt_SchoolLoan_books7.jpg",
   "triangles": 992,
   "tris_ok": true,
   "warnings": []
@@ -1294,15 +1324,21 @@
  },
  "Dream_ChainSegment": {
   "budget": 1500,
-  "built_at": "2026-10-04 22:09",
+  "built_at": "2026-10-04 23:00",
   "category": "props",
   "export_name": "ChainSegment",
   "fbx": "export/props/ChainSegment.fbx",
   "meshes": [
    "Dream_ChainSegment"
   ],
+  "renders": [
+   "renders/objects/Dream_ChainSegment/Dream_ChainSegment_front34.jpg",
+   "renders/objects/Dream_ChainSegment/Dream_ChainSegment_back34.jpg",
+   "renders/objects/Dream_ChainSegment/Dream_ChainSegment_eye.jpg"
+  ],
   "round": 0,
   "status": "built",
+  "strip": "renders/objects/strips/Dream_ChainSegment.jpg",
   "triangles": 144,
   "tris_ok": true,
   "warnings": []
@@ -1310,7 +1346,7 @@
  "Dream_Chains": {
   "bbox_dev": [
    -0.475,
-   0.03,
+   0.062,
    -0.07,
    0.475,
    -0.475,
@@ -1320,7 +1356,7 @@
   "bbox_new": [
    [
     -4.034,
-    0.03,
+    0.062,
     -7.658
    ],
    [
@@ -1329,7 +1365,7 @@
     8.062
    ]
   ],
-  "bbox_ok": false,
+  "bbox_ok": true,
   "bbox_old": [
    [
     -3.559,
@@ -1343,7 +1379,7 @@
    ]
   ],
   "budget": 8000,
-  "built_at": "2026-10-04 22:08",
+  "built_at": "2026-10-04 23:00",
   "category": "props",
   "export_name": "Dream_Chains",
   "fbx": "export/props/Dream_Chains.fbx",
@@ -1358,21 +1394,27 @@
   "round": 0,
   "status": "built",
   "strip": "renders/objects/strips/Dream_Chains.jpg",
-  "triangles": 8068,
-  "tris_ok": false,
+  "triangles": 6916,
+  "tris_ok": true,
   "warnings": []
  },
  "Dream_Padlock": {
   "budget": 1500,
-  "built_at": "2026-10-04 22:09",
+  "built_at": "2026-10-04 23:01",
   "category": "props",
   "export_name": "Padlock",
   "fbx": "export/props/Padlock.fbx",
   "meshes": [
    "Dream_Padlock"
   ],
+  "renders": [
+   "renders/objects/Dream_Padlock/Dream_Padlock_front34.jpg",
+   "renders/objects/Dream_Padlock/Dream_Padlock_back34.jpg",
+   "renders/objects/Dream_Padlock/Dream_Padlock_eye.jpg"
+  ],
   "round": 0,
   "status": "built",
+  "strip": "renders/objects/strips/Dream_Padlock.jpg",
   "triangles": 292,
   "tris_ok": true,
   "warnings": []
@@ -1413,7 +1455,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 22:05",
+  "built_at": "2026-10-04 22:58",
   "category": "props",
   "export_name": "Dream_Pedestal",
   "fbx": "export/props/Dream_Pedestal.fbx",
@@ -1800,7 +1842,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:27",
+  "built_at": "2026-10-04 22:51",
   "category": "props",
   "export_name": "Garage_TireStack",
   "fbx": "export/props/Garage_TireStack.fbx",
@@ -1910,7 +1952,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:39",
+  "built_at": "2026-10-04 22:49",
   "category": "props",
   "export_name": "HospitalBed",
   "fbx": "export/props/HospitalBed.fbx",
@@ -2020,7 +2062,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:31",
+  "built_at": "2026-10-04 22:52",
   "category": "props",
   "export_name": "Kid",
   "fbx": "export/props/Kid.fbx",
@@ -2075,7 +2117,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:32",
+  "built_at": "2026-10-04 22:52",
   "category": "props",
   "export_name": "Kid (blue)",
   "fbx": "export/props/Kid (blue).fbx",
@@ -2130,7 +2172,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:32",
+  "built_at": "2026-10-04 22:52",
   "category": "props",
   "export_name": "Kid (yellow)",
   "fbx": "export/props/Kid (yellow).fbx",
@@ -2185,7 +2227,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 22:01",
+  "built_at": "2026-10-04 22:56",
   "category": "props",
   "export_name": "Lobby_Bench",
   "fbx": "export/props/Lobby_Bench.fbx",
@@ -2803,7 +2845,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 22:00",
+  "built_at": "2026-10-04 22:56",
   "category": "props",
   "export_name": "Lobby_Trophy",
   "fbx": "export/props/Lobby_Trophy.fbx",
@@ -3026,7 +3068,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 22:02",
+  "built_at": "2026-10-04 22:57",
   "category": "props",
   "export_name": "Lux_GlassTable",
   "fbx": "export/props/Lux_GlassTable.fbx",
@@ -3050,25 +3092,25 @@
   "bbox_dev": [
    0.0,
    0.0,
-   -0.25,
+   -0.1,
    0.0,
-   0.1,
-   -0.0
+   0.0,
+   0.0
   ],
-  "bbox_max_dev": 0.25,
+  "bbox_max_dev": 0.1,
   "bbox_new": [
    [
     -3.0,
     0.0,
-    -2.3
+    -2.15
    ],
    [
     3.0,
-    3.3,
+    3.2,
     2.05
    ]
   ],
-  "bbox_ok": false,
+  "bbox_ok": true,
   "bbox_old": [
    [
     -3.0,
@@ -3082,7 +3124,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 22:04",
+  "built_at": "2026-10-04 22:58",
   "category": "props",
   "export_name": "Lux_Piano",
   "fbx": "export/props/Lux_Piano.fbx",
@@ -3097,7 +3139,7 @@
   "round": 0,
   "status": "built",
   "strip": "renders/objects/strips/Lux_Piano.jpg",
-  "triangles": 232,
+  "triangles": 344,
   "tris_ok": true,
   "warnings": []
  },
@@ -3137,7 +3179,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 22:03",
+  "built_at": "2026-10-04 22:58",
   "category": "props",
   "export_name": "Lux_Safe",
   "fbx": "export/props/Lux_Safe.fbx",
@@ -3192,7 +3234,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 22:01",
+  "built_at": "2026-10-04 22:57",
   "category": "props",
   "export_name": "Lux_Sofa",
   "fbx": "export/props/Lux_Sofa.fbx",
@@ -3639,7 +3681,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:14",
+  "built_at": "2026-10-04 22:44",
   "category": "props",
   "export_name": "Gold Bar",
   "fbx": "export/props/Gold Bar.fbx",
@@ -3694,7 +3736,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:13",
+  "built_at": "2026-10-04 22:44",
   "category": "props",
   "export_name": "Gold Coin",
   "fbx": "export/props/Gold Coin.fbx",
@@ -3709,7 +3751,7 @@
   "round": 0,
   "status": "built",
   "strip": "renders/objects/strips/Maker_GoldCoin.jpg",
-  "triangles": 884,
+  "triangles": 580,
   "tris_ok": true,
   "warnings": []
  },
@@ -3749,7 +3791,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:34",
+  "built_at": "2026-10-04 22:45",
   "category": "props",
   "export_name": "Gold Treasure Chest",
   "fbx": "export/props/Gold Treasure Chest.fbx",
@@ -3915,7 +3957,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:12",
+  "built_at": "2026-10-04 22:42",
   "category": "props",
   "export_name": "Lemonade Stand",
   "fbx": "export/props/Lemonade Stand.fbx",
@@ -3930,7 +3972,7 @@
   "round": 0,
   "status": "built",
   "strip": "renders/objects/strips/Maker_LemonadeStand.jpg",
-  "triangles": 1340,
+  "triangles": 1064,
   "tris_ok": true,
   "warnings": []
  },
@@ -3970,7 +4012,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:12",
+  "built_at": "2026-10-04 22:43",
   "category": "props",
   "export_name": "Mini Golf",
   "fbx": "export/props/Mini Golf.fbx",
@@ -3985,7 +4027,7 @@
   "round": 0,
   "status": "built",
   "strip": "renders/objects/strips/Maker_MiniGolf.jpg",
-  "triangles": 952,
+  "triangles": 828,
   "tris_ok": true,
   "warnings": []
  },
@@ -4081,7 +4123,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:15",
+  "built_at": "2026-10-04 22:45",
   "category": "props",
   "export_name": "PokeBlox Card",
   "fbx": "export/props/PokeBlox Card.fbx",
@@ -4137,7 +4179,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:15",
+  "built_at": "2026-10-04 22:46",
   "category": "props",
   "export_name": "Rare PokeBlox Card",
   "fbx": "export/props/Rare PokeBlox Card.fbx",
@@ -4193,7 +4235,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:16",
+  "built_at": "2026-10-04 22:46",
   "category": "props",
   "export_name": "Rare PokeBlox Card (case 2)",
   "fbx": "export/props/Rare PokeBlox Card (case 2).fbx",
@@ -4249,7 +4291,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:16",
+  "built_at": "2026-10-04 22:47",
   "category": "props",
   "export_name": "Rare PokeBlox Card (case 3)",
   "fbx": "export/props/Rare PokeBlox Card (case 3).fbx",
@@ -4306,7 +4348,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:17",
+  "built_at": "2026-10-04 22:47",
   "category": "props",
   "export_name": "Rare PokeBlox Card (case 4)",
   "fbx": "export/props/Rare PokeBlox Card (case 4).fbx",
@@ -4363,7 +4405,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:17",
+  "built_at": "2026-10-04 22:48",
   "category": "props",
   "export_name": "Shiny PokeBlox Card",
   "fbx": "export/props/Shiny PokeBlox Card.fbx",
@@ -4476,7 +4518,7 @@
    ]
   ],
   "budget": 3000,
-  "built_at": "2026-10-04 21:31",
+  "built_at": "2026-10-04 22:44",
   "category": "props",
   "export_name": "Theme Park",
   "fbx": "export/props/Theme Park.fbx",
@@ -4586,7 +4628,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:51",
+  "built_at": "2026-10-04 22:45",
   "category": "props",
   "export_name": "Unknown Maker",
   "fbx": "export/props/Unknown Maker.fbx",
@@ -4641,7 +4683,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:42",
+  "built_at": "2026-10-04 22:43",
   "category": "props",
   "export_name": "Vending Machine",
   "fbx": "export/props/Vending Machine.fbx",
@@ -4650,9 +4692,9 @@
    "Maker_VendingMachine_Glow_GLOW_COOL"
   ],
   "renders": [
-   "renders/objects/Maker_VendingMachine/Maker_VendingMachine_front34.png",
-   "renders/objects/Maker_VendingMachine/Maker_VendingMachine_back34.png",
-   "renders/objects/Maker_VendingMachine/Maker_VendingMachine_eye.png"
+   "renders/objects/Maker_VendingMachine/Maker_VendingMachine_front34.jpg",
+   "renders/objects/Maker_VendingMachine/Maker_VendingMachine_back34.jpg",
+   "renders/objects/Maker_VendingMachine/Maker_VendingMachine_eye.jpg"
   ],
   "round": 0,
   "status": "built",
@@ -4753,7 +4795,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:50",
+  "built_at": "2026-10-04 22:49",
   "category": "props",
   "export_name": "Pizzeria_Counter",
   "fbx": "export/props/Pizzeria_Counter.fbx",
@@ -4808,7 +4850,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:40",
+  "built_at": "2026-10-04 22:49",
   "category": "props",
   "export_name": "Pizzeria_Oven",
   "fbx": "export/props/Pizzeria_Oven.fbx",
@@ -5031,7 +5073,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 22:08",
+  "built_at": "2026-10-04 23:00",
   "category": "props",
   "export_name": "PodiumRoom_Block",
   "fbx": "export/props/PodiumRoom_Block.fbx",
@@ -5273,27 +5315,27 @@
  },
  "Police_Car": {
   "bbox_dev": [
-   -0.17,
+   -0.12,
    0.0,
    -0.06,
-   0.17,
+   0.12,
    0.05,
    0.06
   ],
-  "bbox_max_dev": 0.17,
+  "bbox_max_dev": 0.12,
   "bbox_new": [
    [
-    -4.17,
+    -4.12,
     0.0,
     -2.46
    ],
    [
-    4.17,
+    4.12,
     4.45,
     2.46
    ]
   ],
-  "bbox_ok": false,
+  "bbox_ok": true,
   "bbox_old": [
    [
     -4.0,
@@ -5307,7 +5349,7 @@
    ]
   ],
   "budget": 4000,
-  "built_at": "2026-10-04 22:17",
+  "built_at": "2026-10-04 23:01",
   "category": "vehicles",
   "export_name": "Police_Car",
   "fbx": "export/vehicles/Police_Car.fbx",
@@ -5420,7 +5462,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:26",
+  "built_at": "2026-10-04 22:50",
   "category": "props",
   "export_name": "School_StudentDesk",
   "fbx": "export/props/School_StudentDesk.fbx",
@@ -5475,7 +5517,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:41",
+  "built_at": "2026-10-04 22:50",
   "category": "props",
   "export_name": "School_TeacherDesk",
   "fbx": "export/props/School_TeacherDesk.fbx",
@@ -6365,7 +6407,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:09",
+  "built_at": "2026-10-04 22:42",
   "category": "props",
   "export_name": "Workplace_Sandbox",
   "fbx": "export/props/Workplace_Sandbox.fbx",
@@ -6380,7 +6422,7 @@
   "round": 0,
   "status": "built",
   "strip": "renders/objects/strips/Workplace_Sandbox.jpg",
-  "triangles": 736,
+  "triangles": 768,
   "tris_ok": true,
   "warnings": []
  },

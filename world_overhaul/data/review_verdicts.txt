@@ -111,3 +111,12 @@ Workplace_Building_POLICE|done|open-front workplace in the job colors: pillars, 
 Workplace_Building_OFFICE|done|open-front workplace in the job colors: pillars, striped awning, big sign, lit side windows, two sign lamps, a roof detail
 Workplace_Building_GARAGE|done|open-front workplace in the job colors: pillars, striped awning, big sign, lit side windows, two sign lamps, a roof detail
 Workplace_Building_FASTTRACK|done|open-front workplace in the job colors: pillars, striped awning, big sign, lit side windows, two sign lamps, a roof detail
+Workplace_Sandbox|done|wooden sandbox with a bucket and a toy
+Debt_SchoolLoan_books2|done|size step: 2 books + cap
+Debt_SchoolLoan_books4|done|size step: 4 books + cap
+Debt_SchoolLoan_books5|done|size step: 5 books + cap
+Debt_SchoolLoan_books6|done|size step: 6 books + cap
+Debt_SchoolLoan_books7|done|size step: 7 books + cap
+Dream_ChainSegment|done|kit piece: two chunky links (3 studs)
+Dream_Padlock|done|kit piece: icon padlock
+Pizzeria_Counter|done|white counter with red and green stripes, a pizza on the green top and a pizza box
