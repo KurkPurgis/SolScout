@@ -102,3 +102,12 @@ City_Wall|done|stone wall with a lighter cap, corner pillars with gold balls
 Workplace_Fence|done|white rounded fence
 Workplace_LampPost|done|steel post with a warm glowing bulb
 Workplace_FlowerBox|done|wooden box with three flower bushes
+Workplace_Building_PIZZERIA|done|open-front workplace in the job colors: pillars, striped awning, big sign, lit side windows, two sign lamps, a roof detail
+Workplace_Building_BUSDEPOT|done|open-front workplace in the job colors: pillars, striped awning, big sign, lit side windows, two sign lamps, a roof detail
+Workplace_Building_HOSPITAL|done|open-front workplace in the job colors: pillars, striped awning, big sign, lit side windows, two sign lamps, a roof detail
+Workplace_Building_CLINIC|done|open-front workplace in the job colors: pillars, striped awning, big sign, lit side windows, two sign lamps, a roof detail
+Workplace_Building_SCHOOL|done|open-front workplace in the job colors: pillars, striped awning, big sign, lit side windows, two sign lamps, a roof detail
+Workplace_Building_POLICE|done|open-front workplace in the job colors: pillars, striped awning, big sign, lit side windows, two sign lamps, a roof detail
+Workplace_Building_OFFICE|done|open-front workplace in the job colors: pillars, striped awning, big sign, lit side windows, two sign lamps, a roof detail
+Workplace_Building_GARAGE|done|open-front workplace in the job colors: pillars, striped awning, big sign, lit side windows, two sign lamps, a roof detail
+Workplace_Building_FASTTRACK|done|open-front workplace in the job colors: pillars, striped awning, big sign, lit side windows, two sign lamps, a roof detail

@@ -257,7 +257,7 @@
    ]
   ],
   "budget": 6000,
-  "built_at": "2026-10-04 21:55",
+  "built_at": "2026-10-04 22:38",
   "category": "buildings",
   "export_name": "AuctionRoom_Shell",
   "fbx": "export/buildings/AuctionRoom_Shell.fbx",
@@ -274,18 +274,7 @@
   "strip": "renders/objects/strips/AuctionRoom_Shell.jpg",
   "triangles": 1752,
   "tris_ok": true,
-  "warnings": [
-   "coplanar -z faces: [BRICK (0, 12.0, -25)] and [BRICK (-32, 12.0, 0)]",
-   "coplanar +z faces: [BRICK (0, 12.0, -25)] and [BRICK (-32, 12.0, 0)]",
-   "coplanar -z faces: [BRICK (0, 12.0, -25)] and [BRICK (32, 12.0, 0)]",
-   "coplanar +z faces: [BRICK (0, 12.0, -25)] and [BRICK (32, 12.0, 0)]",
-   "coplanar -z faces: [BRICK (0, 12.0, 25)] and [BRICK (-32, 12.0, 0)]",
-   "coplanar +z faces: [BRICK (0, 12.0, 25)] and [BRICK (-32, 12.0, 0)]",
-   "coplanar -z faces: [BRICK (0, 12.0, 25)] and [BRICK (32, 12.0, 0)]",
-   "coplanar +z faces: [BRICK (0, 12.0, 25)] and [BRICK (32, 12.0, 0)]",
-   "coplanar -z faces: [GOLD (0, 5.2, -24.35)] and [GOLD (-31.35, 5.2, 0)]",
-   "coplanar +z faces: [GOLD (0, 5.2, -24.35)] and [GOLD (-31.35, 5.2, 0)]"
-  ]
+  "warnings": []
  },
  "AuctionRoom_Stage": {
   "bbox_dev": [
@@ -1282,7 +1271,7 @@
    ]
   ],
   "budget": 6000,
-  "built_at": "2026-10-04 21:20",
+  "built_at": "2026-10-04 22:32",
   "category": "buildings",
   "export_name": "BeachVilla",
   "fbx": "export/buildings/BeachVilla.fbx",
@@ -2472,7 +2461,7 @@
    ]
   ],
   "budget": 6000,
-  "built_at": "2026-10-04 21:52",
+  "built_at": "2026-10-04 22:38",
   "category": "buildings",
   "export_name": "Lobby_RoomBooth",
   "fbx": "export/buildings/Lobby_RoomBooth.fbx",
@@ -2492,10 +2481,7 @@
   "strip": "renders/objects/strips/Lobby_RoomBooth.jpg",
   "triangles": 1440,
   "tris_ok": true,
-  "warnings": [
-   "coplanar -z faces: [RED (0, 15.3, 9.02)] and [WHITE (0, 15.3, -10.2)]",
-   "coplanar +z faces: [RED (0, 15.3, 9.02)] and [WHITE (0, 15.3, -10.2)]"
-  ]
+  "warnings": []
  },
  "Lobby_RoomBooth_v2": {
   "bbox_dev": [
@@ -2533,7 +2519,7 @@
    ]
   ],
   "budget": 6000,
-  "built_at": "2026-10-04 21:53",
+  "built_at": "2026-10-04 22:39",
   "category": "buildings",
   "export_name": "Lobby_RoomBooth_v2",
   "fbx": "export/buildings/Lobby_RoomBooth_v2.fbx",
@@ -2553,10 +2539,7 @@
   "strip": "renders/objects/strips/Lobby_RoomBooth_v2.jpg",
   "triangles": 1440,
   "tris_ok": true,
-  "warnings": [
-   "coplanar -z faces: [BLUE (0, 15.3, 9.02)] and [WHITE (0, 15.3, -10.2)]",
-   "coplanar +z faces: [BLUE (0, 15.3, 9.02)] and [WHITE (0, 15.3, -10.2)]"
-  ]
+  "warnings": []
  },
  "Lobby_RoomBooth_v3": {
   "bbox_dev": [
@@ -2594,7 +2577,7 @@
    ]
   ],
   "budget": 6000,
-  "built_at": "2026-10-04 21:53",
+  "built_at": "2026-10-04 22:39",
   "category": "buildings",
   "export_name": "Lobby_RoomBooth_v3",
   "fbx": "export/buildings/Lobby_RoomBooth_v3.fbx",
@@ -2614,10 +2597,7 @@
   "strip": "renders/objects/strips/Lobby_RoomBooth_v3.jpg",
   "triangles": 1440,
   "tris_ok": true,
-  "warnings": [
-   "coplanar -z faces: [GREEN (0, 15.3, 9.02)] and [WHITE (0, 15.3, -10.2)]",
-   "coplanar +z faces: [GREEN (0, 15.3, 9.02)] and [WHITE (0, 15.3, -10.2)]"
-  ]
+  "warnings": []
  },
  "Lobby_RoomBooth_v4": {
   "bbox_dev": [
@@ -2655,7 +2635,7 @@
    ]
   ],
   "budget": 6000,
-  "built_at": "2026-10-04 21:54",
+  "built_at": "2026-10-04 22:40",
   "category": "buildings",
   "export_name": "Lobby_RoomBooth_v4",
   "fbx": "export/buildings/Lobby_RoomBooth_v4.fbx",
@@ -2675,10 +2655,7 @@
   "strip": "renders/objects/strips/Lobby_RoomBooth_v4.jpg",
   "triangles": 1440,
   "tris_ok": true,
-  "warnings": [
-   "coplanar -z faces: [GOLD (0, 15.3, 9.02)] and [WHITE (0, 15.3, -10.2)]",
-   "coplanar +z faces: [GOLD (0, 15.3, 9.02)] and [WHITE (0, 15.3, -10.2)]"
-  ]
+  "warnings": []
  },
  "Lobby_Spawn": {
   "bbox_dev": [
@@ -2882,7 +2859,7 @@
    ]
   ],
   "budget": 6000,
-  "built_at": "2026-10-04 21:54",
+  "built_at": "2026-10-04 22:37",
   "category": "buildings",
   "export_name": "Lobby_Walls",
   "fbx": "export/buildings/Lobby_Walls.fbx",
@@ -2899,18 +2876,7 @@
   "strip": "renders/objects/strips/Lobby_Walls.jpg",
   "triangles": 896,
   "tris_ok": true,
-  "warnings": [
-   "coplanar -x faces: [NAVY (0, 13.0, -49)] and [NAVY (-73, 13.0, 0)]",
-   "coplanar +y faces: [NAVY (0, 13.0, -49)] and [NAVY (-73, 13.0, 0)]",
-   "coplanar +z faces: [NAVY (0, 13.0, -49)] and [NAVY (-73, 13.0, 0)]",
-   "coplanar +x faces: [NAVY (0, 13.0, -49)] and [NAVY (73, 13.0, 0)]",
-   "coplanar +y faces: [NAVY (0, 13.0, -49)] and [NAVY (73, 13.0, 0)]",
-   "coplanar +z faces: [NAVY (0, 13.0, -49)] and [NAVY (73, 13.0, 0)]",
-   "coplanar -x faces: [GOLD (0, 26.5, -49)] and [GOLD (-73, 26.5, 0)]",
-   "coplanar +y faces: [GOLD (0, 26.5, -49)] and [GOLD (-73, 26.5, 0)]",
-   "coplanar -z faces: [GOLD (0, 26.5, -49)] and [GOLD (-73, 26.5, 0)]",
-   "coplanar +z faces: [GOLD (0, 26.5, -49)] and [GOLD (-73, 26.5, 0)]"
-  ]
+  "warnings": []
  },
  "Lobby_Window": {
   "bbox_dev": [
@@ -2948,7 +2914,7 @@
    ]
   ],
   "budget": 6000,
-  "built_at": "2026-10-04 21:55",
+  "built_at": "2026-10-04 22:37",
   "category": "buildings",
   "export_name": "Lobby_Window",
   "fbx": "export/buildings/Lobby_Window.fbx",
@@ -2964,16 +2930,9 @@
   "round": 0,
   "status": "built",
   "strip": "renders/objects/strips/Lobby_Window.jpg",
-  "triangles": 136,
+  "triangles": 148,
   "tris_ok": true,
-  "warnings": [
-   "coplanar -z faces: [SKY (0.25, 5.0, 0)] and [WHITE (0.3, 5.0, 0)]",
-   "coplanar +z faces: [SKY (0.25, 5.0, 0)] and [WHITE (0.3, 5.0, 0)]",
-   "coplanar -y faces: [SKY (0.25, 5.0, 0)] and [WHITE (0.3, 5.0, 0)]",
-   "coplanar +y faces: [SKY (0.25, 5.0, 0)] and [WHITE (0.3, 5.0, 0)]",
-   "coplanar -x faces: [WHITE (0.3, 5.0, 0)] and [WHITE (0.3, 5.0, 0)]",
-   "coplanar +x faces: [WHITE (0.3, 5.0, 0)] and [WHITE (0.3, 5.0, 0)]"
-  ]
+  "warnings": []
  },
  "Lux_Chandelier": {
   "bbox_dev": [
@@ -3288,7 +3247,7 @@
    ]
   ],
   "budget": 6000,
-  "built_at": "2026-10-04 21:44",
+  "built_at": "2026-10-04 22:33",
   "category": "buildings",
   "export_name": "Apartment",
   "fbx": "export/buildings/Apartment.fbx",
@@ -3344,7 +3303,7 @@
    ]
   ],
   "budget": 6000,
-  "built_at": "2026-10-04 21:49",
+  "built_at": "2026-10-04 22:36",
   "category": "buildings",
   "export_name": "Apartment Building",
   "fbx": "export/buildings/Apartment Building.fbx",
@@ -3400,7 +3359,7 @@
    ]
   ],
   "budget": 6000,
-  "built_at": "2026-10-04 21:47",
+  "built_at": "2026-10-04 22:35",
   "category": "buildings",
   "export_name": "Bowling Alley",
   "fbx": "export/buildings/Bowling Alley.fbx",
@@ -3456,7 +3415,7 @@
    ]
   ],
   "budget": 6000,
-  "built_at": "2026-10-04 21:44",
+  "built_at": "2026-10-04 22:33",
   "category": "buildings",
   "export_name": "Car Wash",
   "fbx": "export/buildings/Car Wash.fbx",
@@ -3512,7 +3471,7 @@
    ]
   ],
   "budget": 6000,
-  "built_at": "2026-10-04 21:47",
+  "built_at": "2026-10-04 22:34",
   "category": "buildings",
   "export_name": "Coffee Shop",
   "fbx": "export/buildings/Coffee Shop.fbx",
@@ -3624,7 +3583,7 @@
    ]
   ],
   "budget": 6000,
-  "built_at": "2026-10-04 21:48",
+  "built_at": "2026-10-04 22:35",
   "category": "buildings",
   "export_name": "Game Studio",
   "fbx": "export/buildings/Game Studio.fbx",
@@ -3640,7 +3599,7 @@
   "round": 0,
   "status": "built",
   "strip": "renders/objects/strips/Maker_GameStudio.jpg",
-  "triangles": 1380,
+  "triangles": 1424,
   "tris_ok": true,
   "warnings": []
  },
@@ -3845,7 +3804,7 @@
    ]
   ],
   "budget": 6000,
-  "built_at": "2026-10-04 21:49",
+  "built_at": "2026-10-04 22:35",
   "category": "buildings",
   "export_name": "Hotel",
   "fbx": "export/buildings/Hotel.fbx",
@@ -3901,7 +3860,7 @@
    ]
   ],
   "budget": 6000,
-  "built_at": "2026-10-04 21:46",
+  "built_at": "2026-10-04 22:34",
   "category": "buildings",
   "export_name": "House to Rent",
   "fbx": "export/buildings/House to Rent.fbx",
@@ -4066,7 +4025,7 @@
    ]
   ],
   "budget": 6000,
-  "built_at": "2026-10-04 21:49",
+  "built_at": "2026-10-04 22:37",
   "category": "buildings",
   "export_name": "Pizza Restaurant",
   "fbx": "export/buildings/Pizza Restaurant.fbx",
@@ -4462,7 +4421,7 @@
    ]
   ],
   "budget": 6000,
-  "built_at": "2026-10-04 21:48",
+  "built_at": "2026-10-04 22:36",
   "category": "buildings",
   "export_name": "Shopping Mall",
   "fbx": "export/buildings/Shopping Mall.fbx",
@@ -4572,7 +4531,7 @@
    ]
   ],
   "budget": 6000,
-  "built_at": "2026-10-04 21:47",
+  "built_at": "2026-10-04 22:33",
   "category": "buildings",
   "export_name": "Toy Shop",
   "fbx": "export/buildings/Toy Shop.fbx",
@@ -5238,7 +5197,7 @@
    ]
   ],
   "budget": 6000,
-  "built_at": "2026-10-04 21:56",
+  "built_at": "2026-10-04 22:38",
   "category": "buildings",
   "export_name": "PodiumRoom_Shell",
   "fbx": "export/buildings/PodiumRoom_Shell.fbx",
@@ -5255,10 +5214,7 @@
   "strip": "renders/objects/strips/PodiumRoom_Shell.jpg",
   "triangles": 916,
   "tris_ok": true,
-  "warnings": [
-   "coplanar -x faces: [NAVY (0, -0.5, 5)] and [INK (0, 16.0, -20)]",
-   "coplanar +x faces: [NAVY (0, -0.5, 5)] and [INK (0, 16.0, -20)]"
-  ]
+  "warnings": []
  },
  "PodiumRoom_TitleSign": {
   "bbox_dev": [
@@ -5709,21 +5665,21 @@
   "bbox_dev": [
    0.0,
    0.0,
-   0.0,
+   0.023,
    -0.0,
-   0.04,
+   0.09,
    -0.0
   ],
-  "bbox_max_dev": 0.04,
+  "bbox_max_dev": 0.09,
   "bbox_new": [
    [
     -24.8,
     -1.0,
-    2.5
+    2.523
    ],
    [
     24.8,
-    18.44,
+    18.49,
     24.8
    ]
   ],
@@ -5741,7 +5697,7 @@
    ]
   ],
   "budget": 6000,
-  "built_at": "2026-10-04 20:59",
+  "built_at": "2026-10-04 22:32",
   "category": "buildings",
   "export_name": "Workplace_Building_FASTTRACK",
   "fbx": "export/buildings/Workplace_Building_FASTTRACK.fbx",
@@ -5757,7 +5713,7 @@
   "round": 0,
   "status": "built",
   "strip": "renders/objects/strips/Workplace_Building_FASTTRACK.jpg",
-  "triangles": 5348,
+  "triangles": 5260,
   "tris_ok": true,
   "warnings": []
  },
