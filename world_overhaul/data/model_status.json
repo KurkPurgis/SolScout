@@ -1999,6 +1999,61 @@
   "tris_ok": true,
   "warnings": []
  },
+ "Lobby_Floor": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.03,
+   0.0
+  ],
+  "bbox_max_dev": 0.03,
+  "bbox_new": [
+   [
+    -74.0,
+    0.0,
+    -50.0
+   ],
+   [
+    74.0,
+    1.03,
+    50.0
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -74.0,
+    0.0,
+    -50.0
+   ],
+   [
+    74.0,
+    1.0,
+    50.0
+   ]
+  ],
+  "budget": 6000,
+  "built_at": "2026-10-04 22:10",
+  "category": "ground",
+  "export_name": "Lobby_Floor",
+  "fbx": "export/ground/Lobby_Floor.fbx",
+  "meshes": [
+   "Lobby_Floor"
+  ],
+  "renders": [
+   "renders/objects/Lobby_Floor/Lobby_Floor_front34.jpg",
+   "renders/objects/Lobby_Floor/Lobby_Floor_back34.jpg",
+   "renders/objects/Lobby_Floor/Lobby_Floor_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Lobby_Floor.jpg",
+  "triangles": 2596,
+  "tris_ok": true,
+  "warnings": []
+ },
  "Lobby_Pillar": {
   "bbox_dev": [
    0.0,
