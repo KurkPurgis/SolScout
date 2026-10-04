@@ -29,8 +29,9 @@ def dream_private_island(m):
     import math
     # water rings and a fat two-tier sand island (flat top at 3, where everything stands)
     m.cyl(25, 0.6, (0, 0, 0), "WATER", bevel="M", bottom=True, verts=32)
-    m.cyl(20, 0.66, (0, 0, 0), "SKY", bevel="M", bottom=True, verts=32)
-    m.cyl(17, 2.0, (0, 0, 0), "SAND", bevel="XL", bottom=True, verts=28)
+    # each ring starts a little higher: the island floats, so its underside is seen (no shared bottom faces)
+    m.cyl(20, 0.64, (0, 0.02, 0), "SKY", bevel="M", bottom=True, verts=32)
+    m.cyl(17, 1.96, (0, 0.04, 0), "SAND", bevel="XL", bottom=True, verts=28)
     m.cyl(13.5, 1.0, (0, 2.0, 0), "SAND", bevel="L", bottom=True, verts=24)
     m.cyl(8, 0.4, (-3, 3.0, 2), "GRASS", bevel="S", bottom=True, verts=24)
     for a, d in ((0, 3.5), (70, 2.4), (150, 3.0), (215, 2.2), (290, 2.8)):
@@ -58,7 +59,7 @@ def dream_private_island(m):
     m.box((11, 0.35, 3), (20.5, 1.45, -2), "WOOD", bevel="S", bottom=True)
     for i in range(3):
         for z in (-3.4, -0.6):
-            m.cyl(0.22, 2.2, (17 + i * 4, 0.0, z), "WOOD_DARK", bevel="XS", bottom=True, verts=8)
+            m.cyl(0.22, 2.14, (17 + i * 4, 0.06, z), "WOOD_DARK", bevel="XS", bottom=True, verts=8)
     bx, bz = 25, 2.2
     m.box((2.6, 1.0, 4), (bx, 0.4, bz + 0.5), "WHITE", bevel="M", bottom=True)
     m.prism([(bx - 1.3, bz - 1.5), (bx + 1.3, bz - 1.5), (bx, bz - 3.5)], 1.0, (0, 0.4, 0), "WHITE", plane="XZ",
@@ -79,7 +80,7 @@ def dream_private_island(m):
 
 
 MODELS["Dream_PrivateIsland"] = {"build": dream_private_island, "export": "PrivateIsland",
-                                 "mesh_name": "PrivateIsland", "budget": 6000}
+                                 "mesh_name": "PrivateIsland", "budget": 6000, "floats": True}
 
 
 def lobby_potted_palm(m):

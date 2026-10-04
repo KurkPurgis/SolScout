@@ -90,6 +90,7 @@ class Model:
         self.R = Matrix.Identity(3)  # sub-assembly rotation (Roblox space)
         self.t = Vector((0, 0, 0))  # sub-assembly offset (Roblox space)
         self.boxes = []  # axis-aligned boxes (Blender space) for the coplanar-face check
+        self.caps = []  # flat caps of upright cylinders (Blender space) for the same check
 
     # ------------------------------------------------------------------ helpers
     def _group(self, glow=None, glass=False):
@@ -197,14 +198,42 @@ class Model:
             self.boxes.append((c - half, c + half, key, "%s %s" % (swatch, tuple(round(v, 2) for v in pos)), bw))
         self._add(bm, m, swatch, smooth, glow, glass)
 
-    def coplanar_faces(self, tol=0.004, min_area=0.02):
+    def coplanar_faces(self, tol=0.004, min_area=0.02, include_floor=False):
         """Two boxes whose faces lie on the same plane, facing the same way, and overlap: the renderer cannot
         tell which is in front (z-fighting: flicker in Roblox, black specks in renders). Bottom faces on the
         model's lowest level are ignored (nobody sees them)."""
         out = []
-        if not self.boxes:
+        if not self.boxes and not self.caps:
             return out
-        floor = min(b[0].z for b in self.boxes)
+        floor = min([b[0].z for b in self.boxes] + [c[0] for c in self.caps])
+        lowest = floor
+        if include_floor:  # floating models (dreams): their bottom is seen from below
+            floor = -1e9
+        # flat cylinder caps against caps and against box tops/bottoms (circles shrunk by their bevel)
+        import math as _math
+        discs = [(c[0], "-", c[2], c[3], c[4] - c[8], c[6], c[7]) for c in self.caps] + \
+                [(c[1], "+", c[2], c[3], c[5] - c[8], c[6], c[7]) for c in self.caps]
+        for i in range(len(discs)):
+            z1, s1, x1, y1, r1, k1, n1 = discs[i]
+            if r1 <= 0.05:
+                continue
+            if s1 == "-" and not (include_floor and abs(z1 - lowest) < tol):
+                continue  # a cap's underside rests on something (hidden), except the bottom of a floating model
+            for j in range(i + 1, len(discs)):
+                z2, s2, x2, y2, r2, k2, n2 = discs[j]
+                if s1 != s2 or abs(z1 - z2) >= tol or r2 <= 0.05 or n1 == n2:
+                    continue
+                if _math.hypot(x1 - x2, y1 - y2) < r1 + r2 - 0.1:
+                    out.append("coplanar %sz caps: [%s] and [%s]" % (s1, n1, n2))
+            for lo, hi, kb, nb, bwb in self.boxes:
+                z = lo.z if s1 == "-" else hi.z
+                if abs(z - z1) >= tol:
+                    continue
+                # closest point of the (bevel-shrunk) box rectangle to the disc center
+                qx = min(max(x1, lo.x + bwb), hi.x - bwb)
+                qy = min(max(y1, lo.y + bwb), hi.y - bwb)
+                if hi.x - lo.x > 2 * bwb and hi.y - lo.y > 2 * bwb and _math.hypot(qx - x1, qy - y1) < r1 - 0.1:
+                    out.append("coplanar %sz cap/box: [%s] and [%s]" % (s1, n1, nb))
         for i in range(len(self.boxes)):
             lo1, hi1, k1, n1, b1 = self.boxes[i]
             for j in range(i + 1, len(self.boxes)):
@@ -252,7 +281,18 @@ class Model:
         rims = [e for e in bm.edges if len(e.link_faces) == 2 and e.calc_face_angle(0) > math.radians(40)]
         smooth = set(sides) | self._bevel(bm, min(radius, rt, length / 2) * 2 if rt > 0 else length, bevel, edges=rims)
         smooth = {f for f in bm.faces if f in smooth or len(f.verts) != verts}
-        self._add(bm, self._matrix(pos, rot), swatch, smooth, glow, glass)
+        m = self._matrix(pos, rot)
+        up = (m.to_3x3() @ turn) @ Vector((0, 0, 1))
+        if abs(up.z) > 0.999:
+            bw = 0.0
+            if bevel:
+                bw = min(BEVEL[bevel] if isinstance(bevel, str) else float(bevel), min(radius, rt, length / 2) * 0.9)
+            c = m.translation
+            lo_r, hi_r = (radius, rt) if up.z > 0 else (rt, radius)
+            key = swatch + ("|glow" if glow else "") + ("|glass" if glass else "")
+            self.caps.append((c.z - length / 2, c.z + length / 2, c.x, c.y, lo_r, hi_r, key,
+                              "%s cyl %s" % (swatch, tuple(round(v, 2) for v in pos)), bw))
+        self._add(bm, m, swatch, smooth, glow, glass)
 
     def sphere(self, radius, pos, swatch, scale=(1, 1, 1), rot=None, segs=16, rings=10, glow=None, glass=False):
         if radius * 2 * min(scale) < MIN_THICK - 1e-6:

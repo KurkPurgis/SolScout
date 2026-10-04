@@ -54,7 +54,7 @@ def plaza_fountain(m):
         x, z = r * math.cos(math.radians(a)), r * math.sin(math.radians(a))
         m.cyl(0.42, 0.3, (x, 1.22, z), "GOLD", bevel="XS", bottom=True, verts=12)
     m.cyl(1.25, 0.7, (0, 1.25, 0), "STONE_DARK", bevel="S", bottom=True, verts=16)
-    m.cyl(0.85, 4.0, (0, 1.9, 0), "STONE", bevel="S", bottom=True, verts=16, radius_top=0.7)
+    m.cyl(0.85, 3.8, (0, 1.9, 0), "STONE", bevel="S", bottom=True, verts=16, radius_top=0.7)  # ends inside the bowl
     m.cyl(2.2, 0.9, (0, 5.0, 0), "STONE", bevel="M", bottom=True, verts=24, radius_top=3.0)
     m.cyl(2.5, 0.3, (0, 5.62, 0), "WATER", glass=True, bevel="XS", bottom=True, verts=24)
     m.sphere(1.5, (0, 7.5, 0), "GLOW_COOL", glow="GLOW_COOL", segs=16, rings=10)
@@ -162,7 +162,7 @@ def lobby_pillar(m):
     m.box((4.0, 1.0, 4.0), (-0.3, 24.5, 0), "GOLD", bevel="M", bottom=True)
     m.box((3.4, 0.5, 3.4), (-0.3, 25.5, 0), "CREAM", bevel="S", bottom=True)
     # wall lamp: a gold arm and cup with a glowing bulb (detail)
-    m.box((0.6, 0.4, 0.4), (1.1, 10.55, 0), "GOLD", bevel="XS", bottom=True)
+    m.box((0.6, 0.3, 0.4), (1.1, 10.6, 0), "GOLD", bevel="XS", bottom=True)
     m.cyl(0.45, 0.4, (1.6, 10.55, 0), "GOLD", bevel="XS", bottom=True, verts=10, radius_top=0.55)
     m.sphere(0.7, (1.6, 11.5, 0), "GLOW_WARM", glow="GLOW_WARM", segs=12, rings=8)
 

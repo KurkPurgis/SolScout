@@ -112,7 +112,7 @@ def main():
         for obj in objs:
             obj["template"] = name
         tris = m.triangles()
-        m.warnings.extend(m.coplanar_faces())
+        m.warnings.extend(m.coplanar_faces(include_floor=spec.get("floats", False)))
         status = load_status()  # fresh: review verdicts may have been written while this job ran
         entry = status.get(name, {})
         budget = spec.get("budget", BUDGET[category])

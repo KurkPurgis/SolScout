@@ -23,7 +23,7 @@ for category in (args or CATEGORIES):
     for name, spec in module.MODELS.items():
         m = kit.Model(spec.get("mesh_name", name))
         spec["build"](m)
-        problems = m.coplanar_faces() + m.warnings
+        problems = m.coplanar_faces(include_floor=spec.get("floats", False)) + m.warnings
         count += 1
         if problems:
             total += len(problems)

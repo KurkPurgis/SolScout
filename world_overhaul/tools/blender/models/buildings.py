@@ -157,7 +157,8 @@ def dream_beach_villa(m):
         parts.bush(m, (x, top + 1.7, z), 0.9, "LEAF")
 
 
-MODELS["Dream_BeachVilla"] = {"build": dream_beach_villa, "export": "BeachVilla", "mesh_name": "BeachVilla"}
+MODELS["Dream_BeachVilla"] = {"build": dream_beach_villa, "export": "BeachVilla", "mesh_name": "BeachVilla",
+                             "floats": True}  # dreams float above the plot: the bottom is seen
 
 
 from models.props import BUILDING_MAKERS  # noqa: E402

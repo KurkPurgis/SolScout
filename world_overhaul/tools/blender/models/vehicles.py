@@ -197,9 +197,9 @@ def dream_private_jet(m):
 
 
 MODELS = {
-    "Dream_Supercar": {"build": dream_supercar, "export": "Supercar", "mesh_name": "Supercar"},
-    "Dream_Yacht": {"build": dream_yacht, "export": "Yacht", "mesh_name": "Yacht"},
-    "Dream_PrivateJet": {"build": dream_private_jet, "export": "PrivateJet", "mesh_name": "PrivateJet"},
+    "Dream_Supercar": {"build": dream_supercar, "export": "Supercar", "mesh_name": "Supercar", "floats": True},
+    "Dream_Yacht": {"build": dream_yacht, "export": "Yacht", "mesh_name": "Yacht", "floats": True},
+    "Dream_PrivateJet": {"build": dream_private_jet, "export": "PrivateJet", "mesh_name": "PrivateJet", "floats": True},
 }
 
 
