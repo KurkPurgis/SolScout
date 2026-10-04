@@ -110,6 +110,61 @@
   "tris_ok": true,
   "warnings": []
  },
+ "AuctionRoom_InfoBoard": {
+  "bbox_dev": [
+   0.05,
+   -0.05,
+   -0.31,
+   -0.05,
+   0.05,
+   -0.06
+  ],
+  "bbox_max_dev": 0.31,
+  "bbox_new": [
+   [
+    -21.95,
+    -0.05,
+    -0.51
+   ],
+   [
+    21.95,
+    8.05,
+    0.14
+   ]
+  ],
+  "bbox_ok": false,
+  "bbox_old": [
+   [
+    -22.0,
+    0.0,
+    -0.2
+   ],
+   [
+    22.0,
+    8.0,
+    0.2
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 22:14",
+  "category": "signs",
+  "export_name": "AuctionRoom_InfoBoard",
+  "fbx": "export/signs/AuctionRoom_InfoBoard.fbx",
+  "meshes": [
+   "AuctionRoom_InfoBoard"
+  ],
+  "renders": [
+   "renders/objects/AuctionRoom_InfoBoard/AuctionRoom_InfoBoard_front34.jpg",
+   "renders/objects/AuctionRoom_InfoBoard/AuctionRoom_InfoBoard_back34.jpg",
+   "renders/objects/AuctionRoom_InfoBoard/AuctionRoom_InfoBoard_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/AuctionRoom_InfoBoard.jpg",
+  "triangles": 360,
+  "tris_ok": true,
+  "warnings": []
+ },
  "AuctionRoom_Lamp": {
   "bbox_dev": [
    0.0,
@@ -285,6 +340,61 @@
   "status": "built",
   "strip": "renders/objects/strips/AuctionRoom_Stage.jpg",
   "triangles": 336,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "AuctionRoom_TitleSign": {
+  "bbox_dev": [
+   0.05,
+   -0.05,
+   -0.31,
+   -0.05,
+   0.05,
+   -0.06
+  ],
+  "bbox_max_dev": 0.31,
+  "bbox_new": [
+   [
+    -14.95,
+    -0.05,
+    -0.51
+   ],
+   [
+    14.95,
+    4.05,
+    0.14
+   ]
+  ],
+  "bbox_ok": false,
+  "bbox_old": [
+   [
+    -15.0,
+    0.0,
+    -0.2
+   ],
+   [
+    15.0,
+    4.0,
+    0.2
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 22:14",
+  "category": "signs",
+  "export_name": "AuctionRoom_TitleSign",
+  "fbx": "export/signs/AuctionRoom_TitleSign.fbx",
+  "meshes": [
+   "AuctionRoom_TitleSign"
+  ],
+  "renders": [
+   "renders/objects/AuctionRoom_TitleSign/AuctionRoom_TitleSign_front34.jpg",
+   "renders/objects/AuctionRoom_TitleSign/AuctionRoom_TitleSign_back34.jpg",
+   "renders/objects/AuctionRoom_TitleSign/AuctionRoom_TitleSign_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/AuctionRoom_TitleSign.jpg",
+  "triangles": 360,
   "tris_ok": true,
   "warnings": []
  },
@@ -1481,7 +1591,7 @@
    ]
   ],
   "budget": 4000,
-  "built_at": "2026-10-04 21:51",
+  "built_at": "2026-10-04 22:15",
   "category": "vehicles",
   "export_name": "Supercar",
   "fbx": "export/vehicles/Supercar.fbx",
@@ -1537,7 +1647,7 @@
    ]
   ],
   "budget": 4000,
-  "built_at": "2026-10-04 21:19",
+  "built_at": "2026-10-04 22:16",
   "category": "vehicles",
   "export_name": "Yacht",
   "fbx": "export/vehicles/Yacht.fbx",
@@ -1554,9 +1664,7 @@
   "strip": "renders/objects/strips/Dream_Yacht.jpg",
   "triangles": 3856,
   "tris_ok": true,
-  "warnings": [
-   "thin torus r=0.13 at (0, 10.6, 2.0)"
-  ]
+  "warnings": []
  },
  "FastTrack_Gate": {
   "bbox_dev": [
@@ -2626,6 +2734,61 @@
   "status": "built",
   "strip": "renders/objects/strips/Lobby_Spawn.jpg",
   "triangles": 608,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Lobby_TitleSign": {
+  "bbox_dev": [
+   0.1,
+   0.0,
+   -0.31,
+   -0.1,
+   0.0,
+   -0.06
+  ],
+  "bbox_max_dev": 0.31,
+  "bbox_new": [
+   [
+    -34.9,
+    0.0,
+    -0.51
+   ],
+   [
+    34.9,
+    7.0,
+    0.14
+   ]
+  ],
+  "bbox_ok": false,
+  "bbox_old": [
+   [
+    -35.0,
+    0.0,
+    -0.2
+   ],
+   [
+    35.0,
+    7.0,
+    0.2
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 22:13",
+  "category": "signs",
+  "export_name": "Lobby_TitleSign",
+  "fbx": "export/signs/Lobby_TitleSign.fbx",
+  "meshes": [
+   "Lobby_TitleSign"
+  ],
+  "renders": [
+   "renders/objects/Lobby_TitleSign/Lobby_TitleSign_front34.jpg",
+   "renders/objects/Lobby_TitleSign/Lobby_TitleSign_back34.jpg",
+   "renders/objects/Lobby_TitleSign/Lobby_TitleSign_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Lobby_TitleSign.jpg",
+  "triangles": 360,
   "tris_ok": true,
   "warnings": []
  },
@@ -4930,6 +5093,61 @@
   "tris_ok": true,
   "warnings": []
  },
+ "PodiumRoom_Board": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   0.06,
+   0.0,
+   0.0,
+   0.31
+  ],
+  "bbox_max_dev": 0.31,
+  "bbox_new": [
+   [
+    -8.0,
+    0.0,
+    -0.14
+   ],
+   [
+    8.0,
+    18.0,
+    0.51
+   ]
+  ],
+  "bbox_ok": false,
+  "bbox_old": [
+   [
+    -8.0,
+    0.0,
+    -0.2
+   ],
+   [
+    8.0,
+    18.0,
+    0.2
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 22:15",
+  "category": "signs",
+  "export_name": "PodiumRoom_Board",
+  "fbx": "export/signs/PodiumRoom_Board.fbx",
+  "meshes": [
+   "PodiumRoom_Board"
+  ],
+  "renders": [
+   "renders/objects/PodiumRoom_Board/PodiumRoom_Board_front34.jpg",
+   "renders/objects/PodiumRoom_Board/PodiumRoom_Board_back34.jpg",
+   "renders/objects/PodiumRoom_Board/PodiumRoom_Board_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/PodiumRoom_Board.jpg",
+  "triangles": 216,
+  "tris_ok": true,
+  "warnings": []
+ },
  "PodiumRoom_LightStrip": {
   "bbox_dev": [
    -0.0,
@@ -5043,6 +5261,61 @@
    "coplanar -x faces: [NAVY (0, -0.5, 5)] and [INK (0, 16.0, -20)]",
    "coplanar +x faces: [NAVY (0, -0.5, 5)] and [INK (0, 16.0, -20)]"
   ]
+ },
+ "PodiumRoom_TitleSign": {
+  "bbox_dev": [
+   0.05,
+   -0.05,
+   -0.31,
+   -0.05,
+   0.05,
+   -0.06
+  ],
+  "bbox_max_dev": 0.31,
+  "bbox_new": [
+   [
+    -24.95,
+    -0.05,
+    -0.51
+   ],
+   [
+    24.95,
+    6.05,
+    0.14
+   ]
+  ],
+  "bbox_ok": false,
+  "bbox_old": [
+   [
+    -25.0,
+    0.0,
+    -0.2
+   ],
+   [
+    25.0,
+    6.0,
+    0.2
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 22:15",
+  "category": "signs",
+  "export_name": "PodiumRoom_TitleSign",
+  "fbx": "export/signs/PodiumRoom_TitleSign.fbx",
+  "meshes": [
+   "PodiumRoom_TitleSign"
+  ],
+  "renders": [
+   "renders/objects/PodiumRoom_TitleSign/PodiumRoom_TitleSign_front34.jpg",
+   "renders/objects/PodiumRoom_TitleSign/PodiumRoom_TitleSign_back34.jpg",
+   "renders/objects/PodiumRoom_TitleSign/PodiumRoom_TitleSign_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/PodiumRoom_TitleSign.jpg",
+  "triangles": 360,
+  "tris_ok": true,
+  "warnings": []
  },
  "Police_Car": {
   "bbox_dev": [

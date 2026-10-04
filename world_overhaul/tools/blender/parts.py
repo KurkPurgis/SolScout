@@ -51,7 +51,8 @@ def door(m, bottom_center, w, h, facing="-Z", color="WOOD", frame="WHITE", knob=
             m.box((w * 0.9, 0.3, 1.0), (0, 0.15, -0.75), "RED", bevel="S")
 
 
-def sign_board(m, center, w, h, board, frame="WHITE", frame_w=0.5, depth=0.6, text_plane_z=None, bolts=True):
+def sign_board(m, center, w, h, board, frame="WHITE", frame_w=0.5, depth=0.6, text_plane_z=None, bolts=True,
+               frame_back=0.25):
     """A sign: the board (the SurfaceGui text of the old, now invisible, sign part shows on it) in front of a
     bigger rounded frame slab. center = center of the text area; text_plane_z = z of the old part's front face
     (the board's front stays 0.06 behind it, so the text is never hidden)."""
@@ -60,7 +61,7 @@ def sign_board(m, center, w, h, board, frame="WHITE", frame_w=0.5, depth=0.6, te
     board_front = front + 0.06
     m.box((w, h, depth), (cx, cy, board_front + depth / 2), board, bevel="S")
     fw = frame_w
-    m.box((w + 2 * fw, h + 2 * fw, depth), (cx, cy, board_front + depth / 2 + 0.25), frame, bevel="M")
+    m.box((w + 2 * fw, h + 2 * fw, depth), (cx, cy, board_front + depth / 2 + frame_back), frame, bevel="M")
     if bolts:  # the detail: four round gold bolts in the frame corners
         for sx in (-1, 1):
             for sy in (-1, 1):

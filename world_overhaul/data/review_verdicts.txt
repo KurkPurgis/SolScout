@@ -84,3 +84,8 @@ Lobby_Spawn|done|marble disc with a gold ring and star
 AuctionRoom_BidderPad|done|wood pad with a gold rim
 Baseplate|done|plain grass slab (it is under everything)
 Lobby_PottedPalm|done|icon palm in a terracotta pot, leaves sized to the original
+Lobby_TitleSign|done|navy board in a gold frame with bolts; text stays on the old part
+AuctionRoom_TitleSign|done|dark board in a gold frame; text stays on the old part
+AuctionRoom_InfoBoard|done|dark board in a gold frame; text set by the game stays on the old part
+PodiumRoom_TitleSign|done|ink board in a gold frame; text stays on the old part
+PodiumRoom_Board|done|ink scoreboard in a purple frame; frame kept inside the original depth

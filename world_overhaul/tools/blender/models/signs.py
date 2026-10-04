@@ -6,16 +6,17 @@ the new board sits 0.06 studs behind the text plane so the text is never hidden 
 import parts
 
 
-def sign_facing_back(m, center_y, w, h, board, frame, frame_w, depth=0.4, bolts=True):
+# board 0.3 deep and the frame only 0.1 behind it: the sign keeps the original 0.4 stud depth
+def sign_facing_back(m, center_y, w, h, board, frame, frame_w, depth=0.3, bolts=True):
     """A sign whose text faces +Z (toward the players / camera in the lobby and rooms)."""
     with m.at((0, 0, 0), yaw=180):
         parts.sign_board(m, (0, center_y, 0), w, h, board, frame=frame, frame_w=frame_w, depth=depth,
-                         text_plane_z=-0.2, bolts=bolts)
+                         text_plane_z=-0.2, bolts=bolts, frame_back=0.1)
 
 
-def sign_facing_front(m, center_y, w, h, board, frame, frame_w, depth=0.4, bolts=True):
+def sign_facing_front(m, center_y, w, h, board, frame, frame_w, depth=0.3, bolts=True):
     parts.sign_board(m, (0, center_y, 0), w, h, board, frame=frame, frame_w=frame_w, depth=depth,
-                     text_plane_z=-0.2, bolts=bolts)
+                     text_plane_z=-0.2, bolts=bolts, frame_back=0.1)
 
 
 MODELS = {
