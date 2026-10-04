@@ -1,0 +1,10676 @@
+{
+ "Baseplate": {
+  "name": "Baseplate",
+  "type": "Baseplate",
+  "category": "ground",
+  "theme": "",
+  "canonical": "Baseplate",
+  "size": [
+   512.0,
+   20.0,
+   512.0
+  ],
+  "bbox_min": [
+   -256.0,
+   -20.0,
+   -256.0
+  ],
+  "bbox_max": [
+   256.0,
+   0.0,
+   256.0
+  ],
+  "parts": 1,
+  "instances": 1,
+  "areas": {
+   "Workspace": 1
+  },
+  "modes": {
+   "normal": 1
+  },
+  "colors": [
+   [
+    91,
+    158,
+    76,
+    1
+   ]
+  ],
+  "materials": {
+   "Grass": 1
+  },
+  "roblox_name": "Baseplate",
+  "canonical_part_ids": [
+   2
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": ""
+ },
+ "Lobby_Floor": {
+  "name": "Lobby_Floor",
+  "type": "Lobby_Floor",
+  "category": "ground",
+  "theme": "",
+  "canonical": "Lobby/Lobby_Floor/1",
+  "size": [
+   148.0,
+   1.0,
+   100.0
+  ],
+  "bbox_min": [
+   -74.0,
+   0.0,
+   -50.0
+  ],
+  "bbox_max": [
+   74.0,
+   1.0,
+   50.0
+  ],
+  "parts": 1,
+  "instances": 1,
+  "areas": {
+   "Lobby": 1
+  },
+  "modes": {
+   "normal": 1
+  },
+  "colors": [
+   [
+    235,
+    230,
+    220,
+    1
+   ]
+  ],
+  "materials": {
+   "Marble": 1
+  },
+  "roblox_name": "Lobby_Floor",
+  "canonical_part_ids": [
+   4
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": "Lobby"
+ },
+ "Lobby_Carpet": {
+  "name": "Lobby_Carpet",
+  "type": "Lobby_Carpet",
+  "category": "ground",
+  "theme": "",
+  "canonical": "Lobby/Lobby_Carpet/1",
+  "size": [
+   132.0,
+   0.1,
+   59.0
+  ],
+  "bbox_min": [
+   -66.0,
+   1.0,
+   -23.0
+  ],
+  "bbox_max": [
+   66.0,
+   1.1,
+   36.0
+  ],
+  "parts": 2,
+  "instances": 1,
+  "areas": {
+   "Lobby": 1
+  },
+  "modes": {
+   "normal": 1
+  },
+  "colors": [
+   [
+    180,
+    40,
+    50,
+    2
+   ]
+  ],
+  "materials": {
+   "Fabric": 2
+  },
+  "roblox_name": "Lobby_Carpet",
+  "canonical_part_ids": [
+   5,
+   6
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": "Lobby"
+ },
+ "Lobby_Walls": {
+  "name": "Lobby_Walls",
+  "type": "Lobby_Walls",
+  "category": "buildings",
+  "theme": "",
+  "canonical": "Lobby/Lobby_Walls/1",
+  "size": [
+   148.8,
+   27.0,
+   100.8
+  ],
+  "bbox_min": [
+   -74.4,
+   0.0,
+   -50.4
+  ],
+  "bbox_max": [
+   74.4,
+   27.0,
+   50.4
+  ],
+  "parts": 8,
+  "instances": 1,
+  "areas": {
+   "Lobby": 1
+  },
+  "modes": {
+   "normal": 1
+  },
+  "colors": [
+   [
+    45,
+    50,
+    75,
+    4
+   ],
+   [
+    245,
+    190,
+    40,
+    4
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 4,
+   "Metal": 4
+  },
+  "roblox_name": "Lobby_Walls",
+  "canonical_part_ids": [
+   7,
+   8,
+   10,
+   11,
+   13,
+   14,
+   16,
+   17
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": "Lobby"
+ },
+ "Lobby_TitleSign": {
+  "name": "Lobby_TitleSign",
+  "type": "Lobby_TitleSign",
+  "category": "signs",
+  "theme": "",
+  "canonical": "Lobby/Lobby_TitleSign/1",
+  "size": [
+   70.0,
+   7.0,
+   0.4
+  ],
+  "bbox_min": [
+   -35.0,
+   0.0,
+   -0.2
+  ],
+  "bbox_max": [
+   35.0,
+   7.0,
+   0.2
+  ],
+  "parts": 1,
+  "instances": 1,
+  "areas": {
+   "Lobby": 1
+  },
+  "modes": {
+   "normal": 1
+  },
+  "colors": [
+   [
+    45,
+    50,
+    75,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 1
+  },
+  "roblox_name": "Lobby_TitleSign",
+  "canonical_part_ids": [
+   19
+  ],
+  "frame_in_ctx": [
+   0.0,
+   17.5,
+   -47.7,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "context": "Lobby"
+ },
+ "Lobby_Pillar": {
+  "name": "Lobby_Pillar",
+  "type": "Lobby_Pillar",
+  "category": "decoration",
+  "theme": "",
+  "canonical": "Lobby/Lobby_Pillar/1.1",
+  "size": [
+   4.6,
+   26.0,
+   4.0
+  ],
+  "bbox_min": [
+   -2.3,
+   0.0,
+   -2.0
+  ],
+  "bbox_max": [
+   2.3,
+   26.0,
+   2.0
+  ],
+  "parts": 3,
+  "instances": 8,
+  "areas": {
+   "Lobby": 8
+  },
+  "modes": {
+   "normal": 8
+  },
+  "colors": [
+   [
+    235,
+    230,
+    220,
+    1
+   ],
+   [
+    245,
+    190,
+    40,
+    1
+   ],
+   [
+    255,
+    235,
+    150,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 1,
+   "Metal": 1,
+   "Neon": 1
+  },
+  "roblox_name": "Lobby_Pillar",
+  "canonical_part_ids": [
+   22,
+   23,
+   24
+  ],
+  "frame_in_ctx": [
+   -70.2,
+   0.5,
+   -36.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "context": "Lobby"
+ },
+ "Lobby_Window": {
+  "name": "Lobby_Window",
+  "type": "Lobby_Window",
+  "category": "buildings",
+  "theme": "",
+  "canonical": "Lobby/Lobby_Window/1.1",
+  "size": [
+   0.6,
+   10.0,
+   14.0
+  ],
+  "bbox_min": [
+   -0.3,
+   0.0,
+   -7.0
+  ],
+  "bbox_max": [
+   0.3,
+   10.0,
+   7.0
+  ],
+  "parts": 1,
+  "instances": 6,
+  "areas": {
+   "Lobby": 6
+  },
+  "modes": {
+   "normal": 6
+  },
+  "colors": [
+   [
+    150,
+    210,
+    255,
+    1
+   ]
+  ],
+  "materials": {
+   "Glass": 1
+  },
+  "roblox_name": "Lobby_Window",
+  "canonical_part_ids": [
+   38
+  ],
+  "frame_in_ctx": [
+   -72.2,
+   7.0,
+   -24.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "context": "Lobby"
+ },
+ "Lobby_Bench": {
+  "name": "Lobby_Bench",
+  "type": "Lobby_Bench",
+  "category": "props",
+  "theme": "",
+  "canonical": "Lobby/Lobby_Bench/1.1",
+  "size": [
+   2.4,
+   3.5,
+   6.0
+  ],
+  "bbox_min": [
+   -1.2,
+   0.0,
+   -3.0
+  ],
+  "bbox_max": [
+   1.2,
+   3.5,
+   3.0
+  ],
+  "parts": 3,
+  "instances": 4,
+  "areas": {
+   "Lobby": 4
+  },
+  "modes": {
+   "normal": 4
+  },
+  "colors": [
+   [
+    150,
+    105,
+    60,
+    3
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 3
+  },
+  "roblox_name": "Lobby_Bench",
+  "canonical_part_ids": [
+   41,
+   42,
+   43
+  ],
+  "frame_in_ctx": [
+   -66.0,
+   1.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "context": "Lobby"
+ },
+ "Lobby_PottedPalm": {
+  "name": "Lobby_PottedPalm",
+  "type": "Lobby_PottedPalm",
+  "category": "nature",
+  "theme": "",
+  "canonical": "Lobby/Lobby_PottedPalm/1.1",
+  "size": [
+   8.837,
+   9.735,
+   8.837
+  ],
+  "bbox_min": [
+   -4.418,
+   0.0,
+   -4.418
+  ],
+  "bbox_max": [
+   4.418,
+   9.735,
+   4.418
+  ],
+  "parts": 14,
+  "instances": 2,
+  "areas": {
+   "Lobby": 2
+  },
+  "modes": {
+   "normal": 2
+  },
+  "colors": [
+   [
+    150,
+    105,
+    65,
+    4
+   ],
+   [
+    60,
+    170,
+    80,
+    3
+   ],
+   [
+    89,
+    182,
+    83,
+    3
+   ],
+   [
+    110,
+    75,
+    40,
+    3
+   ],
+   [
+    200,
+    110,
+    70,
+    1
+   ]
+  ],
+  "materials": {
+   "Wood": 4,
+   "Grass": 6,
+   "SmoothPlastic": 4
+  },
+  "roblox_name": "Lobby_PottedPalm",
+  "canonical_part_ids": [
+   73,
+   74,
+   75,
+   76,
+   77,
+   78,
+   79,
+   80,
+   81,
+   82,
+   83,
+   84,
+   85,
+   125
+  ],
+  "frame_in_ctx": [
+   -65.0,
+   1.0,
+   20.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "context": "Lobby"
+ },
+ "Lobby_PottedPalm_v2": {
+  "name": "Lobby_PottedPalm_v2",
+  "type": "Lobby_PottedPalm",
+  "category": "nature",
+  "theme": "",
+  "canonical": "Lobby/Lobby_PottedPalm/1.3",
+  "size": [
+   8.837,
+   9.735,
+   8.837
+  ],
+  "bbox_min": [
+   -4.418,
+   0.0,
+   -4.418
+  ],
+  "bbox_max": [
+   4.418,
+   9.735,
+   4.418
+  ],
+  "parts": 14,
+  "instances": 2,
+  "areas": {
+   "Lobby": 2
+  },
+  "modes": {
+   "normal": 2
+  },
+  "colors": [
+   [
+    150,
+    105,
+    65,
+    4
+   ],
+   [
+    60,
+    170,
+    80,
+    3
+   ],
+   [
+    89,
+    182,
+    83,
+    3
+   ],
+   [
+    110,
+    75,
+    40,
+    3
+   ],
+   [
+    200,
+    110,
+    70,
+    1
+   ]
+  ],
+  "materials": {
+   "Wood": 4,
+   "Grass": 6,
+   "SmoothPlastic": 4
+  },
+  "roblox_name": "Lobby_PottedPalm",
+  "canonical_part_ids": [
+   99,
+   100,
+   101,
+   102,
+   103,
+   104,
+   105,
+   106,
+   107,
+   108,
+   109,
+   110,
+   111,
+   127
+  ],
+  "frame_in_ctx": [
+   65.0,
+   1.0,
+   20.0,
+   -1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   -0.0,
+   0.0,
+   -1.0
+  ],
+  "context": "Lobby"
+ },
+ "Lobby_Trophy": {
+  "name": "Lobby_Trophy",
+  "type": "Lobby_Trophy",
+  "category": "props",
+  "theme": "",
+  "canonical": "Lobby/Lobby_Trophy/1",
+  "size": [
+   6.0,
+   9.9,
+   6.0
+  ],
+  "bbox_min": [
+   -3.0,
+   0.0,
+   -3.0
+  ],
+  "bbox_max": [
+   3.0,
+   9.9,
+   3.0
+  ],
+  "parts": 6,
+  "instances": 1,
+  "areas": {
+   "Lobby": 1
+  },
+  "modes": {
+   "normal": 1
+  },
+  "colors": [
+   [
+    245,
+    190,
+    40,
+    4
+   ],
+   [
+    235,
+    230,
+    220,
+    1
+   ],
+   [
+    255,
+    235,
+    150,
+    1
+   ]
+  ],
+  "materials": {
+   "Marble": 1,
+   "Metal": 4,
+   "Neon": 1
+  },
+  "roblox_name": "Lobby_Trophy",
+  "canonical_part_ids": [
+   129,
+   130,
+   131,
+   132,
+   133,
+   134
+  ],
+  "frame_in_ctx": [
+   0.0,
+   1.0,
+   6.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "context": "Lobby"
+ },
+ "Lobby_Spawn": {
+  "name": "Lobby_Spawn",
+  "type": "Lobby_Spawn",
+  "category": "ground",
+  "theme": "",
+  "canonical": "Lobby/Lobby_Spawn/1",
+  "size": [
+   10.0,
+   1.0,
+   10.0
+  ],
+  "bbox_min": [
+   -5.0,
+   0.0,
+   -5.0
+  ],
+  "bbox_max": [
+   5.0,
+   1.0,
+   5.0
+  ],
+  "parts": 1,
+  "instances": 1,
+  "areas": {
+   "Lobby": 1
+  },
+  "modes": {
+   "normal": 1
+  },
+  "colors": [
+   [
+    200,
+    195,
+    185,
+    1
+   ]
+  ],
+  "materials": {
+   "Marble": 1
+  },
+  "roblox_name": "Lobby_Spawn",
+  "canonical_part_ids": [
+   161
+  ],
+  "frame_in_ctx": [
+   0.0,
+   0.5,
+   38.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "context": "Lobby"
+ },
+ "Lobby_RoomBooth": {
+  "name": "Lobby_RoomBooth",
+  "type": "Lobby_RoomBooth",
+  "category": "buildings",
+  "theme": "",
+  "canonical": "Lobby/Lobby_RoomBooth/1.1",
+  "size": [
+   27.2,
+   18.8,
+   21.45
+  ],
+  "bbox_min": [
+   -13.6,
+   0.0,
+   -10.725
+  ],
+  "bbox_max": [
+   13.6,
+   18.8,
+   10.725
+  ],
+  "parts": 10,
+  "instances": 1,
+  "areas": {
+   "Lobby": 1
+  },
+  "modes": {
+   "normal": 1
+  },
+  "colors": [
+   [
+    235,
+    80,
+    80,
+    6
+   ],
+   [
+    245,
+    190,
+    40,
+    3
+   ],
+   [
+    40,
+    40,
+    50,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 5,
+   "Neon": 3,
+   "Metal": 2
+  },
+  "roblox_name": "Lobby_RoomBooth",
+  "canonical_part_ids": [
+   162,
+   163,
+   164,
+   165,
+   166,
+   167,
+   168,
+   169,
+   172,
+   173
+  ],
+  "frame_in_ctx": [
+   -48.0,
+   1.0,
+   -31.025,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "context": "Lobby"
+ },
+ "Lobby_RoomBooth_v2": {
+  "name": "Lobby_RoomBooth_v2",
+  "type": "Lobby_RoomBooth",
+  "category": "buildings",
+  "theme": "",
+  "canonical": "Lobby/Lobby_RoomBooth/1.2",
+  "size": [
+   27.2,
+   18.8,
+   21.45
+  ],
+  "bbox_min": [
+   -13.6,
+   0.0,
+   -10.725
+  ],
+  "bbox_max": [
+   13.6,
+   18.8,
+   10.725
+  ],
+  "parts": 10,
+  "instances": 1,
+  "areas": {
+   "Lobby": 1
+  },
+  "modes": {
+   "normal": 1
+  },
+  "colors": [
+   [
+    70,
+    150,
+    245,
+    6
+   ],
+   [
+    245,
+    190,
+    40,
+    3
+   ],
+   [
+    40,
+    40,
+    50,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 5,
+   "Neon": 3,
+   "Metal": 2
+  },
+  "roblox_name": "Lobby_RoomBooth",
+  "canonical_part_ids": [
+   177,
+   178,
+   179,
+   180,
+   181,
+   182,
+   183,
+   184,
+   187,
+   188
+  ],
+  "frame_in_ctx": [
+   -16.0,
+   1.0,
+   -31.025,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "context": "Lobby"
+ },
+ "Lobby_RoomBooth_v3": {
+  "name": "Lobby_RoomBooth_v3",
+  "type": "Lobby_RoomBooth",
+  "category": "buildings",
+  "theme": "",
+  "canonical": "Lobby/Lobby_RoomBooth/1.3",
+  "size": [
+   27.2,
+   18.8,
+   21.45
+  ],
+  "bbox_min": [
+   -13.6,
+   0.0,
+   -10.725
+  ],
+  "bbox_max": [
+   13.6,
+   18.8,
+   10.725
+  ],
+  "parts": 10,
+  "instances": 1,
+  "areas": {
+   "Lobby": 1
+  },
+  "modes": {
+   "normal": 1
+  },
+  "colors": [
+   [
+    60,
+    200,
+    90,
+    6
+   ],
+   [
+    245,
+    190,
+    40,
+    3
+   ],
+   [
+    40,
+    40,
+    50,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 5,
+   "Neon": 3,
+   "Metal": 2
+  },
+  "roblox_name": "Lobby_RoomBooth",
+  "canonical_part_ids": [
+   192,
+   193,
+   194,
+   195,
+   196,
+   197,
+   198,
+   199,
+   202,
+   203
+  ],
+  "frame_in_ctx": [
+   16.0,
+   1.0,
+   -31.025,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "context": "Lobby"
+ },
+ "Lobby_RoomBooth_v4": {
+  "name": "Lobby_RoomBooth_v4",
+  "type": "Lobby_RoomBooth",
+  "category": "buildings",
+  "theme": "",
+  "canonical": "Lobby/Lobby_RoomBooth/1.4",
+  "size": [
+   27.2,
+   18.8,
+   21.45
+  ],
+  "bbox_min": [
+   -13.6,
+   0.0,
+   -10.725
+  ],
+  "bbox_max": [
+   13.6,
+   18.8,
+   10.725
+  ],
+  "parts": 10,
+  "instances": 1,
+  "areas": {
+   "Lobby": 1
+  },
+  "modes": {
+   "normal": 1
+  },
+  "colors": [
+   [
+    245,
+    190,
+    40,
+    9
+   ],
+   [
+    40,
+    40,
+    50,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 5,
+   "Neon": 3,
+   "Metal": 2
+  },
+  "roblox_name": "Lobby_RoomBooth",
+  "canonical_part_ids": [
+   207,
+   208,
+   209,
+   210,
+   211,
+   212,
+   213,
+   214,
+   217,
+   218
+  ],
+  "frame_in_ctx": [
+   48.0,
+   1.0,
+   -31.025,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "context": "Lobby"
+ },
+ "Workplace_Yard": {
+  "name": "Workplace_Yard",
+  "type": "Workplace_Yard",
+  "category": "ground",
+  "theme": "FAST TRACK",
+  "canonical": "Catalog.FastTrack/Workplace_Yard/346",
+  "size": [
+   48.0,
+   1.1,
+   30.0
+  ],
+  "bbox_min": [
+   -24.0,
+   -1.0,
+   -24.0
+  ],
+  "bbox_max": [
+   24.0,
+   0.1,
+   6.0
+  ],
+  "parts": 2,
+  "instances": 2,
+  "areas": {
+   "Catalog": 2
+  },
+  "modes": {
+   "normal": 2
+  },
+  "colors": [
+   [
+    245,
+    242,
+    235,
+    1
+   ],
+   [
+    190,
+    30,
+    45,
+    1
+   ]
+  ],
+  "materials": {
+   "Marble": 1,
+   "Fabric": 1
+  },
+  "roblox_name": "Workplace_Yard",
+  "canonical_part_ids": [
+   2816,
+   2818
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": "Workplace:FAST TRACK"
+ },
+ "Workplace_Yard_v2": {
+  "name": "Workplace_Yard_v2",
+  "type": "Workplace_Yard",
+  "category": "ground",
+  "theme": "PIZZERIA",
+  "canonical": "City_1.Plots.Plot_Player1/Workplace_Yard/84",
+  "size": [
+   48.0,
+   1.1,
+   30.0
+  ],
+  "bbox_min": [
+   -24.0,
+   -1.0,
+   -24.0
+  ],
+  "bbox_max": [
+   24.0,
+   0.1,
+   6.0
+  ],
+  "parts": 2,
+  "instances": 8,
+  "areas": {
+   "City_1": 8
+  },
+  "modes": {
+   "normal": 8
+  },
+  "colors": [
+   [
+    205,
+    205,
+    200,
+    1
+   ],
+   [
+    235,
+    228,
+    210,
+    1
+   ]
+  ],
+  "materials": {
+   "Concrete": 1,
+   "Slate": 1
+  },
+  "roblox_name": "Workplace_Yard",
+  "canonical_part_ids": [
+   226,
+   228
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": "Workplace:PIZZERIA"
+ },
+ "Workplace_Building_FASTTRACK": {
+  "name": "Workplace_Building_FASTTRACK",
+  "type": "Workplace_Building",
+  "category": "buildings",
+  "theme": "FAST TRACK",
+  "canonical": "Catalog.FastTrack/Workplace_Building/346",
+  "size": [
+   49.6,
+   19.4,
+   22.3
+  ],
+  "bbox_min": [
+   -24.8,
+   -1.0,
+   2.5
+  ],
+  "bbox_max": [
+   24.8,
+   18.4,
+   24.8
+  ],
+  "parts": 39,
+  "instances": 2,
+  "areas": {
+   "Catalog": 2
+  },
+  "modes": {
+   "normal": 2
+  },
+  "colors": [
+   [
+    245,
+    245,
+    245,
+    16
+   ],
+   [
+    215,
+    170,
+    50,
+    10
+   ],
+   [
+    248,
+    245,
+    238,
+    5
+   ],
+   [
+    150,
+    210,
+    255,
+    4
+   ],
+   [
+    255,
+    235,
+    150,
+    2
+   ],
+   [
+    238,
+    232,
+    220,
+    1
+   ],
+   [
+    40,
+    40,
+    50,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 28,
+   "Marble": 5,
+   "Glass": 4,
+   "Neon": 2
+  },
+  "roblox_name": "Workplace_Building",
+  "canonical_part_ids": [
+   2817,
+   2819,
+   2820,
+   2821,
+   2822,
+   2823,
+   2824,
+   2825,
+   2826,
+   2827,
+   2828,
+   2829,
+   2830,
+   2831,
+   2832,
+   2833,
+   2834,
+   2835,
+   2836,
+   2837,
+   2838,
+   2839,
+   2840,
+   2841,
+   2842,
+   2843,
+   2844,
+   2845,
+   2846,
+   2847,
+   2848,
+   2849,
+   2850,
+   2851,
+   2852,
+   2853,
+   2854,
+   2861,
+   2862
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": "Workplace:FAST TRACK"
+ },
+ "Workplace_Building_PIZZERIA": {
+  "name": "Workplace_Building_PIZZERIA",
+  "type": "Workplace_Building",
+  "category": "buildings",
+  "theme": "PIZZERIA",
+  "canonical": "City_1.Plots.Plot_Player1/Workplace_Building/84",
+  "size": [
+   49.6,
+   19.4,
+   22.3
+  ],
+  "bbox_min": [
+   -24.8,
+   -1.0,
+   2.5
+  ],
+  "bbox_max": [
+   24.8,
+   18.4,
+   24.8
+  ],
+  "parts": 39,
+  "instances": 1,
+  "areas": {
+   "City_1": 1
+  },
+  "modes": {
+   "normal": 1
+  },
+  "colors": [
+   [
+    245,
+    245,
+    245,
+    16
+   ],
+   [
+    60,
+    160,
+    70,
+    10
+   ],
+   [
+    190,
+    70,
+    55,
+    5
+   ],
+   [
+    150,
+    210,
+    255,
+    4
+   ],
+   [
+    255,
+    235,
+    150,
+    2
+   ],
+   [
+    240,
+    235,
+    225,
+    1
+   ],
+   [
+    40,
+    40,
+    50,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 28,
+   "Brick": 5,
+   "Glass": 4,
+   "Neon": 2
+  },
+  "roblox_name": "Workplace_Building",
+  "canonical_part_ids": [
+   227,
+   229,
+   230,
+   231,
+   232,
+   233,
+   234,
+   235,
+   236,
+   237,
+   238,
+   239,
+   240,
+   241,
+   242,
+   243,
+   244,
+   245,
+   246,
+   247,
+   248,
+   249,
+   250,
+   251,
+   252,
+   253,
+   254,
+   255,
+   256,
+   257,
+   258,
+   259,
+   260,
+   261,
+   262,
+   263,
+   264,
+   271,
+   272
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": "Workplace:PIZZERIA"
+ },
+ "Workplace_Building_BUSDEPOT": {
+  "name": "Workplace_Building_BUSDEPOT",
+  "type": "Workplace_Building",
+  "category": "buildings",
+  "theme": "BUS DEPOT",
+  "canonical": "City_1.Plots.Plot_Player2/Workplace_Building/108",
+  "size": [
+   49.6,
+   19.4,
+   22.3
+  ],
+  "bbox_min": [
+   -24.8,
+   -1.0,
+   2.5
+  ],
+  "bbox_max": [
+   24.8,
+   18.4,
+   24.8
+  ],
+  "parts": 39,
+  "instances": 1,
+  "areas": {
+   "City_1": 1
+  },
+  "modes": {
+   "normal": 1
+  },
+  "colors": [
+   [
+    245,
+    245,
+    245,
+    16
+   ],
+   [
+    250,
+    200,
+    40,
+    10
+   ],
+   [
+    70,
+    110,
+    190,
+    5
+   ],
+   [
+    150,
+    210,
+    255,
+    4
+   ],
+   [
+    255,
+    235,
+    150,
+    2
+   ],
+   [
+    90,
+    90,
+    95,
+    1
+   ],
+   [
+    40,
+    40,
+    50,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 28,
+   "Metal": 5,
+   "Glass": 4,
+   "Neon": 2
+  },
+  "roblox_name": "Workplace_Building",
+  "canonical_part_ids": [
+   439,
+   441,
+   442,
+   443,
+   444,
+   445,
+   446,
+   447,
+   448,
+   449,
+   450,
+   451,
+   452,
+   453,
+   454,
+   455,
+   456,
+   457,
+   458,
+   459,
+   460,
+   461,
+   462,
+   463,
+   464,
+   465,
+   466,
+   467,
+   468,
+   469,
+   470,
+   471,
+   472,
+   473,
+   474,
+   475,
+   476,
+   483,
+   484
+  ],
+  "frame_in_ctx": [
+   0.0,
+   0.0,
+   0.0,
+   1.00001,
+   0.0,
+   0.0,
+   0.0,
+   1,
+   0.0,
+   0.0,
+   0.0,
+   1.00001
+  ],
+  "context": "Workplace:BUS DEPOT"
+ },
+ "Workplace_Building_HOSPITAL": {
+  "name": "Workplace_Building_HOSPITAL",
+  "type": "Workplace_Building",
+  "category": "buildings",
+  "theme": "HOSPITAL",
+  "canonical": "City_1.Plots.Plot_Player3/Workplace_Building/140",
+  "size": [
+   49.6,
+   19.4,
+   22.3
+  ],
+  "bbox_min": [
+   -24.8,
+   -1.0,
+   2.5
+  ],
+  "bbox_max": [
+   24.8,
+   18.4,
+   24.8
+  ],
+  "parts": 39,
+  "instances": 1,
+  "areas": {
+   "City_1": 1
+  },
+  "modes": {
+   "normal": 1
+  },
+  "colors": [
+   [
+    245,
+    245,
+    245,
+    16
+   ],
+   [
+    220,
+    50,
+    60,
+    10
+   ],
+   [
+    235,
+    240,
+    245,
+    5
+   ],
+   [
+    150,
+    210,
+    255,
+    4
+   ],
+   [
+    255,
+    235,
+    150,
+    2
+   ],
+   [
+    190,
+    225,
+    240,
+    1
+   ],
+   [
+    40,
+    40,
+    50,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 33,
+   "Glass": 4,
+   "Neon": 2
+  },
+  "roblox_name": "Workplace_Building",
+  "canonical_part_ids": [
+   731,
+   733,
+   734,
+   735,
+   736,
+   737,
+   738,
+   739,
+   740,
+   741,
+   742,
+   743,
+   744,
+   745,
+   746,
+   747,
+   748,
+   749,
+   750,
+   751,
+   752,
+   753,
+   754,
+   755,
+   756,
+   757,
+   758,
+   759,
+   760,
+   761,
+   762,
+   763,
+   764,
+   765,
+   766,
+   767,
+   768,
+   775,
+   776
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": "Workplace:HOSPITAL"
+ },
+ "Workplace_Building_CLINIC": {
+  "name": "Workplace_Building_CLINIC",
+  "type": "Workplace_Building",
+  "category": "buildings",
+  "theme": "CLINIC",
+  "canonical": "City_1.Plots.Plot_Player4/Workplace_Building/166",
+  "size": [
+   49.6,
+   19.4,
+   22.3
+  ],
+  "bbox_min": [
+   -24.8,
+   -1.0,
+   2.5
+  ],
+  "bbox_max": [
+   24.8,
+   18.4,
+   24.8
+  ],
+  "parts": 39,
+  "instances": 1,
+  "areas": {
+   "City_1": 1
+  },
+  "modes": {
+   "normal": 1
+  },
+  "colors": [
+   [
+    245,
+    245,
+    245,
+    16
+   ],
+   [
+    255,
+    255,
+    255,
+    10
+   ],
+   [
+    80,
+    180,
+    170,
+    5
+   ],
+   [
+    150,
+    210,
+    255,
+    4
+   ],
+   [
+    255,
+    235,
+    150,
+    2
+   ],
+   [
+    235,
+    245,
+    245,
+    1
+   ],
+   [
+    40,
+    40,
+    50,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 33,
+   "Glass": 4,
+   "Neon": 2
+  },
+  "roblox_name": "Workplace_Building",
+  "canonical_part_ids": [
+   997,
+   999,
+   1000,
+   1001,
+   1002,
+   1003,
+   1004,
+   1005,
+   1006,
+   1007,
+   1008,
+   1009,
+   1010,
+   1011,
+   1012,
+   1013,
+   1014,
+   1015,
+   1016,
+   1017,
+   1018,
+   1019,
+   1020,
+   1021,
+   1022,
+   1023,
+   1024,
+   1025,
+   1026,
+   1027,
+   1028,
+   1029,
+   1030,
+   1031,
+   1032,
+   1033,
+   1034,
+   1041,
+   1042
+  ],
+  "frame_in_ctx": [
+   0.0,
+   0.0,
+   0.0,
+   1.00001,
+   0.0,
+   0.0,
+   0.0,
+   1,
+   0.0,
+   0.0,
+   0.0,
+   1.00001
+  ],
+  "context": "Workplace:CLINIC"
+ },
+ "Workplace_Building_SCHOOL": {
+  "name": "Workplace_Building_SCHOOL",
+  "type": "Workplace_Building",
+  "category": "buildings",
+  "theme": "SCHOOL",
+  "canonical": "City_1.Plots.Plot_Player5/Workplace_Building/192",
+  "size": [
+   49.6,
+   19.4,
+   22.3
+  ],
+  "bbox_min": [
+   -24.8,
+   -1.0,
+   2.5
+  ],
+  "bbox_max": [
+   24.8,
+   18.4,
+   24.8
+  ],
+  "parts": 39,
+  "instances": 1,
+  "areas": {
+   "City_1": 1
+  },
+  "modes": {
+   "normal": 1
+  },
+  "colors": [
+   [
+    245,
+    245,
+    245,
+    16
+   ],
+   [
+    60,
+    120,
+    70,
+    10
+   ],
+   [
+    245,
+    200,
+    80,
+    5
+   ],
+   [
+    150,
+    210,
+    255,
+    4
+   ],
+   [
+    255,
+    235,
+    150,
+    2
+   ],
+   [
+    190,
+    140,
+    90,
+    1
+   ],
+   [
+    40,
+    40,
+    50,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 33,
+   "Glass": 4,
+   "Neon": 2
+  },
+  "roblox_name": "Workplace_Building",
+  "canonical_part_ids": [
+   1260,
+   1262,
+   1263,
+   1264,
+   1265,
+   1266,
+   1267,
+   1268,
+   1269,
+   1270,
+   1271,
+   1272,
+   1273,
+   1274,
+   1275,
+   1276,
+   1277,
+   1278,
+   1279,
+   1280,
+   1281,
+   1282,
+   1283,
+   1284,
+   1285,
+   1286,
+   1287,
+   1288,
+   1289,
+   1290,
+   1291,
+   1292,
+   1293,
+   1294,
+   1295,
+   1296,
+   1297,
+   1304,
+   1305
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": "Workplace:SCHOOL"
+ },
+ "Workplace_Building_POLICE": {
+  "name": "Workplace_Building_POLICE",
+  "type": "Workplace_Building",
+  "category": "buildings",
+  "theme": "POLICE",
+  "canonical": "City_1.Plots.Plot_Player6/Workplace_Building/229",
+  "size": [
+   49.6,
+   19.4,
+   22.3
+  ],
+  "bbox_min": [
+   -24.8,
+   -1.0,
+   2.5
+  ],
+  "bbox_max": [
+   24.8,
+   18.4,
+   24.8
+  ],
+  "parts": 39,
+  "instances": 1,
+  "areas": {
+   "City_1": 1
+  },
+  "modes": {
+   "normal": 1
+  },
+  "colors": [
+   [
+    245,
+    245,
+    245,
+    16
+   ],
+   [
+    255,
+    255,
+    255,
+    10
+   ],
+   [
+    40,
+    60,
+    120,
+    5
+   ],
+   [
+    150,
+    210,
+    255,
+    4
+   ],
+   [
+    255,
+    235,
+    150,
+    2
+   ],
+   [
+    200,
+    200,
+    205,
+    1
+   ],
+   [
+    40,
+    40,
+    50,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 28,
+   "Concrete": 5,
+   "Glass": 4,
+   "Neon": 2
+  },
+  "roblox_name": "Workplace_Building",
+  "canonical_part_ids": [
+   1573,
+   1575,
+   1576,
+   1577,
+   1578,
+   1579,
+   1580,
+   1581,
+   1582,
+   1583,
+   1584,
+   1585,
+   1586,
+   1587,
+   1588,
+   1589,
+   1590,
+   1591,
+   1592,
+   1593,
+   1594,
+   1595,
+   1596,
+   1597,
+   1598,
+   1599,
+   1600,
+   1601,
+   1602,
+   1603,
+   1604,
+   1605,
+   1606,
+   1607,
+   1608,
+   1609,
+   1610,
+   1617,
+   1618
+  ],
+  "frame_in_ctx": [
+   0.0,
+   0.0,
+   0.0,
+   1.00001,
+   0.0,
+   0.0,
+   0.0,
+   1,
+   0.0,
+   0.0,
+   0.0,
+   1.00001
+  ],
+  "context": "Workplace:POLICE"
+ },
+ "Workplace_Building_OFFICE": {
+  "name": "Workplace_Building_OFFICE",
+  "type": "Workplace_Building",
+  "category": "buildings",
+  "theme": "OFFICE",
+  "canonical": "City_1.Plots.Plot_Player7/Workplace_Building/258",
+  "size": [
+   49.6,
+   19.4,
+   22.3
+  ],
+  "bbox_min": [
+   -24.8,
+   -1.0,
+   2.5
+  ],
+  "bbox_max": [
+   24.8,
+   18.4,
+   24.8
+  ],
+  "parts": 39,
+  "instances": 1,
+  "areas": {
+   "City_1": 1
+  },
+  "modes": {
+   "normal": 1
+  },
+  "colors": [
+   [
+    245,
+    245,
+    245,
+    16
+   ],
+   [
+    40,
+    110,
+    200,
+    10
+   ],
+   [
+    150,
+    160,
+    175,
+    5
+   ],
+   [
+    150,
+    210,
+    255,
+    4
+   ],
+   [
+    255,
+    235,
+    150,
+    2
+   ],
+   [
+    215,
+    215,
+    220,
+    1
+   ],
+   [
+    40,
+    40,
+    50,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 28,
+   "Concrete": 5,
+   "Glass": 4,
+   "Neon": 2
+  },
+  "roblox_name": "Workplace_Building",
+  "canonical_part_ids": [
+   1812,
+   1814,
+   1815,
+   1816,
+   1817,
+   1818,
+   1819,
+   1820,
+   1821,
+   1822,
+   1823,
+   1824,
+   1825,
+   1826,
+   1827,
+   1828,
+   1829,
+   1830,
+   1831,
+   1832,
+   1833,
+   1834,
+   1835,
+   1836,
+   1837,
+   1838,
+   1839,
+   1840,
+   1841,
+   1842,
+   1843,
+   1844,
+   1845,
+   1846,
+   1847,
+   1848,
+   1849,
+   1856,
+   1857
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": "Workplace:OFFICE"
+ },
+ "Workplace_Building_GARAGE": {
+  "name": "Workplace_Building_GARAGE",
+  "type": "Workplace_Building",
+  "category": "buildings",
+  "theme": "GARAGE",
+  "canonical": "City_1.Plots.Plot_Player8/Workplace_Building/281",
+  "size": [
+   49.6,
+   19.4,
+   22.3
+  ],
+  "bbox_min": [
+   -24.8,
+   -1.0,
+   2.5
+  ],
+  "bbox_max": [
+   24.8,
+   18.4,
+   24.8
+  ],
+  "parts": 39,
+  "instances": 1,
+  "areas": {
+   "City_1": 1
+  },
+  "modes": {
+   "normal": 1
+  },
+  "colors": [
+   [
+    245,
+    245,
+    245,
+    16
+   ],
+   [
+    40,
+    40,
+    50,
+    11
+   ],
+   [
+    230,
+    130,
+    40,
+    5
+   ],
+   [
+    150,
+    210,
+    255,
+    4
+   ],
+   [
+    255,
+    235,
+    150,
+    2
+   ],
+   [
+    110,
+    110,
+    115,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 28,
+   "Metal": 5,
+   "Glass": 4,
+   "Neon": 2
+  },
+  "roblox_name": "Workplace_Building",
+  "canonical_part_ids": [
+   2095,
+   2097,
+   2098,
+   2099,
+   2100,
+   2101,
+   2102,
+   2103,
+   2104,
+   2105,
+   2106,
+   2107,
+   2108,
+   2109,
+   2110,
+   2111,
+   2112,
+   2113,
+   2114,
+   2115,
+   2116,
+   2117,
+   2118,
+   2119,
+   2120,
+   2121,
+   2122,
+   2123,
+   2124,
+   2125,
+   2126,
+   2127,
+   2128,
+   2129,
+   2130,
+   2131,
+   2132,
+   2139,
+   2140
+  ],
+  "frame_in_ctx": [
+   0.0,
+   0.0,
+   0.0,
+   1.00001,
+   0.0,
+   0.0,
+   0.0,
+   1,
+   0.0,
+   0.0,
+   0.0,
+   1.00001
+  ],
+  "context": "Workplace:GARAGE"
+ },
+ "Pizzeria_Counter": {
+  "name": "Pizzeria_Counter",
+  "type": "Pizzeria_Counter",
+  "category": "props",
+  "theme": "PIZZERIA",
+  "canonical": "City_1.Plots.Plot_Player1/Pizzeria_Counter/86",
+  "size": [
+   16.0,
+   3.95,
+   2.7
+  ],
+  "bbox_min": [
+   -8.0,
+   0.0,
+   -1.35
+  ],
+  "bbox_max": [
+   8.0,
+   3.95,
+   1.35
+  ],
+  "parts": 3,
+  "instances": 1,
+  "areas": {
+   "City_1": 1
+  },
+  "modes": {
+   "normal": 1
+  },
+  "colors": [
+   [
+    245,
+    245,
+    245,
+    1
+   ],
+   [
+    60,
+    160,
+    70,
+    1
+   ],
+   [
+    240,
+    190,
+    90,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 3
+  },
+  "roblox_name": "Pizzeria_Counter",
+  "canonical_part_ids": [
+   273,
+   274,
+   277
+  ],
+  "frame_in_ctx": [
+   0.0,
+   0.0,
+   11.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "context": "Furnish:PIZZERIA"
+ },
+ "Pizzeria_Oven": {
+  "name": "Pizzeria_Oven",
+  "type": "Pizzeria_Oven",
+  "category": "props",
+  "theme": "PIZZERIA",
+  "canonical": "City_1.Plots.Plot_Player1/Pizzeria_Oven/86",
+  "size": [
+   7.0,
+   6.0,
+   5.15
+  ],
+  "bbox_min": [
+   -3.5,
+   0.0,
+   -2.575
+  ],
+  "bbox_max": [
+   3.5,
+   6.0,
+   2.575
+  ],
+  "parts": 2,
+  "instances": 1,
+  "areas": {
+   "City_1": 1
+  },
+  "modes": {
+   "normal": 1
+  },
+  "colors": [
+   [
+    120,
+    110,
+    100,
+    1
+   ],
+   [
+    255,
+    120,
+    30,
+    1
+   ]
+  ],
+  "materials": {
+   "Brick": 1,
+   "Neon": 1
+  },
+  "roblox_name": "Pizzeria_Oven",
+  "canonical_part_ids": [
+   275,
+   276
+  ],
+  "frame_in_ctx": [
+   -14.0,
+   0.0,
+   19.925,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "context": "Furnish:PIZZERIA"
+ },
+ "Workplace_MakerLot": {
+  "name": "Workplace_MakerLot",
+  "type": "Workplace_MakerLot",
+  "category": "ground",
+  "theme": "FAST TRACK",
+  "canonical": "Catalog.FastTrack/Workplace_MakerLot/346.1",
+  "size": [
+   11.0,
+   1.0,
+   9.5
+  ],
+  "bbox_min": [
+   -5.5,
+   0.0,
+   -4.75
+  ],
+  "bbox_max": [
+   5.5,
+   1.0,
+   4.75
+  ],
+  "parts": 1,
+  "instances": 80,
+  "areas": {
+   "Catalog": 16,
+   "City_1": 64
+  },
+  "modes": {
+   "normal": 80
+  },
+  "colors": [
+   [
+    225,
+    210,
+    160,
+    1
+   ]
+  ],
+  "materials": {
+   "Concrete": 1
+  },
+  "roblox_name": "Workplace_MakerLot",
+  "canonical_part_ids": [
+   2878
+  ],
+  "frame_in_ctx": [
+   -30.0,
+   -1.0,
+   -16.0,
+   0.0,
+   0.0,
+   -1.0,
+   0.0,
+   1.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0
+  ],
+  "context": "Workplace:FAST TRACK"
+ },
+ "Workplace_Fence": {
+  "name": "Workplace_Fence",
+  "type": "Workplace_Fence",
+  "category": "decoration",
+  "theme": "FAST TRACK",
+  "canonical": "Catalog.FastTrack/Workplace_Fence/346.1",
+  "size": [
+   18.0,
+   2.6,
+   0.5
+  ],
+  "bbox_min": [
+   -9.0,
+   0.0,
+   -0.25
+  ],
+  "bbox_max": [
+   9.0,
+   2.6,
+   0.25
+  ],
+  "parts": 8,
+  "instances": 20,
+  "areas": {
+   "Catalog": 4,
+   "City_1": 16
+  },
+  "modes": {
+   "normal": 20
+  },
+  "colors": [
+   [
+    245,
+    245,
+    245,
+    8
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 8
+  },
+  "roblox_name": "Workplace_Fence",
+  "canonical_part_ids": [
+   2886,
+   2887,
+   2888,
+   2889,
+   2890,
+   2891,
+   2892,
+   2893
+  ],
+  "frame_in_ctx": [
+   -15.0,
+   -0.0,
+   -23.5,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "context": "Workplace:FAST TRACK"
+ },
+ "Workplace_LampPost": {
+  "name": "Workplace_LampPost",
+  "type": "Workplace_LampPost",
+  "category": "decoration",
+  "theme": "FAST TRACK",
+  "canonical": "Catalog.FastTrack/Workplace_LampPost/346.1",
+  "size": [
+   1.3,
+   7.95,
+   1.3
+  ],
+  "bbox_min": [
+   -0.65,
+   0.0,
+   -0.65
+  ],
+  "bbox_max": [
+   0.65,
+   7.95,
+   0.65
+  ],
+  "parts": 2,
+  "instances": 20,
+  "areas": {
+   "Catalog": 4,
+   "City_1": 16
+  },
+  "modes": {
+   "normal": 20
+  },
+  "colors": [
+   [
+    40,
+    40,
+    50,
+    1
+   ],
+   [
+    255,
+    235,
+    150,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 1,
+   "Neon": 1
+  },
+  "roblox_name": "Workplace_LampPost",
+  "canonical_part_ids": [
+   2894,
+   2895
+  ],
+  "frame_in_ctx": [
+   -5.0,
+   0.0,
+   -23.5,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "context": "Workplace:FAST TRACK"
+ },
+ "Workplace_FlowerBox": {
+  "name": "Workplace_FlowerBox",
+  "type": "Workplace_FlowerBox",
+  "category": "decoration",
+  "theme": "FAST TRACK",
+  "canonical": "Catalog.FastTrack/Workplace_FlowerBox/346.1",
+  "size": [
+   5.0,
+   2.2,
+   1.6
+  ],
+  "bbox_min": [
+   -2.5,
+   0.0,
+   -0.8
+  ],
+  "bbox_max": [
+   2.5,
+   2.2,
+   0.8
+  ],
+  "parts": 4,
+  "instances": 20,
+  "areas": {
+   "Catalog": 4,
+   "City_1": 16
+  },
+  "modes": {
+   "normal": 20
+  },
+  "colors": [
+   [
+    150,
+    105,
+    60,
+    1
+   ],
+   [
+    255,
+    75,
+    170,
+    1
+   ],
+   [
+    255,
+    120,
+    170,
+    1
+   ],
+   [
+    255,
+    165,
+    170,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 1,
+   "Grass": 3
+  },
+  "roblox_name": "Workplace_FlowerBox",
+  "canonical_part_ids": [
+   2908,
+   2909,
+   2910,
+   2911
+  ],
+  "frame_in_ctx": [
+   -19.0,
+   0.0,
+   4.5,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "context": "Workplace:FAST TRACK"
+ },
+ "Workplace_Sandbox": {
+  "name": "Workplace_Sandbox",
+  "type": "Workplace_Sandbox",
+  "category": "props",
+  "theme": "FAST TRACK",
+  "canonical": "Catalog.FastTrack/Workplace_Sandbox/346",
+  "size": [
+   12.6,
+   0.6,
+   10.4
+  ],
+  "bbox_min": [
+   -6.3,
+   0.0,
+   -5.2
+  ],
+  "bbox_max": [
+   6.3,
+   0.6,
+   5.2
+  ],
+  "parts": 5,
+  "instances": 10,
+  "areas": {
+   "Catalog": 2,
+   "City_1": 8
+  },
+  "modes": {
+   "normal": 10
+  },
+  "colors": [
+   [
+    150,
+    105,
+    60,
+    4
+   ],
+   [
+    235,
+    215,
+    160,
+    1
+   ]
+  ],
+  "materials": {
+   "Sand": 1,
+   "SmoothPlastic": 4
+  },
+  "roblox_name": "Workplace_Sandbox",
+  "canonical_part_ids": [
+   2916,
+   2917,
+   2918,
+   2919,
+   2920
+  ],
+  "frame_in_ctx": [
+   17.0,
+   0.0,
+   -18.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "context": "Workplace:FAST TRACK"
+ },
+ "Workplace_DebtPad": {
+  "name": "Workplace_DebtPad",
+  "type": "Workplace_DebtPad",
+  "category": "ground",
+  "theme": "PIZZERIA",
+  "canonical": "City_1.Plots.Plot_Player1/Workplace_DebtPad/84",
+  "size": [
+   12.0,
+   0.2,
+   10.0
+  ],
+  "bbox_min": [
+   -6.0,
+   0.0,
+   -5.0
+  ],
+  "bbox_max": [
+   6.0,
+   0.2,
+   5.0
+  ],
+  "parts": 1,
+  "instances": 8,
+  "areas": {
+   "City_1": 8
+  },
+  "modes": {
+   "normal": 8
+  },
+  "colors": [
+   [
+    150,
+    150,
+    155,
+    1
+   ]
+  ],
+  "materials": {
+   "Slate": 1
+  },
+  "roblox_name": "Workplace_DebtPad",
+  "canonical_part_ids": [
+   321
+  ],
+  "frame_in_ctx": [
+   -17.0,
+   0.0,
+   -17.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "context": "Workplace:PIZZERIA"
+ },
+ "Debt_CreditCard": {
+  "name": "Debt_CreditCard",
+  "type": "Debt_CreditCard",
+  "category": "props",
+  "theme": "",
+  "canonical": "Catalog.Debts/Debt_CreditCard#434",
+  "size": [
+   4.42,
+   3.199,
+   1.4
+  ],
+  "bbox_min": [
+   -2.21,
+   0.0,
+   -0.7
+  ],
+  "bbox_max": [
+   2.21,
+   3.199,
+   0.7
+  ],
+  "parts": 5,
+  "instances": 2,
+  "areas": {
+   "Catalog": 1,
+   "City_1": 1
+  },
+  "modes": {
+   "normal": 2
+  },
+  "colors": [
+   [
+    40,
+    40,
+    50,
+    2
+   ],
+   [
+    40,
+    90,
+    200,
+    2
+   ],
+   [
+    245,
+    190,
+    40,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 4,
+   "Metal": 1
+  },
+  "roblox_name": "Credit Card",
+  "canonical_part_ids": [
+   3599,
+   3600,
+   3601,
+   3602,
+   3603
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": ""
+ },
+ "Debt_CreditCard_v2": {
+  "name": "Debt_CreditCard_v2",
+  "type": "Debt_CreditCard",
+  "category": "props",
+  "theme": "",
+  "canonical": "Catalog.Debts/Debt_CreditCard#436",
+  "size": [
+   5.44,
+   3.841,
+   1.4
+  ],
+  "bbox_min": [
+   -2.72,
+   0.0,
+   -0.7
+  ],
+  "bbox_max": [
+   2.72,
+   3.841,
+   0.7
+  ],
+  "parts": 5,
+  "instances": 1,
+  "areas": {
+   "Catalog": 1
+  },
+  "modes": {
+   "normal": 1
+  },
+  "colors": [
+   [
+    40,
+    40,
+    50,
+    2
+   ],
+   [
+    40,
+    90,
+    200,
+    2
+   ],
+   [
+    245,
+    190,
+    40,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 4,
+   "Metal": 1
+  },
+  "roblox_name": "Credit Card",
+  "canonical_part_ids": [
+   3607,
+   3608,
+   3609,
+   3610,
+   3611
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": ""
+ },
+ "Debt_CreditCard_v3": {
+  "name": "Debt_CreditCard_v3",
+  "type": "Debt_CreditCard",
+  "category": "props",
+  "theme": "",
+  "canonical": "City_1.Plots.Plot_Player8/Debt_CreditCard#289",
+  "size": [
+   4.76,
+   3.413,
+   1.4
+  ],
+  "bbox_min": [
+   -2.38,
+   0.0,
+   -0.7
+  ],
+  "bbox_max": [
+   2.38,
+   3.413,
+   0.7
+  ],
+  "parts": 5,
+  "instances": 1,
+  "areas": {
+   "City_1": 1
+  },
+  "modes": {
+   "normal": 1
+  },
+  "colors": [
+   [
+    40,
+    40,
+    50,
+    2
+   ],
+   [
+    40,
+    90,
+    200,
+    2
+   ],
+   [
+    245,
+    190,
+    40,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 4,
+   "Metal": 1
+  },
+  "roblox_name": "Credit Card",
+  "canonical_part_ids": [
+   2201,
+   2202,
+   2204,
+   2205,
+   2206
+  ],
+  "frame_in_ctx": [
+   0.0,
+   0.0,
+   0.0,
+   1.00001,
+   0.0,
+   0.0,
+   0.0,
+   1,
+   0.0,
+   0.0,
+   0.0,
+   1.00001
+  ],
+  "context": "Debts"
+ },
+ "Maker_LemonadeStand": {
+  "name": "Maker_LemonadeStand",
+  "type": "Maker_LemonadeStand",
+  "category": "props",
+  "theme": "",
+  "canonical": "Catalog.MoneyMakers/Maker_LemonadeStand#380",
+  "size": [
+   6.0,
+   6.3,
+   6.0
+  ],
+  "bbox_min": [
+   -3.0,
+   0.0,
+   -2.0
+  ],
+  "bbox_max": [
+   3.0,
+   6.3,
+   4.0
+  ],
+  "parts": 5,
+  "instances": 3,
+  "areas": {
+   "Catalog": 1,
+   "City_1": 2
+  },
+  "modes": {
+   "normal": 3
+  },
+  "colors": [
+   [
+    250,
+    220,
+    80,
+    1
+   ],
+   [
+    230,
+    170,
+    30,
+    1
+   ],
+   [
+    245,
+    245,
+    245,
+    1
+   ],
+   [
+    255,
+    120,
+    160,
+    1
+   ],
+   [
+    255,
+    240,
+    120,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 4,
+   "Neon": 1
+  },
+  "roblox_name": "Lemonade Stand",
+  "canonical_part_ids": [
+   3313,
+   3314,
+   3317,
+   3318,
+   3319
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": ""
+ },
+ "Maker_FoodTruck": {
+  "name": "Maker_FoodTruck",
+  "type": "Maker_FoodTruck",
+  "category": "vehicles",
+  "theme": "",
+  "canonical": "Catalog.MoneyMakers/Maker_FoodTruck#391",
+  "size": [
+   8.0,
+   4.9,
+   5.0
+  ],
+  "bbox_min": [
+   -4.0,
+   0.0,
+   -2.5
+  ],
+  "bbox_max": [
+   4.0,
+   4.9,
+   2.5
+  ],
+  "parts": 7,
+  "instances": 2,
+  "areas": {
+   "Catalog": 1,
+   "City_1": 1
+  },
+  "modes": {
+   "normal": 2
+  },
+  "colors": [
+   [
+    40,
+    40,
+    50,
+    4
+   ],
+   [
+    250,
+    140,
+    40,
+    1
+   ],
+   [
+    255,
+    240,
+    120,
+    1
+   ],
+   [
+    200,
+    60,
+    40,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 6,
+   "Neon": 1
+  },
+  "roblox_name": "Food Truck",
+  "canonical_part_ids": [
+   3364,
+   3365,
+   3366,
+   3369,
+   3370,
+   3371,
+   3372
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": ""
+ },
+ "Maker_CarWash": {
+  "name": "Maker_CarWash",
+  "type": "Maker_CarWash",
+  "category": "buildings",
+  "theme": "",
+  "canonical": "Catalog.MoneyMakers/Maker_CarWash#384",
+  "size": [
+   9.0,
+   7.0,
+   7.2
+  ],
+  "bbox_min": [
+   -4.5,
+   0.0,
+   -3.7
+  ],
+  "bbox_max": [
+   4.5,
+   7.0,
+   3.5
+  ],
+  "parts": 5,
+  "instances": 4,
+  "areas": {
+   "Catalog": 2,
+   "City_1": 2
+  },
+  "modes": {
+   "normal": 2,
+   "ghost": 2
+  },
+  "colors": [
+   [
+    60,
+    140,
+    230,
+    4
+   ],
+   [
+    70,
+    160,
+    230,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 4,
+   "Neon": 1
+  },
+  "roblox_name": "Car Wash",
+  "canonical_part_ids": [
+   3332,
+   3333,
+   3334,
+   3335,
+   3338
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": ""
+ },
+ "Dream_Supercar": {
+  "name": "Dream_Supercar",
+  "type": "Dream_Supercar",
+  "category": "vehicles",
+  "theme": "",
+  "canonical": "Catalog.Dreams/Dream_Supercar",
+  "size": [
+   5.6,
+   3.455,
+   12.2
+  ],
+  "bbox_min": [
+   -2.8,
+   0.0,
+   -6.5
+  ],
+  "bbox_max": [
+   2.8,
+   3.455,
+   5.7
+  ],
+  "parts": 42,
+  "instances": 4,
+  "areas": {
+   "Catalog": 2,
+   "City_1": 2
+  },
+  "modes": {
+   "normal": 1,
+   "dream": 3
+  },
+  "colors": [
+   [
+    25,
+    25,
+    30,
+    14
+   ],
+   [
+    230,
+    35,
+    50,
+    10
+   ],
+   [
+    215,
+    220,
+    228,
+    6
+   ],
+   [
+    255,
+    255,
+    255,
+    5
+   ],
+   [
+    35,
+    45,
+    70,
+    4
+   ],
+   [
+    255,
+    250,
+    220,
+    2
+   ],
+   [
+    255,
+    40,
+    40,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 29,
+   "Glass": 4,
+   "Neon": 3,
+   "Metal": 6
+  },
+  "roblox_name": "Supercar",
+  "canonical_part_ids": [
+   3692,
+   3693,
+   3694,
+   3695,
+   3696,
+   3697,
+   3698,
+   3699,
+   3700,
+   3701,
+   3702,
+   3703,
+   3704,
+   3705,
+   3706,
+   3707,
+   3708,
+   3709,
+   3710,
+   3711,
+   3712,
+   3713,
+   3714,
+   3715,
+   3716,
+   3717,
+   3718,
+   3719,
+   3720,
+   3721,
+   3724,
+   3725,
+   3726,
+   3727,
+   3728,
+   3729,
+   3730,
+   3731,
+   3732,
+   3733,
+   3734,
+   3735
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": "Catalog"
+ },
+ "Depot_Bus": {
+  "name": "Depot_Bus",
+  "type": "Depot_Bus",
+  "category": "vehicles",
+  "theme": "BUS DEPOT",
+  "canonical": "City_1.Plots.Plot_Player2/Depot_Bus/110",
+  "size": [
+   20.0,
+   7.0,
+   6.0
+  ],
+  "bbox_min": [
+   -10.0,
+   0.0,
+   -3.0
+  ],
+  "bbox_max": [
+   10.0,
+   7.0,
+   3.0
+  ],
+  "parts": 7,
+  "instances": 1,
+  "areas": {
+   "City_1": 1
+  },
+  "modes": {
+   "normal": 1
+  },
+  "colors": [
+   [
+    40,
+    40,
+    50,
+    4
+   ],
+   [
+    150,
+    210,
+    255,
+    2
+   ],
+   [
+    250,
+    200,
+    40,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 5,
+   "Neon": 2
+  },
+  "roblox_name": "Depot_Bus",
+  "canonical_part_ids": [
+   485,
+   486,
+   487,
+   488,
+   489,
+   490,
+   491
+  ],
+  "frame_in_ctx": [
+   -0.0,
+   0.0,
+   15.00007,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "context": "Furnish:BUS DEPOT"
+ },
+ "Kid": {
+  "name": "Kid",
+  "type": "Kid",
+  "category": "props",
+  "theme": "",
+  "canonical": "Catalog.FastTrack/Kid#363",
+  "size": [
+   1.3,
+   3.35,
+   1.2
+  ],
+  "bbox_min": [
+   -0.65,
+   0.0,
+   -0.6
+  ],
+  "bbox_max": [
+   0.65,
+   3.35,
+   0.6
+  ],
+  "parts": 3,
+  "instances": 8,
+  "areas": {
+   "Catalog": 2,
+   "City_1": 6
+  },
+  "modes": {
+   "normal": 8
+  },
+  "colors": [
+   [
+    60,
+    80,
+    150,
+    1
+   ],
+   [
+    255,
+    90,
+    90,
+    1
+   ],
+   [
+    240,
+    200,
+    160,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 3
+  },
+  "roblox_name": "Kid",
+  "canonical_part_ids": [
+   3147,
+   3148,
+   3149
+  ],
+  "frame_in_ctx": [
+   0.0,
+   0.0,
+   0.0,
+   1.00001,
+   0.0,
+   0.0,
+   0.0,
+   1,
+   0.0,
+   0.0,
+   0.0,
+   1.00001
+  ],
+  "context": "Kids"
+ },
+ "Kid_v2": {
+  "name": "Kid_v2",
+  "type": "Kid",
+  "category": "props",
+  "theme": "",
+  "canonical": "Catalog.FastTrack/Kid#364",
+  "size": [
+   1.3,
+   3.35,
+   1.2
+  ],
+  "bbox_min": [
+   -0.65,
+   0.0,
+   -0.6
+  ],
+  "bbox_max": [
+   0.65,
+   3.35,
+   0.6
+  ],
+  "parts": 3,
+  "instances": 4,
+  "areas": {
+   "Catalog": 1,
+   "City_1": 3
+  },
+  "modes": {
+   "normal": 4
+  },
+  "colors": [
+   [
+    60,
+    80,
+    150,
+    1
+   ],
+   [
+    90,
+    200,
+    255,
+    1
+   ],
+   [
+    240,
+    200,
+    160,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 3
+  },
+  "roblox_name": "Kid",
+  "canonical_part_ids": [
+   3151,
+   3152,
+   3153
+  ],
+  "frame_in_ctx": [
+   0.0,
+   0.0,
+   0.0,
+   1.00001,
+   0.0,
+   0.0,
+   0.0,
+   1,
+   0.0,
+   0.0,
+   0.0,
+   1.00001
+  ],
+  "context": "Kids"
+ },
+ "Kid_v3": {
+  "name": "Kid_v3",
+  "type": "Kid",
+  "category": "props",
+  "theme": "",
+  "canonical": "City_1.Plots.Plot_Player4/Kid#174",
+  "size": [
+   1.3,
+   3.35,
+   1.2
+  ],
+  "bbox_min": [
+   -0.65,
+   0.0,
+   -0.6
+  ],
+  "bbox_max": [
+   0.65,
+   3.35,
+   0.6
+  ],
+  "parts": 3,
+  "instances": 1,
+  "areas": {
+   "City_1": 1
+  },
+  "modes": {
+   "normal": 1
+  },
+  "colors": [
+   [
+    60,
+    80,
+    150,
+    1
+   ],
+   [
+    255,
+    210,
+    60,
+    1
+   ],
+   [
+    240,
+    200,
+    160,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 3
+  },
+  "roblox_name": "Kid",
+  "canonical_part_ids": [
+   1107,
+   1108,
+   1109
+  ],
+  "frame_in_ctx": [
+   0.0,
+   0.0,
+   0.0,
+   1.00001,
+   0.0,
+   0.0,
+   0.0,
+   1,
+   0.0,
+   0.0,
+   0.0,
+   1.00001
+  ],
+  "context": "Kids"
+ },
+ "Debt_CarLoan": {
+  "name": "Debt_CarLoan",
+  "type": "Debt_CarLoan",
+  "category": "props",
+  "theme": "",
+  "canonical": "Catalog.Debts/Debt_CarLoan#438",
+  "size": [
+   3.1,
+   2.5,
+   4.7
+  ],
+  "bbox_min": [
+   -1.55,
+   0.0,
+   -2.4
+  ],
+  "bbox_max": [
+   1.55,
+   2.5,
+   2.3
+  ],
+  "parts": 7,
+  "instances": 2,
+  "areas": {
+   "Catalog": 1,
+   "City_1": 1
+  },
+  "modes": {
+   "normal": 2
+  },
+  "colors": [
+   [
+    40,
+    40,
+    50,
+    4
+   ],
+   [
+    140,
+    140,
+    150,
+    1
+   ],
+   [
+    150,
+    210,
+    255,
+    1
+   ],
+   [
+    210,
+    40,
+    40,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 6,
+   "Glass": 1
+  },
+  "roblox_name": "Car Loan",
+  "canonical_part_ids": [
+   3615,
+   3616,
+   3617,
+   3618,
+   3619,
+   3620,
+   3621
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": ""
+ },
+ "Debt_CarLoan_v2": {
+  "name": "Debt_CarLoan_v2",
+  "type": "Debt_CarLoan",
+  "category": "props",
+  "theme": "",
+  "canonical": "Catalog.Debts/Debt_CarLoan#440",
+  "size": [
+   4.03,
+   3.25,
+   6.095
+  ],
+  "bbox_min": [
+   -2.015,
+   0.0,
+   -3.105
+  ],
+  "bbox_max": [
+   2.015,
+   3.25,
+   2.99
+  ],
+  "parts": 7,
+  "instances": 1,
+  "areas": {
+   "Catalog": 1
+  },
+  "modes": {
+   "normal": 1
+  },
+  "colors": [
+   [
+    40,
+    40,
+    50,
+    4
+   ],
+   [
+    140,
+    140,
+    150,
+    1
+   ],
+   [
+    150,
+    210,
+    255,
+    1
+   ],
+   [
+    210,
+    40,
+    40,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 6,
+   "Glass": 1
+  },
+  "roblox_name": "Car Loan",
+  "canonical_part_ids": [
+   3625,
+   3626,
+   3627,
+   3628,
+   3629,
+   3630,
+   3631
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": ""
+ },
+ "Debt_CarLoan_v3": {
+  "name": "Debt_CarLoan_v3",
+  "type": "Debt_CarLoan",
+  "category": "props",
+  "theme": "",
+  "canonical": "City_1.Plots.Plot_Player5/Debt_CarLoan#210",
+  "size": [
+   3.307,
+   2.667,
+   5.01
+  ],
+  "bbox_min": [
+   -1.653,
+   -0.0,
+   -2.557
+  ],
+  "bbox_max": [
+   1.653,
+   2.667,
+   2.453
+  ],
+  "parts": 7,
+  "instances": 1,
+  "areas": {
+   "City_1": 1
+  },
+  "modes": {
+   "normal": 1
+  },
+  "colors": [
+   [
+    40,
+    40,
+    50,
+    4
+   ],
+   [
+    140,
+    140,
+    150,
+    1
+   ],
+   [
+    150,
+    210,
+    255,
+    1
+   ],
+   [
+    210,
+    40,
+    40,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 6,
+   "Glass": 1
+  },
+  "roblox_name": "Car Loan",
+  "canonical_part_ids": [
+   1370,
+   1372,
+   1373,
+   1374,
+   1375,
+   1376,
+   1377
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": "Debts"
+ },
+ "Debt_CarLoan_v4": {
+  "name": "Debt_CarLoan_v4",
+  "type": "Debt_CarLoan",
+  "category": "props",
+  "theme": "",
+  "canonical": "City_1.Plots.Plot_Player6/Debt_CarLoan#240",
+  "size": [
+   3.513,
+   2.833,
+   5.32
+  ],
+  "bbox_min": [
+   -1.757,
+   0.0,
+   -2.713
+  ],
+  "bbox_max": [
+   1.757,
+   2.833,
+   2.607
+  ],
+  "parts": 7,
+  "instances": 1,
+  "areas": {
+   "City_1": 1
+  },
+  "modes": {
+   "normal": 1
+  },
+  "colors": [
+   [
+    40,
+    40,
+    50,
+    4
+   ],
+   [
+    140,
+    140,
+    150,
+    1
+   ],
+   [
+    150,
+    210,
+    255,
+    1
+   ],
+   [
+    210,
+    40,
+    40,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 6,
+   "Glass": 1
+  },
+  "roblox_name": "Car Loan",
+  "canonical_part_ids": [
+   1691,
+   1693,
+   1694,
+   1695,
+   1696,
+   1697,
+   1698
+  ],
+  "frame_in_ctx": [
+   0.0,
+   0.0,
+   0.0,
+   1.00001,
+   0.0,
+   0.0,
+   0.0,
+   1,
+   0.0,
+   0.0,
+   0.0,
+   1.00001
+  ],
+  "context": "Debts"
+ },
+ "Maker_VendingMachine": {
+  "name": "Maker_VendingMachine",
+  "type": "Maker_VendingMachine",
+  "category": "props",
+  "theme": "",
+  "canonical": "Catalog.MoneyMakers/Maker_VendingMachine#382",
+  "size": [
+   3.5,
+   6.0,
+   2.65
+  ],
+  "bbox_min": [
+   -1.75,
+   0.0,
+   -1.4
+  ],
+  "bbox_max": [
+   1.75,
+   6.0,
+   1.25
+  ],
+  "parts": 2,
+  "instances": 3,
+  "areas": {
+   "Catalog": 1,
+   "City_1": 2
+  },
+  "modes": {
+   "normal": 3
+  },
+  "colors": [
+   [
+    210,
+    40,
+    40,
+    1
+   ],
+   [
+    150,
+    210,
+    255,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 1,
+   "Neon": 1
+  },
+  "roblox_name": "Vending Machine",
+  "canonical_part_ids": [
+   3321,
+   3322
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": ""
+ },
+ "Maker_ToyShop": {
+  "name": "Maker_ToyShop",
+  "type": "Maker_ToyShop",
+  "category": "buildings",
+  "theme": "",
+  "canonical": "Catalog.MoneyMakers/Maker_ToyShop#393",
+  "size": [
+   8.0,
+   7.0,
+   8.2
+  ],
+  "bbox_min": [
+   -4.0,
+   0.0,
+   -4.7
+  ],
+  "bbox_max": [
+   4.0,
+   7.0,
+   3.5
+  ],
+  "parts": 4,
+  "instances": 2,
+  "areas": {
+   "Catalog": 1,
+   "City_1": 1
+  },
+  "modes": {
+   "normal": 2
+  },
+  "colors": [
+   [
+    240,
+    130,
+    190,
+    1
+   ],
+   [
+    255,
+    230,
+    120,
+    1
+   ],
+   [
+    245,
+    245,
+    245,
+    1
+   ],
+   [
+    40,
+    40,
+    50,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 3,
+   "Neon": 1
+  },
+  "roblox_name": "Toy Shop",
+  "canonical_part_ids": [
+   3374,
+   3375,
+   3376,
+   3377
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": ""
+ },
+ "Maker_GoldCoin": {
+  "name": "Maker_GoldCoin",
+  "type": "Maker_GoldCoin",
+  "category": "props",
+  "theme": "",
+  "canonical": "Catalog.MoneyMakers/Maker_GoldCoin#389",
+  "size": [
+   3.8,
+   4.2,
+   1.4
+  ],
+  "bbox_min": [
+   -1.9,
+   0.0,
+   -0.7
+  ],
+  "bbox_max": [
+   1.9,
+   4.2,
+   0.7
+  ],
+  "parts": 4,
+  "instances": 5,
+  "areas": {
+   "Catalog": 3,
+   "City_1": 2
+  },
+  "modes": {
+   "normal": 1,
+   "ghost": 2,
+   "mini": 2
+  },
+  "colors": [
+   [
+    255,
+    215,
+    90,
+    2
+   ],
+   [
+    40,
+    40,
+    50,
+    1
+   ],
+   [
+    245,
+    190,
+    40,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 2,
+   "Metal": 2
+  },
+  "roblox_name": "Gold Coin",
+  "canonical_part_ids": [
+   3357,
+   3358,
+   3359,
+   3360
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": ""
+ },
+ "Dream_Yacht": {
+  "name": "Dream_Yacht",
+  "type": "Dream_Yacht",
+  "category": "vehicles",
+  "theme": "",
+  "canonical": "Catalog.Dreams/Dream_Yacht",
+  "size": [
+   11.275,
+   14.8,
+   42.6
+  ],
+  "bbox_min": [
+   -5.675,
+   -0.5,
+   -20.05
+  ],
+  "bbox_max": [
+   5.6,
+   14.3,
+   22.55
+  ],
+  "parts": 85,
+  "instances": 4,
+  "areas": {
+   "Catalog": 2,
+   "City_1": 2
+  },
+  "modes": {
+   "normal": 1,
+   "dream": 3
+  },
+  "colors": [
+   [
+    205,
+    210,
+    220,
+    39
+   ],
+   [
+    60,
+    95,
+    140,
+    15
+   ],
+   [
+    248,
+    248,
+    252,
+    8
+   ],
+   [
+    250,
+    250,
+    245,
+    6
+   ],
+   [
+    30,
+    55,
+    120,
+    5
+   ],
+   [
+    195,
+    145,
+    95,
+    5
+   ],
+   [
+    40,
+    70,
+    150,
+    3
+   ],
+   [
+    45,
+    45,
+    55,
+    3
+   ],
+   [
+    230,
+    50,
+    60,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 23,
+   "WoodPlanks": 5,
+   "Glass": 15,
+   "Metal": 42
+  },
+  "roblox_name": "Yacht",
+  "canonical_part_ids": [
+   3737,
+   3742,
+   3743,
+   3744,
+   3745,
+   3746,
+   3747,
+   3748,
+   3749,
+   3750,
+   3751,
+   3752,
+   3753,
+   3754,
+   3755,
+   3756,
+   3757,
+   3758,
+   3759,
+   3760,
+   3761,
+   3762,
+   3763,
+   3764,
+   3765,
+   3766,
+   3767,
+   3768,
+   3769,
+   3770,
+   3771,
+   3772,
+   3773,
+   3774,
+   3775,
+   3776,
+   3777,
+   3778,
+   3779,
+   3780,
+   3781,
+   3782,
+   3783,
+   3784,
+   3785,
+   3786,
+   3787,
+   3788,
+   3789,
+   3790,
+   3791,
+   3792,
+   3793,
+   3794,
+   3795,
+   3796,
+   3797,
+   3798,
+   3799,
+   3800,
+   3801,
+   3802,
+   3803,
+   3804,
+   3805,
+   3806,
+   3807,
+   3808,
+   3809,
+   3810,
+   3811,
+   3812,
+   3813,
+   3814,
+   3815,
+   3816,
+   3817,
+   3818,
+   3819,
+   3820,
+   3821,
+   3822,
+   3823,
+   3824,
+   3825
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": "Catalog"
+ },
+ "Collection_Showcase": {
+  "name": "Collection_Showcase",
+  "type": "Collection_Showcase",
+  "category": "props",
+  "theme": "",
+  "canonical": "Catalog.FastTrack/Collection_Showcase/355",
+  "size": [
+   11.2,
+   2.6,
+   3.2
+  ],
+  "bbox_min": [
+   -5.6,
+   0.0,
+   -1.6
+  ],
+  "bbox_max": [
+   5.6,
+   2.6,
+   1.6
+  ],
+  "parts": 2,
+  "instances": 3,
+  "areas": {
+   "Catalog": 1,
+   "City_1": 2
+  },
+  "modes": {
+   "normal": 3
+  },
+  "colors": [
+   [
+    150,
+    105,
+    60,
+    1
+   ],
+   [
+    245,
+    190,
+    40,
+    1
+   ]
+  ],
+  "materials": {
+   "WoodPlanks": 1,
+   "Metal": 1
+  },
+  "roblox_name": "Collection_Showcase",
+  "canonical_part_ids": [
+   3271,
+   3272
+  ],
+  "frame_in_ctx": [
+   15.00007,
+   0.0,
+   -4.00002,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "context": "Collection"
+ },
+ "Maker_PokeBloxCard": {
+  "name": "Maker_PokeBloxCard",
+  "type": "Maker_PokeBloxCard",
+  "category": "props",
+  "theme": "",
+  "canonical": "Catalog.MoneyMakers/Maker_PokeBloxCard#386",
+  "size": [
+   3.6,
+   5.456,
+   1.645
+  ],
+  "bbox_min": [
+   -1.8,
+   -0.455,
+   -0.945
+  ],
+  "bbox_max": [
+   1.8,
+   5.001,
+   0.7
+  ],
+  "parts": 12,
+  "instances": 4,
+  "areas": {
+   "Catalog": 2,
+   "City_1": 2
+  },
+  "modes": {
+   "normal": 1,
+   "ghost": 1,
+   "mini": 2
+  },
+  "colors": [
+   [
+    170,
+    170,
+    180,
+    5
+   ],
+   [
+    150,
+    210,
+    255,
+    2
+   ],
+   [
+    40,
+    40,
+    50,
+    1
+   ],
+   [
+    255,
+    210,
+    60,
+    1
+   ],
+   [
+    120,
+    200,
+    255,
+    1
+   ],
+   [
+    255,
+    255,
+    255,
+    1
+   ],
+   [
+    245,
+    245,
+    245,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 10,
+   "Glass": 2
+  },
+  "roblox_name": "PokeBlox Card",
+  "canonical_part_ids": [
+   3340,
+   3341,
+   3342,
+   3343,
+   3344,
+   3347,
+   3348,
+   3349,
+   3350,
+   3351,
+   3352,
+   3353
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": ""
+ },
+ "HospitalBed": {
+  "name": "HospitalBed",
+  "type": "HospitalBed",
+  "category": "props",
+  "theme": "HOSPITAL",
+  "canonical": "City_1.Plots.Plot_Player3/HospitalBed/142.1",
+  "size": [
+   4.1,
+   2.2,
+   7.0
+  ],
+  "bbox_min": [
+   -2.05,
+   0.0,
+   -3.5
+  ],
+  "bbox_max": [
+   2.05,
+   2.2,
+   3.5
+  ],
+  "parts": 3,
+  "instances": 4,
+  "areas": {
+   "City_1": 4
+  },
+  "modes": {
+   "normal": 4
+  },
+  "colors": [
+   [
+    245,
+    245,
+    245,
+    1
+   ],
+   [
+    180,
+    220,
+    255,
+    1
+   ],
+   [
+    120,
+    180,
+    240,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 3
+  },
+  "roblox_name": "HospitalBed",
+  "canonical_part_ids": [
+   783,
+   784,
+   785
+  ],
+  "frame_in_ctx": [
+   12.0,
+   0.0,
+   17.0,
+   1.0,
+   0.0,
+   -0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "context": "Furnish:HOSPITAL"
+ },
+ "Hospital_WallCross": {
+  "name": "Hospital_WallCross",
+  "type": "Hospital_WallCross",
+  "category": "decoration",
+  "theme": "HOSPITAL",
+  "canonical": "City_1.Plots.Plot_Player3/Hospital_WallCross/142",
+  "size": [
+   5.0,
+   5.0,
+   0.3
+  ],
+  "bbox_min": [
+   -2.5,
+   0.0,
+   -0.15
+  ],
+  "bbox_max": [
+   2.5,
+   5.0,
+   0.15
+  ],
+  "parts": 2,
+  "instances": 1,
+  "areas": {
+   "City_1": 1
+  },
+  "modes": {
+   "normal": 1
+  },
+  "colors": [
+   [
+    220,
+    50,
+    60,
+    2
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 2
+  },
+  "roblox_name": "Hospital_WallCross",
+  "canonical_part_ids": [
+   786,
+   787
+  ],
+  "frame_in_ctx": [
+   0.0,
+   9.0,
+   23.0,
+   1.0,
+   0.0,
+   -0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "context": "Furnish:HOSPITAL"
+ },
+ "Debt_SchoolLoan": {
+  "name": "Debt_SchoolLoan",
+  "type": "Debt_SchoolLoan",
+  "category": "props",
+  "theme": "",
+  "canonical": "Catalog.Debts/Debt_SchoolLoan#442",
+  "size": [
+   3.394,
+   3.02,
+   3.394
+  ],
+  "bbox_min": [
+   -1.697,
+   0.0,
+   -1.697
+  ],
+  "bbox_max": [
+   1.697,
+   3.02,
+   1.697
+  ],
+  "parts": 9,
+  "instances": 2,
+  "areas": {
+   "Catalog": 1,
+   "City_1": 1
+  },
+  "modes": {
+   "normal": 2
+  },
+  "colors": [
+   [
+    245,
+    245,
+    245,
+    3
+   ],
+   [
+    40,
+    40,
+    50,
+    2
+   ],
+   [
+    200,
+    60,
+    60,
+    1
+   ],
+   [
+    60,
+    120,
+    210,
+    1
+   ],
+   [
+    70,
+    170,
+    90,
+    1
+   ],
+   [
+    245,
+    190,
+    40,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 9
+  },
+  "roblox_name": "School Loan",
+  "canonical_part_ids": [
+   3635,
+   3636,
+   3637,
+   3638,
+   3639,
+   3640,
+   3641,
+   3642,
+   3643
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": ""
+ },
+ "Debt_SchoolLoan_v2": {
+  "name": "Debt_SchoolLoan_v2",
+  "type": "Debt_SchoolLoan",
+  "category": "props",
+  "theme": "",
+  "canonical": "Catalog.Debts/Debt_SchoolLoan#443",
+  "size": [
+   3.394,
+   6.22,
+   3.394
+  ],
+  "bbox_min": [
+   -1.697,
+   0.0,
+   -1.697
+  ],
+  "bbox_max": [
+   1.697,
+   6.22,
+   1.697
+  ],
+  "parts": 17,
+  "instances": 2,
+  "areas": {
+   "Catalog": 1,
+   "City_1": 1
+  },
+  "modes": {
+   "normal": 2
+  },
+  "colors": [
+   [
+    245,
+    245,
+    245,
+    7
+   ],
+   [
+    200,
+    60,
+    60,
+    2
+   ],
+   [
+    60,
+    120,
+    210,
+    2
+   ],
+   [
+    40,
+    40,
+    50,
+    2
+   ],
+   [
+    70,
+    170,
+    90,
+    1
+   ],
+   [
+    230,
+    170,
+    40,
+    1
+   ],
+   [
+    150,
+    80,
+    190,
+    1
+   ],
+   [
+    245,
+    190,
+    40,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 17
+  },
+  "roblox_name": "School Loan",
+  "canonical_part_ids": [
+   3645,
+   3646,
+   3647,
+   3648,
+   3649,
+   3650,
+   3651,
+   3652,
+   3653,
+   3654,
+   3655,
+   3656,
+   3657,
+   3658,
+   3659,
+   3660,
+   3661
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": ""
+ },
+ "Debt_SchoolLoan_v3": {
+  "name": "Debt_SchoolLoan_v3",
+  "type": "Debt_SchoolLoan",
+  "category": "props",
+  "theme": "",
+  "canonical": "City_1.Plots.Plot_Player7/Debt_SchoolLoan#267",
+  "size": [
+   3.394,
+   3.82,
+   3.394
+  ],
+  "bbox_min": [
+   -1.697,
+   -0.0,
+   -1.697
+  ],
+  "bbox_max": [
+   1.697,
+   3.82,
+   1.697
+  ],
+  "parts": 11,
+  "instances": 1,
+  "areas": {
+   "City_1": 1
+  },
+  "modes": {
+   "normal": 1
+  },
+  "colors": [
+   [
+    245,
+    245,
+    245,
+    4
+   ],
+   [
+    40,
+    40,
+    50,
+    2
+   ],
+   [
+    200,
+    60,
+    60,
+    1
+   ],
+   [
+    60,
+    120,
+    210,
+    1
+   ],
+   [
+    70,
+    170,
+    90,
+    1
+   ],
+   [
+    230,
+    170,
+    40,
+    1
+   ],
+   [
+    245,
+    190,
+    40,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 11
+  },
+  "roblox_name": "School Loan",
+  "canonical_part_ids": [
+   1926,
+   1928,
+   1929,
+   1930,
+   1931,
+   1932,
+   1933,
+   1934,
+   1935,
+   1936,
+   1937
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": "Debts"
+ },
+ "Maker_Apartment": {
+  "name": "Maker_Apartment",
+  "type": "Maker_Apartment",
+  "category": "buildings",
+  "theme": "",
+  "canonical": "Catalog.MoneyMakers/Maker_Apartment#383",
+  "size": [
+   8.0,
+   8.0,
+   7.15
+  ],
+  "bbox_min": [
+   -4.0,
+   0.0,
+   -3.65
+  ],
+  "bbox_max": [
+   4.0,
+   8.0,
+   3.5
+  ],
+  "parts": 7,
+  "instances": 2,
+  "areas": {
+   "Catalog": 1,
+   "City_1": 1
+  },
+  "modes": {
+   "normal": 2
+  },
+  "colors": [
+   [
+    255,
+    235,
+    150,
+    6
+   ],
+   [
+    210,
+    180,
+    140,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 1,
+   "Neon": 6
+  },
+  "roblox_name": "Apartment",
+  "canonical_part_ids": [
+   3324,
+   3325,
+   3326,
+   3327,
+   3328,
+   3329,
+   3330
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": ""
+ },
+ "Maker_MiniGolf": {
+  "name": "Maker_MiniGolf",
+  "type": "Maker_MiniGolf",
+  "category": "props",
+  "theme": "",
+  "canonical": "Catalog.MoneyMakers/Maker_MiniGolf#395",
+  "size": [
+   9.0,
+   4.3,
+   7.0
+  ],
+  "bbox_min": [
+   -4.5,
+   0.0,
+   -3.5
+  ],
+  "bbox_max": [
+   4.5,
+   4.3,
+   3.5
+  ],
+  "parts": 6,
+  "instances": 2,
+  "areas": {
+   "Catalog": 1,
+   "City_1": 1
+  },
+  "modes": {
+   "normal": 2
+  },
+  "colors": [
+   [
+    245,
+    245,
+    245,
+    2
+   ],
+   [
+    60,
+    190,
+    80,
+    1
+   ],
+   [
+    40,
+    40,
+    50,
+    1
+   ],
+   [
+    230,
+    50,
+    50,
+    1
+   ],
+   [
+    250,
+    200,
+    60,
+    1
+   ]
+  ],
+  "materials": {
+   "Grass": 1,
+   "SmoothPlastic": 5
+  },
+  "roblox_name": "Mini Golf",
+  "canonical_part_ids": [
+   3381,
+   3382,
+   3383,
+   3384,
+   3385,
+   3386
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": ""
+ },
+ "Dream_BeachVilla": {
+  "name": "Dream_BeachVilla",
+  "type": "Dream_BeachVilla",
+  "category": "buildings",
+  "theme": "",
+  "canonical": "Catalog.Dreams/Dream_BeachVilla",
+  "size": [
+   40.0,
+   13.2,
+   33.418
+  ],
+  "bbox_min": [
+   -20.0,
+   0.0,
+   -17.418
+  ],
+  "bbox_max": [
+   20.0,
+   13.2,
+   16.0
+  ],
+  "parts": 77,
+  "instances": 3,
+  "areas": {
+   "Catalog": 1,
+   "City_1": 2
+  },
+  "modes": {
+   "normal": 1,
+   "dream": 2
+  },
+  "colors": [
+   [
+    55,
+    58,
+    68,
+    9
+   ],
+   [
+    175,
+    120,
+    75,
+    8
+   ],
+   [
+    150,
+    105,
+    65,
+    8
+   ],
+   [
+    228,
+    215,
+    190,
+    6
+   ],
+   [
+    60,
+    170,
+    80,
+    6
+   ],
+   [
+    89,
+    182,
+    83,
+    6
+   ],
+   [
+    110,
+    75,
+    40,
+    6
+   ],
+   [
+    250,
+    250,
+    245,
+    5
+   ],
+   [
+    140,
+    200,
+    235,
+    4
+   ],
+   [
+    60,
+    62,
+    72,
+    3
+   ],
+   [
+    210,
+    215,
+    222,
+    3
+   ],
+   [
+    200,
+    110,
+    70,
+    3
+   ],
+   [
+    70,
+    170,
+    80,
+    3
+   ],
+   [
+    250,
+    250,
+    248,
+    2
+   ],
+   [
+    255,
+    225,
+    160,
+    2
+   ],
+   [
+    60,
+    195,
+    235,
+    1
+   ],
+   [
+    240,
+    240,
+    240,
+    1
+   ],
+   [
+    255,
+    140,
+    60,
+    1
+   ]
+  ],
+  "materials": {
+   "Limestone": 2,
+   "SmoothPlastic": 34,
+   "Glass": 5,
+   "Wood": 16,
+   "Neon": 2,
+   "Metal": 3,
+   "Grass": 15
+  },
+  "roblox_name": "BeachVilla",
+  "canonical_part_ids": [
+   3827,
+   3828,
+   3829,
+   3830,
+   3831,
+   3832,
+   3833,
+   3834,
+   3835,
+   3836,
+   3837,
+   3838,
+   3839,
+   3840,
+   3841,
+   3842,
+   3843,
+   3844,
+   3845,
+   3846,
+   3847,
+   3848,
+   3849,
+   3850,
+   3851,
+   3852,
+   3853,
+   3854,
+   3855,
+   3856,
+   3857,
+   3858,
+   3859,
+   3860,
+   3861,
+   3862,
+   3863,
+   3864,
+   3865,
+   3866,
+   3867,
+   3868,
+   3869,
+   3870,
+   3871,
+   3872,
+   3873,
+   3874,
+   3875,
+   3876,
+   3877,
+   3878,
+   3879,
+   3880,
+   3881,
+   3882,
+   3883,
+   3884,
+   3885,
+   3886,
+   3887,
+   3888,
+   3889,
+   3890,
+   3891,
+   3892,
+   3893,
+   3894,
+   3895,
+   3896,
+   3897,
+   3898,
+   3899,
+   3900,
+   3901,
+   3902,
+   3903
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": "Catalog"
+ },
+ "Computer": {
+  "name": "Computer",
+  "type": "Computer",
+  "category": "props",
+  "theme": "CLINIC",
+  "canonical": "City_1.Plots.Plot_Player4/Computer/168",
+  "size": [
+   4.0,
+   4.1,
+   2.5
+  ],
+  "bbox_min": [
+   -2.0,
+   0.0,
+   -1.25
+  ],
+  "bbox_max": [
+   2.0,
+   4.1,
+   1.25
+  ],
+  "parts": 3,
+  "instances": 7,
+  "areas": {
+   "City_1": 7
+  },
+  "modes": {
+   "normal": 7
+  },
+  "colors": [
+   [
+    245,
+    245,
+    245,
+    1
+   ],
+   [
+    40,
+    40,
+    50,
+    1
+   ],
+   [
+    80,
+    200,
+    255,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 2,
+   "Neon": 1
+  },
+  "roblox_name": "Computer",
+  "canonical_part_ids": [
+   1046,
+   1047,
+   1048
+  ],
+  "frame_in_ctx": [
+   -10.00005,
+   0.0,
+   12.00005,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "context": "Furnish:CLINIC"
+ },
+ "Clinic_Chair": {
+  "name": "Clinic_Chair",
+  "type": "Clinic_Chair",
+  "category": "props",
+  "theme": "CLINIC",
+  "canonical": "City_1.Plots.Plot_Player4/Clinic_Chair/168",
+  "size": [
+   2.0,
+   3.0,
+   2.0
+  ],
+  "bbox_min": [
+   -1.0,
+   0.0,
+   -1.0
+  ],
+  "bbox_max": [
+   1.0,
+   3.0,
+   1.0
+  ],
+  "parts": 1,
+  "instances": 1,
+  "areas": {
+   "City_1": 1
+  },
+  "modes": {
+   "normal": 1
+  },
+  "colors": [
+   [
+    40,
+    40,
+    50,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 1
+  },
+  "roblox_name": "Clinic_Chair",
+  "canonical_part_ids": [
+   1049
+  ],
+  "frame_in_ctx": [
+   -10.00005,
+   0.0,
+   14.50007,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "context": "Furnish:CLINIC"
+ },
+ "Clinic_Cabinet": {
+  "name": "Clinic_Cabinet",
+  "type": "Clinic_Cabinet",
+  "category": "props",
+  "theme": "CLINIC",
+  "canonical": "City_1.Plots.Plot_Player4/Clinic_Cabinet/168",
+  "size": [
+   4.0,
+   8.0,
+   2.5
+  ],
+  "bbox_min": [
+   -2.0,
+   0.0,
+   -1.25
+  ],
+  "bbox_max": [
+   2.0,
+   8.0,
+   1.25
+  ],
+  "parts": 1,
+  "instances": 1,
+  "areas": {
+   "City_1": 1
+  },
+  "modes": {
+   "normal": 1
+  },
+  "colors": [
+   [
+    245,
+    245,
+    245,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 1
+  },
+  "roblox_name": "Clinic_Cabinet",
+  "canonical_part_ids": [
+   1050
+  ],
+  "frame_in_ctx": [
+   -16.00007,
+   0.0,
+   21.00009,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "context": "Furnish:CLINIC"
+ },
+ "Clinic_WallScreen": {
+  "name": "Clinic_WallScreen",
+  "type": "Clinic_WallScreen",
+  "category": "decoration",
+  "theme": "CLINIC",
+  "canonical": "City_1.Plots.Plot_Player4/Clinic_WallScreen/168",
+  "size": [
+   8.0,
+   5.0,
+   0.25
+  ],
+  "bbox_min": [
+   -4.0,
+   0.0,
+   -0.125
+  ],
+  "bbox_max": [
+   4.0,
+   5.0,
+   0.125
+  ],
+  "parts": 2,
+  "instances": 1,
+  "areas": {
+   "City_1": 1
+  },
+  "modes": {
+   "normal": 1
+  },
+  "colors": [
+   [
+    30,
+    40,
+    60,
+    1
+   ],
+   [
+    120,
+    255,
+    160,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 1,
+   "Neon": 1
+  },
+  "roblox_name": "Clinic_WallScreen",
+  "canonical_part_ids": [
+   1051,
+   1052
+  ],
+  "frame_in_ctx": [
+   0.0,
+   6.0,
+   23.07511,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "context": "Furnish:CLINIC"
+ },
+ "Maker_HouseToRent": {
+  "name": "Maker_HouseToRent",
+  "type": "Maker_HouseToRent",
+  "category": "buildings",
+  "theme": "",
+  "canonical": "Catalog.MoneyMakers/Maker_HouseToRent#396",
+  "size": [
+   8.4,
+   8.0,
+   7.4
+  ],
+  "bbox_min": [
+   -4.2,
+   0.0,
+   -3.7
+  ],
+  "bbox_max": [
+   4.2,
+   8.0,
+   3.7
+  ],
+  "parts": 6,
+  "instances": 2,
+  "areas": {
+   "Catalog": 1,
+   "City_1": 1
+  },
+  "modes": {
+   "normal": 2
+  },
+  "colors": [
+   [
+    180,
+    70,
+    60,
+    2
+   ],
+   [
+    255,
+    235,
+    150,
+    2
+   ],
+   [
+    150,
+    200,
+    240,
+    1
+   ],
+   [
+    150,
+    105,
+    60,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 4,
+   "Neon": 2
+  },
+  "roblox_name": "House to Rent",
+  "canonical_part_ids": [
+   3388,
+   3389,
+   3390,
+   3391,
+   3392,
+   3393
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": ""
+ },
+ "Maker_PizzaRestaurant": {
+  "name": "Maker_PizzaRestaurant",
+  "type": "Maker_PizzaRestaurant",
+  "category": "buildings",
+  "theme": "",
+  "canonical": "Catalog.MoneyMakers/Maker_PizzaRestaurant#397",
+  "size": [
+   9.0,
+   7.0,
+   8.2
+  ],
+  "bbox_min": [
+   -4.5,
+   0.0,
+   -4.7
+  ],
+  "bbox_max": [
+   4.5,
+   7.0,
+   3.5
+  ],
+  "parts": 4,
+  "instances": 2,
+  "areas": {
+   "Catalog": 1,
+   "City_1": 1
+  },
+  "modes": {
+   "normal": 2
+  },
+  "colors": [
+   [
+    220,
+    60,
+    50,
+    1
+   ],
+   [
+    255,
+    200,
+    100,
+    1
+   ],
+   [
+    245,
+    245,
+    245,
+    1
+   ],
+   [
+    40,
+    40,
+    50,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 3,
+   "Neon": 1
+  },
+  "roblox_name": "Pizza Restaurant",
+  "canonical_part_ids": [
+   3395,
+   3396,
+   3397,
+   3398
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": ""
+ },
+ "Maker_Hotel": {
+  "name": "Maker_Hotel",
+  "type": "Maker_Hotel",
+  "category": "buildings",
+  "theme": "",
+  "canonical": "Catalog.MoneyMakers/Maker_Hotel#407",
+  "size": [
+   8.0,
+   16.0,
+   7.3
+  ],
+  "bbox_min": [
+   -4.0,
+   0.0,
+   -3.8
+  ],
+  "bbox_max": [
+   4.0,
+   16.0,
+   3.5
+  ],
+  "parts": 17,
+  "instances": 2,
+  "areas": {
+   "Catalog": 1,
+   "City_1": 1
+  },
+  "modes": {
+   "normal": 1,
+   "ghost": 1
+  },
+  "colors": [
+   [
+    255,
+    235,
+    150,
+    15
+   ],
+   [
+    240,
+    230,
+    210,
+    1
+   ],
+   [
+    200,
+    50,
+    50,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 2,
+   "Neon": 15
+  },
+  "roblox_name": "Hotel",
+  "canonical_part_ids": [
+   3441,
+   3442,
+   3443,
+   3444,
+   3445,
+   3446,
+   3447,
+   3448,
+   3449,
+   3450,
+   3451,
+   3452,
+   3453,
+   3454,
+   3455,
+   3456,
+   3457
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": ""
+ },
+ "Dream_PrivateJet": {
+  "name": "Dream_PrivateJet",
+  "type": "Dream_PrivateJet",
+  "category": "vehicles",
+  "theme": "",
+  "canonical": "Catalog.Dreams/Dream_PrivateJet",
+  "size": [
+   28.631,
+   12.46,
+   33.1
+  ],
+  "bbox_min": [
+   -14.316,
+   0.0,
+   -14.0
+  ],
+  "bbox_max": [
+   14.316,
+   12.46,
+   19.1
+  ],
+  "parts": 57,
+  "instances": 2,
+  "areas": {
+   "Catalog": 1,
+   "City_1": 1
+  },
+  "modes": {
+   "normal": 1,
+   "dream": 1
+  },
+  "colors": [
+   [
+    30,
+    40,
+    70,
+    17
+   ],
+   [
+    248,
+    248,
+    252,
+    16
+   ],
+   [
+    40,
+    40,
+    50,
+    7
+   ],
+   [
+    235,
+    185,
+    60,
+    6
+   ],
+   [
+    25,
+    45,
+    105,
+    5
+   ],
+   [
+    200,
+    205,
+    215,
+    5
+   ],
+   [
+    225,
+    225,
+    232,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 35,
+   "Glass": 17,
+   "Metal": 5
+  },
+  "roblox_name": "PrivateJet",
+  "canonical_part_ids": [
+   3905,
+   3906,
+   3907,
+   3908,
+   3909,
+   3910,
+   3911,
+   3912,
+   3913,
+   3914,
+   3915,
+   3916,
+   3917,
+   3918,
+   3919,
+   3920,
+   3921,
+   3922,
+   3923,
+   3924,
+   3925,
+   3926,
+   3927,
+   3928,
+   3929,
+   3930,
+   3931,
+   3932,
+   3933,
+   3934,
+   3935,
+   3936,
+   3937,
+   3938,
+   3939,
+   3940,
+   3941,
+   3942,
+   3943,
+   3944,
+   3945,
+   3946,
+   3947,
+   3948,
+   3949,
+   3950,
+   3951,
+   3952,
+   3953,
+   3954,
+   3955,
+   3956,
+   3957,
+   3958,
+   3959,
+   3960,
+   3961
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": "Catalog"
+ },
+ "School_Blackboard": {
+  "name": "School_Blackboard",
+  "type": "School_Blackboard",
+  "category": "decoration",
+  "theme": "SCHOOL",
+  "canonical": "City_1.Plots.Plot_Player5/School_Blackboard/194",
+  "size": [
+   20.0,
+   6.0,
+   0.3
+  ],
+  "bbox_min": [
+   -10.0,
+   0.0,
+   -0.15
+  ],
+  "bbox_max": [
+   10.0,
+   6.0,
+   0.15
+  ],
+  "parts": 1,
+  "instances": 1,
+  "areas": {
+   "City_1": 1
+  },
+  "modes": {
+   "normal": 1
+  },
+  "colors": [
+   [
+    40,
+    90,
+    60,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 1
+  },
+  "roblox_name": "School_Blackboard",
+  "canonical_part_ids": [
+   1306
+  ],
+  "frame_in_ctx": [
+   0.0,
+   4.0,
+   23.0,
+   1.0,
+   0.0,
+   -0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "context": "Furnish:SCHOOL"
+ },
+ "School_TeacherDesk": {
+  "name": "School_TeacherDesk",
+  "type": "School_TeacherDesk",
+  "category": "props",
+  "theme": "SCHOOL",
+  "canonical": "City_1.Plots.Plot_Player5/School_TeacherDesk/194",
+  "size": [
+   4.0,
+   2.5,
+   2.5
+  ],
+  "bbox_min": [
+   -2.0,
+   0.0,
+   -1.25
+  ],
+  "bbox_max": [
+   2.0,
+   2.5,
+   1.25
+  ],
+  "parts": 1,
+  "instances": 1,
+  "areas": {
+   "City_1": 1
+  },
+  "modes": {
+   "normal": 1
+  },
+  "colors": [
+   [
+    150,
+    105,
+    60,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 1
+  },
+  "roblox_name": "School_TeacherDesk",
+  "canonical_part_ids": [
+   1307
+  ],
+  "frame_in_ctx": [
+   0.0,
+   0.0,
+   19.5,
+   1.0,
+   0.0,
+   -0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "context": "Furnish:SCHOOL"
+ },
+ "School_StudentDesk": {
+  "name": "School_StudentDesk",
+  "type": "School_StudentDesk",
+  "category": "props",
+  "theme": "SCHOOL",
+  "canonical": "City_1.Plots.Plot_Player5/School_StudentDesk/194.1",
+  "size": [
+   3.0,
+   2.2,
+   2.0
+  ],
+  "bbox_min": [
+   -1.5,
+   0.0,
+   -1.0
+  ],
+  "bbox_max": [
+   1.5,
+   2.2,
+   1.0
+  ],
+  "parts": 1,
+  "instances": 8,
+  "areas": {
+   "City_1": 8
+  },
+  "modes": {
+   "normal": 8
+  },
+  "colors": [
+   [
+    200,
+    160,
+    110,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 1
+  },
+  "roblox_name": "School_StudentDesk",
+  "canonical_part_ids": [
+   1308
+  ],
+  "frame_in_ctx": [
+   -12.0,
+   0.0,
+   9.0,
+   1.0,
+   0.0,
+   -0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "context": "Furnish:SCHOOL"
+ },
+ "Maker_CoffeeShop": {
+  "name": "Maker_CoffeeShop",
+  "type": "Maker_CoffeeShop",
+  "category": "buildings",
+  "theme": "",
+  "canonical": "Catalog.MoneyMakers/Maker_CoffeeShop#403",
+  "size": [
+   8.0,
+   6.0,
+   8.2
+  ],
+  "bbox_min": [
+   -4.0,
+   0.0,
+   -4.7
+  ],
+  "bbox_max": [
+   4.0,
+   6.0,
+   3.5
+  ],
+  "parts": 4,
+  "instances": 2,
+  "areas": {
+   "Catalog": 1,
+   "City_1": 1
+  },
+  "modes": {
+   "normal": 2
+  },
+  "colors": [
+   [
+    150,
+    95,
+    60,
+    1
+   ],
+   [
+    255,
+    220,
+    160,
+    1
+   ],
+   [
+    245,
+    245,
+    245,
+    1
+   ],
+   [
+    40,
+    40,
+    50,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 3,
+   "Neon": 1
+  },
+  "roblox_name": "Coffee Shop",
+  "canonical_part_ids": [
+   3426,
+   3427,
+   3428,
+   3429
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": ""
+ },
+ "Maker_BowlingAlley": {
+  "name": "Maker_BowlingAlley",
+  "type": "Maker_BowlingAlley",
+  "category": "buildings",
+  "theme": "",
+  "canonical": "Catalog.MoneyMakers/Maker_BowlingAlley#405",
+  "size": [
+   10.0,
+   8.0,
+   8.7
+  ],
+  "bbox_min": [
+   -5.0,
+   0.0,
+   -4.95
+  ],
+  "bbox_max": [
+   5.0,
+   8.0,
+   3.75
+  ],
+  "parts": 5,
+  "instances": 2,
+  "areas": {
+   "Catalog": 1,
+   "City_1": 1
+  },
+  "modes": {
+   "normal": 2
+  },
+  "colors": [
+   [
+    40,
+    40,
+    50,
+    2
+   ],
+   [
+    60,
+    80,
+    160,
+    1
+   ],
+   [
+    255,
+    120,
+    200,
+    1
+   ],
+   [
+    245,
+    245,
+    245,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 4,
+   "Neon": 1
+  },
+  "roblox_name": "Bowling Alley",
+  "canonical_part_ids": [
+   3433,
+   3434,
+   3435,
+   3436,
+   3439
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": ""
+ },
+ "Maker_GoldBar": {
+  "name": "Maker_GoldBar",
+  "type": "Maker_GoldBar",
+  "category": "props",
+  "theme": "",
+  "canonical": "Catalog.MoneyMakers/Maker_GoldBar#402",
+  "size": [
+   4.6,
+   2.4,
+   2.6
+  ],
+  "bbox_min": [
+   -2.3,
+   0.0,
+   -1.3
+  ],
+  "bbox_max": [
+   2.3,
+   2.4,
+   1.3
+  ],
+  "parts": 6,
+  "instances": 3,
+  "areas": {
+   "Catalog": 1,
+   "City_1": 2
+  },
+  "modes": {
+   "normal": 1,
+   "ghost": 1,
+   "mini": 1
+  },
+  "colors": [
+   [
+    245,
+    190,
+    40,
+    6
+   ]
+  ],
+  "materials": {
+   "Metal": 6
+  },
+  "roblox_name": "Gold Bar",
+  "canonical_part_ids": [
+   3419,
+   3420,
+   3421,
+   3422,
+   3423,
+   3424
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": ""
+ },
+ "Dream_PrivateIsland": {
+  "name": "Dream_PrivateIsland",
+  "type": "Dream_PrivateIsland",
+  "category": "nature",
+  "theme": "",
+  "canonical": "Catalog.Dreams/Dream_PrivateIsland",
+  "size": [
+   51.35,
+   14.285,
+   50.0
+  ],
+  "bbox_min": [
+   -25.0,
+   -0.15,
+   -25.0
+  ],
+  "bbox_max": [
+   26.35,
+   14.135,
+   25.0
+  ],
+  "parts": 79,
+  "instances": 2,
+  "areas": {
+   "Catalog": 1,
+   "City_1": 1
+  },
+  "modes": {
+   "normal": 1,
+   "dream": 1
+  },
+  "colors": [
+   [
+    150,
+    105,
+    65,
+    12
+   ],
+   [
+    60,
+    170,
+    80,
+    9
+   ],
+   [
+    89,
+    182,
+    83,
+    9
+   ],
+   [
+    110,
+    75,
+    40,
+    9
+   ],
+   [
+    150,
+    100,
+    60,
+    8
+   ],
+   [
+    110,
+    75,
+    45,
+    6
+   ],
+   [
+    140,
+    140,
+    150,
+    5
+   ],
+   [
+    250,
+    250,
+    250,
+    3
+   ],
+   [
+    240,
+    220,
+    165,
+    2
+   ],
+   [
+    215,
+    180,
+    110,
+    2
+   ],
+   [
+    245,
+    195,
+    50,
+    2
+   ],
+   [
+    40,
+    140,
+    220,
+    1
+   ],
+   [
+    70,
+    215,
+    225,
+    1
+   ],
+   [
+    95,
+    185,
+    85,
+    1
+   ],
+   [
+    190,
+    145,
+    90,
+    1
+   ],
+   [
+    80,
+    55,
+    35,
+    1
+   ],
+   [
+    60,
+    40,
+    25,
+    1
+   ],
+   [
+    230,
+    60,
+    60,
+    1
+   ],
+   [
+    120,
+    180,
+    220,
+    1
+   ],
+   [
+    240,
+    90,
+    120,
+    1
+   ],
+   [
+    80,
+    160,
+    240,
+    1
+   ],
+   [
+    240,
+    240,
+    240,
+    1
+   ],
+   [
+    255,
+    200,
+    50,
+    1
+   ]
+  ],
+  "materials": {
+   "Glass": 3,
+   "Sand": 2,
+   "Grass": 19,
+   "Slate": 5,
+   "Wood": 25,
+   "SmoothPlastic": 18,
+   "WoodPlanks": 2,
+   "Fabric": 3,
+   "Metal": 1,
+   "Neon": 1
+  },
+  "roblox_name": "PrivateIsland",
+  "canonical_part_ids": [
+   3963,
+   3964,
+   3965,
+   3966,
+   3967,
+   3968,
+   3969,
+   3970,
+   3971,
+   3972,
+   3973,
+   3974,
+   3975,
+   3976,
+   3977,
+   3978,
+   3979,
+   3980,
+   3981,
+   3982,
+   3983,
+   3984,
+   3985,
+   3986,
+   3987,
+   3988,
+   3989,
+   3990,
+   3991,
+   3992,
+   3993,
+   3994,
+   3995,
+   3996,
+   3997,
+   3998,
+   3999,
+   4000,
+   4001,
+   4002,
+   4003,
+   4004,
+   4005,
+   4006,
+   4007,
+   4008,
+   4009,
+   4010,
+   4011,
+   4012,
+   4013,
+   4014,
+   4015,
+   4016,
+   4017,
+   4018,
+   4019,
+   4020,
+   4021,
+   4022,
+   4023,
+   4024,
+   4025,
+   4026,
+   4027,
+   4028,
+   4029,
+   4030,
+   4031,
+   4032,
+   4033,
+   4034,
+   4035,
+   4036,
+   4037,
+   4038,
+   4039,
+   4040,
+   4041
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": "Catalog"
+ },
+ "Maker_RarePokeBloxCard": {
+  "name": "Maker_RarePokeBloxCard",
+  "type": "Maker_RarePokeBloxCard",
+  "category": "props",
+  "theme": "",
+  "canonical": "Catalog.CardCases/Maker_RarePokeBloxCard#422",
+  "size": [
+   3.6,
+   5.456,
+   1.645
+  ],
+  "bbox_min": [
+   -1.8,
+   -0.455,
+   -0.945
+  ],
+  "bbox_max": [
+   1.8,
+   5.001,
+   0.7
+  ],
+  "parts": 12,
+  "instances": 2,
+  "areas": {
+   "Catalog": 1,
+   "City_1": 1
+  },
+  "modes": {
+   "normal": 1,
+   "ghost": 1
+  },
+  "colors": [
+   [
+    170,
+    170,
+    180,
+    5
+   ],
+   [
+    150,
+    210,
+    255,
+    2
+   ],
+   [
+    40,
+    40,
+    50,
+    1
+   ],
+   [
+    255,
+    210,
+    60,
+    1
+   ],
+   [
+    190,
+    110,
+    255,
+    1
+   ],
+   [
+    255,
+    255,
+    255,
+    1
+   ],
+   [
+    245,
+    245,
+    245,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 10,
+   "Glass": 2
+  },
+  "roblox_name": "Rare PokeBlox Card",
+  "canonical_part_ids": [
+   3530,
+   3531,
+   3532,
+   3533,
+   3534,
+   3537,
+   3538,
+   3539,
+   3540,
+   3541,
+   3542,
+   3543
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": ""
+ },
+ "Maker_RarePokeBloxCard_v2": {
+  "name": "Maker_RarePokeBloxCard_v2",
+  "type": "Maker_RarePokeBloxCard",
+  "category": "props",
+  "theme": "",
+  "canonical": "Catalog.CardCases/Maker_RarePokeBloxCard#425",
+  "size": [
+   3.6,
+   5.456,
+   1.645
+  ],
+  "bbox_min": [
+   -1.8,
+   -0.455,
+   -0.945
+  ],
+  "bbox_max": [
+   1.8,
+   5.001,
+   0.7
+  ],
+  "parts": 12,
+  "instances": 3,
+  "areas": {
+   "Catalog": 2,
+   "City_1": 1
+  },
+  "modes": {
+   "normal": 2,
+   "mini": 1
+  },
+  "colors": [
+   [
+    70,
+    140,
+    255,
+    5
+   ],
+   [
+    150,
+    210,
+    255,
+    2
+   ],
+   [
+    40,
+    40,
+    50,
+    1
+   ],
+   [
+    255,
+    210,
+    60,
+    1
+   ],
+   [
+    190,
+    110,
+    255,
+    1
+   ],
+   [
+    255,
+    255,
+    255,
+    1
+   ],
+   [
+    245,
+    245,
+    245,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 10,
+   "Glass": 2
+  },
+  "roblox_name": "Rare PokeBlox Card",
+  "canonical_part_ids": [
+   3547,
+   3548,
+   3549,
+   3550,
+   3551,
+   3554,
+   3555,
+   3556,
+   3557,
+   3558,
+   3559,
+   3560
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": ""
+ },
+ "Maker_RarePokeBloxCard_v3": {
+  "name": "Maker_RarePokeBloxCard_v3",
+  "type": "Maker_RarePokeBloxCard",
+  "category": "props",
+  "theme": "",
+  "canonical": "Catalog.CardCases/Maker_RarePokeBloxCard#428",
+  "size": [
+   3.6,
+   5.456,
+   1.645
+  ],
+  "bbox_min": [
+   -1.8,
+   -0.455,
+   -0.945
+  ],
+  "bbox_max": [
+   1.8,
+   5.001,
+   0.7
+  ],
+  "parts": 12,
+  "instances": 1,
+  "areas": {
+   "Catalog": 1
+  },
+  "modes": {
+   "normal": 1
+  },
+  "colors": [
+   [
+    170,
+    80,
+    255,
+    5
+   ],
+   [
+    150,
+    210,
+    255,
+    2
+   ],
+   [
+    40,
+    40,
+    50,
+    1
+   ],
+   [
+    255,
+    210,
+    60,
+    1
+   ],
+   [
+    190,
+    110,
+    255,
+    1
+   ],
+   [
+    255,
+    255,
+    255,
+    1
+   ],
+   [
+    245,
+    245,
+    245,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 6,
+   "Glass": 2,
+   "Neon": 4
+  },
+  "roblox_name": "Rare PokeBlox Card",
+  "canonical_part_ids": [
+   3564,
+   3565,
+   3566,
+   3567,
+   3568,
+   3571,
+   3572,
+   3573,
+   3574,
+   3575,
+   3576,
+   3577
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": ""
+ },
+ "Maker_RarePokeBloxCard_v4": {
+  "name": "Maker_RarePokeBloxCard_v4",
+  "type": "Maker_RarePokeBloxCard",
+  "category": "props",
+  "theme": "",
+  "canonical": "Catalog.CardCases/Maker_RarePokeBloxCard#431",
+  "size": [
+   3.6,
+   5.456,
+   1.645
+  ],
+  "bbox_min": [
+   -1.8,
+   -0.455,
+   -0.945
+  ],
+  "bbox_max": [
+   1.8,
+   5.001,
+   0.7
+  ],
+  "parts": 12,
+  "instances": 1,
+  "areas": {
+   "Catalog": 1
+  },
+  "modes": {
+   "normal": 1
+  },
+  "colors": [
+   [
+    255,
+    195,
+    40,
+    5
+   ],
+   [
+    150,
+    210,
+    255,
+    2
+   ],
+   [
+    40,
+    40,
+    50,
+    1
+   ],
+   [
+    255,
+    210,
+    60,
+    1
+   ],
+   [
+    190,
+    110,
+    255,
+    1
+   ],
+   [
+    255,
+    255,
+    255,
+    1
+   ],
+   [
+    245,
+    245,
+    245,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 6,
+   "Glass": 2,
+   "Neon": 4
+  },
+  "roblox_name": "Rare PokeBlox Card",
+  "canonical_part_ids": [
+   3581,
+   3582,
+   3583,
+   3584,
+   3585,
+   3588,
+   3589,
+   3590,
+   3591,
+   3592,
+   3593,
+   3594
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": ""
+ },
+ "Maker_ShinyPokeBloxCard": {
+  "name": "Maker_ShinyPokeBloxCard",
+  "type": "Maker_ShinyPokeBloxCard",
+  "category": "props",
+  "theme": "",
+  "canonical": "Catalog.MoneyMakers/Maker_ShinyPokeBloxCard#411",
+  "size": [
+   3.6,
+   5.456,
+   1.645
+  ],
+  "bbox_min": [
+   -1.8,
+   -0.455,
+   -0.945
+  ],
+  "bbox_max": [
+   1.8,
+   5.001,
+   0.7
+  ],
+  "parts": 12,
+  "instances": 3,
+  "areas": {
+   "Catalog": 1,
+   "City_1": 2
+  },
+  "modes": {
+   "normal": 1,
+   "ghost": 1,
+   "mini": 1
+  },
+  "colors": [
+   [
+    170,
+    80,
+    255,
+    5
+   ],
+   [
+    150,
+    210,
+    255,
+    2
+   ],
+   [
+    40,
+    40,
+    50,
+    1
+   ],
+   [
+    255,
+    210,
+    60,
+    1
+   ],
+   [
+    255,
+    120,
+    200,
+    1
+   ],
+   [
+    255,
+    255,
+    255,
+    1
+   ],
+   [
+    245,
+    245,
+    245,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 5,
+   "Neon": 5,
+   "Glass": 2
+  },
+  "roblox_name": "Shiny PokeBlox Card",
+  "canonical_part_ids": [
+   3468,
+   3469,
+   3470,
+   3471,
+   3472,
+   3475,
+   3476,
+   3477,
+   3478,
+   3479,
+   3480,
+   3481
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": ""
+ },
+ "Maker_GoldTreasureChest": {
+  "name": "Maker_GoldTreasureChest",
+  "type": "Maker_GoldTreasureChest",
+  "category": "props",
+  "theme": "",
+  "canonical": "Catalog.MoneyMakers/Maker_GoldTreasureChest#419",
+  "size": [
+   5.0,
+   5.983,
+   4.166
+  ],
+  "bbox_min": [
+   -2.5,
+   0.0,
+   -1.75
+  ],
+  "bbox_max": [
+   2.5,
+   5.983,
+   2.416
+  ],
+  "parts": 9,
+  "instances": 3,
+  "areas": {
+   "Catalog": 1,
+   "City_1": 2
+  },
+  "modes": {
+   "normal": 1,
+   "ghost": 1,
+   "mini": 1
+  },
+  "colors": [
+   [
+    245,
+    190,
+    40,
+    7
+   ],
+   [
+    150,
+    105,
+    60,
+    2
+   ]
+  ],
+  "materials": {
+   "WoodPlanks": 2,
+   "Neon": 1,
+   "Metal": 6
+  },
+  "roblox_name": "Gold Treasure Chest",
+  "canonical_part_ids": [
+   3514,
+   3515,
+   3516,
+   3517,
+   3518,
+   3519,
+   3520,
+   3521,
+   3522
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": ""
+ },
+ "Police_Car": {
+  "name": "Police_Car",
+  "type": "Police_Car",
+  "category": "vehicles",
+  "theme": "POLICE",
+  "canonical": "City_1.Plots.Plot_Player6/Police_Car/231",
+  "size": [
+   8.0,
+   4.4,
+   4.8
+  ],
+  "bbox_min": [
+   -4.0,
+   0.0,
+   -2.4
+  ],
+  "bbox_max": [
+   4.0,
+   4.4,
+   2.4
+  ],
+  "parts": 8,
+  "instances": 1,
+  "areas": {
+   "City_1": 1
+  },
+  "modes": {
+   "normal": 1
+  },
+  "colors": [
+   [
+    40,
+    40,
+    50,
+    4
+   ],
+   [
+    245,
+    245,
+    245,
+    1
+   ],
+   [
+    150,
+    210,
+    255,
+    1
+   ],
+   [
+    255,
+    40,
+    40,
+    1
+   ],
+   [
+    40,
+    90,
+    255,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 5,
+   "Glass": 1,
+   "Neon": 2
+  },
+  "roblox_name": "Police_Car",
+  "canonical_part_ids": [
+   1619,
+   1620,
+   1621,
+   1622,
+   1623,
+   1624,
+   1625,
+   1626
+  ],
+  "frame_in_ctx": [
+   -10.00005,
+   0.0,
+   16.00007,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "context": "Furnish:POLICE"
+ },
+ "Maker_GameStudio": {
+  "name": "Maker_GameStudio",
+  "type": "Maker_GameStudio",
+  "category": "buildings",
+  "theme": "",
+  "canonical": "Catalog.MoneyMakers/Maker_GameStudio#409",
+  "size": [
+   9.0,
+   7.0,
+   8.2
+  ],
+  "bbox_min": [
+   -4.5,
+   0.0,
+   -4.7
+  ],
+  "bbox_max": [
+   4.5,
+   7.0,
+   3.5
+  ],
+  "parts": 4,
+  "instances": 2,
+  "areas": {
+   "Catalog": 1,
+   "City_1": 1
+  },
+  "modes": {
+   "normal": 2
+  },
+  "colors": [
+   [
+    120,
+    70,
+    200,
+    1
+   ],
+   [
+    80,
+    230,
+    255,
+    1
+   ],
+   [
+    245,
+    245,
+    245,
+    1
+   ],
+   [
+    40,
+    40,
+    50,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 3,
+   "Neon": 1
+  },
+  "roblox_name": "Game Studio",
+  "canonical_part_ids": [
+   3461,
+   3462,
+   3463,
+   3464
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": ""
+ },
+ "Maker_ShoppingMall": {
+  "name": "Maker_ShoppingMall",
+  "type": "Maker_ShoppingMall",
+  "category": "buildings",
+  "theme": "",
+  "canonical": "Catalog.MoneyMakers/Maker_ShoppingMall#414",
+  "size": [
+   10.0,
+   8.0,
+   8.7
+  ],
+  "bbox_min": [
+   -5.0,
+   0.0,
+   -4.95
+  ],
+  "bbox_max": [
+   5.0,
+   8.0,
+   3.75
+  ],
+  "parts": 4,
+  "instances": 2,
+  "areas": {
+   "Catalog": 1,
+   "City_1": 1
+  },
+  "modes": {
+   "normal": 2
+  },
+  "colors": [
+   [
+    200,
+    200,
+    210,
+    1
+   ],
+   [
+    150,
+    210,
+    255,
+    1
+   ],
+   [
+    245,
+    245,
+    245,
+    1
+   ],
+   [
+    40,
+    40,
+    50,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 3,
+   "Neon": 1
+  },
+  "roblox_name": "Shopping Mall",
+  "canonical_part_ids": [
+   3485,
+   3486,
+   3487,
+   3488
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": ""
+ },
+ "Office_Screen": {
+  "name": "Office_Screen",
+  "type": "Office_Screen",
+  "category": "decoration",
+  "theme": "OFFICE",
+  "canonical": "City_1.Plots.Plot_Player7/Office_Screen/260",
+  "size": [
+   14.0,
+   7.0,
+   0.4
+  ],
+  "bbox_min": [
+   -7.0,
+   0.0,
+   -0.2
+  ],
+  "bbox_max": [
+   7.0,
+   7.0,
+   0.2
+  ],
+  "parts": 2,
+  "instances": 1,
+  "areas": {
+   "City_1": 1
+  },
+  "modes": {
+   "normal": 1
+  },
+  "colors": [
+   [
+    40,
+    110,
+    200,
+    1
+   ],
+   [
+    245,
+    245,
+    245,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 1,
+   "Neon": 1
+  },
+  "roblox_name": "Office_Screen",
+  "canonical_part_ids": [
+   1870,
+   1871
+  ],
+  "frame_in_ctx": [
+   0.0,
+   4.0,
+   22.95,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   -0.0,
+   0.0,
+   1.0
+  ],
+  "context": "Furnish:OFFICE"
+ },
+ "Maker_ApartmentBuilding": {
+  "name": "Maker_ApartmentBuilding",
+  "type": "Maker_ApartmentBuilding",
+  "category": "buildings",
+  "theme": "",
+  "canonical": "Catalog.MoneyMakers/Maker_ApartmentBuilding#416",
+  "size": [
+   9.0,
+   12.0,
+   7.3
+  ],
+  "bbox_min": [
+   -4.5,
+   0.0,
+   -3.8
+  ],
+  "bbox_max": [
+   4.5,
+   12.0,
+   3.5
+  ],
+  "parts": 14,
+  "instances": 2,
+  "areas": {
+   "Catalog": 1,
+   "City_1": 1
+  },
+  "modes": {
+   "normal": 2
+  },
+  "colors": [
+   [
+    255,
+    235,
+    150,
+    12
+   ],
+   [
+    190,
+    150,
+    120,
+    1
+   ],
+   [
+    200,
+    50,
+    50,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 2,
+   "Neon": 12
+  },
+  "roblox_name": "Apartment Building",
+  "canonical_part_ids": [
+   3492,
+   3493,
+   3494,
+   3495,
+   3496,
+   3497,
+   3498,
+   3499,
+   3500,
+   3501,
+   3502,
+   3503,
+   3504,
+   3505
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": ""
+ },
+ "Maker_ThemePark": {
+  "name": "Maker_ThemePark",
+  "type": "Maker_ThemePark",
+  "category": "props",
+  "theme": "",
+  "canonical": "Catalog.MoneyMakers/Maker_ThemePark#418",
+  "size": [
+   10.0,
+   13.0,
+   7.0
+  ],
+  "bbox_min": [
+   -5.0,
+   0.0,
+   -3.5
+  ],
+  "bbox_max": [
+   5.0,
+   13.0,
+   3.5
+  ],
+  "parts": 4,
+  "instances": 2,
+  "areas": {
+   "Catalog": 1,
+   "City_1": 1
+  },
+  "modes": {
+   "normal": 2
+  },
+  "colors": [
+   [
+    245,
+    245,
+    245,
+    1
+   ],
+   [
+    255,
+    90,
+    170,
+    1
+   ],
+   [
+    245,
+    190,
+    40,
+    1
+   ],
+   [
+    120,
+    200,
+    120,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 3,
+   "Neon": 1
+  },
+  "roblox_name": "Theme Park",
+  "canonical_part_ids": [
+   3509,
+   3510,
+   3511,
+   3512
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": ""
+ },
+ "Garage_CarLift": {
+  "name": "Garage_CarLift",
+  "type": "Garage_CarLift",
+  "category": "vehicles",
+  "theme": "GARAGE",
+  "canonical": "City_1.Plots.Plot_Player8/Garage_CarLift/283",
+  "size": [
+   9.0,
+   6.9,
+   4.8
+  ],
+  "bbox_min": [
+   -4.5,
+   0.0,
+   -2.4
+  ],
+  "bbox_max": [
+   4.5,
+   6.9,
+   2.4
+  ],
+  "parts": 8,
+  "instances": 1,
+  "areas": {
+   "City_1": 1
+  },
+  "modes": {
+   "normal": 1
+  },
+  "colors": [
+   [
+    40,
+    40,
+    50,
+    6
+   ],
+   [
+    200,
+    40,
+    40,
+    1
+   ],
+   [
+    150,
+    210,
+    255,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 7,
+   "Glass": 1
+  },
+  "roblox_name": "Garage_CarLift",
+  "canonical_part_ids": [
+   2141,
+   2142,
+   2143,
+   2144,
+   2145,
+   2146,
+   2147,
+   2148
+  ],
+  "frame_in_ctx": [
+   0.0,
+   0.0,
+   15.00007,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "context": "Furnish:GARAGE"
+ },
+ "Garage_ToolBoard": {
+  "name": "Garage_ToolBoard",
+  "type": "Garage_ToolBoard",
+  "category": "decoration",
+  "theme": "GARAGE",
+  "canonical": "City_1.Plots.Plot_Player8/Garage_ToolBoard/283",
+  "size": [
+   10.0,
+   6.0,
+   0.3
+  ],
+  "bbox_min": [
+   -5.0,
+   0.0,
+   -0.15
+  ],
+  "bbox_max": [
+   5.0,
+   6.0,
+   0.15
+  ],
+  "parts": 1,
+  "instances": 1,
+  "areas": {
+   "City_1": 1
+  },
+  "modes": {
+   "normal": 1
+  },
+  "colors": [
+   [
+    200,
+    120,
+    50,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 1
+  },
+  "roblox_name": "Garage_ToolBoard",
+  "canonical_part_ids": [
+   2149
+  ],
+  "frame_in_ctx": [
+   14.00006,
+   3.0,
+   23.0001,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "context": "Furnish:GARAGE"
+ },
+ "Garage_TireStack": {
+  "name": "Garage_TireStack",
+  "type": "Garage_TireStack",
+  "category": "props",
+  "theme": "GARAGE",
+  "canonical": "City_1.Plots.Plot_Player8/Garage_TireStack/283",
+  "size": [
+   3.5,
+   4.0,
+   3.5
+  ],
+  "bbox_min": [
+   -1.75,
+   0.0,
+   -1.75
+  ],
+  "bbox_max": [
+   1.75,
+   4.0,
+   1.75
+  ],
+  "parts": 4,
+  "instances": 1,
+  "areas": {
+   "City_1": 1
+  },
+  "modes": {
+   "normal": 1
+  },
+  "colors": [
+   [
+    40,
+    40,
+    50,
+    4
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 4
+  },
+  "roblox_name": "Garage_TireStack",
+  "canonical_part_ids": [
+   2150,
+   2151,
+   2152,
+   2153
+  ],
+  "frame_in_ctx": [
+   -17.00008,
+   0.0,
+   20.00009,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "context": "Furnish:GARAGE"
+ },
+ "City_Ground": {
+  "name": "City_Ground",
+  "type": "City_Ground",
+  "category": "ground",
+  "theme": "",
+  "canonical": "City_1/City_Ground/16",
+  "size": [
+   366.0,
+   2.0,
+   366.0
+  ],
+  "bbox_min": [
+   -183.0,
+   -2.0,
+   -183.0
+  ],
+  "bbox_max": [
+   183.0,
+   0.0,
+   183.0
+  ],
+  "parts": 1,
+  "instances": 4,
+  "areas": {
+   "City_1": 1,
+   "City_2": 1,
+   "City_3": 1,
+   "City_4": 1
+  },
+  "modes": {
+   "normal": 4
+  },
+  "colors": [
+   [
+    90,
+    160,
+    75,
+    1
+   ]
+  ],
+  "materials": {
+   "Grass": 1
+  },
+  "roblox_name": "City_Ground",
+  "canonical_part_ids": [
+   2359
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": "Plaza"
+ },
+ "City_Wall": {
+  "name": "City_Wall",
+  "type": "City_Wall",
+  "category": "decoration",
+  "theme": "",
+  "canonical": "City_1/City_Wall/16",
+  "size": [
+   368.6,
+   6.8,
+   368.6
+  ],
+  "bbox_min": [
+   -184.3,
+   0.0,
+   -184.3
+  ],
+  "bbox_max": [
+   184.3,
+   6.8,
+   184.3
+  ],
+  "parts": 8,
+  "instances": 4,
+  "areas": {
+   "City_1": 1,
+   "City_2": 1,
+   "City_3": 1,
+   "City_4": 1
+  },
+  "modes": {
+   "normal": 4
+  },
+  "colors": [
+   [
+    175,
+    165,
+    150,
+    4
+   ],
+   [
+    205,
+    195,
+    180,
+    4
+   ]
+  ],
+  "materials": {
+   "Cobblestone": 4,
+   "SmoothPlastic": 4
+  },
+  "roblox_name": "City_Wall",
+  "canonical_part_ids": [
+   2360,
+   2361,
+   2363,
+   2364,
+   2366,
+   2367,
+   2369,
+   2370
+  ],
+  "frame_in_ctx": [
+   0.0,
+   0.0,
+   -0.0,
+   -1.0,
+   0.0,
+   -0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   -1.0
+  ],
+  "context": "Plaza"
+ },
+ "Plaza_Disc": {
+  "name": "Plaza_Disc",
+  "type": "Plaza_Disc",
+  "category": "ground",
+  "theme": "",
+  "canonical": "City_1/Plaza_Disc/16",
+  "size": [
+   90.0,
+   0.4,
+   90.0
+  ],
+  "bbox_min": [
+   -45.0,
+   0.0,
+   -45.0
+  ],
+  "bbox_max": [
+   45.0,
+   0.4,
+   45.0
+  ],
+  "parts": 1,
+  "instances": 4,
+  "areas": {
+   "City_1": 1,
+   "City_2": 1,
+   "City_3": 1,
+   "City_4": 1
+  },
+  "modes": {
+   "normal": 4
+  },
+  "colors": [
+   [
+    215,
+    205,
+    185,
+    1
+   ]
+  ],
+  "materials": {
+   "Slate": 1
+  },
+  "roblox_name": "Plaza_Disc",
+  "canonical_part_ids": [
+   2372
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": "Plaza"
+ },
+ "Plaza_Path": {
+  "name": "Plaza_Path",
+  "type": "Plaza_Path",
+  "category": "ground",
+  "theme": "",
+  "canonical": "City_1/Plaza_Path/16.1",
+  "size": [
+   10.0,
+   0.4,
+   48.0
+  ],
+  "bbox_min": [
+   -5.0,
+   0.0,
+   -24.0
+  ],
+  "bbox_max": [
+   5.0,
+   0.4,
+   24.0
+  ],
+  "parts": 1,
+  "instances": 32,
+  "areas": {
+   "City_1": 8,
+   "City_2": 8,
+   "City_3": 8,
+   "City_4": 8
+  },
+  "modes": {
+   "normal": 32
+  },
+  "colors": [
+   [
+    215,
+    205,
+    185,
+    1
+   ]
+  ],
+  "materials": {
+   "Slate": 1
+  },
+  "roblox_name": "Plaza_Path",
+  "canonical_part_ids": [
+   2373
+  ],
+  "frame_in_ctx": [
+   0.0,
+   0.0,
+   67.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "context": "Plaza"
+ },
+ "Tree": {
+  "name": "Tree",
+  "type": "Tree",
+  "category": "nature",
+  "theme": "",
+  "canonical": "City_1/Tree#17",
+  "size": [
+   6.0,
+   14.5,
+   6.0
+  ],
+  "bbox_min": [
+   -3.0,
+   0.0,
+   -3.0
+  ],
+  "bbox_max": [
+   3.0,
+   14.5,
+   3.0
+  ],
+  "parts": 2,
+  "instances": 32,
+  "areas": {
+   "City_1": 8,
+   "City_2": 8,
+   "City_3": 8,
+   "City_4": 8
+  },
+  "modes": {
+   "normal": 32
+  },
+  "colors": [
+   [
+    150,
+    105,
+    60,
+    1
+   ],
+   [
+    70,
+    170,
+    70,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 1,
+   "Grass": 1
+  },
+  "roblox_name": "Tree",
+  "canonical_part_ids": [
+   2374,
+   2375
+  ],
+  "frame_in_ctx": [
+   0.0,
+   0.0,
+   0.0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": "Plaza"
+ },
+ "Plaza_Fountain": {
+  "name": "Plaza_Fountain",
+  "type": "Plaza_Fountain",
+  "category": "decoration",
+  "theme": "",
+  "canonical": "City_1/Plaza_Fountain/16",
+  "size": [
+   22.0,
+   9.0,
+   22.0
+  ],
+  "bbox_min": [
+   -11.0,
+   0.0,
+   -11.0
+  ],
+  "bbox_max": [
+   11.0,
+   9.0,
+   11.0
+  ],
+  "parts": 4,
+  "instances": 4,
+  "areas": {
+   "City_1": 1,
+   "City_2": 1,
+   "City_3": 1,
+   "City_4": 1
+  },
+  "modes": {
+   "normal": 4
+  },
+  "colors": [
+   [
+    190,
+    180,
+    165,
+    2
+   ],
+   [
+    70,
+    160,
+    230,
+    2
+   ]
+  ],
+  "materials": {
+   "Slate": 1,
+   "Glass": 1,
+   "SmoothPlastic": 1,
+   "Neon": 1
+  },
+  "roblox_name": "Plaza_Fountain",
+  "canonical_part_ids": [
+   2397,
+   2398,
+   2399,
+   2400
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": "Plaza"
+ },
+ "AuctionRoom_Shell": {
+  "name": "AuctionRoom_Shell",
+  "type": "AuctionRoom_Shell",
+  "category": "buildings",
+  "theme": "",
+  "canonical": "AuctionRoom_1/AuctionRoom_Shell/25",
+  "size": [
+   65.0,
+   26.0,
+   51.0
+  ],
+  "bbox_min": [
+   -32.5,
+   -1.0,
+   -25.5
+  ],
+  "bbox_max": [
+   32.5,
+   25.0,
+   25.5
+  ],
+  "parts": 6,
+  "instances": 4,
+  "areas": {
+   "AuctionRoom_1": 1,
+   "AuctionRoom_2": 1,
+   "AuctionRoom_3": 1,
+   "AuctionRoom_4": 1
+  },
+  "modes": {
+   "normal": 4
+  },
+  "colors": [
+   [
+    110,
+    30,
+    40,
+    4
+   ],
+   [
+    90,
+    60,
+    40,
+    1
+   ],
+   [
+    40,
+    20,
+    25,
+    1
+   ]
+  ],
+  "materials": {
+   "WoodPlanks": 1,
+   "SmoothPlastic": 5
+  },
+  "roblox_name": "AuctionRoom_Shell",
+  "canonical_part_ids": [
+   2402,
+   2403,
+   2404,
+   2405,
+   2406,
+   2407
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": "AuctionRoom"
+ },
+ "AuctionRoom_Lamp": {
+  "name": "AuctionRoom_Lamp",
+  "type": "AuctionRoom_Lamp",
+  "category": "decoration",
+  "theme": "",
+  "canonical": "AuctionRoom_1/AuctionRoom_Lamp/25.1",
+  "size": [
+   6.0,
+   0.5,
+   6.0
+  ],
+  "bbox_min": [
+   -3.0,
+   0.0,
+   -3.0
+  ],
+  "bbox_max": [
+   3.0,
+   0.5,
+   3.0
+  ],
+  "parts": 1,
+  "instances": 12,
+  "areas": {
+   "AuctionRoom_1": 3,
+   "AuctionRoom_2": 3,
+   "AuctionRoom_3": 3,
+   "AuctionRoom_4": 3
+  },
+  "modes": {
+   "normal": 12
+  },
+  "colors": [
+   [
+    255,
+    240,
+    200,
+    1
+   ]
+  ],
+  "materials": {
+   "Neon": 1
+  },
+  "roblox_name": "AuctionRoom_Lamp",
+  "canonical_part_ids": [
+   2408
+  ],
+  "frame_in_ctx": [
+   -18.0,
+   23.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "context": "AuctionRoom"
+ },
+ "AuctionRoom_Stage": {
+  "name": "AuctionRoom_Stage",
+  "type": "AuctionRoom_Stage",
+  "category": "props",
+  "theme": "",
+  "canonical": "AuctionRoom_1/AuctionRoom_Stage/25",
+  "size": [
+   30.6,
+   3.0,
+   12.6
+  ],
+  "bbox_min": [
+   -15.3,
+   0.0,
+   -6.3
+  ],
+  "bbox_max": [
+   15.3,
+   3.0,
+   6.3
+  ],
+  "parts": 2,
+  "instances": 4,
+  "areas": {
+   "AuctionRoom_1": 1,
+   "AuctionRoom_2": 1,
+   "AuctionRoom_3": 1,
+   "AuctionRoom_4": 1
+  },
+  "modes": {
+   "normal": 4
+  },
+  "colors": [
+   [
+    160,
+    40,
+    50,
+    1
+   ],
+   [
+    245,
+    190,
+    40,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 1,
+   "Neon": 1
+  },
+  "roblox_name": "AuctionRoom_Stage",
+  "canonical_part_ids": [
+   2414,
+   2415
+  ],
+  "frame_in_ctx": [
+   0.0,
+   0.0,
+   -12.2,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "context": "AuctionRoom"
+ },
+ "AuctionRoom_TitleSign": {
+  "name": "AuctionRoom_TitleSign",
+  "type": "AuctionRoom_TitleSign",
+  "category": "signs",
+  "theme": "",
+  "canonical": "AuctionRoom_1/AuctionRoom_TitleSign/25",
+  "size": [
+   30.0,
+   4.0,
+   0.4
+  ],
+  "bbox_min": [
+   -15.0,
+   0.0,
+   -0.2
+  ],
+  "bbox_max": [
+   15.0,
+   4.0,
+   0.2
+  ],
+  "parts": 1,
+  "instances": 4,
+  "areas": {
+   "AuctionRoom_1": 1,
+   "AuctionRoom_2": 1,
+   "AuctionRoom_3": 1,
+   "AuctionRoom_4": 1
+  },
+  "modes": {
+   "normal": 4
+  },
+  "colors": [
+   [
+    40,
+    20,
+    25,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 1
+  },
+  "roblox_name": "AuctionRoom_TitleSign",
+  "canonical_part_ids": [
+   2417
+  ],
+  "frame_in_ctx": [
+   0.0,
+   18.0,
+   -24.3,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "context": "AuctionRoom"
+ },
+ "AuctionRoom_InfoBoard": {
+  "name": "AuctionRoom_InfoBoard",
+  "type": "AuctionRoom_InfoBoard",
+  "category": "signs",
+  "theme": "",
+  "canonical": "AuctionRoom_1/AuctionRoom_InfoBoard/25",
+  "size": [
+   44.0,
+   8.0,
+   0.4
+  ],
+  "bbox_min": [
+   -22.0,
+   0.0,
+   -0.2
+  ],
+  "bbox_max": [
+   22.0,
+   8.0,
+   0.2
+  ],
+  "parts": 1,
+  "instances": 4,
+  "areas": {
+   "AuctionRoom_1": 1,
+   "AuctionRoom_2": 1,
+   "AuctionRoom_3": 1,
+   "AuctionRoom_4": 1
+  },
+  "modes": {
+   "normal": 4
+  },
+  "colors": [
+   [
+    30,
+    30,
+    45,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 1
+  },
+  "roblox_name": "AuctionRoom_InfoBoard",
+  "canonical_part_ids": [
+   2424
+  ],
+  "frame_in_ctx": [
+   0.0,
+   8.0,
+   -24.3,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "context": "AuctionRoom"
+ },
+ "AuctionRoom_BidderDesk": {
+  "name": "AuctionRoom_BidderDesk",
+  "type": "AuctionRoom_BidderDesk",
+  "category": "props",
+  "theme": "",
+  "canonical": "AuctionRoom_1/AuctionRoom_BidderDesk/25.1",
+  "size": [
+   4.0,
+   3.0,
+   1.5
+  ],
+  "bbox_min": [
+   -2.0,
+   0.0,
+   -0.75
+  ],
+  "bbox_max": [
+   2.0,
+   3.0,
+   0.75
+  ],
+  "parts": 1,
+  "instances": 32,
+  "areas": {
+   "AuctionRoom_1": 8,
+   "AuctionRoom_2": 8,
+   "AuctionRoom_3": 8,
+   "AuctionRoom_4": 8
+  },
+  "modes": {
+   "normal": 32
+  },
+  "colors": [
+   [
+    60,
+    40,
+    35,
+    1
+   ]
+  ],
+  "materials": {
+   "WoodPlanks": 1
+  },
+  "roblox_name": "AuctionRoom_BidderDesk",
+  "canonical_part_ids": [
+   2427
+  ],
+  "frame_in_ctx": [
+   -22.75,
+   0.0,
+   5.5,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "context": "AuctionRoom"
+ },
+ "AuctionRoom_BidderPad": {
+  "name": "AuctionRoom_BidderPad",
+  "type": "AuctionRoom_BidderPad",
+  "category": "ground",
+  "theme": "",
+  "canonical": "AuctionRoom_1/AuctionRoom_BidderPad/25.1",
+  "size": [
+   4.5,
+   0.4,
+   4.0
+  ],
+  "bbox_min": [
+   -2.25,
+   0.0,
+   -2.0
+  ],
+  "bbox_max": [
+   2.25,
+   0.4,
+   2.0
+  ],
+  "parts": 1,
+  "instances": 32,
+  "areas": {
+   "AuctionRoom_1": 8,
+   "AuctionRoom_2": 8,
+   "AuctionRoom_3": 8,
+   "AuctionRoom_4": 8
+  },
+  "modes": {
+   "normal": 32
+  },
+  "colors": [
+   [
+    60,
+    40,
+    35,
+    1
+   ]
+  ],
+  "materials": {
+   "WoodPlanks": 1
+  },
+  "roblox_name": "AuctionRoom_BidderPad",
+  "canonical_part_ids": [
+   2428
+  ],
+  "frame_in_ctx": [
+   -22.75,
+   0.0,
+   8.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "context": "AuctionRoom"
+ },
+ "PodiumRoom_Shell": {
+  "name": "PodiumRoom_Shell",
+  "type": "PodiumRoom_Shell",
+  "category": "buildings",
+  "theme": "",
+  "canonical": "PodiumRoom_1/PodiumRoom_Shell/28",
+  "size": [
+   80.0,
+   34.0,
+   64.0
+  ],
+  "bbox_min": [
+   -40.0,
+   -1.0,
+   -27.0
+  ],
+  "bbox_max": [
+   40.0,
+   33.0,
+   37.0
+  ],
+  "parts": 2,
+  "instances": 4,
+  "areas": {
+   "PodiumRoom_1": 1,
+   "PodiumRoom_2": 1,
+   "PodiumRoom_3": 1,
+   "PodiumRoom_4": 1
+  },
+  "modes": {
+   "normal": 4
+  },
+  "colors": [
+   [
+    60,
+    50,
+    90,
+    1
+   ],
+   [
+    30,
+    25,
+    50,
+    1
+   ]
+  ],
+  "materials": {
+   "Marble": 1,
+   "SmoothPlastic": 1
+  },
+  "roblox_name": "PodiumRoom_Shell",
+  "canonical_part_ids": [
+   2444,
+   2445
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": "PodiumRoom"
+ },
+ "PodiumRoom_LightStrip": {
+  "name": "PodiumRoom_LightStrip",
+  "type": "PodiumRoom_LightStrip",
+  "category": "decoration",
+  "theme": "",
+  "canonical": "PodiumRoom_1/PodiumRoom_LightStrip/28.1",
+  "size": [
+   0.8,
+   30.0,
+   0.6
+  ],
+  "bbox_min": [
+   -0.4,
+   0.0,
+   -0.3
+  ],
+  "bbox_max": [
+   0.4,
+   30.0,
+   0.3
+  ],
+  "parts": 1,
+  "instances": 16,
+  "areas": {
+   "PodiumRoom_1": 4,
+   "PodiumRoom_2": 4,
+   "PodiumRoom_3": 4,
+   "PodiumRoom_4": 4
+  },
+  "modes": {
+   "normal": 16
+  },
+  "colors": [
+   [
+    200,
+    160,
+    60,
+    1
+   ]
+  ],
+  "materials": {
+   "Neon": 1
+  },
+  "roblox_name": "PodiumRoom_LightStrip",
+  "canonical_part_ids": [
+   2446
+  ],
+  "frame_in_ctx": [
+   -30.0,
+   0.0,
+   -19.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "context": "PodiumRoom"
+ },
+ "PodiumRoom_TitleSign": {
+  "name": "PodiumRoom_TitleSign",
+  "type": "PodiumRoom_TitleSign",
+  "category": "signs",
+  "theme": "",
+  "canonical": "PodiumRoom_1/PodiumRoom_TitleSign/28",
+  "size": [
+   50.0,
+   6.0,
+   0.4
+  ],
+  "bbox_min": [
+   -25.0,
+   0.0,
+   -0.2
+  ],
+  "bbox_max": [
+   25.0,
+   6.0,
+   0.2
+  ],
+  "parts": 1,
+  "instances": 4,
+  "areas": {
+   "PodiumRoom_1": 1,
+   "PodiumRoom_2": 1,
+   "PodiumRoom_3": 1,
+   "PodiumRoom_4": 1
+  },
+  "modes": {
+   "normal": 4
+  },
+  "colors": [
+   [
+    30,
+    25,
+    50,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 1
+  },
+  "roblox_name": "PodiumRoom_TitleSign",
+  "canonical_part_ids": [
+   2450
+  ],
+  "frame_in_ctx": [
+   0.0,
+   21.0,
+   -19.3,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "context": "PodiumRoom"
+ },
+ "PodiumRoom_Block": {
+  "name": "PodiumRoom_Block",
+  "type": "PodiumRoom_Block",
+  "category": "props",
+  "theme": "",
+  "canonical": "PodiumRoom_1/PodiumRoom_Block/28",
+  "size": [
+   26.0,
+   9.0,
+   6.25
+  ],
+  "bbox_min": [
+   -13.0,
+   0.0,
+   -3.125
+  ],
+  "bbox_max": [
+   13.0,
+   9.0,
+   3.125
+  ],
+  "parts": 6,
+  "instances": 4,
+  "areas": {
+   "PodiumRoom_1": 1,
+   "PodiumRoom_2": 1,
+   "PodiumRoom_3": 1,
+   "PodiumRoom_4": 1
+  },
+  "modes": {
+   "normal": 4
+  },
+  "colors": [
+   [
+    245,
+    190,
+    40,
+    2
+   ],
+   [
+    200,
+    205,
+    215,
+    2
+   ],
+   [
+    205,
+    130,
+    70,
+    2
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 6
+  },
+  "roblox_name": "PodiumRoom_Block",
+  "canonical_part_ids": [
+   2453,
+   2454,
+   2457,
+   2458,
+   2461,
+   2462
+  ],
+  "frame_in_ctx": [
+   0.0,
+   0.0,
+   -7.875,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "context": "PodiumRoom"
+ },
+ "PodiumRoom_Board": {
+  "name": "PodiumRoom_Board",
+  "type": "PodiumRoom_Board",
+  "category": "signs",
+  "theme": "",
+  "canonical": "PodiumRoom_1/PodiumRoom_Board/28",
+  "size": [
+   16.0,
+   18.0,
+   0.4
+  ],
+  "bbox_min": [
+   -8.0,
+   0.0,
+   -0.2
+  ],
+  "bbox_max": [
+   8.0,
+   18.0,
+   0.2
+  ],
+  "parts": 1,
+  "instances": 4,
+  "areas": {
+   "PodiumRoom_1": 1,
+   "PodiumRoom_2": 1,
+   "PodiumRoom_3": 1,
+   "PodiumRoom_4": 1
+  },
+  "modes": {
+   "normal": 4
+  },
+  "colors": [
+   [
+    45,
+    40,
+    70,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 1
+  },
+  "roblox_name": "PodiumRoom_Board",
+  "canonical_part_ids": [
+   2465
+  ],
+  "frame_in_ctx": [
+   27.0,
+   1.0,
+   -10.0,
+   -0.93969,
+   0.0,
+   0.34202,
+   0.0,
+   1.0,
+   0.0,
+   -0.34202,
+   0.0,
+   -0.93969
+  ],
+  "context": "PodiumRoom"
+ },
+ "Lux_Sofa": {
+  "name": "Lux_Sofa",
+  "type": "Lux_Sofa",
+  "category": "props",
+  "theme": "FAST TRACK",
+  "canonical": "Catalog.FastTrack/Lux_Sofa/348.1",
+  "size": [
+   7.0,
+   3.4,
+   3.1
+  ],
+  "bbox_min": [
+   -3.5,
+   0.0,
+   -1.55
+  ],
+  "bbox_max": [
+   3.5,
+   3.4,
+   1.55
+  ],
+  "parts": 2,
+  "instances": 4,
+  "areas": {
+   "Catalog": 4
+  },
+  "modes": {
+   "normal": 4
+  },
+  "colors": [
+   [
+    245,
+    245,
+    245,
+    2
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 2
+  },
+  "roblox_name": "Lux_Sofa",
+  "canonical_part_ids": [
+   2863,
+   2864
+  ],
+  "frame_in_ctx": [
+   -9.0,
+   0.0,
+   16.05,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "context": "Furnish:FAST TRACK"
+ },
+ "Lux_GlassTable": {
+  "name": "Lux_GlassTable",
+  "type": "Lux_GlassTable",
+  "category": "props",
+  "theme": "FAST TRACK",
+  "canonical": "Catalog.FastTrack/Lux_GlassTable/348",
+  "size": [
+   5.0,
+   1.2,
+   3.0
+  ],
+  "bbox_min": [
+   -2.5,
+   0.0,
+   -1.5
+  ],
+  "bbox_max": [
+   2.5,
+   1.2,
+   1.5
+  ],
+  "parts": 1,
+  "instances": 2,
+  "areas": {
+   "Catalog": 2
+  },
+  "modes": {
+   "normal": 2
+  },
+  "colors": [
+   [
+    150,
+    210,
+    255,
+    1
+   ]
+  ],
+  "materials": {
+   "Glass": 1
+  },
+  "roblox_name": "Lux_GlassTable",
+  "canonical_part_ids": [
+   2867
+  ],
+  "frame_in_ctx": [
+   0.0,
+   0.0,
+   15.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "context": "Furnish:FAST TRACK"
+ },
+ "Lux_Safe": {
+  "name": "Lux_Safe",
+  "type": "Lux_Safe",
+  "category": "props",
+  "theme": "FAST TRACK",
+  "canonical": "Catalog.FastTrack/Lux_Safe/348",
+  "size": [
+   4.0,
+   5.0,
+   4.25
+  ],
+  "bbox_min": [
+   -2.0,
+   0.0,
+   -2.125
+  ],
+  "bbox_max": [
+   2.0,
+   5.0,
+   2.125
+  ],
+  "parts": 3,
+  "instances": 2,
+  "areas": {
+   "Catalog": 2
+  },
+  "modes": {
+   "normal": 2
+  },
+  "colors": [
+   [
+    215,
+    170,
+    50,
+    2
+   ],
+   [
+    40,
+    40,
+    50,
+    1
+   ]
+  ],
+  "materials": {
+   "Metal": 1,
+   "SmoothPlastic": 2
+  },
+  "roblox_name": "Lux_Safe",
+  "canonical_part_ids": [
+   2868,
+   2869,
+   2870
+  ],
+  "frame_in_ctx": [
+   -17.0,
+   0.0,
+   19.875,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "context": "Furnish:FAST TRACK"
+ },
+ "Lux_Piano": {
+  "name": "Lux_Piano",
+  "type": "Lux_Piano",
+  "category": "props",
+  "theme": "FAST TRACK",
+  "canonical": "Catalog.FastTrack/Lux_Piano/348",
+  "size": [
+   6.0,
+   3.2,
+   4.1
+  ],
+  "bbox_min": [
+   -3.0,
+   0.0,
+   -2.05
+  ],
+  "bbox_max": [
+   3.0,
+   3.2,
+   2.05
+  ],
+  "parts": 2,
+  "instances": 2,
+  "areas": {
+   "Catalog": 2
+  },
+  "modes": {
+   "normal": 2
+  },
+  "colors": [
+   [
+    20,
+    20,
+    25,
+    1
+   ],
+   [
+    245,
+    245,
+    245,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 2
+  },
+  "roblox_name": "Lux_Piano",
+  "canonical_part_ids": [
+   2873,
+   2874
+  ],
+  "frame_in_ctx": [
+   16.0,
+   0.0,
+   18.95,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "context": "Furnish:FAST TRACK"
+ },
+ "Lux_Chandelier": {
+  "name": "Lux_Chandelier",
+  "type": "Lux_Chandelier",
+  "category": "decoration",
+  "theme": "FAST TRACK",
+  "canonical": "Catalog.FastTrack/Lux_Chandelier/348",
+  "size": [
+   2.2,
+   3.6,
+   2.2
+  ],
+  "bbox_min": [
+   -1.1,
+   0.0,
+   -1.1
+  ],
+  "bbox_max": [
+   1.1,
+   3.6,
+   1.1
+  ],
+  "parts": 2,
+  "instances": 2,
+  "areas": {
+   "Catalog": 2
+  },
+  "modes": {
+   "normal": 2
+  },
+  "colors": [
+   [
+    255,
+    240,
+    200,
+    1
+   ],
+   [
+    215,
+    170,
+    50,
+    1
+   ]
+  ],
+  "materials": {
+   "Neon": 1,
+   "Metal": 1
+  },
+  "roblox_name": "Lux_Chandelier",
+  "canonical_part_ids": [
+   2875,
+   2877
+  ],
+  "frame_in_ctx": [
+   0.0,
+   10.4,
+   15.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "context": "Furnish:FAST TRACK"
+ },
+ "FastTrack_Gate": {
+  "name": "FastTrack_Gate",
+  "type": "FastTrack_Gate",
+  "category": "decoration",
+  "theme": "FAST TRACK",
+  "canonical": "Catalog.FastTrack/FastTrack_Gate/346",
+  "size": [
+   16.0,
+   14.0,
+   1.5
+  ],
+  "bbox_min": [
+   -8.0,
+   0.0,
+   -0.75
+  ],
+  "bbox_max": [
+   8.0,
+   14.0,
+   0.75
+  ],
+  "parts": 3,
+  "instances": 2,
+  "areas": {
+   "Catalog": 2
+  },
+  "modes": {
+   "normal": 2
+  },
+  "colors": [
+   [
+    245,
+    190,
+    40,
+    3
+   ]
+  ],
+  "materials": {
+   "Metal": 2,
+   "SmoothPlastic": 1
+  },
+  "roblox_name": "FastTrack_Gate",
+  "canonical_part_ids": [
+   2921,
+   2922,
+   2923
+  ],
+  "frame_in_ctx": [
+   0.0,
+   0.0,
+   -23.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "context": "Workplace:FAST TRACK"
+ },
+ "Dream_Pedestal": {
+  "name": "Dream_Pedestal",
+  "type": "Dream_Pedestal",
+  "category": "props",
+  "theme": "",
+  "canonical": "Catalog.FastTrack/Dream_Pedestal/343",
+  "size": [
+   15.4,
+   1.8,
+   15.4
+  ],
+  "bbox_min": [
+   -7.7,
+   0.0,
+   -7.7
+  ],
+  "bbox_max": [
+   7.7,
+   1.8,
+   7.7
+  ],
+  "parts": 2,
+  "instances": 2,
+  "areas": {
+   "Catalog": 2
+  },
+  "modes": {
+   "normal": 2
+  },
+  "colors": [
+   [
+    240,
+    235,
+    225,
+    1
+   ],
+   [
+    245,
+    190,
+    40,
+    1
+   ]
+  ],
+  "materials": {
+   "Marble": 1,
+   "Metal": 1
+  },
+  "roblox_name": "Dream_Pedestal",
+  "canonical_part_ids": [
+   2948,
+   2949
+  ],
+  "frame_in_ctx": [
+   0.0,
+   0.0,
+   -9.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "context": "DreamArea"
+ },
+ "Dream_Chains": {
+  "name": "Dream_Chains",
+  "type": "Dream_Chains",
+  "category": "props",
+  "theme": "",
+  "canonical": "Catalog.FastTrack/Dream_Chains/343",
+  "size": [
+   7.117,
+   5.184,
+   15.175
+  ],
+  "bbox_min": [
+   -3.559,
+   0.0,
+   -7.588
+  ],
+  "bbox_max": [
+   3.559,
+   5.184,
+   7.587
+  ],
+  "parts": 17,
+  "instances": 1,
+  "areas": {
+   "Catalog": 1
+  },
+  "modes": {
+   "normal": 1
+  },
+  "colors": [
+   [
+    70,
+    70,
+    80,
+    15
+   ],
+   [
+    245,
+    190,
+    40,
+    1
+   ],
+   [
+    40,
+    40,
+    50,
+    1
+   ]
+  ],
+  "materials": {
+   "Metal": 16,
+   "SmoothPlastic": 1
+  },
+  "roblox_name": "Dream_Chains",
+  "canonical_part_ids": [
+   2995,
+   2996,
+   2997,
+   2998,
+   2999,
+   3000,
+   3001,
+   3002,
+   3003,
+   3004,
+   3005,
+   3006,
+   3007,
+   3008,
+   3009,
+   3010,
+   3011
+  ],
+  "frame_in_ctx": [
+   0.0,
+   1.43219,
+   -9.93873,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "context": "DreamArea"
+ },
+ "Maker_UnknownMaker": {
+  "name": "Maker_UnknownMaker",
+  "type": "Maker_UnknownMaker",
+  "category": "props",
+  "theme": "",
+  "canonical": "Catalog.MoneyMakers/Maker_UnknownMaker#420",
+  "size": [
+   6.0,
+   5.0,
+   6.2
+  ],
+  "bbox_min": [
+   -3.0,
+   0.0,
+   -3.2
+  ],
+  "bbox_max": [
+   3.0,
+   5.0,
+   3.0
+  ],
+  "parts": 2,
+  "instances": 1,
+  "areas": {
+   "Catalog": 1
+  },
+  "modes": {
+   "normal": 1
+  },
+  "colors": [
+   [
+    245,
+    190,
+    40,
+    1
+   ],
+   [
+    245,
+    245,
+    245,
+    1
+   ]
+  ],
+  "materials": {
+   "SmoothPlastic": 2
+  },
+  "roblox_name": "Unknown Maker",
+  "canonical_part_ids": [
+   3524,
+   3525
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": ""
+ },
+ "Debt_BankLoan": {
+  "name": "Debt_BankLoan",
+  "type": "Debt_BankLoan",
+  "category": "props",
+  "theme": "",
+  "canonical": "Catalog.Debts/Debt_BankLoan#444",
+  "size": [
+   3.2,
+   3.2,
+   3.153
+  ],
+  "bbox_min": [
+   -1.6,
+   0.0,
+   -1.767
+  ],
+  "bbox_max": [
+   1.6,
+   3.2,
+   1.387
+  ],
+  "parts": 5,
+  "instances": 1,
+  "areas": {
+   "Catalog": 1
+  },
+  "modes": {
+   "normal": 1
+  },
+  "colors": [
+   [
+    245,
+    190,
+    40,
+    2
+   ],
+   [
+    120,
+    125,
+    135,
+    1
+   ],
+   [
+    160,
+    165,
+    175,
+    1
+   ],
+   [
+    40,
+    40,
+    50,
+    1
+   ]
+  ],
+  "materials": {
+   "Metal": 4,
+   "SmoothPlastic": 1
+  },
+  "roblox_name": "Bank Loan",
+  "canonical_part_ids": [
+   3663,
+   3664,
+   3665,
+   3666,
+   3667
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": ""
+ },
+ "Debt_BankLoan_v2": {
+  "name": "Debt_BankLoan_v2",
+  "type": "Debt_BankLoan",
+  "category": "props",
+  "theme": "",
+  "canonical": "Catalog.Debts/Debt_BankLoan#446",
+  "size": [
+   5.4,
+   5.4,
+   5.28
+  ],
+  "bbox_min": [
+   -2.7,
+   0.0,
+   -2.94
+  ],
+  "bbox_max": [
+   2.7,
+   5.4,
+   2.34
+  ],
+  "parts": 5,
+  "instances": 1,
+  "areas": {
+   "Catalog": 1
+  },
+  "modes": {
+   "normal": 1
+  },
+  "colors": [
+   [
+    245,
+    190,
+    40,
+    2
+   ],
+   [
+    120,
+    125,
+    135,
+    1
+   ],
+   [
+    160,
+    165,
+    175,
+    1
+   ],
+   [
+    40,
+    40,
+    50,
+    1
+   ]
+  ],
+  "materials": {
+   "Metal": 4,
+   "SmoothPlastic": 1
+  },
+  "roblox_name": "Bank Loan",
+  "canonical_part_ids": [
+   3671,
+   3672,
+   3673,
+   3674,
+   3675
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": ""
+ },
+ "Debt_OtherDebt": {
+  "name": "Debt_OtherDebt",
+  "type": "Debt_OtherDebt",
+  "category": "props",
+  "theme": "",
+  "canonical": "Catalog.Debts/Debt_OtherDebt#448",
+  "size": [
+   2.3,
+   2.3,
+   2.3
+  ],
+  "bbox_min": [
+   -1.15,
+   -0.05,
+   -1.15
+  ],
+  "bbox_max": [
+   1.15,
+   2.25,
+   1.15
+  ],
+  "parts": 3,
+  "instances": 1,
+  "areas": {
+   "Catalog": 1
+  },
+  "modes": {
+   "normal": 1
+  },
+  "colors": [
+   [
+    40,
+    40,
+    50,
+    2
+   ],
+   [
+    130,
+    130,
+    145,
+    1
+   ]
+  ],
+  "materials": {
+   "Concrete": 1,
+   "SmoothPlastic": 2
+  },
+  "roblox_name": "Other Debt",
+  "canonical_part_ids": [
+   3679,
+   3680,
+   3681
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": ""
+ },
+ "Debt_OtherDebt_v2": {
+  "name": "Debt_OtherDebt_v2",
+  "type": "Debt_OtherDebt",
+  "category": "props",
+  "theme": "",
+  "canonical": "Catalog.Debts/Debt_OtherDebt#449",
+  "size": [
+   6.1,
+   6.1,
+   6.1
+  ],
+  "bbox_min": [
+   -3.05,
+   -0.05,
+   -3.05
+  ],
+  "bbox_max": [
+   3.05,
+   6.05,
+   3.05
+  ],
+  "parts": 3,
+  "instances": 1,
+  "areas": {
+   "Catalog": 1
+  },
+  "modes": {
+   "normal": 1
+  },
+  "colors": [
+   [
+    40,
+    40,
+    50,
+    2
+   ],
+   [
+    130,
+    130,
+    145,
+    1
+   ]
+  ],
+  "materials": {
+   "Concrete": 1,
+   "SmoothPlastic": 2
+  },
+  "roblox_name": "Other Debt",
+  "canonical_part_ids": [
+   3683,
+   3684,
+   3685
+  ],
+  "frame_in_ctx": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "context": ""
+ }
+}

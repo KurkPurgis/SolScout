@@ -1,0 +1,577 @@
+object,template,path,category,size,position,main_color,material,parts,mode
+Baseplate,Baseplate,Workspace,ground,512 x 20 x 512,"0, 0, 0",#5C9E4C,Grass,1,normal
+Lobby/Lobby_Floor/1,Lobby_Floor,Workspace.Lobby,ground,148 x 1 x 100,"0, 0, 0",#EBE6DC,Marble,1,normal
+Lobby/Lobby_Carpet/1,Lobby_Carpet,Workspace.Lobby,ground,132 x 0.1 x 59,"0, 0, 0",#B42832,Fabric,2,normal
+Lobby/Lobby_Walls/1,Lobby_Walls,Workspace.Lobby,buildings,148.8 x 27 x 100.8,"0, 0, 0",#2D324B,SmoothPlastic,8,normal
+Lobby/Lobby_TitleSign/1,Lobby_TitleSign,Workspace.Lobby,signs,70 x 7 x 0.4,"0, 17.5, -47.7",#2D324B,SmoothPlastic,1,normal
+Lobby/Lobby_Pillar/1.1,Lobby_Pillar,Workspace.Lobby,decoration,4.6 x 26 x 4,"-70.2, 0.5, -36",#EBE6DC,SmoothPlastic,3,normal
+Lobby/Lobby_Pillar/1.2,Lobby_Pillar,Workspace.Lobby,decoration,4.6 x 26 x 4,"-70.2, 0.5, -12",#EBE6DC,SmoothPlastic,3,normal
+Lobby/Lobby_Pillar/1.3,Lobby_Pillar,Workspace.Lobby,decoration,4.6 x 26 x 4,"-70.2, 0.5, 12",#EBE6DC,SmoothPlastic,3,normal
+Lobby/Lobby_Pillar/1.4,Lobby_Pillar,Workspace.Lobby,decoration,4.6 x 26 x 4,"-70.2, 0.5, 36",#EBE6DC,SmoothPlastic,3,normal
+Lobby/Lobby_Pillar/1.5,Lobby_Pillar,Workspace.Lobby,decoration,4.6 x 26 x 4,"70.2, 0.5, -36",#EBE6DC,SmoothPlastic,3,normal
+Lobby/Lobby_Pillar/1.6,Lobby_Pillar,Workspace.Lobby,decoration,4.6 x 26 x 4,"70.2, 0.5, -12",#EBE6DC,SmoothPlastic,3,normal
+Lobby/Lobby_Pillar/1.7,Lobby_Pillar,Workspace.Lobby,decoration,4.6 x 26 x 4,"70.2, 0.5, 12",#EBE6DC,SmoothPlastic,3,normal
+Lobby/Lobby_Pillar/1.8,Lobby_Pillar,Workspace.Lobby,decoration,4.6 x 26 x 4,"70.2, 0.5, 36",#EBE6DC,SmoothPlastic,3,normal
+Lobby/Lobby_Window/1.1,Lobby_Window,Workspace.Lobby,buildings,0.6 x 10 x 14,"-72.2, 7, -24",#96D2FF,Glass,1,normal
+Lobby/Lobby_Window/1.2,Lobby_Window,Workspace.Lobby,buildings,0.6 x 10 x 14,"-72.2, 7, 0",#96D2FF,Glass,1,normal
+Lobby/Lobby_Window/1.3,Lobby_Window,Workspace.Lobby,buildings,0.6 x 10 x 14,"-72.2, 7, 24",#96D2FF,Glass,1,normal
+Lobby/Lobby_Window/1.4,Lobby_Window,Workspace.Lobby,buildings,0.6 x 10 x 14,"72.2, 7, -24",#96D2FF,Glass,1,normal
+Lobby/Lobby_Window/1.5,Lobby_Window,Workspace.Lobby,buildings,0.6 x 10 x 14,"72.2, 7, 0",#96D2FF,Glass,1,normal
+Lobby/Lobby_Window/1.6,Lobby_Window,Workspace.Lobby,buildings,0.6 x 10 x 14,"72.2, 7, 24",#96D2FF,Glass,1,normal
+Lobby/Lobby_Bench/1.1,Lobby_Bench,Workspace.Lobby,props,2.4 x 3.5 x 6,"-66, 1, 0",#96693C,SmoothPlastic,3,normal
+Lobby/Lobby_Bench/1.2,Lobby_Bench,Workspace.Lobby,props,2.4 x 3.5 x 6,"-66, 1, 24",#96693C,SmoothPlastic,3,normal
+Lobby/Lobby_Bench/1.3,Lobby_Bench,Workspace.Lobby,props,2.4 x 3.5 x 6,"66, 1, 0",#96693C,SmoothPlastic,3,normal
+Lobby/Lobby_Bench/1.4,Lobby_Bench,Workspace.Lobby,props,2.4 x 3.5 x 6,"66, 1, 24",#96693C,SmoothPlastic,3,normal
+Lobby/Lobby_PottedPalm/1.1,Lobby_PottedPalm,Workspace.Lobby.Decor,nature,8.8 x 9.7 x 8.8,"-65, 1, 20",#C86E46,SmoothPlastic,14,normal
+Lobby/Lobby_PottedPalm/1.2,Lobby_PottedPalm,Workspace.Lobby.Decor,nature,8.8 x 9.7 x 8.8,"-65, 1, 44",#C86E46,SmoothPlastic,14,normal
+Lobby/Lobby_PottedPalm/1.3,Lobby_PottedPalm_v2,Workspace.Lobby.Decor,nature,8.8 x 9.7 x 8.8,"65, 1, 20",#C86E46,SmoothPlastic,14,normal
+Lobby/Lobby_PottedPalm/1.4,Lobby_PottedPalm_v2,Workspace.Lobby.Decor,nature,8.8 x 9.7 x 8.8,"65, 1, 44",#C86E46,SmoothPlastic,14,normal
+Lobby/Lobby_Trophy/1,Lobby_Trophy,Workspace.Lobby,props,6 x 9.9 x 6,"0, 1, 6",#EBE6DC,Marble,6,normal
+Lobby/Lobby_Spawn/1,Lobby_Spawn,Workspace.Lobby,ground,10 x 1 x 10,"0, 0.5, 38",#C8C3B9,Marble,1,normal
+Lobby/Lobby_RoomBooth/1.1,Lobby_RoomBooth,Workspace.Lobby,buildings,27.2 x 18.8 x 21.4,"-48, 1, -31",#282832,SmoothPlastic,10,normal
+Lobby/Lobby_RoomBooth/1.2,Lobby_RoomBooth_v2,Workspace.Lobby,buildings,27.2 x 18.8 x 21.4,"-16, 1, -31",#282832,SmoothPlastic,10,normal
+Lobby/Lobby_RoomBooth/1.3,Lobby_RoomBooth_v3,Workspace.Lobby,buildings,27.2 x 18.8 x 21.4,"16, 1, -31",#282832,SmoothPlastic,10,normal
+Lobby/Lobby_RoomBooth/1.4,Lobby_RoomBooth_v4,Workspace.Lobby,buildings,27.2 x 18.8 x 21.4,"48, 1, -31",#282832,SmoothPlastic,10,normal
+City_1.Plots.Plot_Player1/Workplace_Yard/84,Workplace_Yard_v2,Workspace.City_1.Plots.Plot_Player1.Workplace,ground,48 x 1.1 x 30,"700, 1, 115",#CDCDC8,Concrete,2,normal
+City_1.Plots.Plot_Player1/Workplace_Building/84,Workplace_Building_PIZZERIA,Workspace.City_1.Plots.Plot_Player1.Workplace,buildings,49.6 x 19.4 x 22.3,"700, 1, 115",#F0EBE1,SmoothPlastic,39,normal
+City_1.Plots.Plot_Player1/Pizzeria_Counter/86,Pizzeria_Counter,Workspace.City_1.Plots.Plot_Player1.Workplace,props,16 x 4 x 2.7,"700, 1, 126",#F5F5F5,SmoothPlastic,3,normal
+City_1.Plots.Plot_Player1/Pizzeria_Oven/86,Pizzeria_Oven,Workspace.City_1.Plots.Plot_Player1.Workplace,props,7 x 6 x 5.2,"686, 1, 134.9",#786E64,Brick,2,normal
+City_1.Plots.Plot_Player1/Workplace_MakerLot/84.1,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player1.Workplace,ground,11 x 1 x 9.5,"670, 0, 99",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player1/Workplace_MakerLot/84.2,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player1.Workplace,ground,11 x 1 x 9.5,"730, 0, 99",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player1/Workplace_MakerLot/84.3,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player1.Workplace,ground,11 x 1 x 9.5,"670, 0, 110",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player1/Workplace_MakerLot/84.4,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player1.Workplace,ground,11 x 1 x 9.5,"730, 0, 110",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player1/Workplace_MakerLot/84.5,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player1.Workplace,ground,11 x 1 x 9.5,"670, 0, 121",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player1/Workplace_MakerLot/84.6,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player1.Workplace,ground,11 x 1 x 9.5,"730, 0, 121",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player1/Workplace_MakerLot/84.7,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player1.Workplace,ground,11 x 1 x 9.5,"670, 0, 132",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player1/Workplace_MakerLot/84.8,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player1.Workplace,ground,11 x 1 x 9.5,"730, 0, 132",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player1/Workplace_Fence/84.1,Workplace_Fence,Workspace.City_1.Plots.Plot_Player1.Workplace,decoration,18 x 2.6 x 0.5,"685, 1, 91.5",#F5F5F5,SmoothPlastic,8,normal
+City_1.Plots.Plot_Player1/Workplace_Fence/84.2,Workplace_Fence,Workspace.City_1.Plots.Plot_Player1.Workplace,decoration,18 x 2.6 x 0.5,"715, 1, 91.5",#F5F5F5,SmoothPlastic,8,normal
+City_1.Plots.Plot_Player1/Workplace_LampPost/84.1,Workplace_LampPost,Workspace.City_1.Plots.Plot_Player1.Workplace,decoration,1.3 x 8 x 1.3,"695, 1, 91.5",#FFEB96,Neon,2,normal
+City_1.Plots.Plot_Player1/Workplace_LampPost/84.2,Workplace_LampPost,Workspace.City_1.Plots.Plot_Player1.Workplace,decoration,1.3 x 8 x 1.3,"705, 1, 91.5",#FFEB96,Neon,2,normal
+City_1.Plots.Plot_Player1/Workplace_FlowerBox/84.1,Workplace_FlowerBox,Workspace.City_1.Plots.Plot_Player1.Workplace,decoration,5 x 2.2 x 1.6,"681, 1, 119.5",#96693C,SmoothPlastic,4,normal
+City_1.Plots.Plot_Player1/Workplace_FlowerBox/84.2,Workplace_FlowerBox,Workspace.City_1.Plots.Plot_Player1.Workplace,decoration,5 x 2.2 x 1.6,"719, 1, 119.5",#96693C,SmoothPlastic,4,normal
+City_1.Plots.Plot_Player1/Workplace_Sandbox/84,Workplace_Sandbox,Workspace.City_1.Plots.Plot_Player1.Workplace,props,12.6 x 0.6 x 10.4,"717, 1, 97",#EBD7A0,Sand,5,normal
+City_1.Plots.Plot_Player1/Workplace_DebtPad/84,Workplace_DebtPad,Workspace.City_1.Plots.Plot_Player1.Workplace,ground,12 x 0.2 x 10,"683, 1, 98",#96969B,Slate,1,normal
+City_1.Plots.Plot_Player1/Debt_CreditCard#91,Debt_CreditCard,Workspace.City_1.Plots.Plot_Player1.Debts.Credit Card,props,4.4 x 3.2 x 1.4,"680, 1, 95",#285AC8,SmoothPlastic,5,normal
+City_1.Plots.Plot_Player1/Maker_LemonadeStand#96,Maker_LemonadeStand,Workspace.City_1.Plots.Plot_Player1.MoneyMakers.Lemonade Stand,props,6 x 6.3 x 6,"670, 1, 99",#FADC50,SmoothPlastic,5,normal
+City_1.Plots.Plot_Player1/Maker_FoodTruck#99,Maker_FoodTruck,Workspace.City_1.Plots.Plot_Player1.MoneyMakers.Food Truck,vehicles,8 x 4.9 x 5,"730, 1, 99",#FA8C28,SmoothPlastic,7,normal
+City_1.Plots.Plot_Player1/Maker_CarWash#103,Maker_CarWash,Workspace.City_1.Plots.Plot_Player1.ForSale.Car Wash,buildings,9 x 7 x 7.2,"670, 1, 110",#3C8CE6,ForceField,5,ghost
+City_1.Plots.Plot_Player1/Dream_Supercar#107,Dream_Supercar,Workspace.City_1.Plots.Plot_Player1.Dream.Supercar,vehicles,7.3 x 4.5 x 16,"700, 31, 130",#E62332,SmoothPlastic,42,dream
+City_1.Plots.Plot_Player2/Workplace_Yard/108,Workplace_Yard_v2,Workspace.City_1.Plots.Plot_Player2.Workplace,ground,48 x 1.1 x 30,"781.3, 1, 81.3",#CDCDC8,Concrete,2,normal
+City_1.Plots.Plot_Player2/Workplace_Building/108,Workplace_Building_BUSDEPOT,Workspace.City_1.Plots.Plot_Player2.Workplace,buildings,49.6 x 19.4 x 22.3,"781.3, 1, 81.3",#5A5A5F,SmoothPlastic,39,normal
+City_1.Plots.Plot_Player2/Depot_Bus/110,Depot_Bus,Workspace.City_1.Plots.Plot_Player2.Workplace,vehicles,20 x 7 x 6,"791.9, 1, 91.9",#FAC828,SmoothPlastic,7,normal
+City_1.Plots.Plot_Player2/Workplace_MakerLot/108.1,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player2.Workplace,ground,11 x 1 x 9.5,"748.8, 0, 91.2",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player2/Workplace_MakerLot/108.2,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player2.Workplace,ground,11 x 1 x 9.5,"791.2, 0, 48.8",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player2/Workplace_MakerLot/108.3,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player2.Workplace,ground,11 x 1 x 9.5,"756.6, 0, 99",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player2/Workplace_MakerLot/108.4,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player2.Workplace,ground,11 x 1 x 9.5,"799, 0, 56.6",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player2/Workplace_MakerLot/108.5,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player2.Workplace,ground,11 x 1 x 9.5,"764.3, 0, 106.8",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player2/Workplace_MakerLot/108.6,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player2.Workplace,ground,11 x 1 x 9.5,"806.8, 0, 64.3",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player2/Workplace_MakerLot/108.7,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player2.Workplace,ground,11 x 1 x 9.5,"772.1, 0, 114.6",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player2/Workplace_MakerLot/108.8,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player2.Workplace,ground,11 x 1 x 9.5,"814.6, 0, 72.1",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player2/Workplace_Fence/108.1,Workplace_Fence,Workspace.City_1.Plots.Plot_Player2.Workplace,decoration,18 x 2.6 x 0.5,"754.1, 1, 75.3",#F5F5F5,SmoothPlastic,8,normal
+City_1.Plots.Plot_Player2/Workplace_Fence/108.2,Workplace_Fence,Workspace.City_1.Plots.Plot_Player2.Workplace,decoration,18 x 2.6 x 0.5,"775.3, 1, 54.1",#F5F5F5,SmoothPlastic,8,normal
+City_1.Plots.Plot_Player2/Workplace_LampPost/108.1,Workplace_LampPost,Workspace.City_1.Plots.Plot_Player2.Workplace,decoration,1.3 x 8 x 1.3,"761.2, 1, 68.2",#FFEB96,Neon,2,normal
+City_1.Plots.Plot_Player2/Workplace_LampPost/108.2,Workplace_LampPost,Workspace.City_1.Plots.Plot_Player2.Workplace,decoration,1.3 x 8 x 1.3,"768.2, 1, 61.2",#FFEB96,Neon,2,normal
+City_1.Plots.Plot_Player2/Workplace_FlowerBox/108.1,Workplace_FlowerBox,Workspace.City_1.Plots.Plot_Player2.Workplace,decoration,5 x 2.2 x 1.6,"771.1, 1, 97.9",#96693C,SmoothPlastic,4,normal
+City_1.Plots.Plot_Player2/Workplace_FlowerBox/108.2,Workplace_FlowerBox,Workspace.City_1.Plots.Plot_Player2.Workplace,decoration,5 x 2.2 x 1.6,"797.9, 1, 71.1",#96693C,SmoothPlastic,4,normal
+City_1.Plots.Plot_Player2/Workplace_Sandbox/108,Workplace_Sandbox,Workspace.City_1.Plots.Plot_Player2.Workplace,props,12.6 x 0.6 x 10.4,"780.6, 1, 56.6",#EBD7A0,Sand,5,normal
+City_1.Plots.Plot_Player2/Workplace_DebtPad/108,Workplace_DebtPad,Workspace.City_1.Plots.Plot_Player2.Workplace,ground,12 x 0.2 x 10,"757.3, 1, 81.3",#96969B,Slate,1,normal
+City_1.Plots.Plot_Player2/Kid#120,Kid,Workspace.City_1.Plots.Plot_Player2.Kids.Kid,props,1.3 x 3.4 x 1.2,"776.4, 1, 56.6",#F0C8A0,SmoothPlastic,3,normal
+City_1.Plots.Plot_Player2/Kid#121,Kid_v2,Workspace.City_1.Plots.Plot_Player2.Kids.Kid,props,1.3 x 3.4 x 1.2,"780.6, 1, 52.3",#F0C8A0,SmoothPlastic,3,normal
+City_1.Plots.Plot_Player2/Debt_CarLoan#124,Debt_CarLoan,Workspace.City_1.Plots.Plot_Player2.Debts.Car Loan,props,3.1 x 2.5 x 4.7,"753, 1, 81.3",#8C8C96,SmoothPlastic,7,normal
+City_1.Plots.Plot_Player2/Maker_VendingMachine#129,Maker_VendingMachine,Workspace.City_1.Plots.Plot_Player2.MoneyMakers.Vending Machine,props,3.5 x 6 x 2.6,"748.8, 1, 91.2",#D22828,SmoothPlastic,2,normal
+City_1.Plots.Plot_Player2/Maker_ToyShop#131,Maker_ToyShop,Workspace.City_1.Plots.Plot_Player2.MoneyMakers.Toy Shop,buildings,8 x 7 x 8.2,"791.2, 1, 48.8",#F082BE,SmoothPlastic,4,normal
+City_1.Plots.Plot_Player2/Maker_GoldCoin#135,Maker_GoldCoin,Workspace.City_1.Plots.Plot_Player2.ForSale.Gold Coin,props,3.8 x 4.2 x 1.4,"756.6, 1, 99",#F5BE28,ForceField,4,ghost
+City_1.Plots.Plot_Player2/Dream_Yacht#139,Dream_Yacht,Workspace.City_1.Plots.Plot_Player2.Dream.Yacht,vehicles,4.2 x 5.6 x 16,"791.9, 31, 91.9",#F8F8FC,SmoothPlastic,85,dream
+City_1.Plots.Plot_Player2/Collection_Showcase/112,Collection_Showcase,Workspace.City_1.Plots.Plot_Player2.Collection,props,11.2 x 2.6 x 3.2,"789.1, 1, 67.9",#96693C,WoodPlanks,2,normal
+City_1.Plots.Plot_Player2/Maker_GoldCoin#113,Maker_GoldCoin,Workspace.City_1.Plots.Plot_Player2.Collection.Gold Coin,props,1.5 x 1.7 x 0.6,"786.3, 3.6, 70.6",#F5BE28,Metal,4,mini
+City_1.Plots.Plot_Player2/Maker_PokeBloxCard#115,Maker_PokeBloxCard,Workspace.City_1.Plots.Plot_Player2.Collection.PokeBlox Card,props,1.4 x 2.2 x 0.7,"788.2, 3.8, 68.8",#FFD23C,SmoothPlastic,12,mini
+City_1.Plots.Plot_Player3/Workplace_Yard/140,Workplace_Yard_v2,Workspace.City_1.Plots.Plot_Player3.Workplace,ground,48 x 1.1 x 30,"815, 1, 0",#CDCDC8,Concrete,2,normal
+City_1.Plots.Plot_Player3/Workplace_Building/140,Workplace_Building_HOSPITAL,Workspace.City_1.Plots.Plot_Player3.Workplace,buildings,49.6 x 19.4 x 22.3,"815, 1, 0",#BEE1F0,SmoothPlastic,39,normal
+City_1.Plots.Plot_Player3/HospitalBed/142.1,HospitalBed,Workspace.City_1.Plots.Plot_Player3.Workplace,props,4.1 x 2.2 x 7,"832, 1, -12",#F5F5F5,SmoothPlastic,3,normal
+City_1.Plots.Plot_Player3/HospitalBed/142.2,HospitalBed,Workspace.City_1.Plots.Plot_Player3.Workplace,props,4.1 x 2.2 x 7,"832, 1, 0",#F5F5F5,SmoothPlastic,3,normal
+City_1.Plots.Plot_Player3/HospitalBed/142.3,HospitalBed,Workspace.City_1.Plots.Plot_Player3.Workplace,props,4.1 x 2.2 x 7,"832, 1, 12",#F5F5F5,SmoothPlastic,3,normal
+City_1.Plots.Plot_Player3/Hospital_WallCross/142,Hospital_WallCross,Workspace.City_1.Plots.Plot_Player3.Workplace,decoration,5 x 5 x 0.3,"838, 10, -0",#DC323C,SmoothPlastic,2,normal
+City_1.Plots.Plot_Player3/Workplace_MakerLot/140.1,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player3.Workplace,ground,11 x 1 x 9.5,"799, 0, 30",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player3/Workplace_MakerLot/140.2,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player3.Workplace,ground,11 x 1 x 9.5,"799, 0, -30",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player3/Workplace_MakerLot/140.3,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player3.Workplace,ground,11 x 1 x 9.5,"810, 0, 30",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player3/Workplace_MakerLot/140.4,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player3.Workplace,ground,11 x 1 x 9.5,"810, 0, -30",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player3/Workplace_MakerLot/140.5,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player3.Workplace,ground,11 x 1 x 9.5,"821, 0, 30",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player3/Workplace_MakerLot/140.6,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player3.Workplace,ground,11 x 1 x 9.5,"821, 0, -30",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player3/Workplace_MakerLot/140.7,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player3.Workplace,ground,11 x 1 x 9.5,"832, 0, 30",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player3/Workplace_MakerLot/140.8,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player3.Workplace,ground,11 x 1 x 9.5,"832, 0, -30",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player3/Workplace_Fence/140.1,Workplace_Fence,Workspace.City_1.Plots.Plot_Player3.Workplace,decoration,18 x 2.6 x 0.5,"791.5, 1, -15",#F5F5F5,SmoothPlastic,8,normal
+City_1.Plots.Plot_Player3/Workplace_Fence/140.2,Workplace_Fence,Workspace.City_1.Plots.Plot_Player3.Workplace,decoration,18 x 2.6 x 0.5,"791.5, 1, 15",#F5F5F5,SmoothPlastic,8,normal
+City_1.Plots.Plot_Player3/Workplace_LampPost/140.1,Workplace_LampPost,Workspace.City_1.Plots.Plot_Player3.Workplace,decoration,1.3 x 8 x 1.3,"791.5, 1, -5",#FFEB96,Neon,2,normal
+City_1.Plots.Plot_Player3/Workplace_LampPost/140.2,Workplace_LampPost,Workspace.City_1.Plots.Plot_Player3.Workplace,decoration,1.3 x 8 x 1.3,"791.5, 1, 5",#FFEB96,Neon,2,normal
+City_1.Plots.Plot_Player3/Workplace_FlowerBox/140.1,Workplace_FlowerBox,Workspace.City_1.Plots.Plot_Player3.Workplace,decoration,5 x 2.2 x 1.6,"819.5, 1, -19",#96693C,SmoothPlastic,4,normal
+City_1.Plots.Plot_Player3/Workplace_FlowerBox/140.2,Workplace_FlowerBox,Workspace.City_1.Plots.Plot_Player3.Workplace,decoration,5 x 2.2 x 1.6,"819.5, 1, 19",#96693C,SmoothPlastic,4,normal
+City_1.Plots.Plot_Player3/Workplace_Sandbox/140,Workplace_Sandbox,Workspace.City_1.Plots.Plot_Player3.Workplace,props,12.6 x 0.6 x 10.4,"797, 1, -17",#EBD7A0,Sand,5,normal
+City_1.Plots.Plot_Player3/Workplace_DebtPad/140,Workplace_DebtPad,Workspace.City_1.Plots.Plot_Player3.Workplace,ground,12 x 0.2 x 10,"798, 1, 17",#96969B,Slate,1,normal
+City_1.Plots.Plot_Player3/Kid#146,Kid,Workspace.City_1.Plots.Plot_Player3.Kids.Kid,props,1.3 x 3.4 x 1.2,"794, 1, -14",#F0C8A0,SmoothPlastic,3,normal
+City_1.Plots.Plot_Player3/Debt_SchoolLoan#149,Debt_SchoolLoan,Workspace.City_1.Plots.Plot_Player3.Debts.School Loan,props,3.4 x 3 x 3.4,"795, 1, 20",#C83C3C,SmoothPlastic,9,normal
+City_1.Plots.Plot_Player3/Maker_Apartment#153,Maker_Apartment,Workspace.City_1.Plots.Plot_Player3.MoneyMakers.Apartment,buildings,8 x 8 x 7.2,"799, 1, 30",#D2B48C,SmoothPlastic,7,normal
+City_1.Plots.Plot_Player3/Maker_MiniGolf#155,Maker_MiniGolf,Workspace.City_1.Plots.Plot_Player3.MoneyMakers.Mini Golf,props,9 x 4.3 x 7,"799, 1, -30",#3CBE50,Grass,6,normal
+City_1.Plots.Plot_Player3/Maker_PokeBloxCard#158,Maker_PokeBloxCard,Workspace.City_1.Plots.Plot_Player3.ForSale.PokeBlox Card,props,3.6 x 5.5 x 1.6,"810, 1, 30",#FFD23C,ForceField,12,ghost
+City_1.Plots.Plot_Player3/Dream_BeachVilla#163,Dream_BeachVilla,Workspace.City_1.Plots.Plot_Player3.Dream.BeachVilla,buildings,16 x 5.3 x 13.4,"830, 31, 0",#FAFAF8,SmoothPlastic,77,dream
+City_1.Plots.Plot_Player4/Workplace_Yard/166,Workplace_Yard_v2,Workspace.City_1.Plots.Plot_Player4.Workplace,ground,48 x 1.1 x 30,"781.3, 1, -81.3",#CDCDC8,Concrete,2,normal
+City_1.Plots.Plot_Player4/Workplace_Building/166,Workplace_Building_CLINIC,Workspace.City_1.Plots.Plot_Player4.Workplace,buildings,49.6 x 19.4 x 22.3,"781.3, 1, -81.3",#EBF5F5,SmoothPlastic,39,normal
+City_1.Plots.Plot_Player4/HospitalBed/168,HospitalBed,Workspace.City_1.Plots.Plot_Player4.Workplace,props,4.1 x 2.2 x 7,"786.3, 1, -100.4",#F5F5F5,SmoothPlastic,3,normal
+City_1.Plots.Plot_Player4/Computer/168,Computer,Workspace.City_1.Plots.Plot_Player4.Workplace,props,4 x 4.1 x 2.5,"796.9, 1, -82.7",#F5F5F5,SmoothPlastic,3,normal
+City_1.Plots.Plot_Player4/Clinic_Chair/168,Clinic_Chair,Workspace.City_1.Plots.Plot_Player4.Workplace,props,2 x 3 x 2,"798.6, 1, -84.5",#282832,SmoothPlastic,1,normal
+City_1.Plots.Plot_Player4/Clinic_Cabinet/168,Clinic_Cabinet,Workspace.City_1.Plots.Plot_Player4.Workplace,props,4 x 8 x 2.5,"807.5, 1, -84.9",#F5F5F5,SmoothPlastic,1,normal
+City_1.Plots.Plot_Player4/Clinic_WallScreen/168,Clinic_WallScreen,Workspace.City_1.Plots.Plot_Player4.Workplace,decoration,8 x 5 x 0.2,"797.6, 7, -97.6",#1E283C,SmoothPlastic,2,normal
+City_1.Plots.Plot_Player4/Workplace_MakerLot/166.1,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player4.Workplace,ground,11 x 1 x 9.5,"791.2, 0, -48.8",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player4/Workplace_MakerLot/166.2,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player4.Workplace,ground,11 x 1 x 9.5,"748.8, 0, -91.2",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player4/Workplace_MakerLot/166.3,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player4.Workplace,ground,11 x 1 x 9.5,"799, 0, -56.6",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player4/Workplace_MakerLot/166.4,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player4.Workplace,ground,11 x 1 x 9.5,"756.6, 0, -99",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player4/Workplace_MakerLot/166.5,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player4.Workplace,ground,11 x 1 x 9.5,"806.8, 0, -64.3",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player4/Workplace_MakerLot/166.6,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player4.Workplace,ground,11 x 1 x 9.5,"764.3, 0, -106.8",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player4/Workplace_MakerLot/166.7,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player4.Workplace,ground,11 x 1 x 9.5,"814.6, 0, -72.1",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player4/Workplace_MakerLot/166.8,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player4.Workplace,ground,11 x 1 x 9.5,"772.1, 0, -114.6",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player4/Workplace_Fence/166.1,Workplace_Fence,Workspace.City_1.Plots.Plot_Player4.Workplace,decoration,18 x 2.6 x 0.5,"754.1, 1, -75.3",#F5F5F5,SmoothPlastic,8,normal
+City_1.Plots.Plot_Player4/Workplace_Fence/166.2,Workplace_Fence,Workspace.City_1.Plots.Plot_Player4.Workplace,decoration,18 x 2.6 x 0.5,"775.3, 1, -54.1",#F5F5F5,SmoothPlastic,8,normal
+City_1.Plots.Plot_Player4/Workplace_LampPost/166.1,Workplace_LampPost,Workspace.City_1.Plots.Plot_Player4.Workplace,decoration,1.3 x 8 x 1.3,"761.2, 1, -68.2",#FFEB96,Neon,2,normal
+City_1.Plots.Plot_Player4/Workplace_LampPost/166.2,Workplace_LampPost,Workspace.City_1.Plots.Plot_Player4.Workplace,decoration,1.3 x 8 x 1.3,"768.2, 1, -61.2",#FFEB96,Neon,2,normal
+City_1.Plots.Plot_Player4/Workplace_FlowerBox/166.1,Workplace_FlowerBox,Workspace.City_1.Plots.Plot_Player4.Workplace,decoration,5 x 2.2 x 1.6,"771.1, 1, -97.9",#96693C,SmoothPlastic,4,normal
+City_1.Plots.Plot_Player4/Workplace_FlowerBox/166.2,Workplace_FlowerBox,Workspace.City_1.Plots.Plot_Player4.Workplace,decoration,5 x 2.2 x 1.6,"797.9, 1, -71.1",#96693C,SmoothPlastic,4,normal
+City_1.Plots.Plot_Player4/Workplace_Sandbox/166,Workplace_Sandbox,Workspace.City_1.Plots.Plot_Player4.Workplace,props,12.6 x 0.6 x 10.4,"756.6, 1, -80.6",#EBD7A0,Sand,5,normal
+City_1.Plots.Plot_Player4/Workplace_DebtPad/166,Workplace_DebtPad,Workspace.City_1.Plots.Plot_Player4.Workplace,ground,12 x 0.2 x 10,"781.3, 1, -57.3",#96969B,Slate,1,normal
+City_1.Plots.Plot_Player4/Kid#172,Kid,Workspace.City_1.Plots.Plot_Player4.Kids.Kid,props,1.3 x 3.4 x 1.2,"756.6, 1, -76.4",#F0C8A0,SmoothPlastic,3,normal
+City_1.Plots.Plot_Player4/Kid#173,Kid_v2,Workspace.City_1.Plots.Plot_Player4.Kids.Kid,props,1.3 x 3.4 x 1.2,"752.3, 1, -80.6",#F0C8A0,SmoothPlastic,3,normal
+City_1.Plots.Plot_Player4/Kid#174,Kid_v3,Workspace.City_1.Plots.Plot_Player4.Kids.Kid,props,1.3 x 3.4 x 1.2,"760.8, 1, -80.6",#F0C8A0,SmoothPlastic,3,normal
+City_1.Plots.Plot_Player4/Debt_SchoolLoan#177,Debt_SchoolLoan_v2,Workspace.City_1.Plots.Plot_Player4.Debts.School Loan,props,3.4 x 6.2 x 3.4,"781.3, 1, -53",#C83C3C,SmoothPlastic,17,normal
+City_1.Plots.Plot_Player4/Maker_HouseToRent#181,Maker_HouseToRent,Workspace.City_1.Plots.Plot_Player4.MoneyMakers.House to Rent,buildings,8.4 x 8 x 7.4,"791.2, 1, -48.8",#96C8F0,SmoothPlastic,6,normal
+City_1.Plots.Plot_Player4/Maker_PizzaRestaurant#183,Maker_PizzaRestaurant,Workspace.City_1.Plots.Plot_Player4.MoneyMakers.Pizza Restaurant,buildings,9 x 7 x 8.2,"748.8, 1, -91.2",#DC3C32,SmoothPlastic,4,normal
+City_1.Plots.Plot_Player4/Maker_Hotel#187,Maker_Hotel,Workspace.City_1.Plots.Plot_Player4.ForSale.Hotel,buildings,8 x 16 x 7.3,"799, 1, -56.6",#F0E6D2,ForceField,17,ghost
+City_1.Plots.Plot_Player4/Dream_PrivateJet#191,Dream_PrivateJet,Workspace.City_1.Plots.Plot_Player4.Dream.PrivateJet,vehicles,13.8 x 6 x 16,"791.9, 31, -91.9",#F8F8FC,SmoothPlastic,57,dream
+City_1.Plots.Plot_Player5/Workplace_Yard/192,Workplace_Yard_v2,Workspace.City_1.Plots.Plot_Player5.Workplace,ground,48 x 1.1 x 30,"700, 1, -115",#CDCDC8,Concrete,2,normal
+City_1.Plots.Plot_Player5/Workplace_Building/192,Workplace_Building_SCHOOL,Workspace.City_1.Plots.Plot_Player5.Workplace,buildings,49.6 x 19.4 x 22.3,"700, 1, -115",#BE8C5A,SmoothPlastic,39,normal
+City_1.Plots.Plot_Player5/School_Blackboard/194,School_Blackboard,Workspace.City_1.Plots.Plot_Player5.Workplace,decoration,20 x 6 x 0.3,"700, 5, -138",#285A3C,SmoothPlastic,1,normal
+City_1.Plots.Plot_Player5/School_TeacherDesk/194,School_TeacherDesk,Workspace.City_1.Plots.Plot_Player5.Workplace,props,4 x 2.5 x 2.5,"700, 1, -134.5",#96693C,SmoothPlastic,1,normal
+City_1.Plots.Plot_Player5/School_StudentDesk/194.1,School_StudentDesk,Workspace.City_1.Plots.Plot_Player5.Workplace,props,3 x 2.2 x 2,"712, 1, -124",#C8A06E,SmoothPlastic,1,normal
+City_1.Plots.Plot_Player5/School_StudentDesk/194.2,School_StudentDesk,Workspace.City_1.Plots.Plot_Player5.Workplace,props,3 x 2.2 x 2,"712, 1, -128.5",#C8A06E,SmoothPlastic,1,normal
+City_1.Plots.Plot_Player5/School_StudentDesk/194.3,School_StudentDesk,Workspace.City_1.Plots.Plot_Player5.Workplace,props,3 x 2.2 x 2,"704, 1, -124",#C8A06E,SmoothPlastic,1,normal
+City_1.Plots.Plot_Player5/School_StudentDesk/194.4,School_StudentDesk,Workspace.City_1.Plots.Plot_Player5.Workplace,props,3 x 2.2 x 2,"704, 1, -128.5",#C8A06E,SmoothPlastic,1,normal
+City_1.Plots.Plot_Player5/School_StudentDesk/194.5,School_StudentDesk,Workspace.City_1.Plots.Plot_Player5.Workplace,props,3 x 2.2 x 2,"696, 1, -124",#C8A06E,SmoothPlastic,1,normal
+City_1.Plots.Plot_Player5/School_StudentDesk/194.6,School_StudentDesk,Workspace.City_1.Plots.Plot_Player5.Workplace,props,3 x 2.2 x 2,"696, 1, -128.5",#C8A06E,SmoothPlastic,1,normal
+City_1.Plots.Plot_Player5/School_StudentDesk/194.7,School_StudentDesk,Workspace.City_1.Plots.Plot_Player5.Workplace,props,3 x 2.2 x 2,"688, 1, -124",#C8A06E,SmoothPlastic,1,normal
+City_1.Plots.Plot_Player5/School_StudentDesk/194.8,School_StudentDesk,Workspace.City_1.Plots.Plot_Player5.Workplace,props,3 x 2.2 x 2,"688, 1, -128.5",#C8A06E,SmoothPlastic,1,normal
+City_1.Plots.Plot_Player5/Workplace_MakerLot/192.1,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player5.Workplace,ground,11 x 1 x 9.5,"730, 0, -99",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player5/Workplace_MakerLot/192.2,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player5.Workplace,ground,11 x 1 x 9.5,"670, 0, -99",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player5/Workplace_MakerLot/192.3,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player5.Workplace,ground,11 x 1 x 9.5,"730, 0, -110",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player5/Workplace_MakerLot/192.4,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player5.Workplace,ground,11 x 1 x 9.5,"670, 0, -110",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player5/Workplace_MakerLot/192.5,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player5.Workplace,ground,11 x 1 x 9.5,"730, 0, -121",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player5/Workplace_MakerLot/192.6,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player5.Workplace,ground,11 x 1 x 9.5,"670, 0, -121",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player5/Workplace_MakerLot/192.7,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player5.Workplace,ground,11 x 1 x 9.5,"730, 0, -132",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player5/Workplace_MakerLot/192.8,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player5.Workplace,ground,11 x 1 x 9.5,"670, 0, -132",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player5/Workplace_Fence/192.1,Workplace_Fence,Workspace.City_1.Plots.Plot_Player5.Workplace,decoration,18 x 2.6 x 0.5,"685, 1, -91.5",#F5F5F5,SmoothPlastic,8,normal
+City_1.Plots.Plot_Player5/Workplace_Fence/192.2,Workplace_Fence,Workspace.City_1.Plots.Plot_Player5.Workplace,decoration,18 x 2.6 x 0.5,"715, 1, -91.5",#F5F5F5,SmoothPlastic,8,normal
+City_1.Plots.Plot_Player5/Workplace_LampPost/192.1,Workplace_LampPost,Workspace.City_1.Plots.Plot_Player5.Workplace,decoration,1.3 x 8 x 1.3,"695, 1, -91.5",#FFEB96,Neon,2,normal
+City_1.Plots.Plot_Player5/Workplace_LampPost/192.2,Workplace_LampPost,Workspace.City_1.Plots.Plot_Player5.Workplace,decoration,1.3 x 8 x 1.3,"705, 1, -91.5",#FFEB96,Neon,2,normal
+City_1.Plots.Plot_Player5/Workplace_FlowerBox/192.1,Workplace_FlowerBox,Workspace.City_1.Plots.Plot_Player5.Workplace,decoration,5 x 2.2 x 1.6,"681, 1, -119.5",#96693C,SmoothPlastic,4,normal
+City_1.Plots.Plot_Player5/Workplace_FlowerBox/192.2,Workplace_FlowerBox,Workspace.City_1.Plots.Plot_Player5.Workplace,decoration,5 x 2.2 x 1.6,"719, 1, -119.5",#96693C,SmoothPlastic,4,normal
+City_1.Plots.Plot_Player5/Workplace_Sandbox/192,Workplace_Sandbox,Workspace.City_1.Plots.Plot_Player5.Workplace,props,12.6 x 0.6 x 10.4,"683, 1, -97",#EBD7A0,Sand,5,normal
+City_1.Plots.Plot_Player5/Workplace_DebtPad/192,Workplace_DebtPad,Workspace.City_1.Plots.Plot_Player5.Workplace,ground,12 x 0.2 x 10,"717, 1, -98",#96969B,Slate,1,normal
+City_1.Plots.Plot_Player5/Kid#207,Kid,Workspace.City_1.Plots.Plot_Player5.Kids.Kid,props,1.3 x 3.4 x 1.2,"686, 1, -94",#F0C8A0,SmoothPlastic,3,normal
+City_1.Plots.Plot_Player5/Debt_CarLoan#210,Debt_CarLoan_v3,Workspace.City_1.Plots.Plot_Player5.Debts.Car Loan,props,3.3 x 2.7 x 5,"720, 1, -95",#8C8C96,SmoothPlastic,7,normal
+City_1.Plots.Plot_Player5/Maker_CoffeeShop#215,Maker_CoffeeShop,Workspace.City_1.Plots.Plot_Player5.MoneyMakers.Coffee Shop,buildings,8 x 6 x 8.2,"730, 1, -99",#965F3C,SmoothPlastic,4,normal
+City_1.Plots.Plot_Player5/Maker_BowlingAlley#218,Maker_BowlingAlley,Workspace.City_1.Plots.Plot_Player5.MoneyMakers.Bowling Alley,buildings,10 x 8 x 8.7,"670, 1, -99",#3C50A0,SmoothPlastic,5,normal
+City_1.Plots.Plot_Player5/Maker_GoldBar#222,Maker_GoldBar,Workspace.City_1.Plots.Plot_Player5.ForSale.Gold Bar,props,4.6 x 2.4 x 2.6,"730, 1, -110",#F5BE28,ForceField,6,ghost
+City_1.Plots.Plot_Player5/Dream_PrivateIsland#225,Dream_PrivateIsland,Workspace.City_1.Plots.Plot_Player5.Dream.PrivateIsland,nature,16 x 4.5 x 15.6,"700, 31, -130",#F0DCA5,Sand,79,dream
+City_1.Plots.Plot_Player5/Collection_Showcase/196,Collection_Showcase,Workspace.City_1.Plots.Plot_Player5.Collection,props,11.2 x 2.6 x 3.2,"685, 1, -111",#96693C,WoodPlanks,2,normal
+City_1.Plots.Plot_Player5/Maker_RarePokeBloxCard#197,Maker_RarePokeBloxCard_v2,Workspace.City_1.Plots.Plot_Player5.Collection.Rare PokeBlox Card,props,1.4 x 2.2 x 0.7,"688.9, 3.8, -111",#FFD23C,SmoothPlastic,12,mini
+City_1.Plots.Plot_Player5/Maker_GoldBar#200,Maker_GoldBar,Workspace.City_1.Plots.Plot_Player5.Collection.Gold Bar,props,1.8 x 1 x 1,"686.3, 3.6, -111",#F5BE28,Metal,6,mini
+City_1.Plots.Plot_Player5/Maker_ShinyPokeBloxCard#201,Maker_ShinyPokeBloxCard,Workspace.City_1.Plots.Plot_Player5.Collection.Shiny PokeBlox Card,props,1.4 x 2.2 x 0.7,"683.7, 3.8, -111",#FFD23C,SmoothPlastic,12,mini
+City_1.Plots.Plot_Player5/Maker_GoldTreasureChest#204,Maker_GoldTreasureChest,Workspace.City_1.Plots.Plot_Player5.Collection.Gold Treasure Chest,props,2 x 2.4 x 1.7,"681.1, 3.6, -111",#96693C,WoodPlanks,9,mini
+City_1.Plots.Plot_Player6/Workplace_Yard/229,Workplace_Yard_v2,Workspace.City_1.Plots.Plot_Player6.Workplace,ground,48 x 1.1 x 30,"618.7, 1, -81.3",#CDCDC8,Concrete,2,normal
+City_1.Plots.Plot_Player6/Workplace_Building/229,Workplace_Building_POLICE,Workspace.City_1.Plots.Plot_Player6.Workplace,buildings,49.6 x 19.4 x 22.3,"618.7, 1, -81.3",#C8C8CD,SmoothPlastic,39,normal
+City_1.Plots.Plot_Player6/Police_Car/231,Police_Car,Workspace.City_1.Plots.Plot_Player6.Workplace,vehicles,8 x 4.4 x 4.8,"614.4, 1, -99.7",#F5F5F5,SmoothPlastic,8,normal
+City_1.Plots.Plot_Player6/Computer/231.1,Computer,Workspace.City_1.Plots.Plot_Player6.Workplace,props,4 x 4.1 x 2.5,"597.5, 1, -79.9",#F5F5F5,SmoothPlastic,3,normal
+City_1.Plots.Plot_Player6/Computer/231.2,Computer,Workspace.City_1.Plots.Plot_Player6.Workplace,props,4 x 4.1 x 2.5,"601.7, 1, -84.1",#F5F5F5,SmoothPlastic,3,normal
+City_1.Plots.Plot_Player6/Workplace_MakerLot/229.1,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player6.Workplace,ground,11 x 1 x 9.5,"651.2, 0, -91.2",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player6/Workplace_MakerLot/229.2,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player6.Workplace,ground,11 x 1 x 9.5,"608.8, 0, -48.8",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player6/Workplace_MakerLot/229.3,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player6.Workplace,ground,11 x 1 x 9.5,"643.4, 0, -99",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player6/Workplace_MakerLot/229.4,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player6.Workplace,ground,11 x 1 x 9.5,"601, 0, -56.6",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player6/Workplace_MakerLot/229.5,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player6.Workplace,ground,11 x 1 x 9.5,"635.7, 0, -106.8",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player6/Workplace_MakerLot/229.6,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player6.Workplace,ground,11 x 1 x 9.5,"593.2, 0, -64.3",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player6/Workplace_MakerLot/229.7,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player6.Workplace,ground,11 x 1 x 9.5,"627.9, 0, -114.6",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player6/Workplace_MakerLot/229.8,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player6.Workplace,ground,11 x 1 x 9.5,"585.4, 0, -72.1",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player6/Workplace_Fence/229.1,Workplace_Fence,Workspace.City_1.Plots.Plot_Player6.Workplace,decoration,18 x 2.6 x 0.5,"624.7, 1, -54.1",#F5F5F5,SmoothPlastic,8,normal
+City_1.Plots.Plot_Player6/Workplace_Fence/229.2,Workplace_Fence,Workspace.City_1.Plots.Plot_Player6.Workplace,decoration,18 x 2.6 x 0.5,"645.9, 1, -75.3",#F5F5F5,SmoothPlastic,8,normal
+City_1.Plots.Plot_Player6/Workplace_LampPost/229.1,Workplace_LampPost,Workspace.City_1.Plots.Plot_Player6.Workplace,decoration,1.3 x 8 x 1.3,"631.8, 1, -61.2",#FFEB96,Neon,2,normal
+City_1.Plots.Plot_Player6/Workplace_LampPost/229.2,Workplace_LampPost,Workspace.City_1.Plots.Plot_Player6.Workplace,decoration,1.3 x 8 x 1.3,"638.8, 1, -68.2",#FFEB96,Neon,2,normal
+City_1.Plots.Plot_Player6/Workplace_FlowerBox/229.1,Workplace_FlowerBox,Workspace.City_1.Plots.Plot_Player6.Workplace,decoration,5 x 2.2 x 1.6,"602.1, 1, -71.1",#96693C,SmoothPlastic,4,normal
+City_1.Plots.Plot_Player6/Workplace_FlowerBox/229.2,Workplace_FlowerBox,Workspace.City_1.Plots.Plot_Player6.Workplace,decoration,5 x 2.2 x 1.6,"628.9, 1, -97.9",#96693C,SmoothPlastic,4,normal
+City_1.Plots.Plot_Player6/Workplace_Sandbox/229,Workplace_Sandbox,Workspace.City_1.Plots.Plot_Player6.Workplace,props,12.6 x 0.6 x 10.4,"619.4, 1, -56.6",#EBD7A0,Sand,5,normal
+City_1.Plots.Plot_Player6/Workplace_DebtPad/229,Workplace_DebtPad,Workspace.City_1.Plots.Plot_Player6.Workplace,ground,12 x 0.2 x 10,"642.7, 1, -81.3",#96969B,Slate,1,normal
+City_1.Plots.Plot_Player6/Kid#236,Kid,Workspace.City_1.Plots.Plot_Player6.Kids.Kid,props,1.3 x 3.4 x 1.2,"623.6, 1, -56.6",#F0C8A0,SmoothPlastic,3,normal
+City_1.Plots.Plot_Player6/Kid#237,Kid_v2,Workspace.City_1.Plots.Plot_Player6.Kids.Kid,props,1.3 x 3.4 x 1.2,"619.4, 1, -52.3",#F0C8A0,SmoothPlastic,3,normal
+City_1.Plots.Plot_Player6/Debt_CarLoan#240,Debt_CarLoan_v4,Workspace.City_1.Plots.Plot_Player6.Debts.Car Loan,props,3.5 x 2.8 x 5.3,"647, 1, -81.3",#8C8C96,SmoothPlastic,7,normal
+City_1.Plots.Plot_Player6/Maker_GameStudio#245,Maker_GameStudio,Workspace.City_1.Plots.Plot_Player6.MoneyMakers.Game Studio,buildings,9 x 7 x 8.2,"651.2, 1, -91.2",#7846C8,SmoothPlastic,4,normal
+City_1.Plots.Plot_Player6/Maker_ShoppingMall#248,Maker_ShoppingMall,Workspace.City_1.Plots.Plot_Player6.MoneyMakers.Shopping Mall,buildings,10 x 8 x 8.7,"608.8, 1, -48.8",#C8C8D2,SmoothPlastic,4,normal
+City_1.Plots.Plot_Player6/Maker_RarePokeBloxCard#252,Maker_RarePokeBloxCard,Workspace.City_1.Plots.Plot_Player6.ForSale.Rare PokeBlox Card,props,3.6 x 5.5 x 1.6,"643.4, 1, -99",#FFD23C,ForceField,12,ghost
+City_1.Plots.Plot_Player6/Dream_Supercar#257,Dream_Supercar,Workspace.City_1.Plots.Plot_Player6.Dream.Supercar,vehicles,7.3 x 4.5 x 16,"608.1, 31, -91.9",#E62332,SmoothPlastic,42,dream
+City_1.Plots.Plot_Player7/Workplace_Yard/258,Workplace_Yard_v2,Workspace.City_1.Plots.Plot_Player7.Workplace,ground,48 x 1.1 x 30,"585, 1, 0",#CDCDC8,Concrete,2,normal
+City_1.Plots.Plot_Player7/Workplace_Building/258,Workplace_Building_OFFICE,Workspace.City_1.Plots.Plot_Player7.Workplace,buildings,49.6 x 19.4 x 22.3,"585, 1, 0",#D7D7DC,SmoothPlastic,39,normal
+City_1.Plots.Plot_Player7/Computer/260.1,Computer,Workspace.City_1.Plots.Plot_Player7.Workplace,props,4 x 4.1 x 2.5,"573, 1, -14",#F5F5F5,SmoothPlastic,3,normal
+City_1.Plots.Plot_Player7/Computer/260.2,Computer,Workspace.City_1.Plots.Plot_Player7.Workplace,props,4 x 4.1 x 2.5,"573, 1, -5",#F5F5F5,SmoothPlastic,3,normal
+City_1.Plots.Plot_Player7/Computer/260.3,Computer,Workspace.City_1.Plots.Plot_Player7.Workplace,props,4 x 4.1 x 2.5,"573, 1, 5",#F5F5F5,SmoothPlastic,3,normal
+City_1.Plots.Plot_Player7/Computer/260.4,Computer,Workspace.City_1.Plots.Plot_Player7.Workplace,props,4 x 4.1 x 2.5,"573, 1, 14",#F5F5F5,SmoothPlastic,3,normal
+City_1.Plots.Plot_Player7/Office_Screen/260,Office_Screen,Workspace.City_1.Plots.Plot_Player7.Workplace,decoration,14 x 7 x 0.4,"562, 5, 0",#286EC8,SmoothPlastic,2,normal
+City_1.Plots.Plot_Player7/Workplace_MakerLot/258.1,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player7.Workplace,ground,11 x 1 x 9.5,"601, 0, -30",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player7/Workplace_MakerLot/258.2,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player7.Workplace,ground,11 x 1 x 9.5,"601, 0, 30",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player7/Workplace_MakerLot/258.3,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player7.Workplace,ground,11 x 1 x 9.5,"590, 0, -30",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player7/Workplace_MakerLot/258.4,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player7.Workplace,ground,11 x 1 x 9.5,"590, 0, 30",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player7/Workplace_MakerLot/258.5,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player7.Workplace,ground,11 x 1 x 9.5,"579, 0, -30",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player7/Workplace_MakerLot/258.6,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player7.Workplace,ground,11 x 1 x 9.5,"579, 0, 30",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player7/Workplace_MakerLot/258.7,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player7.Workplace,ground,11 x 1 x 9.5,"568, 0, -30",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player7/Workplace_MakerLot/258.8,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player7.Workplace,ground,11 x 1 x 9.5,"568, 0, 30",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player7/Workplace_Fence/258.1,Workplace_Fence,Workspace.City_1.Plots.Plot_Player7.Workplace,decoration,18 x 2.6 x 0.5,"608.5, 1, -15",#F5F5F5,SmoothPlastic,8,normal
+City_1.Plots.Plot_Player7/Workplace_Fence/258.2,Workplace_Fence,Workspace.City_1.Plots.Plot_Player7.Workplace,decoration,18 x 2.6 x 0.5,"608.5, 1, 15",#F5F5F5,SmoothPlastic,8,normal
+City_1.Plots.Plot_Player7/Workplace_LampPost/258.1,Workplace_LampPost,Workspace.City_1.Plots.Plot_Player7.Workplace,decoration,1.3 x 8 x 1.3,"608.5, 1, -5",#FFEB96,Neon,2,normal
+City_1.Plots.Plot_Player7/Workplace_LampPost/258.2,Workplace_LampPost,Workspace.City_1.Plots.Plot_Player7.Workplace,decoration,1.3 x 8 x 1.3,"608.5, 1, 5",#FFEB96,Neon,2,normal
+City_1.Plots.Plot_Player7/Workplace_FlowerBox/258.1,Workplace_FlowerBox,Workspace.City_1.Plots.Plot_Player7.Workplace,decoration,5 x 2.2 x 1.6,"580.5, 1, -19",#96693C,SmoothPlastic,4,normal
+City_1.Plots.Plot_Player7/Workplace_FlowerBox/258.2,Workplace_FlowerBox,Workspace.City_1.Plots.Plot_Player7.Workplace,decoration,5 x 2.2 x 1.6,"580.5, 1, 19",#96693C,SmoothPlastic,4,normal
+City_1.Plots.Plot_Player7/Workplace_Sandbox/258,Workplace_Sandbox,Workspace.City_1.Plots.Plot_Player7.Workplace,props,12.6 x 0.6 x 10.4,"603, 1, 17",#EBD7A0,Sand,5,normal
+City_1.Plots.Plot_Player7/Workplace_DebtPad/258,Workplace_DebtPad,Workspace.City_1.Plots.Plot_Player7.Workplace,ground,12 x 0.2 x 10,"602, 1, -17",#96969B,Slate,1,normal
+City_1.Plots.Plot_Player7/Kid#264,Kid,Workspace.City_1.Plots.Plot_Player7.Kids.Kid,props,1.3 x 3.4 x 1.2,"606, 1, 14",#F0C8A0,SmoothPlastic,3,normal
+City_1.Plots.Plot_Player7/Debt_SchoolLoan#267,Debt_SchoolLoan_v3,Workspace.City_1.Plots.Plot_Player7.Debts.School Loan,props,3.4 x 3.8 x 3.4,"605, 1, -20",#C83C3C,SmoothPlastic,11,normal
+City_1.Plots.Plot_Player7/Maker_ApartmentBuilding#271,Maker_ApartmentBuilding,Workspace.City_1.Plots.Plot_Player7.MoneyMakers.Apartment Building,buildings,9 x 12 x 7.3,"601, 1, -30",#BE9678,SmoothPlastic,14,normal
+City_1.Plots.Plot_Player7/Maker_ThemePark#274,Maker_ThemePark,Workspace.City_1.Plots.Plot_Player7.MoneyMakers.Theme Park,props,10 x 13 x 7,"601, 1, 30",#FF5AAA,Neon,4,normal
+City_1.Plots.Plot_Player7/Maker_GoldTreasureChest#277,Maker_GoldTreasureChest,Workspace.City_1.Plots.Plot_Player7.ForSale.Gold Treasure Chest,props,5 x 6 x 4.2,"590, 1, -30",#96693C,ForceField,9,ghost
+City_1.Plots.Plot_Player7/Dream_Yacht#280,Dream_Yacht,Workspace.City_1.Plots.Plot_Player7.Dream.Yacht,vehicles,4.2 x 5.6 x 16,"570, 31, -0",#F8F8FC,SmoothPlastic,85,dream
+City_1.Plots.Plot_Player8/Workplace_Yard/281,Workplace_Yard_v2,Workspace.City_1.Plots.Plot_Player8.Workplace,ground,48 x 1.1 x 30,"618.7, 1, 81.3",#CDCDC8,Concrete,2,normal
+City_1.Plots.Plot_Player8/Workplace_Building/281,Workplace_Building_GARAGE,Workspace.City_1.Plots.Plot_Player8.Workplace,buildings,49.6 x 19.4 x 22.3,"618.7, 1, 81.3",#6E6E73,SmoothPlastic,39,normal
+City_1.Plots.Plot_Player8/Garage_CarLift/283,Garage_CarLift,Workspace.City_1.Plots.Plot_Player8.Workplace,vehicles,9 x 6.9 x 4.8,"608.1, 1, 91.9",#C82828,SmoothPlastic,8,normal
+City_1.Plots.Plot_Player8/Garage_ToolBoard/283,Garage_ToolBoard,Workspace.City_1.Plots.Plot_Player8.Workplace,decoration,10 x 6 x 0.3,"612.3, 4, 107.5",#C87832,SmoothPlastic,1,normal
+City_1.Plots.Plot_Player8/Garage_TireStack/283,Garage_TireStack,Workspace.City_1.Plots.Plot_Player8.Workplace,props,3.5 x 4 x 3.5,"592.5, 1, 83.4",#282832,SmoothPlastic,4,normal
+City_1.Plots.Plot_Player8/Workplace_MakerLot/281.1,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player8.Workplace,ground,11 x 1 x 9.5,"608.8, 0, 48.8",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player8/Workplace_MakerLot/281.2,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player8.Workplace,ground,11 x 1 x 9.5,"651.2, 0, 91.2",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player8/Workplace_MakerLot/281.3,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player8.Workplace,ground,11 x 1 x 9.5,"601, 0, 56.6",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player8/Workplace_MakerLot/281.4,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player8.Workplace,ground,11 x 1 x 9.5,"643.4, 0, 99",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player8/Workplace_MakerLot/281.5,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player8.Workplace,ground,11 x 1 x 9.5,"593.2, 0, 64.3",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player8/Workplace_MakerLot/281.6,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player8.Workplace,ground,11 x 1 x 9.5,"635.7, 0, 106.8",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player8/Workplace_MakerLot/281.7,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player8.Workplace,ground,11 x 1 x 9.5,"585.4, 0, 72.1",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player8/Workplace_MakerLot/281.8,Workplace_MakerLot,Workspace.City_1.Plots.Plot_Player8.Workplace,ground,11 x 1 x 9.5,"627.9, 0, 114.6",#E1D2A0,Concrete,1,normal
+City_1.Plots.Plot_Player8/Workplace_Fence/281.1,Workplace_Fence,Workspace.City_1.Plots.Plot_Player8.Workplace,decoration,18 x 2.6 x 0.5,"624.7, 1, 54.1",#F5F5F5,SmoothPlastic,8,normal
+City_1.Plots.Plot_Player8/Workplace_Fence/281.2,Workplace_Fence,Workspace.City_1.Plots.Plot_Player8.Workplace,decoration,18 x 2.6 x 0.5,"645.9, 1, 75.3",#F5F5F5,SmoothPlastic,8,normal
+City_1.Plots.Plot_Player8/Workplace_LampPost/281.1,Workplace_LampPost,Workspace.City_1.Plots.Plot_Player8.Workplace,decoration,1.3 x 8 x 1.3,"631.8, 1, 61.2",#FFEB96,Neon,2,normal
+City_1.Plots.Plot_Player8/Workplace_LampPost/281.2,Workplace_LampPost,Workspace.City_1.Plots.Plot_Player8.Workplace,decoration,1.3 x 8 x 1.3,"638.8, 1, 68.2",#FFEB96,Neon,2,normal
+City_1.Plots.Plot_Player8/Workplace_FlowerBox/281.1,Workplace_FlowerBox,Workspace.City_1.Plots.Plot_Player8.Workplace,decoration,5 x 2.2 x 1.6,"602.1, 1, 71.1",#96693C,SmoothPlastic,4,normal
+City_1.Plots.Plot_Player8/Workplace_FlowerBox/281.2,Workplace_FlowerBox,Workspace.City_1.Plots.Plot_Player8.Workplace,decoration,5 x 2.2 x 1.6,"628.9, 1, 97.9",#96693C,SmoothPlastic,4,normal
+City_1.Plots.Plot_Player8/Workplace_Sandbox/281,Workplace_Sandbox,Workspace.City_1.Plots.Plot_Player8.Workplace,props,12.6 x 0.6 x 10.4,"643.4, 1, 80.6",#EBD7A0,Sand,5,normal
+City_1.Plots.Plot_Player8/Workplace_DebtPad/281,Workplace_DebtPad,Workspace.City_1.Plots.Plot_Player8.Workplace,ground,12 x 0.2 x 10,"618.7, 1, 57.3",#96969B,Slate,1,normal
+City_1.Plots.Plot_Player8/Debt_CreditCard#289,Debt_CreditCard_v3,Workspace.City_1.Plots.Plot_Player8.Debts.Credit Card,props,4.8 x 3.4 x 1.4,"618.7, 1, 53",#285AC8,SmoothPlastic,5,normal
+City_1.Plots.Plot_Player8/Maker_LemonadeStand#294,Maker_LemonadeStand,Workspace.City_1.Plots.Plot_Player8.MoneyMakers.Lemonade Stand,props,6 x 6.3 x 6,"608.8, 1, 48.8",#FADC50,SmoothPlastic,5,normal
+City_1.Plots.Plot_Player8/Maker_CarWash#297,Maker_CarWash,Workspace.City_1.Plots.Plot_Player8.MoneyMakers.Car Wash,buildings,9 x 7 x 7.2,"651.2, 1, 91.2",#3C8CE6,SmoothPlastic,5,normal
+City_1.Plots.Plot_Player8/Maker_VendingMachine#300,Maker_VendingMachine,Workspace.City_1.Plots.Plot_Player8.MoneyMakers.Vending Machine,props,3.5 x 6 x 2.6,"601, 1, 56.6",#D22828,SmoothPlastic,2,normal
+City_1.Plots.Plot_Player8/Maker_ShinyPokeBloxCard#303,Maker_ShinyPokeBloxCard,Workspace.City_1.Plots.Plot_Player8.ForSale.Shiny PokeBlox Card,props,3.6 x 5.5 x 1.6,"643.4, 1, 99",#FFD23C,ForceField,12,ghost
+City_1.Plots.Plot_Player8/Dream_BeachVilla#308,Dream_BeachVilla,Workspace.City_1.Plots.Plot_Player8.Dream.BeachVilla,buildings,16 x 5.3 x 13.4,"608.1, 31, 91.9",#FAFAF8,SmoothPlastic,77,dream
+City_1/City_Ground/16,City_Ground,Workspace.City_1.Plaza,ground,366 x 2 x 366,"700, 0, 0",#5AA04B,Grass,1,normal
+City_1/City_Wall/16,City_Wall,Workspace.City_1.Plaza,decoration,368.6 x 6.8 x 368.6,"700, 0, -0",#AFA596,Cobblestone,8,normal
+City_1/Plaza_Disc/16,Plaza_Disc,Workspace.City_1.Plaza,ground,90 x 0.4 x 90,"700, 0, 0",#D7CDB9,Slate,1,normal
+City_1/Plaza_Path/16.1,Plaza_Path,Workspace.City_1.Plaza,ground,10 x 0.4 x 48,"700, 0, 67",#D7CDB9,Slate,1,normal
+City_1/Plaza_Path/16.2,Plaza_Path,Workspace.City_1.Plaza,ground,10 x 0.4 x 48,"747.4, 0, 47.4",#D7CDB9,Slate,1,normal
+City_1/Plaza_Path/16.3,Plaza_Path,Workspace.City_1.Plaza,ground,10 x 0.4 x 48,"767, 0, -0",#D7CDB9,Slate,1,normal
+City_1/Plaza_Path/16.4,Plaza_Path,Workspace.City_1.Plaza,ground,10 x 0.4 x 48,"747.4, 0, -47.4",#D7CDB9,Slate,1,normal
+City_1/Plaza_Path/16.5,Plaza_Path,Workspace.City_1.Plaza,ground,10 x 0.4 x 48,"700, 0, -67",#D7CDB9,Slate,1,normal
+City_1/Plaza_Path/16.6,Plaza_Path,Workspace.City_1.Plaza,ground,10 x 0.4 x 48,"652.6, 0, -47.4",#D7CDB9,Slate,1,normal
+City_1/Plaza_Path/16.7,Plaza_Path,Workspace.City_1.Plaza,ground,10 x 0.4 x 48,"633, 0, -0",#D7CDB9,Slate,1,normal
+City_1/Plaza_Path/16.8,Plaza_Path,Workspace.City_1.Plaza,ground,10 x 0.4 x 48,"652.6, 0, 47.4",#D7CDB9,Slate,1,normal
+City_1/Tree#17,Tree,Workspace.City_1.Plaza,nature,6 x 14.5 x 6,"744, 0, 106.2",#46AA46,Grass,2,normal
+City_1/Tree#18,Tree,Workspace.City_1.Plaza,nature,6 x 14.5 x 6,"806.2, 0, 44",#46AA46,Grass,2,normal
+City_1/Tree#19,Tree,Workspace.City_1.Plaza,nature,6 x 14.5 x 6,"806.2, 0, -44",#46AA46,Grass,2,normal
+City_1/Tree#20,Tree,Workspace.City_1.Plaza,nature,6 x 14.5 x 6,"744, 0, -106.2",#46AA46,Grass,2,normal
+City_1/Tree#21,Tree,Workspace.City_1.Plaza,nature,6 x 14.5 x 6,"656, 0, -106.2",#46AA46,Grass,2,normal
+City_1/Tree#22,Tree,Workspace.City_1.Plaza,nature,6 x 14.5 x 6,"593.8, 0, -44",#46AA46,Grass,2,normal
+City_1/Tree#23,Tree,Workspace.City_1.Plaza,nature,6 x 14.5 x 6,"593.8, 0, 44",#46AA46,Grass,2,normal
+City_1/Tree#24,Tree,Workspace.City_1.Plaza,nature,6 x 14.5 x 6,"656, 0, 106.2",#46AA46,Grass,2,normal
+City_1/Plaza_Fountain/16,Plaza_Fountain,Workspace.City_1.Plaza,decoration,22 x 9 x 22,"700, 0, 0",#BEB4A5,Slate,4,normal
+AuctionRoom_1/AuctionRoom_Shell/25,AuctionRoom_Shell,Workspace.AuctionRoom_1,buildings,65 x 26 x 51,"700, 400, 0",#5A3C28,WoodPlanks,6,normal
+AuctionRoom_1/AuctionRoom_Lamp/25.1,AuctionRoom_Lamp,Workspace.AuctionRoom_1,decoration,6 x 0.5 x 6,"682, 423, 0",#FFF0C8,Neon,1,normal
+AuctionRoom_1/AuctionRoom_Lamp/25.2,AuctionRoom_Lamp,Workspace.AuctionRoom_1,decoration,6 x 0.5 x 6,"700, 423, 0",#FFF0C8,Neon,1,normal
+AuctionRoom_1/AuctionRoom_Lamp/25.3,AuctionRoom_Lamp,Workspace.AuctionRoom_1,decoration,6 x 0.5 x 6,"718, 423, 0",#FFF0C8,Neon,1,normal
+AuctionRoom_1/AuctionRoom_Stage/25,AuctionRoom_Stage,Workspace.AuctionRoom_1,props,30.6 x 3 x 12.6,"700, 400, -12.2",#A02832,SmoothPlastic,2,normal
+AuctionRoom_1/AuctionRoom_TitleSign/25,AuctionRoom_TitleSign,Workspace.AuctionRoom_1,signs,30 x 4 x 0.4,"700, 418, -24.3",#281419,SmoothPlastic,1,normal
+AuctionRoom_1/AuctionRoom_InfoBoard/25,AuctionRoom_InfoBoard,Workspace.AuctionRoom_1,signs,44 x 8 x 0.4,"700, 408, -24.3",#1E1E2D,SmoothPlastic,1,normal
+AuctionRoom_1/AuctionRoom_BidderDesk/25.1,AuctionRoom_BidderDesk,Workspace.AuctionRoom_1,props,4 x 3 x 1.5,"677.2, 400, 5.5",#3C2823,WoodPlanks,1,normal
+AuctionRoom_1/AuctionRoom_BidderDesk/25.2,AuctionRoom_BidderDesk,Workspace.AuctionRoom_1,props,4 x 3 x 1.5,"683.8, 400, 5.5",#3C2823,WoodPlanks,1,normal
+AuctionRoom_1/AuctionRoom_BidderDesk/25.3,AuctionRoom_BidderDesk,Workspace.AuctionRoom_1,props,4 x 3 x 1.5,"690.2, 400, 5.5",#3C2823,WoodPlanks,1,normal
+AuctionRoom_1/AuctionRoom_BidderDesk/25.4,AuctionRoom_BidderDesk,Workspace.AuctionRoom_1,props,4 x 3 x 1.5,"696.8, 400, 5.5",#3C2823,WoodPlanks,1,normal
+AuctionRoom_1/AuctionRoom_BidderDesk/25.5,AuctionRoom_BidderDesk,Workspace.AuctionRoom_1,props,4 x 3 x 1.5,"703.2, 400, 5.5",#3C2823,WoodPlanks,1,normal
+AuctionRoom_1/AuctionRoom_BidderDesk/25.6,AuctionRoom_BidderDesk,Workspace.AuctionRoom_1,props,4 x 3 x 1.5,"709.8, 400, 5.5",#3C2823,WoodPlanks,1,normal
+AuctionRoom_1/AuctionRoom_BidderDesk/25.7,AuctionRoom_BidderDesk,Workspace.AuctionRoom_1,props,4 x 3 x 1.5,"716.2, 400, 5.5",#3C2823,WoodPlanks,1,normal
+AuctionRoom_1/AuctionRoom_BidderDesk/25.8,AuctionRoom_BidderDesk,Workspace.AuctionRoom_1,props,4 x 3 x 1.5,"722.8, 400, 5.5",#3C2823,WoodPlanks,1,normal
+AuctionRoom_1/AuctionRoom_BidderPad/25.1,AuctionRoom_BidderPad,Workspace.AuctionRoom_1,ground,4.5 x 0.4 x 4,"677.2, 400, 8",#3C2823,WoodPlanks,1,normal
+AuctionRoom_1/AuctionRoom_BidderPad/25.2,AuctionRoom_BidderPad,Workspace.AuctionRoom_1,ground,4.5 x 0.4 x 4,"683.8, 400, 8",#3C2823,WoodPlanks,1,normal
+AuctionRoom_1/AuctionRoom_BidderPad/25.3,AuctionRoom_BidderPad,Workspace.AuctionRoom_1,ground,4.5 x 0.4 x 4,"690.2, 400, 8",#3C2823,WoodPlanks,1,normal
+AuctionRoom_1/AuctionRoom_BidderPad/25.4,AuctionRoom_BidderPad,Workspace.AuctionRoom_1,ground,4.5 x 0.4 x 4,"696.8, 400, 8",#3C2823,WoodPlanks,1,normal
+AuctionRoom_1/AuctionRoom_BidderPad/25.5,AuctionRoom_BidderPad,Workspace.AuctionRoom_1,ground,4.5 x 0.4 x 4,"703.2, 400, 8",#3C2823,WoodPlanks,1,normal
+AuctionRoom_1/AuctionRoom_BidderPad/25.6,AuctionRoom_BidderPad,Workspace.AuctionRoom_1,ground,4.5 x 0.4 x 4,"709.8, 400, 8",#3C2823,WoodPlanks,1,normal
+AuctionRoom_1/AuctionRoom_BidderPad/25.7,AuctionRoom_BidderPad,Workspace.AuctionRoom_1,ground,4.5 x 0.4 x 4,"716.2, 400, 8",#3C2823,WoodPlanks,1,normal
+AuctionRoom_1/AuctionRoom_BidderPad/25.8,AuctionRoom_BidderPad,Workspace.AuctionRoom_1,ground,4.5 x 0.4 x 4,"722.8, 400, 8",#3C2823,WoodPlanks,1,normal
+PodiumRoom_1/PodiumRoom_Shell/28,PodiumRoom_Shell,Workspace.PodiumRoom_1,buildings,80 x 34 x 64,"700, 250, 0",#3C325A,Marble,2,normal
+PodiumRoom_1/PodiumRoom_LightStrip/28.1,PodiumRoom_LightStrip,Workspace.PodiumRoom_1,decoration,0.8 x 30 x 0.6,"670, 250, -19",#C8A03C,Neon,1,normal
+PodiumRoom_1/PodiumRoom_LightStrip/28.2,PodiumRoom_LightStrip,Workspace.PodiumRoom_1,decoration,0.8 x 30 x 0.6,"685, 250, -19",#C8A03C,Neon,1,normal
+PodiumRoom_1/PodiumRoom_LightStrip/28.3,PodiumRoom_LightStrip,Workspace.PodiumRoom_1,decoration,0.8 x 30 x 0.6,"715, 250, -19",#C8A03C,Neon,1,normal
+PodiumRoom_1/PodiumRoom_LightStrip/28.4,PodiumRoom_LightStrip,Workspace.PodiumRoom_1,decoration,0.8 x 30 x 0.6,"730, 250, -19",#C8A03C,Neon,1,normal
+PodiumRoom_1/PodiumRoom_TitleSign/28,PodiumRoom_TitleSign,Workspace.PodiumRoom_1,signs,50 x 6 x 0.4,"700, 271, -19.3",#1E1932,SmoothPlastic,1,normal
+PodiumRoom_1/PodiumRoom_Block/28,PodiumRoom_Block,Workspace.PodiumRoom_1,props,26 x 9 x 6.2,"700, 250, -7.9",#F5BE28,SmoothPlastic,6,normal
+PodiumRoom_1/PodiumRoom_Board/28,PodiumRoom_Board,Workspace.PodiumRoom_1,signs,16 x 18 x 0.4,"727, 251, -10",#2D2846,SmoothPlastic,1,normal
+City_2/City_Ground/33,City_Ground,Workspace.City_2.Plaza,ground,366 x 2 x 366,"1400, 0, 0",#5AA04B,Grass,1,normal
+City_2/City_Wall/33,City_Wall,Workspace.City_2.Plaza,decoration,368.6 x 6.8 x 368.6,"1400, 0, -0",#AFA596,Cobblestone,8,normal
+City_2/Plaza_Disc/33,Plaza_Disc,Workspace.City_2.Plaza,ground,90 x 0.4 x 90,"1400, 0, 0",#D7CDB9,Slate,1,normal
+City_2/Plaza_Path/33.1,Plaza_Path,Workspace.City_2.Plaza,ground,10 x 0.4 x 48,"1400, 0, 67",#D7CDB9,Slate,1,normal
+City_2/Plaza_Path/33.2,Plaza_Path,Workspace.City_2.Plaza,ground,10 x 0.4 x 48,"1447.4, 0, 47.4",#D7CDB9,Slate,1,normal
+City_2/Plaza_Path/33.3,Plaza_Path,Workspace.City_2.Plaza,ground,10 x 0.4 x 48,"1467, 0, 0",#D7CDB9,Slate,1,normal
+City_2/Plaza_Path/33.4,Plaza_Path,Workspace.City_2.Plaza,ground,10 x 0.4 x 48,"1447.4, 0, -47.4",#D7CDB9,Slate,1,normal
+City_2/Plaza_Path/33.5,Plaza_Path,Workspace.City_2.Plaza,ground,10 x 0.4 x 48,"1400, 0, -67",#D7CDB9,Slate,1,normal
+City_2/Plaza_Path/33.6,Plaza_Path,Workspace.City_2.Plaza,ground,10 x 0.4 x 48,"1352.6, 0, -47.4",#D7CDB9,Slate,1,normal
+City_2/Plaza_Path/33.7,Plaza_Path,Workspace.City_2.Plaza,ground,10 x 0.4 x 48,"1333, 0, 0",#D7CDB9,Slate,1,normal
+City_2/Plaza_Path/33.8,Plaza_Path,Workspace.City_2.Plaza,ground,10 x 0.4 x 48,"1352.6, 0, 47.4",#D7CDB9,Slate,1,normal
+City_2/Tree#34,Tree,Workspace.City_2.Plaza,nature,6 x 14.5 x 6,"1444, 0, 106.2",#46AA46,Grass,2,normal
+City_2/Tree#35,Tree,Workspace.City_2.Plaza,nature,6 x 14.5 x 6,"1506.2, 0, 44",#46AA46,Grass,2,normal
+City_2/Tree#36,Tree,Workspace.City_2.Plaza,nature,6 x 14.5 x 6,"1506.2, 0, -44",#46AA46,Grass,2,normal
+City_2/Tree#37,Tree,Workspace.City_2.Plaza,nature,6 x 14.5 x 6,"1444, 0, -106.2",#46AA46,Grass,2,normal
+City_2/Tree#38,Tree,Workspace.City_2.Plaza,nature,6 x 14.5 x 6,"1356, 0, -106.2",#46AA46,Grass,2,normal
+City_2/Tree#39,Tree,Workspace.City_2.Plaza,nature,6 x 14.5 x 6,"1293.8, 0, -44",#46AA46,Grass,2,normal
+City_2/Tree#40,Tree,Workspace.City_2.Plaza,nature,6 x 14.5 x 6,"1293.8, 0, 44",#46AA46,Grass,2,normal
+City_2/Tree#41,Tree,Workspace.City_2.Plaza,nature,6 x 14.5 x 6,"1356, 0, 106.2",#46AA46,Grass,2,normal
+City_2/Plaza_Fountain/33,Plaza_Fountain,Workspace.City_2.Plaza,decoration,22 x 9 x 22,"1400, 0, 0",#BEB4A5,Slate,4,normal
+AuctionRoom_2/AuctionRoom_Shell/42,AuctionRoom_Shell,Workspace.AuctionRoom_2,buildings,65 x 26 x 51,"1400, 400, 0",#5A3C28,WoodPlanks,6,normal
+AuctionRoom_2/AuctionRoom_Lamp/42.1,AuctionRoom_Lamp,Workspace.AuctionRoom_2,decoration,6 x 0.5 x 6,"1382, 423, 0",#FFF0C8,Neon,1,normal
+AuctionRoom_2/AuctionRoom_Lamp/42.2,AuctionRoom_Lamp,Workspace.AuctionRoom_2,decoration,6 x 0.5 x 6,"1400, 423, 0",#FFF0C8,Neon,1,normal
+AuctionRoom_2/AuctionRoom_Lamp/42.3,AuctionRoom_Lamp,Workspace.AuctionRoom_2,decoration,6 x 0.5 x 6,"1418, 423, 0",#FFF0C8,Neon,1,normal
+AuctionRoom_2/AuctionRoom_Stage/42,AuctionRoom_Stage,Workspace.AuctionRoom_2,props,30.6 x 3 x 12.6,"1400, 400, -12.2",#A02832,SmoothPlastic,2,normal
+AuctionRoom_2/AuctionRoom_TitleSign/42,AuctionRoom_TitleSign,Workspace.AuctionRoom_2,signs,30 x 4 x 0.4,"1400, 418, -24.3",#281419,SmoothPlastic,1,normal
+AuctionRoom_2/AuctionRoom_InfoBoard/42,AuctionRoom_InfoBoard,Workspace.AuctionRoom_2,signs,44 x 8 x 0.4,"1400, 408, -24.3",#1E1E2D,SmoothPlastic,1,normal
+AuctionRoom_2/AuctionRoom_BidderDesk/42.1,AuctionRoom_BidderDesk,Workspace.AuctionRoom_2,props,4 x 3 x 1.5,"1377.2, 400, 5.5",#3C2823,WoodPlanks,1,normal
+AuctionRoom_2/AuctionRoom_BidderDesk/42.2,AuctionRoom_BidderDesk,Workspace.AuctionRoom_2,props,4 x 3 x 1.5,"1383.8, 400, 5.5",#3C2823,WoodPlanks,1,normal
+AuctionRoom_2/AuctionRoom_BidderDesk/42.3,AuctionRoom_BidderDesk,Workspace.AuctionRoom_2,props,4 x 3 x 1.5,"1390.2, 400, 5.5",#3C2823,WoodPlanks,1,normal
+AuctionRoom_2/AuctionRoom_BidderDesk/42.4,AuctionRoom_BidderDesk,Workspace.AuctionRoom_2,props,4 x 3 x 1.5,"1396.8, 400, 5.5",#3C2823,WoodPlanks,1,normal
+AuctionRoom_2/AuctionRoom_BidderDesk/42.5,AuctionRoom_BidderDesk,Workspace.AuctionRoom_2,props,4 x 3 x 1.5,"1403.2, 400, 5.5",#3C2823,WoodPlanks,1,normal
+AuctionRoom_2/AuctionRoom_BidderDesk/42.6,AuctionRoom_BidderDesk,Workspace.AuctionRoom_2,props,4 x 3 x 1.5,"1409.8, 400, 5.5",#3C2823,WoodPlanks,1,normal
+AuctionRoom_2/AuctionRoom_BidderDesk/42.7,AuctionRoom_BidderDesk,Workspace.AuctionRoom_2,props,4 x 3 x 1.5,"1416.2, 400, 5.5",#3C2823,WoodPlanks,1,normal
+AuctionRoom_2/AuctionRoom_BidderDesk/42.8,AuctionRoom_BidderDesk,Workspace.AuctionRoom_2,props,4 x 3 x 1.5,"1422.8, 400, 5.5",#3C2823,WoodPlanks,1,normal
+AuctionRoom_2/AuctionRoom_BidderPad/42.1,AuctionRoom_BidderPad,Workspace.AuctionRoom_2,ground,4.5 x 0.4 x 4,"1377.2, 400, 8",#3C2823,WoodPlanks,1,normal
+AuctionRoom_2/AuctionRoom_BidderPad/42.2,AuctionRoom_BidderPad,Workspace.AuctionRoom_2,ground,4.5 x 0.4 x 4,"1383.8, 400, 8",#3C2823,WoodPlanks,1,normal
+AuctionRoom_2/AuctionRoom_BidderPad/42.3,AuctionRoom_BidderPad,Workspace.AuctionRoom_2,ground,4.5 x 0.4 x 4,"1390.2, 400, 8",#3C2823,WoodPlanks,1,normal
+AuctionRoom_2/AuctionRoom_BidderPad/42.4,AuctionRoom_BidderPad,Workspace.AuctionRoom_2,ground,4.5 x 0.4 x 4,"1396.8, 400, 8",#3C2823,WoodPlanks,1,normal
+AuctionRoom_2/AuctionRoom_BidderPad/42.5,AuctionRoom_BidderPad,Workspace.AuctionRoom_2,ground,4.5 x 0.4 x 4,"1403.2, 400, 8",#3C2823,WoodPlanks,1,normal
+AuctionRoom_2/AuctionRoom_BidderPad/42.6,AuctionRoom_BidderPad,Workspace.AuctionRoom_2,ground,4.5 x 0.4 x 4,"1409.8, 400, 8",#3C2823,WoodPlanks,1,normal
+AuctionRoom_2/AuctionRoom_BidderPad/42.7,AuctionRoom_BidderPad,Workspace.AuctionRoom_2,ground,4.5 x 0.4 x 4,"1416.2, 400, 8",#3C2823,WoodPlanks,1,normal
+AuctionRoom_2/AuctionRoom_BidderPad/42.8,AuctionRoom_BidderPad,Workspace.AuctionRoom_2,ground,4.5 x 0.4 x 4,"1422.8, 400, 8",#3C2823,WoodPlanks,1,normal
+PodiumRoom_2/PodiumRoom_Shell/45,PodiumRoom_Shell,Workspace.PodiumRoom_2,buildings,80 x 34 x 64,"1400, 250, 0",#3C325A,Marble,2,normal
+PodiumRoom_2/PodiumRoom_LightStrip/45.1,PodiumRoom_LightStrip,Workspace.PodiumRoom_2,decoration,0.8 x 30 x 0.6,"1370, 250, -19",#C8A03C,Neon,1,normal
+PodiumRoom_2/PodiumRoom_LightStrip/45.2,PodiumRoom_LightStrip,Workspace.PodiumRoom_2,decoration,0.8 x 30 x 0.6,"1385, 250, -19",#C8A03C,Neon,1,normal
+PodiumRoom_2/PodiumRoom_LightStrip/45.3,PodiumRoom_LightStrip,Workspace.PodiumRoom_2,decoration,0.8 x 30 x 0.6,"1415, 250, -19",#C8A03C,Neon,1,normal
+PodiumRoom_2/PodiumRoom_LightStrip/45.4,PodiumRoom_LightStrip,Workspace.PodiumRoom_2,decoration,0.8 x 30 x 0.6,"1430, 250, -19",#C8A03C,Neon,1,normal
+PodiumRoom_2/PodiumRoom_TitleSign/45,PodiumRoom_TitleSign,Workspace.PodiumRoom_2,signs,50 x 6 x 0.4,"1400, 271, -19.3",#1E1932,SmoothPlastic,1,normal
+PodiumRoom_2/PodiumRoom_Block/45,PodiumRoom_Block,Workspace.PodiumRoom_2,props,26 x 9 x 6.2,"1400, 250, -7.9",#F5BE28,SmoothPlastic,6,normal
+PodiumRoom_2/PodiumRoom_Board/45,PodiumRoom_Board,Workspace.PodiumRoom_2,signs,16 x 18 x 0.4,"1427, 251, -10",#2D2846,SmoothPlastic,1,normal
+City_3/City_Ground/50,City_Ground,Workspace.City_3.Plaza,ground,366 x 2 x 366,"2100, 0, 0",#5AA04B,Grass,1,normal
+City_3/City_Wall/50,City_Wall,Workspace.City_3.Plaza,decoration,368.6 x 6.8 x 368.6,"2100, 0, -0",#AFA596,Cobblestone,8,normal
+City_3/Plaza_Disc/50,Plaza_Disc,Workspace.City_3.Plaza,ground,90 x 0.4 x 90,"2100, 0, 0",#D7CDB9,Slate,1,normal
+City_3/Plaza_Path/50.1,Plaza_Path,Workspace.City_3.Plaza,ground,10 x 0.4 x 48,"2100, 0, 67",#D7CDB9,Slate,1,normal
+City_3/Plaza_Path/50.2,Plaza_Path,Workspace.City_3.Plaza,ground,10 x 0.4 x 48,"2147.4, 0, 47.4",#D7CDB9,Slate,1,normal
+City_3/Plaza_Path/50.3,Plaza_Path,Workspace.City_3.Plaza,ground,10 x 0.4 x 48,"2167, 0, -0",#D7CDB9,Slate,1,normal
+City_3/Plaza_Path/50.4,Plaza_Path,Workspace.City_3.Plaza,ground,10 x 0.4 x 48,"2147.4, 0, -47.4",#D7CDB9,Slate,1,normal
+City_3/Plaza_Path/50.5,Plaza_Path,Workspace.City_3.Plaza,ground,10 x 0.4 x 48,"2100, 0, -67",#D7CDB9,Slate,1,normal
+City_3/Plaza_Path/50.6,Plaza_Path,Workspace.City_3.Plaza,ground,10 x 0.4 x 48,"2052.6, 0, -47.4",#D7CDB9,Slate,1,normal
+City_3/Plaza_Path/50.7,Plaza_Path,Workspace.City_3.Plaza,ground,10 x 0.4 x 48,"2033, 0, 0",#D7CDB9,Slate,1,normal
+City_3/Plaza_Path/50.8,Plaza_Path,Workspace.City_3.Plaza,ground,10 x 0.4 x 48,"2052.6, 0, 47.4",#D7CDB9,Slate,1,normal
+City_3/Tree#51,Tree,Workspace.City_3.Plaza,nature,6 x 14.5 x 6,"2144, 0, 106.2",#46AA46,Grass,2,normal
+City_3/Tree#52,Tree,Workspace.City_3.Plaza,nature,6 x 14.5 x 6,"2206.2, 0, 44",#46AA46,Grass,2,normal
+City_3/Tree#53,Tree,Workspace.City_3.Plaza,nature,6 x 14.5 x 6,"2206.2, 0, -44",#46AA46,Grass,2,normal
+City_3/Tree#54,Tree,Workspace.City_3.Plaza,nature,6 x 14.5 x 6,"2144, 0, -106.2",#46AA46,Grass,2,normal
+City_3/Tree#55,Tree,Workspace.City_3.Plaza,nature,6 x 14.5 x 6,"2056, 0, -106.2",#46AA46,Grass,2,normal
+City_3/Tree#56,Tree,Workspace.City_3.Plaza,nature,6 x 14.5 x 6,"1993.8, 0, -44",#46AA46,Grass,2,normal
+City_3/Tree#57,Tree,Workspace.City_3.Plaza,nature,6 x 14.5 x 6,"1993.8, 0, 44",#46AA46,Grass,2,normal
+City_3/Tree#58,Tree,Workspace.City_3.Plaza,nature,6 x 14.5 x 6,"2056, 0, 106.2",#46AA46,Grass,2,normal
+City_3/Plaza_Fountain/50,Plaza_Fountain,Workspace.City_3.Plaza,decoration,22 x 9 x 22,"2100, 0, 0",#BEB4A5,Slate,4,normal
+AuctionRoom_3/AuctionRoom_Shell/59,AuctionRoom_Shell,Workspace.AuctionRoom_3,buildings,65 x 26 x 51,"2100, 400, 0",#5A3C28,WoodPlanks,6,normal
+AuctionRoom_3/AuctionRoom_Lamp/59.1,AuctionRoom_Lamp,Workspace.AuctionRoom_3,decoration,6 x 0.5 x 6,"2082, 423, 0",#FFF0C8,Neon,1,normal
+AuctionRoom_3/AuctionRoom_Lamp/59.2,AuctionRoom_Lamp,Workspace.AuctionRoom_3,decoration,6 x 0.5 x 6,"2100, 423, 0",#FFF0C8,Neon,1,normal
+AuctionRoom_3/AuctionRoom_Lamp/59.3,AuctionRoom_Lamp,Workspace.AuctionRoom_3,decoration,6 x 0.5 x 6,"2118, 423, 0",#FFF0C8,Neon,1,normal
+AuctionRoom_3/AuctionRoom_Stage/59,AuctionRoom_Stage,Workspace.AuctionRoom_3,props,30.6 x 3 x 12.6,"2100, 400, -12.2",#A02832,SmoothPlastic,2,normal
+AuctionRoom_3/AuctionRoom_TitleSign/59,AuctionRoom_TitleSign,Workspace.AuctionRoom_3,signs,30 x 4 x 0.4,"2100, 418, -24.3",#281419,SmoothPlastic,1,normal
+AuctionRoom_3/AuctionRoom_InfoBoard/59,AuctionRoom_InfoBoard,Workspace.AuctionRoom_3,signs,44 x 8 x 0.4,"2100, 408, -24.3",#1E1E2D,SmoothPlastic,1,normal
+AuctionRoom_3/AuctionRoom_BidderDesk/59.1,AuctionRoom_BidderDesk,Workspace.AuctionRoom_3,props,4 x 3 x 1.5,"2077.2, 400, 5.5",#3C2823,WoodPlanks,1,normal
+AuctionRoom_3/AuctionRoom_BidderDesk/59.2,AuctionRoom_BidderDesk,Workspace.AuctionRoom_3,props,4 x 3 x 1.5,"2083.8, 400, 5.5",#3C2823,WoodPlanks,1,normal
+AuctionRoom_3/AuctionRoom_BidderDesk/59.3,AuctionRoom_BidderDesk,Workspace.AuctionRoom_3,props,4 x 3 x 1.5,"2090.2, 400, 5.5",#3C2823,WoodPlanks,1,normal
+AuctionRoom_3/AuctionRoom_BidderDesk/59.4,AuctionRoom_BidderDesk,Workspace.AuctionRoom_3,props,4 x 3 x 1.5,"2096.8, 400, 5.5",#3C2823,WoodPlanks,1,normal
+AuctionRoom_3/AuctionRoom_BidderDesk/59.5,AuctionRoom_BidderDesk,Workspace.AuctionRoom_3,props,4 x 3 x 1.5,"2103.2, 400, 5.5",#3C2823,WoodPlanks,1,normal
+AuctionRoom_3/AuctionRoom_BidderDesk/59.6,AuctionRoom_BidderDesk,Workspace.AuctionRoom_3,props,4 x 3 x 1.5,"2109.8, 400, 5.5",#3C2823,WoodPlanks,1,normal
+AuctionRoom_3/AuctionRoom_BidderDesk/59.7,AuctionRoom_BidderDesk,Workspace.AuctionRoom_3,props,4 x 3 x 1.5,"2116.2, 400, 5.5",#3C2823,WoodPlanks,1,normal
+AuctionRoom_3/AuctionRoom_BidderDesk/59.8,AuctionRoom_BidderDesk,Workspace.AuctionRoom_3,props,4 x 3 x 1.5,"2122.8, 400, 5.5",#3C2823,WoodPlanks,1,normal
+AuctionRoom_3/AuctionRoom_BidderPad/59.1,AuctionRoom_BidderPad,Workspace.AuctionRoom_3,ground,4.5 x 0.4 x 4,"2077.2, 400, 8",#3C2823,WoodPlanks,1,normal
+AuctionRoom_3/AuctionRoom_BidderPad/59.2,AuctionRoom_BidderPad,Workspace.AuctionRoom_3,ground,4.5 x 0.4 x 4,"2083.8, 400, 8",#3C2823,WoodPlanks,1,normal
+AuctionRoom_3/AuctionRoom_BidderPad/59.3,AuctionRoom_BidderPad,Workspace.AuctionRoom_3,ground,4.5 x 0.4 x 4,"2090.2, 400, 8",#3C2823,WoodPlanks,1,normal
+AuctionRoom_3/AuctionRoom_BidderPad/59.4,AuctionRoom_BidderPad,Workspace.AuctionRoom_3,ground,4.5 x 0.4 x 4,"2096.8, 400, 8",#3C2823,WoodPlanks,1,normal
+AuctionRoom_3/AuctionRoom_BidderPad/59.5,AuctionRoom_BidderPad,Workspace.AuctionRoom_3,ground,4.5 x 0.4 x 4,"2103.2, 400, 8",#3C2823,WoodPlanks,1,normal
+AuctionRoom_3/AuctionRoom_BidderPad/59.6,AuctionRoom_BidderPad,Workspace.AuctionRoom_3,ground,4.5 x 0.4 x 4,"2109.8, 400, 8",#3C2823,WoodPlanks,1,normal
+AuctionRoom_3/AuctionRoom_BidderPad/59.7,AuctionRoom_BidderPad,Workspace.AuctionRoom_3,ground,4.5 x 0.4 x 4,"2116.2, 400, 8",#3C2823,WoodPlanks,1,normal
+AuctionRoom_3/AuctionRoom_BidderPad/59.8,AuctionRoom_BidderPad,Workspace.AuctionRoom_3,ground,4.5 x 0.4 x 4,"2122.8, 400, 8",#3C2823,WoodPlanks,1,normal
+PodiumRoom_3/PodiumRoom_Shell/62,PodiumRoom_Shell,Workspace.PodiumRoom_3,buildings,80 x 34 x 64,"2100, 250, 0",#3C325A,Marble,2,normal
+PodiumRoom_3/PodiumRoom_LightStrip/62.1,PodiumRoom_LightStrip,Workspace.PodiumRoom_3,decoration,0.8 x 30 x 0.6,"2070, 250, -19",#C8A03C,Neon,1,normal
+PodiumRoom_3/PodiumRoom_LightStrip/62.2,PodiumRoom_LightStrip,Workspace.PodiumRoom_3,decoration,0.8 x 30 x 0.6,"2085, 250, -19",#C8A03C,Neon,1,normal
+PodiumRoom_3/PodiumRoom_LightStrip/62.3,PodiumRoom_LightStrip,Workspace.PodiumRoom_3,decoration,0.8 x 30 x 0.6,"2115, 250, -19",#C8A03C,Neon,1,normal
+PodiumRoom_3/PodiumRoom_LightStrip/62.4,PodiumRoom_LightStrip,Workspace.PodiumRoom_3,decoration,0.8 x 30 x 0.6,"2130, 250, -19",#C8A03C,Neon,1,normal
+PodiumRoom_3/PodiumRoom_TitleSign/62,PodiumRoom_TitleSign,Workspace.PodiumRoom_3,signs,50 x 6 x 0.4,"2100, 271, -19.3",#1E1932,SmoothPlastic,1,normal
+PodiumRoom_3/PodiumRoom_Block/62,PodiumRoom_Block,Workspace.PodiumRoom_3,props,26 x 9 x 6.2,"2100, 250, -7.9",#F5BE28,SmoothPlastic,6,normal
+PodiumRoom_3/PodiumRoom_Board/62,PodiumRoom_Board,Workspace.PodiumRoom_3,signs,16 x 18 x 0.4,"2127, 251, -10",#2D2846,SmoothPlastic,1,normal
+City_4/City_Ground/67,City_Ground,Workspace.City_4.Plaza,ground,366 x 2 x 366,"2800, 0, 0",#5AA04B,Grass,1,normal
+City_4/City_Wall/67,City_Wall,Workspace.City_4.Plaza,decoration,368.6 x 6.8 x 368.6,"2800, 0, -0",#AFA596,Cobblestone,8,normal
+City_4/Plaza_Disc/67,Plaza_Disc,Workspace.City_4.Plaza,ground,90 x 0.4 x 90,"2800, 0, 0",#D7CDB9,Slate,1,normal
+City_4/Plaza_Path/67.1,Plaza_Path,Workspace.City_4.Plaza,ground,10 x 0.4 x 48,"2800, 0, 67",#D7CDB9,Slate,1,normal
+City_4/Plaza_Path/67.2,Plaza_Path,Workspace.City_4.Plaza,ground,10 x 0.4 x 48,"2847.4, 0, 47.4",#D7CDB9,Slate,1,normal
+City_4/Plaza_Path/67.3,Plaza_Path,Workspace.City_4.Plaza,ground,10 x 0.4 x 48,"2867, 0, 0",#D7CDB9,Slate,1,normal
+City_4/Plaza_Path/67.4,Plaza_Path,Workspace.City_4.Plaza,ground,10 x 0.4 x 48,"2847.4, 0, -47.4",#D7CDB9,Slate,1,normal
+City_4/Plaza_Path/67.5,Plaza_Path,Workspace.City_4.Plaza,ground,10 x 0.4 x 48,"2800, 0, -67",#D7CDB9,Slate,1,normal
+City_4/Plaza_Path/67.6,Plaza_Path,Workspace.City_4.Plaza,ground,10 x 0.4 x 48,"2752.6, 0, -47.4",#D7CDB9,Slate,1,normal
+City_4/Plaza_Path/67.7,Plaza_Path,Workspace.City_4.Plaza,ground,10 x 0.4 x 48,"2733, 0, 0",#D7CDB9,Slate,1,normal
+City_4/Plaza_Path/67.8,Plaza_Path,Workspace.City_4.Plaza,ground,10 x 0.4 x 48,"2752.6, 0, 47.4",#D7CDB9,Slate,1,normal
+City_4/Tree#68,Tree,Workspace.City_4.Plaza,nature,6 x 14.5 x 6,"2844, 0, 106.2",#46AA46,Grass,2,normal
+City_4/Tree#69,Tree,Workspace.City_4.Plaza,nature,6 x 14.5 x 6,"2906.2, 0, 44",#46AA46,Grass,2,normal
+City_4/Tree#70,Tree,Workspace.City_4.Plaza,nature,6 x 14.5 x 6,"2906.2, 0, -44",#46AA46,Grass,2,normal
+City_4/Tree#71,Tree,Workspace.City_4.Plaza,nature,6 x 14.5 x 6,"2844, 0, -106.2",#46AA46,Grass,2,normal
+City_4/Tree#72,Tree,Workspace.City_4.Plaza,nature,6 x 14.5 x 6,"2756, 0, -106.2",#46AA46,Grass,2,normal
+City_4/Tree#73,Tree,Workspace.City_4.Plaza,nature,6 x 14.5 x 6,"2693.8, 0, -44",#46AA46,Grass,2,normal
+City_4/Tree#74,Tree,Workspace.City_4.Plaza,nature,6 x 14.5 x 6,"2693.8, 0, 44",#46AA46,Grass,2,normal
+City_4/Tree#75,Tree,Workspace.City_4.Plaza,nature,6 x 14.5 x 6,"2756, 0, 106.2",#46AA46,Grass,2,normal
+City_4/Plaza_Fountain/67,Plaza_Fountain,Workspace.City_4.Plaza,decoration,22 x 9 x 22,"2800, 0, 0",#BEB4A5,Slate,4,normal
+AuctionRoom_4/AuctionRoom_Shell/76,AuctionRoom_Shell,Workspace.AuctionRoom_4,buildings,65 x 26 x 51,"2800, 400, 0",#5A3C28,WoodPlanks,6,normal
+AuctionRoom_4/AuctionRoom_Lamp/76.1,AuctionRoom_Lamp,Workspace.AuctionRoom_4,decoration,6 x 0.5 x 6,"2782, 423, 0",#FFF0C8,Neon,1,normal
+AuctionRoom_4/AuctionRoom_Lamp/76.2,AuctionRoom_Lamp,Workspace.AuctionRoom_4,decoration,6 x 0.5 x 6,"2800, 423, 0",#FFF0C8,Neon,1,normal
+AuctionRoom_4/AuctionRoom_Lamp/76.3,AuctionRoom_Lamp,Workspace.AuctionRoom_4,decoration,6 x 0.5 x 6,"2818, 423, 0",#FFF0C8,Neon,1,normal
+AuctionRoom_4/AuctionRoom_Stage/76,AuctionRoom_Stage,Workspace.AuctionRoom_4,props,30.6 x 3 x 12.6,"2800, 400, -12.2",#A02832,SmoothPlastic,2,normal
+AuctionRoom_4/AuctionRoom_TitleSign/76,AuctionRoom_TitleSign,Workspace.AuctionRoom_4,signs,30 x 4 x 0.4,"2800, 418, -24.3",#281419,SmoothPlastic,1,normal
+AuctionRoom_4/AuctionRoom_InfoBoard/76,AuctionRoom_InfoBoard,Workspace.AuctionRoom_4,signs,44 x 8 x 0.4,"2800, 408, -24.3",#1E1E2D,SmoothPlastic,1,normal
+AuctionRoom_4/AuctionRoom_BidderDesk/76.1,AuctionRoom_BidderDesk,Workspace.AuctionRoom_4,props,4 x 3 x 1.5,"2777.2, 400, 5.5",#3C2823,WoodPlanks,1,normal
+AuctionRoom_4/AuctionRoom_BidderDesk/76.2,AuctionRoom_BidderDesk,Workspace.AuctionRoom_4,props,4 x 3 x 1.5,"2783.8, 400, 5.5",#3C2823,WoodPlanks,1,normal
+AuctionRoom_4/AuctionRoom_BidderDesk/76.3,AuctionRoom_BidderDesk,Workspace.AuctionRoom_4,props,4 x 3 x 1.5,"2790.2, 400, 5.5",#3C2823,WoodPlanks,1,normal
+AuctionRoom_4/AuctionRoom_BidderDesk/76.4,AuctionRoom_BidderDesk,Workspace.AuctionRoom_4,props,4 x 3 x 1.5,"2796.8, 400, 5.5",#3C2823,WoodPlanks,1,normal
+AuctionRoom_4/AuctionRoom_BidderDesk/76.5,AuctionRoom_BidderDesk,Workspace.AuctionRoom_4,props,4 x 3 x 1.5,"2803.2, 400, 5.5",#3C2823,WoodPlanks,1,normal
+AuctionRoom_4/AuctionRoom_BidderDesk/76.6,AuctionRoom_BidderDesk,Workspace.AuctionRoom_4,props,4 x 3 x 1.5,"2809.8, 400, 5.5",#3C2823,WoodPlanks,1,normal
+AuctionRoom_4/AuctionRoom_BidderDesk/76.7,AuctionRoom_BidderDesk,Workspace.AuctionRoom_4,props,4 x 3 x 1.5,"2816.2, 400, 5.5",#3C2823,WoodPlanks,1,normal
+AuctionRoom_4/AuctionRoom_BidderDesk/76.8,AuctionRoom_BidderDesk,Workspace.AuctionRoom_4,props,4 x 3 x 1.5,"2822.8, 400, 5.5",#3C2823,WoodPlanks,1,normal
+AuctionRoom_4/AuctionRoom_BidderPad/76.1,AuctionRoom_BidderPad,Workspace.AuctionRoom_4,ground,4.5 x 0.4 x 4,"2777.2, 400, 8",#3C2823,WoodPlanks,1,normal
+AuctionRoom_4/AuctionRoom_BidderPad/76.2,AuctionRoom_BidderPad,Workspace.AuctionRoom_4,ground,4.5 x 0.4 x 4,"2783.8, 400, 8",#3C2823,WoodPlanks,1,normal
+AuctionRoom_4/AuctionRoom_BidderPad/76.3,AuctionRoom_BidderPad,Workspace.AuctionRoom_4,ground,4.5 x 0.4 x 4,"2790.2, 400, 8",#3C2823,WoodPlanks,1,normal
+AuctionRoom_4/AuctionRoom_BidderPad/76.4,AuctionRoom_BidderPad,Workspace.AuctionRoom_4,ground,4.5 x 0.4 x 4,"2796.8, 400, 8",#3C2823,WoodPlanks,1,normal
+AuctionRoom_4/AuctionRoom_BidderPad/76.5,AuctionRoom_BidderPad,Workspace.AuctionRoom_4,ground,4.5 x 0.4 x 4,"2803.2, 400, 8",#3C2823,WoodPlanks,1,normal
+AuctionRoom_4/AuctionRoom_BidderPad/76.6,AuctionRoom_BidderPad,Workspace.AuctionRoom_4,ground,4.5 x 0.4 x 4,"2809.8, 400, 8",#3C2823,WoodPlanks,1,normal
+AuctionRoom_4/AuctionRoom_BidderPad/76.7,AuctionRoom_BidderPad,Workspace.AuctionRoom_4,ground,4.5 x 0.4 x 4,"2816.2, 400, 8",#3C2823,WoodPlanks,1,normal
+AuctionRoom_4/AuctionRoom_BidderPad/76.8,AuctionRoom_BidderPad,Workspace.AuctionRoom_4,ground,4.5 x 0.4 x 4,"2822.8, 400, 8",#3C2823,WoodPlanks,1,normal
+PodiumRoom_4/PodiumRoom_Shell/79,PodiumRoom_Shell,Workspace.PodiumRoom_4,buildings,80 x 34 x 64,"2800, 250, 0",#3C325A,Marble,2,normal
+PodiumRoom_4/PodiumRoom_LightStrip/79.1,PodiumRoom_LightStrip,Workspace.PodiumRoom_4,decoration,0.8 x 30 x 0.6,"2770, 250, -19",#C8A03C,Neon,1,normal
+PodiumRoom_4/PodiumRoom_LightStrip/79.2,PodiumRoom_LightStrip,Workspace.PodiumRoom_4,decoration,0.8 x 30 x 0.6,"2785, 250, -19",#C8A03C,Neon,1,normal
+PodiumRoom_4/PodiumRoom_LightStrip/79.3,PodiumRoom_LightStrip,Workspace.PodiumRoom_4,decoration,0.8 x 30 x 0.6,"2815, 250, -19",#C8A03C,Neon,1,normal
+PodiumRoom_4/PodiumRoom_LightStrip/79.4,PodiumRoom_LightStrip,Workspace.PodiumRoom_4,decoration,0.8 x 30 x 0.6,"2830, 250, -19",#C8A03C,Neon,1,normal
+PodiumRoom_4/PodiumRoom_TitleSign/79,PodiumRoom_TitleSign,Workspace.PodiumRoom_4,signs,50 x 6 x 0.4,"2800, 271, -19.3",#1E1932,SmoothPlastic,1,normal
+PodiumRoom_4/PodiumRoom_Block/79,PodiumRoom_Block,Workspace.PodiumRoom_4,props,26 x 9 x 6.2,"2800, 250, -7.9",#F5BE28,SmoothPlastic,6,normal
+PodiumRoom_4/PodiumRoom_Board/79,PodiumRoom_Board,Workspace.PodiumRoom_4,signs,16 x 18 x 0.4,"2827, 251, -10",#2D2846,SmoothPlastic,1,normal
+Catalog.FastTrack/Workplace_Yard/346,Workplace_Yard,Workspace.Catalog.FastTrack.Plot_Player1.Workplace,ground,48 x 1.1 x 30,"-1400, 1, 115",#F5F2EB,Marble,2,normal
+Catalog.FastTrack/Workplace_Building/346,Workplace_Building_FASTTRACK,Workspace.Catalog.FastTrack.Plot_Player1.Workplace,buildings,49.6 x 19.4 x 22.3,"-1400, 1, 115",#EEE8DC,SmoothPlastic,39,normal
+Catalog.FastTrack/Lux_Sofa/348.1,Lux_Sofa,Workspace.Catalog.FastTrack.Plot_Player1.Workplace,props,7 x 3.4 x 3.1,"-1409, 1, 131.1",#F5F5F5,SmoothPlastic,2,normal
+Catalog.FastTrack/Lux_Sofa/348.2,Lux_Sofa,Workspace.Catalog.FastTrack.Plot_Player1.Workplace,props,7 x 3.4 x 3.1,"-1391, 1, 131.1",#F5F5F5,SmoothPlastic,2,normal
+Catalog.FastTrack/Lux_GlassTable/348,Lux_GlassTable,Workspace.Catalog.FastTrack.Plot_Player1.Workplace,props,5 x 1.2 x 3,"-1400, 1, 130",#96D2FF,Glass,1,normal
+Catalog.FastTrack/Lux_Safe/348,Lux_Safe,Workspace.Catalog.FastTrack.Plot_Player1.Workplace,props,4 x 5 x 4.2,"-1417, 1, 134.9",#D7AA32,Metal,3,normal
+Catalog.FastTrack/Lux_Piano/348,Lux_Piano,Workspace.Catalog.FastTrack.Plot_Player1.Workplace,props,6 x 3.2 x 4.1,"-1384, 1, 133.9",#141419,SmoothPlastic,2,normal
+Catalog.FastTrack/Lux_Chandelier/348,Lux_Chandelier,Workspace.Catalog.FastTrack.Plot_Player1.Workplace,decoration,2.2 x 3.6 x 2.2,"-1400, 11.4, 130",#FFF0C8,Neon,2,normal
+Catalog.FastTrack/Workplace_MakerLot/346.1,Workplace_MakerLot,Workspace.Catalog.FastTrack.Plot_Player1.Workplace,ground,11 x 1 x 9.5,"-1430, 0, 99",#E1D2A0,Concrete,1,normal
+Catalog.FastTrack/Workplace_MakerLot/346.2,Workplace_MakerLot,Workspace.Catalog.FastTrack.Plot_Player1.Workplace,ground,11 x 1 x 9.5,"-1370, 0, 99",#E1D2A0,Concrete,1,normal
+Catalog.FastTrack/Workplace_MakerLot/346.3,Workplace_MakerLot,Workspace.Catalog.FastTrack.Plot_Player1.Workplace,ground,11 x 1 x 9.5,"-1430, 0, 110",#E1D2A0,Concrete,1,normal
+Catalog.FastTrack/Workplace_MakerLot/346.4,Workplace_MakerLot,Workspace.Catalog.FastTrack.Plot_Player1.Workplace,ground,11 x 1 x 9.5,"-1370, 0, 110",#E1D2A0,Concrete,1,normal
+Catalog.FastTrack/Workplace_MakerLot/346.5,Workplace_MakerLot,Workspace.Catalog.FastTrack.Plot_Player1.Workplace,ground,11 x 1 x 9.5,"-1430, 0, 121",#E1D2A0,Concrete,1,normal
+Catalog.FastTrack/Workplace_MakerLot/346.6,Workplace_MakerLot,Workspace.Catalog.FastTrack.Plot_Player1.Workplace,ground,11 x 1 x 9.5,"-1370, 0, 121",#E1D2A0,Concrete,1,normal
+Catalog.FastTrack/Workplace_MakerLot/346.7,Workplace_MakerLot,Workspace.Catalog.FastTrack.Plot_Player1.Workplace,ground,11 x 1 x 9.5,"-1430, 0, 132",#E1D2A0,Concrete,1,normal
+Catalog.FastTrack/Workplace_MakerLot/346.8,Workplace_MakerLot,Workspace.Catalog.FastTrack.Plot_Player1.Workplace,ground,11 x 1 x 9.5,"-1370, 0, 132",#E1D2A0,Concrete,1,normal
+Catalog.FastTrack/Workplace_Fence/346.1,Workplace_Fence,Workspace.Catalog.FastTrack.Plot_Player1.Workplace,decoration,18 x 2.6 x 0.5,"-1415, 1, 91.5",#F5F5F5,SmoothPlastic,8,normal
+Catalog.FastTrack/Workplace_Fence/346.2,Workplace_Fence,Workspace.Catalog.FastTrack.Plot_Player1.Workplace,decoration,18 x 2.6 x 0.5,"-1385, 1, 91.5",#F5F5F5,SmoothPlastic,8,normal
+Catalog.FastTrack/Workplace_LampPost/346.1,Workplace_LampPost,Workspace.Catalog.FastTrack.Plot_Player1.Workplace,decoration,1.3 x 8 x 1.3,"-1405, 1, 91.5",#FFEB96,Neon,2,normal
+Catalog.FastTrack/Workplace_LampPost/346.2,Workplace_LampPost,Workspace.Catalog.FastTrack.Plot_Player1.Workplace,decoration,1.3 x 8 x 1.3,"-1395, 1, 91.5",#FFEB96,Neon,2,normal
+Catalog.FastTrack/Workplace_FlowerBox/346.1,Workplace_FlowerBox,Workspace.Catalog.FastTrack.Plot_Player1.Workplace,decoration,5 x 2.2 x 1.6,"-1419, 1, 119.5",#96693C,SmoothPlastic,4,normal
+Catalog.FastTrack/Workplace_FlowerBox/346.2,Workplace_FlowerBox,Workspace.Catalog.FastTrack.Plot_Player1.Workplace,decoration,5 x 2.2 x 1.6,"-1381, 1, 119.5",#96693C,SmoothPlastic,4,normal
+Catalog.FastTrack/Workplace_Sandbox/346,Workplace_Sandbox,Workspace.Catalog.FastTrack.Plot_Player1.Workplace,props,12.6 x 0.6 x 10.4,"-1383, 1, 97",#EBD7A0,Sand,5,normal
+Catalog.FastTrack/FastTrack_Gate/346,FastTrack_Gate,Workspace.Catalog.FastTrack.Plot_Player1.Workplace,decoration,16 x 14 x 1.5,"-1400, 1, 92",#F5BE28,SmoothPlastic,3,normal
+Catalog.FastTrack/Maker_CarWash#340,Maker_CarWash,Workspace.Catalog.FastTrack.Plot_Player1.ForSale.Car Wash,buildings,9 x 7 x 7.2,"-1430, 1, 99",#3C8CE6,ForceField,5,ghost
+Catalog.FastTrack/Dream_Pedestal/343,Dream_Pedestal,Workspace.Catalog.FastTrack.Plot_Player1.Dream,props,15.4 x 1.8 x 15.4,"-1400, 1, 106",#F0EBE1,Marble,2,normal
+Catalog.FastTrack/Dream_Supercar#344,Dream_Supercar,Workspace.Catalog.FastTrack.Plot_Player1.Dream.Supercar,vehicles,6 x 3.7 x 13,"-1400, 2.8, 106",#E62332,SmoothPlastic,42,dream
+Catalog.FastTrack/Dream_Chains/343,Dream_Chains,Workspace.Catalog.FastTrack.Plot_Player1.Dream,props,7.1 x 5.2 x 15.2,"-1400, 2.4, 105.1",#F5BE28,Metal,17,normal
+Catalog.FastTrack/Workplace_Yard/375,Workplace_Yard,Workspace.Catalog.FastTrack.Plot_Player2.Workplace,ground,48 x 1.1 x 30,"-1318.7, 1, 81.3",#F5F2EB,Marble,2,normal
+Catalog.FastTrack/Workplace_Building/375,Workplace_Building_FASTTRACK,Workspace.Catalog.FastTrack.Plot_Player2.Workplace,buildings,49.6 x 19.4 x 22.3,"-1318.7, 1, 81.3",#EEE8DC,SmoothPlastic,39,normal
+Catalog.FastTrack/Lux_Sofa/377.1,Lux_Sofa,Workspace.Catalog.FastTrack.Plot_Player2.Workplace,props,7 x 3.4 x 3.1,"-1313.7, 1, 99",#F5F5F5,SmoothPlastic,2,normal
+Catalog.FastTrack/Lux_Sofa/377.2,Lux_Sofa,Workspace.Catalog.FastTrack.Plot_Player2.Workplace,props,7 x 3.4 x 3.1,"-1301, 1, 86.3",#F5F5F5,SmoothPlastic,2,normal
+Catalog.FastTrack/Lux_GlassTable/377,Lux_GlassTable,Workspace.Catalog.FastTrack.Plot_Player2.Workplace,props,5 x 1.2 x 3,"-1308.1, 1, 91.9",#96D2FF,Glass,1,normal
+Catalog.FastTrack/Lux_Safe/377,Lux_Safe,Workspace.Catalog.FastTrack.Plot_Player2.Workplace,props,4 x 5 x 4.2,"-1316.6, 1, 107.4",#D7AA32,Metal,3,normal
+Catalog.FastTrack/Lux_Piano/377,Lux_Piano,Workspace.Catalog.FastTrack.Plot_Player2.Workplace,props,6 x 3.2 x 4.1,"-1294, 1, 83.4",#141419,SmoothPlastic,2,normal
+Catalog.FastTrack/Lux_Chandelier/377,Lux_Chandelier,Workspace.Catalog.FastTrack.Plot_Player2.Workplace,decoration,2.2 x 3.6 x 2.2,"-1308.1, 11.4, 91.9",#FFF0C8,Neon,2,normal
+Catalog.FastTrack/Workplace_MakerLot/375.1,Workplace_MakerLot,Workspace.Catalog.FastTrack.Plot_Player2.Workplace,ground,11 x 1 x 9.5,"-1351.2, 0, 91.2",#E1D2A0,Concrete,1,normal
+Catalog.FastTrack/Workplace_MakerLot/375.2,Workplace_MakerLot,Workspace.Catalog.FastTrack.Plot_Player2.Workplace,ground,11 x 1 x 9.5,"-1308.8, 0, 48.8",#E1D2A0,Concrete,1,normal
+Catalog.FastTrack/Workplace_MakerLot/375.3,Workplace_MakerLot,Workspace.Catalog.FastTrack.Plot_Player2.Workplace,ground,11 x 1 x 9.5,"-1343.4, 0, 99",#E1D2A0,Concrete,1,normal
+Catalog.FastTrack/Workplace_MakerLot/375.4,Workplace_MakerLot,Workspace.Catalog.FastTrack.Plot_Player2.Workplace,ground,11 x 1 x 9.5,"-1301, 0, 56.6",#E1D2A0,Concrete,1,normal
+Catalog.FastTrack/Workplace_MakerLot/375.5,Workplace_MakerLot,Workspace.Catalog.FastTrack.Plot_Player2.Workplace,ground,11 x 1 x 9.5,"-1335.7, 0, 106.8",#E1D2A0,Concrete,1,normal
+Catalog.FastTrack/Workplace_MakerLot/375.6,Workplace_MakerLot,Workspace.Catalog.FastTrack.Plot_Player2.Workplace,ground,11 x 1 x 9.5,"-1293.2, 0, 64.3",#E1D2A0,Concrete,1,normal
+Catalog.FastTrack/Workplace_MakerLot/375.7,Workplace_MakerLot,Workspace.Catalog.FastTrack.Plot_Player2.Workplace,ground,11 x 1 x 9.5,"-1327.9, 0, 114.6",#E1D2A0,Concrete,1,normal
+Catalog.FastTrack/Workplace_MakerLot/375.8,Workplace_MakerLot,Workspace.Catalog.FastTrack.Plot_Player2.Workplace,ground,11 x 1 x 9.5,"-1285.4, 0, 72.1",#E1D2A0,Concrete,1,normal
+Catalog.FastTrack/Workplace_Fence/375.1,Workplace_Fence,Workspace.Catalog.FastTrack.Plot_Player2.Workplace,decoration,18 x 2.6 x 0.5,"-1345.9, 1, 75.3",#F5F5F5,SmoothPlastic,8,normal
+Catalog.FastTrack/Workplace_Fence/375.2,Workplace_Fence,Workspace.Catalog.FastTrack.Plot_Player2.Workplace,decoration,18 x 2.6 x 0.5,"-1324.7, 1, 54.1",#F5F5F5,SmoothPlastic,8,normal
+Catalog.FastTrack/Workplace_LampPost/375.1,Workplace_LampPost,Workspace.Catalog.FastTrack.Plot_Player2.Workplace,decoration,1.3 x 8 x 1.3,"-1338.8, 1, 68.2",#FFEB96,Neon,2,normal
+Catalog.FastTrack/Workplace_LampPost/375.2,Workplace_LampPost,Workspace.Catalog.FastTrack.Plot_Player2.Workplace,decoration,1.3 x 8 x 1.3,"-1331.8, 1, 61.2",#FFEB96,Neon,2,normal
+Catalog.FastTrack/Workplace_FlowerBox/375.1,Workplace_FlowerBox,Workspace.Catalog.FastTrack.Plot_Player2.Workplace,decoration,5 x 2.2 x 1.6,"-1328.9, 1, 97.9",#96693C,SmoothPlastic,4,normal
+Catalog.FastTrack/Workplace_FlowerBox/375.2,Workplace_FlowerBox,Workspace.Catalog.FastTrack.Plot_Player2.Workplace,decoration,5 x 2.2 x 1.6,"-1302.1, 1, 71.1",#96693C,SmoothPlastic,4,normal
+Catalog.FastTrack/Workplace_Sandbox/375,Workplace_Sandbox,Workspace.Catalog.FastTrack.Plot_Player2.Workplace,props,12.6 x 0.6 x 10.4,"-1319.4, 1, 56.6",#EBD7A0,Sand,5,normal
+Catalog.FastTrack/FastTrack_Gate/375,FastTrack_Gate,Workspace.Catalog.FastTrack.Plot_Player2.Workplace,decoration,16 x 14 x 1.5,"-1334.9, 1, 65.1",#F5BE28,SmoothPlastic,3,normal
+Catalog.FastTrack/Kid#363,Kid,Workspace.Catalog.FastTrack.Plot_Player2.Kids.Kid,props,1.3 x 3.4 x 1.2,"-1323.6, 1, 56.6",#F0C8A0,SmoothPlastic,3,normal
+Catalog.FastTrack/Kid#364,Kid_v2,Workspace.Catalog.FastTrack.Plot_Player2.Kids.Kid,props,1.3 x 3.4 x 1.2,"-1319.4, 1, 52.3",#F0C8A0,SmoothPlastic,3,normal
+Catalog.FastTrack/Maker_GoldCoin#369,Maker_GoldCoin,Workspace.Catalog.FastTrack.Plot_Player2.ForSale.Gold Coin,props,3.8 x 4.2 x 1.4,"-1351.2, 1, 91.2",#F5BE28,ForceField,4,ghost
+Catalog.FastTrack/Dream_Pedestal/372,Dream_Pedestal,Workspace.Catalog.FastTrack.Plot_Player2.Dream,props,15.4 x 1.8 x 15.4,"-1325, 1, 75",#F0EBE1,Marble,2,normal
+Catalog.FastTrack/Dream_Yacht#373,Dream_Yacht,Workspace.Catalog.FastTrack.Plot_Player2.Dream.Yacht,vehicles,3.4 x 4.5 x 13,"-1325, 2.8, 75",#F8F8FC,SmoothPlastic,85,dream
+Catalog.FastTrack/Collection_Showcase/355,Collection_Showcase,Workspace.Catalog.FastTrack.Plot_Player2.Collection,props,11.2 x 2.6 x 3.2,"-1310.9, 1, 67.9",#96693C,WoodPlanks,2,normal
+Catalog.FastTrack/Maker_GoldCoin#356,Maker_GoldCoin,Workspace.Catalog.FastTrack.Plot_Player2.Collection.Gold Coin,props,1.5 x 1.7 x 0.6,"-1313.7, 3.6, 70.6",#F5BE28,Metal,4,mini
+Catalog.FastTrack/Maker_PokeBloxCard#358,Maker_PokeBloxCard,Workspace.Catalog.FastTrack.Plot_Player2.Collection.PokeBlox Card,props,1.4 x 2.2 x 0.7,"-1311.8, 3.8, 68.8",#FFD23C,SmoothPlastic,12,mini
+Catalog.MoneyMakers/Maker_LemonadeStand#380,Maker_LemonadeStand,Workspace.Catalog.MoneyMakers.Lemonade Stand,props,6 x 6.3 x 6,"-1600, 0, 200",#FADC50,SmoothPlastic,5,normal
+Catalog.MoneyMakers/Maker_VendingMachine#382,Maker_VendingMachine,Workspace.Catalog.MoneyMakers.Vending Machine,props,3.5 x 6 x 2.6,"-1584, 0, 200",#D22828,SmoothPlastic,2,normal
+Catalog.MoneyMakers/Maker_Apartment#383,Maker_Apartment,Workspace.Catalog.MoneyMakers.Apartment,buildings,8 x 8 x 7.2,"-1568, 0, 200",#D2B48C,SmoothPlastic,7,normal
+Catalog.MoneyMakers/Maker_CarWash#384,Maker_CarWash,Workspace.Catalog.MoneyMakers.Car Wash,buildings,9 x 7 x 7.2,"-1552, 0, 200",#3C8CE6,SmoothPlastic,5,normal
+Catalog.MoneyMakers/Maker_PokeBloxCard#386,Maker_PokeBloxCard,Workspace.Catalog.MoneyMakers.PokeBlox Card,props,3.6 x 5.5 x 1.6,"-1536, 0, 200",#FFD23C,SmoothPlastic,12,normal
+Catalog.MoneyMakers/Maker_GoldCoin#389,Maker_GoldCoin,Workspace.Catalog.MoneyMakers.Gold Coin,props,3.8 x 4.2 x 1.4,"-1520, 0, 200",#F5BE28,Metal,4,normal
+Catalog.MoneyMakers/Maker_FoodTruck#391,Maker_FoodTruck,Workspace.Catalog.MoneyMakers.Food Truck,vehicles,8 x 4.9 x 5,"-1504, 0, 200",#FA8C28,SmoothPlastic,7,normal
+Catalog.MoneyMakers/Maker_ToyShop#393,Maker_ToyShop,Workspace.Catalog.MoneyMakers.Toy Shop,buildings,8 x 7 x 8.2,"-1488, 0, 200",#F082BE,SmoothPlastic,4,normal
+Catalog.MoneyMakers/Maker_MiniGolf#395,Maker_MiniGolf,Workspace.Catalog.MoneyMakers.Mini Golf,props,9 x 4.3 x 7,"-1472, 0, 200",#3CBE50,Grass,6,normal
+Catalog.MoneyMakers/Maker_HouseToRent#396,Maker_HouseToRent,Workspace.Catalog.MoneyMakers.House to Rent,buildings,8.4 x 8 x 7.4,"-1456, 0, 200",#96C8F0,SmoothPlastic,6,normal
+Catalog.MoneyMakers/Maker_PizzaRestaurant#397,Maker_PizzaRestaurant,Workspace.Catalog.MoneyMakers.Pizza Restaurant,buildings,9 x 7 x 8.2,"-1440, 0, 200",#DC3C32,SmoothPlastic,4,normal
+Catalog.MoneyMakers/Maker_RarePokeBloxCard#399,Maker_RarePokeBloxCard_v2,Workspace.Catalog.MoneyMakers.Rare PokeBlox Card,props,3.6 x 5.5 x 1.6,"-1424, 0, 200",#FFD23C,SmoothPlastic,12,normal
+Catalog.MoneyMakers/Maker_GoldBar#402,Maker_GoldBar,Workspace.Catalog.MoneyMakers.Gold Bar,props,4.6 x 2.4 x 2.6,"-1408, 0, 200",#F5BE28,Metal,6,normal
+Catalog.MoneyMakers/Maker_CoffeeShop#403,Maker_CoffeeShop,Workspace.Catalog.MoneyMakers.Coffee Shop,buildings,8 x 6 x 8.2,"-1392, 0, 200",#965F3C,SmoothPlastic,4,normal
+Catalog.MoneyMakers/Maker_BowlingAlley#405,Maker_BowlingAlley,Workspace.Catalog.MoneyMakers.Bowling Alley,buildings,10 x 8 x 8.7,"-1376, 0, 200",#3C50A0,SmoothPlastic,5,normal
+Catalog.MoneyMakers/Maker_Hotel#407,Maker_Hotel,Workspace.Catalog.MoneyMakers.Hotel,buildings,8 x 16 x 7.3,"-1360, 0, 200",#F0E6D2,SmoothPlastic,17,normal
+Catalog.MoneyMakers/Maker_GameStudio#409,Maker_GameStudio,Workspace.Catalog.MoneyMakers.Game Studio,buildings,9 x 7 x 8.2,"-1344, 0, 200",#7846C8,SmoothPlastic,4,normal
+Catalog.MoneyMakers/Maker_ShinyPokeBloxCard#411,Maker_ShinyPokeBloxCard,Workspace.Catalog.MoneyMakers.Shiny PokeBlox Card,props,3.6 x 5.5 x 1.6,"-1328, 0, 200",#FFD23C,SmoothPlastic,12,normal
+Catalog.MoneyMakers/Maker_ShoppingMall#414,Maker_ShoppingMall,Workspace.Catalog.MoneyMakers.Shopping Mall,buildings,10 x 8 x 8.7,"-1312, 0, 200",#C8C8D2,SmoothPlastic,4,normal
+Catalog.MoneyMakers/Maker_ApartmentBuilding#416,Maker_ApartmentBuilding,Workspace.Catalog.MoneyMakers.Apartment Building,buildings,9 x 12 x 7.3,"-1296, 0, 200",#BE9678,SmoothPlastic,14,normal
+Catalog.MoneyMakers/Maker_ThemePark#418,Maker_ThemePark,Workspace.Catalog.MoneyMakers.Theme Park,props,10 x 13 x 7,"-1280, 0, 200",#FF5AAA,Neon,4,normal
+Catalog.MoneyMakers/Maker_GoldTreasureChest#419,Maker_GoldTreasureChest,Workspace.Catalog.MoneyMakers.Gold Treasure Chest,props,5 x 6 x 4.2,"-1264, 0, 200",#96693C,WoodPlanks,9,normal
+Catalog.MoneyMakers/Maker_UnknownMaker#420,Maker_UnknownMaker,Workspace.Catalog.MoneyMakers.Unknown Maker,props,6 x 5 x 6.2,"-1248, 0, 200",#F5BE28,SmoothPlastic,2,normal
+Catalog.CardCases/Maker_RarePokeBloxCard#422,Maker_RarePokeBloxCard,Workspace.Catalog.CardCases.Rare PokeBlox Card,props,3.6 x 5.5 x 1.6,"-1600, 0, 230",#FFD23C,SmoothPlastic,12,normal
+Catalog.CardCases/Maker_RarePokeBloxCard#425,Maker_RarePokeBloxCard_v2,Workspace.Catalog.CardCases.Rare PokeBlox Card,props,3.6 x 5.5 x 1.6,"-1584, 0, 230",#FFD23C,SmoothPlastic,12,normal
+Catalog.CardCases/Maker_RarePokeBloxCard#428,Maker_RarePokeBloxCard_v3,Workspace.Catalog.CardCases.Rare PokeBlox Card,props,3.6 x 5.5 x 1.6,"-1568, 0, 230",#FFD23C,SmoothPlastic,12,normal
+Catalog.CardCases/Maker_RarePokeBloxCard#431,Maker_RarePokeBloxCard_v4,Workspace.Catalog.CardCases.Rare PokeBlox Card,props,3.6 x 5.5 x 1.6,"-1552, 0, 230",#FFD23C,SmoothPlastic,12,normal
+Catalog.Debts/Debt_CreditCard#434,Debt_CreditCard,Workspace.Catalog.Debts.Credit Card,props,4.4 x 3.2 x 1.4,"-1600, 0, 260",#285AC8,SmoothPlastic,5,normal
+Catalog.Debts/Debt_CreditCard#436,Debt_CreditCard_v2,Workspace.Catalog.Debts.Credit Card,props,5.4 x 3.8 x 1.4,"-1600, 0, 276",#285AC8,SmoothPlastic,5,normal
+Catalog.Debts/Debt_CarLoan#438,Debt_CarLoan,Workspace.Catalog.Debts.Car Loan,props,3.1 x 2.5 x 4.7,"-1586, 0, 260",#8C8C96,SmoothPlastic,7,normal
+Catalog.Debts/Debt_CarLoan#440,Debt_CarLoan_v2,Workspace.Catalog.Debts.Car Loan,props,4 x 3.2 x 6.1,"-1586, 0, 276",#8C8C96,SmoothPlastic,7,normal
+Catalog.Debts/Debt_SchoolLoan#442,Debt_SchoolLoan,Workspace.Catalog.Debts.School Loan,props,3.4 x 3 x 3.4,"-1572, 0, 260",#C83C3C,SmoothPlastic,9,normal
+Catalog.Debts/Debt_SchoolLoan#443,Debt_SchoolLoan_v2,Workspace.Catalog.Debts.School Loan,props,3.4 x 6.2 x 3.4,"-1572, 0, 276",#C83C3C,SmoothPlastic,17,normal
+Catalog.Debts/Debt_BankLoan#444,Debt_BankLoan,Workspace.Catalog.Debts.Bank Loan,props,3.2 x 3.2 x 3.2,"-1558, 0, 260",#787D87,Metal,5,normal
+Catalog.Debts/Debt_BankLoan#446,Debt_BankLoan_v2,Workspace.Catalog.Debts.Bank Loan,props,5.4 x 5.4 x 5.3,"-1558, 0, 276",#787D87,Metal,5,normal
+Catalog.Debts/Debt_OtherDebt#448,Debt_OtherDebt,Workspace.Catalog.Debts.Other Debt,props,2.3 x 2.3 x 2.3,"-1544, 0, 260",#828291,Concrete,3,normal
+Catalog.Debts/Debt_OtherDebt#449,Debt_OtherDebt_v2,Workspace.Catalog.Debts.Other Debt,props,6.1 x 6.1 x 6.1,"-1544, 0, 276",#828291,Concrete,3,normal
+Catalog.Kid/Kid#450,Kid,Workspace.Catalog.Kid,props,1.3 x 3.4 x 1.2,"-1620, 0, 260",#F0C8A0,SmoothPlastic,3,normal
+Catalog.Dreams/Dream_Supercar,Dream_Supercar,Workspace.Catalog.Dreams.Supercar,vehicles,5.6 x 3.5 x 12.2,"-1600, 0, 340",#E62332,SmoothPlastic,42,normal
+Catalog.Dreams/Dream_Yacht,Dream_Yacht,Workspace.Catalog.Dreams.Yacht,vehicles,11.3 x 14.8 x 42.6,"-1530, 0, 340",#F8F8FC,SmoothPlastic,85,normal
+Catalog.Dreams/Dream_BeachVilla,Dream_BeachVilla,Workspace.Catalog.Dreams.BeachVilla,buildings,40 x 13.2 x 33.4,"-1460, 0, 340",#FAFAF8,SmoothPlastic,77,normal
+Catalog.Dreams/Dream_PrivateJet,Dream_PrivateJet,Workspace.Catalog.Dreams.PrivateJet,vehicles,28.6 x 12.5 x 33.1,"-1390, 0, 340",#F8F8FC,SmoothPlastic,57,normal
+Catalog.Dreams/Dream_PrivateIsland,Dream_PrivateIsland,Workspace.Catalog.Dreams.PrivateIsland,nature,51.4 x 14.3 x 50,"-1320, 0, 340",#F0DCA5,Sand,79,normal

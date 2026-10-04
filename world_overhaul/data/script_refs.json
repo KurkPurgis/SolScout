@@ -1,0 +1,2106 @@
+{
+ "script_referenced": [
+  "AuctionRoom_BidderDesk",
+  "AuctionRoom_InfoBoard",
+  "Baseplate",
+  "Debt_BankLoan",
+  "Debt_CarLoan",
+  "Debt_CreditCard",
+  "Debt_OtherDebt",
+  "Debt_SchoolLoan",
+  "Dream_BeachVilla",
+  "Dream_PrivateIsland",
+  "Dream_PrivateJet",
+  "Dream_Supercar",
+  "Dream_Yacht",
+  "Kid",
+  "Lobby_RoomBooth",
+  "Lobby_Spawn",
+  "Maker_Apartment",
+  "Maker_ApartmentBuilding",
+  "Maker_BowlingAlley",
+  "Maker_CarWash",
+  "Maker_CoffeeShop",
+  "Maker_FoodTruck",
+  "Maker_GameStudio",
+  "Maker_GoldBar",
+  "Maker_GoldCoin",
+  "Maker_GoldTreasureChest",
+  "Maker_Hotel",
+  "Maker_HouseToRent",
+  "Maker_LemonadeStand",
+  "Maker_MiniGolf",
+  "Maker_PizzaRestaurant",
+  "Maker_PokeBloxCard",
+  "Maker_RarePokeBloxCard",
+  "Maker_ShinyPokeBloxCard",
+  "Maker_ShoppingMall",
+  "Maker_ThemePark",
+  "Maker_ToyShop",
+  "Maker_UnknownMaker",
+  "Maker_VendingMachine",
+  "PodiumRoom_Block",
+  "PodiumRoom_Board",
+  "PodiumRoom_TitleSign",
+  "Workplace_Building",
+  "Workplace_DebtPad",
+  "Workplace_Fence",
+  "Workplace_FlowerBox",
+  "Workplace_LampPost",
+  "Workplace_MakerLot",
+  "Workplace_Sandbox",
+  "Workplace_Yard"
+ ],
+ "geometry_locked": [
+  "AuctionRoom_Stage",
+  "Collection_Showcase",
+  "Dream_BeachVilla",
+  "Dream_Chains",
+  "Dream_Pedestal",
+  "Dream_PrivateIsland",
+  "Dream_PrivateJet",
+  "Dream_Supercar",
+  "Dream_Yacht",
+  "Maker_Apartment",
+  "Maker_ApartmentBuilding",
+  "Maker_BowlingAlley",
+  "Maker_CarWash",
+  "Maker_CoffeeShop",
+  "Maker_FoodTruck",
+  "Maker_GameStudio",
+  "Maker_GoldBar",
+  "Maker_GoldCoin",
+  "Maker_GoldTreasureChest",
+  "Maker_Hotel",
+  "Maker_HouseToRent",
+  "Maker_LemonadeStand",
+  "Maker_MiniGolf",
+  "Maker_PizzaRestaurant",
+  "Maker_PokeBloxCard",
+  "Maker_RarePokeBloxCard",
+  "Maker_ShinyPokeBloxCard",
+  "Maker_ShoppingMall",
+  "Maker_ThemePark",
+  "Maker_ToyShop",
+  "Maker_UnknownMaker",
+  "Maker_VendingMachine",
+  "Workplace_Building",
+  "Workplace_Yard"
+ ],
+ "by_type": {
+  "Maker_LemonadeStand": [
+   {
+    "kind": "name",
+    "why": "Built by NAME: Props.moneyMaker looks up the builder by the deal name and names the Model after it.",
+    "evidence": [
+     "src/server/World/Props.luau:586: local builder = makerBuilders[name]",
+     "src/server/World/Props.luau:585: model.Name = name"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "Its BOUNDING BOX decides how high the next Money Maker is stacked and where the label floats.",
+    "evidence": [
+     "src/server/World/Plots.luau:416: self.slotTops[slotIndex] = box.Position.Y + size.Y / 2 - self.base.Position.Y + 0.1",
+     "src/server/World/Plots.luau:392: local cframe, size = model:GetBoundingBox()",
+     "src/server/World/Plots.luau:448: local cframe, size = model:GetBoundingBox()"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "FOR SALE copies are made see-through by Props.makeGhost (every BasePart: Transparency, ForceField, no collision).",
+    "evidence": [
+     "src/server/World/Props.luau:199: item.Material = Enum.Material.ForceField",
+     "src/server/World/Plots.luau:435: Props.makeGhost(model)"
+    ]
+   },
+   {
+    "kind": "name",
+    "why": "The tutorial arrow finds the player's plot by name and points at the first Model in its ForSale/Debts folder (bounding box).",
+    "evidence": [
+     "src/client/Tutorial.luau:190: plotModel = workspace:FindFirstChild(\"Plot_\" .. player.Name, true)",
+     "src/client/Tutorial.luau:203: local box, size = item:GetBoundingBox()"
+    ]
+   }
+  ],
+  "Maker_FoodTruck": [
+   {
+    "kind": "name",
+    "why": "Built by NAME: Props.moneyMaker looks up the builder by the deal name and names the Model after it.",
+    "evidence": [
+     "src/server/World/Props.luau:586: local builder = makerBuilders[name]",
+     "src/server/World/Props.luau:585: model.Name = name"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "Its BOUNDING BOX decides how high the next Money Maker is stacked and where the label floats.",
+    "evidence": [
+     "src/server/World/Plots.luau:416: self.slotTops[slotIndex] = box.Position.Y + size.Y / 2 - self.base.Position.Y + 0.1",
+     "src/server/World/Plots.luau:392: local cframe, size = model:GetBoundingBox()",
+     "src/server/World/Plots.luau:448: local cframe, size = model:GetBoundingBox()"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "FOR SALE copies are made see-through by Props.makeGhost (every BasePart: Transparency, ForceField, no collision).",
+    "evidence": [
+     "src/server/World/Props.luau:199: item.Material = Enum.Material.ForceField",
+     "src/server/World/Plots.luau:435: Props.makeGhost(model)"
+    ]
+   },
+   {
+    "kind": "name",
+    "why": "The tutorial arrow finds the player's plot by name and points at the first Model in its ForSale/Debts folder (bounding box).",
+    "evidence": [
+     "src/client/Tutorial.luau:190: plotModel = workspace:FindFirstChild(\"Plot_\" .. player.Name, true)",
+     "src/client/Tutorial.luau:203: local box, size = item:GetBoundingBox()"
+    ]
+   }
+  ],
+  "Maker_CarWash": [
+   {
+    "kind": "name",
+    "why": "Built by NAME: Props.moneyMaker looks up the builder by the deal name and names the Model after it.",
+    "evidence": [
+     "src/server/World/Props.luau:586: local builder = makerBuilders[name]",
+     "src/server/World/Props.luau:585: model.Name = name"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "Its BOUNDING BOX decides how high the next Money Maker is stacked and where the label floats.",
+    "evidence": [
+     "src/server/World/Plots.luau:416: self.slotTops[slotIndex] = box.Position.Y + size.Y / 2 - self.base.Position.Y + 0.1",
+     "src/server/World/Plots.luau:392: local cframe, size = model:GetBoundingBox()",
+     "src/server/World/Plots.luau:448: local cframe, size = model:GetBoundingBox()"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "FOR SALE copies are made see-through by Props.makeGhost (every BasePart: Transparency, ForceField, no collision).",
+    "evidence": [
+     "src/server/World/Props.luau:199: item.Material = Enum.Material.ForceField",
+     "src/server/World/Plots.luau:435: Props.makeGhost(model)"
+    ]
+   },
+   {
+    "kind": "name",
+    "why": "The tutorial arrow finds the player's plot by name and points at the first Model in its ForSale/Debts folder (bounding box).",
+    "evidence": [
+     "src/client/Tutorial.luau:190: plotModel = workspace:FindFirstChild(\"Plot_\" .. player.Name, true)",
+     "src/client/Tutorial.luau:203: local box, size = item:GetBoundingBox()"
+    ]
+   }
+  ],
+  "Maker_VendingMachine": [
+   {
+    "kind": "name",
+    "why": "Built by NAME: Props.moneyMaker looks up the builder by the deal name and names the Model after it.",
+    "evidence": [
+     "src/server/World/Props.luau:586: local builder = makerBuilders[name]",
+     "src/server/World/Props.luau:585: model.Name = name"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "Its BOUNDING BOX decides how high the next Money Maker is stacked and where the label floats.",
+    "evidence": [
+     "src/server/World/Plots.luau:416: self.slotTops[slotIndex] = box.Position.Y + size.Y / 2 - self.base.Position.Y + 0.1",
+     "src/server/World/Plots.luau:392: local cframe, size = model:GetBoundingBox()",
+     "src/server/World/Plots.luau:448: local cframe, size = model:GetBoundingBox()"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "FOR SALE copies are made see-through by Props.makeGhost (every BasePart: Transparency, ForceField, no collision).",
+    "evidence": [
+     "src/server/World/Props.luau:199: item.Material = Enum.Material.ForceField",
+     "src/server/World/Plots.luau:435: Props.makeGhost(model)"
+    ]
+   },
+   {
+    "kind": "name",
+    "why": "The tutorial arrow finds the player's plot by name and points at the first Model in its ForSale/Debts folder (bounding box).",
+    "evidence": [
+     "src/client/Tutorial.luau:190: plotModel = workspace:FindFirstChild(\"Plot_\" .. player.Name, true)",
+     "src/client/Tutorial.luau:203: local box, size = item:GetBoundingBox()"
+    ]
+   }
+  ],
+  "Maker_ToyShop": [
+   {
+    "kind": "name",
+    "why": "Built by NAME: Props.moneyMaker looks up the builder by the deal name and names the Model after it.",
+    "evidence": [
+     "src/server/World/Props.luau:586: local builder = makerBuilders[name]",
+     "src/server/World/Props.luau:585: model.Name = name"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "Its BOUNDING BOX decides how high the next Money Maker is stacked and where the label floats.",
+    "evidence": [
+     "src/server/World/Plots.luau:416: self.slotTops[slotIndex] = box.Position.Y + size.Y / 2 - self.base.Position.Y + 0.1",
+     "src/server/World/Plots.luau:392: local cframe, size = model:GetBoundingBox()",
+     "src/server/World/Plots.luau:448: local cframe, size = model:GetBoundingBox()"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "FOR SALE copies are made see-through by Props.makeGhost (every BasePart: Transparency, ForceField, no collision).",
+    "evidence": [
+     "src/server/World/Props.luau:199: item.Material = Enum.Material.ForceField",
+     "src/server/World/Plots.luau:435: Props.makeGhost(model)"
+    ]
+   },
+   {
+    "kind": "name",
+    "why": "The tutorial arrow finds the player's plot by name and points at the first Model in its ForSale/Debts folder (bounding box).",
+    "evidence": [
+     "src/client/Tutorial.luau:190: plotModel = workspace:FindFirstChild(\"Plot_\" .. player.Name, true)",
+     "src/client/Tutorial.luau:203: local box, size = item:GetBoundingBox()"
+    ]
+   }
+  ],
+  "Maker_GoldCoin": [
+   {
+    "kind": "name",
+    "why": "Built by NAME: Props.moneyMaker looks up the builder by the deal name and names the Model after it.",
+    "evidence": [
+     "src/server/World/Props.luau:586: local builder = makerBuilders[name]",
+     "src/server/World/Props.luau:585: model.Name = name"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "Its BOUNDING BOX decides how high the next Money Maker is stacked and where the label floats.",
+    "evidence": [
+     "src/server/World/Plots.luau:416: self.slotTops[slotIndex] = box.Position.Y + size.Y / 2 - self.base.Position.Y + 0.1",
+     "src/server/World/Plots.luau:392: local cframe, size = model:GetBoundingBox()",
+     "src/server/World/Plots.luau:448: local cframe, size = model:GetBoundingBox()"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "FOR SALE copies are made see-through by Props.makeGhost (every BasePart: Transparency, ForceField, no collision).",
+    "evidence": [
+     "src/server/World/Props.luau:199: item.Material = Enum.Material.ForceField",
+     "src/server/World/Plots.luau:435: Props.makeGhost(model)"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "Investments are also shrunk to 40% (ScaleTo) and put on the COLLECTION table.",
+    "evidence": [
+     "src/server/World/Plots.luau:567: model:ScaleTo(0.4)"
+    ]
+   },
+   {
+    "kind": "name",
+    "why": "The tutorial arrow finds the player's plot by name and points at the first Model in its ForSale/Debts folder (bounding box).",
+    "evidence": [
+     "src/client/Tutorial.luau:190: plotModel = workspace:FindFirstChild(\"Plot_\" .. player.Name, true)",
+     "src/client/Tutorial.luau:203: local box, size = item:GetBoundingBox()"
+    ]
+   }
+  ],
+  "Maker_PokeBloxCard": [
+   {
+    "kind": "name",
+    "why": "Built by NAME: Props.moneyMaker looks up the builder by the deal name and names the Model after it.",
+    "evidence": [
+     "src/server/World/Props.luau:586: local builder = makerBuilders[name]",
+     "src/server/World/Props.luau:585: model.Name = name"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "Its BOUNDING BOX decides how high the next Money Maker is stacked and where the label floats.",
+    "evidence": [
+     "src/server/World/Plots.luau:416: self.slotTops[slotIndex] = box.Position.Y + size.Y / 2 - self.base.Position.Y + 0.1",
+     "src/server/World/Plots.luau:392: local cframe, size = model:GetBoundingBox()",
+     "src/server/World/Plots.luau:448: local cframe, size = model:GetBoundingBox()"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "FOR SALE copies are made see-through by Props.makeGhost (every BasePart: Transparency, ForceField, no collision).",
+    "evidence": [
+     "src/server/World/Props.luau:199: item.Material = Enum.Material.ForceField",
+     "src/server/World/Plots.luau:435: Props.makeGhost(model)"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "Investments are also shrunk to 40% (ScaleTo) and put on the COLLECTION table.",
+    "evidence": [
+     "src/server/World/Plots.luau:567: model:ScaleTo(0.4)"
+    ]
+   },
+   {
+    "kind": "name",
+    "why": "The tutorial arrow finds the player's plot by name and points at the first Model in its ForSale/Debts folder (bounding box).",
+    "evidence": [
+     "src/client/Tutorial.luau:190: plotModel = workspace:FindFirstChild(\"Plot_\" .. player.Name, true)",
+     "src/client/Tutorial.luau:203: local box, size = item:GetBoundingBox()"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "The case color (COMMON/RARE/EPIC/LEGENDARY) is chosen at runtime from the card's value.",
+    "evidence": [
+     "src/server/World/Props.luau:513: local case = Props.cardCase(value)"
+    ]
+   }
+  ],
+  "Maker_Apartment": [
+   {
+    "kind": "name",
+    "why": "Built by NAME: Props.moneyMaker looks up the builder by the deal name and names the Model after it.",
+    "evidence": [
+     "src/server/World/Props.luau:586: local builder = makerBuilders[name]",
+     "src/server/World/Props.luau:585: model.Name = name"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "Its BOUNDING BOX decides how high the next Money Maker is stacked and where the label floats.",
+    "evidence": [
+     "src/server/World/Plots.luau:416: self.slotTops[slotIndex] = box.Position.Y + size.Y / 2 - self.base.Position.Y + 0.1",
+     "src/server/World/Plots.luau:392: local cframe, size = model:GetBoundingBox()",
+     "src/server/World/Plots.luau:448: local cframe, size = model:GetBoundingBox()"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "FOR SALE copies are made see-through by Props.makeGhost (every BasePart: Transparency, ForceField, no collision).",
+    "evidence": [
+     "src/server/World/Props.luau:199: item.Material = Enum.Material.ForceField",
+     "src/server/World/Plots.luau:435: Props.makeGhost(model)"
+    ]
+   },
+   {
+    "kind": "name",
+    "why": "The tutorial arrow finds the player's plot by name and points at the first Model in its ForSale/Debts folder (bounding box).",
+    "evidence": [
+     "src/client/Tutorial.luau:190: plotModel = workspace:FindFirstChild(\"Plot_\" .. player.Name, true)",
+     "src/client/Tutorial.luau:203: local box, size = item:GetBoundingBox()"
+    ]
+   }
+  ],
+  "Maker_MiniGolf": [
+   {
+    "kind": "name",
+    "why": "Built by NAME: Props.moneyMaker looks up the builder by the deal name and names the Model after it.",
+    "evidence": [
+     "src/server/World/Props.luau:586: local builder = makerBuilders[name]",
+     "src/server/World/Props.luau:585: model.Name = name"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "Its BOUNDING BOX decides how high the next Money Maker is stacked and where the label floats.",
+    "evidence": [
+     "src/server/World/Plots.luau:416: self.slotTops[slotIndex] = box.Position.Y + size.Y / 2 - self.base.Position.Y + 0.1",
+     "src/server/World/Plots.luau:392: local cframe, size = model:GetBoundingBox()",
+     "src/server/World/Plots.luau:448: local cframe, size = model:GetBoundingBox()"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "FOR SALE copies are made see-through by Props.makeGhost (every BasePart: Transparency, ForceField, no collision).",
+    "evidence": [
+     "src/server/World/Props.luau:199: item.Material = Enum.Material.ForceField",
+     "src/server/World/Plots.luau:435: Props.makeGhost(model)"
+    ]
+   },
+   {
+    "kind": "name",
+    "why": "The tutorial arrow finds the player's plot by name and points at the first Model in its ForSale/Debts folder (bounding box).",
+    "evidence": [
+     "src/client/Tutorial.luau:190: plotModel = workspace:FindFirstChild(\"Plot_\" .. player.Name, true)",
+     "src/client/Tutorial.luau:203: local box, size = item:GetBoundingBox()"
+    ]
+   }
+  ],
+  "Maker_HouseToRent": [
+   {
+    "kind": "name",
+    "why": "Built by NAME: Props.moneyMaker looks up the builder by the deal name and names the Model after it.",
+    "evidence": [
+     "src/server/World/Props.luau:586: local builder = makerBuilders[name]",
+     "src/server/World/Props.luau:585: model.Name = name"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "Its BOUNDING BOX decides how high the next Money Maker is stacked and where the label floats.",
+    "evidence": [
+     "src/server/World/Plots.luau:416: self.slotTops[slotIndex] = box.Position.Y + size.Y / 2 - self.base.Position.Y + 0.1",
+     "src/server/World/Plots.luau:392: local cframe, size = model:GetBoundingBox()",
+     "src/server/World/Plots.luau:448: local cframe, size = model:GetBoundingBox()"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "FOR SALE copies are made see-through by Props.makeGhost (every BasePart: Transparency, ForceField, no collision).",
+    "evidence": [
+     "src/server/World/Props.luau:199: item.Material = Enum.Material.ForceField",
+     "src/server/World/Plots.luau:435: Props.makeGhost(model)"
+    ]
+   },
+   {
+    "kind": "name",
+    "why": "The tutorial arrow finds the player's plot by name and points at the first Model in its ForSale/Debts folder (bounding box).",
+    "evidence": [
+     "src/client/Tutorial.luau:190: plotModel = workspace:FindFirstChild(\"Plot_\" .. player.Name, true)",
+     "src/client/Tutorial.luau:203: local box, size = item:GetBoundingBox()"
+    ]
+   }
+  ],
+  "Maker_PizzaRestaurant": [
+   {
+    "kind": "name",
+    "why": "Built by NAME: Props.moneyMaker looks up the builder by the deal name and names the Model after it.",
+    "evidence": [
+     "src/server/World/Props.luau:586: local builder = makerBuilders[name]",
+     "src/server/World/Props.luau:585: model.Name = name"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "Its BOUNDING BOX decides how high the next Money Maker is stacked and where the label floats.",
+    "evidence": [
+     "src/server/World/Plots.luau:416: self.slotTops[slotIndex] = box.Position.Y + size.Y / 2 - self.base.Position.Y + 0.1",
+     "src/server/World/Plots.luau:392: local cframe, size = model:GetBoundingBox()",
+     "src/server/World/Plots.luau:448: local cframe, size = model:GetBoundingBox()"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "FOR SALE copies are made see-through by Props.makeGhost (every BasePart: Transparency, ForceField, no collision).",
+    "evidence": [
+     "src/server/World/Props.luau:199: item.Material = Enum.Material.ForceField",
+     "src/server/World/Plots.luau:435: Props.makeGhost(model)"
+    ]
+   },
+   {
+    "kind": "name",
+    "why": "The tutorial arrow finds the player's plot by name and points at the first Model in its ForSale/Debts folder (bounding box).",
+    "evidence": [
+     "src/client/Tutorial.luau:190: plotModel = workspace:FindFirstChild(\"Plot_\" .. player.Name, true)",
+     "src/client/Tutorial.luau:203: local box, size = item:GetBoundingBox()"
+    ]
+   }
+  ],
+  "Maker_Hotel": [
+   {
+    "kind": "name",
+    "why": "Built by NAME: Props.moneyMaker looks up the builder by the deal name and names the Model after it.",
+    "evidence": [
+     "src/server/World/Props.luau:586: local builder = makerBuilders[name]",
+     "src/server/World/Props.luau:585: model.Name = name"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "Its BOUNDING BOX decides how high the next Money Maker is stacked and where the label floats.",
+    "evidence": [
+     "src/server/World/Plots.luau:416: self.slotTops[slotIndex] = box.Position.Y + size.Y / 2 - self.base.Position.Y + 0.1",
+     "src/server/World/Plots.luau:392: local cframe, size = model:GetBoundingBox()",
+     "src/server/World/Plots.luau:448: local cframe, size = model:GetBoundingBox()"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "FOR SALE copies are made see-through by Props.makeGhost (every BasePart: Transparency, ForceField, no collision).",
+    "evidence": [
+     "src/server/World/Props.luau:199: item.Material = Enum.Material.ForceField",
+     "src/server/World/Plots.luau:435: Props.makeGhost(model)"
+    ]
+   },
+   {
+    "kind": "name",
+    "why": "The tutorial arrow finds the player's plot by name and points at the first Model in its ForSale/Debts folder (bounding box).",
+    "evidence": [
+     "src/client/Tutorial.luau:190: plotModel = workspace:FindFirstChild(\"Plot_\" .. player.Name, true)",
+     "src/client/Tutorial.luau:203: local box, size = item:GetBoundingBox()"
+    ]
+   }
+  ],
+  "Maker_CoffeeShop": [
+   {
+    "kind": "name",
+    "why": "Built by NAME: Props.moneyMaker looks up the builder by the deal name and names the Model after it.",
+    "evidence": [
+     "src/server/World/Props.luau:586: local builder = makerBuilders[name]",
+     "src/server/World/Props.luau:585: model.Name = name"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "Its BOUNDING BOX decides how high the next Money Maker is stacked and where the label floats.",
+    "evidence": [
+     "src/server/World/Plots.luau:416: self.slotTops[slotIndex] = box.Position.Y + size.Y / 2 - self.base.Position.Y + 0.1",
+     "src/server/World/Plots.luau:392: local cframe, size = model:GetBoundingBox()",
+     "src/server/World/Plots.luau:448: local cframe, size = model:GetBoundingBox()"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "FOR SALE copies are made see-through by Props.makeGhost (every BasePart: Transparency, ForceField, no collision).",
+    "evidence": [
+     "src/server/World/Props.luau:199: item.Material = Enum.Material.ForceField",
+     "src/server/World/Plots.luau:435: Props.makeGhost(model)"
+    ]
+   },
+   {
+    "kind": "name",
+    "why": "The tutorial arrow finds the player's plot by name and points at the first Model in its ForSale/Debts folder (bounding box).",
+    "evidence": [
+     "src/client/Tutorial.luau:190: plotModel = workspace:FindFirstChild(\"Plot_\" .. player.Name, true)",
+     "src/client/Tutorial.luau:203: local box, size = item:GetBoundingBox()"
+    ]
+   }
+  ],
+  "Maker_BowlingAlley": [
+   {
+    "kind": "name",
+    "why": "Built by NAME: Props.moneyMaker looks up the builder by the deal name and names the Model after it.",
+    "evidence": [
+     "src/server/World/Props.luau:586: local builder = makerBuilders[name]",
+     "src/server/World/Props.luau:585: model.Name = name"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "Its BOUNDING BOX decides how high the next Money Maker is stacked and where the label floats.",
+    "evidence": [
+     "src/server/World/Plots.luau:416: self.slotTops[slotIndex] = box.Position.Y + size.Y / 2 - self.base.Position.Y + 0.1",
+     "src/server/World/Plots.luau:392: local cframe, size = model:GetBoundingBox()",
+     "src/server/World/Plots.luau:448: local cframe, size = model:GetBoundingBox()"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "FOR SALE copies are made see-through by Props.makeGhost (every BasePart: Transparency, ForceField, no collision).",
+    "evidence": [
+     "src/server/World/Props.luau:199: item.Material = Enum.Material.ForceField",
+     "src/server/World/Plots.luau:435: Props.makeGhost(model)"
+    ]
+   },
+   {
+    "kind": "name",
+    "why": "The tutorial arrow finds the player's plot by name and points at the first Model in its ForSale/Debts folder (bounding box).",
+    "evidence": [
+     "src/client/Tutorial.luau:190: plotModel = workspace:FindFirstChild(\"Plot_\" .. player.Name, true)",
+     "src/client/Tutorial.luau:203: local box, size = item:GetBoundingBox()"
+    ]
+   }
+  ],
+  "Maker_GoldBar": [
+   {
+    "kind": "name",
+    "why": "Built by NAME: Props.moneyMaker looks up the builder by the deal name and names the Model after it.",
+    "evidence": [
+     "src/server/World/Props.luau:586: local builder = makerBuilders[name]",
+     "src/server/World/Props.luau:585: model.Name = name"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "Its BOUNDING BOX decides how high the next Money Maker is stacked and where the label floats.",
+    "evidence": [
+     "src/server/World/Plots.luau:416: self.slotTops[slotIndex] = box.Position.Y + size.Y / 2 - self.base.Position.Y + 0.1",
+     "src/server/World/Plots.luau:392: local cframe, size = model:GetBoundingBox()",
+     "src/server/World/Plots.luau:448: local cframe, size = model:GetBoundingBox()"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "FOR SALE copies are made see-through by Props.makeGhost (every BasePart: Transparency, ForceField, no collision).",
+    "evidence": [
+     "src/server/World/Props.luau:199: item.Material = Enum.Material.ForceField",
+     "src/server/World/Plots.luau:435: Props.makeGhost(model)"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "Investments are also shrunk to 40% (ScaleTo) and put on the COLLECTION table.",
+    "evidence": [
+     "src/server/World/Plots.luau:567: model:ScaleTo(0.4)"
+    ]
+   },
+   {
+    "kind": "name",
+    "why": "The tutorial arrow finds the player's plot by name and points at the first Model in its ForSale/Debts folder (bounding box).",
+    "evidence": [
+     "src/client/Tutorial.luau:190: plotModel = workspace:FindFirstChild(\"Plot_\" .. player.Name, true)",
+     "src/client/Tutorial.luau:203: local box, size = item:GetBoundingBox()"
+    ]
+   }
+  ],
+  "Maker_RarePokeBloxCard": [
+   {
+    "kind": "name",
+    "why": "Built by NAME: Props.moneyMaker looks up the builder by the deal name and names the Model after it.",
+    "evidence": [
+     "src/server/World/Props.luau:586: local builder = makerBuilders[name]",
+     "src/server/World/Props.luau:585: model.Name = name"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "Its BOUNDING BOX decides how high the next Money Maker is stacked and where the label floats.",
+    "evidence": [
+     "src/server/World/Plots.luau:416: self.slotTops[slotIndex] = box.Position.Y + size.Y / 2 - self.base.Position.Y + 0.1",
+     "src/server/World/Plots.luau:392: local cframe, size = model:GetBoundingBox()",
+     "src/server/World/Plots.luau:448: local cframe, size = model:GetBoundingBox()"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "FOR SALE copies are made see-through by Props.makeGhost (every BasePart: Transparency, ForceField, no collision).",
+    "evidence": [
+     "src/server/World/Props.luau:199: item.Material = Enum.Material.ForceField",
+     "src/server/World/Plots.luau:435: Props.makeGhost(model)"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "Investments are also shrunk to 40% (ScaleTo) and put on the COLLECTION table.",
+    "evidence": [
+     "src/server/World/Plots.luau:567: model:ScaleTo(0.4)"
+    ]
+   },
+   {
+    "kind": "name",
+    "why": "The tutorial arrow finds the player's plot by name and points at the first Model in its ForSale/Debts folder (bounding box).",
+    "evidence": [
+     "src/client/Tutorial.luau:190: plotModel = workspace:FindFirstChild(\"Plot_\" .. player.Name, true)",
+     "src/client/Tutorial.luau:203: local box, size = item:GetBoundingBox()"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "The case color (COMMON/RARE/EPIC/LEGENDARY) is chosen at runtime from the card's value.",
+    "evidence": [
+     "src/server/World/Props.luau:513: local case = Props.cardCase(value)"
+    ]
+   }
+  ],
+  "Maker_ShinyPokeBloxCard": [
+   {
+    "kind": "name",
+    "why": "Built by NAME: Props.moneyMaker looks up the builder by the deal name and names the Model after it.",
+    "evidence": [
+     "src/server/World/Props.luau:586: local builder = makerBuilders[name]",
+     "src/server/World/Props.luau:585: model.Name = name"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "Its BOUNDING BOX decides how high the next Money Maker is stacked and where the label floats.",
+    "evidence": [
+     "src/server/World/Plots.luau:416: self.slotTops[slotIndex] = box.Position.Y + size.Y / 2 - self.base.Position.Y + 0.1",
+     "src/server/World/Plots.luau:392: local cframe, size = model:GetBoundingBox()",
+     "src/server/World/Plots.luau:448: local cframe, size = model:GetBoundingBox()"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "FOR SALE copies are made see-through by Props.makeGhost (every BasePart: Transparency, ForceField, no collision).",
+    "evidence": [
+     "src/server/World/Props.luau:199: item.Material = Enum.Material.ForceField",
+     "src/server/World/Plots.luau:435: Props.makeGhost(model)"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "Investments are also shrunk to 40% (ScaleTo) and put on the COLLECTION table.",
+    "evidence": [
+     "src/server/World/Plots.luau:567: model:ScaleTo(0.4)"
+    ]
+   },
+   {
+    "kind": "name",
+    "why": "The tutorial arrow finds the player's plot by name and points at the first Model in its ForSale/Debts folder (bounding box).",
+    "evidence": [
+     "src/client/Tutorial.luau:190: plotModel = workspace:FindFirstChild(\"Plot_\" .. player.Name, true)",
+     "src/client/Tutorial.luau:203: local box, size = item:GetBoundingBox()"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "The case color (COMMON/RARE/EPIC/LEGENDARY) is chosen at runtime from the card's value.",
+    "evidence": [
+     "src/server/World/Props.luau:513: local case = Props.cardCase(value)"
+    ]
+   }
+  ],
+  "Maker_GoldTreasureChest": [
+   {
+    "kind": "name",
+    "why": "Built by NAME: Props.moneyMaker looks up the builder by the deal name and names the Model after it.",
+    "evidence": [
+     "src/server/World/Props.luau:586: local builder = makerBuilders[name]",
+     "src/server/World/Props.luau:585: model.Name = name"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "Its BOUNDING BOX decides how high the next Money Maker is stacked and where the label floats.",
+    "evidence": [
+     "src/server/World/Plots.luau:416: self.slotTops[slotIndex] = box.Position.Y + size.Y / 2 - self.base.Position.Y + 0.1",
+     "src/server/World/Plots.luau:392: local cframe, size = model:GetBoundingBox()",
+     "src/server/World/Plots.luau:448: local cframe, size = model:GetBoundingBox()"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "FOR SALE copies are made see-through by Props.makeGhost (every BasePart: Transparency, ForceField, no collision).",
+    "evidence": [
+     "src/server/World/Props.luau:199: item.Material = Enum.Material.ForceField",
+     "src/server/World/Plots.luau:435: Props.makeGhost(model)"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "Investments are also shrunk to 40% (ScaleTo) and put on the COLLECTION table.",
+    "evidence": [
+     "src/server/World/Plots.luau:567: model:ScaleTo(0.4)"
+    ]
+   },
+   {
+    "kind": "name",
+    "why": "The tutorial arrow finds the player's plot by name and points at the first Model in its ForSale/Debts folder (bounding box).",
+    "evidence": [
+     "src/client/Tutorial.luau:190: plotModel = workspace:FindFirstChild(\"Plot_\" .. player.Name, true)",
+     "src/client/Tutorial.luau:203: local box, size = item:GetBoundingBox()"
+    ]
+   }
+  ],
+  "Maker_GameStudio": [
+   {
+    "kind": "name",
+    "why": "Built by NAME: Props.moneyMaker looks up the builder by the deal name and names the Model after it.",
+    "evidence": [
+     "src/server/World/Props.luau:586: local builder = makerBuilders[name]",
+     "src/server/World/Props.luau:585: model.Name = name"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "Its BOUNDING BOX decides how high the next Money Maker is stacked and where the label floats.",
+    "evidence": [
+     "src/server/World/Plots.luau:416: self.slotTops[slotIndex] = box.Position.Y + size.Y / 2 - self.base.Position.Y + 0.1",
+     "src/server/World/Plots.luau:392: local cframe, size = model:GetBoundingBox()",
+     "src/server/World/Plots.luau:448: local cframe, size = model:GetBoundingBox()"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "FOR SALE copies are made see-through by Props.makeGhost (every BasePart: Transparency, ForceField, no collision).",
+    "evidence": [
+     "src/server/World/Props.luau:199: item.Material = Enum.Material.ForceField",
+     "src/server/World/Plots.luau:435: Props.makeGhost(model)"
+    ]
+   },
+   {
+    "kind": "name",
+    "why": "The tutorial arrow finds the player's plot by name and points at the first Model in its ForSale/Debts folder (bounding box).",
+    "evidence": [
+     "src/client/Tutorial.luau:190: plotModel = workspace:FindFirstChild(\"Plot_\" .. player.Name, true)",
+     "src/client/Tutorial.luau:203: local box, size = item:GetBoundingBox()"
+    ]
+   }
+  ],
+  "Maker_ShoppingMall": [
+   {
+    "kind": "name",
+    "why": "Built by NAME: Props.moneyMaker looks up the builder by the deal name and names the Model after it.",
+    "evidence": [
+     "src/server/World/Props.luau:586: local builder = makerBuilders[name]",
+     "src/server/World/Props.luau:585: model.Name = name"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "Its BOUNDING BOX decides how high the next Money Maker is stacked and where the label floats.",
+    "evidence": [
+     "src/server/World/Plots.luau:416: self.slotTops[slotIndex] = box.Position.Y + size.Y / 2 - self.base.Position.Y + 0.1",
+     "src/server/World/Plots.luau:392: local cframe, size = model:GetBoundingBox()",
+     "src/server/World/Plots.luau:448: local cframe, size = model:GetBoundingBox()"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "FOR SALE copies are made see-through by Props.makeGhost (every BasePart: Transparency, ForceField, no collision).",
+    "evidence": [
+     "src/server/World/Props.luau:199: item.Material = Enum.Material.ForceField",
+     "src/server/World/Plots.luau:435: Props.makeGhost(model)"
+    ]
+   },
+   {
+    "kind": "name",
+    "why": "The tutorial arrow finds the player's plot by name and points at the first Model in its ForSale/Debts folder (bounding box).",
+    "evidence": [
+     "src/client/Tutorial.luau:190: plotModel = workspace:FindFirstChild(\"Plot_\" .. player.Name, true)",
+     "src/client/Tutorial.luau:203: local box, size = item:GetBoundingBox()"
+    ]
+   }
+  ],
+  "Maker_ApartmentBuilding": [
+   {
+    "kind": "name",
+    "why": "Built by NAME: Props.moneyMaker looks up the builder by the deal name and names the Model after it.",
+    "evidence": [
+     "src/server/World/Props.luau:586: local builder = makerBuilders[name]",
+     "src/server/World/Props.luau:585: model.Name = name"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "Its BOUNDING BOX decides how high the next Money Maker is stacked and where the label floats.",
+    "evidence": [
+     "src/server/World/Plots.luau:416: self.slotTops[slotIndex] = box.Position.Y + size.Y / 2 - self.base.Position.Y + 0.1",
+     "src/server/World/Plots.luau:392: local cframe, size = model:GetBoundingBox()",
+     "src/server/World/Plots.luau:448: local cframe, size = model:GetBoundingBox()"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "FOR SALE copies are made see-through by Props.makeGhost (every BasePart: Transparency, ForceField, no collision).",
+    "evidence": [
+     "src/server/World/Props.luau:199: item.Material = Enum.Material.ForceField",
+     "src/server/World/Plots.luau:435: Props.makeGhost(model)"
+    ]
+   },
+   {
+    "kind": "name",
+    "why": "The tutorial arrow finds the player's plot by name and points at the first Model in its ForSale/Debts folder (bounding box).",
+    "evidence": [
+     "src/client/Tutorial.luau:190: plotModel = workspace:FindFirstChild(\"Plot_\" .. player.Name, true)",
+     "src/client/Tutorial.luau:203: local box, size = item:GetBoundingBox()"
+    ]
+   }
+  ],
+  "Maker_ThemePark": [
+   {
+    "kind": "name",
+    "why": "Built by NAME: Props.moneyMaker looks up the builder by the deal name and names the Model after it.",
+    "evidence": [
+     "src/server/World/Props.luau:586: local builder = makerBuilders[name]",
+     "src/server/World/Props.luau:585: model.Name = name"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "Its BOUNDING BOX decides how high the next Money Maker is stacked and where the label floats.",
+    "evidence": [
+     "src/server/World/Plots.luau:416: self.slotTops[slotIndex] = box.Position.Y + size.Y / 2 - self.base.Position.Y + 0.1",
+     "src/server/World/Plots.luau:392: local cframe, size = model:GetBoundingBox()",
+     "src/server/World/Plots.luau:448: local cframe, size = model:GetBoundingBox()"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "FOR SALE copies are made see-through by Props.makeGhost (every BasePart: Transparency, ForceField, no collision).",
+    "evidence": [
+     "src/server/World/Props.luau:199: item.Material = Enum.Material.ForceField",
+     "src/server/World/Plots.luau:435: Props.makeGhost(model)"
+    ]
+   },
+   {
+    "kind": "name",
+    "why": "The tutorial arrow finds the player's plot by name and points at the first Model in its ForSale/Debts folder (bounding box).",
+    "evidence": [
+     "src/client/Tutorial.luau:190: plotModel = workspace:FindFirstChild(\"Plot_\" .. player.Name, true)",
+     "src/client/Tutorial.luau:203: local box, size = item:GetBoundingBox()"
+    ]
+   }
+  ],
+  "Maker_UnknownMaker": [
+   {
+    "kind": "name",
+    "why": "Built by NAME: Props.moneyMaker looks up the builder by the deal name and names the Model after it.",
+    "evidence": [
+     "src/server/World/Props.luau:586: local builder = makerBuilders[name]",
+     "src/server/World/Props.luau:585: model.Name = name"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "Its BOUNDING BOX decides how high the next Money Maker is stacked and where the label floats.",
+    "evidence": [
+     "src/server/World/Plots.luau:416: self.slotTops[slotIndex] = box.Position.Y + size.Y / 2 - self.base.Position.Y + 0.1",
+     "src/server/World/Plots.luau:392: local cframe, size = model:GetBoundingBox()",
+     "src/server/World/Plots.luau:448: local cframe, size = model:GetBoundingBox()"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "FOR SALE copies are made see-through by Props.makeGhost (every BasePart: Transparency, ForceField, no collision).",
+    "evidence": [
+     "src/server/World/Props.luau:199: item.Material = Enum.Material.ForceField",
+     "src/server/World/Plots.luau:435: Props.makeGhost(model)"
+    ]
+   },
+   {
+    "kind": "name",
+    "why": "The tutorial arrow finds the player's plot by name and points at the first Model in its ForSale/Debts folder (bounding box).",
+    "evidence": [
+     "src/client/Tutorial.luau:190: plotModel = workspace:FindFirstChild(\"Plot_\" .. player.Name, true)",
+     "src/client/Tutorial.luau:203: local box, size = item:GetBoundingBox()"
+    ]
+   }
+  ],
+  "Debt_CreditCard": [
+   {
+    "kind": "name",
+    "why": "The tutorial arrow finds the player's plot by name and points at the first Model in its ForSale/Debts folder (bounding box).",
+    "evidence": [
+     "src/client/Tutorial.luau:190: plotModel = workspace:FindFirstChild(\"Plot_\" .. player.Name, true)",
+     "src/client/Tutorial.luau:203: local box, size = item:GetBoundingBox()"
+    ]
+   },
+   {
+    "kind": "name",
+    "why": "Built by NAME (debt name = Model name); size grows with the amount (scale factor in code).",
+    "evidence": [
+     "src/server/World/Props.luau:328: local builder = debtBuilders[debtName]",
+     "src/server/World/Props.luau:327: model.Name = debtName"
+    ]
+   },
+   {
+    "kind": "name",
+    "why": "A 'Pay $1,000' ProximityPrompt is parented to its MAIN PART (needs a BasePart to hold it).",
+    "evidence": [
+     "src/server/World/Plots.luau:383: self:addPrompt(main, \"Pay \" .. Format.money(piece), debt.name, \"PayDebt\", index, piece)"
+    ]
+   }
+  ],
+  "Debt_CarLoan": [
+   {
+    "kind": "name",
+    "why": "The tutorial arrow finds the player's plot by name and points at the first Model in its ForSale/Debts folder (bounding box).",
+    "evidence": [
+     "src/client/Tutorial.luau:190: plotModel = workspace:FindFirstChild(\"Plot_\" .. player.Name, true)",
+     "src/client/Tutorial.luau:203: local box, size = item:GetBoundingBox()"
+    ]
+   },
+   {
+    "kind": "name",
+    "why": "Built by NAME (debt name = Model name); size grows with the amount (scale factor in code).",
+    "evidence": [
+     "src/server/World/Props.luau:328: local builder = debtBuilders[debtName]",
+     "src/server/World/Props.luau:327: model.Name = debtName"
+    ]
+   },
+   {
+    "kind": "name",
+    "why": "A 'Pay $1,000' ProximityPrompt is parented to its MAIN PART (needs a BasePart to hold it).",
+    "evidence": [
+     "src/server/World/Plots.luau:383: self:addPrompt(main, \"Pay \" .. Format.money(piece), debt.name, \"PayDebt\", index, piece)"
+    ]
+   }
+  ],
+  "Debt_SchoolLoan": [
+   {
+    "kind": "name",
+    "why": "The tutorial arrow finds the player's plot by name and points at the first Model in its ForSale/Debts folder (bounding box).",
+    "evidence": [
+     "src/client/Tutorial.luau:190: plotModel = workspace:FindFirstChild(\"Plot_\" .. player.Name, true)",
+     "src/client/Tutorial.luau:203: local box, size = item:GetBoundingBox()"
+    ]
+   },
+   {
+    "kind": "name",
+    "why": "Built by NAME (debt name = Model name); size grows with the amount (scale factor in code).",
+    "evidence": [
+     "src/server/World/Props.luau:328: local builder = debtBuilders[debtName]",
+     "src/server/World/Props.luau:327: model.Name = debtName"
+    ]
+   },
+   {
+    "kind": "name",
+    "why": "A 'Pay $1,000' ProximityPrompt is parented to its MAIN PART (needs a BasePart to hold it).",
+    "evidence": [
+     "src/server/World/Plots.luau:383: self:addPrompt(main, \"Pay \" .. Format.money(piece), debt.name, \"PayDebt\", index, piece)"
+    ]
+   }
+  ],
+  "Debt_BankLoan": [
+   {
+    "kind": "name",
+    "why": "The tutorial arrow finds the player's plot by name and points at the first Model in its ForSale/Debts folder (bounding box).",
+    "evidence": [
+     "src/client/Tutorial.luau:190: plotModel = workspace:FindFirstChild(\"Plot_\" .. player.Name, true)",
+     "src/client/Tutorial.luau:203: local box, size = item:GetBoundingBox()"
+    ]
+   },
+   {
+    "kind": "name",
+    "why": "Built by NAME (debt name = Model name); size grows with the amount (scale factor in code).",
+    "evidence": [
+     "src/server/World/Props.luau:328: local builder = debtBuilders[debtName]",
+     "src/server/World/Props.luau:327: model.Name = debtName"
+    ]
+   },
+   {
+    "kind": "name",
+    "why": "A 'Pay $1,000' ProximityPrompt is parented to its MAIN PART (needs a BasePart to hold it).",
+    "evidence": [
+     "src/server/World/Plots.luau:383: self:addPrompt(main, \"Pay \" .. Format.money(piece), debt.name, \"PayDebt\", index, piece)"
+    ]
+   }
+  ],
+  "Debt_OtherDebt": [
+   {
+    "kind": "name",
+    "why": "The tutorial arrow finds the player's plot by name and points at the first Model in its ForSale/Debts folder (bounding box).",
+    "evidence": [
+     "src/client/Tutorial.luau:190: plotModel = workspace:FindFirstChild(\"Plot_\" .. player.Name, true)",
+     "src/client/Tutorial.luau:203: local box, size = item:GetBoundingBox()"
+    ]
+   },
+   {
+    "kind": "name",
+    "why": "Built by NAME (debt name = Model name); size grows with the amount (scale factor in code).",
+    "evidence": [
+     "src/server/World/Props.luau:328: local builder = debtBuilders[debtName]",
+     "src/server/World/Props.luau:327: model.Name = debtName"
+    ]
+   },
+   {
+    "kind": "name",
+    "why": "A 'Pay $1,000' ProximityPrompt is parented to its MAIN PART (needs a BasePart to hold it).",
+    "evidence": [
+     "src/server/World/Plots.luau:383: self:addPrompt(main, \"Pay \" .. Format.money(piece), debt.name, \"PayDebt\", index, piece)"
+    ]
+   }
+  ],
+  "Kid": [
+   {
+    "kind": "name",
+    "why": "Model named 'Kid' with tag 'Kid' and a PrimaryPart; the client makes it hop with GetPivot/PivotTo.",
+    "evidence": [
+     "src/server/World/Props.luau:230: CollectionService:AddTag(model, \"Kid\")",
+     "src/server/World/Props.luau:227: model.PrimaryPart = body",
+     "src/client/WorldFx.luau:157: kids[model] = { base = model:GetPivot(), offset = math.random() * 10 }"
+    ]
+   }
+  ],
+  "Dream_Supercar": [
+   {
+    "kind": "name",
+    "why": "Built by NAME (DreamModels), scaled with ScaleTo from its bounding box, pivot = PrimaryPart at the bottom center.",
+    "evidence": [
+     "src/server/World/Props.luau:605: local builder = DreamModels[dreamName] or DreamModels[\"Supercar\"]",
+     "src/server/World/Props.luau:608: model:ScaleTo(displaySize / math.max(size.X, size.Z))",
+     "src/shared/Models/ModelKit.luau:163: primary.PivotOffset = primary.CFrame:Inverse() * CFrame.new(0, 0, 0)"
+    ]
+   },
+   {
+    "kind": "name",
+    "why": "Tag 'Spin': the client spins the floating dream (PivotTo every frame).",
+    "evidence": [
+     "src/server/World/Props.luau:620: CollectionService:AddTag(model, \"Spin\")",
+     "src/client/WorldFx.luau:163: spinners[model] = model:GetPivot()"
+    ]
+   },
+   {
+    "kind": "name",
+    "why": "Every part's Transparency is changed to make the dream glow in as you get closer (attribute BaseTransparency).",
+    "evidence": [
+     "src/server/World/Props.luau:614: item:SetAttribute(\"BaseTransparency\", item.Transparency)",
+     "src/server/World/Plots.luau:515: item.Transparency = own + (1 - own) * 0.75 * (1 - glow)"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "Chains and padlock are generated around the dream's bounding box.",
+    "evidence": [
+     "src/server/World/Plots.luau:447: local function addChains(folder: Instance, model: Model)"
+    ]
+   }
+  ],
+  "Dream_Yacht": [
+   {
+    "kind": "name",
+    "why": "Built by NAME (DreamModels), scaled with ScaleTo from its bounding box, pivot = PrimaryPart at the bottom center.",
+    "evidence": [
+     "src/server/World/Props.luau:605: local builder = DreamModels[dreamName] or DreamModels[\"Supercar\"]",
+     "src/server/World/Props.luau:608: model:ScaleTo(displaySize / math.max(size.X, size.Z))",
+     "src/shared/Models/ModelKit.luau:163: primary.PivotOffset = primary.CFrame:Inverse() * CFrame.new(0, 0, 0)"
+    ]
+   },
+   {
+    "kind": "name",
+    "why": "Tag 'Spin': the client spins the floating dream (PivotTo every frame).",
+    "evidence": [
+     "src/server/World/Props.luau:620: CollectionService:AddTag(model, \"Spin\")",
+     "src/client/WorldFx.luau:163: spinners[model] = model:GetPivot()"
+    ]
+   },
+   {
+    "kind": "name",
+    "why": "Every part's Transparency is changed to make the dream glow in as you get closer (attribute BaseTransparency).",
+    "evidence": [
+     "src/server/World/Props.luau:614: item:SetAttribute(\"BaseTransparency\", item.Transparency)",
+     "src/server/World/Plots.luau:515: item.Transparency = own + (1 - own) * 0.75 * (1 - glow)"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "Chains and padlock are generated around the dream's bounding box.",
+    "evidence": [
+     "src/server/World/Plots.luau:447: local function addChains(folder: Instance, model: Model)"
+    ]
+   }
+  ],
+  "Dream_BeachVilla": [
+   {
+    "kind": "name",
+    "why": "Built by NAME (DreamModels), scaled with ScaleTo from its bounding box, pivot = PrimaryPart at the bottom center.",
+    "evidence": [
+     "src/server/World/Props.luau:605: local builder = DreamModels[dreamName] or DreamModels[\"Supercar\"]",
+     "src/server/World/Props.luau:608: model:ScaleTo(displaySize / math.max(size.X, size.Z))",
+     "src/shared/Models/ModelKit.luau:163: primary.PivotOffset = primary.CFrame:Inverse() * CFrame.new(0, 0, 0)"
+    ]
+   },
+   {
+    "kind": "name",
+    "why": "Tag 'Spin': the client spins the floating dream (PivotTo every frame).",
+    "evidence": [
+     "src/server/World/Props.luau:620: CollectionService:AddTag(model, \"Spin\")",
+     "src/client/WorldFx.luau:163: spinners[model] = model:GetPivot()"
+    ]
+   },
+   {
+    "kind": "name",
+    "why": "Every part's Transparency is changed to make the dream glow in as you get closer (attribute BaseTransparency).",
+    "evidence": [
+     "src/server/World/Props.luau:614: item:SetAttribute(\"BaseTransparency\", item.Transparency)",
+     "src/server/World/Plots.luau:515: item.Transparency = own + (1 - own) * 0.75 * (1 - glow)"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "Chains and padlock are generated around the dream's bounding box.",
+    "evidence": [
+     "src/server/World/Plots.luau:447: local function addChains(folder: Instance, model: Model)"
+    ]
+   }
+  ],
+  "Dream_PrivateJet": [
+   {
+    "kind": "name",
+    "why": "Built by NAME (DreamModels), scaled with ScaleTo from its bounding box, pivot = PrimaryPart at the bottom center.",
+    "evidence": [
+     "src/server/World/Props.luau:605: local builder = DreamModels[dreamName] or DreamModels[\"Supercar\"]",
+     "src/server/World/Props.luau:608: model:ScaleTo(displaySize / math.max(size.X, size.Z))",
+     "src/shared/Models/ModelKit.luau:163: primary.PivotOffset = primary.CFrame:Inverse() * CFrame.new(0, 0, 0)"
+    ]
+   },
+   {
+    "kind": "name",
+    "why": "Tag 'Spin': the client spins the floating dream (PivotTo every frame).",
+    "evidence": [
+     "src/server/World/Props.luau:620: CollectionService:AddTag(model, \"Spin\")",
+     "src/client/WorldFx.luau:163: spinners[model] = model:GetPivot()"
+    ]
+   },
+   {
+    "kind": "name",
+    "why": "Every part's Transparency is changed to make the dream glow in as you get closer (attribute BaseTransparency).",
+    "evidence": [
+     "src/server/World/Props.luau:614: item:SetAttribute(\"BaseTransparency\", item.Transparency)",
+     "src/server/World/Plots.luau:515: item.Transparency = own + (1 - own) * 0.75 * (1 - glow)"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "Chains and padlock are generated around the dream's bounding box.",
+    "evidence": [
+     "src/server/World/Plots.luau:447: local function addChains(folder: Instance, model: Model)"
+    ]
+   }
+  ],
+  "Dream_PrivateIsland": [
+   {
+    "kind": "name",
+    "why": "Built by NAME (DreamModels), scaled with ScaleTo from its bounding box, pivot = PrimaryPart at the bottom center.",
+    "evidence": [
+     "src/server/World/Props.luau:605: local builder = DreamModels[dreamName] or DreamModels[\"Supercar\"]",
+     "src/server/World/Props.luau:608: model:ScaleTo(displaySize / math.max(size.X, size.Z))",
+     "src/shared/Models/ModelKit.luau:163: primary.PivotOffset = primary.CFrame:Inverse() * CFrame.new(0, 0, 0)"
+    ]
+   },
+   {
+    "kind": "name",
+    "why": "Tag 'Spin': the client spins the floating dream (PivotTo every frame).",
+    "evidence": [
+     "src/server/World/Props.luau:620: CollectionService:AddTag(model, \"Spin\")",
+     "src/client/WorldFx.luau:163: spinners[model] = model:GetPivot()"
+    ]
+   },
+   {
+    "kind": "name",
+    "why": "Every part's Transparency is changed to make the dream glow in as you get closer (attribute BaseTransparency).",
+    "evidence": [
+     "src/server/World/Props.luau:614: item:SetAttribute(\"BaseTransparency\", item.Transparency)",
+     "src/server/World/Plots.luau:515: item.Transparency = own + (1 - own) * 0.75 * (1 - glow)"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "Chains and padlock are generated around the dream's bounding box.",
+    "evidence": [
+     "src/server/World/Plots.luau:447: local function addChains(folder: Instance, model: Model)"
+    ]
+   }
+  ],
+  "Dream_Chains": [
+   {
+    "kind": "geometry",
+    "why": "Chains and padlock are generated around the dream's bounding box.",
+    "evidence": [
+     "src/server/World/Plots.luau:447: local function addChains(folder: Instance, model: Model)"
+    ]
+   }
+  ],
+  "Dream_Pedestal": [
+   {
+    "kind": "geometry",
+    "why": "The dream is placed at height 1.8 on it: the pedestal top must stay at 1.8 studs.",
+    "evidence": [
+     "src/server/World/Plots.luau:492: local model = Props.dream(self.dreamFolder, self.base * CFrame.new(0, 1.8, -9), dream.name, 13, false)"
+    ]
+   }
+  ],
+  "Collection_Showcase": [
+   {
+    "kind": "geometry",
+    "why": "Investments are placed ON the table top (2.6 studs): table height must stay.",
+    "evidence": [
+     "src/server/World/Plots.luau:562: local tableTop = SHOWCASE.Y + 2.6"
+    ]
+   }
+  ],
+  "Workplace_Yard": [
+   {
+    "kind": "name",
+    "why": "Lives in folder 'Workplace' of Model 'Plot_<player>'; the folder is cleared and rebuilt as the Fast Track version on escape.",
+    "evidence": [
+     "src/server/World/Plots.luau:105: self.workplaceFolder = newFolder(model, \"Workplace\")",
+     "src/server/World/Plots.luau:528: self:buildWorkplace(Themes.luxury)"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "Players are teleported onto the yard (stand spot) and the turn camera looks at the building: floor heights must stay.",
+    "evidence": [
+     "src/server/World/Plots.luau:597: return self.base * CFrame.new(0, 4, -18) * CFrame.Angles(0, math.pi, 0)",
+     "src/server/World/Plots.luau:602: local eye = (self.base * CFrame.new(0, 28, -58)).Position"
+    ]
+   },
+   {
+    "kind": "context",
+    "why": "The area folders (Lobby, City_N, AuctionRoom_N, PodiumRoom_N) are tagged 'Area' and moved in/out of Workspace by the client: models must stay inside their area folder.",
+    "evidence": [
+     "src/server/World/Props.luau:212: CollectionService:AddTag(folder, \"Area\")",
+     "src/client/AreaVisibility.luau:100: for _, folder in CollectionService:GetTagged(\"Area\") do"
+    ]
+   }
+  ],
+  "Workplace_Building": [
+   {
+    "kind": "name",
+    "why": "Lives in folder 'Workplace' of Model 'Plot_<player>'; the folder is cleared and rebuilt as the Fast Track version on escape.",
+    "evidence": [
+     "src/server/World/Plots.luau:105: self.workplaceFolder = newFolder(model, \"Workplace\")",
+     "src/server/World/Plots.luau:528: self:buildWorkplace(Themes.luxury)"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "Players are teleported onto the yard (stand spot) and the turn camera looks at the building: floor heights must stay.",
+    "evidence": [
+     "src/server/World/Plots.luau:597: return self.base * CFrame.new(0, 4, -18) * CFrame.Angles(0, math.pi, 0)",
+     "src/server/World/Plots.luau:602: local eye = (self.base * CFrame.new(0, 28, -58)).Position"
+    ]
+   },
+   {
+    "kind": "context",
+    "why": "The area folders (Lobby, City_N, AuctionRoom_N, PodiumRoom_N) are tagged 'Area' and moved in/out of Workspace by the client: models must stay inside their area folder.",
+    "evidence": [
+     "src/server/World/Props.luau:212: CollectionService:AddTag(folder, \"Area\")",
+     "src/client/AreaVisibility.luau:100: for _, folder in CollectionService:GetTagged(\"Area\") do"
+    ]
+   }
+  ],
+  "Workplace_MakerLot": [
+   {
+    "kind": "name",
+    "why": "Lives in folder 'Workplace' of Model 'Plot_<player>'; the folder is cleared and rebuilt as the Fast Track version on escape.",
+    "evidence": [
+     "src/server/World/Plots.luau:105: self.workplaceFolder = newFolder(model, \"Workplace\")",
+     "src/server/World/Plots.luau:528: self:buildWorkplace(Themes.luxury)"
+    ]
+   },
+   {
+    "kind": "context",
+    "why": "The area folders (Lobby, City_N, AuctionRoom_N, PodiumRoom_N) are tagged 'Area' and moved in/out of Workspace by the client: models must stay inside their area folder.",
+    "evidence": [
+     "src/server/World/Props.luau:212: CollectionService:AddTag(folder, \"Area\")",
+     "src/client/AreaVisibility.luau:100: for _, folder in CollectionService:GetTagged(\"Area\") do"
+    ]
+   }
+  ],
+  "Workplace_Fence": [
+   {
+    "kind": "name",
+    "why": "Lives in folder 'Workplace' of Model 'Plot_<player>'; the folder is cleared and rebuilt as the Fast Track version on escape.",
+    "evidence": [
+     "src/server/World/Plots.luau:105: self.workplaceFolder = newFolder(model, \"Workplace\")",
+     "src/server/World/Plots.luau:528: self:buildWorkplace(Themes.luxury)"
+    ]
+   },
+   {
+    "kind": "context",
+    "why": "The area folders (Lobby, City_N, AuctionRoom_N, PodiumRoom_N) are tagged 'Area' and moved in/out of Workspace by the client: models must stay inside their area folder.",
+    "evidence": [
+     "src/server/World/Props.luau:212: CollectionService:AddTag(folder, \"Area\")",
+     "src/client/AreaVisibility.luau:100: for _, folder in CollectionService:GetTagged(\"Area\") do"
+    ]
+   }
+  ],
+  "Workplace_LampPost": [
+   {
+    "kind": "name",
+    "why": "Lives in folder 'Workplace' of Model 'Plot_<player>'; the folder is cleared and rebuilt as the Fast Track version on escape.",
+    "evidence": [
+     "src/server/World/Plots.luau:105: self.workplaceFolder = newFolder(model, \"Workplace\")",
+     "src/server/World/Plots.luau:528: self:buildWorkplace(Themes.luxury)"
+    ]
+   },
+   {
+    "kind": "context",
+    "why": "The area folders (Lobby, City_N, AuctionRoom_N, PodiumRoom_N) are tagged 'Area' and moved in/out of Workspace by the client: models must stay inside their area folder.",
+    "evidence": [
+     "src/server/World/Props.luau:212: CollectionService:AddTag(folder, \"Area\")",
+     "src/client/AreaVisibility.luau:100: for _, folder in CollectionService:GetTagged(\"Area\") do"
+    ]
+   }
+  ],
+  "Workplace_FlowerBox": [
+   {
+    "kind": "name",
+    "why": "Lives in folder 'Workplace' of Model 'Plot_<player>'; the folder is cleared and rebuilt as the Fast Track version on escape.",
+    "evidence": [
+     "src/server/World/Plots.luau:105: self.workplaceFolder = newFolder(model, \"Workplace\")",
+     "src/server/World/Plots.luau:528: self:buildWorkplace(Themes.luxury)"
+    ]
+   },
+   {
+    "kind": "context",
+    "why": "The area folders (Lobby, City_N, AuctionRoom_N, PodiumRoom_N) are tagged 'Area' and moved in/out of Workspace by the client: models must stay inside their area folder.",
+    "evidence": [
+     "src/server/World/Props.luau:212: CollectionService:AddTag(folder, \"Area\")",
+     "src/client/AreaVisibility.luau:100: for _, folder in CollectionService:GetTagged(\"Area\") do"
+    ]
+   }
+  ],
+  "Workplace_Sandbox": [
+   {
+    "kind": "name",
+    "why": "Lives in folder 'Workplace' of Model 'Plot_<player>'; the folder is cleared and rebuilt as the Fast Track version on escape.",
+    "evidence": [
+     "src/server/World/Plots.luau:105: self.workplaceFolder = newFolder(model, \"Workplace\")",
+     "src/server/World/Plots.luau:528: self:buildWorkplace(Themes.luxury)"
+    ]
+   },
+   {
+    "kind": "context",
+    "why": "The area folders (Lobby, City_N, AuctionRoom_N, PodiumRoom_N) are tagged 'Area' and moved in/out of Workspace by the client: models must stay inside their area folder.",
+    "evidence": [
+     "src/server/World/Props.luau:212: CollectionService:AddTag(folder, \"Area\")",
+     "src/client/AreaVisibility.luau:100: for _, folder in CollectionService:GetTagged(\"Area\") do"
+    ]
+   }
+  ],
+  "Workplace_DebtPad": [
+   {
+    "kind": "name",
+    "why": "Lives in folder 'Workplace' of Model 'Plot_<player>'; the folder is cleared and rebuilt as the Fast Track version on escape.",
+    "evidence": [
+     "src/server/World/Plots.luau:105: self.workplaceFolder = newFolder(model, \"Workplace\")",
+     "src/server/World/Plots.luau:528: self:buildWorkplace(Themes.luxury)"
+    ]
+   },
+   {
+    "kind": "context",
+    "why": "The area folders (Lobby, City_N, AuctionRoom_N, PodiumRoom_N) are tagged 'Area' and moved in/out of Workspace by the client: models must stay inside their area folder.",
+    "evidence": [
+     "src/server/World/Props.luau:212: CollectionService:AddTag(folder, \"Area\")",
+     "src/client/AreaVisibility.luau:100: for _, folder in CollectionService:GetTagged(\"Area\") do"
+    ]
+   }
+  ],
+  "Lobby_RoomBooth": [
+   {
+    "kind": "name",
+    "why": "The glowing platform is a TOUCH TRIGGER: walking onto it joins the room (keep its size and position).",
+    "evidence": [
+     "src/server/Lobby.luau:441: platform.Touched:Connect(function(hit)"
+    ]
+   },
+   {
+    "kind": "context",
+    "why": "The area folders (Lobby, City_N, AuctionRoom_N, PodiumRoom_N) are tagged 'Area' and moved in/out of Workspace by the client: models must stay inside their area folder.",
+    "evidence": [
+     "src/server/World/Props.luau:212: CollectionService:AddTag(folder, \"Area\")",
+     "src/client/AreaVisibility.luau:100: for _, folder in CollectionService:GetTagged(\"Area\") do"
+    ]
+   }
+  ],
+  "Lobby_Spawn": [
+   {
+    "kind": "name",
+    "why": "SpawnLocation: players appear here (class must stay SpawnLocation).",
+    "evidence": [
+     "src/server/Lobby.luau:406: local spawn = Instance.new(\"SpawnLocation\")"
+    ]
+   },
+   {
+    "kind": "context",
+    "why": "The area folders (Lobby, City_N, AuctionRoom_N, PodiumRoom_N) are tagged 'Area' and moved in/out of Workspace by the client: models must stay inside their area folder.",
+    "evidence": [
+     "src/server/World/Props.luau:212: CollectionService:AddTag(folder, \"Area\")",
+     "src/client/AreaVisibility.luau:100: for _, folder in CollectionService:GetTagged(\"Area\") do"
+    ]
+   }
+  ],
+  "Baseplate": [
+   {
+    "kind": "context",
+    "why": "The area folders (Lobby, City_N, AuctionRoom_N, PodiumRoom_N) are tagged 'Area' and moved in/out of Workspace by the client: models must stay inside their area folder.",
+    "evidence": [
+     "src/server/World/Props.luau:212: CollectionService:AddTag(folder, \"Area\")",
+     "src/client/AreaVisibility.luau:100: for _, folder in CollectionService:GetTagged(\"Area\") do"
+    ]
+   },
+   {
+    "kind": "name",
+    "why": "Props.groundY raycasts against Workspace.Baseplate by name to find the ground height.",
+    "evidence": [
+     "src/server/World/Props.luau:44: local baseplate = workspace:FindFirstChild(\"Baseplate\")"
+    ]
+   }
+  ],
+  "Lobby_Floor": [
+   {
+    "kind": "context",
+    "why": "The area folders (Lobby, City_N, AuctionRoom_N, PodiumRoom_N) are tagged 'Area' and moved in/out of Workspace by the client: models must stay inside their area folder.",
+    "evidence": [
+     "src/server/World/Props.luau:212: CollectionService:AddTag(folder, \"Area\")",
+     "src/client/AreaVisibility.luau:100: for _, folder in CollectionService:GetTagged(\"Area\") do"
+    ]
+   }
+  ],
+  "Lobby_Carpet": [
+   {
+    "kind": "context",
+    "why": "The area folders (Lobby, City_N, AuctionRoom_N, PodiumRoom_N) are tagged 'Area' and moved in/out of Workspace by the client: models must stay inside their area folder.",
+    "evidence": [
+     "src/server/World/Props.luau:212: CollectionService:AddTag(folder, \"Area\")",
+     "src/client/AreaVisibility.luau:100: for _, folder in CollectionService:GetTagged(\"Area\") do"
+    ]
+   }
+  ],
+  "Lobby_Walls": [
+   {
+    "kind": "context",
+    "why": "The area folders (Lobby, City_N, AuctionRoom_N, PodiumRoom_N) are tagged 'Area' and moved in/out of Workspace by the client: models must stay inside their area folder.",
+    "evidence": [
+     "src/server/World/Props.luau:212: CollectionService:AddTag(folder, \"Area\")",
+     "src/client/AreaVisibility.luau:100: for _, folder in CollectionService:GetTagged(\"Area\") do"
+    ]
+   },
+   {
+    "kind": "context",
+    "why": "An invisible tall barrier part sits inside the wall (kept as is).",
+    "evidence": [
+     "src/server/Lobby.luau:347: Props.box(folder, base, pos, v(size.X, Config.World.BarrierHeight, size.Z), C.White, { Transparency = 1, CanQuery = fals",
+     "src/server/World/Plaza.luau:45: Props.box(folder, base, pos, v(size.X, world.BarrierHeight, size.Z), C.White, {"
+    ]
+   }
+  ],
+  "Lobby_TitleSign": [
+   {
+    "kind": "context",
+    "why": "The area folders (Lobby, City_N, AuctionRoom_N, PodiumRoom_N) are tagged 'Area' and moved in/out of Workspace by the client: models must stay inside their area folder.",
+    "evidence": [
+     "src/server/World/Props.luau:212: CollectionService:AddTag(folder, \"Area\")",
+     "src/client/AreaVisibility.luau:100: for _, folder in CollectionService:GetTagged(\"Area\") do"
+    ]
+   }
+  ],
+  "Lobby_Pillar": [
+   {
+    "kind": "context",
+    "why": "The area folders (Lobby, City_N, AuctionRoom_N, PodiumRoom_N) are tagged 'Area' and moved in/out of Workspace by the client: models must stay inside their area folder.",
+    "evidence": [
+     "src/server/World/Props.luau:212: CollectionService:AddTag(folder, \"Area\")",
+     "src/client/AreaVisibility.luau:100: for _, folder in CollectionService:GetTagged(\"Area\") do"
+    ]
+   }
+  ],
+  "Lobby_Window": [
+   {
+    "kind": "context",
+    "why": "The area folders (Lobby, City_N, AuctionRoom_N, PodiumRoom_N) are tagged 'Area' and moved in/out of Workspace by the client: models must stay inside their area folder.",
+    "evidence": [
+     "src/server/World/Props.luau:212: CollectionService:AddTag(folder, \"Area\")",
+     "src/client/AreaVisibility.luau:100: for _, folder in CollectionService:GetTagged(\"Area\") do"
+    ]
+   }
+  ],
+  "Lobby_Bench": [
+   {
+    "kind": "context",
+    "why": "The area folders (Lobby, City_N, AuctionRoom_N, PodiumRoom_N) are tagged 'Area' and moved in/out of Workspace by the client: models must stay inside their area folder.",
+    "evidence": [
+     "src/server/World/Props.luau:212: CollectionService:AddTag(folder, \"Area\")",
+     "src/client/AreaVisibility.luau:100: for _, folder in CollectionService:GetTagged(\"Area\") do"
+    ]
+   }
+  ],
+  "Lobby_PottedPalm": [
+   {
+    "kind": "context",
+    "why": "The area folders (Lobby, City_N, AuctionRoom_N, PodiumRoom_N) are tagged 'Area' and moved in/out of Workspace by the client: models must stay inside their area folder.",
+    "evidence": [
+     "src/server/World/Props.luau:212: CollectionService:AddTag(folder, \"Area\")",
+     "src/client/AreaVisibility.luau:100: for _, folder in CollectionService:GetTagged(\"Area\") do"
+    ]
+   }
+  ],
+  "Lobby_Trophy": [
+   {
+    "kind": "context",
+    "why": "The area folders (Lobby, City_N, AuctionRoom_N, PodiumRoom_N) are tagged 'Area' and moved in/out of Workspace by the client: models must stay inside their area folder.",
+    "evidence": [
+     "src/server/World/Props.luau:212: CollectionService:AddTag(folder, \"Area\")",
+     "src/client/AreaVisibility.luau:100: for _, folder in CollectionService:GetTagged(\"Area\") do"
+    ]
+   }
+  ],
+  "City_Ground": [
+   {
+    "kind": "context",
+    "why": "The area folders (Lobby, City_N, AuctionRoom_N, PodiumRoom_N) are tagged 'Area' and moved in/out of Workspace by the client: models must stay inside their area folder.",
+    "evidence": [
+     "src/server/World/Props.luau:212: CollectionService:AddTag(folder, \"Area\")",
+     "src/client/AreaVisibility.luau:100: for _, folder in CollectionService:GetTagged(\"Area\") do"
+    ]
+   }
+  ],
+  "City_Wall": [
+   {
+    "kind": "context",
+    "why": "The area folders (Lobby, City_N, AuctionRoom_N, PodiumRoom_N) are tagged 'Area' and moved in/out of Workspace by the client: models must stay inside their area folder.",
+    "evidence": [
+     "src/server/World/Props.luau:212: CollectionService:AddTag(folder, \"Area\")",
+     "src/client/AreaVisibility.luau:100: for _, folder in CollectionService:GetTagged(\"Area\") do"
+    ]
+   },
+   {
+    "kind": "context",
+    "why": "An invisible tall barrier part sits inside the wall (kept as is).",
+    "evidence": [
+     "src/server/Lobby.luau:347: Props.box(folder, base, pos, v(size.X, Config.World.BarrierHeight, size.Z), C.White, { Transparency = 1, CanQuery = fals",
+     "src/server/World/Plaza.luau:45: Props.box(folder, base, pos, v(size.X, world.BarrierHeight, size.Z), C.White, {"
+    ]
+   }
+  ],
+  "Plaza_Disc": [
+   {
+    "kind": "context",
+    "why": "The area folders (Lobby, City_N, AuctionRoom_N, PodiumRoom_N) are tagged 'Area' and moved in/out of Workspace by the client: models must stay inside their area folder.",
+    "evidence": [
+     "src/server/World/Props.luau:212: CollectionService:AddTag(folder, \"Area\")",
+     "src/client/AreaVisibility.luau:100: for _, folder in CollectionService:GetTagged(\"Area\") do"
+    ]
+   }
+  ],
+  "Plaza_Path": [
+   {
+    "kind": "context",
+    "why": "The area folders (Lobby, City_N, AuctionRoom_N, PodiumRoom_N) are tagged 'Area' and moved in/out of Workspace by the client: models must stay inside their area folder.",
+    "evidence": [
+     "src/server/World/Props.luau:212: CollectionService:AddTag(folder, \"Area\")",
+     "src/client/AreaVisibility.luau:100: for _, folder in CollectionService:GetTagged(\"Area\") do"
+    ]
+   }
+  ],
+  "Tree": [
+   {
+    "kind": "context",
+    "why": "The area folders (Lobby, City_N, AuctionRoom_N, PodiumRoom_N) are tagged 'Area' and moved in/out of Workspace by the client: models must stay inside their area folder.",
+    "evidence": [
+     "src/server/World/Props.luau:212: CollectionService:AddTag(folder, \"Area\")",
+     "src/client/AreaVisibility.luau:100: for _, folder in CollectionService:GetTagged(\"Area\") do"
+    ]
+   }
+  ],
+  "Plaza_Fountain": [
+   {
+    "kind": "context",
+    "why": "The area folders (Lobby, City_N, AuctionRoom_N, PodiumRoom_N) are tagged 'Area' and moved in/out of Workspace by the client: models must stay inside their area folder.",
+    "evidence": [
+     "src/server/World/Props.luau:212: CollectionService:AddTag(folder, \"Area\")",
+     "src/client/AreaVisibility.luau:100: for _, folder in CollectionService:GetTagged(\"Area\") do"
+    ]
+   }
+  ],
+  "AuctionRoom_Shell": [
+   {
+    "kind": "context",
+    "why": "The area folders (Lobby, City_N, AuctionRoom_N, PodiumRoom_N) are tagged 'Area' and moved in/out of Workspace by the client: models must stay inside their area folder.",
+    "evidence": [
+     "src/server/World/Props.luau:212: CollectionService:AddTag(folder, \"Area\")",
+     "src/client/AreaVisibility.luau:100: for _, folder in CollectionService:GetTagged(\"Area\") do"
+    ]
+   }
+  ],
+  "AuctionRoom_Lamp": [
+   {
+    "kind": "context",
+    "why": "The area folders (Lobby, City_N, AuctionRoom_N, PodiumRoom_N) are tagged 'Area' and moved in/out of Workspace by the client: models must stay inside their area folder.",
+    "evidence": [
+     "src/server/World/Props.luau:212: CollectionService:AddTag(folder, \"Area\")",
+     "src/client/AreaVisibility.luau:100: for _, folder in CollectionService:GetTagged(\"Area\") do"
+    ]
+   }
+  ],
+  "AuctionRoom_Stage": [
+   {
+    "kind": "context",
+    "why": "The area folders (Lobby, City_N, AuctionRoom_N, PodiumRoom_N) are tagged 'Area' and moved in/out of Workspace by the client: models must stay inside their area folder.",
+    "evidence": [
+     "src/server/World/Props.luau:212: CollectionService:AddTag(folder, \"Area\")",
+     "src/client/AreaVisibility.luau:100: for _, folder in CollectionService:GetTagged(\"Area\") do"
+    ]
+   },
+   {
+    "kind": "geometry",
+    "why": "The item for sale is put on the stage at height 3: the stage top must stay at 3 studs.",
+    "evidence": [
+     "src/server/World/AuctionRoom.luau:90: Props.moneyMaker(self.itemFolder, self.base * CFrame.new(0, 3, STAGE_Z) * FACE_PLAYERS, item.name, (item :: any).value)"
+    ]
+   }
+  ],
+  "AuctionRoom_TitleSign": [
+   {
+    "kind": "context",
+    "why": "The area folders (Lobby, City_N, AuctionRoom_N, PodiumRoom_N) are tagged 'Area' and moved in/out of Workspace by the client: models must stay inside their area folder.",
+    "evidence": [
+     "src/server/World/Props.luau:212: CollectionService:AddTag(folder, \"Area\")",
+     "src/client/AreaVisibility.luau:100: for _, folder in CollectionService:GetTagged(\"Area\") do"
+    ]
+   }
+  ],
+  "AuctionRoom_InfoBoard": [
+   {
+    "kind": "context",
+    "why": "The area folders (Lobby, City_N, AuctionRoom_N, PodiumRoom_N) are tagged 'Area' and moved in/out of Workspace by the client: models must stay inside their area folder.",
+    "evidence": [
+     "src/server/World/Props.luau:212: CollectionService:AddTag(folder, \"Area\")",
+     "src/client/AreaVisibility.luau:100: for _, folder in CollectionService:GetTagged(\"Area\") do"
+    ]
+   },
+   {
+    "kind": "name",
+    "why": "Its SurfaceGui TextLabel is found and its text changes during the auction.",
+    "evidence": [
+     "src/server/World/AuctionRoom.luau:75: self.infoLabel = (info:FindFirstChildOfClass(\"SurfaceGui\") :: SurfaceGui):FindFirstChildOfClass(\"TextLabel\") :: TextLabe"
+    ]
+   }
+  ],
+  "AuctionRoom_BidderDesk": [
+   {
+    "kind": "context",
+    "why": "The area folders (Lobby, City_N, AuctionRoom_N, PodiumRoom_N) are tagged 'Area' and moved in/out of Workspace by the client: models must stay inside their area folder.",
+    "evidence": [
+     "src/server/World/Props.luau:212: CollectionService:AddTag(folder, \"Area\")",
+     "src/client/AreaVisibility.luau:100: for _, folder in CollectionService:GetTagged(\"Area\") do"
+    ]
+   },
+   {
+    "kind": "name",
+    "why": "Stored in self.podiums: its Color and Material change (gold Neon) for the top bidder.",
+    "evidence": [
+     "src/server/World/AuctionRoom.luau:80: self.podiums[index] = Props.box(folder, BASE, v(podiumX(index), 0, PODIUM_Z - 2.5), v(4, PODIUM_HEIGHT, 1.5), Color3.fro",
+     "src/server/World/AuctionRoom.luau:106: podium.Material = if isTop then Enum.Material.Neon else Enum.Material.WoodPlanks"
+    ]
+   }
+  ],
+  "AuctionRoom_BidderPad": [
+   {
+    "kind": "context",
+    "why": "The area folders (Lobby, City_N, AuctionRoom_N, PodiumRoom_N) are tagged 'Area' and moved in/out of Workspace by the client: models must stay inside their area folder.",
+    "evidence": [
+     "src/server/World/Props.luau:212: CollectionService:AddTag(folder, \"Area\")",
+     "src/client/AreaVisibility.luau:100: for _, folder in CollectionService:GetTagged(\"Area\") do"
+    ]
+   }
+  ],
+  "PodiumRoom_Shell": [
+   {
+    "kind": "context",
+    "why": "The area folders (Lobby, City_N, AuctionRoom_N, PodiumRoom_N) are tagged 'Area' and moved in/out of Workspace by the client: models must stay inside their area folder.",
+    "evidence": [
+     "src/server/World/Props.luau:212: CollectionService:AddTag(folder, \"Area\")",
+     "src/client/AreaVisibility.luau:100: for _, folder in CollectionService:GetTagged(\"Area\") do"
+    ]
+   }
+  ],
+  "PodiumRoom_LightStrip": [
+   {
+    "kind": "context",
+    "why": "The area folders (Lobby, City_N, AuctionRoom_N, PodiumRoom_N) are tagged 'Area' and moved in/out of Workspace by the client: models must stay inside their area folder.",
+    "evidence": [
+     "src/server/World/Props.luau:212: CollectionService:AddTag(folder, \"Area\")",
+     "src/client/AreaVisibility.luau:100: for _, folder in CollectionService:GetTagged(\"Area\") do"
+    ]
+   }
+  ],
+  "PodiumRoom_TitleSign": [
+   {
+    "kind": "context",
+    "why": "The area folders (Lobby, City_N, AuctionRoom_N, PodiumRoom_N) are tagged 'Area' and moved in/out of Workspace by the client: models must stay inside their area folder.",
+    "evidence": [
+     "src/server/World/Props.luau:212: CollectionService:AddTag(folder, \"Area\")",
+     "src/client/AreaVisibility.luau:100: for _, folder in CollectionService:GetTagged(\"Area\") do"
+    ]
+   },
+   {
+    "kind": "name",
+    "why": "Its SurfaceGui TextLabel shows 'X WINS!' / 'FINAL RESULTS'.",
+    "evidence": [
+     "src/server/World/PodiumRoom.luau:74: self.title = labelOf(title)"
+    ]
+   }
+  ],
+  "PodiumRoom_Block": [
+   {
+    "kind": "context",
+    "why": "The area folders (Lobby, City_N, AuctionRoom_N, PodiumRoom_N) are tagged 'Area' and moved in/out of Workspace by the client: models must stay inside their area folder.",
+    "evidence": [
+     "src/server/World/Props.luau:212: CollectionService:AddTag(folder, \"Area\")",
+     "src/client/AreaVisibility.luau:100: for _, folder in CollectionService:GetTagged(\"Area\") do"
+    ]
+   },
+   {
+    "kind": "name",
+    "why": "Front sign text is set per rank; winners stand on top (height + 3): block heights must stay.",
+    "evidence": [
+     "src/server/World/PodiumRoom.luau:86: self.blockLabels[rank] = label",
+     "src/server/World/PodiumRoom.luau:199: local spot = self.base * CFrame.new(block.x, block.height + 3, PODIUM_Z)"
+    ]
+   }
+  ],
+  "PodiumRoom_Board": [
+   {
+    "kind": "context",
+    "why": "The area folders (Lobby, City_N, AuctionRoom_N, PodiumRoom_N) are tagged 'Area' and moved in/out of Workspace by the client: models must stay inside their area folder.",
+    "evidence": [
+     "src/server/World/Props.luau:212: CollectionService:AddTag(folder, \"Area\")",
+     "src/client/AreaVisibility.luau:100: for _, folder in CollectionService:GetTagged(\"Area\") do"
+    ]
+   },
+   {
+    "kind": "name",
+    "why": "Shown/hidden with Transparency and filled with a SurfaceGui list of players.",
+    "evidence": [
+     "src/server/World/PodiumRoom.luau:158: self.board.Transparency = if #standings > 3 then 0 else 1"
+    ]
+   }
+  ]
+ },
+ "name_search": {
+  "Apartment": [
+   "src/server/World/Props.luau:412",
+   "src/shared/Config.luau:188"
+  ],
+  "Apartment Building": [
+   "src/server/World/Props.luau:479",
+   "src/shared/Config.luau:213"
+  ],
+  "AuctionRoom_BidderDesk": [],
+  "AuctionRoom_BidderPad": [],
+  "AuctionRoom_InfoBoard": [],
+  "AuctionRoom_Lamp": [],
+  "AuctionRoom_Shell": [],
+  "AuctionRoom_Stage": [],
+  "AuctionRoom_TitleSign": [],
+  "Bank Loan": [
+   "src/server/PlayerMoney.luau:16",
+   "src/server/PlayerMoney.luau:30",
+   "src/server/PlayerMoney.luau:105",
+   "src/server/World/Props.luau:313"
+  ],
+  "Baseplate": [
+   "src/server/World/Props.luau:44"
+  ],
+  "BeachVilla": [
+   "src/shared/Models/BeachVillaBuilder.luau:29"
+  ],
+  "Bowling Alley": [
+   "src/server/World/Props.luau:455",
+   "src/shared/Config.luau:206"
+  ],
+  "Car Loan": [
+   "src/server/World/Props.luau:266",
+   "src/shared/Config.luau:121",
+   "src/shared/Config.luau:142",
+   "src/shared/Config.luau:149"
+  ],
+  "Car Wash": [
+   "src/server/World/Props.luau:416",
+   "src/shared/Config.luau:189"
+  ],
+  "City_Ground": [],
+  "City_Wall": [],
+  "Clinic_Cabinet": [],
+  "Clinic_Chair": [],
+  "Clinic_WallScreen": [],
+  "Coffee Shop": [
+   "src/server/World/Props.luau:451",
+   "src/shared/Config.luau:205"
+  ],
+  "Collection": [
+   "src/server/World/Plots.luau:113"
+  ],
+  "Collection_Showcase": [],
+  "Computer": [],
+  "Credit Card": [
+   "src/server/World/Props.luau:251",
+   "src/shared/Config.luau:114",
+   "src/shared/Config.luau:163"
+  ],
+  "Debts": [
+   "src/client/Tutorial.luau:30",
+   "src/client/Tutorial.luau:59",
+   "src/server/World/Plots.luau:109"
+  ],
+  "Decor": [
+   "src/server/Lobby.luau:381"
+  ],
+  "Depot_Bus": [],
+  "Dream": [
+   "src/server/World/Plots.luau:112"
+  ],
+  "Dream_Chains": [],
+  "Dream_Pedestal": [],
+  "FastTrack_Gate": [],
+  "Food Truck": [
+   "src/server/World/Props.luau:425",
+   "src/shared/Config.luau:194"
+  ],
+  "ForSale": [
+   "src/client/Tutorial.luau:30",
+   "src/client/Tutorial.luau:57",
+   "src/server/World/Plots.luau:111"
+  ],
+  "Game Studio": [
+   "src/server/World/Props.luau:464",
+   "src/shared/Config.luau:208"
+  ],
+  "Garage_CarLift": [],
+  "Garage_TireStack": [],
+  "Garage_ToolBoard": [],
+  "Gold Bar": [
+   "src/server/World/Props.luau:555",
+   "src/shared/Config.luau:200"
+  ],
+  "Gold Coin": [
+   "src/server/World/Props.luau:547",
+   "src/shared/Config.luau:191"
+  ],
+  "Gold Treasure Chest": [
+   "src/server/World/Props.luau:566",
+   "src/shared/Config.luau:215"
+  ],
+  "HospitalBed": [],
+  "Hospital_WallCross": [],
+  "Hotel": [
+   "src/server/World/Props.luau:460",
+   "src/shared/Config.luau:207"
+  ],
+  "House to Rent": [
+   "src/server/World/Props.luau:441",
+   "src/shared/Config.luau:197"
+  ],
+  "Item": [
+   "src/server/World/AuctionRoom.luau:66"
+  ],
+  "Kid": [
+   "src/client/WorldFx.luau:3",
+   "src/client/WorldFx.luau:156",
+   "src/server/World/Props.luau:219",
+   "src/server/World/Props.luau:222",
+   "src/server/World/Props.luau:230"
+  ],
+  "Kids": [
+   "src/server/World/Plots.luau:108"
+  ],
+  "Lemonade Stand": [
+   "src/server/World/Props.luau:399",
+   "src/shared/Config.luau:186"
+  ],
+  "Lid": [
+   "src/server/World/Props.luau:572"
+  ],
+  "Lobby": [
+   "src/client/Sounds.luau:56",
+   "src/client/WorldFx.luau:22",
+   "src/client/init.client.luau:40",
+   "src/client/init.client.luau:169",
+   "src/client/init.client.luau:289",
+   "src/server/Lobby.luau:67",
+   "src/server/Lobby.luau:175",
+   "src/server/Lobby.luau:318",
+   "src/server/Lobby.luau:323",
+   "src/server/ModelPreview.server.luau:93"
+  ],
+  "Lobby_Bench": [],
+  "Lobby_Carpet": [],
+  "Lobby_Floor": [],
+  "Lobby_Pillar": [],
+  "Lobby_PottedPalm": [],
+  "Lobby_RoomBooth": [],
+  "Lobby_Spawn": [],
+  "Lobby_TitleSign": [],
+  "Lobby_Trophy": [],
+  "Lobby_Walls": [],
+  "Lobby_Window": [],
+  "Lux_Chandelier": [],
+  "Lux_GlassTable": [],
+  "Lux_Piano": [],
+  "Lux_Safe": [],
+  "Lux_Sofa": [],
+  "Mini Golf": [
+   "src/server/World/Props.luau:487",
+   "src/shared/Config.luau:196"
+  ],
+  "MoneyMakers": [
+   "src/server/Match.luau:362",
+   "src/server/Match.luau:771",
+   "src/server/Match.luau:1116",
+   "src/server/Match.luau:1123",
+   "src/server/Match.luau:1157",
+   "src/server/World/Plots.luau:110"
+  ],
+  "Office_Screen": [],
+  "Other Debt": [],
+  "Pizza Restaurant": [
+   "src/server/World/Props.luau:483",
+   "src/shared/Config.luau:198"
+  ],
+  "Pizzeria_Counter": [],
+  "Pizzeria_Oven": [],
+  "Plaza": [
+   "src/server/World/Plaza.luau:26"
+  ],
+  "Plaza_Disc": [],
+  "Plaza_Fountain": [],
+  "Plaza_Path": [],
+  "Plots": [
+   "src/server/Match.luau:107"
+  ],
+  "PodiumRoom_Block": [],
+  "PodiumRoom_Board": [],
+  "PodiumRoom_LightStrip": [],
+  "PodiumRoom_Shell": [],
+  "PodiumRoom_TitleSign": [],
+  "PokeBlox Card": [
+   "src/server/World/Props.luau:534",
+   "src/shared/Config.luau:190"
+  ],
+  "Police_Car": [],
+  "PrivateIsland": [
+   "src/shared/Models/PrivateIslandBuilder.luau:31"
+  ],
+  "PrivateJet": [
+   "src/shared/Models/PrivateJetBuilder.luau:27"
+  ],
+  "Rare PokeBlox Card": [
+   "src/server/World/Props.luau:538",
+   "src/shared/Config.luau:199"
+  ],
+  "Remotes": [
+   "src/client/init.client.luau:63",
+   "src/server/Lobby.luau:464"
+  ],
+  "School Loan": [
+   "src/server/World/Props.luau:284",
+   "src/shared/Config.luau:128",
+   "src/shared/Config.luau:135",
+   "src/shared/Config.luau:156"
+  ],
+  "School_Blackboard": [],
+  "School_StudentDesk": [],
+  "School_TeacherDesk": [],
+  "Shiny PokeBlox Card": [
+   "src/server/World/Props.luau:542",
+   "src/shared/Config.luau:209"
+  ],
+  "Shopping Mall": [
+   "src/server/World/Props.luau:468",
+   "src/shared/Config.luau:212"
+  ],
+  "Supercar": [
+   "src/server/ModelPreview.server.luau:33",
+   "src/server/World/Props.luau:605",
+   "src/shared/Config.luau:169",
+   "src/shared/Models/DreamModels.luau:4",
+   "src/shared/Models/SupercarBuilder.luau:30"
+  ],
+  "Theme Park": [
+   "src/server/World/Props.luau:472",
+   "src/shared/Config.luau:214"
+  ],
+  "Toy Shop": [
+   "src/server/World/Props.luau:437",
+   "src/shared/Config.luau:195"
+  ],
+  "Tree": [],
+  "Unknown Maker": [],
+  "Vending Machine": [
+   "src/server/World/Props.luau:407",
+   "src/shared/Config.luau:187"
+  ],
+  "Workplace": [
+   "src/server/World/Plots.luau:105"
+  ],
+  "Workplace_Building": [],
+  "Workplace_DebtPad": [],
+  "Workplace_Fence": [],
+  "Workplace_FlowerBox": [],
+  "Workplace_LampPost": [],
+  "Workplace_MakerLot": [],
+  "Workplace_Sandbox": [],
+  "Workplace_Yard": [],
+  "Yacht": [
+   "src/server/ModelPreview.server.luau:32",
+   "src/shared/Config.luau:170",
+   "src/shared/Models/DreamModels.luau:5",
+   "src/shared/Models/YachtBuilder.luau:38"
+  ]
+ },
+ "patterns_not_found": []
+}

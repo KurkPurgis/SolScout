@@ -1,0 +1,57 @@
+{
+ "Workplace_Building_PIZZERIA": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   0.0,
+   -0.0,
+   0.04,
+   -0.0
+  ],
+  "bbox_max_dev": 0.04,
+  "bbox_new": [
+   [
+    -24.8,
+    -1.0,
+    2.5
+   ],
+   [
+    24.8,
+    18.44,
+    24.8
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -24.8,
+    -1.0,
+    2.5
+   ],
+   [
+    24.8,
+    18.4,
+    24.8
+   ]
+  ],
+  "budget": 6000,
+  "built_at": "2026-10-04 20:52",
+  "category": "buildings",
+  "export_name": "Workplace_Building_PIZZERIA",
+  "fbx": "export/buildings/Workplace_Building_PIZZERIA.fbx",
+  "meshes": [
+   "Workplace_Building_PIZZERIA",
+   "Workplace_Building_PIZZERIA_Glow_GLOW_WARM"
+  ],
+  "renders": [
+   "renders/objects/Workplace_Building_PIZZERIA/Workplace_Building_PIZZERIA_front34.png",
+   "renders/objects/Workplace_Building_PIZZERIA/Workplace_Building_PIZZERIA_back34.png",
+   "renders/objects/Workplace_Building_PIZZERIA/Workplace_Building_PIZZERIA_eye.png"
+  ],
+  "round": 0,
+  "status": "built",
+  "triangles": 5324,
+  "tris_ok": true,
+  "warnings": []
+ }
+}

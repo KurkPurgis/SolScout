@@ -1,0 +1,491 @@
+{
+ "columns": 8,
+ "rows": 4,
+ "swatch_px": 32,
+ "size_px": [
+  256,
+  128
+ ],
+ "colors": {
+  "CREAM": {
+   "index": 0,
+   "rgb": [
+    250,
+    240,
+    220
+   ],
+   "hex": "#FAF0DC",
+   "roughness": 0.4,
+   "uv": [
+    0.0625,
+    0.875
+   ],
+   "note": "warm white: walls, marble, sofas (icon PAPER/WHITE, warmer for the world)"
+  },
+  "GOLD_LIGHT": {
+   "index": 1,
+   "rgb": [
+    255,
+    214,
+    92
+   ],
+   "hex": "#FFD65C",
+   "roughness": 0.3,
+   "uv": [
+    0.1875,
+    0.875
+   ],
+   "note": "icon GOLD_LIGHT: highlights, school walls, lamps' casing"
+  },
+  "GOLD": {
+   "index": 2,
+   "rgb": [
+    255,
+    182,
+    34
+   ],
+   "hex": "#FFB622",
+   "roughness": 0.25,
+   "uv": [
+    0.3125,
+    0.875
+   ],
+   "note": "icon GOLD: money, trophies, gold trim"
+  },
+  "ORANGE": {
+   "index": 3,
+   "rgb": [
+    244,
+    136,
+    20
+   ],
+   "hex": "#F48814",
+   "roughness": 0.3,
+   "uv": [
+    0.4375,
+    0.875
+   ],
+   "note": "icon GOLD_ORANGE/FACTORY: garage, padlock, cones"
+  },
+  "RED": {
+   "index": 4,
+   "rgb": [
+    236,
+    66,
+    78
+   ],
+   "hex": "#EC424E",
+   "roughness": 0.3,
+   "uv": [
+    0.5625,
+    0.875
+   ],
+   "note": "icon RED: roofs, cars, awnings"
+  },
+  "BRICK": {
+   "index": 5,
+   "rgb": [
+    186,
+    40,
+    48
+   ],
+   "hex": "#BA2830",
+   "roughness": 0.35,
+   "uv": [
+    0.6875,
+    0.875
+   ],
+   "note": "icon SIGN_RED: pizzeria walls, deep red details"
+  },
+  "PINK": {
+   "index": 6,
+   "rgb": [
+    255,
+    120,
+    170
+   ],
+   "hex": "#FF78AA",
+   "roughness": 0.3,
+   "uv": [
+    0.8125,
+    0.875
+   ],
+   "note": "flowers, toy shop, kids' shirts"
+  },
+  "SKIN": {
+   "index": 7,
+   "rgb": [
+    245,
+    200,
+    160
+   ],
+   "hex": "#F5C8A0",
+   "roughness": 0.45,
+   "uv": [
+    0.9375,
+    0.875
+   ],
+   "note": "kids' faces and hands"
+  },
+  "WHITE": {
+   "index": 8,
+   "rgb": [
+    234,
+    238,
+    248
+   ],
+   "hex": "#EAEEF8",
+   "roughness": 0.3,
+   "uv": [
+    0.0625,
+    0.625
+   ],
+   "note": "icon WHITE (cool off-white, never pure white): trims, fences, hospital"
+  },
+  "SKY": {
+   "index": 9,
+   "rgb": [
+    110,
+    190,
+    250
+   ],
+   "hex": "#6EBEFA",
+   "roughness": 0.25,
+   "uv": [
+    0.1875,
+    0.625
+   ],
+   "note": "icon SKY: windows, glass panes, water details"
+  },
+  "BLUE": {
+   "index": 10,
+   "rgb": [
+    44,
+    116,
+    222
+   ],
+   "hex": "#2C74DE",
+   "roughness": 0.3,
+   "uv": [
+    0.3125,
+    0.625
+   ],
+   "note": "icon BOOK_BLUE/CARD_BLUE: bus depot, office, signs"
+  },
+  "NAVY": {
+   "index": 11,
+   "rgb": [
+    34,
+    52,
+    120
+   ],
+   "hex": "#223478",
+   "roughness": 0.3,
+   "uv": [
+    0.4375,
+    0.625
+   ],
+   "note": "icon NAVY: police, lobby walls, yacht hull"
+  },
+  "TEAL": {
+   "index": 12,
+   "rgb": [
+    40,
+    186,
+    176
+   ],
+   "hex": "#28BAB0",
+   "roughness": 0.3,
+   "uv": [
+    0.5625,
+    0.625
+   ],
+   "note": "clinic walls, accents"
+  },
+  "PURPLE": {
+   "index": 13,
+   "rgb": [
+    146,
+    84,
+    226
+   ],
+   "hex": "#9254E2",
+   "roughness": 0.3,
+   "uv": [
+    0.6875,
+    0.625
+   ],
+   "note": "game studio, epic cards, podium room"
+  },
+  "WINDOW": {
+   "index": 14,
+   "rgb": [
+    160,
+    214,
+    250
+   ],
+   "hex": "#A0D6FA",
+   "roughness": 0.15,
+   "uv": [
+    0.8125,
+    0.625
+   ],
+   "note": "icon WINDOW_LIGHT: shiny window panes"
+  },
+  "STEEL": {
+   "index": 15,
+   "rgb": [
+    128,
+    130,
+    154
+   ],
+   "hex": "#80829A",
+   "roughness": 0.3,
+   "uv": [
+    0.9375,
+    0.625
+   ],
+   "note": "icon STEEL/SILVER: metal, lamp posts, office walls"
+  },
+  "LEAF": {
+   "index": 16,
+   "rgb": [
+    52,
+    170,
+    74
+   ],
+   "hex": "#34AA4A",
+   "roughness": 0.45,
+   "uv": [
+    0.0625,
+    0.375
+   ],
+   "note": "icon LEAF_GREEN: tree crowns, palm leaves"
+  },
+  "GREEN": {
+   "index": 17,
+   "rgb": [
+    88,
+    208,
+    96
+   ],
+   "hex": "#58D060",
+   "roughness": 0.3,
+   "uv": [
+    0.1875,
+    0.375
+   ],
+   "note": "icon GREEN: bright accents, pizzeria awning, money"
+  },
+  "GRASS": {
+   "index": 18,
+   "rgb": [
+    104,
+    186,
+    84
+   ],
+   "hex": "#68BA54",
+   "roughness": 0.8,
+   "uv": [
+    0.3125,
+    0.375
+   ],
+   "note": "world only: the ground (matte so it never shines)"
+  },
+  "GREEN_DARK": {
+   "index": 19,
+   "rgb": [
+    38,
+    132,
+    64
+   ],
+   "hex": "#268440",
+   "roughness": 0.35,
+   "uv": [
+    0.4375,
+    0.375
+   ],
+   "note": "icon GREEN_DARK: school accent, blackboard frame"
+  },
+  "SAND": {
+   "index": 20,
+   "rgb": [
+    236,
+    200,
+    128
+   ],
+   "hex": "#ECC880",
+   "roughness": 0.75,
+   "uv": [
+    0.5625,
+    0.375
+   ],
+   "note": "icon SAND (lighter): sandbox, lots, beach"
+  },
+  "TAN": {
+   "index": 21,
+   "rgb": [
+    214,
+    150,
+    80
+   ],
+   "hex": "#D69650",
+   "roughness": 0.45,
+   "uv": [
+    0.6875,
+    0.375
+   ],
+   "note": "icon CRUST: light wood, cardboard, desks"
+  },
+  "WOOD": {
+   "index": 22,
+   "rgb": [
+    170,
+    98,
+    44
+   ],
+   "hex": "#AA622C",
+   "roughness": 0.45,
+   "uv": [
+    0.8125,
+    0.375
+   ],
+   "note": "icon WOOD: furniture, chests, trunks"
+  },
+  "WOOD_DARK": {
+   "index": 23,
+   "rgb": [
+    112,
+    60,
+    26
+   ],
+   "hex": "#703C1A",
+   "roughness": 0.5,
+   "uv": [
+    0.9375,
+    0.375
+   ],
+   "note": "icon WOOD_DARK: trunks, dark wood"
+  },
+  "STONE": {
+   "index": 24,
+   "rgb": [
+    226,
+    218,
+    200
+   ],
+   "hex": "#E2DAC8",
+   "roughness": 0.7,
+   "uv": [
+    0.0625,
+    0.125
+   ],
+   "note": "world only: plaza, paths, yard"
+  },
+  "STONE_DARK": {
+   "index": 25,
+   "rgb": [
+    176,
+    166,
+    150
+   ],
+   "hex": "#B0A696",
+   "roughness": 0.7,
+   "uv": [
+    0.1875,
+    0.125
+   ],
+   "note": "world only: city wall, steps, pads"
+  },
+  "SLATE": {
+   "index": 26,
+   "rgb": [
+    104,
+    108,
+    132
+   ],
+   "hex": "#686C84",
+   "roughness": 0.5,
+   "uv": [
+    0.3125,
+    0.125
+   ],
+   "note": "icon ROOF_GREY: dark grey roofs, debt pad, bank"
+  },
+  "CHARCOAL": {
+   "index": 27,
+   "rgb": [
+    58,
+    52,
+    76
+   ],
+   "hex": "#3A344C",
+   "roughness": 0.35,
+   "uv": [
+    0.4375,
+    0.125
+   ],
+   "note": "icon TYRE/DARK: tires, openings, piano, screens off"
+  },
+  "INK": {
+   "index": 28,
+   "rgb": [
+    40,
+    26,
+    58
+   ],
+   "hex": "#281A3A",
+   "roughness": 0.4,
+   "uv": [
+    0.5625,
+    0.125
+   ],
+   "note": "icon OUTLINE color: tiny dark details and the optional outline"
+  },
+  "WATER": {
+   "index": 29,
+   "rgb": [
+    60,
+    160,
+    240
+   ],
+   "hex": "#3CA0F0",
+   "roughness": 0.1,
+   "uv": [
+    0.6875,
+    0.125
+   ],
+   "note": "icon WATER: fountain, pools, sea"
+  },
+  "GLOW_WARM": {
+   "index": 30,
+   "rgb": [
+    255,
+    236,
+    160
+   ],
+   "hex": "#FFECA0",
+   "roughness": 0.5,
+   "uv": [
+    0.8125,
+    0.125
+   ],
+   "note": "Neon only: lamps, lit windows (MeshPart.Color with Material Neon)"
+  },
+  "GLOW_COOL": {
+   "index": 31,
+   "rgb": [
+    130,
+    230,
+    255
+   ],
+   "hex": "#82E6FF",
+   "roughness": 0.5,
+   "uv": [
+    0.9375,
+    0.125
+   ],
+   "note": "Neon only: screens, portals (MeshPart.Color with Material Neon)"
+  }
+ }
+}
