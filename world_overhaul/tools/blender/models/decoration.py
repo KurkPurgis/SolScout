@@ -97,8 +97,8 @@ def school_blackboard(m):
     parts.plus_sign(m, (3.6, 3.5, -0.2), 1.3, 0.3, "WHITE", plane="XY")
     for y in (3.15, 3.65):
         m.box((1.3, 0.3, 0.3), (-3.2, y, -0.2), "WHITE", bevel=None, bottom=True)
-    two = [(5.4, 4.4), (6.7, 4.4), (6.7, 4.1), (5.85, 3.1), (6.7, 3.1), (6.7, 2.6), (5.4, 2.6), (5.4, 2.95),
-           (6.2, 4.05), (5.4, 4.05)]
+    two = [(5.4, 4.4), (6.7, 4.4), (6.7, 3.75), (5.95, 3.0), (6.7, 3.0), (6.7, 2.6), (5.4, 2.6), (5.4, 2.95),
+           (6.3, 3.85), (6.3, 4.05), (5.4, 4.05)]  # a blocky "2" (top bar, hook, diagonal, bottom bar)
     m.prism([(-x, y) for x, y in two], 0.3, (0, 0, -0.2), "WHITE", plane="XY", bevel=None)
 
 

@@ -97,3 +97,8 @@ Workplace_Yard|done|Fast Track yard: cream marble with a red carpet and gold edg
 Workplace_Yard_v2|done|workplace yard: warm grey slab with a tiled path to the door
 Workplace_MakerLot|done|sand lot with a gold coin marker
 Workplace_DebtPad|done|slate pad with a lighter rim
+Plaza_Fountain|done|round stone basin, water, glowing ball on a pedestal
+City_Wall|done|stone wall with a lighter cap, corner pillars with gold balls
+Workplace_Fence|done|white rounded fence
+Workplace_LampPost|done|steel post with a warm glowing bulb
+Workplace_FlowerBox|done|wooden box with three flower bushes

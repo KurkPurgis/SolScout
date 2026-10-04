@@ -201,7 +201,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:58",
+  "built_at": "2026-10-04 22:28",
   "category": "decoration",
   "export_name": "AuctionRoom_Lamp",
   "fbx": "export/decoration/AuctionRoom_Lamp.fbx",
@@ -544,7 +544,7 @@
    ]
   ],
   "budget": 6000,
-  "built_at": "2026-10-04 21:04",
+  "built_at": "2026-10-04 22:25",
   "category": "decoration",
   "export_name": "City_Wall",
   "fbx": "export/decoration/City_Wall.fbx",
@@ -559,7 +559,7 @@
   "round": 0,
   "status": "built",
   "strip": "renders/objects/strips/City_Wall.jpg",
-  "triangles": 2016,
+  "triangles": 1728,
   "tris_ok": true,
   "warnings": []
  },
@@ -709,7 +709,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:45",
+  "built_at": "2026-10-04 22:25",
   "category": "decoration",
   "export_name": "Clinic_WallScreen",
   "fbx": "export/decoration/Clinic_WallScreen.fbx",
@@ -1668,25 +1668,25 @@
   "bbox_dev": [
    0.0,
    0.0,
-   -0.25,
+   -0.12,
    0.0,
    0.07,
-   0.25
+   0.1
   ],
-  "bbox_max_dev": 0.25,
+  "bbox_max_dev": 0.12,
   "bbox_new": [
    [
     -8.0,
     0.0,
-    -1.0
+    -0.87
    ],
    [
     8.0,
     14.07,
-    1.0
+    0.85
    ]
   ],
-  "bbox_ok": false,
+  "bbox_ok": true,
   "bbox_old": [
    [
     -8.0,
@@ -1700,7 +1700,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:57",
+  "built_at": "2026-10-04 22:27",
   "category": "decoration",
   "export_name": "FastTrack_Gate",
   "fbx": "export/decoration/FastTrack_Gate.fbx",
@@ -1866,7 +1866,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:46",
+  "built_at": "2026-10-04 22:26",
   "category": "decoration",
   "export_name": "Garage_ToolBoard",
   "fbx": "export/decoration/Garage_ToolBoard.fbx",
@@ -1976,7 +1976,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:30",
+  "built_at": "2026-10-04 22:26",
   "category": "decoration",
   "export_name": "Hospital_WallCross",
   "fbx": "export/decoration/Hospital_WallCross.fbx",
@@ -2361,7 +2361,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:57",
+  "built_at": "2026-10-04 22:27",
   "category": "decoration",
   "export_name": "Lobby_Pillar",
   "fbx": "export/decoration/Lobby_Pillar.fbx",
@@ -2978,17 +2978,17 @@
  "Lux_Chandelier": {
   "bbox_dev": [
    0.024,
-   0.38,
+   0.0,
    0.03,
    -0.024,
    0.0,
    -0.03
   ],
-  "bbox_max_dev": 0.38,
+  "bbox_max_dev": 0.03,
   "bbox_new": [
    [
     -1.076,
-    0.38,
+    0.0,
     -1.07
    ],
    [
@@ -2997,7 +2997,7 @@
     1.07
    ]
   ],
-  "bbox_ok": false,
+  "bbox_ok": true,
   "bbox_old": [
    [
     -1.1,
@@ -3011,7 +3011,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:58",
+  "built_at": "2026-10-04 22:27",
   "category": "decoration",
   "export_name": "Lux_Chandelier",
   "fbx": "export/decoration/Lux_Chandelier.fbx",
@@ -3027,7 +3027,7 @@
   "round": 0,
   "status": "built",
   "strip": "renders/objects/strips/Lux_Chandelier.jpg",
-  "triangles": 572,
+  "triangles": 600,
   "tris_ok": true,
   "warnings": []
  },
@@ -4738,7 +4738,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:45",
+  "built_at": "2026-10-04 22:26",
   "category": "decoration",
   "export_name": "Office_Screen",
   "fbx": "export/decoration/Office_Screen.fbx",
@@ -4960,7 +4960,7 @@
    ]
   ],
   "budget": 6000,
-  "built_at": "2026-10-04 21:09",
+  "built_at": "2026-10-04 22:24",
   "category": "decoration",
   "export_name": "Plaza_Fountain",
   "fbx": "export/decoration/Plaza_Fountain.fbx",
@@ -4977,7 +4977,7 @@
   "round": 0,
   "status": "built",
   "strip": "renders/objects/strips/Plaza_Fountain.jpg",
-  "triangles": 2944,
+  "triangles": 2816,
   "tris_ok": true,
   "warnings": []
  },
@@ -5182,7 +5182,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:59",
+  "built_at": "2026-10-04 22:28",
   "category": "decoration",
   "export_name": "PodiumRoom_LightStrip",
   "fbx": "export/decoration/PodiumRoom_LightStrip.fbx",
@@ -5409,7 +5409,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:45",
+  "built_at": "2026-10-04 22:25",
   "category": "decoration",
   "export_name": "School_Blackboard",
   "fbx": "export/decoration/School_Blackboard.fbx",
@@ -5933,21 +5933,21 @@
   "bbox_dev": [
    0.0,
    0.0,
-   0.0,
+   0.023,
    -0.0,
-   0.04,
+   0.09,
    -0.0
   ],
-  "bbox_max_dev": 0.04,
+  "bbox_max_dev": 0.09,
   "bbox_new": [
    [
     -24.8,
     -1.0,
-    2.5
+    2.523
    ],
    [
     24.8,
-    18.44,
+    18.49,
     24.8
    ]
   ],
@@ -5965,7 +5965,7 @@
    ]
   ],
   "budget": 6000,
-  "built_at": "2026-10-04 20:55",
+  "built_at": "2026-10-04 22:29",
   "category": "buildings",
   "export_name": "Workplace_Building_PIZZERIA",
   "fbx": "export/buildings/Workplace_Building_PIZZERIA.fbx",
@@ -5981,7 +5981,7 @@
   "round": 0,
   "status": "built",
   "strip": "renders/objects/strips/Workplace_Building_PIZZERIA.jpg",
-  "triangles": 5324,
+  "triangles": 5188,
   "tris_ok": true,
   "warnings": []
  },
@@ -6188,7 +6188,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:21",
+  "built_at": "2026-10-04 22:23",
   "category": "decoration",
   "export_name": "Workplace_Fence",
   "fbx": "export/decoration/Workplace_Fence.fbx",
@@ -6243,7 +6243,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:03",
+  "built_at": "2026-10-04 22:24",
   "category": "decoration",
   "export_name": "Workplace_FlowerBox",
   "fbx": "export/decoration/Workplace_FlowerBox.fbx",
@@ -6258,28 +6258,28 @@
   "round": 0,
   "status": "built",
   "strip": "renders/objects/strips/Workplace_FlowerBox.jpg",
-  "triangles": 1400,
+  "triangles": 752,
   "tris_ok": true,
   "warnings": []
  },
  "Workplace_LampPost": {
   "bbox_dev": [
-   0.03,
+   0.06,
    0.0,
    0.03,
-   -0.03,
+   -0.06,
    -0.03,
    -0.03
   ],
-  "bbox_max_dev": 0.03,
+  "bbox_max_dev": 0.06,
   "bbox_new": [
    [
-    -0.62,
+    -0.59,
     0.0,
     -0.62
    ],
    [
-    0.62,
+    0.59,
     7.92,
     0.62
    ]
@@ -6298,7 +6298,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:08",
+  "built_at": "2026-10-04 22:23",
   "category": "decoration",
   "export_name": "Workplace_LampPost",
   "fbx": "export/decoration/Workplace_LampPost.fbx",
@@ -6314,7 +6314,7 @@
   "round": 0,
   "status": "built",
   "strip": "renders/objects/strips/Workplace_LampPost.jpg",
-  "triangles": 576,
+  "triangles": 404,
   "tris_ok": true,
   "warnings": []
  },
