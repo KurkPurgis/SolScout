@@ -1,0 +1,2977 @@
+{
+ "swapped": 399,
+ "kept_blockout": [
+  "Baseplate",
+  "Lobby/Lobby_Floor/1",
+  "Lobby/Lobby_Carpet/1",
+  "Lobby/Lobby_Walls/1",
+  "Lobby/Lobby_TitleSign/1",
+  "Lobby/Lobby_Pillar/1.1",
+  "Lobby/Lobby_Pillar/1.2",
+  "Lobby/Lobby_Pillar/1.3",
+  "Lobby/Lobby_Pillar/1.4",
+  "Lobby/Lobby_Pillar/1.5",
+  "Lobby/Lobby_Pillar/1.6",
+  "Lobby/Lobby_Pillar/1.7",
+  "Lobby/Lobby_Pillar/1.8",
+  "Lobby/Lobby_Window/1.1",
+  "Lobby/Lobby_Window/1.2",
+  "Lobby/Lobby_Window/1.3",
+  "Lobby/Lobby_Window/1.4",
+  "Lobby/Lobby_Window/1.5",
+  "Lobby/Lobby_Window/1.6",
+  "Lobby/Lobby_Bench/1.1",
+  "Lobby/Lobby_Bench/1.2",
+  "Lobby/Lobby_Bench/1.3",
+  "Lobby/Lobby_Bench/1.4",
+  "Lobby/Lobby_PottedPalm/1.1",
+  "Lobby/Lobby_PottedPalm/1.2",
+  "Lobby/Lobby_PottedPalm/1.3",
+  "Lobby/Lobby_PottedPalm/1.4",
+  "Lobby/Lobby_Trophy/1",
+  "Lobby/Lobby_Spawn/1",
+  "Lobby/Lobby_RoomBooth/1.1",
+  "Lobby/Lobby_RoomBooth/1.2",
+  "Lobby/Lobby_RoomBooth/1.3",
+  "Lobby/Lobby_RoomBooth/1.4",
+  "City_1.Plots.Plot_Player2/Collection_Showcase/112",
+  "City_1.Plots.Plot_Player5/Collection_Showcase/196",
+  "AuctionRoom_1/AuctionRoom_Shell/25",
+  "AuctionRoom_1/AuctionRoom_Lamp/25.1",
+  "AuctionRoom_1/AuctionRoom_Lamp/25.2",
+  "AuctionRoom_1/AuctionRoom_Lamp/25.3",
+  "AuctionRoom_1/AuctionRoom_Stage/25",
+  "AuctionRoom_1/AuctionRoom_TitleSign/25",
+  "AuctionRoom_1/AuctionRoom_InfoBoard/25",
+  "AuctionRoom_1/AuctionRoom_BidderDesk/25.1",
+  "AuctionRoom_1/AuctionRoom_BidderDesk/25.2",
+  "AuctionRoom_1/AuctionRoom_BidderDesk/25.3",
+  "AuctionRoom_1/AuctionRoom_BidderDesk/25.4",
+  "AuctionRoom_1/AuctionRoom_BidderDesk/25.5",
+  "AuctionRoom_1/AuctionRoom_BidderDesk/25.6",
+  "AuctionRoom_1/AuctionRoom_BidderDesk/25.7",
+  "AuctionRoom_1/AuctionRoom_BidderDesk/25.8",
+  "AuctionRoom_1/AuctionRoom_BidderPad/25.1",
+  "AuctionRoom_1/AuctionRoom_BidderPad/25.2",
+  "AuctionRoom_1/AuctionRoom_BidderPad/25.3",
+  "AuctionRoom_1/AuctionRoom_BidderPad/25.4",
+  "AuctionRoom_1/AuctionRoom_BidderPad/25.5",
+  "AuctionRoom_1/AuctionRoom_BidderPad/25.6",
+  "AuctionRoom_1/AuctionRoom_BidderPad/25.7",
+  "AuctionRoom_1/AuctionRoom_BidderPad/25.8",
+  "PodiumRoom_1/PodiumRoom_Shell/28",
+  "PodiumRoom_1/PodiumRoom_LightStrip/28.1",
+  "PodiumRoom_1/PodiumRoom_LightStrip/28.2",
+  "PodiumRoom_1/PodiumRoom_LightStrip/28.3",
+  "PodiumRoom_1/PodiumRoom_LightStrip/28.4",
+  "PodiumRoom_1/PodiumRoom_TitleSign/28",
+  "PodiumRoom_1/PodiumRoom_Block/28",
+  "PodiumRoom_1/PodiumRoom_Board/28",
+  "AuctionRoom_2/AuctionRoom_Shell/42",
+  "AuctionRoom_2/AuctionRoom_Lamp/42.1",
+  "AuctionRoom_2/AuctionRoom_Lamp/42.2",
+  "AuctionRoom_2/AuctionRoom_Lamp/42.3",
+  "AuctionRoom_2/AuctionRoom_Stage/42",
+  "AuctionRoom_2/AuctionRoom_TitleSign/42",
+  "AuctionRoom_2/AuctionRoom_InfoBoard/42",
+  "AuctionRoom_2/AuctionRoom_BidderDesk/42.1",
+  "AuctionRoom_2/AuctionRoom_BidderDesk/42.2",
+  "AuctionRoom_2/AuctionRoom_BidderDesk/42.3",
+  "AuctionRoom_2/AuctionRoom_BidderDesk/42.4",
+  "AuctionRoom_2/AuctionRoom_BidderDesk/42.5",
+  "AuctionRoom_2/AuctionRoom_BidderDesk/42.6",
+  "AuctionRoom_2/AuctionRoom_BidderDesk/42.7",
+  "AuctionRoom_2/AuctionRoom_BidderDesk/42.8",
+  "AuctionRoom_2/AuctionRoom_BidderPad/42.1",
+  "AuctionRoom_2/AuctionRoom_BidderPad/42.2",
+  "AuctionRoom_2/AuctionRoom_BidderPad/42.3",
+  "AuctionRoom_2/AuctionRoom_BidderPad/42.4",
+  "AuctionRoom_2/AuctionRoom_BidderPad/42.5",
+  "AuctionRoom_2/AuctionRoom_BidderPad/42.6",
+  "AuctionRoom_2/AuctionRoom_BidderPad/42.7",
+  "AuctionRoom_2/AuctionRoom_BidderPad/42.8",
+  "PodiumRoom_2/PodiumRoom_Shell/45",
+  "PodiumRoom_2/PodiumRoom_LightStrip/45.1",
+  "PodiumRoom_2/PodiumRoom_LightStrip/45.2",
+  "PodiumRoom_2/PodiumRoom_LightStrip/45.3",
+  "PodiumRoom_2/PodiumRoom_LightStrip/45.4",
+  "PodiumRoom_2/PodiumRoom_TitleSign/45",
+  "PodiumRoom_2/PodiumRoom_Block/45",
+  "PodiumRoom_2/PodiumRoom_Board/45",
+  "AuctionRoom_3/AuctionRoom_Shell/59",
+  "AuctionRoom_3/AuctionRoom_Lamp/59.1",
+  "AuctionRoom_3/AuctionRoom_Lamp/59.2",
+  "AuctionRoom_3/AuctionRoom_Lamp/59.3",
+  "AuctionRoom_3/AuctionRoom_Stage/59",
+  "AuctionRoom_3/AuctionRoom_TitleSign/59",
+  "AuctionRoom_3/AuctionRoom_InfoBoard/59",
+  "AuctionRoom_3/AuctionRoom_BidderDesk/59.1",
+  "AuctionRoom_3/AuctionRoom_BidderDesk/59.2",
+  "AuctionRoom_3/AuctionRoom_BidderDesk/59.3",
+  "AuctionRoom_3/AuctionRoom_BidderDesk/59.4",
+  "AuctionRoom_3/AuctionRoom_BidderDesk/59.5",
+  "AuctionRoom_3/AuctionRoom_BidderDesk/59.6",
+  "AuctionRoom_3/AuctionRoom_BidderDesk/59.7",
+  "AuctionRoom_3/AuctionRoom_BidderDesk/59.8",
+  "AuctionRoom_3/AuctionRoom_BidderPad/59.1",
+  "AuctionRoom_3/AuctionRoom_BidderPad/59.2",
+  "AuctionRoom_3/AuctionRoom_BidderPad/59.3",
+  "AuctionRoom_3/AuctionRoom_BidderPad/59.4",
+  "AuctionRoom_3/AuctionRoom_BidderPad/59.5",
+  "AuctionRoom_3/AuctionRoom_BidderPad/59.6",
+  "AuctionRoom_3/AuctionRoom_BidderPad/59.7",
+  "AuctionRoom_3/AuctionRoom_BidderPad/59.8",
+  "PodiumRoom_3/PodiumRoom_Shell/62",
+  "PodiumRoom_3/PodiumRoom_LightStrip/62.1",
+  "PodiumRoom_3/PodiumRoom_LightStrip/62.2",
+  "PodiumRoom_3/PodiumRoom_LightStrip/62.3",
+  "PodiumRoom_3/PodiumRoom_LightStrip/62.4",
+  "PodiumRoom_3/PodiumRoom_TitleSign/62",
+  "PodiumRoom_3/PodiumRoom_Block/62",
+  "PodiumRoom_3/PodiumRoom_Board/62",
+  "AuctionRoom_4/AuctionRoom_Shell/76",
+  "AuctionRoom_4/AuctionRoom_Lamp/76.1",
+  "AuctionRoom_4/AuctionRoom_Lamp/76.2",
+  "AuctionRoom_4/AuctionRoom_Lamp/76.3",
+  "AuctionRoom_4/AuctionRoom_Stage/76",
+  "AuctionRoom_4/AuctionRoom_TitleSign/76",
+  "AuctionRoom_4/AuctionRoom_InfoBoard/76",
+  "AuctionRoom_4/AuctionRoom_BidderDesk/76.1",
+  "AuctionRoom_4/AuctionRoom_BidderDesk/76.2",
+  "AuctionRoom_4/AuctionRoom_BidderDesk/76.3",
+  "AuctionRoom_4/AuctionRoom_BidderDesk/76.4",
+  "AuctionRoom_4/AuctionRoom_BidderDesk/76.5",
+  "AuctionRoom_4/AuctionRoom_BidderDesk/76.6",
+  "AuctionRoom_4/AuctionRoom_BidderDesk/76.7",
+  "AuctionRoom_4/AuctionRoom_BidderDesk/76.8",
+  "AuctionRoom_4/AuctionRoom_BidderPad/76.1",
+  "AuctionRoom_4/AuctionRoom_BidderPad/76.2",
+  "AuctionRoom_4/AuctionRoom_BidderPad/76.3",
+  "AuctionRoom_4/AuctionRoom_BidderPad/76.4",
+  "AuctionRoom_4/AuctionRoom_BidderPad/76.5",
+  "AuctionRoom_4/AuctionRoom_BidderPad/76.6",
+  "AuctionRoom_4/AuctionRoom_BidderPad/76.7",
+  "AuctionRoom_4/AuctionRoom_BidderPad/76.8",
+  "PodiumRoom_4/PodiumRoom_Shell/79",
+  "PodiumRoom_4/PodiumRoom_LightStrip/79.1",
+  "PodiumRoom_4/PodiumRoom_LightStrip/79.2",
+  "PodiumRoom_4/PodiumRoom_LightStrip/79.3",
+  "PodiumRoom_4/PodiumRoom_LightStrip/79.4",
+  "PodiumRoom_4/PodiumRoom_TitleSign/79",
+  "PodiumRoom_4/PodiumRoom_Block/79",
+  "PodiumRoom_4/PodiumRoom_Board/79",
+  "Catalog.FastTrack/Lux_Sofa/348.1",
+  "Catalog.FastTrack/Lux_Sofa/348.2",
+  "Catalog.FastTrack/Lux_GlassTable/348",
+  "Catalog.FastTrack/Lux_Safe/348",
+  "Catalog.FastTrack/Lux_Piano/348",
+  "Catalog.FastTrack/Lux_Chandelier/348",
+  "Catalog.FastTrack/FastTrack_Gate/346",
+  "Catalog.FastTrack/Dream_Pedestal/343",
+  "Catalog.FastTrack/Dream_Chains/343",
+  "Catalog.FastTrack/Lux_Sofa/377.1",
+  "Catalog.FastTrack/Lux_Sofa/377.2",
+  "Catalog.FastTrack/Lux_GlassTable/377",
+  "Catalog.FastTrack/Lux_Safe/377",
+  "Catalog.FastTrack/Lux_Piano/377",
+  "Catalog.FastTrack/Lux_Chandelier/377",
+  "Catalog.FastTrack/FastTrack_Gate/375",
+  "Catalog.FastTrack/Dream_Pedestal/372",
+  "Catalog.FastTrack/Collection_Showcase/355"
+ ],
+ "swaps": [
+  {
+   "key": "City_1.Plots.Plot_Player1/Workplace_Yard/84",
+   "template": "Workplace_Yard_v2",
+   "model": "Workplace_Yard_v2",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player1/Workplace_Building/84",
+   "template": "Workplace_Building_PIZZERIA",
+   "model": "Workplace_Building_PIZZERIA",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player1/Pizzeria_Counter/86",
+   "template": "Pizzeria_Counter",
+   "model": "Pizzeria_Counter",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player1/Pizzeria_Oven/86",
+   "template": "Pizzeria_Oven",
+   "model": "Pizzeria_Oven",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player1/Workplace_MakerLot/84.1",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player1/Workplace_MakerLot/84.2",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player1/Workplace_MakerLot/84.3",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player1/Workplace_MakerLot/84.4",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player1/Workplace_MakerLot/84.5",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player1/Workplace_MakerLot/84.6",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player1/Workplace_MakerLot/84.7",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player1/Workplace_MakerLot/84.8",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player1/Workplace_Fence/84.1",
+   "template": "Workplace_Fence",
+   "model": "Workplace_Fence",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player1/Workplace_Fence/84.2",
+   "template": "Workplace_Fence",
+   "model": "Workplace_Fence",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player1/Workplace_LampPost/84.1",
+   "template": "Workplace_LampPost",
+   "model": "Workplace_LampPost",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player1/Workplace_LampPost/84.2",
+   "template": "Workplace_LampPost",
+   "model": "Workplace_LampPost",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player1/Workplace_FlowerBox/84.1",
+   "template": "Workplace_FlowerBox",
+   "model": "Workplace_FlowerBox",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player1/Workplace_FlowerBox/84.2",
+   "template": "Workplace_FlowerBox",
+   "model": "Workplace_FlowerBox",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player1/Workplace_Sandbox/84",
+   "template": "Workplace_Sandbox",
+   "model": "Workplace_Sandbox",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player1/Workplace_DebtPad/84",
+   "template": "Workplace_DebtPad",
+   "model": "Workplace_DebtPad",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player1/Debt_CreditCard#91",
+   "template": "Debt_CreditCard",
+   "model": "Debt_CreditCard",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player1/Maker_LemonadeStand#96",
+   "template": "Maker_LemonadeStand",
+   "model": "Maker_LemonadeStand",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player1/Maker_FoodTruck#99",
+   "template": "Maker_FoodTruck",
+   "model": "Maker_FoodTruck",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player1/Maker_CarWash#103",
+   "template": "Maker_CarWash",
+   "model": "Maker_CarWash",
+   "mode": "ghost",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player1/Dream_Supercar#107",
+   "template": "Dream_Supercar",
+   "model": "Dream_Supercar",
+   "mode": "dream",
+   "scale": 1.31148
+  },
+  {
+   "key": "City_1.Plots.Plot_Player2/Workplace_Yard/108",
+   "template": "Workplace_Yard_v2",
+   "model": "Workplace_Yard_v2",
+   "mode": "normal",
+   "scale": 1.00001
+  },
+  {
+   "key": "City_1.Plots.Plot_Player2/Workplace_Building/108",
+   "template": "Workplace_Building_BUSDEPOT",
+   "model": "Workplace_Building_BUSDEPOT",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player2/Depot_Bus/110",
+   "template": "Depot_Bus",
+   "model": "Depot_Bus",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player2/Workplace_MakerLot/108.1",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player2/Workplace_MakerLot/108.2",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player2/Workplace_MakerLot/108.3",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player2/Workplace_MakerLot/108.4",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player2/Workplace_MakerLot/108.5",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player2/Workplace_MakerLot/108.6",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player2/Workplace_MakerLot/108.7",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player2/Workplace_MakerLot/108.8",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player2/Workplace_Fence/108.1",
+   "template": "Workplace_Fence",
+   "model": "Workplace_Fence",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player2/Workplace_Fence/108.2",
+   "template": "Workplace_Fence",
+   "model": "Workplace_Fence",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player2/Workplace_LampPost/108.1",
+   "template": "Workplace_LampPost",
+   "model": "Workplace_LampPost",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player2/Workplace_LampPost/108.2",
+   "template": "Workplace_LampPost",
+   "model": "Workplace_LampPost",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player2/Workplace_FlowerBox/108.1",
+   "template": "Workplace_FlowerBox",
+   "model": "Workplace_FlowerBox",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player2/Workplace_FlowerBox/108.2",
+   "template": "Workplace_FlowerBox",
+   "model": "Workplace_FlowerBox",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player2/Workplace_Sandbox/108",
+   "template": "Workplace_Sandbox",
+   "model": "Workplace_Sandbox",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player2/Workplace_DebtPad/108",
+   "template": "Workplace_DebtPad",
+   "model": "Workplace_DebtPad",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player2/Kid#120",
+   "template": "Kid",
+   "model": "Kid",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player2/Kid#121",
+   "template": "Kid_v2",
+   "model": "Kid_v2",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player2/Debt_CarLoan#124",
+   "template": "Debt_CarLoan",
+   "model": "Debt_CarLoan",
+   "mode": "normal",
+   "scale": 1.00001
+  },
+  {
+   "key": "City_1.Plots.Plot_Player2/Maker_VendingMachine#129",
+   "template": "Maker_VendingMachine",
+   "model": "Maker_VendingMachine",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player2/Maker_ToyShop#131",
+   "template": "Maker_ToyShop",
+   "model": "Maker_ToyShop",
+   "mode": "normal",
+   "scale": 1.00001
+  },
+  {
+   "key": "City_1.Plots.Plot_Player2/Maker_GoldCoin#135",
+   "template": "Maker_GoldCoin",
+   "model": "Maker_GoldCoin",
+   "mode": "ghost",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player2/Dream_Yacht#139",
+   "template": "Dream_Yacht",
+   "model": "Dream_Yacht",
+   "mode": "dream",
+   "scale": 0.37559
+  },
+  {
+   "key": "City_1.Plots.Plot_Player2/Maker_GoldCoin#113",
+   "template": "Maker_GoldCoin",
+   "model": "Maker_GoldCoin",
+   "mode": "mini",
+   "scale": 0.4
+  },
+  {
+   "key": "City_1.Plots.Plot_Player2/Maker_PokeBloxCard#115",
+   "template": "Maker_PokeBloxCard",
+   "model": "Maker_PokeBloxCard",
+   "mode": "mini",
+   "scale": 0.4
+  },
+  {
+   "key": "City_1.Plots.Plot_Player3/Workplace_Yard/140",
+   "template": "Workplace_Yard_v2",
+   "model": "Workplace_Yard_v2",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player3/Workplace_Building/140",
+   "template": "Workplace_Building_HOSPITAL",
+   "model": "Workplace_Building_HOSPITAL",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player3/HospitalBed/142.1",
+   "template": "HospitalBed",
+   "model": "HospitalBed",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player3/HospitalBed/142.2",
+   "template": "HospitalBed",
+   "model": "HospitalBed",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player3/HospitalBed/142.3",
+   "template": "HospitalBed",
+   "model": "HospitalBed",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player3/Hospital_WallCross/142",
+   "template": "Hospital_WallCross",
+   "model": "Hospital_WallCross",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player3/Workplace_MakerLot/140.1",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player3/Workplace_MakerLot/140.2",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player3/Workplace_MakerLot/140.3",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player3/Workplace_MakerLot/140.4",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player3/Workplace_MakerLot/140.5",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player3/Workplace_MakerLot/140.6",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player3/Workplace_MakerLot/140.7",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player3/Workplace_MakerLot/140.8",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player3/Workplace_Fence/140.1",
+   "template": "Workplace_Fence",
+   "model": "Workplace_Fence",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player3/Workplace_Fence/140.2",
+   "template": "Workplace_Fence",
+   "model": "Workplace_Fence",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player3/Workplace_LampPost/140.1",
+   "template": "Workplace_LampPost",
+   "model": "Workplace_LampPost",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player3/Workplace_LampPost/140.2",
+   "template": "Workplace_LampPost",
+   "model": "Workplace_LampPost",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player3/Workplace_FlowerBox/140.1",
+   "template": "Workplace_FlowerBox",
+   "model": "Workplace_FlowerBox",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player3/Workplace_FlowerBox/140.2",
+   "template": "Workplace_FlowerBox",
+   "model": "Workplace_FlowerBox",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player3/Workplace_Sandbox/140",
+   "template": "Workplace_Sandbox",
+   "model": "Workplace_Sandbox",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player3/Workplace_DebtPad/140",
+   "template": "Workplace_DebtPad",
+   "model": "Workplace_DebtPad",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player3/Kid#146",
+   "template": "Kid",
+   "model": "Kid",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player3/Debt_SchoolLoan#149",
+   "template": "Debt_SchoolLoan",
+   "model": "Debt_SchoolLoan",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player3/Maker_Apartment#153",
+   "template": "Maker_Apartment",
+   "model": "Maker_Apartment",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player3/Maker_MiniGolf#155",
+   "template": "Maker_MiniGolf",
+   "model": "Maker_MiniGolf",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player3/Maker_PokeBloxCard#158",
+   "template": "Maker_PokeBloxCard",
+   "model": "Maker_PokeBloxCard",
+   "mode": "ghost",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player3/Dream_BeachVilla#163",
+   "template": "Dream_BeachVilla",
+   "model": "Dream_BeachVilla",
+   "mode": "dream",
+   "scale": 0.4
+  },
+  {
+   "key": "City_1.Plots.Plot_Player4/Workplace_Yard/166",
+   "template": "Workplace_Yard_v2",
+   "model": "Workplace_Yard_v2",
+   "mode": "normal",
+   "scale": 1.00001
+  },
+  {
+   "key": "City_1.Plots.Plot_Player4/Workplace_Building/166",
+   "template": "Workplace_Building_CLINIC",
+   "model": "Workplace_Building_CLINIC",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player4/HospitalBed/168",
+   "template": "HospitalBed",
+   "model": "HospitalBed",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player4/Computer/168",
+   "template": "Computer",
+   "model": "Computer",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player4/Clinic_Chair/168",
+   "template": "Clinic_Chair",
+   "model": "Clinic_Chair",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player4/Clinic_Cabinet/168",
+   "template": "Clinic_Cabinet",
+   "model": "Clinic_Cabinet",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player4/Clinic_WallScreen/168",
+   "template": "Clinic_WallScreen",
+   "model": "Clinic_WallScreen",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player4/Workplace_MakerLot/166.1",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player4/Workplace_MakerLot/166.2",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player4/Workplace_MakerLot/166.3",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player4/Workplace_MakerLot/166.4",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player4/Workplace_MakerLot/166.5",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player4/Workplace_MakerLot/166.6",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player4/Workplace_MakerLot/166.7",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player4/Workplace_MakerLot/166.8",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player4/Workplace_Fence/166.1",
+   "template": "Workplace_Fence",
+   "model": "Workplace_Fence",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player4/Workplace_Fence/166.2",
+   "template": "Workplace_Fence",
+   "model": "Workplace_Fence",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player4/Workplace_LampPost/166.1",
+   "template": "Workplace_LampPost",
+   "model": "Workplace_LampPost",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player4/Workplace_LampPost/166.2",
+   "template": "Workplace_LampPost",
+   "model": "Workplace_LampPost",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player4/Workplace_FlowerBox/166.1",
+   "template": "Workplace_FlowerBox",
+   "model": "Workplace_FlowerBox",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player4/Workplace_FlowerBox/166.2",
+   "template": "Workplace_FlowerBox",
+   "model": "Workplace_FlowerBox",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player4/Workplace_Sandbox/166",
+   "template": "Workplace_Sandbox",
+   "model": "Workplace_Sandbox",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player4/Workplace_DebtPad/166",
+   "template": "Workplace_DebtPad",
+   "model": "Workplace_DebtPad",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player4/Kid#172",
+   "template": "Kid",
+   "model": "Kid",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player4/Kid#173",
+   "template": "Kid_v2",
+   "model": "Kid_v2",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player4/Kid#174",
+   "template": "Kid_v3",
+   "model": "Kid_v3",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player4/Debt_SchoolLoan#177",
+   "template": "Debt_SchoolLoan_v2",
+   "model": "Debt_SchoolLoan_books7",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player4/Maker_HouseToRent#181",
+   "template": "Maker_HouseToRent",
+   "model": "Maker_HouseToRent",
+   "mode": "normal",
+   "scale": 1.00001
+  },
+  {
+   "key": "City_1.Plots.Plot_Player4/Maker_PizzaRestaurant#183",
+   "template": "Maker_PizzaRestaurant",
+   "model": "Maker_PizzaRestaurant",
+   "mode": "normal",
+   "scale": 1.00001
+  },
+  {
+   "key": "City_1.Plots.Plot_Player4/Maker_Hotel#187",
+   "template": "Maker_Hotel",
+   "model": "Maker_Hotel",
+   "mode": "ghost",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player4/Dream_PrivateJet#191",
+   "template": "Dream_PrivateJet",
+   "model": "Dream_PrivateJet",
+   "mode": "dream",
+   "scale": 0.48339
+  },
+  {
+   "key": "City_1.Plots.Plot_Player5/Workplace_Yard/192",
+   "template": "Workplace_Yard_v2",
+   "model": "Workplace_Yard_v2",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player5/Workplace_Building/192",
+   "template": "Workplace_Building_SCHOOL",
+   "model": "Workplace_Building_SCHOOL",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player5/School_Blackboard/194",
+   "template": "School_Blackboard",
+   "model": "School_Blackboard",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player5/School_TeacherDesk/194",
+   "template": "School_TeacherDesk",
+   "model": "School_TeacherDesk",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player5/School_StudentDesk/194.1",
+   "template": "School_StudentDesk",
+   "model": "School_StudentDesk",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player5/School_StudentDesk/194.2",
+   "template": "School_StudentDesk",
+   "model": "School_StudentDesk",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player5/School_StudentDesk/194.3",
+   "template": "School_StudentDesk",
+   "model": "School_StudentDesk",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player5/School_StudentDesk/194.4",
+   "template": "School_StudentDesk",
+   "model": "School_StudentDesk",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player5/School_StudentDesk/194.5",
+   "template": "School_StudentDesk",
+   "model": "School_StudentDesk",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player5/School_StudentDesk/194.6",
+   "template": "School_StudentDesk",
+   "model": "School_StudentDesk",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player5/School_StudentDesk/194.7",
+   "template": "School_StudentDesk",
+   "model": "School_StudentDesk",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player5/School_StudentDesk/194.8",
+   "template": "School_StudentDesk",
+   "model": "School_StudentDesk",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player5/Workplace_MakerLot/192.1",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player5/Workplace_MakerLot/192.2",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player5/Workplace_MakerLot/192.3",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player5/Workplace_MakerLot/192.4",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player5/Workplace_MakerLot/192.5",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player5/Workplace_MakerLot/192.6",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player5/Workplace_MakerLot/192.7",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player5/Workplace_MakerLot/192.8",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player5/Workplace_Fence/192.1",
+   "template": "Workplace_Fence",
+   "model": "Workplace_Fence",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player5/Workplace_Fence/192.2",
+   "template": "Workplace_Fence",
+   "model": "Workplace_Fence",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player5/Workplace_LampPost/192.1",
+   "template": "Workplace_LampPost",
+   "model": "Workplace_LampPost",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player5/Workplace_LampPost/192.2",
+   "template": "Workplace_LampPost",
+   "model": "Workplace_LampPost",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player5/Workplace_FlowerBox/192.1",
+   "template": "Workplace_FlowerBox",
+   "model": "Workplace_FlowerBox",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player5/Workplace_FlowerBox/192.2",
+   "template": "Workplace_FlowerBox",
+   "model": "Workplace_FlowerBox",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player5/Workplace_Sandbox/192",
+   "template": "Workplace_Sandbox",
+   "model": "Workplace_Sandbox",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player5/Workplace_DebtPad/192",
+   "template": "Workplace_DebtPad",
+   "model": "Workplace_DebtPad",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player5/Kid#207",
+   "template": "Kid",
+   "model": "Kid",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player5/Debt_CarLoan#210",
+   "template": "Debt_CarLoan_v3",
+   "model": "Debt_CarLoan",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player5/Maker_CoffeeShop#215",
+   "template": "Maker_CoffeeShop",
+   "model": "Maker_CoffeeShop",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player5/Maker_BowlingAlley#218",
+   "template": "Maker_BowlingAlley",
+   "model": "Maker_BowlingAlley",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player5/Maker_GoldBar#222",
+   "template": "Maker_GoldBar",
+   "model": "Maker_GoldBar",
+   "mode": "ghost",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player5/Dream_PrivateIsland#225",
+   "template": "Dream_PrivateIsland",
+   "model": "Dream_PrivateIsland",
+   "mode": "dream",
+   "scale": 0.31159
+  },
+  {
+   "key": "City_1.Plots.Plot_Player5/Maker_RarePokeBloxCard#197",
+   "template": "Maker_RarePokeBloxCard_v2",
+   "model": "Maker_RarePokeBloxCard_v2",
+   "mode": "mini",
+   "scale": 0.4
+  },
+  {
+   "key": "City_1.Plots.Plot_Player5/Maker_GoldBar#200",
+   "template": "Maker_GoldBar",
+   "model": "Maker_GoldBar",
+   "mode": "mini",
+   "scale": 0.4
+  },
+  {
+   "key": "City_1.Plots.Plot_Player5/Maker_ShinyPokeBloxCard#201",
+   "template": "Maker_ShinyPokeBloxCard",
+   "model": "Maker_ShinyPokeBloxCard",
+   "mode": "mini",
+   "scale": 0.4
+  },
+  {
+   "key": "City_1.Plots.Plot_Player5/Maker_GoldTreasureChest#204",
+   "template": "Maker_GoldTreasureChest",
+   "model": "Maker_GoldTreasureChest",
+   "mode": "mini",
+   "scale": 0.4
+  },
+  {
+   "key": "City_1.Plots.Plot_Player6/Workplace_Yard/229",
+   "template": "Workplace_Yard_v2",
+   "model": "Workplace_Yard_v2",
+   "mode": "normal",
+   "scale": 1.00001
+  },
+  {
+   "key": "City_1.Plots.Plot_Player6/Workplace_Building/229",
+   "template": "Workplace_Building_POLICE",
+   "model": "Workplace_Building_POLICE",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player6/Police_Car/231",
+   "template": "Police_Car",
+   "model": "Police_Car",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player6/Computer/231.1",
+   "template": "Computer",
+   "model": "Computer",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player6/Computer/231.2",
+   "template": "Computer",
+   "model": "Computer",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player6/Workplace_MakerLot/229.1",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player6/Workplace_MakerLot/229.2",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player6/Workplace_MakerLot/229.3",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player6/Workplace_MakerLot/229.4",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player6/Workplace_MakerLot/229.5",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player6/Workplace_MakerLot/229.6",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player6/Workplace_MakerLot/229.7",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player6/Workplace_MakerLot/229.8",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player6/Workplace_Fence/229.1",
+   "template": "Workplace_Fence",
+   "model": "Workplace_Fence",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player6/Workplace_Fence/229.2",
+   "template": "Workplace_Fence",
+   "model": "Workplace_Fence",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player6/Workplace_LampPost/229.1",
+   "template": "Workplace_LampPost",
+   "model": "Workplace_LampPost",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player6/Workplace_LampPost/229.2",
+   "template": "Workplace_LampPost",
+   "model": "Workplace_LampPost",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player6/Workplace_FlowerBox/229.1",
+   "template": "Workplace_FlowerBox",
+   "model": "Workplace_FlowerBox",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player6/Workplace_FlowerBox/229.2",
+   "template": "Workplace_FlowerBox",
+   "model": "Workplace_FlowerBox",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player6/Workplace_Sandbox/229",
+   "template": "Workplace_Sandbox",
+   "model": "Workplace_Sandbox",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player6/Workplace_DebtPad/229",
+   "template": "Workplace_DebtPad",
+   "model": "Workplace_DebtPad",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player6/Kid#236",
+   "template": "Kid",
+   "model": "Kid",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player6/Kid#237",
+   "template": "Kid_v2",
+   "model": "Kid_v2",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player6/Debt_CarLoan#240",
+   "template": "Debt_CarLoan_v4",
+   "model": "Debt_CarLoan",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player6/Maker_GameStudio#245",
+   "template": "Maker_GameStudio",
+   "model": "Maker_GameStudio",
+   "mode": "normal",
+   "scale": 1.00001
+  },
+  {
+   "key": "City_1.Plots.Plot_Player6/Maker_ShoppingMall#248",
+   "template": "Maker_ShoppingMall",
+   "model": "Maker_ShoppingMall",
+   "mode": "normal",
+   "scale": 1.00001
+  },
+  {
+   "key": "City_1.Plots.Plot_Player6/Maker_RarePokeBloxCard#252",
+   "template": "Maker_RarePokeBloxCard",
+   "model": "Maker_RarePokeBloxCard",
+   "mode": "ghost",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player6/Dream_Supercar#257",
+   "template": "Dream_Supercar",
+   "model": "Dream_Supercar",
+   "mode": "dream",
+   "scale": 1.31148
+  },
+  {
+   "key": "City_1.Plots.Plot_Player7/Workplace_Yard/258",
+   "template": "Workplace_Yard_v2",
+   "model": "Workplace_Yard_v2",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player7/Workplace_Building/258",
+   "template": "Workplace_Building_OFFICE",
+   "model": "Workplace_Building_OFFICE",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player7/Computer/260.1",
+   "template": "Computer",
+   "model": "Computer",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player7/Computer/260.2",
+   "template": "Computer",
+   "model": "Computer",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player7/Computer/260.3",
+   "template": "Computer",
+   "model": "Computer",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player7/Computer/260.4",
+   "template": "Computer",
+   "model": "Computer",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player7/Office_Screen/260",
+   "template": "Office_Screen",
+   "model": "Office_Screen",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player7/Workplace_MakerLot/258.1",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player7/Workplace_MakerLot/258.2",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player7/Workplace_MakerLot/258.3",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player7/Workplace_MakerLot/258.4",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player7/Workplace_MakerLot/258.5",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player7/Workplace_MakerLot/258.6",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player7/Workplace_MakerLot/258.7",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player7/Workplace_MakerLot/258.8",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player7/Workplace_Fence/258.1",
+   "template": "Workplace_Fence",
+   "model": "Workplace_Fence",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player7/Workplace_Fence/258.2",
+   "template": "Workplace_Fence",
+   "model": "Workplace_Fence",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player7/Workplace_LampPost/258.1",
+   "template": "Workplace_LampPost",
+   "model": "Workplace_LampPost",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player7/Workplace_LampPost/258.2",
+   "template": "Workplace_LampPost",
+   "model": "Workplace_LampPost",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player7/Workplace_FlowerBox/258.1",
+   "template": "Workplace_FlowerBox",
+   "model": "Workplace_FlowerBox",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player7/Workplace_FlowerBox/258.2",
+   "template": "Workplace_FlowerBox",
+   "model": "Workplace_FlowerBox",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player7/Workplace_Sandbox/258",
+   "template": "Workplace_Sandbox",
+   "model": "Workplace_Sandbox",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player7/Workplace_DebtPad/258",
+   "template": "Workplace_DebtPad",
+   "model": "Workplace_DebtPad",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player7/Kid#264",
+   "template": "Kid",
+   "model": "Kid",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player7/Debt_SchoolLoan#267",
+   "template": "Debt_SchoolLoan_v3",
+   "model": "Debt_SchoolLoan_books4",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player7/Maker_ApartmentBuilding#271",
+   "template": "Maker_ApartmentBuilding",
+   "model": "Maker_ApartmentBuilding",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player7/Maker_ThemePark#274",
+   "template": "Maker_ThemePark",
+   "model": "Maker_ThemePark",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player7/Maker_GoldTreasureChest#277",
+   "template": "Maker_GoldTreasureChest",
+   "model": "Maker_GoldTreasureChest",
+   "mode": "ghost",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player7/Dream_Yacht#280",
+   "template": "Dream_Yacht",
+   "model": "Dream_Yacht",
+   "mode": "dream",
+   "scale": 0.37559
+  },
+  {
+   "key": "City_1.Plots.Plot_Player8/Workplace_Yard/281",
+   "template": "Workplace_Yard_v2",
+   "model": "Workplace_Yard_v2",
+   "mode": "normal",
+   "scale": 1.00001
+  },
+  {
+   "key": "City_1.Plots.Plot_Player8/Workplace_Building/281",
+   "template": "Workplace_Building_GARAGE",
+   "model": "Workplace_Building_GARAGE",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player8/Garage_CarLift/283",
+   "template": "Garage_CarLift",
+   "model": "Garage_CarLift",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player8/Garage_ToolBoard/283",
+   "template": "Garage_ToolBoard",
+   "model": "Garage_ToolBoard",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player8/Garage_TireStack/283",
+   "template": "Garage_TireStack",
+   "model": "Garage_TireStack",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player8/Workplace_MakerLot/281.1",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player8/Workplace_MakerLot/281.2",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player8/Workplace_MakerLot/281.3",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player8/Workplace_MakerLot/281.4",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player8/Workplace_MakerLot/281.5",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player8/Workplace_MakerLot/281.6",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player8/Workplace_MakerLot/281.7",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player8/Workplace_MakerLot/281.8",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player8/Workplace_Fence/281.1",
+   "template": "Workplace_Fence",
+   "model": "Workplace_Fence",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player8/Workplace_Fence/281.2",
+   "template": "Workplace_Fence",
+   "model": "Workplace_Fence",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player8/Workplace_LampPost/281.1",
+   "template": "Workplace_LampPost",
+   "model": "Workplace_LampPost",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player8/Workplace_LampPost/281.2",
+   "template": "Workplace_LampPost",
+   "model": "Workplace_LampPost",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player8/Workplace_FlowerBox/281.1",
+   "template": "Workplace_FlowerBox",
+   "model": "Workplace_FlowerBox",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player8/Workplace_FlowerBox/281.2",
+   "template": "Workplace_FlowerBox",
+   "model": "Workplace_FlowerBox",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player8/Workplace_Sandbox/281",
+   "template": "Workplace_Sandbox",
+   "model": "Workplace_Sandbox",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player8/Workplace_DebtPad/281",
+   "template": "Workplace_DebtPad",
+   "model": "Workplace_DebtPad",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player8/Debt_CreditCard#289",
+   "template": "Debt_CreditCard_v3",
+   "model": "Debt_CreditCard",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player8/Maker_LemonadeStand#294",
+   "template": "Maker_LemonadeStand",
+   "model": "Maker_LemonadeStand",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player8/Maker_CarWash#297",
+   "template": "Maker_CarWash",
+   "model": "Maker_CarWash",
+   "mode": "normal",
+   "scale": 1.00001
+  },
+  {
+   "key": "City_1.Plots.Plot_Player8/Maker_VendingMachine#300",
+   "template": "Maker_VendingMachine",
+   "model": "Maker_VendingMachine",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player8/Maker_ShinyPokeBloxCard#303",
+   "template": "Maker_ShinyPokeBloxCard",
+   "model": "Maker_ShinyPokeBloxCard",
+   "mode": "ghost",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1.Plots.Plot_Player8/Dream_BeachVilla#308",
+   "template": "Dream_BeachVilla",
+   "model": "Dream_BeachVilla",
+   "mode": "dream",
+   "scale": 0.4
+  },
+  {
+   "key": "City_1/City_Ground/16",
+   "template": "City_Ground",
+   "model": "City_Ground",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1/City_Wall/16",
+   "template": "City_Wall",
+   "model": "City_Wall",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1/Plaza_Disc/16",
+   "template": "Plaza_Disc",
+   "model": "Plaza_Disc",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1/Plaza_Path/16.1",
+   "template": "Plaza_Path",
+   "model": "Plaza_Path",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1/Plaza_Path/16.2",
+   "template": "Plaza_Path",
+   "model": "Plaza_Path",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1/Plaza_Path/16.3",
+   "template": "Plaza_Path",
+   "model": "Plaza_Path",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1/Plaza_Path/16.4",
+   "template": "Plaza_Path",
+   "model": "Plaza_Path",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1/Plaza_Path/16.5",
+   "template": "Plaza_Path",
+   "model": "Plaza_Path",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1/Plaza_Path/16.6",
+   "template": "Plaza_Path",
+   "model": "Plaza_Path",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1/Plaza_Path/16.7",
+   "template": "Plaza_Path",
+   "model": "Plaza_Path",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1/Plaza_Path/16.8",
+   "template": "Plaza_Path",
+   "model": "Plaza_Path",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1/Tree#17",
+   "template": "Tree",
+   "model": "Tree",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1/Tree#18",
+   "template": "Tree",
+   "model": "Tree",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1/Tree#19",
+   "template": "Tree",
+   "model": "Tree",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1/Tree#20",
+   "template": "Tree",
+   "model": "Tree",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1/Tree#21",
+   "template": "Tree",
+   "model": "Tree",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1/Tree#22",
+   "template": "Tree",
+   "model": "Tree",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1/Tree#23",
+   "template": "Tree",
+   "model": "Tree",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1/Tree#24",
+   "template": "Tree",
+   "model": "Tree",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_1/Plaza_Fountain/16",
+   "template": "Plaza_Fountain",
+   "model": "Plaza_Fountain",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_2/City_Ground/33",
+   "template": "City_Ground",
+   "model": "City_Ground",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_2/City_Wall/33",
+   "template": "City_Wall",
+   "model": "City_Wall",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_2/Plaza_Disc/33",
+   "template": "Plaza_Disc",
+   "model": "Plaza_Disc",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_2/Plaza_Path/33.1",
+   "template": "Plaza_Path",
+   "model": "Plaza_Path",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_2/Plaza_Path/33.2",
+   "template": "Plaza_Path",
+   "model": "Plaza_Path",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_2/Plaza_Path/33.3",
+   "template": "Plaza_Path",
+   "model": "Plaza_Path",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_2/Plaza_Path/33.4",
+   "template": "Plaza_Path",
+   "model": "Plaza_Path",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_2/Plaza_Path/33.5",
+   "template": "Plaza_Path",
+   "model": "Plaza_Path",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_2/Plaza_Path/33.6",
+   "template": "Plaza_Path",
+   "model": "Plaza_Path",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_2/Plaza_Path/33.7",
+   "template": "Plaza_Path",
+   "model": "Plaza_Path",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_2/Plaza_Path/33.8",
+   "template": "Plaza_Path",
+   "model": "Plaza_Path",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_2/Tree#34",
+   "template": "Tree",
+   "model": "Tree",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_2/Tree#35",
+   "template": "Tree",
+   "model": "Tree",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_2/Tree#36",
+   "template": "Tree",
+   "model": "Tree",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_2/Tree#37",
+   "template": "Tree",
+   "model": "Tree",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_2/Tree#38",
+   "template": "Tree",
+   "model": "Tree",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_2/Tree#39",
+   "template": "Tree",
+   "model": "Tree",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_2/Tree#40",
+   "template": "Tree",
+   "model": "Tree",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_2/Tree#41",
+   "template": "Tree",
+   "model": "Tree",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_2/Plaza_Fountain/33",
+   "template": "Plaza_Fountain",
+   "model": "Plaza_Fountain",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_3/City_Ground/50",
+   "template": "City_Ground",
+   "model": "City_Ground",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_3/City_Wall/50",
+   "template": "City_Wall",
+   "model": "City_Wall",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_3/Plaza_Disc/50",
+   "template": "Plaza_Disc",
+   "model": "Plaza_Disc",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_3/Plaza_Path/50.1",
+   "template": "Plaza_Path",
+   "model": "Plaza_Path",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_3/Plaza_Path/50.2",
+   "template": "Plaza_Path",
+   "model": "Plaza_Path",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_3/Plaza_Path/50.3",
+   "template": "Plaza_Path",
+   "model": "Plaza_Path",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_3/Plaza_Path/50.4",
+   "template": "Plaza_Path",
+   "model": "Plaza_Path",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_3/Plaza_Path/50.5",
+   "template": "Plaza_Path",
+   "model": "Plaza_Path",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_3/Plaza_Path/50.6",
+   "template": "Plaza_Path",
+   "model": "Plaza_Path",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_3/Plaza_Path/50.7",
+   "template": "Plaza_Path",
+   "model": "Plaza_Path",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_3/Plaza_Path/50.8",
+   "template": "Plaza_Path",
+   "model": "Plaza_Path",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_3/Tree#51",
+   "template": "Tree",
+   "model": "Tree",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_3/Tree#52",
+   "template": "Tree",
+   "model": "Tree",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_3/Tree#53",
+   "template": "Tree",
+   "model": "Tree",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_3/Tree#54",
+   "template": "Tree",
+   "model": "Tree",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_3/Tree#55",
+   "template": "Tree",
+   "model": "Tree",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_3/Tree#56",
+   "template": "Tree",
+   "model": "Tree",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_3/Tree#57",
+   "template": "Tree",
+   "model": "Tree",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_3/Tree#58",
+   "template": "Tree",
+   "model": "Tree",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_3/Plaza_Fountain/50",
+   "template": "Plaza_Fountain",
+   "model": "Plaza_Fountain",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_4/City_Ground/67",
+   "template": "City_Ground",
+   "model": "City_Ground",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_4/City_Wall/67",
+   "template": "City_Wall",
+   "model": "City_Wall",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_4/Plaza_Disc/67",
+   "template": "Plaza_Disc",
+   "model": "Plaza_Disc",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_4/Plaza_Path/67.1",
+   "template": "Plaza_Path",
+   "model": "Plaza_Path",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_4/Plaza_Path/67.2",
+   "template": "Plaza_Path",
+   "model": "Plaza_Path",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_4/Plaza_Path/67.3",
+   "template": "Plaza_Path",
+   "model": "Plaza_Path",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_4/Plaza_Path/67.4",
+   "template": "Plaza_Path",
+   "model": "Plaza_Path",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_4/Plaza_Path/67.5",
+   "template": "Plaza_Path",
+   "model": "Plaza_Path",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_4/Plaza_Path/67.6",
+   "template": "Plaza_Path",
+   "model": "Plaza_Path",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_4/Plaza_Path/67.7",
+   "template": "Plaza_Path",
+   "model": "Plaza_Path",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_4/Plaza_Path/67.8",
+   "template": "Plaza_Path",
+   "model": "Plaza_Path",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_4/Tree#68",
+   "template": "Tree",
+   "model": "Tree",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_4/Tree#69",
+   "template": "Tree",
+   "model": "Tree",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_4/Tree#70",
+   "template": "Tree",
+   "model": "Tree",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_4/Tree#71",
+   "template": "Tree",
+   "model": "Tree",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_4/Tree#72",
+   "template": "Tree",
+   "model": "Tree",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_4/Tree#73",
+   "template": "Tree",
+   "model": "Tree",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_4/Tree#74",
+   "template": "Tree",
+   "model": "Tree",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_4/Tree#75",
+   "template": "Tree",
+   "model": "Tree",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "City_4/Plaza_Fountain/67",
+   "template": "Plaza_Fountain",
+   "model": "Plaza_Fountain",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.FastTrack/Workplace_Yard/346",
+   "template": "Workplace_Yard",
+   "model": "Workplace_Yard",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.FastTrack/Workplace_Building/346",
+   "template": "Workplace_Building_FASTTRACK",
+   "model": "Workplace_Building_FASTTRACK",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.FastTrack/Workplace_MakerLot/346.1",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.FastTrack/Workplace_MakerLot/346.2",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.FastTrack/Workplace_MakerLot/346.3",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.FastTrack/Workplace_MakerLot/346.4",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.FastTrack/Workplace_MakerLot/346.5",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.FastTrack/Workplace_MakerLot/346.6",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.FastTrack/Workplace_MakerLot/346.7",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.FastTrack/Workplace_MakerLot/346.8",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.FastTrack/Workplace_Fence/346.1",
+   "template": "Workplace_Fence",
+   "model": "Workplace_Fence",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.FastTrack/Workplace_Fence/346.2",
+   "template": "Workplace_Fence",
+   "model": "Workplace_Fence",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.FastTrack/Workplace_LampPost/346.1",
+   "template": "Workplace_LampPost",
+   "model": "Workplace_LampPost",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.FastTrack/Workplace_LampPost/346.2",
+   "template": "Workplace_LampPost",
+   "model": "Workplace_LampPost",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.FastTrack/Workplace_FlowerBox/346.1",
+   "template": "Workplace_FlowerBox",
+   "model": "Workplace_FlowerBox",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.FastTrack/Workplace_FlowerBox/346.2",
+   "template": "Workplace_FlowerBox",
+   "model": "Workplace_FlowerBox",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.FastTrack/Workplace_Sandbox/346",
+   "template": "Workplace_Sandbox",
+   "model": "Workplace_Sandbox",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.FastTrack/Maker_CarWash#340",
+   "template": "Maker_CarWash",
+   "model": "Maker_CarWash",
+   "mode": "ghost",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.FastTrack/Dream_Supercar#344",
+   "template": "Dream_Supercar",
+   "model": "Dream_Supercar",
+   "mode": "dream",
+   "scale": 1.06557
+  },
+  {
+   "key": "Catalog.FastTrack/Workplace_Yard/375",
+   "template": "Workplace_Yard",
+   "model": "Workplace_Yard",
+   "mode": "normal",
+   "scale": 1.00001
+  },
+  {
+   "key": "Catalog.FastTrack/Workplace_Building/375",
+   "template": "Workplace_Building_FASTTRACK",
+   "model": "Workplace_Building_FASTTRACK",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.FastTrack/Workplace_MakerLot/375.1",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.FastTrack/Workplace_MakerLot/375.2",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.FastTrack/Workplace_MakerLot/375.3",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.FastTrack/Workplace_MakerLot/375.4",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.FastTrack/Workplace_MakerLot/375.5",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.FastTrack/Workplace_MakerLot/375.6",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.FastTrack/Workplace_MakerLot/375.7",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.FastTrack/Workplace_MakerLot/375.8",
+   "template": "Workplace_MakerLot",
+   "model": "Workplace_MakerLot",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.FastTrack/Workplace_Fence/375.1",
+   "template": "Workplace_Fence",
+   "model": "Workplace_Fence",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.FastTrack/Workplace_Fence/375.2",
+   "template": "Workplace_Fence",
+   "model": "Workplace_Fence",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.FastTrack/Workplace_LampPost/375.1",
+   "template": "Workplace_LampPost",
+   "model": "Workplace_LampPost",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.FastTrack/Workplace_LampPost/375.2",
+   "template": "Workplace_LampPost",
+   "model": "Workplace_LampPost",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.FastTrack/Workplace_FlowerBox/375.1",
+   "template": "Workplace_FlowerBox",
+   "model": "Workplace_FlowerBox",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.FastTrack/Workplace_FlowerBox/375.2",
+   "template": "Workplace_FlowerBox",
+   "model": "Workplace_FlowerBox",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.FastTrack/Workplace_Sandbox/375",
+   "template": "Workplace_Sandbox",
+   "model": "Workplace_Sandbox",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.FastTrack/Kid#363",
+   "template": "Kid",
+   "model": "Kid",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.FastTrack/Kid#364",
+   "template": "Kid_v2",
+   "model": "Kid_v2",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.FastTrack/Maker_GoldCoin#369",
+   "template": "Maker_GoldCoin",
+   "model": "Maker_GoldCoin",
+   "mode": "ghost",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.FastTrack/Dream_Yacht#373",
+   "template": "Dream_Yacht",
+   "model": "Dream_Yacht",
+   "mode": "dream",
+   "scale": 0.30517
+  },
+  {
+   "key": "Catalog.FastTrack/Maker_GoldCoin#356",
+   "template": "Maker_GoldCoin",
+   "model": "Maker_GoldCoin",
+   "mode": "mini",
+   "scale": 0.4
+  },
+  {
+   "key": "Catalog.FastTrack/Maker_PokeBloxCard#358",
+   "template": "Maker_PokeBloxCard",
+   "model": "Maker_PokeBloxCard",
+   "mode": "mini",
+   "scale": 0.4
+  },
+  {
+   "key": "Catalog.MoneyMakers/Maker_LemonadeStand#380",
+   "template": "Maker_LemonadeStand",
+   "model": "Maker_LemonadeStand",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.MoneyMakers/Maker_VendingMachine#382",
+   "template": "Maker_VendingMachine",
+   "model": "Maker_VendingMachine",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.MoneyMakers/Maker_Apartment#383",
+   "template": "Maker_Apartment",
+   "model": "Maker_Apartment",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.MoneyMakers/Maker_CarWash#384",
+   "template": "Maker_CarWash",
+   "model": "Maker_CarWash",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.MoneyMakers/Maker_PokeBloxCard#386",
+   "template": "Maker_PokeBloxCard",
+   "model": "Maker_PokeBloxCard",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.MoneyMakers/Maker_GoldCoin#389",
+   "template": "Maker_GoldCoin",
+   "model": "Maker_GoldCoin",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.MoneyMakers/Maker_FoodTruck#391",
+   "template": "Maker_FoodTruck",
+   "model": "Maker_FoodTruck",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.MoneyMakers/Maker_ToyShop#393",
+   "template": "Maker_ToyShop",
+   "model": "Maker_ToyShop",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.MoneyMakers/Maker_MiniGolf#395",
+   "template": "Maker_MiniGolf",
+   "model": "Maker_MiniGolf",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.MoneyMakers/Maker_HouseToRent#396",
+   "template": "Maker_HouseToRent",
+   "model": "Maker_HouseToRent",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.MoneyMakers/Maker_PizzaRestaurant#397",
+   "template": "Maker_PizzaRestaurant",
+   "model": "Maker_PizzaRestaurant",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.MoneyMakers/Maker_RarePokeBloxCard#399",
+   "template": "Maker_RarePokeBloxCard_v2",
+   "model": "Maker_RarePokeBloxCard_v2",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.MoneyMakers/Maker_GoldBar#402",
+   "template": "Maker_GoldBar",
+   "model": "Maker_GoldBar",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.MoneyMakers/Maker_CoffeeShop#403",
+   "template": "Maker_CoffeeShop",
+   "model": "Maker_CoffeeShop",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.MoneyMakers/Maker_BowlingAlley#405",
+   "template": "Maker_BowlingAlley",
+   "model": "Maker_BowlingAlley",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.MoneyMakers/Maker_Hotel#407",
+   "template": "Maker_Hotel",
+   "model": "Maker_Hotel",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.MoneyMakers/Maker_GameStudio#409",
+   "template": "Maker_GameStudio",
+   "model": "Maker_GameStudio",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.MoneyMakers/Maker_ShinyPokeBloxCard#411",
+   "template": "Maker_ShinyPokeBloxCard",
+   "model": "Maker_ShinyPokeBloxCard",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.MoneyMakers/Maker_ShoppingMall#414",
+   "template": "Maker_ShoppingMall",
+   "model": "Maker_ShoppingMall",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.MoneyMakers/Maker_ApartmentBuilding#416",
+   "template": "Maker_ApartmentBuilding",
+   "model": "Maker_ApartmentBuilding",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.MoneyMakers/Maker_ThemePark#418",
+   "template": "Maker_ThemePark",
+   "model": "Maker_ThemePark",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.MoneyMakers/Maker_GoldTreasureChest#419",
+   "template": "Maker_GoldTreasureChest",
+   "model": "Maker_GoldTreasureChest",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.MoneyMakers/Maker_UnknownMaker#420",
+   "template": "Maker_UnknownMaker",
+   "model": "Maker_UnknownMaker",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.CardCases/Maker_RarePokeBloxCard#422",
+   "template": "Maker_RarePokeBloxCard",
+   "model": "Maker_RarePokeBloxCard",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.CardCases/Maker_RarePokeBloxCard#425",
+   "template": "Maker_RarePokeBloxCard_v2",
+   "model": "Maker_RarePokeBloxCard_v2",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.CardCases/Maker_RarePokeBloxCard#428",
+   "template": "Maker_RarePokeBloxCard_v3",
+   "model": "Maker_RarePokeBloxCard_v3",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.CardCases/Maker_RarePokeBloxCard#431",
+   "template": "Maker_RarePokeBloxCard_v4",
+   "model": "Maker_RarePokeBloxCard_v4",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.Debts/Debt_CreditCard#434",
+   "template": "Debt_CreditCard",
+   "model": "Debt_CreditCard",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.Debts/Debt_CreditCard#436",
+   "template": "Debt_CreditCard_v2",
+   "model": "Debt_CreditCard",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.Debts/Debt_CarLoan#438",
+   "template": "Debt_CarLoan",
+   "model": "Debt_CarLoan",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.Debts/Debt_CarLoan#440",
+   "template": "Debt_CarLoan_v2",
+   "model": "Debt_CarLoan",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.Debts/Debt_SchoolLoan#442",
+   "template": "Debt_SchoolLoan",
+   "model": "Debt_SchoolLoan",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.Debts/Debt_SchoolLoan#443",
+   "template": "Debt_SchoolLoan_v2",
+   "model": "Debt_SchoolLoan_books7",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.Debts/Debt_BankLoan#444",
+   "template": "Debt_BankLoan",
+   "model": "Debt_BankLoan",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.Debts/Debt_BankLoan#446",
+   "template": "Debt_BankLoan_v2",
+   "model": "Debt_BankLoan",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.Debts/Debt_OtherDebt#448",
+   "template": "Debt_OtherDebt",
+   "model": "Debt_OtherDebt",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.Debts/Debt_OtherDebt#449",
+   "template": "Debt_OtherDebt_v2",
+   "model": "Debt_OtherDebt",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.Kid/Kid#450",
+   "template": "Kid",
+   "model": "Kid",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.Dreams/Dream_Supercar",
+   "template": "Dream_Supercar",
+   "model": "Dream_Supercar",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.Dreams/Dream_Yacht",
+   "template": "Dream_Yacht",
+   "model": "Dream_Yacht",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.Dreams/Dream_BeachVilla",
+   "template": "Dream_BeachVilla",
+   "model": "Dream_BeachVilla",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.Dreams/Dream_PrivateJet",
+   "template": "Dream_PrivateJet",
+   "model": "Dream_PrivateJet",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.Dreams/Dream_PrivateIsland",
+   "template": "Dream_PrivateIsland",
+   "model": "Dream_PrivateIsland",
+   "mode": "normal",
+   "scale": 1.0
+  }
+ ]
+}

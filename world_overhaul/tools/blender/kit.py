@@ -89,6 +89,7 @@ class Model:
         self.warnings = []
         self.R = Matrix.Identity(3)  # sub-assembly rotation (Roblox space)
         self.t = Vector((0, 0, 0))  # sub-assembly offset (Roblox space)
+        self.boxes = []  # axis-aligned boxes (Blender space) for the coplanar-face check
 
     # ------------------------------------------------------------------ helpers
     def _group(self, glow=None, glass=False):
@@ -184,7 +185,43 @@ class Model:
         if (round_bottom is None and bottom) or round_bottom is False:
             edges = [e for e in edges if not all(v.co.z < -sy / 2 + 1e-6 for v in e.verts)]
         smooth = self._bevel(bm, min(sx, sy, sz), bevel, edges=edges)
-        self._add(bm, self._matrix(pos, rot), swatch, smooth, glow, glass)
+        m = self._matrix(pos, rot)
+        r = m.to_3x3()
+        if all(sorted(abs(round(r[i][j], 4)) for j in range(3)) == [0.0, 0.0, 1.0] for i in range(3)):
+            half = Vector([abs(r[i][0]) * sx / 2 + abs(r[i][1]) * sz / 2 + abs(r[i][2]) * sy / 2 for i in range(3)])
+            c = m.translation
+            bw = 0.0
+            if bevel:
+                bw = min(BEVEL[bevel] if isinstance(bevel, str) else float(bevel), min(sx, sy, sz) * 0.45)
+            key = swatch + ("|glow" if glow else "") + ("|glass" if glass else "")
+            self.boxes.append((c - half, c + half, key, "%s %s" % (swatch, tuple(round(v, 2) for v in pos)), bw))
+        self._add(bm, m, swatch, smooth, glow, glass)
+
+    def coplanar_faces(self, tol=0.004, min_area=0.02):
+        """Two boxes whose faces lie on the same plane, facing the same way, and overlap: the renderer cannot
+        tell which is in front (z-fighting: flicker in Roblox, black specks in renders). Bottom faces on the
+        model's lowest level are ignored (nobody sees them)."""
+        out = []
+        if not self.boxes:
+            return out
+        floor = min(b[0].z for b in self.boxes)
+        for i in range(len(self.boxes)):
+            lo1, hi1, k1, n1, b1 = self.boxes[i]
+            for j in range(i + 1, len(self.boxes)):
+                lo2, hi2, k2, n2, b2 = self.boxes[j]
+                if k1 == k2:
+                    continue  # same color on the same plane: the fight is invisible
+                for a in range(3):
+                    o = [k for k in range(3) if k != a]
+                    # only the flat part of each face counts (the bevel curves away from the plane)
+                    w0 = min(hi1[o[0]] - b1, hi2[o[0]] - b2) - max(lo1[o[0]] + b1, lo2[o[0]] + b2)
+                    w1 = min(hi1[o[1]] - b1, hi2[o[1]] - b2) - max(lo1[o[1]] + b1, lo2[o[1]] + b2)
+                    if w0 <= 0 or w1 <= 0 or w0 * w1 < min_area:
+                        continue
+                    for side, p1, p2 in (("-", lo1[a], lo2[a]), ("+", hi1[a], hi2[a])):
+                        if abs(p1 - p2) < tol and not (a == 2 and side == "-" and abs(p1 - floor) < tol):
+                            out.append("coplanar %s%s faces: [%s] and [%s]" % (side, "xyz"[a], n1, n2))
+        return out
 
     def cyl(self, radius, length, pos, swatch, axis="Y", bevel="M", rot=None, verts=20, glow=None, glass=False,
             radius_top=None, bottom=False):

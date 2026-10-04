@@ -44,7 +44,7 @@ def lemonade_stand(m):
     m.box((5, 2.7, 2.5), (0, 0, 0), "GOLD_LIGHT", bevel="M", bottom=True)
     m.box((5.2, 0.35, 2.7), (0, 2.65, 0), "WHITE", bevel="S", bottom=True)
     # sign board: "LEMONADE" text stays on the old sign (front face at z -1.45)
-    parts.sign_board(m, (0, 1.6, -1.35), 4.5, 1.0, "GOLD", frame="WHITE", frame_w=0.25, depth=0.3,
+    parts.sign_board(m, (0, 1.6, -1.35), 4.3, 1.0, "GOLD", frame="WHITE", frame_w=0.25, depth=0.3,
                      text_plane_z=-1.45, bolts=False)
     # striped umbrella on a pole behind the counter
     m.cyl(0.17, 3.0, (0, 2.9, 1), "WHITE", bevel="XS", bottom=True, verts=8)
@@ -91,7 +91,7 @@ def car_wash(m):
     for x in (-4, 4):
         m.box((1, 6, 7), (x, 0, 0), blue, bevel="M", bottom=True)
     m.box((9, 1, 7), (0, 6, 0), blue, bevel="M", bottom=True)
-    parts.sign_board(m, (0, 6.5, -3.6), 7, 0.6, "SKY", frame="WHITE", frame_w=0.2, depth=0.3, text_plane_z=-3.7,
+    parts.sign_board(m, (0, 6.5, -3.6), 7, 0.5, "SKY", frame="WHITE", frame_w=0.2, depth=0.3, text_plane_z=-3.7,
                      bolts=False)
     m.box((7, 0.3, 7), (0, 0, 0), "WATER", glass=True, bevel="S", bottom=True)
     # two big spinning brushes (detail) and soap bubbles
@@ -109,10 +109,10 @@ def food_truck(m):
     orange = "ORANGE"
     m.box((5.9, 4.0, 4.4), (-1.05, 0.9, 0), orange, bevel="L", bottom=True)  # box body (x -4 .. 1.9)
     m.box((2.2, 2.7, 4.2), (2.9, 0.9, 0), orange, bevel="L", bottom=True)  # cab (x 1.8 .. 4)
-    m.box((0.3, 1.1, 3.6), (3.85, 2.3, 0), "WINDOW", bevel="XS", bottom=True)  # windshield
+    m.box((0.3, 1.1, 3.6), (3.9, 2.3, 0), "WINDOW", bevel="XS", bottom=True)  # windshield (proud of the cab face)
     for z in (-2.05, 2.05):
         m.box((1.2, 0.9, 0.3), (2.9, 2.45, z), "WINDOW", bevel="XS", bottom=True)
-        m.box((5.6, 0.4, 0.3), (-1.05, 1.35, z), "WHITE", bevel="XS", bottom=True)  # side stripe
+        m.box((5.6, 0.4, 0.3), (-1.05, 1.35, z * 2.1 / 2.05), "WHITE", bevel="XS", bottom=True)  # side stripe
     for z in (-1.5, 1.5):
         m.cyl(0.28, 0.3, (3.95, 1.55, z), "GLOW_WARM", axis="X", glow="GLOW_WARM", bevel=None, verts=10)
     # serving hatch: dark frame, warm light, counter
@@ -138,13 +138,13 @@ def toy_shop(m):
 
 
 def mini_golf(m):
-    m.box((9, 0.3, 7), (0, 0, 0), "GREEN", bevel="S", bottom=True)
+    m.box((8.6, 0.3, 6.6), (0, 0, 0), "GREEN", bevel="S", bottom=True)  # inside the wooden rails
     for z in (-3.3, 3.3):
         m.box((9, 0.45, 0.4), (0, 0, z), "WOOD", bevel="S", bottom=True)
     for x in (-4.3, 4.3):
         m.box((0.4, 0.45, 6.2), (x, 0, 0), "WOOD", bevel="S", bottom=True)
     m.cyl(0.5, 0.3, (2.5, 0.05, 1.5), "CHARCOAL", bevel="XS", bottom=True, verts=12)
-    m.cyl(0.13, 4.0, (2.5, 0.3, 1.5), "WHITE", bevel="XS", bottom=True, verts=8)
+    m.cyl(0.15, 4.0, (2.5, 0.3, 1.5), "WHITE", bevel="XS", bottom=True, verts=8)
     m.prism([(2.6, 3.2), (4.0, 3.7), (2.6, 4.2)], 0.3, (0, 0, 1.5), "RED", plane="XY", bevel="XS")
     # a little windmill as the obstacle (detail)
     m.box((2, 1.5, 2), (-2, 0.3, -1), "GOLD_LIGHT", bevel="M", bottom=True)
@@ -604,7 +604,7 @@ def lobby_bench(m):
     """Lobby.luau:373-375: a wooden bench (backrest on the wall side, -X here) with a gold plaque (detail)."""
     for z in (-2.3, 2.3):
         m.box((2.0, 1.5, 0.5), (0, 0, z), "CHARCOAL", bevel="S", bottom=True)
-        m.box((0.4, 1.7, 0.4), (-1.0, 1.8, z), "CHARCOAL", bevel="XS", bottom=True)
+        m.box((0.5, 1.75, 0.5), (-1.0, 1.8, z), "CHARCOAL", bevel="XS", bottom=True)
     for x in (-0.55, 0.6):
         m.box((1.1, 0.4, 6), (x, 1.5, 0), "WOOD", bevel="S", bottom=True)
     for y in (2.2, 2.95):

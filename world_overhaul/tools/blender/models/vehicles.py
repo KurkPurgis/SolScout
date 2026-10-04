@@ -85,7 +85,7 @@ def dream_yacht(m):
     m.prism([(-1.1, bridge + 0.3), (0.3, bridge + 0.3), (0.3, bridge + 1.3)], 7.5, (0, 0, 0), "WINDOW", plane="ZY",
             bevel="XS")
     m.box((2.6, 1.4, 1.4), (0, bridge + 0.3, 1.2), "WHITE", bevel="S", bottom=True)
-    m.torus(0.45, 0.13, (0, bridge + 1.95, 2.0), "STEEL", axis="Z", segs=12, ring_segs=6)
+    m.torus(0.45, 0.15, (0, bridge + 1.95, 2.0), "STEEL", axis="Z", segs=12, ring_segs=6)
     m.box((3.0, 0.8, 1.2), (0, bridge + 0.3, 3.8), "WHITE", bevel="S", bottom=True)
     m.box((3.0, 1.2, 0.45), (0, bridge + 1.1, 4.4), "WHITE", bevel="S", bottom=True)
     # hard top on four poles, radar, antenna with a red tip
@@ -183,7 +183,7 @@ def dream_private_jet(m):
              math.cos(2 * math.pi * k / 10) * (0.65 if k % 2 == 0 else 0.28)) for k in range(10)]
     m.prism([(z + 16.9, y + 9.3) for z, y in star], 0.62, (0, 0, 0), "GOLD", plane="ZY", bevel="XS")
     m.box((10, 0.32, 2.4), (0, 12.12, 17.9), white, bevel="S", bottom=True)
-    m.box((10.1, 0.34, 0.45), (0, 12.12, 19.1 - 0.25), "GOLD", bevel="XS", bottom=True)
+    m.box((10.1, 0.34, 0.45), (0, 12.11, 19.1 - 0.25), "GOLD", bevel="XS", bottom=True)
     # landing gear
     for x, z, d in ((0, -9.5, 1.2), (-1.8, 3.5, 1.5), (1.8, 3.5, 1.5)):
         m.cyl(0.17, by - r - d / 2 + 0.4, (x, d / 2, z), "STEEL", bevel="XS", bottom=True, verts=8)
@@ -228,7 +228,7 @@ def depot_bus(m):
         m.box((0.3, 0.55, 0.8), (-9.95, 2.2, z), "GLOW_WARM", glow="GLOW_WARM", bevel="XS", bottom=True)
         m.box((0.3, 0.55, 0.8), (9.95, 2.2, z), "RED", bevel="XS", bottom=True)
     # folding door on the yard side (detail)
-    m.box((1.9, 3.6, 0.3), (-7.6, 1.5, -2.55), "WINDOW", bevel="S", bottom=True)
+    m.box((1.9, 3.6, 0.3), (-7.6, 1.5, -2.6), "WINDOW", bevel="S", bottom=True)
     m.box((0.3, 3.6, 0.32), (-7.6, 1.5, -2.62), "WHITE", bevel="XS", bottom=True)
     for x in (-6.5, 6.5):
         for z in (-2.6, 2.6):
@@ -258,8 +258,8 @@ def police_car(m):
         m.box((3.6, 1.1, 0.3), (0.3, 0.95, s * 2.0), "NAVY", bevel="S", bottom=True)
         m.cyl(0.32, 0.3, (0.3, 1.5, s * 2.12), "GOLD", axis="Z", bevel=None, verts=10)
     m.box((1.2, 0.3, 2.6), (0.5, 3.9, 0), "CHARCOAL", bevel="XS", bottom=True)
-    m.box((0.8, 0.5, 0.8), (0.5, 3.9, 0.8), "RED", glow="RED", bevel="S", bottom=True)
-    m.box((0.8, 0.5, 0.8), (0.5, 3.9, -0.8), "BLUE", glow="BLUE", bevel="S", bottom=True)
+    m.box((0.8, 0.5, 0.8), (0.5, 3.95, 0.8), "RED", glow="RED", bevel="S", bottom=True)
+    m.box((0.8, 0.5, 0.8), (0.5, 3.95, -0.8), "BLUE", glow="BLUE", bevel="S", bottom=True)
 
 
 def garage_car_lift(m):

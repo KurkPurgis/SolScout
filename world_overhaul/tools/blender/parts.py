@@ -72,7 +72,7 @@ def bulb(m, center, radius, glow="GLOW_WARM", cap="STEEL"):
     """A glowing lamp bulb with a little cap on top."""
     cx, cy, cz = center
     m.sphere(radius, center, glow, glow=glow, segs=10, rings=6)
-    m.cyl(radius * 0.7, radius * 0.5, (cx, cy + radius * 0.85, cz), cap, bevel="XS", verts=10)
+    m.cyl(radius * 0.7, max(radius * 0.5, 0.3), (cx, cy + radius * 0.85, cz), cap, bevel="XS", verts=10)
 
 
 def stripes_awning(m, x0, x1, n, y_top, y_bottom, z_back, z_front, colors, thick=0.45, lip=0.38):

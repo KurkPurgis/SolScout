@@ -2,3 +2,4 @@ __pycache__/
 *.pyc
 *.blend1
 tools/luau/luaurun
+renders/objects/**/*.png

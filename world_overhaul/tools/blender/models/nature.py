@@ -63,12 +63,12 @@ def dream_private_island(m):
     m.box((2.6, 1.0, 4), (bx, 0.4, bz + 0.5), "WHITE", bevel="M", bottom=True)
     m.prism([(bx - 1.3, bz - 1.5), (bx + 1.3, bz - 1.5), (bx, bz - 3.5)], 1.0, (0, 0.4, 0), "WHITE", plane="XZ",
             bevel="S")
-    m.box((2.7, 0.3, 4), (bx, 0.95, bz + 0.5), "RED", bevel="XS", bottom=True)
+    m.box((2.7, 0.3, 4.1), (bx, 0.95, bz + 0.5), "RED", bevel="XS", bottom=True)
     m.box((2.2, 0.7, 0.35), (bx, 1.4, bz - 0.6), "WINDOW", bevel="XS", bottom=True)
     # hammock between two palms, towel, umbrella
     m.stick((-9.2, ground + 2.2, -5), (-6.5, ground + 2.2, 7.5), 0.45, "PINK", verts=10)
     m.box((2, 0.3, 3.5), (5, ground - 0.15, -3), "BLUE", bevel="XS", bottom=True)
-    m.cyl(0.12, 3.5, (7, ground, -3), "WHITE", bevel="XS", bottom=True, verts=8)
+    m.cyl(0.15, 3.5, (7, ground, -3), "WHITE", bevel="XS", bottom=True, verts=8)
     m.cyl(2.25, 0.7, (7, ground + 3.3, -3), "GOLD", bevel="S", bottom=True, verts=16, radius_top=0.25)
     # the treasure chest full of gold (icon chest, detail)
     m.box((2.0, 1.2, 1.3), (8, ground, 6), "WOOD", bevel="M", bottom=True)

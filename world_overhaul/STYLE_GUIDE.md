@@ -86,18 +86,24 @@ These follow the game's own theme colors (`Themes.luau`), moved to the nearest p
 All in `tools/blender/kit.py` (primitives) and `tools/blender/parts.py` (kit parts). Models are written in
 Roblox local coordinates, with the same numbers as the game code, so they fit the original exactly.
 
-| kit part | what | used by |
+| kit part (`parts.py`) | what | used by |
 |---|---|---|
-| `window` | WINDOW pane in a thick WHITE frame with a sill | every building, Money Maker shops, bus, cars |
-| `door` | WOOD door, WHITE frame, GOLD knob, optional doormat | houses, shops, buildings |
-| `awning` | striped rounded awning (theme accent + WHITE) | workplaces, shops, food truck |
-| `gable_roof` / `flat_roof` | fat roof with overhang and trim | houses, hotel, shops, buildings |
-| `sign_board` | rounded board with a frame; the Roblox SurfaceGui text stays on the old (invisible) sign part in front of it | every sign |
-| `wheel` | CHARCOAL tire with a STEEL hub and a colored cap | every vehicle |
-| `lamp` | STEEL post + GLOW_WARM bulb with a cap | lamp posts, sign lamps, lobby lamps |
-| `bush`, `round_tree`, `palm`, `flower` | rounded plants (palm leaves = icon palm) | trees, flower boxes, palms, villa, island |
-| `fence` | thick round-topped posts and rails | plots, railings |
-| `crate`, `chest`, `coin`, `goldbar`, `card` | from the icons (coin, goldbar, chest, card) | Money Makers, investments, debts |
+| `window` | shiny pane in a thick rounded frame slab, optional sill / cross bars | workplaces, house, lobby windows |
+| `door` | door with a raised panel, frame, gold knob, optional red doormat (its detail) | house, shops, booths |
+| `stripes_awning` | striped rounded awning (theme accent + WHITE) | every workplace |
+| `shop` | Money Maker shop: box with roof rim, window + door frame, 2-color awning, sign board | toy shop, coffee shop, bowling, game studio, mall, pizza restaurant |
+| `tower` | Money Maker tower: lit window grid, roof rim, optional sign | hotel, apartments, apartment building |
+| `sign_board` | rounded board in a frame; the game's SurfaceGui text stays on the old part right in front of it | every sign |
+| `plus_sign` | a cross from 3 non-overlapping boxes | hospital bed, cabinet, blackboard sum |
+| `pillar` | column with cap and base | lobby, rooms |
+| `wheel` | fat CHARCOAL tire, STEEL hub, colored cap (stays inside the original wheel box) | every vehicle |
+| `lamp_post`, `bulb` | STEEL post + glowing bulb with a cap | workplace lamps, lobby, auction room |
+| `round_tree`, `bush`, `flower` | rounded plants | trees, flower boxes, villa |
+| `palm`, `palm_leaf` | the icon palm (curved leaves, coconuts) | plaza, lobby palms, villa, island |
+| `chunky_rail` | thick round rail | fences, railings, yacht |
+
+Primitives (`kit.py`): `box`, `cyl`, `sphere`, `dome`, `torus`, `prism`, `wedge`, `capsule`, `stick`, `bar`, `custom`,
+all with the shared bevel sizes, the 0.3 stud minimum thickness and palette UVs.
 
 ## 5. Scale (the player is 5 studs tall)
 

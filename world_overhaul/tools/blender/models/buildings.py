@@ -42,14 +42,14 @@ def workplace_building(m, theme_name):
     for x in (-24.15, 24.15):
         m.box((0.4, 1.2, 16), (x, 0, 15), "STONE_DARK", bevel="S", bottom=True)
     # roof over the back half (y 14..15, z 13..24) with a fat rounded rim
-    m.box((47, 1, 11), (0, 14, 18.5), wall, bevel="M", bottom=True)
+    m.box((47, 0.95, 11), (0, 14.05, 18.5), wall, bevel="M", bottom=True)
     m.box((48, 0.5, 0.7), (0, 15, 23.65), trim, bevel="S", bottom=True)
     m.box((48, 0.5, 0.7), (0, 15, 13.35), trim, bevel="S", bottom=True)
     for x in (-23.65, 23.65):
         m.box((0.7, 0.5, 11), (x, 15, 18.5), trim, bevel="S", bottom=True)
     # front trim above the beam, left and right of the sign (y 14..14.6)
-    for x0, x1 in ((-24, -13.6), (13.6, 24)):
-        m.box((x1 - x0, 0.6, 1.4), ((x0 + x1) / 2, 14, 6.5), accent, bevel="S", bottom=True)
+    for x0, x1 in ((-24, -13.6), (13.6, 24)):  # 14.05..14.5: no face shared with the pillar caps (z-fight)
+        m.box((x1 - x0, 0.45, 1.4), ((x0 + x1) / 2, 14.05, 6.5), accent, bevel="S", bottom=True)
     # side windows (Plots.luau:151-156): 5 wide, 4.5 tall, centered y 6.75 at z 11 and 19
     for x, facing in ((-24.0, "-X"), (24.0, "+X")):
         for z in (11, 19):
@@ -216,8 +216,8 @@ def lobby_window(m):
     """Lobby.luau:368: a big window in the side wall (0.6 x 10 x 14). Inside of the hall = +X here."""
     m.box((0.4, 10, 14), (-0.1, 0, 0), "WHITE", bevel="S", bottom=True)
     m.box((0.3, 9.0, 13.0), (0.25, 0.5, 0), "SKY", glass=True, bevel="XS", bottom=True)
-    m.box((0.3, 9.0, 0.4), (0.3, 0.5, 0), "WHITE", bevel=None, bottom=True)
-    m.box((0.3, 0.4, 13.0), (0.3, 4.8, 0), "WHITE", bevel=None, bottom=True)
+    m.box((0.3, 8.9, 0.4), (0.3, 0.55, 0), "WHITE", bevel=None, bottom=True)
+    m.box((0.3, 0.4, 12.9), (0.3, 4.8, 0), "WHITE", bevel=None, bottom=True)
 
 
 def auction_room_shell(m):
@@ -241,7 +241,7 @@ def podium_room_shell(m):
     """PodiumRoom.luau:66-67: floor (80 x 64) and the dark backdrop (80 x 34) with gold stars (detail)."""
     m.box((80, 1, 64), (0, -1, 5), "NAVY", bevel="M", bottom=True)
     m.cyl(18, 0.3, (0, -0.28, -4), "PURPLE", bevel="S", bottom=True, verts=40)  # a purple circle around the podium
-    m.box((80, 34, 1), (0, -1, -20), "INK", bevel="M", bottom=True)
+    m.box((79.6, 34, 1), (0, -1, -20), "INK", bevel="M", bottom=True)
     for x, y, r in ((-34, 27, 1.0), (-22, 30, 0.7), (-8, 31, 0.8), (8, 30.5, 0.9), (21, 29, 0.7), (35, 27, 1.0),
                     (-28, 14, 0.6), (28, 15, 0.6)):
         m.prism(star_points(r, r * 0.45, cx=x, cy=y), 0.3, (0, 0, -19.45), "GOLD", plane="XY", bevel=None)

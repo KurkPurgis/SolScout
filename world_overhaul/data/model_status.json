@@ -223,17 +223,17 @@
   "bbox_dev": [
    0.0,
    0.0,
-   -0.275,
+   -0.245,
    0.0,
    0.0,
    0.025
   ],
-  "bbox_max_dev": 0.275,
+  "bbox_max_dev": 0.245,
   "bbox_new": [
    [
     -4.0,
     0.0,
-    -0.4
+    -0.37
    ],
    [
     4.0,
@@ -241,7 +241,7 @@
     0.15
    ]
   ],
-  "bbox_ok": false,
+  "bbox_ok": true,
   "bbox_old": [
    [
     -4.0,
@@ -255,7 +255,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:29",
+  "built_at": "2026-10-04 21:45",
   "category": "decoration",
   "export_name": "Clinic_WallScreen",
   "fbx": "export/decoration/Clinic_WallScreen.fbx",
@@ -499,23 +499,23 @@
  "Debt_OtherDebt": {
   "bbox_dev": [
    0.0,
-   0.0,
+   -0.02,
    -0.12,
    -0.0,
-   0.0,
-   -0.0
+   0.02,
+   0.02
   ],
   "bbox_max_dev": 0.12,
   "bbox_new": [
    [
     -1.15,
-    -0.05,
+    -0.07,
     -1.27
    ],
    [
     1.15,
-    2.25,
-    1.15
+    2.27,
+    1.17
    ]
   ],
   "bbox_ok": true,
@@ -532,7 +532,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:33",
+  "built_at": "2026-10-04 21:42",
   "category": "props",
   "export_name": "Debt Crate",
   "fbx": "export/props/Debt Crate.fbx",
@@ -540,9 +540,9 @@
    "Debt_OtherDebt"
   ],
   "renders": [
-   "renders/objects/Debt_OtherDebt/Debt_OtherDebt_front34.jpg",
-   "renders/objects/Debt_OtherDebt/Debt_OtherDebt_back34.jpg",
-   "renders/objects/Debt_OtherDebt/Debt_OtherDebt_eye.jpg"
+   "renders/objects/Debt_OtherDebt/Debt_OtherDebt_front34.png",
+   "renders/objects/Debt_OtherDebt/Debt_OtherDebt_back34.png",
+   "renders/objects/Debt_OtherDebt/Debt_OtherDebt_eye.png"
   ],
   "round": 0,
   "status": "built",
@@ -683,27 +683,27 @@
  },
  "Depot_Bus": {
   "bbox_dev": [
-   -0.225,
+   -0.1,
    0.0,
-   -0.29,
-   0.225,
+   -0.13,
+   0.1,
    0.0,
-   0.29
+   0.13
   ],
-  "bbox_max_dev": 0.29,
+  "bbox_max_dev": 0.13,
   "bbox_new": [
    [
-    -10.225,
+    -10.1,
     0.0,
-    -3.29
+    -3.13
    ],
    [
-    10.225,
+    10.1,
     7.0,
-    3.29
+    3.13
    ]
   ],
-  "bbox_ok": false,
+  "bbox_ok": true,
   "bbox_old": [
    [
     -10.0,
@@ -717,7 +717,7 @@
    ]
   ],
   "budget": 4000,
-  "built_at": "2026-10-04 21:28",
+  "built_at": "2026-10-04 21:51",
   "category": "vehicles",
   "export_name": "Depot_Bus",
   "fbx": "export/vehicles/Depot_Bus.fbx",
@@ -858,9 +858,9 @@
    0.09,
    0.098,
    0.0,
-   0.3
+   0.0
   ],
-  "bbox_max_dev": 0.3,
+  "bbox_max_dev": 0.098,
   "bbox_new": [
    [
     -14.414,
@@ -870,10 +870,10 @@
    [
     14.414,
     12.46,
-    19.4
+    19.1
    ]
   ],
-  "bbox_ok": false,
+  "bbox_ok": true,
   "bbox_old": [
    [
     -14.316,
@@ -887,7 +887,7 @@
    ]
   ],
   "budget": 4000,
-  "built_at": "2026-10-04 21:20",
+  "built_at": "2026-10-04 21:43",
   "category": "vehicles",
   "export_name": "PrivateJet",
   "fbx": "export/vehicles/PrivateJet.fbx",
@@ -908,22 +908,22 @@
  },
  "Dream_Supercar": {
   "bbox_dev": [
-   -0.04,
+   0.12,
    0.0,
    0.02,
-   0.04,
+   -0.12,
    -0.125,
    -0.0
   ],
   "bbox_max_dev": 0.125,
   "bbox_new": [
    [
-    -2.84,
+    -2.68,
     0.0,
     -6.48
    ],
    [
-    2.84,
+    2.68,
     3.33,
     5.7
    ]
@@ -942,7 +942,7 @@
    ]
   ],
   "budget": 4000,
-  "built_at": "2026-10-04 21:06",
+  "built_at": "2026-10-04 21:51",
   "category": "vehicles",
   "export_name": "Supercar",
   "fbx": "export/vehicles/Supercar.fbx",
@@ -958,7 +958,7 @@
   "round": 0,
   "status": "built",
   "strip": "renders/objects/strips/Dream_Supercar.jpg",
-  "triangles": 3896,
+  "triangles": 2696,
   "tris_ok": true,
   "warnings": []
  },
@@ -1134,17 +1134,17 @@
   "bbox_dev": [
    0.0,
    0.0,
-   -0.375,
+   -0.3,
    0.0,
    0.0,
    0.0
   ],
-  "bbox_max_dev": 0.375,
+  "bbox_max_dev": 0.3,
   "bbox_new": [
    [
     -5.0,
     0.0,
-    -0.525
+    -0.45
    ],
    [
     5.0,
@@ -1152,7 +1152,7 @@
     0.15
    ]
   ],
-  "bbox_ok": false,
+  "bbox_ok": true,
   "bbox_old": [
    [
     -5.0,
@@ -1166,7 +1166,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:30",
+  "built_at": "2026-10-04 21:46",
   "category": "decoration",
   "export_name": "Garage_ToolBoard",
   "fbx": "export/decoration/Garage_ToolBoard.fbx",
@@ -1460,29 +1460,273 @@
   "tris_ok": true,
   "warnings": []
  },
- "Maker_Apartment": {
+ "Lobby_RoomBooth": {
   "bbox_dev": [
+   -0.0,
    0.0,
+   -0.005,
    0.0,
-   -0.3,
-   0.1,
-   0.0,
-   0.0
+   -0.055,
+   -0.065
   ],
-  "bbox_max_dev": 0.3,
+  "bbox_max_dev": 0.065,
   "bbox_new": [
    [
-    -4.0,
+    -13.6,
     0.0,
-    -3.95
+    -10.73
    ],
    [
-    4.1,
-    8.0,
-    3.5
+    13.6,
+    18.745,
+    10.66
    ]
   ],
-  "bbox_ok": false,
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -13.6,
+    0.0,
+    -10.725
+   ],
+   [
+    13.6,
+    18.8,
+    10.725
+   ]
+  ],
+  "budget": 6000,
+  "built_at": "2026-10-04 21:52",
+  "category": "buildings",
+  "export_name": "Lobby_RoomBooth",
+  "fbx": "export/buildings/Lobby_RoomBooth.fbx",
+  "meshes": [
+   "Lobby_RoomBooth",
+   "Lobby_RoomBooth_Glow_GOLD",
+   "Lobby_RoomBooth_Glow_RED_T45",
+   "Lobby_RoomBooth_Glow_RED_T70"
+  ],
+  "renders": [
+   "renders/objects/Lobby_RoomBooth/Lobby_RoomBooth_front34.jpg",
+   "renders/objects/Lobby_RoomBooth/Lobby_RoomBooth_back34.jpg",
+   "renders/objects/Lobby_RoomBooth/Lobby_RoomBooth_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Lobby_RoomBooth.jpg",
+  "triangles": 1440,
+  "tris_ok": true,
+  "warnings": [
+   "coplanar -z faces: [RED (0, 15.3, 9.02)] and [WHITE (0, 15.3, -10.2)]",
+   "coplanar +z faces: [RED (0, 15.3, 9.02)] and [WHITE (0, 15.3, -10.2)]"
+  ]
+ },
+ "Lobby_RoomBooth_v2": {
+  "bbox_dev": [
+   -0.0,
+   0.0,
+   -0.005,
+   0.0,
+   -0.055,
+   -0.065
+  ],
+  "bbox_max_dev": 0.065,
+  "bbox_new": [
+   [
+    -13.6,
+    0.0,
+    -10.73
+   ],
+   [
+    13.6,
+    18.745,
+    10.66
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -13.6,
+    0.0,
+    -10.725
+   ],
+   [
+    13.6,
+    18.8,
+    10.725
+   ]
+  ],
+  "budget": 6000,
+  "built_at": "2026-10-04 21:53",
+  "category": "buildings",
+  "export_name": "Lobby_RoomBooth_v2",
+  "fbx": "export/buildings/Lobby_RoomBooth_v2.fbx",
+  "meshes": [
+   "Lobby_RoomBooth_v2",
+   "Lobby_RoomBooth_v2_Glow_BLUE_T45",
+   "Lobby_RoomBooth_v2_Glow_BLUE_T70",
+   "Lobby_RoomBooth_v2_Glow_GOLD"
+  ],
+  "renders": [
+   "renders/objects/Lobby_RoomBooth_v2/Lobby_RoomBooth_v2_front34.jpg",
+   "renders/objects/Lobby_RoomBooth_v2/Lobby_RoomBooth_v2_back34.jpg",
+   "renders/objects/Lobby_RoomBooth_v2/Lobby_RoomBooth_v2_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Lobby_RoomBooth_v2.jpg",
+  "triangles": 1440,
+  "tris_ok": true,
+  "warnings": [
+   "coplanar -z faces: [BLUE (0, 15.3, 9.02)] and [WHITE (0, 15.3, -10.2)]",
+   "coplanar +z faces: [BLUE (0, 15.3, 9.02)] and [WHITE (0, 15.3, -10.2)]"
+  ]
+ },
+ "Lobby_RoomBooth_v3": {
+  "bbox_dev": [
+   -0.0,
+   0.0,
+   -0.005,
+   0.0,
+   -0.055,
+   -0.065
+  ],
+  "bbox_max_dev": 0.065,
+  "bbox_new": [
+   [
+    -13.6,
+    0.0,
+    -10.73
+   ],
+   [
+    13.6,
+    18.745,
+    10.66
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -13.6,
+    0.0,
+    -10.725
+   ],
+   [
+    13.6,
+    18.8,
+    10.725
+   ]
+  ],
+  "budget": 6000,
+  "built_at": "2026-10-04 21:53",
+  "category": "buildings",
+  "export_name": "Lobby_RoomBooth_v3",
+  "fbx": "export/buildings/Lobby_RoomBooth_v3.fbx",
+  "meshes": [
+   "Lobby_RoomBooth_v3",
+   "Lobby_RoomBooth_v3_Glow_GOLD",
+   "Lobby_RoomBooth_v3_Glow_GREEN_T45",
+   "Lobby_RoomBooth_v3_Glow_GREEN_T70"
+  ],
+  "renders": [
+   "renders/objects/Lobby_RoomBooth_v3/Lobby_RoomBooth_v3_front34.jpg",
+   "renders/objects/Lobby_RoomBooth_v3/Lobby_RoomBooth_v3_back34.jpg",
+   "renders/objects/Lobby_RoomBooth_v3/Lobby_RoomBooth_v3_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Lobby_RoomBooth_v3.jpg",
+  "triangles": 1440,
+  "tris_ok": true,
+  "warnings": [
+   "coplanar -z faces: [GREEN (0, 15.3, 9.02)] and [WHITE (0, 15.3, -10.2)]",
+   "coplanar +z faces: [GREEN (0, 15.3, 9.02)] and [WHITE (0, 15.3, -10.2)]"
+  ]
+ },
+ "Lobby_RoomBooth_v4": {
+  "bbox_dev": [
+   -0.0,
+   0.0,
+   -0.005,
+   0.0,
+   -0.055,
+   -0.065
+  ],
+  "bbox_max_dev": 0.065,
+  "bbox_new": [
+   [
+    -13.6,
+    0.0,
+    -10.73
+   ],
+   [
+    13.6,
+    18.745,
+    10.66
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -13.6,
+    0.0,
+    -10.725
+   ],
+   [
+    13.6,
+    18.8,
+    10.725
+   ]
+  ],
+  "budget": 6000,
+  "built_at": "2026-10-04 21:54",
+  "category": "buildings",
+  "export_name": "Lobby_RoomBooth_v4",
+  "fbx": "export/buildings/Lobby_RoomBooth_v4.fbx",
+  "meshes": [
+   "Lobby_RoomBooth_v4",
+   "Lobby_RoomBooth_v4_Glow_GOLD",
+   "Lobby_RoomBooth_v4_Glow_GOLD_T45",
+   "Lobby_RoomBooth_v4_Glow_GOLD_T70"
+  ],
+  "renders": [
+   "renders/objects/Lobby_RoomBooth_v4/Lobby_RoomBooth_v4_front34.jpg",
+   "renders/objects/Lobby_RoomBooth_v4/Lobby_RoomBooth_v4_back34.jpg",
+   "renders/objects/Lobby_RoomBooth_v4/Lobby_RoomBooth_v4_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Lobby_RoomBooth_v4.jpg",
+  "triangles": 1440,
+  "tris_ok": true,
+  "warnings": [
+   "coplanar -z faces: [GOLD (0, 15.3, 9.02)] and [WHITE (0, 15.3, -10.2)]",
+   "coplanar +z faces: [GOLD (0, 15.3, 9.02)] and [WHITE (0, 15.3, -10.2)]"
+  ]
+ },
+ "Maker_Apartment": {
+  "bbox_dev": [
+   -0.05,
+   0.0,
+   -0.12,
+   0.05,
+   0.0,
+   0.05
+  ],
+  "bbox_max_dev": 0.12,
+  "bbox_new": [
+   [
+    -4.05,
+    0.0,
+    -3.77
+   ],
+   [
+    4.05,
+    8.0,
+    3.55
+   ]
+  ],
+  "bbox_ok": true,
   "bbox_old": [
    [
     -4.0,
@@ -1496,7 +1740,7 @@
    ]
   ],
   "budget": 6000,
-  "built_at": "2026-10-04 21:18",
+  "built_at": "2026-10-04 21:44",
   "category": "buildings",
   "export_name": "Apartment",
   "fbx": "export/buildings/Apartment.fbx",
@@ -1512,7 +1756,7 @@
   "round": 0,
   "status": "built",
   "strip": "renders/objects/strips/Maker_Apartment.jpg",
-  "triangles": 860,
+  "triangles": 900,
   "tris_ok": true,
   "warnings": []
  },
@@ -1552,7 +1796,7 @@
    ]
   ],
   "budget": 6000,
-  "built_at": "2026-10-04 21:38",
+  "built_at": "2026-10-04 21:49",
   "category": "buildings",
   "export_name": "Apartment Building",
   "fbx": "export/buildings/Apartment Building.fbx",
@@ -1608,7 +1852,7 @@
    ]
   ],
   "budget": 6000,
-  "built_at": "2026-10-04 21:36",
+  "built_at": "2026-10-04 21:47",
   "category": "buildings",
   "export_name": "Bowling Alley",
   "fbx": "export/buildings/Bowling Alley.fbx",
@@ -1626,36 +1870,31 @@
   "strip": "renders/objects/strips/Maker_BowlingAlley.jpg",
   "triangles": 1516,
   "tris_ok": true,
-  "warnings": [
-   "thin sphere r=0.13 at (1.3900000000000001, 1.815, -4.08)",
-   "thin sphere r=0.13 at (3.25, 7.3, -0.92)",
-   "thin sphere r=0.13 at (3.75, 7.3, -0.92)",
-   "thin sphere r=0.13 at (3.5, 7.6, -0.92)"
-  ]
+  "warnings": []
  },
  "Maker_CarWash": {
   "bbox_dev": [
    0.0,
-   -0.1,
+   0.0,
    0.06,
    0.0,
-   0.25,
+   0.0,
    0.0
   ],
-  "bbox_max_dev": 0.25,
+  "bbox_max_dev": 0.06,
   "bbox_new": [
    [
     -4.5,
-    -0.1,
+    0.0,
     -3.64
    ],
    [
     4.5,
-    7.25,
+    7.0,
     3.5
    ]
   ],
-  "bbox_ok": false,
+  "bbox_ok": true,
   "bbox_old": [
    [
     -4.5,
@@ -1669,7 +1908,7 @@
    ]
   ],
   "budget": 6000,
-  "built_at": "2026-10-04 21:18",
+  "built_at": "2026-10-04 21:44",
   "category": "buildings",
   "export_name": "Car Wash",
   "fbx": "export/buildings/Car Wash.fbx",
@@ -1725,7 +1964,7 @@
    ]
   ],
   "budget": 6000,
-  "built_at": "2026-10-04 21:36",
+  "built_at": "2026-10-04 21:47",
   "category": "buildings",
   "export_name": "Coffee Shop",
   "fbx": "export/buildings/Coffee Shop.fbx",
@@ -1743,34 +1982,31 @@
   "strip": "renders/objects/strips/Maker_CoffeeShop.jpg",
   "triangles": 1280,
   "tris_ok": true,
-  "warnings": [
-   "thin sphere r=0.13 at (1.2220000000000002, 1.815, -3.83)",
-   "thin cylinder r=0.12 at (3.3, 0.5, -4.2)"
-  ]
+  "warnings": []
  },
  "Maker_FoodTruck": {
   "bbox_dev": [
    0.0,
    0.0,
-   -0.578,
-   0.63,
-   0.15,
-   0.29
+   -0.13,
+   0.1,
+   0.1,
+   0.13
   ],
-  "bbox_max_dev": 0.63,
+  "bbox_max_dev": 0.13,
   "bbox_new": [
    [
     -4.0,
     0.0,
-    -3.078
+    -2.63
    ],
    [
-    4.63,
-    5.05,
-    2.79
+    4.1,
+    5.0,
+    2.63
    ]
   ],
-  "bbox_ok": false,
+  "bbox_ok": true,
   "bbox_old": [
    [
     -4.0,
@@ -1784,7 +2020,7 @@
    ]
   ],
   "budget": 4000,
-  "built_at": "2026-10-04 21:19",
+  "built_at": "2026-10-04 21:52",
   "category": "vehicles",
   "export_name": "Food Truck",
   "fbx": "export/vehicles/Food Truck.fbx",
@@ -1800,7 +2036,7 @@
   "round": 0,
   "status": "built",
   "strip": "renders/objects/strips/Maker_FoodTruck.jpg",
-  "triangles": 2280,
+  "triangles": 2344,
   "tris_ok": true,
   "warnings": []
  },
@@ -1840,7 +2076,7 @@
    ]
   ],
   "budget": 6000,
-  "built_at": "2026-10-04 21:37",
+  "built_at": "2026-10-04 21:48",
   "category": "buildings",
   "export_name": "Game Studio",
   "fbx": "export/buildings/Game Studio.fbx",
@@ -1858,9 +2094,7 @@
   "strip": "renders/objects/strips/Maker_GameStudio.jpg",
   "triangles": 1380,
   "tris_ok": true,
-  "warnings": [
-   "thin sphere r=0.13 at (1.3059999999999998, 2.0175, -3.83)"
-  ]
+  "warnings": []
  },
  "Maker_GoldBar": {
   "bbox_dev": [
@@ -2063,7 +2297,7 @@
    ]
   ],
   "budget": 6000,
-  "built_at": "2026-10-04 21:37",
+  "built_at": "2026-10-04 21:49",
   "category": "buildings",
   "export_name": "Hotel",
   "fbx": "export/buildings/Hotel.fbx",
@@ -2087,17 +2321,17 @@
   "bbox_dev": [
    0.133,
    0.0,
-   -0.5,
+   -0.08,
    -0.133,
    -0.082,
    0.0
   ],
-  "bbox_max_dev": 0.5,
+  "bbox_max_dev": 0.133,
   "bbox_new": [
    [
     -4.067,
     0.0,
-    -4.2
+    -3.78
    ],
    [
     4.067,
@@ -2105,7 +2339,7 @@
     3.7
    ]
   ],
-  "bbox_ok": false,
+  "bbox_ok": true,
   "bbox_old": [
    [
     -4.2,
@@ -2119,7 +2353,7 @@
    ]
   ],
   "budget": 6000,
-  "built_at": "2026-10-04 21:35",
+  "built_at": "2026-10-04 21:46",
   "category": "buildings",
   "export_name": "House to Rent",
   "fbx": "export/buildings/House to Rent.fbx",
@@ -2134,7 +2368,7 @@
   "round": 0,
   "status": "built",
   "strip": "renders/objects/strips/Maker_HouseToRent.jpg",
-  "triangles": 1492,
+  "triangles": 1276,
   "tris_ok": true,
   "warnings": []
  },
@@ -2284,7 +2518,7 @@
    ]
   ],
   "budget": 6000,
-  "built_at": "2026-10-04 21:38",
+  "built_at": "2026-10-04 21:49",
   "category": "buildings",
   "export_name": "Pizza Restaurant",
   "fbx": "export/buildings/Pizza Restaurant.fbx",
@@ -2302,9 +2536,7 @@
   "strip": "renders/objects/strips/Maker_PizzaRestaurant.jpg",
   "triangles": 1268,
   "tris_ok": true,
-  "warnings": [
-   "thin sphere r=0.13 at (1.3059999999999998, 2.0175, -3.83)"
-  ]
+  "warnings": []
  },
  "Maker_PokeBloxCard": {
   "bbox_dev": [
@@ -2682,7 +2914,7 @@
    ]
   ],
   "budget": 6000,
-  "built_at": "2026-10-04 21:37",
+  "built_at": "2026-10-04 21:48",
   "category": "buildings",
   "export_name": "Shopping Mall",
   "fbx": "export/buildings/Shopping Mall.fbx",
@@ -2699,9 +2931,7 @@
   "strip": "renders/objects/strips/Maker_ShoppingMall.jpg",
   "triangles": 1228,
   "tris_ok": true,
-  "warnings": [
-   "thin sphere r=0.13 at (1.3900000000000001, 2.22, -4.08)"
-  ]
+  "warnings": []
  },
  "Maker_ThemePark": {
   "bbox_dev": [
@@ -2794,7 +3024,7 @@
    ]
   ],
   "budget": 6000,
-  "built_at": "2026-10-04 21:35",
+  "built_at": "2026-10-04 21:47",
   "category": "buildings",
   "export_name": "Toy Shop",
   "fbx": "export/buildings/Toy Shop.fbx",
@@ -2811,33 +3041,31 @@
   "strip": "renders/objects/strips/Maker_ToyShop.jpg",
   "triangles": 1308,
   "tris_ok": true,
-  "warnings": [
-   "thin sphere r=0.13 at (1.2220000000000002, 2.0175, -3.83)"
-  ]
+  "warnings": []
  },
  "Maker_UnknownMaker": {
   "bbox_dev": [
-   -0.19,
+   -0.14,
    0.0,
    0.06,
-   0.19,
+   0.14,
    0.0,
-   0.15
+   0.1
   ],
-  "bbox_max_dev": 0.19,
+  "bbox_max_dev": 0.14,
   "bbox_new": [
    [
-    -3.19,
+    -3.14,
     0.0,
     -3.14
    ],
    [
-    3.19,
+    3.14,
     5.0,
-    3.15
+    3.1
    ]
   ],
-  "bbox_ok": false,
+  "bbox_ok": true,
   "bbox_old": [
    [
     -3.0,
@@ -2851,7 +3079,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:41",
+  "built_at": "2026-10-04 21:51",
   "category": "props",
   "export_name": "Unknown Maker",
   "fbx": "export/props/Unknown Maker.fbx",
@@ -2859,12 +3087,13 @@
    "Maker_UnknownMaker"
   ],
   "renders": [
-   "renders/objects/Maker_UnknownMaker/Maker_UnknownMaker_front34.png",
-   "renders/objects/Maker_UnknownMaker/Maker_UnknownMaker_back34.png",
-   "renders/objects/Maker_UnknownMaker/Maker_UnknownMaker_eye.png"
+   "renders/objects/Maker_UnknownMaker/Maker_UnknownMaker_front34.jpg",
+   "renders/objects/Maker_UnknownMaker/Maker_UnknownMaker_back34.jpg",
+   "renders/objects/Maker_UnknownMaker/Maker_UnknownMaker_eye.jpg"
   ],
   "round": 0,
   "status": "built",
+  "strip": "renders/objects/strips/Maker_UnknownMaker.jpg",
   "triangles": 752,
   "tris_ok": true,
   "warnings": []
@@ -2873,17 +3102,17 @@
   "bbox_dev": [
    -0.05,
    0.0,
-   -0.08,
+   -0.13,
    0.05,
    0.0,
    0.05
   ],
-  "bbox_max_dev": 0.08,
+  "bbox_max_dev": 0.13,
   "bbox_new": [
    [
     -1.8,
     0.0,
-    -1.48
+    -1.53
    ],
    [
     1.8,
@@ -2905,7 +3134,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:34",
+  "built_at": "2026-10-04 21:42",
   "category": "props",
   "export_name": "Vending Machine",
   "fbx": "export/props/Vending Machine.fbx",
@@ -2914,35 +3143,32 @@
    "Maker_VendingMachine_Glow_GLOW_COOL"
   ],
   "renders": [
-   "renders/objects/Maker_VendingMachine/Maker_VendingMachine_front34.jpg",
-   "renders/objects/Maker_VendingMachine/Maker_VendingMachine_back34.jpg",
-   "renders/objects/Maker_VendingMachine/Maker_VendingMachine_eye.jpg"
+   "renders/objects/Maker_VendingMachine/Maker_VendingMachine_front34.png",
+   "renders/objects/Maker_VendingMachine/Maker_VendingMachine_back34.png",
+   "renders/objects/Maker_VendingMachine/Maker_VendingMachine_eye.png"
   ],
   "round": 0,
   "status": "built",
   "strip": "renders/objects/strips/Maker_VendingMachine.jpg",
   "triangles": 720,
   "tris_ok": true,
-  "warnings": [
-   "thin cylinder r=0.13 at (1.35, 2.9, -1.33)",
-   "thin cylinder r=0.13 at (1.35, 3.3, -1.33)"
-  ]
+  "warnings": []
  },
  "Office_Screen": {
   "bbox_dev": [
    0.0,
    0.0,
-   -0.37,
+   -0.25,
    0.0,
    0.0,
    0.0
   ],
-  "bbox_max_dev": 0.37,
+  "bbox_max_dev": 0.25,
   "bbox_new": [
    [
     -7.0,
     0.0,
-    -0.57
+    -0.45
    ],
    [
     7.0,
@@ -2950,7 +3176,7 @@
     0.2
    ]
   ],
-  "bbox_ok": false,
+  "bbox_ok": true,
   "bbox_old": [
    [
     -7.0,
@@ -2964,7 +3190,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:30",
+  "built_at": "2026-10-04 21:45",
   "category": "decoration",
   "export_name": "Office_Screen",
   "fbx": "export/decoration/Office_Screen.fbx",
@@ -2990,10 +3216,10 @@
    0.0,
    -0.05,
    0.0,
-   0.16,
+   0.07,
    0.0
   ],
-  "bbox_max_dev": 0.16,
+  "bbox_max_dev": 0.07,
   "bbox_new": [
    [
     -8.0,
@@ -3002,11 +3228,11 @@
    ],
    [
     8.0,
-    4.11,
+    4.02,
     1.35
    ]
   ],
-  "bbox_ok": false,
+  "bbox_ok": true,
   "bbox_old": [
    [
     -8.0,
@@ -3020,7 +3246,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:40",
+  "built_at": "2026-10-04 21:50",
   "category": "props",
   "export_name": "Pizzeria_Counter",
   "fbx": "export/props/Pizzeria_Counter.fbx",
@@ -3324,17 +3550,17 @@
   "bbox_dev": [
    0.0,
    0.0,
-   -0.45,
+   -0.275,
    0.0,
    0.0,
    0.0
   ],
-  "bbox_max_dev": 0.45,
+  "bbox_max_dev": 0.275,
   "bbox_new": [
    [
     -10.0,
     0.0,
-    -0.6
+    -0.425
    ],
    [
     10.0,
@@ -3342,7 +3568,7 @@
     0.15
    ]
   ],
-  "bbox_ok": false,
+  "bbox_ok": true,
   "bbox_old": [
    [
     -10.0,
@@ -3356,7 +3582,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 21:29",
+  "built_at": "2026-10-04 21:45",
   "category": "decoration",
   "export_name": "School_Blackboard",
   "fbx": "export/decoration/School_Blackboard.fbx",
@@ -3371,7 +3597,7 @@
   "round": 0,
   "status": "built",
   "strip": "renders/objects/strips/School_Blackboard.jpg",
-  "triangles": 256,
+  "triangles": 268,
   "tris_ok": true,
   "warnings": []
  },
