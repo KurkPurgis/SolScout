@@ -648,14 +648,17 @@ def lux_safe(m):
 
 def lux_piano(m):
     """Themes.luau:211-212: a black upright piano with white keys and gold pedals (detail)."""
-    m.box((6, 3, 4), (0, 0, 0.05), "CHARCOAL", bevel="M", bottom=True)
-    m.box((5.5, 0.3, 0.8), (0, 2.85, -1.65), "WHITE", bevel="XS", bottom=True)
-    for i in range(9):
+    # an upright piano inside the original 6 x 3 x 4 block: tall cabinet at the back, keyboard in front
+    m.box((6, 3, 2.4), (0, 0, 0.85), "CHARCOAL", bevel="M", bottom=True)
+    m.box((5.8, 2.4, 1.75), (0, 0, -1.15), "CHARCOAL", bevel="M", bottom=True)
+    m.box((5.5, 0.3, 1.2), (0, 2.4, -1.35), "WHITE", bevel="XS", bottom=True)
+    for i in range(9):  # black keys in groups of 2 and 3
         if i % 7 in (2, 6):
             continue
-        m.box((0.3, 0.3, 0.45), (-2.3 + i * 0.6, 3.0, -1.5), "CHARCOAL", bevel=None, bottom=True)
-    for x in (-0.5, 0, 0.5):
-        m.box((0.3, 0.3, 0.6), (x, 0.0, -2.0), "GOLD", bevel=None, bottom=True)
+        m.box((0.3, 0.3, 0.6), (-2.3 + i * 0.6, 2.6, -1.0), "CHARCOAL", bevel=None, bottom=True)
+    m.box((4.6, 0.3, 0.3), (0, 2.9, -0.47), "GOLD", bevel="XS", bottom=True)  # music stand ledge (detail)
+    for x in (-0.5, 0, 0.5):  # gold pedals
+        m.box((0.3, 0.3, 0.6), (x, 0.0, -1.85), "GOLD", bevel=None, bottom=True)
 
 
 def dream_pedestal(m):
@@ -671,8 +674,8 @@ def collection_showcase(m):
     """Plots.luau:556-557: the wooden COLLECTION table (top at 2.6, where the investments stand)."""
     m.box((11, 2.4, 3), (0, 0, 0), "WOOD", bevel="M", bottom=True)
     for x in (-3.6, 0, 3.6):  # drawers with gold knobs (detail)
-        m.box((3.2, 1.6, 0.3), (x, 0.4, -1.45), "WOOD_DARK", bevel="S", bottom=True)
-        m.sphere(0.17, (x, 1.2, -1.62), "GOLD", segs=6, rings=4)
+        m.box((3.2, 1.6, 0.3), (x, 0.4, -1.4), "WOOD_DARK", bevel="S", bottom=True)
+        m.sphere(0.17, (x, 1.2, -1.55), "GOLD", segs=6, rings=4)
     m.box((11.2, 0.3, 3.2), (0, 2.3, 0), "GOLD", bevel="S", bottom=True)
 
 
@@ -796,7 +799,8 @@ def dream_chains(m):
 
 
 MODELS.update({
-    "Dream_Chains": {"build": dream_chains, "budget": 8000},
+    # chunky links around the thin (0.35) original bars stand out up to 0.5 studs (DECISIONS.md #15)
+    "Dream_Chains": {"build": dream_chains, "budget": 8000, "tolerance": 0.5},
     "Dream_ChainSegment": {"build": chain_segment, "template": "-", "export": "ChainSegment"},
     "Dream_Padlock": {"build": padlock, "template": "-", "export": "Padlock"},
 })

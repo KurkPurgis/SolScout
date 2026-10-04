@@ -87,7 +87,7 @@ def lobby_potted_palm(m):
     m.cyl(1.15, 1.4, (-1.0, 0, 0), "TAN", bevel="S", bottom=True, verts=16, radius_top=1.25)
     m.cyl(1.35, 0.35, (-1.0, 1.3, 0), "WOOD", bevel="S", bottom=True, verts=16)
     m.cyl(1.05, 0.3, (-1.0, 1.4, 0), "WOOD_DARK", bevel=None, bottom=True, verts=14)
-    parts.palm(m, (-1.0, 1.6, 0), 7.3, lean=1.0, leaf_length=4.2, leaves=6, segs=5, leaf_steps=5, trunk_verts=8,
+    parts.palm(m, (-1.0, 1.6, 0), 7.5, lean=1.0, leaf_length=4.65, leaves=6, segs=5, leaf_steps=5, trunk_verts=8,
                trunk_r=0.4)
 
 
