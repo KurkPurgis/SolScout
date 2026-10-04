@@ -5597,21 +5597,21 @@
   "bbox_dev": [
    0.0,
    0.0,
-   0.0,
+   0.023,
    -0.0,
-   0.04,
+   0.09,
    -0.0
   ],
-  "bbox_max_dev": 0.04,
+  "bbox_max_dev": 0.09,
   "bbox_new": [
    [
     -24.8,
     -1.0,
-    2.5
+    2.523
    ],
    [
     24.8,
-    18.44,
+    18.49,
     24.8
    ]
   ],
@@ -5629,7 +5629,7 @@
    ]
   ],
   "budget": 6000,
-  "built_at": "2026-10-04 20:56",
+  "built_at": "2026-10-04 22:29",
   "category": "buildings",
   "export_name": "Workplace_Building_BUSDEPOT",
   "fbx": "export/buildings/Workplace_Building_BUSDEPOT.fbx",
@@ -5645,7 +5645,7 @@
   "round": 0,
   "status": "built",
   "strip": "renders/objects/strips/Workplace_Building_BUSDEPOT.jpg",
-  "triangles": 5180,
+  "triangles": 5076,
   "tris_ok": true,
   "warnings": []
  },
@@ -5653,21 +5653,21 @@
   "bbox_dev": [
    0.0,
    0.0,
-   0.0,
+   0.023,
    -0.0,
-   0.04,
+   0.09,
    -0.0
   ],
-  "bbox_max_dev": 0.04,
+  "bbox_max_dev": 0.09,
   "bbox_new": [
    [
     -24.8,
     -1.0,
-    2.5
+    2.523
    ],
    [
     24.8,
-    18.44,
+    18.49,
     24.8
    ]
   ],
@@ -5685,7 +5685,7 @@
    ]
   ],
   "budget": 6000,
-  "built_at": "2026-10-04 20:57",
+  "built_at": "2026-10-04 22:30",
   "category": "buildings",
   "export_name": "Workplace_Building_CLINIC",
   "fbx": "export/buildings/Workplace_Building_CLINIC.fbx",
@@ -5701,7 +5701,7 @@
   "round": 0,
   "status": "built",
   "strip": "renders/objects/strips/Workplace_Building_CLINIC.jpg",
-  "triangles": 5180,
+  "triangles": 5076,
   "tris_ok": true,
   "warnings": []
  },
@@ -5765,21 +5765,21 @@
   "bbox_dev": [
    0.0,
    0.0,
-   0.0,
+   0.023,
    -0.0,
-   0.04,
+   0.09,
    -0.0
   ],
-  "bbox_max_dev": 0.04,
+  "bbox_max_dev": 0.09,
   "bbox_new": [
    [
     -24.8,
     -1.0,
-    2.5
+    2.523
    ],
    [
     24.8,
-    18.44,
+    18.49,
     24.8
    ]
   ],
@@ -5797,7 +5797,7 @@
    ]
   ],
   "budget": 6000,
-  "built_at": "2026-10-04 20:59",
+  "built_at": "2026-10-04 22:31",
   "category": "buildings",
   "export_name": "Workplace_Building_GARAGE",
   "fbx": "export/buildings/Workplace_Building_GARAGE.fbx",
@@ -5813,7 +5813,7 @@
   "round": 0,
   "status": "built",
   "strip": "renders/objects/strips/Workplace_Building_GARAGE.jpg",
-  "triangles": 5180,
+  "triangles": 5076,
   "tris_ok": true,
   "warnings": []
  },
@@ -5821,21 +5821,21 @@
   "bbox_dev": [
    0.0,
    0.0,
-   0.0,
+   0.023,
    -0.0,
-   0.04,
+   0.09,
    -0.0
   ],
-  "bbox_max_dev": 0.04,
+  "bbox_max_dev": 0.09,
   "bbox_new": [
    [
     -24.8,
     -1.0,
-    2.5
+    2.523
    ],
    [
     24.8,
-    18.44,
+    18.49,
     24.8
    ]
   ],
@@ -5853,7 +5853,7 @@
    ]
   ],
   "budget": 6000,
-  "built_at": "2026-10-04 20:56",
+  "built_at": "2026-10-04 22:29",
   "category": "buildings",
   "export_name": "Workplace_Building_HOSPITAL",
   "fbx": "export/buildings/Workplace_Building_HOSPITAL.fbx",
@@ -5869,7 +5869,7 @@
   "round": 0,
   "status": "built",
   "strip": "renders/objects/strips/Workplace_Building_HOSPITAL.jpg",
-  "triangles": 5340,
+  "triangles": 5252,
   "tris_ok": true,
   "warnings": []
  },
@@ -5877,21 +5877,21 @@
   "bbox_dev": [
    0.0,
    0.0,
-   0.0,
+   0.023,
    -0.0,
-   0.04,
+   0.09,
    -0.0
   ],
-  "bbox_max_dev": 0.04,
+  "bbox_max_dev": 0.09,
   "bbox_new": [
    [
     -24.8,
     -1.0,
-    2.5
+    2.523
    ],
    [
     24.8,
-    18.44,
+    18.49,
     24.8
    ]
   ],
@@ -5909,7 +5909,7 @@
    ]
   ],
   "budget": 6000,
-  "built_at": "2026-10-04 20:58",
+  "built_at": "2026-10-04 22:31",
   "category": "buildings",
   "export_name": "Workplace_Building_OFFICE",
   "fbx": "export/buildings/Workplace_Building_OFFICE.fbx",
@@ -5925,7 +5925,7 @@
   "round": 0,
   "status": "built",
   "strip": "renders/objects/strips/Workplace_Building_OFFICE.jpg",
-  "triangles": 5180,
+  "triangles": 5076,
   "tris_ok": true,
   "warnings": []
  },
@@ -5989,21 +5989,21 @@
   "bbox_dev": [
    0.0,
    0.0,
-   0.0,
+   0.023,
    -0.0,
-   0.04,
+   0.09,
    -0.0
   ],
-  "bbox_max_dev": 0.04,
+  "bbox_max_dev": 0.09,
   "bbox_new": [
    [
     -24.8,
     -1.0,
-    2.5
+    2.523
    ],
    [
     24.8,
-    18.44,
+    18.49,
     24.8
    ]
   ],
@@ -6021,7 +6021,7 @@
    ]
   ],
   "budget": 6000,
-  "built_at": "2026-10-04 20:58",
+  "built_at": "2026-10-04 22:31",
   "category": "buildings",
   "export_name": "Workplace_Building_POLICE",
   "fbx": "export/buildings/Workplace_Building_POLICE.fbx",
@@ -6037,7 +6037,7 @@
   "round": 0,
   "status": "built",
   "strip": "renders/objects/strips/Workplace_Building_POLICE.jpg",
-  "triangles": 5272,
+  "triangles": 5184,
   "tris_ok": true,
   "warnings": []
  },
@@ -6045,21 +6045,21 @@
   "bbox_dev": [
    0.0,
    0.0,
-   0.0,
+   0.023,
    -0.0,
-   0.04,
+   0.09,
    -0.0
   ],
-  "bbox_max_dev": 0.04,
+  "bbox_max_dev": 0.09,
   "bbox_new": [
    [
     -24.8,
     -1.0,
-    2.5
+    2.523
    ],
    [
     24.8,
-    18.44,
+    18.49,
     24.8
    ]
   ],
@@ -6077,7 +6077,7 @@
    ]
   ],
   "budget": 6000,
-  "built_at": "2026-10-04 20:57",
+  "built_at": "2026-10-04 22:30",
   "category": "buildings",
   "export_name": "Workplace_Building_SCHOOL",
   "fbx": "export/buildings/Workplace_Building_SCHOOL.fbx",
@@ -6093,7 +6093,7 @@
   "round": 0,
   "status": "built",
   "strip": "renders/objects/strips/Workplace_Building_SCHOOL.jpg",
-  "triangles": 5252,
+  "triangles": 5164,
   "tris_ok": true,
   "warnings": []
  },
