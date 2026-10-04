@@ -1,5 +1,5 @@
 {
- "current_step": "Phase 3 finishing: lobby/room/sign models building, then a full rebuild of all 7 categories with the final kit (queue jobs 121-127), then tools/run_phase4.sh (AFTER scene + renders with the BEFORE cameras, lineups, comparisons, contact sheets, REPORT.md, IMPORT_PLAN.md). Review verdicts are kept in data/review_verdicts.txt and applied after the rebuild with tools/apply_verdicts.py (a rebuild resets a model to 'built').",
+ "current_step": "Phase 5 - handover: REPORT.md and IMPORT_PLAN.md are generated (tools/write_report.py, tools/write_import_plan.py); final review of the report text, then commit and push. All 122 models are reviewed and done; AFTER renders, lineups, comparisons and contact sheets are in renders/.",
  "phases": [
   {
    "name": "Phase 1 - inventory (world extracted, INVENTORY.md, BEFORE renders)",
@@ -11,11 +11,11 @@
   },
   {
    "name": "Phase 3 - model everything",
-   "done": false
+   "done": true
   },
   {
    "name": "Phase 4 - whole world check (AFTER renders)",
-   "done": false
+   "done": true
   },
   {
    "name": "Phase 5 - handover (REPORT.md, IMPORT_PLAN.md)",

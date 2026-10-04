@@ -31,12 +31,13 @@ counts = {}
 for i, name in enumerate(plan["order"], 1):
     e = status.get(name, {})
     st = e.get("status", "not_started")
-    counts[st] = counts.get(st, 0) + 1
-    note = (e.get("notes") or [""])[-1]
+    note = e.get("review_note") or (e.get("notes") or [""])[-1]
     alias = plan.get("aliases", {}).get(name)
-    if alias:
+    if alias:  # a size/color copy of another template: no model of its own
         st = "uses " + alias
         counts["alias"] = counts.get("alias", 0) + 1
+    else:
+        counts[st] = counts.get(st, 0) + 1
     lines.append("| %d | %s | %s | %s | %s | %s | %s |" % (
         i, name, templates.get(name, {}).get("category", e.get("category", "")), st,
         e.get("triangles", ""), e.get("bbox_max_dev", ""), note))

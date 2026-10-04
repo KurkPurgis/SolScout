@@ -43,15 +43,15 @@ QUESTIONS = [
     "**FOR SALE copies.** The game makes every part of a FOR SALE Money Maker see-through ForceField. The new meshes "
     "will get the same treatment automatically (they are BaseParts inside the same Model). Check in Studio that "
     "the ForceField look on a textured mesh is what you want (it shows the texture's colors, not one flat color).",
-    "**Bounding boxes.** Every new mesh stays within 0.15 studs of the original box (0.3 for four wall boards, "
-    "DECISIONS #13). The game measures some models with `GetBoundingBox` (Money Maker stacking, labels, tutorial "
-    "arrow), so a 0.1 stud difference can move a label by 0.1 stud. If you want it pixel-exact, keep the "
-    "MeshParts slightly inside (the import plan says how).",
+    "**Bounding boxes.** Every new mesh stays within 0.15 studs of the original box, except: %(bbox_exceptions)s. "
+    "The game measures some models with `GetBoundingBox` (Money Maker stacking, labels, tutorial arrow), so a "
+    "0.1 stud difference can move a label by 0.1 stud. Is that close enough, or do you want those exact?",
     "**Text.** All words stay on the old parts (now invisible), so prices and names still update. The new sign "
     "boards were made to sit right behind that text. Please look at one sign in Studio to check the text is not "
     "hidden or floating.",
-    "**Texture size.** The whole world uses ONE 256 x 128 palette texture. If colors look blurry on some phones, "
-    "upload it with 'nearest' sampling off/on to compare (or scale it 4x to 1024 x 512 with nearest-neighbour).",
+    "**Texture size.** The whole world uses ONE 256 x 128 palette texture (32 flat color swatches; every face "
+    "samples the middle of one swatch). If the colors bleed into each other on low-end phones, use the same "
+    "image scaled 4x with nearest-neighbour (1024 x 512): the UVs stay the same. Keep it small, or go 4x?",
 ]
 
 NOT_DONE = [
@@ -123,12 +123,18 @@ def main():
     w("")
     w("- I rebuilt **every visible object** of the world in the style of the 3D icons: chunky, rounded, bright, "
       "one palette, the same bevels and parts everywhere.")
-    w("- **%d models** were made and exported as FBX (`export/<category>/`); %d are reviewed and done, %d need "
-      "your review (listed below). Counted once each, the models have %d triangles together; the biggest single "
-      "model has %d (Roblox allows 20,000 per mesh)."
-      % (len(built), len(done), len(review), total_tris, max(e.get("triangles", 0) for e in status.values())))
-    w("- **Nothing in the game was changed.** Every new model has the same name, position, rotation and size as "
-      "the original object, so swapping it in is mechanical (`IMPORT_PLAN.md`, not executed).")
+    own = sum(1 for n in plan["order"] if n in status and status[n].get("fbx"))
+    copies = sum(1 for n in plan["order"] if n not in status and n in plan["aliases"])
+    w("- All **%d object types** are covered: %d have their own model and %d are size or color copies that reuse "
+      "one. With %d extra pieces (book-stack sizes, chain link, padlock) that is **%d FBX models**; %d are "
+      "reviewed and done%s." % (own + copies, own, copies, len(built) - own, len(built), len(done),
+                                (", %d need your review (listed below)" % len(review)) if review else
+                                ", none is left waiting for review"))
+    w("- Counted once each, the models have %d triangles together; the biggest single model has %d (Roblox "
+      "allows 20,000 per mesh)." % (total_tris, max(e.get("triangles", 0) for e in status.values())))
+    w("- **Nothing in the game was changed.** Every new model has the same name, position and rotation as the "
+      "original object and the same size (within 0.15 studs, exceptions in question 5), so swapping it in is "
+      "mechanical (`IMPORT_PLAN.md`, not executed).")
     w("- The whole world uses **one small texture** (`palette/palette_color.png`, 32 colors). See `STYLE_GUIDE.md`.")
     w("- %d decisions I took on my own are in `DECISIONS.md` (one line of reasoning each); the ones I need you "
       "for are below." % n_decisions)
@@ -163,8 +169,12 @@ def main():
         w("")
     w("## Decisions I need from you")
     w("")
+    why = {"Dream_BeachVilla": "0.22 shallower at the front", "Dream_Chains": "chunky links, up to 0.48 out",
+           "Lobby_Carpet": "0.2 deeper, hidden in the floor"}
+    exc = ["`%s` (%s)" % (n, why.get(n, "wall board, details stand up to %.2f out from the wall" % e["bbox_max_dev"]))
+           for n, e in sorted(status.items()) if (e.get("bbox_max_dev") or 0) > 0.15]
     for i, q in enumerate(QUESTIONS, 1):
-        w("%d. %s" % (i, q))
+        w("%d. %s" % (i, q % {"bbox_exceptions": ", ".join(exc) or "none"} if "%(" in q else q))
     if review:
         w("%d. **Models marked NEEDS REVIEW:** %s." % (len(QUESTIONS) + 1, ", ".join(
             "%s (%s)" % (n, "; ".join(status[n].get("notes", [])[-1:])) for n in sorted(review))))

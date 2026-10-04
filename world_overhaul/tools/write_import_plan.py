@@ -32,7 +32,6 @@ BUILDER = [
     ("Dream_PrivateJet", "Props.dream (Props.luau:604)", "right after `builder.build()`, before `GetBoundingBox`"),
     ("Dream_BeachVilla", "Props.dream (Props.luau:604)", "right after `builder.build()`, before `GetBoundingBox`"),
     ("Dream_PrivateIsland", "Props.dream (Props.luau:604)", "right after `builder.build()`, before `GetBoundingBox`"),
-    ("Tree", "Props.tree (Props.luau:352)", "after the parts are made"),
 ]
 CONTEXT_HOOK = {
     "Lobby": ("Lobby.luau `buildHall()` (line 316)", "at the end of `buildHall()`", "the hall origin CFrame"),
@@ -301,11 +300,13 @@ def main():
     w("| File Transform | World Forward / World Up | Front / Top | (see the check below) |")
     w("| File Geometry | Scale Unit | **Stud** | 1 Blender unit = 1 stud |")
     w("")
+    (lx, ly, lz), (hx, hy, hz) = status["Workplace_Building_PIZZERIA"]["bbox_new"]
     w("**Check on the first model before importing the rest:** import `export/buildings/Workplace_Building_PIZZERIA.fbx` "
-      "at the origin and compare with the numbers in `data/model_status.json` -> `bbox_new` (Roblox x, y, z): the "
-      "open front of the building must be on the **-Z** side and the box must span x -23..23, y 0..~20. If the "
-      "building is turned 180 degrees, set World Forward to **Back** for every import (the FBX files were exported "
-      "with Blender's default axes: forward -Z, up Y, so the file coordinates are already Roblox coordinates).")
+      "at the origin. Its box must span x %.1f..%.1f, y %.1f..%.1f, z %.1f..%.1f (from `data/model_status.json` -> "
+      "`bbox_new`), with the open front and the big sign on the low-z side (z %.1f). If it comes in turned 180 "
+      "degrees (sign at z %.1f), set World Forward to **Back** for every import. The FBX files were exported with "
+      "Blender's default axes (forward -Z, up Y), so the coordinates in the files already are Roblox coordinates."
+      % (lx, hx, ly, hy, lz, hz, lz, hz))
     w("")
     w("## Step 4 - the WorldKit folder")
     w("")
@@ -374,16 +375,18 @@ def main():
     w("| `World/Plaza.luau` `Plaza.new` | at the end | `WorldSkin.context(\"Plaza\", <city base>, <city plaza folder>)` |")
     w("| `World/AuctionRoom.luau` `AuctionRoom.new` | at the end | `WorldSkin.context(\"AuctionRoom\", self.base, <room folder>)` |")
     w("| `World/PodiumRoom.luau` `PodiumRoom.new` | at the end | `WorldSkin.context(\"PodiumRoom\", self.base, <room folder>)` |")
-    w("| `World/Plots.luau` `Plots:buildWorkplace(theme)` | at the end | `WorldSkin.context(\"Workplace:\" .. theme.name, self.base, self.workplaceFolder)` and `WorldSkin.context(\"Furnish:\" .. theme.name, self.base, self.workplaceFolder)` |")
+    w("| `World/Plots.luau` `Plots:buildWorkplace(theme)` | at the end | `WorldSkin.context(\"Workplace:\" .. theme.title, self.base, self.workplaceFolder)` and `WorldSkin.context(\"Furnish:\" .. theme.title, self.base, self.workplaceFolder)` (the keys use the sign title, e.g. `Workplace:BUS DEPOT`) |")
     w("| `World/Plots.luau` `Plots:syncCollection` | after the showcase table is made | `WorldSkin.context(\"Collection\", self.base, <showcase part or folder>)` |")
     w("| `World/Plots.luau` `syncDream` / `addChains` (Fast Track) | after the pedestal / chains are made | `WorldSkin.context(\"DreamArea\", self.base, <pedestal + chains>)` |")
     w("| `World/Props.luau` `Props.kid` | before `return model` | `WorldSkin.object(model, <Kid / Kid_v2 / Kid_v3 by shirt color>, base)` |")
-    w("| `World/Props.luau` `Props.moneyMaker` | before `model.Parent = parent` | `WorldSkin.object(model, <template for name>, base)` |")
+    w("| `World/Props.luau` `Props.moneyMaker` | before `model.Parent = parent` | `WorldSkin.object(model, <template for name>, base)` (game name -> template in the table below; Rare PokeBlox Card: `_v2`..`_v4` by its case color, `Props.cardCase(value)`) |")
     w("| `World/Props.luau` `Props.debtModel` | before `model.Parent = parent` | `WorldSkin.stretched(model, <template for debtName>, base)` (School Loan: `Debt_SchoolLoan_books<n>`) |")
     w("| `World/Props.luau` `Props.dream` | right after `builder.build()` | `WorldSkin.object(model, \"Dream_\" .. <name>, model:GetPivot())` |")
-    w("| `World/Props.luau` `Props.tree` | before it returns | `WorldSkin.object(<tree model>, \"Tree\", base)` |")
     w("| `World/AuctionRoom.luau` `AuctionRoom:highlight` | inside the loop | `WorldSkin.setVisible(<desk glow shell>, isTop)`: the old desk turns gold Neon, the new desk has a hidden gold shell (`_Glow_GOLD_T100`) for that |")
     w("| `World/PodiumRoom.luau` `fillBoard` (line 158) | next to `self.board.Transparency = ...` | `WorldSkin.setVisible(<board kit copy>, #standings > 3)` |")
+    w("")
+    w("Trees need no call of their own: `Props.tree` puts its parts straight into the plaza folder, so the "
+      "`Plaza` context hides them and places the `Tree` models with the rest of the plaza.")
     w("")
     w("Why these places: the ghost FOR SALE copies (`Props.makeGhost`), the 0.4x collection minis "
       "(`model:ScaleTo(0.4)`), the floating dreams (`ScaleTo` + `PivotTo`), the kids' hop and the dream spin "
@@ -425,18 +428,18 @@ def main():
     w("")
     w("## Every model: file, name and where it goes")
     w("")
-    w("| template (= WorldKit name) | FBX | meshes | how it is placed | built by (game code) | script-referenced |")
-    w("|---|---|---|---|---|---|")
+    w("| template (= WorldKit name) | name in the game | FBX | meshes | how it is placed | built by (game code) | script-referenced |")
+    w("|---|---|---|---|---|---|---|")
     for name in plan["order"]:
         t = templates.get(name, {})
         e = status.get(name)
         if e is None and name in aliases:
-            w("| %s | uses `%s` | | stretched to its own size | %s | %s |" % (
-                name, aliases[name], (builder_of(name) or ("",))[0],
+            w("| %s | %s | uses `%s` | | stretched to its own size | %s | %s |" % (
+                name, t.get("roblox_name", ""), aliases[name], (builder_of(name) or ("",))[0],
                 "yes" if name in refs["script_referenced"] else ""))
             continue
         if e is None:
-            w("| %s | (not modelled) | | | | |" % name)
+            w("| %s | %s | (not modelled) | | | | |" % (name, t.get("roblox_name", "")))
             continue
         b = builder_of(name)
         if b:
@@ -450,10 +453,10 @@ def main():
             else:
                 label = ", ".join(keys)
             how = "`WorldSkin.context` in %s" % label if keys else "(by hand: one object)"
-            src = source_of(t.get("type", name)) or ""
+            src = source_of(t.get("type", name)) or {"Tree": "Props.tree (Props.luau:352), called by Plaza.new"}.get(name, "")
         fbx = e.get("fbx", "")
         meshes = ", ".join("`%s`" % m for m in e.get("meshes", []))
-        w("| %s | `%s` | %s | %s | %s | %s |" % (name, fbx, meshes, how, src,
+        w("| %s | %s | `%s` | %s | %s | %s | %s |" % (name, t.get("roblox_name", ""), fbx, meshes, how, src,
                                                "yes" if name in refs["script_referenced"] else ""))
     extra = sorted(n for n in status if n not in plan["order"])
     if extra:

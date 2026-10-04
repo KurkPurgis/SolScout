@@ -47,11 +47,13 @@ def build_page(templates, names, phase, page_col):
         texts = []
         canon = bpy.data.objects.get(t["canonical"])
         if canon is not None:
-            inv = canon.matrix_world.inverted()
+            # matrix_basis, not matrix_world: in after.blend the old blockouts are hidden, and Blender does not
+            # re-evaluate matrix_world for hidden objects when the file is opened (it reads as identity)
+            inv = canon.matrix_basis.inverted()
             for pid in t.get("canonical_part_ids", []):
                 text = bpy.data.objects.get("Text_%d" % pid)
                 if text is not None:
-                    texts.append((text, inv @ text.matrix_world))
+                    texts.append((text, inv @ text.matrix_basis))
         # text on the back (Roblox +Z = Blender -Y): turn the object around its box center to face the camera
         flip = Matrix.Identity(4)
         if texts and all(rel.translation.y < -0.01 for _, rel in texts):
