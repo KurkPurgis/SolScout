@@ -46,6 +46,18 @@ def save_status(status):
     json.dump(status, open(STATUS_PATH, "w"), indent=1, sort_keys=True)
 
 
+def to_jpg(paths, quality=88):
+    """PNG renders -> JPG (a tenth of the size, so the repo stays small); returns the new paths."""
+    from PIL import Image
+    out = []
+    for p in paths:
+        q = os.path.splitext(p)[0] + ".jpg"
+        Image.open(p).convert("RGB").save(q, quality=quality, optimize=True)
+        os.remove(p)
+        out.append(q)
+    return out
+
+
 def roblox_bounds(objs):
     """Bounding box of Blender objects in Roblox local coordinates (x, y, z)."""
     lo, hi = review.world_bounds(objs)
@@ -100,8 +112,10 @@ def main():
         for obj in objs:
             obj["template"] = name
         tris = m.triangles()
+        status = load_status()  # fresh: review verdicts may have been written while this job ran
         entry = status.get(name, {})
-        entry.update({"category": category, "triangles": tris, "budget": BUDGET[category],
+        budget = spec.get("budget", BUDGET[category])
+        entry.update({"category": category, "triangles": tris, "budget": budget,
                       "warnings": m.warnings[:10], "export_name": spec.get("export", name),
                       "meshes": [o.name for o in objs], "built_at": time.strftime("%Y-%m-%d %H:%M")})
         # bounding box vs the original template
@@ -114,9 +128,9 @@ def main():
             entry["bbox_max_dev"] = round(max(abs(d) for d in dev), 3)
             entry["bbox_ok"] = entry["bbox_max_dev"] <= spec.get("tolerance", TOLERANCE)
             entry["bbox_dev"] = [round(d, 3) for d in dev]
-        entry["tris_ok"] = tris <= BUDGET[category]
+        entry["tris_ok"] = tris <= budget
         print("MODEL %s: %d tris (budget %d), bbox dev %s, warnings %d" % (
-            name, tris, BUDGET[category], entry.get("bbox_dev"), len(m.warnings)))
+            name, tris, budget, entry.get("bbox_dev"), len(m.warnings)))
 
         # render: only this model visible
         for c in models_col.children:
@@ -128,7 +142,9 @@ def main():
             strip_dir = os.path.join(ROOT, "renders", "objects", "strips")
             os.makedirs(strip_dir, exist_ok=True)
             review.strip(paths, os.path.join(strip_dir, name + ".png"))
-            entry["renders"] = [os.path.relpath(p, ROOT) for p in paths]
+            paths = to_jpg(paths + [os.path.join(strip_dir, name + ".png")])
+            entry["renders"] = [os.path.relpath(p, ROOT) for p in paths[:3]]
+            entry["strip"] = os.path.relpath(paths[3], ROOT)
         for c in models_col.children:
             c.hide_render = False
 
@@ -147,9 +163,10 @@ def main():
                                      use_mesh_modifiers=True, mesh_smooth_type="OFF", use_custom_props=False,
                                      add_leaf_bones=False, bake_anim=False, path_mode="AUTO", embed_textures=False)
             entry["fbx"] = os.path.relpath(fbx, ROOT)
-        entry.setdefault("status", "built")
-        entry.setdefault("round", 0)
+        # a rebuilt model needs a new review (the round counter and notes are kept)
+        entry["status"] = "built"
         entry["round"] = entry.get("round", 0)
+        status = load_status()
         status[name] = entry
         save_status(status)
         bpy.ops.wm.save_as_mainfile(filepath=path)

@@ -1,4 +1,3881 @@
 {
+ "City_Ground": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "bbox_max_dev": 0.0,
+  "bbox_new": [
+   [
+    -183.0,
+    -2.0,
+    -183.0
+   ],
+   [
+    183.0,
+    0.0,
+    183.0
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -183.0,
+    -2.0,
+    -183.0
+   ],
+   [
+    183.0,
+    0.0,
+    183.0
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 21:02",
+  "category": "ground",
+  "export_name": "City_Ground",
+  "fbx": "export/ground/City_Ground.fbx",
+  "meshes": [
+   "City_Ground"
+  ],
+  "renders": [
+   "renders/objects/City_Ground/City_Ground_front34.jpg",
+   "renders/objects/City_Ground/City_Ground_back34.jpg",
+   "renders/objects/City_Ground/City_Ground_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/City_Ground.jpg",
+  "triangles": 76,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "City_Wall": {
+  "bbox_dev": [
+   -0.1,
+   0.0,
+   -0.1,
+   0.1,
+   0.0,
+   0.1
+  ],
+  "bbox_max_dev": 0.1,
+  "bbox_new": [
+   [
+    -184.4,
+    0.0,
+    -184.4
+   ],
+   [
+    184.4,
+    6.8,
+    184.4
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -184.3,
+    0.0,
+    -184.3
+   ],
+   [
+    184.3,
+    6.8,
+    184.3
+   ]
+  ],
+  "budget": 6000,
+  "built_at": "2026-10-04 21:04",
+  "category": "decoration",
+  "export_name": "City_Wall",
+  "fbx": "export/decoration/City_Wall.fbx",
+  "meshes": [
+   "City_Wall"
+  ],
+  "renders": [
+   "renders/objects/City_Wall/City_Wall_front34.jpg",
+   "renders/objects/City_Wall/City_Wall_back34.jpg",
+   "renders/objects/City_Wall/City_Wall_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/City_Wall.jpg",
+  "triangles": 2016,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Clinic_Cabinet": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "bbox_max_dev": 0.0,
+  "bbox_new": [
+   [
+    -2.0,
+    0.0,
+    -1.25
+   ],
+   [
+    2.0,
+    8.0,
+    1.25
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -2.0,
+    0.0,
+    -1.25
+   ],
+   [
+    2.0,
+    8.0,
+    1.25
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 21:41",
+  "category": "props",
+  "export_name": "Clinic_Cabinet",
+  "fbx": "export/props/Clinic_Cabinet.fbx",
+  "meshes": [
+   "Clinic_Cabinet"
+  ],
+  "renders": [
+   "renders/objects/Clinic_Cabinet/Clinic_Cabinet_front34.jpg",
+   "renders/objects/Clinic_Cabinet/Clinic_Cabinet_back34.jpg",
+   "renders/objects/Clinic_Cabinet/Clinic_Cabinet_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Clinic_Cabinet.jpg",
+  "triangles": 288,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Clinic_Chair": {
+  "bbox_dev": [
+   0.05,
+   0.0,
+   0.05,
+   -0.05,
+   0.0,
+   -0.05
+  ],
+  "bbox_max_dev": 0.05,
+  "bbox_new": [
+   [
+    -0.95,
+    0.0,
+    -0.95
+   ],
+   [
+    0.95,
+    3.0,
+    0.95
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -1.0,
+    0.0,
+    -1.0
+   ],
+   [
+    1.0,
+    3.0,
+    1.0
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 21:26",
+  "category": "props",
+  "export_name": "Clinic_Chair",
+  "fbx": "export/props/Clinic_Chair.fbx",
+  "meshes": [
+   "Clinic_Chair"
+  ],
+  "renders": [
+   "renders/objects/Clinic_Chair/Clinic_Chair_front34.jpg",
+   "renders/objects/Clinic_Chair/Clinic_Chair_back34.jpg",
+   "renders/objects/Clinic_Chair/Clinic_Chair_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Clinic_Chair.jpg",
+  "triangles": 272,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Clinic_WallScreen": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   -0.275,
+   0.0,
+   0.0,
+   0.025
+  ],
+  "bbox_max_dev": 0.275,
+  "bbox_new": [
+   [
+    -4.0,
+    0.0,
+    -0.4
+   ],
+   [
+    4.0,
+    5.0,
+    0.15
+   ]
+  ],
+  "bbox_ok": false,
+  "bbox_old": [
+   [
+    -4.0,
+    0.0,
+    -0.125
+   ],
+   [
+    4.0,
+    5.0,
+    0.125
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 21:29",
+  "category": "decoration",
+  "export_name": "Clinic_WallScreen",
+  "fbx": "export/decoration/Clinic_WallScreen.fbx",
+  "meshes": [
+   "Clinic_WallScreen",
+   "Clinic_WallScreen_Glow_GREEN"
+  ],
+  "renders": [
+   "renders/objects/Clinic_WallScreen/Clinic_WallScreen_front34.jpg",
+   "renders/objects/Clinic_WallScreen/Clinic_WallScreen_back34.jpg",
+   "renders/objects/Clinic_WallScreen/Clinic_WallScreen_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Clinic_WallScreen.jpg",
+  "triangles": 184,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Computer": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   -0.0,
+   0.0
+  ],
+  "bbox_max_dev": 0.0,
+  "bbox_new": [
+   [
+    -2.0,
+    0.0,
+    -1.25
+   ],
+   [
+    2.0,
+    4.1,
+    1.25
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -2.0,
+    0.0,
+    -1.25
+   ],
+   [
+    2.0,
+    4.1,
+    1.25
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 21:24",
+  "category": "props",
+  "export_name": "Computer",
+  "fbx": "export/props/Computer.fbx",
+  "meshes": [
+   "Computer",
+   "Computer_Glow_GLOW_COOL"
+  ],
+  "renders": [
+   "renders/objects/Computer/Computer_front34.jpg",
+   "renders/objects/Computer/Computer_back34.jpg",
+   "renders/objects/Computer/Computer_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Computer.jpg",
+  "triangles": 468,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Debt_BankLoan": {
+  "bbox_dev": [
+   -0.0,
+   0.0,
+   0.017,
+   0.0,
+   0.0,
+   -0.002
+  ],
+  "bbox_max_dev": 0.017,
+  "bbox_new": [
+   [
+    -1.6,
+    0.0,
+    -1.75
+   ],
+   [
+    1.6,
+    3.2,
+    1.385
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -1.6,
+    0.0,
+    -1.767
+   ],
+   [
+    1.6,
+    3.2,
+    1.387
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 21:33",
+  "category": "props",
+  "export_name": "Bank Loan",
+  "fbx": "export/props/Bank Loan.fbx",
+  "meshes": [
+   "Debt_BankLoan"
+  ],
+  "renders": [
+   "renders/objects/Debt_BankLoan/Debt_BankLoan_front34.jpg",
+   "renders/objects/Debt_BankLoan/Debt_BankLoan_back34.jpg",
+   "renders/objects/Debt_BankLoan/Debt_BankLoan_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Debt_BankLoan.jpg",
+  "triangles": 384,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Debt_CarLoan": {
+  "bbox_dev": [
+   -0.06,
+   0.024,
+   0.06,
+   0.06,
+   0.0,
+   -0.0
+  ],
+  "bbox_max_dev": 0.06,
+  "bbox_new": [
+   [
+    -1.61,
+    0.024,
+    -2.34
+   ],
+   [
+    1.61,
+    2.5,
+    2.3
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -1.55,
+    0.0,
+    -2.4
+   ],
+   [
+    1.55,
+    2.5,
+    2.3
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 21:23",
+  "category": "props",
+  "export_name": "Car Loan",
+  "fbx": "export/props/Car Loan.fbx",
+  "meshes": [
+   "Debt_CarLoan"
+  ],
+  "renders": [
+   "renders/objects/Debt_CarLoan/Debt_CarLoan_front34.jpg",
+   "renders/objects/Debt_CarLoan/Debt_CarLoan_back34.jpg",
+   "renders/objects/Debt_CarLoan/Debt_CarLoan_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Debt_CarLoan.jpg",
+  "triangles": 1052,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Debt_CreditCard": {
+  "bbox_dev": [
+   -0.0,
+   0.0,
+   0.0,
+   0.0,
+   -0.015,
+   -0.0
+  ],
+  "bbox_max_dev": 0.015,
+  "bbox_new": [
+   [
+    -2.21,
+    0.0,
+    -0.7
+   ],
+   [
+    2.21,
+    3.184,
+    0.7
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -2.21,
+    0.0,
+    -0.7
+   ],
+   [
+    2.21,
+    3.199,
+    0.7
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 21:32",
+  "category": "props",
+  "export_name": "Credit Card",
+  "fbx": "export/props/Credit Card.fbx",
+  "meshes": [
+   "Debt_CreditCard"
+  ],
+  "renders": [
+   "renders/objects/Debt_CreditCard/Debt_CreditCard_front34.jpg",
+   "renders/objects/Debt_CreditCard/Debt_CreditCard_back34.jpg",
+   "renders/objects/Debt_CreditCard/Debt_CreditCard_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Debt_CreditCard.jpg",
+  "triangles": 320,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Debt_OtherDebt": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   -0.12,
+   -0.0,
+   0.0,
+   -0.0
+  ],
+  "bbox_max_dev": 0.12,
+  "bbox_new": [
+   [
+    -1.15,
+    -0.05,
+    -1.27
+   ],
+   [
+    1.15,
+    2.25,
+    1.15
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -1.15,
+    -0.05,
+    -1.15
+   ],
+   [
+    1.15,
+    2.25,
+    1.15
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 21:33",
+  "category": "props",
+  "export_name": "Debt Crate",
+  "fbx": "export/props/Debt Crate.fbx",
+  "meshes": [
+   "Debt_OtherDebt"
+  ],
+  "renders": [
+   "renders/objects/Debt_OtherDebt/Debt_OtherDebt_front34.jpg",
+   "renders/objects/Debt_OtherDebt/Debt_OtherDebt_back34.jpg",
+   "renders/objects/Debt_OtherDebt/Debt_OtherDebt_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Debt_OtherDebt.jpg",
+  "triangles": 336,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Debt_SchoolLoan": {
+  "bbox_dev": [
+   0.042,
+   0.0,
+   0.042,
+   -0.042,
+   0.03,
+   -0.042
+  ],
+  "bbox_max_dev": 0.042,
+  "bbox_new": [
+   [
+    -1.655,
+    0.0,
+    -1.655
+   ],
+   [
+    1.655,
+    3.05,
+    1.655
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -1.697,
+    0.0,
+    -1.697
+   ],
+   [
+    1.697,
+    3.02,
+    1.697
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 21:33",
+  "category": "props",
+  "export_name": "School Loan",
+  "fbx": "export/props/School Loan.fbx",
+  "meshes": [
+   "Debt_SchoolLoan"
+  ],
+  "renders": [
+   "renders/objects/Debt_SchoolLoan/Debt_SchoolLoan_front34.jpg",
+   "renders/objects/Debt_SchoolLoan/Debt_SchoolLoan_back34.jpg",
+   "renders/objects/Debt_SchoolLoan/Debt_SchoolLoan_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Debt_SchoolLoan.jpg",
+  "triangles": 512,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Debt_SchoolLoan_books2": {
+  "budget": 1500,
+  "built_at": "2026-10-04 21:28",
+  "category": "props",
+  "export_name": "School Loan (2 books)",
+  "fbx": "export/props/School Loan (2 books).fbx",
+  "meshes": [
+   "Debt_SchoolLoan_books2"
+  ],
+  "round": 0,
+  "status": "built",
+  "triangles": 392,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Debt_SchoolLoan_books4": {
+  "budget": 1500,
+  "built_at": "2026-10-04 21:28",
+  "category": "props",
+  "export_name": "School Loan (4 books)",
+  "fbx": "export/props/School Loan (4 books).fbx",
+  "meshes": [
+   "Debt_SchoolLoan_books4"
+  ],
+  "round": 0,
+  "status": "built",
+  "triangles": 632,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Debt_SchoolLoan_books5": {
+  "budget": 1500,
+  "built_at": "2026-10-04 21:28",
+  "category": "props",
+  "export_name": "School Loan (5 books)",
+  "fbx": "export/props/School Loan (5 books).fbx",
+  "meshes": [
+   "Debt_SchoolLoan_books5"
+  ],
+  "round": 0,
+  "status": "built",
+  "triangles": 752,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Debt_SchoolLoan_books6": {
+  "budget": 1500,
+  "built_at": "2026-10-04 21:28",
+  "category": "props",
+  "export_name": "School Loan (6 books)",
+  "fbx": "export/props/School Loan (6 books).fbx",
+  "meshes": [
+   "Debt_SchoolLoan_books6"
+  ],
+  "round": 0,
+  "status": "built",
+  "triangles": 872,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Debt_SchoolLoan_books7": {
+  "budget": 1500,
+  "built_at": "2026-10-04 21:28",
+  "category": "props",
+  "export_name": "School Loan (7 books)",
+  "fbx": "export/props/School Loan (7 books).fbx",
+  "meshes": [
+   "Debt_SchoolLoan_books7"
+  ],
+  "round": 0,
+  "status": "built",
+  "triangles": 992,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Depot_Bus": {
+  "bbox_dev": [
+   -0.225,
+   0.0,
+   -0.29,
+   0.225,
+   0.0,
+   0.29
+  ],
+  "bbox_max_dev": 0.29,
+  "bbox_new": [
+   [
+    -10.225,
+    0.0,
+    -3.29
+   ],
+   [
+    10.225,
+    7.0,
+    3.29
+   ]
+  ],
+  "bbox_ok": false,
+  "bbox_old": [
+   [
+    -10.0,
+    0.0,
+    -3.0
+   ],
+   [
+    10.0,
+    7.0,
+    3.0
+   ]
+  ],
+  "budget": 4000,
+  "built_at": "2026-10-04 21:28",
+  "category": "vehicles",
+  "export_name": "Depot_Bus",
+  "fbx": "export/vehicles/Depot_Bus.fbx",
+  "meshes": [
+   "Depot_Bus",
+   "Depot_Bus_Glow_GLOW_WARM"
+  ],
+  "renders": [
+   "renders/objects/Depot_Bus/Depot_Bus_front34.jpg",
+   "renders/objects/Depot_Bus/Depot_Bus_back34.jpg",
+   "renders/objects/Depot_Bus/Depot_Bus_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Depot_Bus.jpg",
+  "triangles": 2832,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Dream_BeachVilla": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   0.218,
+   0.0,
+   -0.0,
+   0.0
+  ],
+  "bbox_max_dev": 0.218,
+  "bbox_new": [
+   [
+    -20.0,
+    0.0,
+    -17.2
+   ],
+   [
+    20.0,
+    13.2,
+    16.0
+   ]
+  ],
+  "bbox_ok": false,
+  "bbox_old": [
+   [
+    -20.0,
+    0.0,
+    -17.418
+   ],
+   [
+    20.0,
+    13.2,
+    16.0
+   ]
+  ],
+  "budget": 6000,
+  "built_at": "2026-10-04 21:20",
+  "category": "buildings",
+  "export_name": "BeachVilla",
+  "fbx": "export/buildings/BeachVilla.fbx",
+  "meshes": [
+   "BeachVilla",
+   "BeachVilla_Glass",
+   "BeachVilla_Glow_GLOW_WARM"
+  ],
+  "renders": [
+   "renders/objects/Dream_BeachVilla/Dream_BeachVilla_front34.jpg",
+   "renders/objects/Dream_BeachVilla/Dream_BeachVilla_back34.jpg",
+   "renders/objects/Dream_BeachVilla/Dream_BeachVilla_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Dream_BeachVilla.jpg",
+  "triangles": 5528,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Dream_PrivateIsland": {
+  "bbox_dev": [
+   0.0,
+   0.15,
+   0.0,
+   0.0,
+   0.069,
+   0.0
+  ],
+  "bbox_max_dev": 0.15,
+  "bbox_new": [
+   [
+    -25.0,
+    0.0,
+    -25.0
+   ],
+   [
+    26.35,
+    14.204,
+    25.0
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -25.0,
+    -0.15,
+    -25.0
+   ],
+   [
+    26.35,
+    14.135,
+    25.0
+   ]
+  ],
+  "budget": 6000,
+  "built_at": "2026-10-04 21:20",
+  "category": "nature",
+  "export_name": "PrivateIsland",
+  "fbx": "export/nature/PrivateIsland.fbx",
+  "meshes": [
+   "PrivateIsland"
+  ],
+  "renders": [
+   "renders/objects/Dream_PrivateIsland/Dream_PrivateIsland_front34.jpg",
+   "renders/objects/Dream_PrivateIsland/Dream_PrivateIsland_back34.jpg",
+   "renders/objects/Dream_PrivateIsland/Dream_PrivateIsland_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Dream_PrivateIsland.jpg",
+  "triangles": 5608,
+  "tris_ok": true,
+  "warnings": [
+   "thin cylinder r=0.12 at (7, 4.75, -3)"
+  ]
+ },
+ "Dream_PrivateJet": {
+  "bbox_dev": [
+   -0.098,
+   0.029,
+   0.09,
+   0.098,
+   0.0,
+   0.3
+  ],
+  "bbox_max_dev": 0.3,
+  "bbox_new": [
+   [
+    -14.414,
+    0.029,
+    -13.91
+   ],
+   [
+    14.414,
+    12.46,
+    19.4
+   ]
+  ],
+  "bbox_ok": false,
+  "bbox_old": [
+   [
+    -14.316,
+    0.0,
+    -14.0
+   ],
+   [
+    14.316,
+    12.46,
+    19.1
+   ]
+  ],
+  "budget": 4000,
+  "built_at": "2026-10-04 21:20",
+  "category": "vehicles",
+  "export_name": "PrivateJet",
+  "fbx": "export/vehicles/PrivateJet.fbx",
+  "meshes": [
+   "PrivateJet"
+  ],
+  "renders": [
+   "renders/objects/Dream_PrivateJet/Dream_PrivateJet_front34.jpg",
+   "renders/objects/Dream_PrivateJet/Dream_PrivateJet_back34.jpg",
+   "renders/objects/Dream_PrivateJet/Dream_PrivateJet_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Dream_PrivateJet.jpg",
+  "triangles": 3600,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Dream_Supercar": {
+  "bbox_dev": [
+   -0.04,
+   0.0,
+   0.02,
+   0.04,
+   -0.125,
+   -0.0
+  ],
+  "bbox_max_dev": 0.125,
+  "bbox_new": [
+   [
+    -2.84,
+    0.0,
+    -6.48
+   ],
+   [
+    2.84,
+    3.33,
+    5.7
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -2.8,
+    0.0,
+    -6.5
+   ],
+   [
+    2.8,
+    3.455,
+    5.7
+   ]
+  ],
+  "budget": 4000,
+  "built_at": "2026-10-04 21:06",
+  "category": "vehicles",
+  "export_name": "Supercar",
+  "fbx": "export/vehicles/Supercar.fbx",
+  "meshes": [
+   "Supercar",
+   "Supercar_Glow_GLOW_WARM"
+  ],
+  "renders": [
+   "renders/objects/Dream_Supercar/Dream_Supercar_front34.jpg",
+   "renders/objects/Dream_Supercar/Dream_Supercar_back34.jpg",
+   "renders/objects/Dream_Supercar/Dream_Supercar_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Dream_Supercar.jpg",
+  "triangles": 3896,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Dream_Yacht": {
+  "bbox_dev": [
+   -0.045,
+   0.0,
+   0.1,
+   -0.03,
+   -0.15,
+   -0.05
+  ],
+  "bbox_max_dev": 0.15,
+  "bbox_new": [
+   [
+    -5.72,
+    -0.5,
+    -19.95
+   ],
+   [
+    5.57,
+    14.15,
+    22.5
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -5.675,
+    -0.5,
+    -20.05
+   ],
+   [
+    5.6,
+    14.3,
+    22.55
+   ]
+  ],
+  "budget": 4000,
+  "built_at": "2026-10-04 21:19",
+  "category": "vehicles",
+  "export_name": "Yacht",
+  "fbx": "export/vehicles/Yacht.fbx",
+  "meshes": [
+   "Yacht"
+  ],
+  "renders": [
+   "renders/objects/Dream_Yacht/Dream_Yacht_front34.jpg",
+   "renders/objects/Dream_Yacht/Dream_Yacht_back34.jpg",
+   "renders/objects/Dream_Yacht/Dream_Yacht_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Dream_Yacht.jpg",
+  "triangles": 3856,
+  "tris_ok": true,
+  "warnings": [
+   "thin torus r=0.13 at (0, 10.6, 2.0)"
+  ]
+ },
+ "Garage_CarLift": {
+  "bbox_dev": [
+   -0.02,
+   0.0,
+   -0.06,
+   0.02,
+   0.0,
+   0.06
+  ],
+  "bbox_max_dev": 0.06,
+  "bbox_new": [
+   [
+    -4.52,
+    0.0,
+    -2.46
+   ],
+   [
+    4.52,
+    6.9,
+    2.46
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -4.5,
+    0.0,
+    -2.4
+   ],
+   [
+    4.5,
+    6.9,
+    2.4
+   ]
+  ],
+  "budget": 4000,
+  "built_at": "2026-10-04 21:28",
+  "category": "vehicles",
+  "export_name": "Garage_CarLift",
+  "fbx": "export/vehicles/Garage_CarLift.fbx",
+  "meshes": [
+   "Garage_CarLift",
+   "Garage_CarLift_Glow_GLOW_WARM"
+  ],
+  "renders": [
+   "renders/objects/Garage_CarLift/Garage_CarLift_front34.jpg",
+   "renders/objects/Garage_CarLift/Garage_CarLift_back34.jpg",
+   "renders/objects/Garage_CarLift/Garage_CarLift_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Garage_CarLift.jpg",
+  "triangles": 1744,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Garage_TireStack": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.05,
+   0.0
+  ],
+  "bbox_max_dev": 0.05,
+  "bbox_new": [
+   [
+    -1.75,
+    0.0,
+    -1.75
+   ],
+   [
+    1.75,
+    4.05,
+    1.75
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -1.75,
+    0.0,
+    -1.75
+   ],
+   [
+    1.75,
+    4.0,
+    1.75
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 21:27",
+  "category": "props",
+  "export_name": "Garage_TireStack",
+  "fbx": "export/props/Garage_TireStack.fbx",
+  "meshes": [
+   "Garage_TireStack"
+  ],
+  "renders": [
+   "renders/objects/Garage_TireStack/Garage_TireStack_front34.jpg",
+   "renders/objects/Garage_TireStack/Garage_TireStack_back34.jpg",
+   "renders/objects/Garage_TireStack/Garage_TireStack_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Garage_TireStack.jpg",
+  "triangles": 1052,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Garage_ToolBoard": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   -0.375,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "bbox_max_dev": 0.375,
+  "bbox_new": [
+   [
+    -5.0,
+    0.0,
+    -0.525
+   ],
+   [
+    5.0,
+    6.0,
+    0.15
+   ]
+  ],
+  "bbox_ok": false,
+  "bbox_old": [
+   [
+    -5.0,
+    0.0,
+    -0.15
+   ],
+   [
+    5.0,
+    6.0,
+    0.15
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 21:30",
+  "category": "decoration",
+  "export_name": "Garage_ToolBoard",
+  "fbx": "export/decoration/Garage_ToolBoard.fbx",
+  "meshes": [
+   "Garage_ToolBoard"
+  ],
+  "renders": [
+   "renders/objects/Garage_ToolBoard/Garage_ToolBoard_front34.jpg",
+   "renders/objects/Garage_ToolBoard/Garage_ToolBoard_back34.jpg",
+   "renders/objects/Garage_ToolBoard/Garage_ToolBoard_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Garage_ToolBoard.jpg",
+  "triangles": 372,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "HospitalBed": {
+  "bbox_dev": [
+   0.025,
+   0.0,
+   0.0,
+   -0.025,
+   0.0,
+   0.0
+  ],
+  "bbox_max_dev": 0.025,
+  "bbox_new": [
+   [
+    -2.025,
+    0.0,
+    -3.5
+   ],
+   [
+    2.025,
+    2.2,
+    3.5
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -2.05,
+    0.0,
+    -3.5
+   ],
+   [
+    2.05,
+    2.2,
+    3.5
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 21:39",
+  "category": "props",
+  "export_name": "HospitalBed",
+  "fbx": "export/props/HospitalBed.fbx",
+  "meshes": [
+   "HospitalBed"
+  ],
+  "renders": [
+   "renders/objects/HospitalBed/HospitalBed_front34.jpg",
+   "renders/objects/HospitalBed/HospitalBed_back34.jpg",
+   "renders/objects/HospitalBed/HospitalBed_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/HospitalBed.jpg",
+  "triangles": 496,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Hospital_WallCross": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   -0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "bbox_max_dev": 0.0,
+  "bbox_new": [
+   [
+    -2.5,
+    0.0,
+    -0.15
+   ],
+   [
+    2.5,
+    5.0,
+    0.15
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -2.5,
+    0.0,
+    -0.15
+   ],
+   [
+    2.5,
+    5.0,
+    0.15
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 21:30",
+  "category": "decoration",
+  "export_name": "Hospital_WallCross",
+  "fbx": "export/decoration/Hospital_WallCross.fbx",
+  "meshes": [
+   "Hospital_WallCross"
+  ],
+  "renders": [
+   "renders/objects/Hospital_WallCross/Hospital_WallCross_front34.jpg",
+   "renders/objects/Hospital_WallCross/Hospital_WallCross_back34.jpg",
+   "renders/objects/Hospital_WallCross/Hospital_WallCross_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Hospital_WallCross.jpg",
+  "triangles": 332,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Kid": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   -0.02,
+   -0.0,
+   0.113,
+   0.104
+  ],
+  "bbox_max_dev": 0.113,
+  "bbox_new": [
+   [
+    -0.65,
+    0.0,
+    -0.62
+   ],
+   [
+    0.65,
+    3.463,
+    0.704
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -0.65,
+    0.0,
+    -0.6
+   ],
+   [
+    0.65,
+    3.35,
+    0.6
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 21:31",
+  "category": "props",
+  "export_name": "Kid",
+  "fbx": "export/props/Kid.fbx",
+  "meshes": [
+   "Kid"
+  ],
+  "renders": [
+   "renders/objects/Kid/Kid_front34.jpg",
+   "renders/objects/Kid/Kid_back34.jpg",
+   "renders/objects/Kid/Kid_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Kid.jpg",
+  "triangles": 538,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Kid_v2": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   -0.02,
+   -0.0,
+   0.113,
+   0.104
+  ],
+  "bbox_max_dev": 0.113,
+  "bbox_new": [
+   [
+    -0.65,
+    0.0,
+    -0.62
+   ],
+   [
+    0.65,
+    3.463,
+    0.704
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -0.65,
+    0.0,
+    -0.6
+   ],
+   [
+    0.65,
+    3.35,
+    0.6
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 21:32",
+  "category": "props",
+  "export_name": "Kid (blue)",
+  "fbx": "export/props/Kid (blue).fbx",
+  "meshes": [
+   "Kid_v2"
+  ],
+  "renders": [
+   "renders/objects/Kid_v2/Kid_v2_front34.jpg",
+   "renders/objects/Kid_v2/Kid_v2_back34.jpg",
+   "renders/objects/Kid_v2/Kid_v2_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Kid_v2.jpg",
+  "triangles": 538,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Kid_v3": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   -0.02,
+   -0.0,
+   0.113,
+   0.104
+  ],
+  "bbox_max_dev": 0.113,
+  "bbox_new": [
+   [
+    -0.65,
+    0.0,
+    -0.62
+   ],
+   [
+    0.65,
+    3.463,
+    0.704
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -0.65,
+    0.0,
+    -0.6
+   ],
+   [
+    0.65,
+    3.35,
+    0.6
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 21:32",
+  "category": "props",
+  "export_name": "Kid (yellow)",
+  "fbx": "export/props/Kid (yellow).fbx",
+  "meshes": [
+   "Kid_v3"
+  ],
+  "renders": [
+   "renders/objects/Kid_v3/Kid_v3_front34.jpg",
+   "renders/objects/Kid_v3/Kid_v3_back34.jpg",
+   "renders/objects/Kid_v3/Kid_v3_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Kid_v3.jpg",
+  "triangles": 538,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Maker_Apartment": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   -0.3,
+   0.1,
+   0.0,
+   0.0
+  ],
+  "bbox_max_dev": 0.3,
+  "bbox_new": [
+   [
+    -4.0,
+    0.0,
+    -3.95
+   ],
+   [
+    4.1,
+    8.0,
+    3.5
+   ]
+  ],
+  "bbox_ok": false,
+  "bbox_old": [
+   [
+    -4.0,
+    0.0,
+    -3.65
+   ],
+   [
+    4.0,
+    8.0,
+    3.5
+   ]
+  ],
+  "budget": 6000,
+  "built_at": "2026-10-04 21:18",
+  "category": "buildings",
+  "export_name": "Apartment",
+  "fbx": "export/buildings/Apartment.fbx",
+  "meshes": [
+   "Maker_Apartment",
+   "Maker_Apartment_Glow_GLOW_WARM"
+  ],
+  "renders": [
+   "renders/objects/Maker_Apartment/Maker_Apartment_front34.jpg",
+   "renders/objects/Maker_Apartment/Maker_Apartment_back34.jpg",
+   "renders/objects/Maker_Apartment/Maker_Apartment_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Maker_Apartment.jpg",
+  "triangles": 860,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Maker_ApartmentBuilding": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   0.03,
+   0.0,
+   0.05,
+   0.0
+  ],
+  "bbox_max_dev": 0.05,
+  "bbox_new": [
+   [
+    -4.5,
+    0.0,
+    -3.77
+   ],
+   [
+    4.5,
+    12.05,
+    3.5
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -4.5,
+    0.0,
+    -3.8
+   ],
+   [
+    4.5,
+    12.0,
+    3.5
+   ]
+  ],
+  "budget": 6000,
+  "built_at": "2026-10-04 21:38",
+  "category": "buildings",
+  "export_name": "Apartment Building",
+  "fbx": "export/buildings/Apartment Building.fbx",
+  "meshes": [
+   "Maker_ApartmentBuilding",
+   "Maker_ApartmentBuilding_Glow_GLOW_WARM"
+  ],
+  "renders": [
+   "renders/objects/Maker_ApartmentBuilding/Maker_ApartmentBuilding_front34.jpg",
+   "renders/objects/Maker_ApartmentBuilding/Maker_ApartmentBuilding_back34.jpg",
+   "renders/objects/Maker_ApartmentBuilding/Maker_ApartmentBuilding_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Maker_ApartmentBuilding.jpg",
+  "triangles": 1712,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Maker_BowlingAlley": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   -0.027,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "bbox_max_dev": 0.027,
+  "bbox_new": [
+   [
+    -5.0,
+    0.0,
+    -4.977
+   ],
+   [
+    5.0,
+    8.0,
+    3.75
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -5.0,
+    0.0,
+    -4.95
+   ],
+   [
+    5.0,
+    8.0,
+    3.75
+   ]
+  ],
+  "budget": 6000,
+  "built_at": "2026-10-04 21:36",
+  "category": "buildings",
+  "export_name": "Bowling Alley",
+  "fbx": "export/buildings/Bowling Alley.fbx",
+  "meshes": [
+   "Maker_BowlingAlley",
+   "Maker_BowlingAlley_Glow_GLOW_COOL"
+  ],
+  "renders": [
+   "renders/objects/Maker_BowlingAlley/Maker_BowlingAlley_front34.jpg",
+   "renders/objects/Maker_BowlingAlley/Maker_BowlingAlley_back34.jpg",
+   "renders/objects/Maker_BowlingAlley/Maker_BowlingAlley_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Maker_BowlingAlley.jpg",
+  "triangles": 1516,
+  "tris_ok": true,
+  "warnings": [
+   "thin sphere r=0.13 at (1.3900000000000001, 1.815, -4.08)",
+   "thin sphere r=0.13 at (3.25, 7.3, -0.92)",
+   "thin sphere r=0.13 at (3.75, 7.3, -0.92)",
+   "thin sphere r=0.13 at (3.5, 7.6, -0.92)"
+  ]
+ },
+ "Maker_CarWash": {
+  "bbox_dev": [
+   0.0,
+   -0.1,
+   0.06,
+   0.0,
+   0.25,
+   0.0
+  ],
+  "bbox_max_dev": 0.25,
+  "bbox_new": [
+   [
+    -4.5,
+    -0.1,
+    -3.64
+   ],
+   [
+    4.5,
+    7.25,
+    3.5
+   ]
+  ],
+  "bbox_ok": false,
+  "bbox_old": [
+   [
+    -4.5,
+    0.0,
+    -3.7
+   ],
+   [
+    4.5,
+    7.0,
+    3.5
+   ]
+  ],
+  "budget": 6000,
+  "built_at": "2026-10-04 21:18",
+  "category": "buildings",
+  "export_name": "Car Wash",
+  "fbx": "export/buildings/Car Wash.fbx",
+  "meshes": [
+   "Maker_CarWash",
+   "Maker_CarWash_Glass"
+  ],
+  "renders": [
+   "renders/objects/Maker_CarWash/Maker_CarWash_front34.jpg",
+   "renders/objects/Maker_CarWash/Maker_CarWash_back34.jpg",
+   "renders/objects/Maker_CarWash/Maker_CarWash_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Maker_CarWash.jpg",
+  "triangles": 1132,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Maker_CoffeeShop": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   -0.05,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "bbox_max_dev": 0.05,
+  "bbox_new": [
+   [
+    -4.0,
+    0.0,
+    -4.75
+   ],
+   [
+    4.0,
+    6.0,
+    3.5
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -4.0,
+    0.0,
+    -4.7
+   ],
+   [
+    4.0,
+    6.0,
+    3.5
+   ]
+  ],
+  "budget": 6000,
+  "built_at": "2026-10-04 21:36",
+  "category": "buildings",
+  "export_name": "Coffee Shop",
+  "fbx": "export/buildings/Coffee Shop.fbx",
+  "meshes": [
+   "Maker_CoffeeShop",
+   "Maker_CoffeeShop_Glow_GLOW_WARM"
+  ],
+  "renders": [
+   "renders/objects/Maker_CoffeeShop/Maker_CoffeeShop_front34.jpg",
+   "renders/objects/Maker_CoffeeShop/Maker_CoffeeShop_back34.jpg",
+   "renders/objects/Maker_CoffeeShop/Maker_CoffeeShop_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Maker_CoffeeShop.jpg",
+  "triangles": 1280,
+  "tris_ok": true,
+  "warnings": [
+   "thin sphere r=0.13 at (1.2220000000000002, 1.815, -3.83)",
+   "thin cylinder r=0.12 at (3.3, 0.5, -4.2)"
+  ]
+ },
+ "Maker_FoodTruck": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   -0.578,
+   0.63,
+   0.15,
+   0.29
+  ],
+  "bbox_max_dev": 0.63,
+  "bbox_new": [
+   [
+    -4.0,
+    0.0,
+    -3.078
+   ],
+   [
+    4.63,
+    5.05,
+    2.79
+   ]
+  ],
+  "bbox_ok": false,
+  "bbox_old": [
+   [
+    -4.0,
+    0.0,
+    -2.5
+   ],
+   [
+    4.0,
+    4.9,
+    2.5
+   ]
+  ],
+  "budget": 4000,
+  "built_at": "2026-10-04 21:19",
+  "category": "vehicles",
+  "export_name": "Food Truck",
+  "fbx": "export/vehicles/Food Truck.fbx",
+  "meshes": [
+   "Maker_FoodTruck",
+   "Maker_FoodTruck_Glow_GLOW_WARM"
+  ],
+  "renders": [
+   "renders/objects/Maker_FoodTruck/Maker_FoodTruck_front34.jpg",
+   "renders/objects/Maker_FoodTruck/Maker_FoodTruck_back34.jpg",
+   "renders/objects/Maker_FoodTruck/Maker_FoodTruck_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Maker_FoodTruck.jpg",
+  "triangles": 2280,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Maker_GameStudio": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   -0.027,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "bbox_max_dev": 0.027,
+  "bbox_new": [
+   [
+    -4.5,
+    0.0,
+    -4.727
+   ],
+   [
+    4.5,
+    7.0,
+    3.5
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -4.5,
+    0.0,
+    -4.7
+   ],
+   [
+    4.5,
+    7.0,
+    3.5
+   ]
+  ],
+  "budget": 6000,
+  "built_at": "2026-10-04 21:37",
+  "category": "buildings",
+  "export_name": "Game Studio",
+  "fbx": "export/buildings/Game Studio.fbx",
+  "meshes": [
+   "Maker_GameStudio",
+   "Maker_GameStudio_Glow_GLOW_COOL"
+  ],
+  "renders": [
+   "renders/objects/Maker_GameStudio/Maker_GameStudio_front34.jpg",
+   "renders/objects/Maker_GameStudio/Maker_GameStudio_back34.jpg",
+   "renders/objects/Maker_GameStudio/Maker_GameStudio_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Maker_GameStudio.jpg",
+  "triangles": 1380,
+  "tris_ok": true,
+  "warnings": [
+   "thin sphere r=0.13 at (1.3059999999999998, 2.0175, -3.83)"
+  ]
+ },
+ "Maker_GoldBar": {
+  "bbox_dev": [
+   0.029,
+   0.0,
+   0.0,
+   -0.029,
+   0.0,
+   -0.0
+  ],
+  "bbox_max_dev": 0.029,
+  "bbox_new": [
+   [
+    -2.271,
+    0.0,
+    -1.3
+   ],
+   [
+    2.271,
+    2.4,
+    1.3
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -2.3,
+    0.0,
+    -1.3
+   ],
+   [
+    2.3,
+    2.4,
+    1.3
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 21:14",
+  "category": "props",
+  "export_name": "Gold Bar",
+  "fbx": "export/props/Gold Bar.fbx",
+  "meshes": [
+   "Maker_GoldBar"
+  ],
+  "renders": [
+   "renders/objects/Maker_GoldBar/Maker_GoldBar_front34.jpg",
+   "renders/objects/Maker_GoldBar/Maker_GoldBar_back34.jpg",
+   "renders/objects/Maker_GoldBar/Maker_GoldBar_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Maker_GoldBar.jpg",
+  "triangles": 648,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Maker_GoldCoin": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   0.0,
+   -0.0,
+   -0.0,
+   -0.0
+  ],
+  "bbox_max_dev": 0.0,
+  "bbox_new": [
+   [
+    -1.9,
+    0.0,
+    -0.7
+   ],
+   [
+    1.9,
+    4.2,
+    0.7
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -1.9,
+    0.0,
+    -0.7
+   ],
+   [
+    1.9,
+    4.2,
+    0.7
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 21:13",
+  "category": "props",
+  "export_name": "Gold Coin",
+  "fbx": "export/props/Gold Coin.fbx",
+  "meshes": [
+   "Maker_GoldCoin"
+  ],
+  "renders": [
+   "renders/objects/Maker_GoldCoin/Maker_GoldCoin_front34.jpg",
+   "renders/objects/Maker_GoldCoin/Maker_GoldCoin_back34.jpg",
+   "renders/objects/Maker_GoldCoin/Maker_GoldCoin_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Maker_GoldCoin.jpg",
+  "triangles": 884,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Maker_GoldTreasureChest": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   -0.045,
+   0.0,
+   -0.077,
+   -0.077
+  ],
+  "bbox_max_dev": 0.077,
+  "bbox_new": [
+   [
+    -2.5,
+    0.0,
+    -1.795
+   ],
+   [
+    2.5,
+    5.906,
+    2.339
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -2.5,
+    0.0,
+    -1.75
+   ],
+   [
+    2.5,
+    5.983,
+    2.416
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 21:34",
+  "category": "props",
+  "export_name": "Gold Treasure Chest",
+  "fbx": "export/props/Gold Treasure Chest.fbx",
+  "meshes": [
+   "Maker_GoldTreasureChest"
+  ],
+  "renders": [
+   "renders/objects/Maker_GoldTreasureChest/Maker_GoldTreasureChest_front34.jpg",
+   "renders/objects/Maker_GoldTreasureChest/Maker_GoldTreasureChest_back34.jpg",
+   "renders/objects/Maker_GoldTreasureChest/Maker_GoldTreasureChest_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Maker_GoldTreasureChest.jpg",
+  "triangles": 856,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Maker_Hotel": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   -0.05,
+   0.0,
+   0.05,
+   0.0
+  ],
+  "bbox_max_dev": 0.05,
+  "bbox_new": [
+   [
+    -4.0,
+    0.0,
+    -3.85
+   ],
+   [
+    4.0,
+    16.05,
+    3.5
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -4.0,
+    0.0,
+    -3.8
+   ],
+   [
+    4.0,
+    16.0,
+    3.5
+   ]
+  ],
+  "budget": 6000,
+  "built_at": "2026-10-04 21:37",
+  "category": "buildings",
+  "export_name": "Hotel",
+  "fbx": "export/buildings/Hotel.fbx",
+  "meshes": [
+   "Maker_Hotel",
+   "Maker_Hotel_Glow_GLOW_WARM"
+  ],
+  "renders": [
+   "renders/objects/Maker_Hotel/Maker_Hotel_front34.jpg",
+   "renders/objects/Maker_Hotel/Maker_Hotel_back34.jpg",
+   "renders/objects/Maker_Hotel/Maker_Hotel_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Maker_Hotel.jpg",
+  "triangles": 2124,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Maker_HouseToRent": {
+  "bbox_dev": [
+   0.133,
+   0.0,
+   -0.5,
+   -0.133,
+   -0.082,
+   0.0
+  ],
+  "bbox_max_dev": 0.5,
+  "bbox_new": [
+   [
+    -4.067,
+    0.0,
+    -4.2
+   ],
+   [
+    4.067,
+    7.918,
+    3.7
+   ]
+  ],
+  "bbox_ok": false,
+  "bbox_old": [
+   [
+    -4.2,
+    0.0,
+    -3.7
+   ],
+   [
+    4.2,
+    8.0,
+    3.7
+   ]
+  ],
+  "budget": 6000,
+  "built_at": "2026-10-04 21:35",
+  "category": "buildings",
+  "export_name": "House to Rent",
+  "fbx": "export/buildings/House to Rent.fbx",
+  "meshes": [
+   "Maker_HouseToRent"
+  ],
+  "renders": [
+   "renders/objects/Maker_HouseToRent/Maker_HouseToRent_front34.jpg",
+   "renders/objects/Maker_HouseToRent/Maker_HouseToRent_back34.jpg",
+   "renders/objects/Maker_HouseToRent/Maker_HouseToRent_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Maker_HouseToRent.jpg",
+  "triangles": 1492,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Maker_LemonadeStand": {
+  "bbox_dev": [
+   0.023,
+   0.0,
+   0.023,
+   -0.023,
+   -0.0,
+   -0.023
+  ],
+  "bbox_max_dev": 0.023,
+  "bbox_new": [
+   [
+    -2.977,
+    0.0,
+    -1.977
+   ],
+   [
+    2.977,
+    6.3,
+    3.977
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -3.0,
+    0.0,
+    -2.0
+   ],
+   [
+    3.0,
+    6.3,
+    4.0
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 21:12",
+  "category": "props",
+  "export_name": "Lemonade Stand",
+  "fbx": "export/props/Lemonade Stand.fbx",
+  "meshes": [
+   "Maker_LemonadeStand"
+  ],
+  "renders": [
+   "renders/objects/Maker_LemonadeStand/Maker_LemonadeStand_front34.jpg",
+   "renders/objects/Maker_LemonadeStand/Maker_LemonadeStand_back34.jpg",
+   "renders/objects/Maker_LemonadeStand/Maker_LemonadeStand_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Maker_LemonadeStand.jpg",
+  "triangles": 1340,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Maker_MiniGolf": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "bbox_max_dev": 0.0,
+  "bbox_new": [
+   [
+    -4.5,
+    0.0,
+    -3.5
+   ],
+   [
+    4.5,
+    4.3,
+    3.5
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -4.5,
+    0.0,
+    -3.5
+   ],
+   [
+    4.5,
+    4.3,
+    3.5
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 21:12",
+  "category": "props",
+  "export_name": "Mini Golf",
+  "fbx": "export/props/Mini Golf.fbx",
+  "meshes": [
+   "Maker_MiniGolf"
+  ],
+  "renders": [
+   "renders/objects/Maker_MiniGolf/Maker_MiniGolf_front34.jpg",
+   "renders/objects/Maker_MiniGolf/Maker_MiniGolf_back34.jpg",
+   "renders/objects/Maker_MiniGolf/Maker_MiniGolf_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Maker_MiniGolf.jpg",
+  "triangles": 952,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Maker_PizzaRestaurant": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   -0.027,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "bbox_max_dev": 0.027,
+  "bbox_new": [
+   [
+    -4.5,
+    0.0,
+    -4.727
+   ],
+   [
+    4.5,
+    7.0,
+    3.5
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -4.5,
+    0.0,
+    -4.7
+   ],
+   [
+    4.5,
+    7.0,
+    3.5
+   ]
+  ],
+  "budget": 6000,
+  "built_at": "2026-10-04 21:38",
+  "category": "buildings",
+  "export_name": "Pizza Restaurant",
+  "fbx": "export/buildings/Pizza Restaurant.fbx",
+  "meshes": [
+   "Maker_PizzaRestaurant",
+   "Maker_PizzaRestaurant_Glow_GLOW_WARM"
+  ],
+  "renders": [
+   "renders/objects/Maker_PizzaRestaurant/Maker_PizzaRestaurant_front34.jpg",
+   "renders/objects/Maker_PizzaRestaurant/Maker_PizzaRestaurant_back34.jpg",
+   "renders/objects/Maker_PizzaRestaurant/Maker_PizzaRestaurant_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Maker_PizzaRestaurant.jpg",
+  "triangles": 1268,
+  "tris_ok": true,
+  "warnings": [
+   "thin sphere r=0.13 at (1.3059999999999998, 2.0175, -3.83)"
+  ]
+ },
+ "Maker_PokeBloxCard": {
+  "bbox_dev": [
+   0.0,
+   0.015,
+   0.04,
+   -0.0,
+   0.011,
+   0.043
+  ],
+  "bbox_max_dev": 0.043,
+  "bbox_new": [
+   [
+    -1.8,
+    -0.44,
+    -0.905
+   ],
+   [
+    1.8,
+    5.012,
+    0.743
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -1.8,
+    -0.455,
+    -0.945
+   ],
+   [
+    1.8,
+    5.001,
+    0.7
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 21:15",
+  "category": "props",
+  "export_name": "PokeBlox Card",
+  "fbx": "export/props/PokeBlox Card.fbx",
+  "meshes": [
+   "Maker_PokeBloxCard",
+   "Maker_PokeBloxCard_Glass"
+  ],
+  "renders": [
+   "renders/objects/Maker_PokeBloxCard/Maker_PokeBloxCard_front34.jpg",
+   "renders/objects/Maker_PokeBloxCard/Maker_PokeBloxCard_back34.jpg",
+   "renders/objects/Maker_PokeBloxCard/Maker_PokeBloxCard_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Maker_PokeBloxCard.jpg",
+  "triangles": 936,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Maker_RarePokeBloxCard": {
+  "bbox_dev": [
+   0.0,
+   0.015,
+   0.04,
+   -0.0,
+   0.011,
+   0.043
+  ],
+  "bbox_max_dev": 0.043,
+  "bbox_new": [
+   [
+    -1.8,
+    -0.44,
+    -0.905
+   ],
+   [
+    1.8,
+    5.012,
+    0.743
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -1.8,
+    -0.455,
+    -0.945
+   ],
+   [
+    1.8,
+    5.001,
+    0.7
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 21:15",
+  "category": "props",
+  "export_name": "Rare PokeBlox Card",
+  "fbx": "export/props/Rare PokeBlox Card.fbx",
+  "meshes": [
+   "Maker_RarePokeBloxCard",
+   "Maker_RarePokeBloxCard_Glass"
+  ],
+  "renders": [
+   "renders/objects/Maker_RarePokeBloxCard/Maker_RarePokeBloxCard_front34.jpg",
+   "renders/objects/Maker_RarePokeBloxCard/Maker_RarePokeBloxCard_back34.jpg",
+   "renders/objects/Maker_RarePokeBloxCard/Maker_RarePokeBloxCard_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Maker_RarePokeBloxCard.jpg",
+  "triangles": 936,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Maker_RarePokeBloxCard_v2": {
+  "bbox_dev": [
+   0.0,
+   0.015,
+   0.04,
+   -0.0,
+   0.011,
+   0.043
+  ],
+  "bbox_max_dev": 0.043,
+  "bbox_new": [
+   [
+    -1.8,
+    -0.44,
+    -0.905
+   ],
+   [
+    1.8,
+    5.012,
+    0.743
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -1.8,
+    -0.455,
+    -0.945
+   ],
+   [
+    1.8,
+    5.001,
+    0.7
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 21:16",
+  "category": "props",
+  "export_name": "Rare PokeBlox Card (case 2)",
+  "fbx": "export/props/Rare PokeBlox Card (case 2).fbx",
+  "meshes": [
+   "Maker_RarePokeBloxCard_v2",
+   "Maker_RarePokeBloxCard_v2_Glass"
+  ],
+  "renders": [
+   "renders/objects/Maker_RarePokeBloxCard_v2/Maker_RarePokeBloxCard_v2_front34.jpg",
+   "renders/objects/Maker_RarePokeBloxCard_v2/Maker_RarePokeBloxCard_v2_back34.jpg",
+   "renders/objects/Maker_RarePokeBloxCard_v2/Maker_RarePokeBloxCard_v2_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Maker_RarePokeBloxCard_v2.jpg",
+  "triangles": 936,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Maker_RarePokeBloxCard_v3": {
+  "bbox_dev": [
+   0.0,
+   0.015,
+   0.04,
+   -0.0,
+   0.011,
+   0.043
+  ],
+  "bbox_max_dev": 0.043,
+  "bbox_new": [
+   [
+    -1.8,
+    -0.44,
+    -0.905
+   ],
+   [
+    1.8,
+    5.012,
+    0.743
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -1.8,
+    -0.455,
+    -0.945
+   ],
+   [
+    1.8,
+    5.001,
+    0.7
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 21:16",
+  "category": "props",
+  "export_name": "Rare PokeBlox Card (case 3)",
+  "fbx": "export/props/Rare PokeBlox Card (case 3).fbx",
+  "meshes": [
+   "Maker_RarePokeBloxCard_v3",
+   "Maker_RarePokeBloxCard_v3_Glass",
+   "Maker_RarePokeBloxCard_v3_Glow_PURPLE"
+  ],
+  "renders": [
+   "renders/objects/Maker_RarePokeBloxCard_v3/Maker_RarePokeBloxCard_v3_front34.jpg",
+   "renders/objects/Maker_RarePokeBloxCard_v3/Maker_RarePokeBloxCard_v3_back34.jpg",
+   "renders/objects/Maker_RarePokeBloxCard_v3/Maker_RarePokeBloxCard_v3_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Maker_RarePokeBloxCard_v3.jpg",
+  "triangles": 936,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Maker_RarePokeBloxCard_v4": {
+  "bbox_dev": [
+   0.0,
+   0.015,
+   0.04,
+   -0.0,
+   0.011,
+   0.043
+  ],
+  "bbox_max_dev": 0.043,
+  "bbox_new": [
+   [
+    -1.8,
+    -0.44,
+    -0.905
+   ],
+   [
+    1.8,
+    5.012,
+    0.743
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -1.8,
+    -0.455,
+    -0.945
+   ],
+   [
+    1.8,
+    5.001,
+    0.7
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 21:17",
+  "category": "props",
+  "export_name": "Rare PokeBlox Card (case 4)",
+  "fbx": "export/props/Rare PokeBlox Card (case 4).fbx",
+  "meshes": [
+   "Maker_RarePokeBloxCard_v4",
+   "Maker_RarePokeBloxCard_v4_Glass",
+   "Maker_RarePokeBloxCard_v4_Glow_GOLD"
+  ],
+  "renders": [
+   "renders/objects/Maker_RarePokeBloxCard_v4/Maker_RarePokeBloxCard_v4_front34.jpg",
+   "renders/objects/Maker_RarePokeBloxCard_v4/Maker_RarePokeBloxCard_v4_back34.jpg",
+   "renders/objects/Maker_RarePokeBloxCard_v4/Maker_RarePokeBloxCard_v4_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Maker_RarePokeBloxCard_v4.jpg",
+  "triangles": 936,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Maker_ShinyPokeBloxCard": {
+  "bbox_dev": [
+   0.0,
+   0.015,
+   0.04,
+   -0.0,
+   0.011,
+   0.043
+  ],
+  "bbox_max_dev": 0.043,
+  "bbox_new": [
+   [
+    -1.8,
+    -0.44,
+    -0.905
+   ],
+   [
+    1.8,
+    5.012,
+    0.743
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -1.8,
+    -0.455,
+    -0.945
+   ],
+   [
+    1.8,
+    5.001,
+    0.7
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 21:17",
+  "category": "props",
+  "export_name": "Shiny PokeBlox Card",
+  "fbx": "export/props/Shiny PokeBlox Card.fbx",
+  "meshes": [
+   "Maker_ShinyPokeBloxCard",
+   "Maker_ShinyPokeBloxCard_Glass",
+   "Maker_ShinyPokeBloxCard_Glow_GLOW_COOL",
+   "Maker_ShinyPokeBloxCard_Glow_PURPLE"
+  ],
+  "renders": [
+   "renders/objects/Maker_ShinyPokeBloxCard/Maker_ShinyPokeBloxCard_front34.jpg",
+   "renders/objects/Maker_ShinyPokeBloxCard/Maker_ShinyPokeBloxCard_back34.jpg",
+   "renders/objects/Maker_ShinyPokeBloxCard/Maker_ShinyPokeBloxCard_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Maker_ShinyPokeBloxCard.jpg",
+  "triangles": 936,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Maker_ShoppingMall": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   -0.027,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "bbox_max_dev": 0.027,
+  "bbox_new": [
+   [
+    -5.0,
+    0.0,
+    -4.977
+   ],
+   [
+    5.0,
+    8.0,
+    3.75
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -5.0,
+    0.0,
+    -4.95
+   ],
+   [
+    5.0,
+    8.0,
+    3.75
+   ]
+  ],
+  "budget": 6000,
+  "built_at": "2026-10-04 21:37",
+  "category": "buildings",
+  "export_name": "Shopping Mall",
+  "fbx": "export/buildings/Shopping Mall.fbx",
+  "meshes": [
+   "Maker_ShoppingMall"
+  ],
+  "renders": [
+   "renders/objects/Maker_ShoppingMall/Maker_ShoppingMall_front34.jpg",
+   "renders/objects/Maker_ShoppingMall/Maker_ShoppingMall_back34.jpg",
+   "renders/objects/Maker_ShoppingMall/Maker_ShoppingMall_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Maker_ShoppingMall.jpg",
+  "triangles": 1228,
+  "tris_ok": true,
+  "warnings": [
+   "thin sphere r=0.13 at (1.3900000000000001, 2.22, -4.08)"
+  ]
+ },
+ "Maker_ThemePark": {
+  "bbox_dev": [
+   0.08,
+   0.0,
+   0.0,
+   -0.08,
+   -0.08,
+   0.0
+  ],
+  "bbox_max_dev": 0.08,
+  "bbox_new": [
+   [
+    -4.92,
+    0.0,
+    -3.5
+   ],
+   [
+    4.92,
+    12.92,
+    3.5
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -5.0,
+    0.0,
+    -3.5
+   ],
+   [
+    5.0,
+    13.0,
+    3.5
+   ]
+  ],
+  "budget": 3000,
+  "built_at": "2026-10-04 21:31",
+  "category": "props",
+  "export_name": "Theme Park",
+  "fbx": "export/props/Theme Park.fbx",
+  "meshes": [
+   "Maker_ThemePark"
+  ],
+  "renders": [
+   "renders/objects/Maker_ThemePark/Maker_ThemePark_front34.jpg",
+   "renders/objects/Maker_ThemePark/Maker_ThemePark_back34.jpg",
+   "renders/objects/Maker_ThemePark/Maker_ThemePark_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Maker_ThemePark.jpg",
+  "triangles": 1136,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Maker_ToyShop": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   -0.027,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "bbox_max_dev": 0.027,
+  "bbox_new": [
+   [
+    -4.0,
+    0.0,
+    -4.727
+   ],
+   [
+    4.0,
+    7.0,
+    3.5
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -4.0,
+    0.0,
+    -4.7
+   ],
+   [
+    4.0,
+    7.0,
+    3.5
+   ]
+  ],
+  "budget": 6000,
+  "built_at": "2026-10-04 21:35",
+  "category": "buildings",
+  "export_name": "Toy Shop",
+  "fbx": "export/buildings/Toy Shop.fbx",
+  "meshes": [
+   "Maker_ToyShop"
+  ],
+  "renders": [
+   "renders/objects/Maker_ToyShop/Maker_ToyShop_front34.jpg",
+   "renders/objects/Maker_ToyShop/Maker_ToyShop_back34.jpg",
+   "renders/objects/Maker_ToyShop/Maker_ToyShop_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Maker_ToyShop.jpg",
+  "triangles": 1308,
+  "tris_ok": true,
+  "warnings": [
+   "thin sphere r=0.13 at (1.2220000000000002, 2.0175, -3.83)"
+  ]
+ },
+ "Maker_UnknownMaker": {
+  "bbox_dev": [
+   -0.19,
+   0.0,
+   0.06,
+   0.19,
+   0.0,
+   0.15
+  ],
+  "bbox_max_dev": 0.19,
+  "bbox_new": [
+   [
+    -3.19,
+    0.0,
+    -3.14
+   ],
+   [
+    3.19,
+    5.0,
+    3.15
+   ]
+  ],
+  "bbox_ok": false,
+  "bbox_old": [
+   [
+    -3.0,
+    0.0,
+    -3.2
+   ],
+   [
+    3.0,
+    5.0,
+    3.0
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 21:41",
+  "category": "props",
+  "export_name": "Unknown Maker",
+  "fbx": "export/props/Unknown Maker.fbx",
+  "meshes": [
+   "Maker_UnknownMaker"
+  ],
+  "renders": [
+   "renders/objects/Maker_UnknownMaker/Maker_UnknownMaker_front34.png",
+   "renders/objects/Maker_UnknownMaker/Maker_UnknownMaker_back34.png",
+   "renders/objects/Maker_UnknownMaker/Maker_UnknownMaker_eye.png"
+  ],
+  "round": 0,
+  "status": "built",
+  "triangles": 752,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Maker_VendingMachine": {
+  "bbox_dev": [
+   -0.05,
+   0.0,
+   -0.08,
+   0.05,
+   0.0,
+   0.05
+  ],
+  "bbox_max_dev": 0.08,
+  "bbox_new": [
+   [
+    -1.8,
+    0.0,
+    -1.48
+   ],
+   [
+    1.8,
+    6.0,
+    1.3
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -1.75,
+    0.0,
+    -1.4
+   ],
+   [
+    1.75,
+    6.0,
+    1.25
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 21:34",
+  "category": "props",
+  "export_name": "Vending Machine",
+  "fbx": "export/props/Vending Machine.fbx",
+  "meshes": [
+   "Maker_VendingMachine",
+   "Maker_VendingMachine_Glow_GLOW_COOL"
+  ],
+  "renders": [
+   "renders/objects/Maker_VendingMachine/Maker_VendingMachine_front34.jpg",
+   "renders/objects/Maker_VendingMachine/Maker_VendingMachine_back34.jpg",
+   "renders/objects/Maker_VendingMachine/Maker_VendingMachine_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Maker_VendingMachine.jpg",
+  "triangles": 720,
+  "tris_ok": true,
+  "warnings": [
+   "thin cylinder r=0.13 at (1.35, 2.9, -1.33)",
+   "thin cylinder r=0.13 at (1.35, 3.3, -1.33)"
+  ]
+ },
+ "Office_Screen": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   -0.37,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "bbox_max_dev": 0.37,
+  "bbox_new": [
+   [
+    -7.0,
+    0.0,
+    -0.57
+   ],
+   [
+    7.0,
+    7.0,
+    0.2
+   ]
+  ],
+  "bbox_ok": false,
+  "bbox_old": [
+   [
+    -7.0,
+    0.0,
+    -0.2
+   ],
+   [
+    7.0,
+    7.0,
+    0.2
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 21:30",
+  "category": "decoration",
+  "export_name": "Office_Screen",
+  "fbx": "export/decoration/Office_Screen.fbx",
+  "meshes": [
+   "Office_Screen",
+   "Office_Screen_Glow_GLOW_COOL"
+  ],
+  "renders": [
+   "renders/objects/Office_Screen/Office_Screen_front34.jpg",
+   "renders/objects/Office_Screen/Office_Screen_back34.jpg",
+   "renders/objects/Office_Screen/Office_Screen_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Office_Screen.jpg",
+  "triangles": 232,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Pizzeria_Counter": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   -0.05,
+   0.0,
+   0.16,
+   0.0
+  ],
+  "bbox_max_dev": 0.16,
+  "bbox_new": [
+   [
+    -8.0,
+    0.0,
+    -1.4
+   ],
+   [
+    8.0,
+    4.11,
+    1.35
+   ]
+  ],
+  "bbox_ok": false,
+  "bbox_old": [
+   [
+    -8.0,
+    0.0,
+    -1.35
+   ],
+   [
+    8.0,
+    3.95,
+    1.35
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 21:40",
+  "category": "props",
+  "export_name": "Pizzeria_Counter",
+  "fbx": "export/props/Pizzeria_Counter.fbx",
+  "meshes": [
+   "Pizzeria_Counter"
+  ],
+  "renders": [
+   "renders/objects/Pizzeria_Counter/Pizzeria_Counter_front34.jpg",
+   "renders/objects/Pizzeria_Counter/Pizzeria_Counter_back34.jpg",
+   "renders/objects/Pizzeria_Counter/Pizzeria_Counter_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Pizzeria_Counter.jpg",
+  "triangles": 516,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Pizzeria_Oven": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   0.025,
+   0.0,
+   -0.1,
+   -0.005
+  ],
+  "bbox_max_dev": 0.1,
+  "bbox_new": [
+   [
+    -3.5,
+    0.0,
+    -2.55
+   ],
+   [
+    3.5,
+    5.9,
+    2.57
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -3.5,
+    0.0,
+    -2.575
+   ],
+   [
+    3.5,
+    6.0,
+    2.575
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 21:40",
+  "category": "props",
+  "export_name": "Pizzeria_Oven",
+  "fbx": "export/props/Pizzeria_Oven.fbx",
+  "meshes": [
+   "Pizzeria_Oven",
+   "Pizzeria_Oven_Glow_ORANGE"
+  ],
+  "renders": [
+   "renders/objects/Pizzeria_Oven/Pizzeria_Oven_front34.jpg",
+   "renders/objects/Pizzeria_Oven/Pizzeria_Oven_back34.jpg",
+   "renders/objects/Pizzeria_Oven/Pizzeria_Oven_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Pizzeria_Oven.jpg",
+  "triangles": 462,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Plaza_Disc": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "bbox_max_dev": 0.0,
+  "bbox_new": [
+   [
+    -45.0,
+    0.0,
+    -45.0
+   ],
+   [
+    45.0,
+    0.4,
+    45.0
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -45.0,
+    0.0,
+    -45.0
+   ],
+   [
+    45.0,
+    0.4,
+    45.0
+   ]
+  ],
+  "budget": 6000,
+  "built_at": "2026-10-04 21:01",
+  "category": "ground",
+  "export_name": "Plaza_Disc",
+  "fbx": "export/ground/Plaza_Disc.fbx",
+  "meshes": [
+   "Plaza_Disc"
+  ],
+  "renders": [
+   "renders/objects/Plaza_Disc/Plaza_Disc_front34.jpg",
+   "renders/objects/Plaza_Disc/Plaza_Disc_back34.jpg",
+   "renders/objects/Plaza_Disc/Plaza_Disc_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Plaza_Disc.jpg",
+  "triangles": 3000,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Plaza_Fountain": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "bbox_max_dev": 0.0,
+  "bbox_new": [
+   [
+    -11.0,
+    0.0,
+    -11.0
+   ],
+   [
+    11.0,
+    9.0,
+    11.0
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -11.0,
+    0.0,
+    -11.0
+   ],
+   [
+    11.0,
+    9.0,
+    11.0
+   ]
+  ],
+  "budget": 6000,
+  "built_at": "2026-10-04 21:09",
+  "category": "decoration",
+  "export_name": "Plaza_Fountain",
+  "fbx": "export/decoration/Plaza_Fountain.fbx",
+  "meshes": [
+   "Plaza_Fountain",
+   "Plaza_Fountain_Glass",
+   "Plaza_Fountain_Glow_GLOW_COOL"
+  ],
+  "renders": [
+   "renders/objects/Plaza_Fountain/Plaza_Fountain_front34.jpg",
+   "renders/objects/Plaza_Fountain/Plaza_Fountain_back34.jpg",
+   "renders/objects/Plaza_Fountain/Plaza_Fountain_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Plaza_Fountain.jpg",
+  "triangles": 2944,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Plaza_Path": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "bbox_max_dev": 0.0,
+  "bbox_new": [
+   [
+    -5.0,
+    0.0,
+    -24.0
+   ],
+   [
+    5.0,
+    0.4,
+    24.0
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -5.0,
+    0.0,
+    -24.0
+   ],
+   [
+    5.0,
+    0.4,
+    24.0
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 21:02",
+  "category": "ground",
+  "export_name": "Plaza_Path",
+  "fbx": "export/ground/Plaza_Path.fbx",
+  "meshes": [
+   "Plaza_Path"
+  ],
+  "renders": [
+   "renders/objects/Plaza_Path/Plaza_Path_front34.jpg",
+   "renders/objects/Plaza_Path/Plaza_Path_back34.jpg",
+   "renders/objects/Plaza_Path/Plaza_Path_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Plaza_Path.jpg",
+  "triangles": 684,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Police_Car": {
+  "bbox_dev": [
+   -0.17,
+   0.0,
+   -0.06,
+   0.17,
+   0.0,
+   0.06
+  ],
+  "bbox_max_dev": 0.17,
+  "bbox_new": [
+   [
+    -4.17,
+    0.0,
+    -2.46
+   ],
+   [
+    4.17,
+    4.4,
+    2.46
+   ]
+  ],
+  "bbox_ok": false,
+  "bbox_old": [
+   [
+    -4.0,
+    0.0,
+    -2.4
+   ],
+   [
+    4.0,
+    4.4,
+    2.4
+   ]
+  ],
+  "budget": 4000,
+  "built_at": "2026-10-04 21:28",
+  "category": "vehicles",
+  "export_name": "Police_Car",
+  "fbx": "export/vehicles/Police_Car.fbx",
+  "meshes": [
+   "Police_Car",
+   "Police_Car_Glow_BLUE",
+   "Police_Car_Glow_GLOW_WARM",
+   "Police_Car_Glow_RED"
+  ],
+  "renders": [
+   "renders/objects/Police_Car/Police_Car_front34.jpg",
+   "renders/objects/Police_Car/Police_Car_back34.jpg",
+   "renders/objects/Police_Car/Police_Car_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Police_Car.jpg",
+  "triangles": 1700,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "School_Blackboard": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   -0.45,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "bbox_max_dev": 0.45,
+  "bbox_new": [
+   [
+    -10.0,
+    0.0,
+    -0.6
+   ],
+   [
+    10.0,
+    6.0,
+    0.15
+   ]
+  ],
+  "bbox_ok": false,
+  "bbox_old": [
+   [
+    -10.0,
+    0.0,
+    -0.15
+   ],
+   [
+    10.0,
+    6.0,
+    0.15
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 21:29",
+  "category": "decoration",
+  "export_name": "School_Blackboard",
+  "fbx": "export/decoration/School_Blackboard.fbx",
+  "meshes": [
+   "School_Blackboard"
+  ],
+  "renders": [
+   "renders/objects/School_Blackboard/School_Blackboard_front34.jpg",
+   "renders/objects/School_Blackboard/School_Blackboard_back34.jpg",
+   "renders/objects/School_Blackboard/School_Blackboard_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/School_Blackboard.jpg",
+  "triangles": 256,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "School_StudentDesk": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.13,
+   0.0
+  ],
+  "bbox_max_dev": 0.13,
+  "bbox_new": [
+   [
+    -1.5,
+    0.0,
+    -1.0
+   ],
+   [
+    1.5,
+    2.33,
+    1.0
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -1.5,
+    0.0,
+    -1.0
+   ],
+   [
+    1.5,
+    2.2,
+    1.0
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 21:26",
+  "category": "props",
+  "export_name": "School_StudentDesk",
+  "fbx": "export/props/School_StudentDesk.fbx",
+  "meshes": [
+   "School_StudentDesk"
+  ],
+  "renders": [
+   "renders/objects/School_StudentDesk/School_StudentDesk_front34.jpg",
+   "renders/objects/School_StudentDesk/School_StudentDesk_back34.jpg",
+   "renders/objects/School_StudentDesk/School_StudentDesk_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/School_StudentDesk.jpg",
+  "triangles": 264,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "School_TeacherDesk": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   -0.08,
+   0.0,
+   0.13,
+   0.0
+  ],
+  "bbox_max_dev": 0.13,
+  "bbox_new": [
+   [
+    -2.0,
+    0.0,
+    -1.33
+   ],
+   [
+    2.0,
+    2.63,
+    1.25
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -2.0,
+    0.0,
+    -1.25
+   ],
+   [
+    2.0,
+    2.5,
+    1.25
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 21:41",
+  "category": "props",
+  "export_name": "School_TeacherDesk",
+  "fbx": "export/props/School_TeacherDesk.fbx",
+  "meshes": [
+   "School_TeacherDesk"
+  ],
+  "renders": [
+   "renders/objects/School_TeacherDesk/School_TeacherDesk_front34.jpg",
+   "renders/objects/School_TeacherDesk/School_TeacherDesk_back34.jpg",
+   "renders/objects/School_TeacherDesk/School_TeacherDesk_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/School_TeacherDesk.jpg",
+  "triangles": 264,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Tree": {
+  "bbox_dev": [
+   0.044,
+   0.0,
+   0.05,
+   0.006,
+   0.0,
+   -0.05
+  ],
+  "bbox_max_dev": 0.05,
+  "bbox_new": [
+   [
+    -2.956,
+    0.0,
+    -2.95
+   ],
+   [
+    3.006,
+    14.5,
+    2.95
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -3.0,
+    0.0,
+    -3.0
+   ],
+   [
+    3.0,
+    14.5,
+    3.0
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 21:21",
+  "category": "nature",
+  "export_name": "Tree",
+  "fbx": "export/nature/Tree.fbx",
+  "meshes": [
+   "Tree"
+  ],
+  "renders": [
+   "renders/objects/Tree/Tree_front34.jpg",
+   "renders/objects/Tree/Tree_back34.jpg",
+   "renders/objects/Tree/Tree_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Tree.jpg",
+  "triangles": 1064,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Workplace_Building_BUSDEPOT": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   0.0,
+   -0.0,
+   0.04,
+   -0.0
+  ],
+  "bbox_max_dev": 0.04,
+  "bbox_new": [
+   [
+    -24.8,
+    -1.0,
+    2.5
+   ],
+   [
+    24.8,
+    18.44,
+    24.8
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -24.8,
+    -1.0,
+    2.5
+   ],
+   [
+    24.8,
+    18.4,
+    24.8
+   ]
+  ],
+  "budget": 6000,
+  "built_at": "2026-10-04 20:56",
+  "category": "buildings",
+  "export_name": "Workplace_Building_BUSDEPOT",
+  "fbx": "export/buildings/Workplace_Building_BUSDEPOT.fbx",
+  "meshes": [
+   "Workplace_Building_BUSDEPOT",
+   "Workplace_Building_BUSDEPOT_Glow_GLOW_WARM"
+  ],
+  "renders": [
+   "renders/objects/Workplace_Building_BUSDEPOT/Workplace_Building_BUSDEPOT_front34.jpg",
+   "renders/objects/Workplace_Building_BUSDEPOT/Workplace_Building_BUSDEPOT_back34.jpg",
+   "renders/objects/Workplace_Building_BUSDEPOT/Workplace_Building_BUSDEPOT_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Workplace_Building_BUSDEPOT.jpg",
+  "triangles": 5180,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Workplace_Building_CLINIC": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   0.0,
+   -0.0,
+   0.04,
+   -0.0
+  ],
+  "bbox_max_dev": 0.04,
+  "bbox_new": [
+   [
+    -24.8,
+    -1.0,
+    2.5
+   ],
+   [
+    24.8,
+    18.44,
+    24.8
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -24.8,
+    -1.0,
+    2.5
+   ],
+   [
+    24.8,
+    18.4,
+    24.8
+   ]
+  ],
+  "budget": 6000,
+  "built_at": "2026-10-04 20:57",
+  "category": "buildings",
+  "export_name": "Workplace_Building_CLINIC",
+  "fbx": "export/buildings/Workplace_Building_CLINIC.fbx",
+  "meshes": [
+   "Workplace_Building_CLINIC",
+   "Workplace_Building_CLINIC_Glow_GLOW_WARM"
+  ],
+  "renders": [
+   "renders/objects/Workplace_Building_CLINIC/Workplace_Building_CLINIC_front34.jpg",
+   "renders/objects/Workplace_Building_CLINIC/Workplace_Building_CLINIC_back34.jpg",
+   "renders/objects/Workplace_Building_CLINIC/Workplace_Building_CLINIC_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Workplace_Building_CLINIC.jpg",
+  "triangles": 5180,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Workplace_Building_FASTTRACK": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   0.0,
+   -0.0,
+   0.04,
+   -0.0
+  ],
+  "bbox_max_dev": 0.04,
+  "bbox_new": [
+   [
+    -24.8,
+    -1.0,
+    2.5
+   ],
+   [
+    24.8,
+    18.44,
+    24.8
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -24.8,
+    -1.0,
+    2.5
+   ],
+   [
+    24.8,
+    18.4,
+    24.8
+   ]
+  ],
+  "budget": 6000,
+  "built_at": "2026-10-04 20:59",
+  "category": "buildings",
+  "export_name": "Workplace_Building_FASTTRACK",
+  "fbx": "export/buildings/Workplace_Building_FASTTRACK.fbx",
+  "meshes": [
+   "Workplace_Building_FASTTRACK",
+   "Workplace_Building_FASTTRACK_Glow_GLOW_WARM"
+  ],
+  "renders": [
+   "renders/objects/Workplace_Building_FASTTRACK/Workplace_Building_FASTTRACK_front34.jpg",
+   "renders/objects/Workplace_Building_FASTTRACK/Workplace_Building_FASTTRACK_back34.jpg",
+   "renders/objects/Workplace_Building_FASTTRACK/Workplace_Building_FASTTRACK_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Workplace_Building_FASTTRACK.jpg",
+  "triangles": 5348,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Workplace_Building_GARAGE": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   0.0,
+   -0.0,
+   0.04,
+   -0.0
+  ],
+  "bbox_max_dev": 0.04,
+  "bbox_new": [
+   [
+    -24.8,
+    -1.0,
+    2.5
+   ],
+   [
+    24.8,
+    18.44,
+    24.8
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -24.8,
+    -1.0,
+    2.5
+   ],
+   [
+    24.8,
+    18.4,
+    24.8
+   ]
+  ],
+  "budget": 6000,
+  "built_at": "2026-10-04 20:59",
+  "category": "buildings",
+  "export_name": "Workplace_Building_GARAGE",
+  "fbx": "export/buildings/Workplace_Building_GARAGE.fbx",
+  "meshes": [
+   "Workplace_Building_GARAGE",
+   "Workplace_Building_GARAGE_Glow_GLOW_WARM"
+  ],
+  "renders": [
+   "renders/objects/Workplace_Building_GARAGE/Workplace_Building_GARAGE_front34.jpg",
+   "renders/objects/Workplace_Building_GARAGE/Workplace_Building_GARAGE_back34.jpg",
+   "renders/objects/Workplace_Building_GARAGE/Workplace_Building_GARAGE_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Workplace_Building_GARAGE.jpg",
+  "triangles": 5180,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Workplace_Building_HOSPITAL": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   0.0,
+   -0.0,
+   0.04,
+   -0.0
+  ],
+  "bbox_max_dev": 0.04,
+  "bbox_new": [
+   [
+    -24.8,
+    -1.0,
+    2.5
+   ],
+   [
+    24.8,
+    18.44,
+    24.8
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -24.8,
+    -1.0,
+    2.5
+   ],
+   [
+    24.8,
+    18.4,
+    24.8
+   ]
+  ],
+  "budget": 6000,
+  "built_at": "2026-10-04 20:56",
+  "category": "buildings",
+  "export_name": "Workplace_Building_HOSPITAL",
+  "fbx": "export/buildings/Workplace_Building_HOSPITAL.fbx",
+  "meshes": [
+   "Workplace_Building_HOSPITAL",
+   "Workplace_Building_HOSPITAL_Glow_GLOW_WARM"
+  ],
+  "renders": [
+   "renders/objects/Workplace_Building_HOSPITAL/Workplace_Building_HOSPITAL_front34.jpg",
+   "renders/objects/Workplace_Building_HOSPITAL/Workplace_Building_HOSPITAL_back34.jpg",
+   "renders/objects/Workplace_Building_HOSPITAL/Workplace_Building_HOSPITAL_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Workplace_Building_HOSPITAL.jpg",
+  "triangles": 5340,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Workplace_Building_OFFICE": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   0.0,
+   -0.0,
+   0.04,
+   -0.0
+  ],
+  "bbox_max_dev": 0.04,
+  "bbox_new": [
+   [
+    -24.8,
+    -1.0,
+    2.5
+   ],
+   [
+    24.8,
+    18.44,
+    24.8
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -24.8,
+    -1.0,
+    2.5
+   ],
+   [
+    24.8,
+    18.4,
+    24.8
+   ]
+  ],
+  "budget": 6000,
+  "built_at": "2026-10-04 20:58",
+  "category": "buildings",
+  "export_name": "Workplace_Building_OFFICE",
+  "fbx": "export/buildings/Workplace_Building_OFFICE.fbx",
+  "meshes": [
+   "Workplace_Building_OFFICE",
+   "Workplace_Building_OFFICE_Glow_GLOW_WARM"
+  ],
+  "renders": [
+   "renders/objects/Workplace_Building_OFFICE/Workplace_Building_OFFICE_front34.jpg",
+   "renders/objects/Workplace_Building_OFFICE/Workplace_Building_OFFICE_back34.jpg",
+   "renders/objects/Workplace_Building_OFFICE/Workplace_Building_OFFICE_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Workplace_Building_OFFICE.jpg",
+  "triangles": 5180,
+  "tris_ok": true,
+  "warnings": []
+ },
  "Workplace_Building_PIZZERIA": {
   "bbox_dev": [
    0.0,
@@ -35,7 +3912,7 @@
    ]
   ],
   "budget": 6000,
-  "built_at": "2026-10-04 20:52",
+  "built_at": "2026-10-04 20:55",
   "category": "buildings",
   "export_name": "Workplace_Building_PIZZERIA",
   "fbx": "export/buildings/Workplace_Building_PIZZERIA.fbx",
@@ -44,13 +3921,567 @@
    "Workplace_Building_PIZZERIA_Glow_GLOW_WARM"
   ],
   "renders": [
-   "renders/objects/Workplace_Building_PIZZERIA/Workplace_Building_PIZZERIA_front34.png",
-   "renders/objects/Workplace_Building_PIZZERIA/Workplace_Building_PIZZERIA_back34.png",
-   "renders/objects/Workplace_Building_PIZZERIA/Workplace_Building_PIZZERIA_eye.png"
+   "renders/objects/Workplace_Building_PIZZERIA/Workplace_Building_PIZZERIA_front34.jpg",
+   "renders/objects/Workplace_Building_PIZZERIA/Workplace_Building_PIZZERIA_back34.jpg",
+   "renders/objects/Workplace_Building_PIZZERIA/Workplace_Building_PIZZERIA_eye.jpg"
   ],
   "round": 0,
   "status": "built",
+  "strip": "renders/objects/strips/Workplace_Building_PIZZERIA.jpg",
   "triangles": 5324,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Workplace_Building_POLICE": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   0.0,
+   -0.0,
+   0.04,
+   -0.0
+  ],
+  "bbox_max_dev": 0.04,
+  "bbox_new": [
+   [
+    -24.8,
+    -1.0,
+    2.5
+   ],
+   [
+    24.8,
+    18.44,
+    24.8
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -24.8,
+    -1.0,
+    2.5
+   ],
+   [
+    24.8,
+    18.4,
+    24.8
+   ]
+  ],
+  "budget": 6000,
+  "built_at": "2026-10-04 20:58",
+  "category": "buildings",
+  "export_name": "Workplace_Building_POLICE",
+  "fbx": "export/buildings/Workplace_Building_POLICE.fbx",
+  "meshes": [
+   "Workplace_Building_POLICE",
+   "Workplace_Building_POLICE_Glow_GLOW_WARM"
+  ],
+  "renders": [
+   "renders/objects/Workplace_Building_POLICE/Workplace_Building_POLICE_front34.jpg",
+   "renders/objects/Workplace_Building_POLICE/Workplace_Building_POLICE_back34.jpg",
+   "renders/objects/Workplace_Building_POLICE/Workplace_Building_POLICE_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Workplace_Building_POLICE.jpg",
+  "triangles": 5272,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Workplace_Building_SCHOOL": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   0.0,
+   -0.0,
+   0.04,
+   -0.0
+  ],
+  "bbox_max_dev": 0.04,
+  "bbox_new": [
+   [
+    -24.8,
+    -1.0,
+    2.5
+   ],
+   [
+    24.8,
+    18.44,
+    24.8
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -24.8,
+    -1.0,
+    2.5
+   ],
+   [
+    24.8,
+    18.4,
+    24.8
+   ]
+  ],
+  "budget": 6000,
+  "built_at": "2026-10-04 20:57",
+  "category": "buildings",
+  "export_name": "Workplace_Building_SCHOOL",
+  "fbx": "export/buildings/Workplace_Building_SCHOOL.fbx",
+  "meshes": [
+   "Workplace_Building_SCHOOL",
+   "Workplace_Building_SCHOOL_Glow_GLOW_WARM"
+  ],
+  "renders": [
+   "renders/objects/Workplace_Building_SCHOOL/Workplace_Building_SCHOOL_front34.jpg",
+   "renders/objects/Workplace_Building_SCHOOL/Workplace_Building_SCHOOL_back34.jpg",
+   "renders/objects/Workplace_Building_SCHOOL/Workplace_Building_SCHOOL_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Workplace_Building_SCHOOL.jpg",
+  "triangles": 5252,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Workplace_DebtPad": {
+  "bbox_dev": [
+   0.0,
+   -0.1,
+   0.0,
+   0.0,
+   0.02,
+   0.0
+  ],
+  "bbox_max_dev": 0.1,
+  "bbox_new": [
+   [
+    -6.0,
+    -0.1,
+    -5.0
+   ],
+   [
+    6.0,
+    0.22,
+    5.0
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -6.0,
+    0.0,
+    -5.0
+   ],
+   [
+    6.0,
+    0.2,
+    5.0
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 21:01",
+  "category": "ground",
+  "export_name": "Workplace_DebtPad",
+  "fbx": "export/ground/Workplace_DebtPad.fbx",
+  "meshes": [
+   "Workplace_DebtPad"
+  ],
+  "renders": [
+   "renders/objects/Workplace_DebtPad/Workplace_DebtPad_front34.jpg",
+   "renders/objects/Workplace_DebtPad/Workplace_DebtPad_back34.jpg",
+   "renders/objects/Workplace_DebtPad/Workplace_DebtPad_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Workplace_DebtPad.jpg",
+  "triangles": 152,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Workplace_Fence": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   -0.073,
+   0.0,
+   -0.0,
+   0.073
+  ],
+  "bbox_max_dev": 0.073,
+  "bbox_new": [
+   [
+    -9.0,
+    0.0,
+    -0.323
+   ],
+   [
+    9.0,
+    2.6,
+    0.323
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -9.0,
+    0.0,
+    -0.25
+   ],
+   [
+    9.0,
+    2.6,
+    0.25
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 21:21",
+  "category": "decoration",
+  "export_name": "Workplace_Fence",
+  "fbx": "export/decoration/Workplace_Fence.fbx",
+  "meshes": [
+   "Workplace_Fence"
+  ],
+  "renders": [
+   "renders/objects/Workplace_Fence/Workplace_Fence_front34.jpg",
+   "renders/objects/Workplace_Fence/Workplace_Fence_back34.jpg",
+   "renders/objects/Workplace_Fence/Workplace_Fence_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Workplace_Fence.jpg",
+  "triangles": 912,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Workplace_FlowerBox": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   -0.0,
+   0.0,
+   -0.06,
+   0.0
+  ],
+  "bbox_max_dev": 0.06,
+  "bbox_new": [
+   [
+    -2.5,
+    0.0,
+    -0.8
+   ],
+   [
+    2.5,
+    2.14,
+    0.8
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -2.5,
+    0.0,
+    -0.8
+   ],
+   [
+    2.5,
+    2.2,
+    0.8
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 21:03",
+  "category": "decoration",
+  "export_name": "Workplace_FlowerBox",
+  "fbx": "export/decoration/Workplace_FlowerBox.fbx",
+  "meshes": [
+   "Workplace_FlowerBox"
+  ],
+  "renders": [
+   "renders/objects/Workplace_FlowerBox/Workplace_FlowerBox_front34.jpg",
+   "renders/objects/Workplace_FlowerBox/Workplace_FlowerBox_back34.jpg",
+   "renders/objects/Workplace_FlowerBox/Workplace_FlowerBox_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Workplace_FlowerBox.jpg",
+  "triangles": 1400,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Workplace_LampPost": {
+  "bbox_dev": [
+   0.03,
+   0.0,
+   0.03,
+   -0.03,
+   -0.03,
+   -0.03
+  ],
+  "bbox_max_dev": 0.03,
+  "bbox_new": [
+   [
+    -0.62,
+    0.0,
+    -0.62
+   ],
+   [
+    0.62,
+    7.92,
+    0.62
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -0.65,
+    0.0,
+    -0.65
+   ],
+   [
+    0.65,
+    7.95,
+    0.65
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 21:08",
+  "category": "decoration",
+  "export_name": "Workplace_LampPost",
+  "fbx": "export/decoration/Workplace_LampPost.fbx",
+  "meshes": [
+   "Workplace_LampPost",
+   "Workplace_LampPost_Glow_GLOW_WARM"
+  ],
+  "renders": [
+   "renders/objects/Workplace_LampPost/Workplace_LampPost_front34.jpg",
+   "renders/objects/Workplace_LampPost/Workplace_LampPost_back34.jpg",
+   "renders/objects/Workplace_LampPost/Workplace_LampPost_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Workplace_LampPost.jpg",
+  "triangles": 576,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Workplace_MakerLot": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   -0.15,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "bbox_max_dev": 0.15,
+  "bbox_new": [
+   [
+    -5.5,
+    0.0,
+    -4.9
+   ],
+   [
+    5.5,
+    1.0,
+    4.75
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -5.5,
+    0.0,
+    -4.75
+   ],
+   [
+    5.5,
+    1.0,
+    4.75
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 21:01",
+  "category": "ground",
+  "export_name": "Workplace_MakerLot",
+  "fbx": "export/ground/Workplace_MakerLot.fbx",
+  "meshes": [
+   "Workplace_MakerLot"
+  ],
+  "renders": [
+   "renders/objects/Workplace_MakerLot/Workplace_MakerLot_front34.jpg",
+   "renders/objects/Workplace_MakerLot/Workplace_MakerLot_back34.jpg",
+   "renders/objects/Workplace_MakerLot/Workplace_MakerLot_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Workplace_MakerLot.jpg",
+  "triangles": 260,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Workplace_Sandbox": {
+  "bbox_dev": [
+   -0.0,
+   -0.1,
+   -0.025,
+   0.0,
+   0.15,
+   0.025
+  ],
+  "bbox_max_dev": 0.15,
+  "bbox_new": [
+   [
+    -6.3,
+    -0.1,
+    -5.225
+   ],
+   [
+    6.3,
+    0.75,
+    5.225
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -6.3,
+    0.0,
+    -5.2
+   ],
+   [
+    6.3,
+    0.6,
+    5.2
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 21:09",
+  "category": "props",
+  "export_name": "Workplace_Sandbox",
+  "fbx": "export/props/Workplace_Sandbox.fbx",
+  "meshes": [
+   "Workplace_Sandbox"
+  ],
+  "renders": [
+   "renders/objects/Workplace_Sandbox/Workplace_Sandbox_front34.jpg",
+   "renders/objects/Workplace_Sandbox/Workplace_Sandbox_back34.jpg",
+   "renders/objects/Workplace_Sandbox/Workplace_Sandbox_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Workplace_Sandbox.jpg",
+  "triangles": 736,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Workplace_Yard": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "bbox_max_dev": 0.0,
+  "bbox_new": [
+   [
+    -24.0,
+    -1.0,
+    -24.0
+   ],
+   [
+    24.0,
+    0.1,
+    6.0
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -24.0,
+    -1.0,
+    -24.0
+   ],
+   [
+    24.0,
+    0.1,
+    6.0
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 21:08",
+  "category": "ground",
+  "export_name": "Workplace_Yard",
+  "fbx": "export/ground/Workplace_Yard.fbx",
+  "meshes": [
+   "Workplace_Yard"
+  ],
+  "renders": [
+   "renders/objects/Workplace_Yard/Workplace_Yard_front34.jpg",
+   "renders/objects/Workplace_Yard/Workplace_Yard_back34.jpg",
+   "renders/objects/Workplace_Yard/Workplace_Yard_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Workplace_Yard.jpg",
+  "triangles": 256,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Workplace_Yard_v2": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "bbox_max_dev": 0.0,
+  "bbox_new": [
+   [
+    -24.0,
+    -1.0,
+    -24.0
+   ],
+   [
+    24.0,
+    0.1,
+    6.0
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -24.0,
+    -1.0,
+    -24.0
+   ],
+   [
+    24.0,
+    0.1,
+    6.0
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-04 21:07",
+  "category": "ground",
+  "export_name": "Workplace_Yard_v2",
+  "fbx": "export/ground/Workplace_Yard_v2.fbx",
+  "meshes": [
+   "Workplace_Yard_v2"
+  ],
+  "renders": [
+   "renders/objects/Workplace_Yard_v2/Workplace_Yard_v2_front34.jpg",
+   "renders/objects/Workplace_Yard_v2/Workplace_Yard_v2_back34.jpg",
+   "renders/objects/Workplace_Yard_v2/Workplace_Yard_v2_eye.jpg"
+  ],
+  "round": 0,
+  "status": "built",
+  "strip": "renders/objects/strips/Workplace_Yard_v2.jpg",
+  "triangles": 716,
   "tris_ok": true,
   "warnings": []
  }

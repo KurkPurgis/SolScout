@@ -1,5 +1,5 @@
 {
- "current_step": "Phase 3 - modelling the workplace buildings (9 job themes).",
+ "current_step": "Phase 3 - reviewing built models and fixing (bbox, z-fighting, mirrored details); new models for lobby/rooms/signs in the build queue; then a full rebuild with the final kit. Phase 4 assembly script (tools/blender/build_after.py) and fixed lineup cameras are written.",
  "phases": [
   {
    "name": "Phase 1 - inventory (world extracted, INVENTORY.md, BEFORE renders)",

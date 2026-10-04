@@ -139,7 +139,7 @@ Our targets are far below the limits, because the game must run on phones:
 ## 8. Outline
 
 No outline in the world by default (the icons have one, but in 3D a black hull doubles triangles and looks
-noisy at distance). One comparison render of one building WITH an inverted-hull outline (INK, 0.08 studs) is in
+noisy at distance). One comparison render of one building WITH an inverted-hull outline (INK, 0.14 studs) is in
 `renders/outline_comparison.png` so you can choose.
 
 ## 9. The glossy toy look in Roblox
@@ -191,3 +191,13 @@ collision, trigger and prompt exactly as it is today and makes switching back on
 | when | rule | change | why |
 |---|---|---|---|
 | start | palette | 30 + 2 colors instead of "about 24" | 9 workplace themes need clearly different walls |
+| modelling | glow colors | any palette color may glow (Neon); a transparency other than 0.35 is in the mesh name (`_T55`) | the game uses Neon in red, blue, green, orange and gold too |
+| modelling | budgets | large structures have their own budget (DECISIONS #16) | a 368-stud wall is not a prop |
+| modelling | round parts | the number of segments follows the size (small round things use fewer) | saves triangles where nobody can see them |
+| modelling | min thickness | the 0.3 stud minimum also applies to round parts (cylinders, tori, spheres) | thin spokes flickered at distance |
+| palette | STONE / STONE_DARK | darker and warmer than first drafted | the plaza and yards looked white and flat in the renders |
+| modelling | windows | window panes are opaque shiny WINDOW color; only real glass cases are `_Glass` | see-through panes show empty boxes behind them |
+| bbox | wall boards | tolerance 0.3 instead of 0.15 (DECISIONS #13) | 0.3 minimum thickness on 0.2 thick boards |
+| kit | wheel | hub and cap stand out at most 0.13 from the tire | wheels stay inside the original wheel box |
+| kit | plus_sign | crosses are built from non-overlapping pieces | coplanar overlaps z-fight |
+

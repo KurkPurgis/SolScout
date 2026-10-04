@@ -126,12 +126,62 @@ def lineup_layout(templates, names):
             pos = LINEUP_ORIGIN + Vector((x + w / 2 - cx, y + cz, -t["bbox_min"][1]))
             placed.append((n, pos))
             x += w + gap
-        y -= max(depths) + max(4.0, 0.3 * max(depths))  # the next row stands behind (front = +Y)
+        heights = [templates[n]["size"][1] for n in row]
+        # the next row stands behind (front = +Y), far enough that its name labels are not hidden
+        y -= max(depths) + 3.0 + 1.1 * max(heights)
     return placed
 
 
-def lineup_camera(templates, placed, name):
-    pts = []
+def fit_camera(name, pts, direction, lens=40.0, aspect=16 / 9, margin=1.06):
+    """A camera looking along -direction at the middle of `pts`, as close as possible with every point inside
+    the frame (horizontal sensor fit, 36 mm)."""
+    xs, ys, zs = [p.x for p in pts], [p.y for p in pts], [p.z for p in pts]
+    center = Vector(((min(xs) + max(xs)) / 2, (min(ys) + max(ys)) / 2, (min(zs) + max(zs)) / 2))
+    direction = direction.normalized()
+    tan_x = 18.0 / lens
+    tan_y = tan_x / aspect
+    forward = -direction
+    right = forward.cross(Vector((0, 0, 1))).normalized()
+    up = right.cross(forward).normalized()
+
+    def fits(d):
+        eye = center + direction * d
+        for p in pts:
+            v = p - eye
+            z = v.dot(forward)
+            if z <= 0.1:
+                return False
+            if abs(v.dot(right)) / z > tan_x / margin or abs(v.dot(up)) / z > tan_y / margin:
+                return False
+        return True
+
+    span = max(max(xs) - min(xs), max(ys) - min(ys), max(zs) - min(zs))
+
+    def fit_distance():
+        lo_d, hi_d = 0.5, span * 20 + 50
+        for _ in range(50):
+            mid = (lo_d + hi_d) / 2
+            if fits(mid):
+                hi_d = mid
+            else:
+                lo_d = mid
+        return hi_d
+
+    # perspective: the middle of the box is not the middle of the picture -> shift the aim a few times
+    for _ in range(4):
+        d = fit_distance()
+        eye = center + direction * d
+        us = [(p - eye).dot(right) / (p - eye).dot(forward) for p in pts]
+        vs = [(p - eye).dot(up) / (p - eye).dot(forward) for p in pts]
+        du, dv = (min(us) + max(us)) / 2, (min(vs) + max(vs)) / 2
+        center = center + right * du * d + up * dv * d
+    d = fit_distance()
+    return wo.camera(name, center + direction * d, center, lens=lens)
+
+
+def lineup_camera(templates, placed, name, extra_points=(), aspect=16 / 9):
+    """Front 3/4 view from above that fits every object box, the labels and the dummy exactly."""
+    pts = [Vector(p) for p in extra_points]
     for n, pos in placed:
         t = templates[n]
         lo, hi = t["bbox_min"], t["bbox_max"]
@@ -139,11 +189,4 @@ def lineup_camera(templates, placed, name):
             for y in (lo[1], hi[1]):
                 for z in (lo[2], hi[2]):
                     pts.append(pos + Vector((x, -z, y)))
-    xs, ys, zs = [p.x for p in pts], [p.y for p in pts], [p.z for p in pts]
-    center = Vector(((min(xs) + max(xs)) / 2, (min(ys) + max(ys)) / 2, (min(zs) + max(zs)) / 2))
-    span = max(max(xs) - min(xs), (max(zs) - min(zs)) * 1.8, (max(ys) - min(ys)) * 0.9)
-    # front 3/4 view from above: the camera is in front (+Y) and a bit to the right
-    direction = Vector((0.35, 1.0, 0.62)).normalized()
-    distance = span * 1.25 + 6
-    cam = wo.camera("CAM_lineup_" + name, center + direction * distance, center, lens=40)
-    return cam
+    return fit_camera("CAM_lineup_" + name, pts, Vector((0.35, 1.0, 0.85)), lens=40, aspect=aspect)

@@ -63,6 +63,25 @@ def deg(*angles):
     return [math.radians(a) for a in angles]
 
 
+def round_segments(radius, wanted):
+    """Round things get fewer sides when they are small (STYLE_GUIDE: resolution follows size)."""
+    if radius < 0.25:
+        cap = 6
+    elif radius < 0.5:
+        cap = 8
+    elif radius < 0.8:
+        cap = 10
+    elif radius < 1.3:
+        cap = 12
+    elif radius < 2.5:
+        cap = 16
+    elif radius < 6:
+        cap = 24
+    else:
+        cap = 999
+    return max(6, min(wanted, cap))
+
+
 class Model:
     def __init__(self, name):
         self.name = name
@@ -102,7 +121,9 @@ class Model:
         return set(res["faces"])
 
     def _add(self, bm, matrix, swatch, smooth_faces, glow=None, glass=False, all_smooth=False):
-        """Transforms the piece (Blender-space 4x4 `matrix`), computes hardened normals and stores it."""
+        """Transforms the piece (Blender-space 4x4 `matrix`), computes hardened normals and stores it.
+        glow may carry a transparency: "RED@0.7" -> its own glow mesh "<name>_Glow_RED_T70"."""
+        swatch = swatch.split("@")[0]
         if swatch not in COLORS:
             raise KeyError("not a palette color: %s" % swatch)
         g = self._group(glow, glass)
@@ -170,6 +191,17 @@ class Model:
         """A rounded cylinder (or cone/frustum with radius_top). axis = Roblox axis it points along."""
         if bottom and axis == "Y":
             pos = (pos[0], pos[1] + length / 2, pos[2])
+        if radius * 2 < MIN_THICK - 1e-6:
+            self.warnings.append("thin cylinder r=%.2f at %s" % (radius, pos))
+            radius = MIN_THICK / 2
+        if radius_top is not None and 0 < radius_top * 2 < MIN_THICK - 1e-6:
+            radius_top = MIN_THICK / 2
+        if length < MIN_THICK - 1e-6:
+            self.warnings.append("thin cylinder length=%.2f at %s" % (length, pos))
+            length = MIN_THICK
+        verts = round_segments(max(radius, radius_top or 0), verts)
+        if max(radius, radius_top or 0) < 0.26 and bevel in ("XS", "S"):
+            bevel = None  # a rim this small is never seen
         bm = bmesh.new()
         rt = radius if radius_top is None else radius_top
         bmesh.ops.create_cone(bm, cap_ends=True, cap_tris=False, segments=verts, radius1=radius, radius2=rt,
@@ -186,6 +218,10 @@ class Model:
         self._add(bm, self._matrix(pos, rot), swatch, smooth, glow, glass)
 
     def sphere(self, radius, pos, swatch, scale=(1, 1, 1), rot=None, segs=16, rings=10, glow=None, glass=False):
+        if radius * 2 * min(scale) < MIN_THICK - 1e-6:
+            self.warnings.append("thin sphere r=%.2f at %s" % (radius, pos))
+        segs = round_segments(radius * max(scale), segs)
+        rings = max(4, min(rings, segs // 2 + 1))
         bm = bmesh.new()
         bmesh.ops.create_uvsphere(bm, u_segments=segs, v_segments=rings, radius=radius)
         bmesh.ops.scale(bm, vec=(scale[0], scale[2], scale[1]), verts=bm.verts)
@@ -205,7 +241,12 @@ class Model:
         smooth = [f for f in bm.faces if len(f.verts) <= 4]
         self._add(bm, self._matrix(pos, rot), swatch, smooth, glow)
 
-    def torus(self, major, minor, pos, swatch, axis="Z", rot=None, segs=20, ring_segs=8, glow=None):
+    def torus(self, major, minor, pos, swatch, axis="Z", rot=None, segs=20, ring_segs=8, glow=None, scale=None):
+        if minor * 2 < MIN_THICK - 1e-6:
+            self.warnings.append("thin torus r=%.2f at %s" % (minor, pos))
+            minor = MIN_THICK / 2
+        segs = round_segments(major, segs)
+        ring_segs = round_segments(minor, ring_segs)
         bm = bmesh.new()
         verts = []
         for i in range(segs):
@@ -224,6 +265,8 @@ class Model:
         turn = {"Y": Matrix.Identity(3), "X": Matrix.Rotation(math.radians(90), 3, "Y"),
                 "Z": Matrix.Rotation(math.radians(90), 3, "X")}[axis]
         bm.transform(turn.to_4x4())
+        if scale is not None:  # Roblox axes (x, y, z) -> Blender (x, z, y)
+            bmesh.ops.scale(bm, vec=(scale[0], scale[2], scale[1]), verts=bm.verts)
         self._add(bm, self._matrix(pos, rot), swatch, [], glow, all_smooth=True)
 
     def prism(self, points, depth, pos, swatch, plane="XY", bevel="S", rot=None, glow=None, glass=False):
@@ -264,17 +307,42 @@ class Model:
         hy, hz = sy / 2, sz / 2
         self.prism([(-hz, -hy), (hz, -hy), (hz, hy)], sx, pos, swatch, plane="ZY", bevel=bevel, rot=rot)
 
+    def custom(self, verts, faces, swatch, all_smooth=True, glow=None, glass=False, bevel=None):
+        """A free-form closed mesh. verts in Roblox local coords, faces = tuples of vertex indices."""
+        bm = bmesh.new()
+        bv = [bm.verts.new(rb(v)) for v in verts]
+        for f in faces:
+            try:
+                bm.faces.new([bv[i] for i in f])
+            except ValueError:
+                pass
+        bmesh.ops.recalc_face_normals(bm, faces=bm.faces)
+        smooth = self._bevel(bm, 0.6, bevel) if bevel else set()
+        self._add(bm, self._matrix((0, 0, 0), None), swatch, smooth, glow, glass, all_smooth=all_smooth)
+
     def capsule(self, radius, length, pos, swatch, axis="Y", rot=None, segs=16, glow=None):
         """A rounded rod: cylinder with half-spheres on both ends (total length = length)."""
+        if radius * 2 < MIN_THICK - 1e-6:
+            self.warnings.append("thin capsule r=%.2f at %s" % (radius, pos))
+            radius = MIN_THICK / 2
         body = max(length - 2 * radius, 0.01)
+        segs = round_segments(radius, segs)
         bm = bmesh.new()
-        bmesh.ops.create_uvsphere(bm, u_segments=segs, v_segments=8, radius=radius)
+        bmesh.ops.create_uvsphere(bm, u_segments=segs, v_segments=max(4, min(8, segs // 2 + 1)), radius=radius)
         for v in bm.verts:
             v.co.z += body / 2 if v.co.z > 0 else -body / 2
         turn = {"Y": Matrix.Identity(3), "X": Matrix.Rotation(math.radians(90), 3, "Y"),
                 "Z": Matrix.Rotation(math.radians(90), 3, "X")}[axis]
         bm.transform(turn.to_4x4())
         self._add(bm, self._matrix(pos, rot), swatch, [], glow, all_smooth=True)
+
+    def stick(self, a, b, radius, swatch, radius_b=None, verts=12, bevel="XS"):
+        """A (tapered) cylinder from point a to point b (Roblox coords)."""
+        a, b = Vector(a), Vector(b)
+        d = b - a
+        rot = Vector((0, 0, 1)).rotation_difference(rb(d).normalized()).to_matrix()
+        self.cyl(radius, d.length, (a + b) / 2, swatch, axis="Y", rot=rot, verts=verts, bevel=bevel,
+                 radius_top=radius_b)
 
     def bar(self, a, b, thickness, swatch, round_bar=True, bevel="S"):
         """A stick from point a to point b (Roblox coords)."""
@@ -291,7 +359,7 @@ class Model:
             self.box((thickness, length, thickness), mid, swatch, bevel=bevel, rot=rot)
 
     # ------------------------------------------------------------------ sub-assemblies
-    def at(self, offset=(0, 0, 0), yaw=0.0):
+    def at(self, offset=(0, 0, 0), yaw=0.0, pitch=0.0):
         """with model.at((x, y, z), yaw): everything added inside is moved by `offset` and turned by `yaw`
         degrees around Y (Roblox), relative to the current sub-assembly. Kit parts use this."""
         model = self
@@ -302,8 +370,11 @@ class Model:
                 a = math.radians(yaw)
                 c, s_ = math.cos(a), math.sin(a)
                 ry = Matrix(((c, 0, s_), (0, 1, 0), (-s_, 0, c)))
+                b = math.radians(pitch)
+                cb, sb = math.cos(b), math.sin(b)
+                rx = Matrix(((1, 0, 0), (0, cb, -sb), (0, sb, cb)))  # Roblox CFrame.Angles(pitch, 0, 0)
                 model.t = model.R @ Vector(offset) + model.t
-                model.R = model.R @ ry
+                model.R = model.R @ ry @ rx
                 return model
 
             def __exit__(self_, *exc):
@@ -322,7 +393,8 @@ class Model:
             g = self.groups[key]
             name = self.name if key == "Body" else "%s_%s" % (self.name, key.split("_")[0])
             if key.startswith("Glow_"):
-                name = "%s_Glow_%s" % (self.name, key[5:])
+                color, _, tr = key[5:].partition("@")
+                name = "%s_Glow_%s" % (self.name, color) + ("_T%d" % round(float(tr) * 100) if tr else "")
             mesh = bpy.data.meshes.new(name)
             mesh.from_pydata(g["verts"], [], g["faces"])
             uv = mesh.uv_layers.new(name="UVMap")
@@ -331,8 +403,11 @@ class Model:
             mesh.polygons.foreach_set("use_smooth", [not f for f in g["flat"]])
             mesh.validate(clean_customdata=False)
             mesh.normals_split_custom_set(g["normals"])
+            transparency = 0.0
             if key.startswith("Glow_"):
-                mesh.materials.append(materials.glow(key[5:]))
+                color, _, tr = key[5:].partition("@")
+                transparency = float(tr) if tr else 0.0
+                mesh.materials.append(materials.glow(color, alpha=1.0 - transparency))
             elif key == "Glass":
                 mesh.materials.append(materials.glass())
             else:
@@ -340,6 +415,8 @@ class Model:
             obj = bpy.data.objects.new(name, mesh)
             collection.objects.link(obj)
             obj["wo_role"] = key.split("_")[0]
+            if transparency >= 0.999:  # hidden until a game script shows it (e.g. the top-bidder highlight)
+                obj.hide_render = True
             objects.append(obj)
         return objects
 
@@ -389,19 +466,20 @@ class Materials:
         self._palette = mat
         return mat
 
-    def glow(self, swatch):
-        if swatch in self._glows:
-            return self._glows[swatch]
-        name = "WO_Glow_" + swatch
-        mat = bpy.data.materials.get(name)
-        if mat is None:
-            mat = bpy.data.materials.new(name)
-            bsdf = mat.node_tree.nodes.get("Principled BSDF")
-            rgb = COLORS[swatch]["rgb"]
-            bsdf.inputs["Base Color"].default_value = lin(rgb)
-            bsdf.inputs["Emission Color"].default_value = lin(rgb)
-            bsdf.inputs["Emission Strength"].default_value = 2.0
-        self._glows[swatch] = mat
+    def glow(self, swatch, alpha=1.0):
+        alpha = round(alpha, 2)
+        if (swatch, alpha) in self._glows:
+            return self._glows[(swatch, alpha)]
+        name = "WO_Glow_" + swatch + ("" if alpha >= 0.999 else "_A%d" % round(alpha * 100))
+        mat = bpy.data.materials.get(name) or bpy.data.materials.new(name)
+        # (re)applied every time, so blends saved with older settings follow the current ones
+        bsdf = mat.node_tree.nodes.get("Principled BSDF")
+        rgb = COLORS[swatch]["rgb"]
+        bsdf.inputs["Base Color"].default_value = lin(rgb)
+        bsdf.inputs["Emission Color"].default_value = lin(rgb)
+        bsdf.inputs["Emission Strength"].default_value = 1.2  # bright, but the hue still shows
+        bsdf.inputs["Alpha"].default_value = max(min(alpha, 1.0), 0.0)
+        self._glows[(swatch, alpha)] = mat
         return mat
 
     def glass(self):

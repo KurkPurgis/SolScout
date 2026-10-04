@@ -53,8 +53,8 @@ PALETTE = [
     ("WOOD", (170, 98, 44), 0.45, "icon WOOD: furniture, chests, trunks"),
     ("WOOD_DARK", (112, 60, 26), 0.50, "icon WOOD_DARK: trunks, dark wood"),
     # row 4 - neutrals and special
-    ("STONE", (226, 218, 200), 0.70, "world only: plaza, paths, yard"),
-    ("STONE_DARK", (176, 166, 150), 0.70, "world only: city wall, steps, pads"),
+    ("STONE", (214, 203, 180), 0.70, "world only: plaza, paths, yard"),
+    ("STONE_DARK", (166, 154, 136), 0.70, "world only: city wall, steps, pads"),
     ("SLATE", (104, 108, 132), 0.50, "icon ROOF_GREY: dark grey roofs, debt pad, bank"),
     ("CHARCOAL", (58, 52, 76), 0.35, "icon TYRE/DARK: tires, openings, piano, screens off"),
     ("INK", (40, 26, 58), 0.40, "icon OUTLINE color: tiny dark details and the optional outline"),

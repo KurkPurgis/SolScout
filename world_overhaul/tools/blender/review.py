@@ -21,7 +21,7 @@ VIEW_W, VIEW_H = 800, 600
 
 def studio(ground_rgb=(150, 156, 162)):
     wo.setup_render(VIEW_W, VIEW_H, samples=24)
-    wo.setup_lighting(sun_direction=(0.5, -0.65, -0.62), sky_strength=1.5)
+    wo.setup_lighting(sun_direction=(0.5, -0.65, -0.62), sky_strength=1.15, sky_rgb=(205, 218, 240))
     ground = bpy.data.objects.get("StudioGround")
     if ground is None:
         mesh = bpy.data.meshes.new("StudioGround")
