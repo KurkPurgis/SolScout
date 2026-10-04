@@ -207,3 +207,5 @@ collision, trigger and prompt exactly as it is today and makes switching back on
 | kit | wheel | hub and cap stand out at most 0.13 from the tire | wheels stay inside the original wheel box |
 | kit | plus_sign | crosses are built from non-overlapping pieces | coplanar overlaps z-fight |
 
+| kit | sign_board | `frame_back`: how far the frame sits behind the board (0.1 for the thin room signs) | signs keep their original depth |
+| check | z-fighting | every model is checked for coplanar overlapping box faces (`check_models.py`) | black specks and flicker |

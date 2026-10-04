@@ -5407,7 +5407,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 22:25",
+  "built_at": "2026-10-04 23:02",
   "category": "decoration",
   "export_name": "School_Blackboard",
   "fbx": "export/decoration/School_Blackboard.fbx",
@@ -5422,7 +5422,7 @@
   "round": 0,
   "status": "built",
   "strip": "renders/objects/strips/School_Blackboard.jpg",
-  "triangles": 268,
+  "triangles": 272,
   "tris_ok": true,
   "warnings": []
  },

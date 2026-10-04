@@ -1,185 +1,238 @@
 {
- "swapped": 399,
- "kept_blockout": [
-  "Baseplate",
-  "Lobby/Lobby_Floor/1",
-  "Lobby/Lobby_Carpet/1",
-  "Lobby/Lobby_Walls/1",
-  "Lobby/Lobby_TitleSign/1",
-  "Lobby/Lobby_Pillar/1.1",
-  "Lobby/Lobby_Pillar/1.2",
-  "Lobby/Lobby_Pillar/1.3",
-  "Lobby/Lobby_Pillar/1.4",
-  "Lobby/Lobby_Pillar/1.5",
-  "Lobby/Lobby_Pillar/1.6",
-  "Lobby/Lobby_Pillar/1.7",
-  "Lobby/Lobby_Pillar/1.8",
-  "Lobby/Lobby_Window/1.1",
-  "Lobby/Lobby_Window/1.2",
-  "Lobby/Lobby_Window/1.3",
-  "Lobby/Lobby_Window/1.4",
-  "Lobby/Lobby_Window/1.5",
-  "Lobby/Lobby_Window/1.6",
-  "Lobby/Lobby_Bench/1.1",
-  "Lobby/Lobby_Bench/1.2",
-  "Lobby/Lobby_Bench/1.3",
-  "Lobby/Lobby_Bench/1.4",
-  "Lobby/Lobby_PottedPalm/1.1",
-  "Lobby/Lobby_PottedPalm/1.2",
-  "Lobby/Lobby_PottedPalm/1.3",
-  "Lobby/Lobby_PottedPalm/1.4",
-  "Lobby/Lobby_Trophy/1",
-  "Lobby/Lobby_Spawn/1",
-  "Lobby/Lobby_RoomBooth/1.1",
-  "Lobby/Lobby_RoomBooth/1.2",
-  "Lobby/Lobby_RoomBooth/1.3",
-  "Lobby/Lobby_RoomBooth/1.4",
-  "City_1.Plots.Plot_Player2/Collection_Showcase/112",
-  "City_1.Plots.Plot_Player5/Collection_Showcase/196",
-  "AuctionRoom_1/AuctionRoom_Shell/25",
-  "AuctionRoom_1/AuctionRoom_Lamp/25.1",
-  "AuctionRoom_1/AuctionRoom_Lamp/25.2",
-  "AuctionRoom_1/AuctionRoom_Lamp/25.3",
-  "AuctionRoom_1/AuctionRoom_Stage/25",
-  "AuctionRoom_1/AuctionRoom_TitleSign/25",
-  "AuctionRoom_1/AuctionRoom_InfoBoard/25",
-  "AuctionRoom_1/AuctionRoom_BidderDesk/25.1",
-  "AuctionRoom_1/AuctionRoom_BidderDesk/25.2",
-  "AuctionRoom_1/AuctionRoom_BidderDesk/25.3",
-  "AuctionRoom_1/AuctionRoom_BidderDesk/25.4",
-  "AuctionRoom_1/AuctionRoom_BidderDesk/25.5",
-  "AuctionRoom_1/AuctionRoom_BidderDesk/25.6",
-  "AuctionRoom_1/AuctionRoom_BidderDesk/25.7",
-  "AuctionRoom_1/AuctionRoom_BidderDesk/25.8",
-  "AuctionRoom_1/AuctionRoom_BidderPad/25.1",
-  "AuctionRoom_1/AuctionRoom_BidderPad/25.2",
-  "AuctionRoom_1/AuctionRoom_BidderPad/25.3",
-  "AuctionRoom_1/AuctionRoom_BidderPad/25.4",
-  "AuctionRoom_1/AuctionRoom_BidderPad/25.5",
-  "AuctionRoom_1/AuctionRoom_BidderPad/25.6",
-  "AuctionRoom_1/AuctionRoom_BidderPad/25.7",
-  "AuctionRoom_1/AuctionRoom_BidderPad/25.8",
-  "PodiumRoom_1/PodiumRoom_Shell/28",
-  "PodiumRoom_1/PodiumRoom_LightStrip/28.1",
-  "PodiumRoom_1/PodiumRoom_LightStrip/28.2",
-  "PodiumRoom_1/PodiumRoom_LightStrip/28.3",
-  "PodiumRoom_1/PodiumRoom_LightStrip/28.4",
-  "PodiumRoom_1/PodiumRoom_TitleSign/28",
-  "PodiumRoom_1/PodiumRoom_Block/28",
-  "PodiumRoom_1/PodiumRoom_Board/28",
-  "AuctionRoom_2/AuctionRoom_Shell/42",
-  "AuctionRoom_2/AuctionRoom_Lamp/42.1",
-  "AuctionRoom_2/AuctionRoom_Lamp/42.2",
-  "AuctionRoom_2/AuctionRoom_Lamp/42.3",
-  "AuctionRoom_2/AuctionRoom_Stage/42",
-  "AuctionRoom_2/AuctionRoom_TitleSign/42",
-  "AuctionRoom_2/AuctionRoom_InfoBoard/42",
-  "AuctionRoom_2/AuctionRoom_BidderDesk/42.1",
-  "AuctionRoom_2/AuctionRoom_BidderDesk/42.2",
-  "AuctionRoom_2/AuctionRoom_BidderDesk/42.3",
-  "AuctionRoom_2/AuctionRoom_BidderDesk/42.4",
-  "AuctionRoom_2/AuctionRoom_BidderDesk/42.5",
-  "AuctionRoom_2/AuctionRoom_BidderDesk/42.6",
-  "AuctionRoom_2/AuctionRoom_BidderDesk/42.7",
-  "AuctionRoom_2/AuctionRoom_BidderDesk/42.8",
-  "AuctionRoom_2/AuctionRoom_BidderPad/42.1",
-  "AuctionRoom_2/AuctionRoom_BidderPad/42.2",
-  "AuctionRoom_2/AuctionRoom_BidderPad/42.3",
-  "AuctionRoom_2/AuctionRoom_BidderPad/42.4",
-  "AuctionRoom_2/AuctionRoom_BidderPad/42.5",
-  "AuctionRoom_2/AuctionRoom_BidderPad/42.6",
-  "AuctionRoom_2/AuctionRoom_BidderPad/42.7",
-  "AuctionRoom_2/AuctionRoom_BidderPad/42.8",
-  "PodiumRoom_2/PodiumRoom_Shell/45",
-  "PodiumRoom_2/PodiumRoom_LightStrip/45.1",
-  "PodiumRoom_2/PodiumRoom_LightStrip/45.2",
-  "PodiumRoom_2/PodiumRoom_LightStrip/45.3",
-  "PodiumRoom_2/PodiumRoom_LightStrip/45.4",
-  "PodiumRoom_2/PodiumRoom_TitleSign/45",
-  "PodiumRoom_2/PodiumRoom_Block/45",
-  "PodiumRoom_2/PodiumRoom_Board/45",
-  "AuctionRoom_3/AuctionRoom_Shell/59",
-  "AuctionRoom_3/AuctionRoom_Lamp/59.1",
-  "AuctionRoom_3/AuctionRoom_Lamp/59.2",
-  "AuctionRoom_3/AuctionRoom_Lamp/59.3",
-  "AuctionRoom_3/AuctionRoom_Stage/59",
-  "AuctionRoom_3/AuctionRoom_TitleSign/59",
-  "AuctionRoom_3/AuctionRoom_InfoBoard/59",
-  "AuctionRoom_3/AuctionRoom_BidderDesk/59.1",
-  "AuctionRoom_3/AuctionRoom_BidderDesk/59.2",
-  "AuctionRoom_3/AuctionRoom_BidderDesk/59.3",
-  "AuctionRoom_3/AuctionRoom_BidderDesk/59.4",
-  "AuctionRoom_3/AuctionRoom_BidderDesk/59.5",
-  "AuctionRoom_3/AuctionRoom_BidderDesk/59.6",
-  "AuctionRoom_3/AuctionRoom_BidderDesk/59.7",
-  "AuctionRoom_3/AuctionRoom_BidderDesk/59.8",
-  "AuctionRoom_3/AuctionRoom_BidderPad/59.1",
-  "AuctionRoom_3/AuctionRoom_BidderPad/59.2",
-  "AuctionRoom_3/AuctionRoom_BidderPad/59.3",
-  "AuctionRoom_3/AuctionRoom_BidderPad/59.4",
-  "AuctionRoom_3/AuctionRoom_BidderPad/59.5",
-  "AuctionRoom_3/AuctionRoom_BidderPad/59.6",
-  "AuctionRoom_3/AuctionRoom_BidderPad/59.7",
-  "AuctionRoom_3/AuctionRoom_BidderPad/59.8",
-  "PodiumRoom_3/PodiumRoom_Shell/62",
-  "PodiumRoom_3/PodiumRoom_LightStrip/62.1",
-  "PodiumRoom_3/PodiumRoom_LightStrip/62.2",
-  "PodiumRoom_3/PodiumRoom_LightStrip/62.3",
-  "PodiumRoom_3/PodiumRoom_LightStrip/62.4",
-  "PodiumRoom_3/PodiumRoom_TitleSign/62",
-  "PodiumRoom_3/PodiumRoom_Block/62",
-  "PodiumRoom_3/PodiumRoom_Board/62",
-  "AuctionRoom_4/AuctionRoom_Shell/76",
-  "AuctionRoom_4/AuctionRoom_Lamp/76.1",
-  "AuctionRoom_4/AuctionRoom_Lamp/76.2",
-  "AuctionRoom_4/AuctionRoom_Lamp/76.3",
-  "AuctionRoom_4/AuctionRoom_Stage/76",
-  "AuctionRoom_4/AuctionRoom_TitleSign/76",
-  "AuctionRoom_4/AuctionRoom_InfoBoard/76",
-  "AuctionRoom_4/AuctionRoom_BidderDesk/76.1",
-  "AuctionRoom_4/AuctionRoom_BidderDesk/76.2",
-  "AuctionRoom_4/AuctionRoom_BidderDesk/76.3",
-  "AuctionRoom_4/AuctionRoom_BidderDesk/76.4",
-  "AuctionRoom_4/AuctionRoom_BidderDesk/76.5",
-  "AuctionRoom_4/AuctionRoom_BidderDesk/76.6",
-  "AuctionRoom_4/AuctionRoom_BidderDesk/76.7",
-  "AuctionRoom_4/AuctionRoom_BidderDesk/76.8",
-  "AuctionRoom_4/AuctionRoom_BidderPad/76.1",
-  "AuctionRoom_4/AuctionRoom_BidderPad/76.2",
-  "AuctionRoom_4/AuctionRoom_BidderPad/76.3",
-  "AuctionRoom_4/AuctionRoom_BidderPad/76.4",
-  "AuctionRoom_4/AuctionRoom_BidderPad/76.5",
-  "AuctionRoom_4/AuctionRoom_BidderPad/76.6",
-  "AuctionRoom_4/AuctionRoom_BidderPad/76.7",
-  "AuctionRoom_4/AuctionRoom_BidderPad/76.8",
-  "PodiumRoom_4/PodiumRoom_Shell/79",
-  "PodiumRoom_4/PodiumRoom_LightStrip/79.1",
-  "PodiumRoom_4/PodiumRoom_LightStrip/79.2",
-  "PodiumRoom_4/PodiumRoom_LightStrip/79.3",
-  "PodiumRoom_4/PodiumRoom_LightStrip/79.4",
-  "PodiumRoom_4/PodiumRoom_TitleSign/79",
-  "PodiumRoom_4/PodiumRoom_Block/79",
-  "PodiumRoom_4/PodiumRoom_Board/79",
-  "Catalog.FastTrack/Lux_Sofa/348.1",
-  "Catalog.FastTrack/Lux_Sofa/348.2",
-  "Catalog.FastTrack/Lux_GlassTable/348",
-  "Catalog.FastTrack/Lux_Safe/348",
-  "Catalog.FastTrack/Lux_Piano/348",
-  "Catalog.FastTrack/Lux_Chandelier/348",
-  "Catalog.FastTrack/FastTrack_Gate/346",
-  "Catalog.FastTrack/Dream_Pedestal/343",
-  "Catalog.FastTrack/Dream_Chains/343",
-  "Catalog.FastTrack/Lux_Sofa/377.1",
-  "Catalog.FastTrack/Lux_Sofa/377.2",
-  "Catalog.FastTrack/Lux_GlassTable/377",
-  "Catalog.FastTrack/Lux_Safe/377",
-  "Catalog.FastTrack/Lux_Piano/377",
-  "Catalog.FastTrack/Lux_Chandelier/377",
-  "Catalog.FastTrack/FastTrack_Gate/375",
-  "Catalog.FastTrack/Dream_Pedestal/372",
-  "Catalog.FastTrack/Collection_Showcase/355"
- ],
+ "swapped": 576,
+ "kept_blockout": [],
  "swaps": [
+  {
+   "key": "Baseplate",
+   "template": "Baseplate",
+   "model": "Baseplate",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Lobby/Lobby_Floor/1",
+   "template": "Lobby_Floor",
+   "model": "Lobby_Floor",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Lobby/Lobby_Carpet/1",
+   "template": "Lobby_Carpet",
+   "model": "Lobby_Carpet",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Lobby/Lobby_Walls/1",
+   "template": "Lobby_Walls",
+   "model": "Lobby_Walls",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Lobby/Lobby_TitleSign/1",
+   "template": "Lobby_TitleSign",
+   "model": "Lobby_TitleSign",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Lobby/Lobby_Pillar/1.1",
+   "template": "Lobby_Pillar",
+   "model": "Lobby_Pillar",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Lobby/Lobby_Pillar/1.2",
+   "template": "Lobby_Pillar",
+   "model": "Lobby_Pillar",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Lobby/Lobby_Pillar/1.3",
+   "template": "Lobby_Pillar",
+   "model": "Lobby_Pillar",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Lobby/Lobby_Pillar/1.4",
+   "template": "Lobby_Pillar",
+   "model": "Lobby_Pillar",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Lobby/Lobby_Pillar/1.5",
+   "template": "Lobby_Pillar",
+   "model": "Lobby_Pillar",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Lobby/Lobby_Pillar/1.6",
+   "template": "Lobby_Pillar",
+   "model": "Lobby_Pillar",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Lobby/Lobby_Pillar/1.7",
+   "template": "Lobby_Pillar",
+   "model": "Lobby_Pillar",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Lobby/Lobby_Pillar/1.8",
+   "template": "Lobby_Pillar",
+   "model": "Lobby_Pillar",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Lobby/Lobby_Window/1.1",
+   "template": "Lobby_Window",
+   "model": "Lobby_Window",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Lobby/Lobby_Window/1.2",
+   "template": "Lobby_Window",
+   "model": "Lobby_Window",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Lobby/Lobby_Window/1.3",
+   "template": "Lobby_Window",
+   "model": "Lobby_Window",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Lobby/Lobby_Window/1.4",
+   "template": "Lobby_Window",
+   "model": "Lobby_Window",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Lobby/Lobby_Window/1.5",
+   "template": "Lobby_Window",
+   "model": "Lobby_Window",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Lobby/Lobby_Window/1.6",
+   "template": "Lobby_Window",
+   "model": "Lobby_Window",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Lobby/Lobby_Bench/1.1",
+   "template": "Lobby_Bench",
+   "model": "Lobby_Bench",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Lobby/Lobby_Bench/1.2",
+   "template": "Lobby_Bench",
+   "model": "Lobby_Bench",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Lobby/Lobby_Bench/1.3",
+   "template": "Lobby_Bench",
+   "model": "Lobby_Bench",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Lobby/Lobby_Bench/1.4",
+   "template": "Lobby_Bench",
+   "model": "Lobby_Bench",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Lobby/Lobby_PottedPalm/1.1",
+   "template": "Lobby_PottedPalm",
+   "model": "Lobby_PottedPalm",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Lobby/Lobby_PottedPalm/1.2",
+   "template": "Lobby_PottedPalm",
+   "model": "Lobby_PottedPalm",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Lobby/Lobby_PottedPalm/1.3",
+   "template": "Lobby_PottedPalm_v2",
+   "model": "Lobby_PottedPalm",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Lobby/Lobby_PottedPalm/1.4",
+   "template": "Lobby_PottedPalm_v2",
+   "model": "Lobby_PottedPalm",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Lobby/Lobby_Trophy/1",
+   "template": "Lobby_Trophy",
+   "model": "Lobby_Trophy",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Lobby/Lobby_Spawn/1",
+   "template": "Lobby_Spawn",
+   "model": "Lobby_Spawn",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Lobby/Lobby_RoomBooth/1.1",
+   "template": "Lobby_RoomBooth",
+   "model": "Lobby_RoomBooth",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Lobby/Lobby_RoomBooth/1.2",
+   "template": "Lobby_RoomBooth_v2",
+   "model": "Lobby_RoomBooth_v2",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Lobby/Lobby_RoomBooth/1.3",
+   "template": "Lobby_RoomBooth_v3",
+   "model": "Lobby_RoomBooth_v3",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Lobby/Lobby_RoomBooth/1.4",
+   "template": "Lobby_RoomBooth_v4",
+   "model": "Lobby_RoomBooth_v4",
+   "mode": "normal",
+   "scale": 1.0
+  },
   {
    "key": "City_1.Plots.Plot_Player1/Workplace_Yard/84",
    "template": "Workplace_Yard_v2",
@@ -536,6 +589,13 @@
    "model": "Dream_Yacht",
    "mode": "dream",
    "scale": 0.37559
+  },
+  {
+   "key": "City_1.Plots.Plot_Player2/Collection_Showcase/112",
+   "template": "Collection_Showcase",
+   "model": "Collection_Showcase",
+   "mode": "normal",
+   "scale": 1.0
   },
   {
    "key": "City_1.Plots.Plot_Player2/Maker_GoldCoin#113",
@@ -1201,6 +1261,13 @@
    "model": "Dream_PrivateIsland",
    "mode": "dream",
    "scale": 0.31159
+  },
+  {
+   "key": "City_1.Plots.Plot_Player5/Collection_Showcase/196",
+   "template": "Collection_Showcase",
+   "model": "Collection_Showcase",
+   "mode": "normal",
+   "scale": 1.0
   },
   {
    "key": "City_1.Plots.Plot_Player5/Maker_RarePokeBloxCard#197",
@@ -1959,6 +2026,223 @@
    "scale": 1.0
   },
   {
+   "key": "AuctionRoom_1/AuctionRoom_Shell/25",
+   "template": "AuctionRoom_Shell",
+   "model": "AuctionRoom_Shell",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_1/AuctionRoom_Lamp/25.1",
+   "template": "AuctionRoom_Lamp",
+   "model": "AuctionRoom_Lamp",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_1/AuctionRoom_Lamp/25.2",
+   "template": "AuctionRoom_Lamp",
+   "model": "AuctionRoom_Lamp",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_1/AuctionRoom_Lamp/25.3",
+   "template": "AuctionRoom_Lamp",
+   "model": "AuctionRoom_Lamp",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_1/AuctionRoom_Stage/25",
+   "template": "AuctionRoom_Stage",
+   "model": "AuctionRoom_Stage",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_1/AuctionRoom_TitleSign/25",
+   "template": "AuctionRoom_TitleSign",
+   "model": "AuctionRoom_TitleSign",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_1/AuctionRoom_InfoBoard/25",
+   "template": "AuctionRoom_InfoBoard",
+   "model": "AuctionRoom_InfoBoard",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_1/AuctionRoom_BidderDesk/25.1",
+   "template": "AuctionRoom_BidderDesk",
+   "model": "AuctionRoom_BidderDesk",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_1/AuctionRoom_BidderDesk/25.2",
+   "template": "AuctionRoom_BidderDesk",
+   "model": "AuctionRoom_BidderDesk",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_1/AuctionRoom_BidderDesk/25.3",
+   "template": "AuctionRoom_BidderDesk",
+   "model": "AuctionRoom_BidderDesk",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_1/AuctionRoom_BidderDesk/25.4",
+   "template": "AuctionRoom_BidderDesk",
+   "model": "AuctionRoom_BidderDesk",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_1/AuctionRoom_BidderDesk/25.5",
+   "template": "AuctionRoom_BidderDesk",
+   "model": "AuctionRoom_BidderDesk",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_1/AuctionRoom_BidderDesk/25.6",
+   "template": "AuctionRoom_BidderDesk",
+   "model": "AuctionRoom_BidderDesk",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_1/AuctionRoom_BidderDesk/25.7",
+   "template": "AuctionRoom_BidderDesk",
+   "model": "AuctionRoom_BidderDesk",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_1/AuctionRoom_BidderDesk/25.8",
+   "template": "AuctionRoom_BidderDesk",
+   "model": "AuctionRoom_BidderDesk",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_1/AuctionRoom_BidderPad/25.1",
+   "template": "AuctionRoom_BidderPad",
+   "model": "AuctionRoom_BidderPad",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_1/AuctionRoom_BidderPad/25.2",
+   "template": "AuctionRoom_BidderPad",
+   "model": "AuctionRoom_BidderPad",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_1/AuctionRoom_BidderPad/25.3",
+   "template": "AuctionRoom_BidderPad",
+   "model": "AuctionRoom_BidderPad",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_1/AuctionRoom_BidderPad/25.4",
+   "template": "AuctionRoom_BidderPad",
+   "model": "AuctionRoom_BidderPad",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_1/AuctionRoom_BidderPad/25.5",
+   "template": "AuctionRoom_BidderPad",
+   "model": "AuctionRoom_BidderPad",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_1/AuctionRoom_BidderPad/25.6",
+   "template": "AuctionRoom_BidderPad",
+   "model": "AuctionRoom_BidderPad",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_1/AuctionRoom_BidderPad/25.7",
+   "template": "AuctionRoom_BidderPad",
+   "model": "AuctionRoom_BidderPad",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_1/AuctionRoom_BidderPad/25.8",
+   "template": "AuctionRoom_BidderPad",
+   "model": "AuctionRoom_BidderPad",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "PodiumRoom_1/PodiumRoom_Shell/28",
+   "template": "PodiumRoom_Shell",
+   "model": "PodiumRoom_Shell",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "PodiumRoom_1/PodiumRoom_LightStrip/28.1",
+   "template": "PodiumRoom_LightStrip",
+   "model": "PodiumRoom_LightStrip",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "PodiumRoom_1/PodiumRoom_LightStrip/28.2",
+   "template": "PodiumRoom_LightStrip",
+   "model": "PodiumRoom_LightStrip",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "PodiumRoom_1/PodiumRoom_LightStrip/28.3",
+   "template": "PodiumRoom_LightStrip",
+   "model": "PodiumRoom_LightStrip",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "PodiumRoom_1/PodiumRoom_LightStrip/28.4",
+   "template": "PodiumRoom_LightStrip",
+   "model": "PodiumRoom_LightStrip",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "PodiumRoom_1/PodiumRoom_TitleSign/28",
+   "template": "PodiumRoom_TitleSign",
+   "model": "PodiumRoom_TitleSign",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "PodiumRoom_1/PodiumRoom_Block/28",
+   "template": "PodiumRoom_Block",
+   "model": "PodiumRoom_Block",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "PodiumRoom_1/PodiumRoom_Board/28",
+   "template": "PodiumRoom_Board",
+   "model": "PodiumRoom_Board",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
    "key": "City_2/City_Ground/33",
    "template": "City_Ground",
    "model": "City_Ground",
@@ -2095,6 +2379,223 @@
    "key": "City_2/Plaza_Fountain/33",
    "template": "Plaza_Fountain",
    "model": "Plaza_Fountain",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_2/AuctionRoom_Shell/42",
+   "template": "AuctionRoom_Shell",
+   "model": "AuctionRoom_Shell",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_2/AuctionRoom_Lamp/42.1",
+   "template": "AuctionRoom_Lamp",
+   "model": "AuctionRoom_Lamp",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_2/AuctionRoom_Lamp/42.2",
+   "template": "AuctionRoom_Lamp",
+   "model": "AuctionRoom_Lamp",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_2/AuctionRoom_Lamp/42.3",
+   "template": "AuctionRoom_Lamp",
+   "model": "AuctionRoom_Lamp",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_2/AuctionRoom_Stage/42",
+   "template": "AuctionRoom_Stage",
+   "model": "AuctionRoom_Stage",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_2/AuctionRoom_TitleSign/42",
+   "template": "AuctionRoom_TitleSign",
+   "model": "AuctionRoom_TitleSign",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_2/AuctionRoom_InfoBoard/42",
+   "template": "AuctionRoom_InfoBoard",
+   "model": "AuctionRoom_InfoBoard",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_2/AuctionRoom_BidderDesk/42.1",
+   "template": "AuctionRoom_BidderDesk",
+   "model": "AuctionRoom_BidderDesk",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_2/AuctionRoom_BidderDesk/42.2",
+   "template": "AuctionRoom_BidderDesk",
+   "model": "AuctionRoom_BidderDesk",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_2/AuctionRoom_BidderDesk/42.3",
+   "template": "AuctionRoom_BidderDesk",
+   "model": "AuctionRoom_BidderDesk",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_2/AuctionRoom_BidderDesk/42.4",
+   "template": "AuctionRoom_BidderDesk",
+   "model": "AuctionRoom_BidderDesk",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_2/AuctionRoom_BidderDesk/42.5",
+   "template": "AuctionRoom_BidderDesk",
+   "model": "AuctionRoom_BidderDesk",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_2/AuctionRoom_BidderDesk/42.6",
+   "template": "AuctionRoom_BidderDesk",
+   "model": "AuctionRoom_BidderDesk",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_2/AuctionRoom_BidderDesk/42.7",
+   "template": "AuctionRoom_BidderDesk",
+   "model": "AuctionRoom_BidderDesk",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_2/AuctionRoom_BidderDesk/42.8",
+   "template": "AuctionRoom_BidderDesk",
+   "model": "AuctionRoom_BidderDesk",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_2/AuctionRoom_BidderPad/42.1",
+   "template": "AuctionRoom_BidderPad",
+   "model": "AuctionRoom_BidderPad",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_2/AuctionRoom_BidderPad/42.2",
+   "template": "AuctionRoom_BidderPad",
+   "model": "AuctionRoom_BidderPad",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_2/AuctionRoom_BidderPad/42.3",
+   "template": "AuctionRoom_BidderPad",
+   "model": "AuctionRoom_BidderPad",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_2/AuctionRoom_BidderPad/42.4",
+   "template": "AuctionRoom_BidderPad",
+   "model": "AuctionRoom_BidderPad",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_2/AuctionRoom_BidderPad/42.5",
+   "template": "AuctionRoom_BidderPad",
+   "model": "AuctionRoom_BidderPad",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_2/AuctionRoom_BidderPad/42.6",
+   "template": "AuctionRoom_BidderPad",
+   "model": "AuctionRoom_BidderPad",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_2/AuctionRoom_BidderPad/42.7",
+   "template": "AuctionRoom_BidderPad",
+   "model": "AuctionRoom_BidderPad",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_2/AuctionRoom_BidderPad/42.8",
+   "template": "AuctionRoom_BidderPad",
+   "model": "AuctionRoom_BidderPad",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "PodiumRoom_2/PodiumRoom_Shell/45",
+   "template": "PodiumRoom_Shell",
+   "model": "PodiumRoom_Shell",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "PodiumRoom_2/PodiumRoom_LightStrip/45.1",
+   "template": "PodiumRoom_LightStrip",
+   "model": "PodiumRoom_LightStrip",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "PodiumRoom_2/PodiumRoom_LightStrip/45.2",
+   "template": "PodiumRoom_LightStrip",
+   "model": "PodiumRoom_LightStrip",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "PodiumRoom_2/PodiumRoom_LightStrip/45.3",
+   "template": "PodiumRoom_LightStrip",
+   "model": "PodiumRoom_LightStrip",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "PodiumRoom_2/PodiumRoom_LightStrip/45.4",
+   "template": "PodiumRoom_LightStrip",
+   "model": "PodiumRoom_LightStrip",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "PodiumRoom_2/PodiumRoom_TitleSign/45",
+   "template": "PodiumRoom_TitleSign",
+   "model": "PodiumRoom_TitleSign",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "PodiumRoom_2/PodiumRoom_Block/45",
+   "template": "PodiumRoom_Block",
+   "model": "PodiumRoom_Block",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "PodiumRoom_2/PodiumRoom_Board/45",
+   "template": "PodiumRoom_Board",
+   "model": "PodiumRoom_Board",
    "mode": "normal",
    "scale": 1.0
   },
@@ -2239,6 +2740,223 @@
    "scale": 1.0
   },
   {
+   "key": "AuctionRoom_3/AuctionRoom_Shell/59",
+   "template": "AuctionRoom_Shell",
+   "model": "AuctionRoom_Shell",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_3/AuctionRoom_Lamp/59.1",
+   "template": "AuctionRoom_Lamp",
+   "model": "AuctionRoom_Lamp",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_3/AuctionRoom_Lamp/59.2",
+   "template": "AuctionRoom_Lamp",
+   "model": "AuctionRoom_Lamp",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_3/AuctionRoom_Lamp/59.3",
+   "template": "AuctionRoom_Lamp",
+   "model": "AuctionRoom_Lamp",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_3/AuctionRoom_Stage/59",
+   "template": "AuctionRoom_Stage",
+   "model": "AuctionRoom_Stage",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_3/AuctionRoom_TitleSign/59",
+   "template": "AuctionRoom_TitleSign",
+   "model": "AuctionRoom_TitleSign",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_3/AuctionRoom_InfoBoard/59",
+   "template": "AuctionRoom_InfoBoard",
+   "model": "AuctionRoom_InfoBoard",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_3/AuctionRoom_BidderDesk/59.1",
+   "template": "AuctionRoom_BidderDesk",
+   "model": "AuctionRoom_BidderDesk",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_3/AuctionRoom_BidderDesk/59.2",
+   "template": "AuctionRoom_BidderDesk",
+   "model": "AuctionRoom_BidderDesk",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_3/AuctionRoom_BidderDesk/59.3",
+   "template": "AuctionRoom_BidderDesk",
+   "model": "AuctionRoom_BidderDesk",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_3/AuctionRoom_BidderDesk/59.4",
+   "template": "AuctionRoom_BidderDesk",
+   "model": "AuctionRoom_BidderDesk",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_3/AuctionRoom_BidderDesk/59.5",
+   "template": "AuctionRoom_BidderDesk",
+   "model": "AuctionRoom_BidderDesk",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_3/AuctionRoom_BidderDesk/59.6",
+   "template": "AuctionRoom_BidderDesk",
+   "model": "AuctionRoom_BidderDesk",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_3/AuctionRoom_BidderDesk/59.7",
+   "template": "AuctionRoom_BidderDesk",
+   "model": "AuctionRoom_BidderDesk",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_3/AuctionRoom_BidderDesk/59.8",
+   "template": "AuctionRoom_BidderDesk",
+   "model": "AuctionRoom_BidderDesk",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_3/AuctionRoom_BidderPad/59.1",
+   "template": "AuctionRoom_BidderPad",
+   "model": "AuctionRoom_BidderPad",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_3/AuctionRoom_BidderPad/59.2",
+   "template": "AuctionRoom_BidderPad",
+   "model": "AuctionRoom_BidderPad",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_3/AuctionRoom_BidderPad/59.3",
+   "template": "AuctionRoom_BidderPad",
+   "model": "AuctionRoom_BidderPad",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_3/AuctionRoom_BidderPad/59.4",
+   "template": "AuctionRoom_BidderPad",
+   "model": "AuctionRoom_BidderPad",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_3/AuctionRoom_BidderPad/59.5",
+   "template": "AuctionRoom_BidderPad",
+   "model": "AuctionRoom_BidderPad",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_3/AuctionRoom_BidderPad/59.6",
+   "template": "AuctionRoom_BidderPad",
+   "model": "AuctionRoom_BidderPad",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_3/AuctionRoom_BidderPad/59.7",
+   "template": "AuctionRoom_BidderPad",
+   "model": "AuctionRoom_BidderPad",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_3/AuctionRoom_BidderPad/59.8",
+   "template": "AuctionRoom_BidderPad",
+   "model": "AuctionRoom_BidderPad",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "PodiumRoom_3/PodiumRoom_Shell/62",
+   "template": "PodiumRoom_Shell",
+   "model": "PodiumRoom_Shell",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "PodiumRoom_3/PodiumRoom_LightStrip/62.1",
+   "template": "PodiumRoom_LightStrip",
+   "model": "PodiumRoom_LightStrip",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "PodiumRoom_3/PodiumRoom_LightStrip/62.2",
+   "template": "PodiumRoom_LightStrip",
+   "model": "PodiumRoom_LightStrip",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "PodiumRoom_3/PodiumRoom_LightStrip/62.3",
+   "template": "PodiumRoom_LightStrip",
+   "model": "PodiumRoom_LightStrip",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "PodiumRoom_3/PodiumRoom_LightStrip/62.4",
+   "template": "PodiumRoom_LightStrip",
+   "model": "PodiumRoom_LightStrip",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "PodiumRoom_3/PodiumRoom_TitleSign/62",
+   "template": "PodiumRoom_TitleSign",
+   "model": "PodiumRoom_TitleSign",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "PodiumRoom_3/PodiumRoom_Block/62",
+   "template": "PodiumRoom_Block",
+   "model": "PodiumRoom_Block",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "PodiumRoom_3/PodiumRoom_Board/62",
+   "template": "PodiumRoom_Board",
+   "model": "PodiumRoom_Board",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
    "key": "City_4/City_Ground/67",
    "template": "City_Ground",
    "model": "City_Ground",
@@ -2379,6 +3097,223 @@
    "scale": 1.0
   },
   {
+   "key": "AuctionRoom_4/AuctionRoom_Shell/76",
+   "template": "AuctionRoom_Shell",
+   "model": "AuctionRoom_Shell",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_4/AuctionRoom_Lamp/76.1",
+   "template": "AuctionRoom_Lamp",
+   "model": "AuctionRoom_Lamp",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_4/AuctionRoom_Lamp/76.2",
+   "template": "AuctionRoom_Lamp",
+   "model": "AuctionRoom_Lamp",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_4/AuctionRoom_Lamp/76.3",
+   "template": "AuctionRoom_Lamp",
+   "model": "AuctionRoom_Lamp",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_4/AuctionRoom_Stage/76",
+   "template": "AuctionRoom_Stage",
+   "model": "AuctionRoom_Stage",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_4/AuctionRoom_TitleSign/76",
+   "template": "AuctionRoom_TitleSign",
+   "model": "AuctionRoom_TitleSign",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_4/AuctionRoom_InfoBoard/76",
+   "template": "AuctionRoom_InfoBoard",
+   "model": "AuctionRoom_InfoBoard",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_4/AuctionRoom_BidderDesk/76.1",
+   "template": "AuctionRoom_BidderDesk",
+   "model": "AuctionRoom_BidderDesk",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_4/AuctionRoom_BidderDesk/76.2",
+   "template": "AuctionRoom_BidderDesk",
+   "model": "AuctionRoom_BidderDesk",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_4/AuctionRoom_BidderDesk/76.3",
+   "template": "AuctionRoom_BidderDesk",
+   "model": "AuctionRoom_BidderDesk",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_4/AuctionRoom_BidderDesk/76.4",
+   "template": "AuctionRoom_BidderDesk",
+   "model": "AuctionRoom_BidderDesk",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_4/AuctionRoom_BidderDesk/76.5",
+   "template": "AuctionRoom_BidderDesk",
+   "model": "AuctionRoom_BidderDesk",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_4/AuctionRoom_BidderDesk/76.6",
+   "template": "AuctionRoom_BidderDesk",
+   "model": "AuctionRoom_BidderDesk",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_4/AuctionRoom_BidderDesk/76.7",
+   "template": "AuctionRoom_BidderDesk",
+   "model": "AuctionRoom_BidderDesk",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_4/AuctionRoom_BidderDesk/76.8",
+   "template": "AuctionRoom_BidderDesk",
+   "model": "AuctionRoom_BidderDesk",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_4/AuctionRoom_BidderPad/76.1",
+   "template": "AuctionRoom_BidderPad",
+   "model": "AuctionRoom_BidderPad",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_4/AuctionRoom_BidderPad/76.2",
+   "template": "AuctionRoom_BidderPad",
+   "model": "AuctionRoom_BidderPad",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_4/AuctionRoom_BidderPad/76.3",
+   "template": "AuctionRoom_BidderPad",
+   "model": "AuctionRoom_BidderPad",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_4/AuctionRoom_BidderPad/76.4",
+   "template": "AuctionRoom_BidderPad",
+   "model": "AuctionRoom_BidderPad",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_4/AuctionRoom_BidderPad/76.5",
+   "template": "AuctionRoom_BidderPad",
+   "model": "AuctionRoom_BidderPad",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_4/AuctionRoom_BidderPad/76.6",
+   "template": "AuctionRoom_BidderPad",
+   "model": "AuctionRoom_BidderPad",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_4/AuctionRoom_BidderPad/76.7",
+   "template": "AuctionRoom_BidderPad",
+   "model": "AuctionRoom_BidderPad",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "AuctionRoom_4/AuctionRoom_BidderPad/76.8",
+   "template": "AuctionRoom_BidderPad",
+   "model": "AuctionRoom_BidderPad",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "PodiumRoom_4/PodiumRoom_Shell/79",
+   "template": "PodiumRoom_Shell",
+   "model": "PodiumRoom_Shell",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "PodiumRoom_4/PodiumRoom_LightStrip/79.1",
+   "template": "PodiumRoom_LightStrip",
+   "model": "PodiumRoom_LightStrip",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "PodiumRoom_4/PodiumRoom_LightStrip/79.2",
+   "template": "PodiumRoom_LightStrip",
+   "model": "PodiumRoom_LightStrip",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "PodiumRoom_4/PodiumRoom_LightStrip/79.3",
+   "template": "PodiumRoom_LightStrip",
+   "model": "PodiumRoom_LightStrip",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "PodiumRoom_4/PodiumRoom_LightStrip/79.4",
+   "template": "PodiumRoom_LightStrip",
+   "model": "PodiumRoom_LightStrip",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "PodiumRoom_4/PodiumRoom_TitleSign/79",
+   "template": "PodiumRoom_TitleSign",
+   "model": "PodiumRoom_TitleSign",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "PodiumRoom_4/PodiumRoom_Block/79",
+   "template": "PodiumRoom_Block",
+   "model": "PodiumRoom_Block",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "PodiumRoom_4/PodiumRoom_Board/79",
+   "template": "PodiumRoom_Board",
+   "model": "PodiumRoom_Board",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
    "key": "Catalog.FastTrack/Workplace_Yard/346",
    "template": "Workplace_Yard",
    "model": "Workplace_Yard",
@@ -2389,6 +3324,48 @@
    "key": "Catalog.FastTrack/Workplace_Building/346",
    "template": "Workplace_Building_FASTTRACK",
    "model": "Workplace_Building_FASTTRACK",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.FastTrack/Lux_Sofa/348.1",
+   "template": "Lux_Sofa",
+   "model": "Lux_Sofa",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.FastTrack/Lux_Sofa/348.2",
+   "template": "Lux_Sofa",
+   "model": "Lux_Sofa",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.FastTrack/Lux_GlassTable/348",
+   "template": "Lux_GlassTable",
+   "model": "Lux_GlassTable",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.FastTrack/Lux_Safe/348",
+   "template": "Lux_Safe",
+   "model": "Lux_Safe",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.FastTrack/Lux_Piano/348",
+   "template": "Lux_Piano",
+   "model": "Lux_Piano",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.FastTrack/Lux_Chandelier/348",
+   "template": "Lux_Chandelier",
+   "model": "Lux_Chandelier",
    "mode": "normal",
    "scale": 1.0
   },
@@ -2498,10 +3475,24 @@
    "scale": 1.0
   },
   {
+   "key": "Catalog.FastTrack/FastTrack_Gate/346",
+   "template": "FastTrack_Gate",
+   "model": "FastTrack_Gate",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
    "key": "Catalog.FastTrack/Maker_CarWash#340",
    "template": "Maker_CarWash",
    "model": "Maker_CarWash",
    "mode": "ghost",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.FastTrack/Dream_Pedestal/343",
+   "template": "Dream_Pedestal",
+   "model": "Dream_Pedestal",
+   "mode": "normal",
    "scale": 1.0
   },
   {
@@ -2510,6 +3501,13 @@
    "model": "Dream_Supercar",
    "mode": "dream",
    "scale": 1.06557
+  },
+  {
+   "key": "Catalog.FastTrack/Dream_Chains/343",
+   "template": "Dream_Chains",
+   "model": "Dream_Chains",
+   "mode": "normal",
+   "scale": 1.0
   },
   {
    "key": "Catalog.FastTrack/Workplace_Yard/375",
@@ -2522,6 +3520,48 @@
    "key": "Catalog.FastTrack/Workplace_Building/375",
    "template": "Workplace_Building_FASTTRACK",
    "model": "Workplace_Building_FASTTRACK",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.FastTrack/Lux_Sofa/377.1",
+   "template": "Lux_Sofa",
+   "model": "Lux_Sofa",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.FastTrack/Lux_Sofa/377.2",
+   "template": "Lux_Sofa",
+   "model": "Lux_Sofa",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.FastTrack/Lux_GlassTable/377",
+   "template": "Lux_GlassTable",
+   "model": "Lux_GlassTable",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.FastTrack/Lux_Safe/377",
+   "template": "Lux_Safe",
+   "model": "Lux_Safe",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.FastTrack/Lux_Piano/377",
+   "template": "Lux_Piano",
+   "model": "Lux_Piano",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
+   "key": "Catalog.FastTrack/Lux_Chandelier/377",
+   "template": "Lux_Chandelier",
+   "model": "Lux_Chandelier",
    "mode": "normal",
    "scale": 1.0
   },
@@ -2631,6 +3671,13 @@
    "scale": 1.0
   },
   {
+   "key": "Catalog.FastTrack/FastTrack_Gate/375",
+   "template": "FastTrack_Gate",
+   "model": "FastTrack_Gate",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
    "key": "Catalog.FastTrack/Kid#363",
    "template": "Kid",
    "model": "Kid",
@@ -2652,11 +3699,25 @@
    "scale": 1.0
   },
   {
+   "key": "Catalog.FastTrack/Dream_Pedestal/372",
+   "template": "Dream_Pedestal",
+   "model": "Dream_Pedestal",
+   "mode": "normal",
+   "scale": 1.0
+  },
+  {
    "key": "Catalog.FastTrack/Dream_Yacht#373",
    "template": "Dream_Yacht",
    "model": "Dream_Yacht",
    "mode": "dream",
    "scale": 0.30517
+  },
+  {
+   "key": "Catalog.FastTrack/Collection_Showcase/355",
+   "template": "Collection_Showcase",
+   "model": "Collection_Showcase",
+   "mode": "normal",
+   "scale": 1.0
   },
   {
    "key": "Catalog.FastTrack/Maker_GoldCoin#356",
