@@ -114,17 +114,17 @@
   "bbox_dev": [
    0.05,
    -0.05,
-   -0.31,
+   -0.06,
    -0.05,
    0.05,
    -0.06
   ],
-  "bbox_max_dev": 0.31,
+  "bbox_max_dev": 0.06,
   "bbox_new": [
    [
     -21.95,
     -0.05,
-    -0.51
+    -0.26
    ],
    [
     21.95,
@@ -132,7 +132,7 @@
     0.14
    ]
   ],
-  "bbox_ok": false,
+  "bbox_ok": true,
   "bbox_old": [
    [
     -22.0,
@@ -146,7 +146,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 22:14",
+  "built_at": "2026-10-04 22:41",
   "category": "signs",
   "export_name": "AuctionRoom_InfoBoard",
   "fbx": "export/signs/AuctionRoom_InfoBoard.fbx",
@@ -336,17 +336,17 @@
   "bbox_dev": [
    0.05,
    -0.05,
-   -0.31,
+   -0.06,
    -0.05,
    0.05,
    -0.06
   ],
-  "bbox_max_dev": 0.31,
+  "bbox_max_dev": 0.06,
   "bbox_new": [
    [
     -14.95,
     -0.05,
-    -0.51
+    -0.26
    ],
    [
     14.95,
@@ -354,7 +354,7 @@
     0.14
    ]
   ],
-  "bbox_ok": false,
+  "bbox_ok": true,
   "bbox_old": [
    [
     -15.0,
@@ -368,7 +368,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 22:14",
+  "built_at": "2026-10-04 22:41",
   "category": "signs",
   "export_name": "AuctionRoom_TitleSign",
   "fbx": "export/signs/AuctionRoom_TitleSign.fbx",
@@ -2716,17 +2716,17 @@
   "bbox_dev": [
    0.1,
    0.0,
-   -0.31,
+   -0.06,
    -0.1,
    0.0,
    -0.06
   ],
-  "bbox_max_dev": 0.31,
+  "bbox_max_dev": 0.1,
   "bbox_new": [
    [
     -34.9,
     0.0,
-    -0.51
+    -0.26
    ],
    [
     34.9,
@@ -2734,7 +2734,7 @@
     0.14
    ]
   ],
-  "bbox_ok": false,
+  "bbox_ok": true,
   "bbox_old": [
    [
     -35.0,
@@ -2748,7 +2748,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 22:13",
+  "built_at": "2026-10-04 22:40",
   "category": "signs",
   "export_name": "Lobby_TitleSign",
   "fbx": "export/signs/Lobby_TitleSign.fbx",
@@ -5057,9 +5057,9 @@
    0.06,
    0.0,
    0.0,
-   0.31
+   0.06
   ],
-  "bbox_max_dev": 0.31,
+  "bbox_max_dev": 0.06,
   "bbox_new": [
    [
     -8.0,
@@ -5069,10 +5069,10 @@
    [
     8.0,
     18.0,
-    0.51
+    0.26
    ]
   ],
-  "bbox_ok": false,
+  "bbox_ok": true,
   "bbox_old": [
    [
     -8.0,
@@ -5086,7 +5086,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 22:15",
+  "built_at": "2026-10-04 22:42",
   "category": "signs",
   "export_name": "PodiumRoom_Board",
   "fbx": "export/signs/PodiumRoom_Board.fbx",
@@ -5220,17 +5220,17 @@
   "bbox_dev": [
    0.05,
    -0.05,
-   -0.31,
+   -0.06,
    -0.05,
    0.05,
    -0.06
   ],
-  "bbox_max_dev": 0.31,
+  "bbox_max_dev": 0.06,
   "bbox_new": [
    [
     -24.95,
     -0.05,
-    -0.51
+    -0.26
    ],
    [
     24.95,
@@ -5238,7 +5238,7 @@
     0.14
    ]
   ],
-  "bbox_ok": false,
+  "bbox_ok": true,
   "bbox_old": [
    [
     -25.0,
@@ -5252,7 +5252,7 @@
    ]
   ],
   "budget": 1500,
-  "built_at": "2026-10-04 22:15",
+  "built_at": "2026-10-04 22:41",
   "category": "signs",
   "export_name": "PodiumRoom_TitleSign",
   "fbx": "export/signs/PodiumRoom_TitleSign.fbx",
