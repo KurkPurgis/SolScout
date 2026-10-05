@@ -146,9 +146,9 @@ Our targets are far below the limits, because the game must run on phones:
 
 **Decided (2026-10-05): no outline.**
 
-No outline in the world by default (the icons have one, but in 3D a black hull doubles triangles and looks
+No outline in the world (the icons have one, but in 3D a black hull doubles triangles and looks
 noisy at distance). One comparison render of one building WITH an inverted-hull outline (INK, 0.14 studs) is in
-`renders/outline_comparison.png` so you can choose.
+`renders/outline_comparison.png`; it stays as a record of that choice.
 
 ## 9. The glossy toy look in Roblox
 
@@ -182,7 +182,10 @@ collision, trigger and prompt exactly as it is today and makes switching back on
   named Model in the game (Money Makers, debts, dreams, `Kid`), otherwise the template name from `INVENTORY.md`.
 - The FBX origin (0, 0, 0) **is the original object's frame** (`data/objects.json` -> `frame`): the model drops
   into the old position with the same rotation and no offset. Front = -Z in Roblox (+Y in Blender).
-- Inside each FBX: `<name>` (body), optional `<name>_Glow_<COLOR>`, optional `<name>_Glass`.
+- Inside each FBX the meshes are named after the **template**, not the file: `<template>` (body), optional
+  `<template>_Glow_<COLOR>` (or `_Glow_<COLOR>_T<transparency %>`), optional `<template>_Glass`. Example:
+  `export/props/Lemonade Stand.fbx` holds `Maker_LemonadeStand` (+ its glow/glass meshes). The `WorldKit` model
+  is renamed to the template name (IMPORT_PLAN step 4).
 - One `.blend` per category in `blend/`, saved after every finished model.
 
 ## 12. Review checklist (every model, max 3 fix rounds)
@@ -208,10 +211,11 @@ collision, trigger and prompt exactly as it is today and makes switching back on
 | bbox | wall boards | tolerance 0.3 instead of 0.15 (DECISIONS #13) | 0.3 minimum thickness on 0.2 thick boards |
 | kit | wheel | hub and cap stand out at most 0.13 from the tire | wheels stay inside the original wheel box |
 | kit | plus_sign | crosses are built from non-overlapping pieces | coplanar overlaps z-fight |
-
 | kit | sign_board | `frame_back`: how far the frame sits behind the board (0.1 for the thin room signs) | signs keep their original depth |
 | check | z-fighting | every model is checked for coplanar overlapping box faces (`check_models.py`) | black specks and flicker |
-| owner decision | outline | no outline (decided) | 2026-10-05 |
-| owner decision | lit windows | keep the warm Neon glow (decided) | 2026-10-05 |
-| owner decision | dream chains | swapped link by link with the ChainSegment and Padlock kit pieces | 2026-10-05 |
+| 2026-10-05 | outline (section 8) | no outline | owner decision (REPORT question 1) |
+| 2026-10-05 | lit windows | keep the warm Neon glow (GLOW_WARM) | owner decision (REPORT question 3) |
+| 2026-10-05 | dream chains | swapped link by link with the `Dream_ChainSegment` and `Dream_Padlock` kit pieces; the one-piece `Dream_Chains` is not imported | owner decision (REPORT question 2) |
+| 2026-10-05 | bounding box | the 7 models over 0.15 studs stay as they are (wall boards, carpet, beach villa, chains) | owner decision (REPORT question 5): close enough |
+| 2026-10-05 | variants | a model for every case color of the PokeBlox cards and for the 4th kid's shirt | the game makes them, the snapshot did not show them (DECISIONS #22) |
 

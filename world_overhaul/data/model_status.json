@@ -1419,7 +1419,7 @@
    "renders/objects/Dream_Chains/Dream_Chains_back34.jpg",
    "renders/objects/Dream_Chains/Dream_Chains_eye.jpg"
   ],
-  "review_note": "chunky chain links along every original bar, icon padlock; how to import is question 2",
+  "review_note": "reference look only, not imported: your decision (2026-10-05) is link by link (Dream_ChainSegment + Dream_Padlock, WorldSkin.chains)",
   "round": 1,
   "status": "done",
   "strip": "renders/objects/strips/Dream_Chains.jpg",
@@ -2231,6 +2231,62 @@
   "round": 1,
   "status": "done",
   "strip": "renders/objects/strips/Kid_v3.jpg",
+  "triangles": 538,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Kid_v4": {
+  "bbox_dev": [
+   0.0,
+   0.0,
+   -0.02,
+   -0.0,
+   0.113,
+   0.104
+  ],
+  "bbox_max_dev": 0.113,
+  "bbox_new": [
+   [
+    -0.65,
+    0.0,
+    -0.62
+   ],
+   [
+    0.65,
+    3.463,
+    0.704
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -0.65,
+    0.0,
+    -0.6
+   ],
+   [
+    0.65,
+    3.35,
+    0.6
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-05 08:39",
+  "category": "props",
+  "export_name": "Kid (green)",
+  "fbx": "export/props/Kid (green).fbx",
+  "meshes": [
+   "Kid_v4"
+  ],
+  "renders": [
+   "renders/objects/Kid_v4/Kid_v4_front34.jpg",
+   "renders/objects/Kid_v4/Kid_v4_back34.jpg",
+   "renders/objects/Kid_v4/Kid_v4_eye.jpg"
+  ],
+  "review_note": "green shirt: the 4th kid (KID_SHIRTS[4], not in the snapshot)",
+  "round": 1,
+  "status": "done",
+  "strip": "renders/objects/strips/Kid_v4.jpg",
   "triangles": 538,
   "tris_ok": true,
   "warnings": []
@@ -4222,6 +4278,179 @@
   "tris_ok": true,
   "warnings": []
  },
+ "Maker_PokeBloxCard_case2": {
+  "bbox_dev": [
+   0.0,
+   0.015,
+   0.04,
+   -0.0,
+   0.011,
+   0.043
+  ],
+  "bbox_max_dev": 0.043,
+  "bbox_new": [
+   [
+    -1.8,
+    -0.44,
+    -0.905
+   ],
+   [
+    1.8,
+    5.012,
+    0.743
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -1.8,
+    -0.455,
+    -0.945
+   ],
+   [
+    1.8,
+    5.001,
+    0.7
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-05 08:41",
+  "category": "props",
+  "export_name": "PokeBlox Card (case 2)",
+  "fbx": "export/props/PokeBlox Card (case 2).fbx",
+  "meshes": [
+   "Maker_PokeBloxCard_case2",
+   "Maker_PokeBloxCard_case2_Glass"
+  ],
+  "renders": [
+   "renders/objects/Maker_PokeBloxCard_case2/Maker_PokeBloxCard_case2_front34.jpg",
+   "renders/objects/Maker_PokeBloxCard_case2/Maker_PokeBloxCard_case2_back34.jpg",
+   "renders/objects/Maker_PokeBloxCard_case2/Maker_PokeBloxCard_case2_eye.jpg"
+  ],
+  "review_note": "RARE (blue) case: the card's value moves with the market, so the case color changes",
+  "round": 1,
+  "status": "done",
+  "strip": "renders/objects/strips/Maker_PokeBloxCard_case2.jpg",
+  "triangles": 936,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Maker_PokeBloxCard_case3": {
+  "bbox_dev": [
+   0.0,
+   0.015,
+   0.04,
+   -0.0,
+   0.011,
+   0.043
+  ],
+  "bbox_max_dev": 0.043,
+  "bbox_new": [
+   [
+    -1.8,
+    -0.44,
+    -0.905
+   ],
+   [
+    1.8,
+    5.012,
+    0.743
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -1.8,
+    -0.455,
+    -0.945
+   ],
+   [
+    1.8,
+    5.001,
+    0.7
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-05 08:41",
+  "category": "props",
+  "export_name": "PokeBlox Card (case 3)",
+  "fbx": "export/props/PokeBlox Card (case 3).fbx",
+  "meshes": [
+   "Maker_PokeBloxCard_case3",
+   "Maker_PokeBloxCard_case3_Glass",
+   "Maker_PokeBloxCard_case3_Glow_PURPLE"
+  ],
+  "renders": [
+   "renders/objects/Maker_PokeBloxCard_case3/Maker_PokeBloxCard_case3_front34.jpg",
+   "renders/objects/Maker_PokeBloxCard_case3/Maker_PokeBloxCard_case3_back34.jpg",
+   "renders/objects/Maker_PokeBloxCard_case3/Maker_PokeBloxCard_case3_eye.jpg"
+  ],
+  "review_note": "EPIC (purple, glowing) case",
+  "round": 1,
+  "status": "done",
+  "strip": "renders/objects/strips/Maker_PokeBloxCard_case3.jpg",
+  "triangles": 936,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Maker_PokeBloxCard_case4": {
+  "bbox_dev": [
+   0.0,
+   0.015,
+   0.04,
+   -0.0,
+   0.011,
+   0.043
+  ],
+  "bbox_max_dev": 0.043,
+  "bbox_new": [
+   [
+    -1.8,
+    -0.44,
+    -0.905
+   ],
+   [
+    1.8,
+    5.012,
+    0.743
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -1.8,
+    -0.455,
+    -0.945
+   ],
+   [
+    1.8,
+    5.001,
+    0.7
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-05 08:42",
+  "category": "props",
+  "export_name": "PokeBlox Card (case 4)",
+  "fbx": "export/props/PokeBlox Card (case 4).fbx",
+  "meshes": [
+   "Maker_PokeBloxCard_case4",
+   "Maker_PokeBloxCard_case4_Glass",
+   "Maker_PokeBloxCard_case4_Glow_GOLD"
+  ],
+  "renders": [
+   "renders/objects/Maker_PokeBloxCard_case4/Maker_PokeBloxCard_case4_front34.jpg",
+   "renders/objects/Maker_PokeBloxCard_case4/Maker_PokeBloxCard_case4_back34.jpg",
+   "renders/objects/Maker_PokeBloxCard_case4/Maker_PokeBloxCard_case4_eye.jpg"
+  ],
+  "review_note": "LEGENDARY (gold, glowing) case",
+  "round": 1,
+  "status": "done",
+  "strip": "renders/objects/strips/Maker_PokeBloxCard_case4.jpg",
+  "triangles": 936,
+  "tris_ok": true,
+  "warnings": []
+ },
  "Maker_RarePokeBloxCard": {
   "bbox_dev": [
    0.0,
@@ -4503,10 +4732,185 @@
    "renders/objects/Maker_ShinyPokeBloxCard/Maker_ShinyPokeBloxCard_back34.jpg",
    "renders/objects/Maker_ShinyPokeBloxCard/Maker_ShinyPokeBloxCard_eye.jpg"
   ],
-  "review_note": "glowing pink case",
+  "review_note": "glowing card, purple (EPIC) case",
   "round": 1,
   "status": "done",
   "strip": "renders/objects/strips/Maker_ShinyPokeBloxCard.jpg",
+  "triangles": 936,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Maker_ShinyPokeBloxCard_case1": {
+  "bbox_dev": [
+   0.0,
+   0.015,
+   0.04,
+   -0.0,
+   0.011,
+   0.043
+  ],
+  "bbox_max_dev": 0.043,
+  "bbox_new": [
+   [
+    -1.8,
+    -0.44,
+    -0.905
+   ],
+   [
+    1.8,
+    5.012,
+    0.743
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -1.8,
+    -0.455,
+    -0.945
+   ],
+   [
+    1.8,
+    5.001,
+    0.7
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-05 08:42",
+  "category": "props",
+  "export_name": "Shiny PokeBlox Card (case 1)",
+  "fbx": "export/props/Shiny PokeBlox Card (case 1).fbx",
+  "meshes": [
+   "Maker_ShinyPokeBloxCard_case1",
+   "Maker_ShinyPokeBloxCard_case1_Glass",
+   "Maker_ShinyPokeBloxCard_case1_Glow_GLOW_COOL"
+  ],
+  "renders": [
+   "renders/objects/Maker_ShinyPokeBloxCard_case1/Maker_ShinyPokeBloxCard_case1_front34.jpg",
+   "renders/objects/Maker_ShinyPokeBloxCard_case1/Maker_ShinyPokeBloxCard_case1_back34.jpg",
+   "renders/objects/Maker_ShinyPokeBloxCard_case1/Maker_ShinyPokeBloxCard_case1_eye.jpg"
+  ],
+  "review_note": "COMMON (steel) case",
+  "round": 1,
+  "status": "done",
+  "strip": "renders/objects/strips/Maker_ShinyPokeBloxCard_case1.jpg",
+  "triangles": 936,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Maker_ShinyPokeBloxCard_case2": {
+  "bbox_dev": [
+   0.0,
+   0.015,
+   0.04,
+   -0.0,
+   0.011,
+   0.043
+  ],
+  "bbox_max_dev": 0.043,
+  "bbox_new": [
+   [
+    -1.8,
+    -0.44,
+    -0.905
+   ],
+   [
+    1.8,
+    5.012,
+    0.743
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -1.8,
+    -0.455,
+    -0.945
+   ],
+   [
+    1.8,
+    5.001,
+    0.7
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-05 08:43",
+  "category": "props",
+  "export_name": "Shiny PokeBlox Card (case 2)",
+  "fbx": "export/props/Shiny PokeBlox Card (case 2).fbx",
+  "meshes": [
+   "Maker_ShinyPokeBloxCard_case2",
+   "Maker_ShinyPokeBloxCard_case2_Glass",
+   "Maker_ShinyPokeBloxCard_case2_Glow_GLOW_COOL"
+  ],
+  "renders": [
+   "renders/objects/Maker_ShinyPokeBloxCard_case2/Maker_ShinyPokeBloxCard_case2_front34.jpg",
+   "renders/objects/Maker_ShinyPokeBloxCard_case2/Maker_ShinyPokeBloxCard_case2_back34.jpg",
+   "renders/objects/Maker_ShinyPokeBloxCard_case2/Maker_ShinyPokeBloxCard_case2_eye.jpg"
+  ],
+  "review_note": "RARE (blue) case",
+  "round": 1,
+  "status": "done",
+  "strip": "renders/objects/strips/Maker_ShinyPokeBloxCard_case2.jpg",
+  "triangles": 936,
+  "tris_ok": true,
+  "warnings": []
+ },
+ "Maker_ShinyPokeBloxCard_case4": {
+  "bbox_dev": [
+   0.0,
+   0.015,
+   0.04,
+   -0.0,
+   0.011,
+   0.043
+  ],
+  "bbox_max_dev": 0.043,
+  "bbox_new": [
+   [
+    -1.8,
+    -0.44,
+    -0.905
+   ],
+   [
+    1.8,
+    5.012,
+    0.743
+   ]
+  ],
+  "bbox_ok": true,
+  "bbox_old": [
+   [
+    -1.8,
+    -0.455,
+    -0.945
+   ],
+   [
+    1.8,
+    5.001,
+    0.7
+   ]
+  ],
+  "budget": 1500,
+  "built_at": "2026-10-05 08:44",
+  "category": "props",
+  "export_name": "Shiny PokeBlox Card (case 4)",
+  "fbx": "export/props/Shiny PokeBlox Card (case 4).fbx",
+  "meshes": [
+   "Maker_ShinyPokeBloxCard_case4",
+   "Maker_ShinyPokeBloxCard_case4_Glass",
+   "Maker_ShinyPokeBloxCard_case4_Glow_GLOW_COOL",
+   "Maker_ShinyPokeBloxCard_case4_Glow_GOLD"
+  ],
+  "renders": [
+   "renders/objects/Maker_ShinyPokeBloxCard_case4/Maker_ShinyPokeBloxCard_case4_front34.jpg",
+   "renders/objects/Maker_ShinyPokeBloxCard_case4/Maker_ShinyPokeBloxCard_case4_back34.jpg",
+   "renders/objects/Maker_ShinyPokeBloxCard_case4/Maker_ShinyPokeBloxCard_case4_eye.jpg"
+  ],
+  "review_note": "LEGENDARY (gold, glowing) case",
+  "round": 1,
+  "status": "done",
+  "strip": "renders/objects/strips/Maker_ShinyPokeBloxCard_case4.jpg",
   "triangles": 936,
   "tris_ok": true,
   "warnings": []

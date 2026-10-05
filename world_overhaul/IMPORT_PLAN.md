@@ -1,6 +1,6 @@
 # Import plan - how to swap the new look into the game (NOT executed)
 
-Written 2026-10-05 08:15. Nothing here has been done: nothing was uploaded, published or changed in `src/`.
+Written 2026-10-05 08:52. Nothing here has been done: nothing was uploaded, published or changed in `src/`.
 
 ## The idea in one paragraph
 
@@ -9,7 +9,7 @@ The world is built by Luau code when the server starts (and while a game runs), 
 ## Step 1 - safety first
 
 1. Make a git branch in the game repo (e.g. `new-look`). Do the steps below in a copy of the place, not the live game.
-2. You will add 2 files to `src/` and ~12 one-line calls; everything else happens in Studio.
+2. You will add 2 files to `src/`, a `require` line in 6 files and 14 one-line calls (Step 6; one of them replaces a line); everything else happens in Studio.
 
 ## Step 2 - upload the palette (2 images)
 
@@ -17,7 +17,7 @@ Upload `world_overhaul/palette/palette_color.png` and `palette_roughness.png` (A
 
 ## Step 3 - import the meshes
 
-Import every file in `world_overhaul/export/<category>/*.fbx` with the 3D Importer (File > Import 3D). Settings ([Roblox: Blender to Studio settings](https://github.com/Roblox/creator-docs/blob/main/content/en-us/art/blender.md)):
+Import every file in `world_overhaul/export/<category>/*.fbx` - 128 files: all of them except `export/props/Dream_Chains.fbx`, the one-piece chains that your link-by-link decision replaced - with the 3D Importer (File > Import 3D). Settings ([Roblox: Blender to Studio settings](https://github.com/Roblox/creator-docs/blob/main/content/en-us/art/blender.md)):
 
 | section | setting | value | why |
 |---|---|---|---|
@@ -80,11 +80,12 @@ for _, kit in game.ServerStorage.WorldKit:GetChildren() do
 			p.CollisionFidelity = Enum.CollisionFidelity.Box
 			p.Massless = true
 			p.CastShadow = p.Size.X * p.Size.Y * p.Size.Z > 6 -- tiny details cast no shadow
-			local glow = p.Name:match("_Glow_([A-Z_]+)")
+			local glow = p.Name:match("_Glow_([%w_]+)$")
 			if glow then
 				local color, t = glow:match("^(.-)_T(%d+)$")
 				p.Material = Enum.Material.Neon
-				p.Color = GLOW[color or glow]
+				local c = GLOW[color or glow]
+				if c then p.Color = c else warn("no glow color for " .. p:GetFullName()) end
 				p.Transparency = if t then tonumber(t) / 100 else 0.35 -- the game's NEON_SOFTNESS
 				p.CastShadow = false
 			elseif p.Name:match("_Glass$") then
@@ -107,30 +108,32 @@ end
 
 ## Step 5 - add the two modules
 
-Copy `world_overhaul/export/roblox/WorldSkin.luau` and `WorldSkinPlacements.luau` to `src/server/World/`. `WorldSkinPlacements` is generated from the world data: every kit model's frame relative to the base CFrame of the code that builds it. Checked with `tools/verify_placements.py`: for all 35 places the game builds (4 plazas, 9 workplaces, 4 auction rooms, 4 podium rooms, the lobby, furniture, showcases), the list puts exactly the objects that are there, at exactly their frames (0 mismatches).
+Copy `world_overhaul/export/roblox/WorldSkin.luau` and `WorldSkinPlacements.luau` to `src/server/World/`. `WorldSkinPlacements` is generated from the world data: every kit model's frame relative to the base CFrame of the code that builds it (one built copy of each context is the pattern). Checked with `tools/verify_placements.py`, independently: it takes each place's base CFrame from the world dump and checks, in world space, that the list puts exactly the objects that are there, turned the same way, with the kit's box on the object's box. All 38 places the snapshot built pass (0 mismatches): 10 workplaces, 10 furniture sets, 4 plazas, 4 auction rooms, 4 podium rooms, 3 showcases, 2 dream pedestals, 1 lobby. The chains are not in this check: `WorldSkin.chains` follows the chain bars the game makes (tested in `tools/luau/test_worldskin_chains.luau`).
+
+`WorldSkin` never hides anything without its replacement: if a kit model is missing from `WorldKit`, it warns in the output and leaves that object (or that whole context) in the old look. Without a `WorldKit` folder it switches itself off.
 
 ## Step 6 - the calls (one line each)
 
-`local WorldSkin = require(script.Parent.WorldSkin)` at the top of each file (path as needed), then:
+`local WorldSkin = require(script.Parent.WorldSkin)` at the top of `Plaza.luau`, `AuctionRoom.luau`, `PodiumRoom.luau`, `Plots.luau` and `Props.luau` (all in `World/`), and `local WorldSkin = require(script.Parent.World.WorldSkin)` in `Lobby.luau` (adjust to your Rojo tree), then:
 
-| file / function | where | add |
+| file / function | where | line |
 |---|---|---|
-| `Lobby.luau` `buildHall()` | at the end | `WorldSkin.context("Lobby", <hall origin CFrame>, <hall folder>)` |
-| `World/Plaza.luau` `Plaza.new` | at the end | `WorldSkin.context("Plaza", <city base>, <city plaza folder>)` |
-| `World/AuctionRoom.luau` `AuctionRoom.new` | at the end | `WorldSkin.context("AuctionRoom", self.base, <room folder>)` |
-| `World/PodiumRoom.luau` `PodiumRoom.new` | at the end | `WorldSkin.context("PodiumRoom", self.base, <room folder>)` |
-| `World/Plots.luau` `Plots:buildWorkplace(theme)` | at the end | `WorldSkin.context("Workplace:" .. theme.title, self.base, self.workplaceFolder)` and `WorldSkin.context("Furnish:" .. theme.title, self.base, self.workplaceFolder)` (the keys use the sign title, e.g. `Workplace:BUS DEPOT`) |
-| `World/Plots.luau` `Plots:syncCollection` | after the showcase table is made | `WorldSkin.context("Collection", self.base, <showcase part or folder>)` |
-| `World/Plots.luau` `syncDream` (Fast Track: locked or won dream) | at the end of the `else` branch (after the pedestal, the dream and its label) | `WorldSkin.context("DreamArea", self.base, self.dreamFolder)` (the marble pedestal) |
+| `Lobby.luau` `buildHall()` | at the end | `WorldSkin.context("Lobby", hallBase, folder)` |
+| `World/Plaza.luau` `Plaza.new` | before `return self` | `WorldSkin.context("Plaza", base, folder)` |
+| `World/AuctionRoom.luau` `AuctionRoom.new` | before `return self` | `WorldSkin.context("AuctionRoom", BASE, folder)` |
+| `World/PodiumRoom.luau` `PodiumRoom.new` | before `return self` | `WorldSkin.context("PodiumRoom", base, folder)` |
+| `World/Plots.luau` `Plots:buildWorkplace(theme)` | at the end of the function (after the flower boxes) | `WorldSkin.context({ "Workplace:" .. theme.title, "Furnish:" .. theme.title }, self.base, self.workplaceFolder)` (one call for both: they share the folder; the keys use the sign title, e.g. `Workplace:BUS DEPOT`) |
+| `World/Plots.luau` `Plots:syncCollection` | right after the two `Props.box` lines of the showcase table (before the loop) | `WorldSkin.context("Collection", self.base, self.collectionFolder)` |
+| `World/Plots.luau` `Plots:syncDream` | in the `else` branch (locked or won dream), right after the two `Props.box` lines of the marble pedestal (before `Props.dream`) | `WorldSkin.context("DreamArea", self.base, self.dreamFolder)` |
 | `World/Plots.luau` `addChains(folder, model)` | at the end | `WorldSkin.chains(folder)`: the chains **link by link** (your decision): `Dream_ChainSegment` pieces tiled along every chain bar + `Dream_Padlock` |
-| `World/Props.luau` `Props.kid` | before `return model` | `WorldSkin.object(model, <Kid / Kid_v2 / Kid_v3 by shirt color>, base)` |
-| `World/Props.luau` `Props.moneyMaker` | before `model.Parent = parent` | `WorldSkin.object(model, <template for name>, base)` (game name -> template in the table below; Rare PokeBlox Card: `_v2`..`_v4` by its case color, `Props.cardCase(value)`) |
-| `World/Props.luau` `Props.debtModel` | before `model.Parent = parent` | `WorldSkin.stretched(model, <template for debtName>, base)` (School Loan: `Debt_SchoolLoan_books<n>`) |
-| `World/Props.luau` `Props.dream` | right after `builder.build()` | `WorldSkin.object(model, "Dream_" .. <name>, model:GetPivot())` |
-| `World/AuctionRoom.luau` `AuctionRoom:highlight` | inside the loop | `WorldSkin.setVisible(<desk glow shell>, isTop)`: the old desk turns gold Neon, the new desk has a hidden gold shell (`_Glow_GOLD_T100`) for that |
-| `World/PodiumRoom.luau` `fillBoard` (line 158) | next to `self.board.Transparency = ...` | `WorldSkin.setVisible(<board kit copy>, #standings > 3)` |
+| `World/Props.luau` `Props.kid` | after `model.PrimaryPart = body` | `WorldSkin.object(model, WorldSkin.kidTemplate(shirtColor), base)` (4 shirts: `Kid`, `Kid_v2`, `Kid_v3`, `Kid_v4`) |
+| `World/Props.luau` `Props.moneyMaker` | before `model.Parent = parent` | `WorldSkin.object(model, WorldSkin.makerTemplate(name, value), base)` (PokeBlox cards: the model with the case color of `Props.cardCase(value)`) |
+| `World/Props.luau` `Props.debtModel` | before `model.Parent = parent` | `WorldSkin.stretched(model, WorldSkin.debtTemplate(debtName, amount), base)` (School Loan: the model with the right number of books) |
+| `World/Props.luau` `Props.dream` | right after `local model = builder.build()` | `WorldSkin.object(model, "Dream_" .. model.Name, model:GetPivot())` (`model.Name` is `BeachVilla`, `PrivateJet`...; not `dreamName`, which has spaces) |
+| `World/AuctionRoom.luau` `AuctionRoom:highlight` | inside the loop, after the two lines | `WorldSkin.setGlow(WorldSkin.nearest(self.folder, "AuctionRoom_BidderDesk", podium.Position), isTop)`: the old desk (now hidden) turns gold Neon; the new desk shows its gold glow shell (`_Glow_GOLD_T100`) |
+| `World/PodiumRoom.luau` `PodiumRoom:fillBoard` | **replace** line 158 `self.board.Transparency = if #standings > 3 then 0 else 1` | `WorldSkin.show(self.board, self.folder, "PodiumRoom_Board", #standings > 3)` (shows/hides the new board and keeps the old one hidden; without WorldSkin it does exactly what line 158 did) |
 
-Trees need no call of their own: `Props.tree` puts its parts straight into the plaza folder, so the `Plaza` context hides them and places the `Tree` models with the rest of the plaza.
+Trees need no call of their own: `Props.tree` puts its parts straight into the plaza folder, so the `Plaza` context hides them and places the 8 `Tree` models around the plaza with the rest of it.
 
 Why these places: the ghost FOR SALE copies (`Props.makeGhost`), the 0.4x collection minis (`model:ScaleTo(0.4)`), the floating dreams (`ScaleTo` + `PivotTo`), the kids' hop and the dream spin (`PivotTo`) all run **after** these builders return, so they automatically include the new MeshParts (they are BaseParts inside the same Model).
 
@@ -140,10 +143,12 @@ Why these places: the ghost FOR SALE copies (`Props.makeGhost`), the 0.4x collec
 - [ ] Start a game: your workplace appears with the new building, furniture, fence, lamps and yard; you still walk on the same floor heights, the Pay/Buy prompts still appear on the debts and the FOR SALE item.
 - [ ] Buy a Money Maker: it stands on the lot, the next one stacks on top at the same height as before (`GetBoundingBox`), its label floats at the same spot.
 - [ ] The FOR SALE copy looks see-through (ForceField) - also the new meshes.
-- [ ] Add investments: the minis in the showcase are 0.4x and sit on the table.
+- [ ] Add investments: the minis in the showcase are 0.4x and sit on the table; a PokeBlox card whose value crosses a case boundary (1000 / 10000 / 30000) changes its case color.
+- [ ] Have 4 kids: all 4 have the new look (red, blue, yellow, green shirts) and still hop.
 - [ ] Your dream floats and spins; it fades in/out as before (the old parts must stay hidden while it fades).
 - [ ] Escape: the workplace turns into the Fast Track version (new look too), pedestal + chains.
-- [ ] Auction: the top bidder's desk glows gold. Podium: the board shows only with more than 3 players.
+- [ ] Auction: only the top bidder's desk glows gold. Podium: the board shows only with more than 3 players.
+- [ ] Output: no `WorldSkin:` warnings (a warning names a kit model that is missing from `WorldKit`).
 - [ ] Text: every sign still shows its text (prices, names, job names) in front of the new boards.
 - [ ] Performance: open the MicroProfiler / Stats on a phone-sized client: triangles and draw calls.
 
@@ -291,5 +296,5 @@ Set `WorldSkin.ENABLED = false` (or remove the calls): nothing is hidden and no 
 | Debt_SchoolLoan_v3 | School Loan | uses `Debt_SchoolLoan` | | stretched to its own size | Props.debtModel (Props.luau:325) |  |
 | Lobby_PottedPalm_v2 | Lobby_PottedPalm | uses `Lobby_PottedPalm` | | stretched to its own size |  |  |
 
-Extra kit meshes: `Debt_SchoolLoan_books2` (`export/props/School Loan (2 books).fbx`), `Debt_SchoolLoan_books4` (`export/props/School Loan (4 books).fbx`), `Debt_SchoolLoan_books5` (`export/props/School Loan (5 books).fbx`), `Debt_SchoolLoan_books6` (`export/props/School Loan (6 books).fbx`), `Debt_SchoolLoan_books7` (`export/props/School Loan (7 books).fbx`), `Dream_ChainSegment` (`export/props/ChainSegment.fbx`), `Dream_Padlock` (`export/props/Padlock.fbx`). `Dream_ChainSegment` and `Dream_Padlock` are used by `WorldSkin.chains`; the `Debt_SchoolLoan_books<n>` meshes are picked by `Props.debtModel` by the number of books.
+Extra kit meshes: `Debt_SchoolLoan_books2` (`export/props/School Loan (2 books).fbx`), `Debt_SchoolLoan_books4` (`export/props/School Loan (4 books).fbx`), `Debt_SchoolLoan_books5` (`export/props/School Loan (5 books).fbx`), `Debt_SchoolLoan_books6` (`export/props/School Loan (6 books).fbx`), `Debt_SchoolLoan_books7` (`export/props/School Loan (7 books).fbx`), `Dream_ChainSegment` (`export/props/ChainSegment.fbx`), `Dream_Padlock` (`export/props/Padlock.fbx`), `Kid_v4` (`export/props/Kid (green).fbx`), `Maker_PokeBloxCard_case2` (`export/props/PokeBlox Card (case 2).fbx`), `Maker_PokeBloxCard_case3` (`export/props/PokeBlox Card (case 3).fbx`), `Maker_PokeBloxCard_case4` (`export/props/PokeBlox Card (case 4).fbx`), `Maker_ShinyPokeBloxCard_case1` (`export/props/Shiny PokeBlox Card (case 1).fbx`), `Maker_ShinyPokeBloxCard_case2` (`export/props/Shiny PokeBlox Card (case 2).fbx`), `Maker_ShinyPokeBloxCard_case4` (`export/props/Shiny PokeBlox Card (case 4).fbx`). `Dream_ChainSegment` and `Dream_Padlock` are used by `WorldSkin.chains`; `WorldSkin.debtTemplate` picks the `Debt_SchoolLoan_books<n>` meshes by the number of books, `WorldSkin.makerTemplate` the `..._case<n>` PokeBlox cards by the case color of the card's value, `WorldSkin.kidTemplate` `Kid_v4` for the 4th (green) shirt. These were not in the snapshot, but the game makes them.
 

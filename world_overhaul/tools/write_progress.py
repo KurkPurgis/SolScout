@@ -42,7 +42,18 @@ for i, name in enumerate(plan["order"], 1):
         i, name, templates.get(name, {}).get("category", e.get("category", "")), st,
         e.get("triangles", ""), e.get("bbox_max_dev", ""), note))
 lines[lines.index("## Models (in modelling order: most visible first)") + 1:1] = []
+# kit pieces that are not object types of their own (chain links, padlock, School Loan sizes, card cases, 4th kid)
+extra = sorted(n for n in status if n not in plan["order"])
+lines += ["", "## Extra kit models (pieces and variants the game makes, not object types of their own)", "",
+          "| template | category | status | triangles | bbox dev | note |", "|---|---|---|---|---|---|"]
+for name in extra:
+    e = status[name]
+    st = e.get("status", "not_started")
+    counts["extra " + st] = counts.get("extra " + st, 0) + 1
+    lines.append("| %s | %s | %s | %s | %s | %s |" % (name, e.get("category", ""), st, e.get("triangles", ""),
+                                                      e.get("bbox_max_dev", ""), e.get("review_note", "")))
 summary = ", ".join("%s: %d" % kv for kv in sorted(counts.items()))
+summary += " (%d kit models in all, %d FBX files)" % (len(status), sum(1 for e in status.values() if e.get("fbx")))
 lines.insert(lines.index("## Phases"), "## Summary\n\n" + summary + "\n")
 open(os.path.join(ROOT, "PROGRESS.md"), "w").write("\n".join(lines) + "\n")
 print("PROGRESS.md:", summary)

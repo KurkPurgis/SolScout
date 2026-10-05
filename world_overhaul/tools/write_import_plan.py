@@ -19,7 +19,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.normpath(os.path.join(HERE, ".."))
 sys.path.insert(0, HERE)
 
-from inventory import RULES  # noqa: E402
+from inventory import RULES, cf_inv, cf_mul, cf_pos  # noqa: E402
 
 CANONICAL_AREA = {"Lobby": "Lobby", "Plaza": "City_1", "AuctionRoom": "AuctionRoom_1", "PodiumRoom": "PodiumRoom_1"}
 # objects made by a builder function: the swap happens right after that function builds them
@@ -33,18 +33,49 @@ BUILDER = [
     ("Dream_BeachVilla", "Props.dream (Props.luau:604)", "right after `builder.build()`, before `GetBoundingBox`"),
     ("Dream_PrivateIsland", "Props.dream (Props.luau:604)", "right after `builder.build()`, before `GetBoundingBox`"),
 ]
-CONTEXT_HOOK = {
-    "Lobby": ("Lobby.luau `buildHall()` (line 316)", "at the end of `buildHall()`", "the hall origin CFrame"),
-    "Plaza": ("Plaza.new (Plaza.luau:21)", "at the end of `Plaza.new`", "the city base CFrame"),
-    "AuctionRoom": ("AuctionRoom.new (AuctionRoom.luau:30)", "at the end of `AuctionRoom.new`", "`self.base`"),
-    "PodiumRoom": ("PodiumRoom.new (PodiumRoom.luau:55)", "at the end of `PodiumRoom.new`", "`self.base`"),
-    "Workplace": ("Plots:buildWorkplace (Plots.luau:122)", "at the end of `buildWorkplace`", "`self.base`"),
-    "Furnish": ("Themes furniture (called from Plots:buildWorkplace)", "at the end of `buildWorkplace`",
-                "`self.base`"),
-    "Collection": ("Plots:syncCollection (Plots.luau:535)", "after the showcase table is made", "`self.base`"),
-    "DreamArea": ("Plots:syncDream / addChains (Plots.luau:447-520)", "after the pedestal / chains are made",
-                  "`self.base`"),
-}
+
+# Step 6 of IMPORT_PLAN.md: (file / function, where, the line)
+STEP6 = [
+    ("`Lobby.luau` `buildHall()`", "at the end",
+     "`WorldSkin.context(\"Lobby\", hallBase, folder)`"),
+    ("`World/Plaza.luau` `Plaza.new`", "before `return self`",
+     "`WorldSkin.context(\"Plaza\", base, folder)`"),
+    ("`World/AuctionRoom.luau` `AuctionRoom.new`", "before `return self`",
+     "`WorldSkin.context(\"AuctionRoom\", BASE, folder)`"),
+    ("`World/PodiumRoom.luau` `PodiumRoom.new`", "before `return self`",
+     "`WorldSkin.context(\"PodiumRoom\", base, folder)`"),
+    ("`World/Plots.luau` `Plots:buildWorkplace(theme)`", "at the end of the function (after the flower boxes)",
+     "`WorldSkin.context({ \"Workplace:\" .. theme.title, \"Furnish:\" .. theme.title }, self.base, "
+     "self.workplaceFolder)` (one call for both: they share the folder; the keys use the sign title, e.g. "
+     "`Workplace:BUS DEPOT`)"),
+    ("`World/Plots.luau` `Plots:syncCollection`", "right after the two `Props.box` lines of the showcase table "
+     "(before the loop)", "`WorldSkin.context(\"Collection\", self.base, self.collectionFolder)`"),
+    ("`World/Plots.luau` `Plots:syncDream`", "in the `else` branch (locked or won dream), right after the two "
+     "`Props.box` lines of the marble pedestal (before `Props.dream`)",
+     "`WorldSkin.context(\"DreamArea\", self.base, self.dreamFolder)`"),
+    ("`World/Plots.luau` `addChains(folder, model)`", "at the end",
+     "`WorldSkin.chains(folder)`: the chains **link by link** (your decision): `Dream_ChainSegment` pieces tiled "
+     "along every chain bar + `Dream_Padlock`"),
+    ("`World/Props.luau` `Props.kid`", "after `model.PrimaryPart = body`",
+     "`WorldSkin.object(model, WorldSkin.kidTemplate(shirtColor), base)` (4 shirts: `Kid`, `Kid_v2`, `Kid_v3`, "
+     "`Kid_v4`)"),
+    ("`World/Props.luau` `Props.moneyMaker`", "before `model.Parent = parent`",
+     "`WorldSkin.object(model, WorldSkin.makerTemplate(name, value), base)` (PokeBlox cards: the model with the "
+     "case color of `Props.cardCase(value)`)"),
+    ("`World/Props.luau` `Props.debtModel`", "before `model.Parent = parent`",
+     "`WorldSkin.stretched(model, WorldSkin.debtTemplate(debtName, amount), base)` (School Loan: the model with "
+     "the right number of books)"),
+    ("`World/Props.luau` `Props.dream`", "right after `local model = builder.build()`",
+     "`WorldSkin.object(model, \"Dream_\" .. model.Name, model:GetPivot())` (`model.Name` is `BeachVilla`, "
+     "`PrivateJet`...; not `dreamName`, which has spaces)"),
+    ("`World/AuctionRoom.luau` `AuctionRoom:highlight`", "inside the loop, after the two lines",
+     "`WorldSkin.setGlow(WorldSkin.nearest(self.folder, \"AuctionRoom_BidderDesk\", podium.Position), isTop)`: "
+     "the old desk (now hidden) turns gold Neon; the new desk shows its gold glow shell (`_Glow_GOLD_T100`)"),
+    ("`World/PodiumRoom.luau` `PodiumRoom:fillBoard`", "**replace** line 158 "
+     "`self.board.Transparency = if #standings > 3 then 0 else 1`",
+     "`WorldSkin.show(self.board, self.folder, \"PodiumRoom_Board\", #standings > 3)` (shows/hides the new "
+     "board and keeps the old one hidden; without WorldSkin it does exactly what line 158 did)"),
+]
 
 
 def load(*p):
@@ -73,10 +104,55 @@ def cf_lua(c):
 
 # owner decision 2026-10-05: the locked dream's chains are swapped link by link (kit pieces), not as one mesh
 LINK_BY_LINK = {"Dream_Chains"}
+# PokeBlox cards: the case color follows the card's value (Props.cardCase), so there is a kit model per case
+CARD_CASES = {
+    "PokeBlox Card": ["Maker_PokeBloxCard", "Maker_PokeBloxCard_case2", "Maker_PokeBloxCard_case3",
+                      "Maker_PokeBloxCard_case4"],
+    "Rare PokeBlox Card": ["Maker_RarePokeBloxCard", "Maker_RarePokeBloxCard_v2", "Maker_RarePokeBloxCard_v3",
+                           "Maker_RarePokeBloxCard_v4"],
+    "Shiny PokeBlox Card": ["Maker_ShinyPokeBloxCard_case1", "Maker_ShinyPokeBloxCard_case2",
+                            "Maker_ShinyPokeBloxCard", "Maker_ShinyPokeBloxCard_case4"],
+}
+CARD_DEFAULT_VALUE = {"PokeBlox Card": 500, "Rare PokeBlox Card": 8000, "Shiny PokeBlox Card": 20000}
+# Plots.luau KID_SHIRTS (Config.MaxChildren = 4)
+KID_SHIRTS = {"255,90,90": "Kid", "90,200,255": "Kid_v2", "255,210,60": "Kid_v3", "150,230,110": "Kid_v4"}
 
 
-def placements(objects, templates):
-    """context key -> list of {template, frame (12 numbers), scale}"""
+def world_parts():
+    return {e["id"]: e for e in load("data", "world_instances.json")}
+
+
+def context_group(o, parts):
+    """The dump group of the builder call that made this object's context (label == the context name,
+    innermost wins): {"label", "seq", "base"}. `base` is the CFrame that code builds with (self.base,
+    CFrame.new(origin), the hall origin...) - the same CFrame the Step 6 call passes to WorldSkin."""
+    hit = None
+    for g in parts[o["part_ids"][0]].get("groups") or []:
+        if g["label"] == o["context"]:
+            hit = g
+    if hit is None or not hit.get("base"):
+        raise SystemExit("no context group with a base for %s (%s)" % (o["key"], o["context"]))
+    return hit
+
+
+def resolve_alias(template, templates, aliases, status):
+    """-> (kit template, offset CFrame) for a context object. A same-size alias (e.g. the mirrored lobby palm)
+    uses its base model, moved by the difference of the two boxes; a stretched alias cannot be placed by context."""
+    if template in status:
+        return template, None
+    base = aliases.get(template)
+    if base is None or base not in status:
+        raise SystemExit("placement of %s: no kit model (not built, no alias)" % template)
+    a, b = templates[base], templates[template]
+    if any(abs(x - y) > 1e-3 for x, y in zip(a["size"], b["size"])):
+        raise SystemExit("placement of %s: alias of %s with another size" % (template, base))
+    d = [b["bbox_min"][i] - a["bbox_min"][i] for i in range(3)]
+    return base, (cf_pos(*d) if any(abs(v) > 1e-3 for v in d) else None)
+
+
+def placements(objects, templates, aliases, status, parts):
+    """context key -> list of {template, frame (12 numbers, relative to the context base), scale}.
+    One built instance of each context (the first plot / room / city met) is the pattern for all of them."""
     out, first = {}, {}
     for o in objects:
         ctx = o["context"]
@@ -86,19 +162,19 @@ def placements(objects, templates):
             continue  # made by a builder function: swapped there, not by context
         if o["template"] in LINK_BY_LINK:
             continue  # the chains are swapped link by link (WorldSkin.chains), not as one model
-        base = ctx.split(":")[0]
         area = o["area"].split(".")[0]
-        want = CANONICAL_AREA.get(base)
+        want = CANONICAL_AREA.get(ctx)
         if want and area != want:
             continue
-        if base in ("Collection", "DreamArea"):
-            ctx = base
-        key = ctx
-        where = o["key"].split("/")[0]  # one instance of the context (e.g. one plot) is the pattern for all
-        if first.setdefault(key, where) != where:
+        group = context_group(o, parts)
+        if first.setdefault(ctx, group["seq"]) != group["seq"]:
             continue
-        frame = [round(v, 3) + 0.0 for v in o["frame_in_ctx"]]
-        out.setdefault(key, []).append({"template": o["template"], "frame": frame, "scale": o.get("scale", 1.0)})
+        template, offset = resolve_alias(o["template"], templates, aliases, status)
+        frame = cf_mul(cf_inv(group["base"]), o["frame"])
+        if offset:
+            frame = cf_mul(frame, offset)
+        frame = [round(v, 3) + 0.0 for v in frame]
+        out.setdefault(ctx, []).append({"template": template, "frame": frame, "scale": o.get("scale", 1.0)})
     return out
 
 
@@ -108,15 +184,39 @@ SKIN_MODULE = r'''--[[
 
 	The old parts stay where they are and keep doing their job (collision, prompts, text, lights);
 	they only become invisible. The new MeshParts are visual only. Switch back: WorldSkin.ENABLED = false.
+	If a kit model is missing, WorldSkin warns and leaves that object (or that whole context) in the old look:
+	nothing is hidden without its replacement.
 ]]
 
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local ServerStorage = game:GetService("ServerStorage")
+
+local Config = require(ReplicatedStorage.Shared.Config)
+local Placements = require(script.Parent.WorldSkinPlacements)
 
 local WorldSkin = {}
 WorldSkin.ENABLED = true
 
-local Placements = require(script.Parent.WorldSkinPlacements)
-local Kit = ServerStorage:WaitForChild("WorldKit")
+local Kit = ServerStorage:FindFirstChild("WorldKit")
+if not Kit then
+	warn("WorldSkin: ServerStorage.WorldKit is missing (IMPORT_PLAN.md step 4) - the old look stays")
+	WorldSkin.ENABLED = false
+end
+
+-- how see-through a hidden glow shell (a `_T100` mesh) is when a script shows it: the game's NEON_SOFTNESS
+local SHELL_SHOWN = 0.35
+
+-- game name -> kit model (generated from the world data)
+--@NAME_TABLES@
+
+-- does the kit have this model? (warns when it does not)
+local function hasKit(name: string?): boolean
+	if Kit and name and Kit:FindFirstChild(name) then
+		return true
+	end
+	warn("WorldSkin: no kit model " .. tostring(name) .. " - the old look stays")
+	return false
+end
 
 -- hides the old parts under `root` (keeps collision, prompts, SurfaceGui text, lights)
 local function hideOld(root: Instance)
@@ -136,19 +236,36 @@ local function hideOld(root: Instance)
 end
 
 local function cloneKit(name: string): Model?
-	local kit = Kit:FindFirstChild(name)
-	if not kit then
-		warn("WorldSkin: no kit model " .. name)
+	if not hasKit(name) then
 		return nil
 	end
-	local copy = kit:Clone()
+	local copy = (Kit :: Instance):FindFirstChild(name):Clone()
 	for _, item in copy:GetDescendants() do
 		if item:IsA("BasePart") then
 			item:SetAttribute("WorldSkinNew", true)
+			-- "WorldSkinShown": the Transparency this part has when it is shown (setVisible / setGlow)
+			if item.Transparency >= 1 then
+				item:SetAttribute("WorldSkinShell", true) -- a glow shell, hidden until a script shows it
+				item:SetAttribute("WorldSkinShown", SHELL_SHOWN)
+			else
+				item:SetAttribute("WorldSkinShown", item.Transparency)
+			end
 			item:SetAttribute("BaseTransparency", item.Transparency)
 		end
 	end
 	return copy
+end
+
+-- the new parts under `root` (or `root` itself)
+local function newParts(root: Instance): { BasePart }
+	local out = {}
+	local list = if root:IsA("BasePart") then { root } else root:GetDescendants()
+	for _, item in list do
+		if item:IsA("BasePart") and item:GetAttribute("WorldSkinNew") then
+			table.insert(out, item)
+		end
+	end
+	return out
 end
 
 -- one kit model at `cframe` (the original object's frame), optional uniform scale
@@ -165,38 +282,54 @@ function WorldSkin.add(parent: Instance, name: string, cframe: CFrame, scale: nu
 	return copy
 end
 
--- everything a builder context made (lobby hall, plaza, auction room, podium room, workplace + furniture...)
-function WorldSkin.context(key: string, base: CFrame, root: Instance)
+-- everything a builder context made (lobby hall, plaza, auction room, podium room, workplace + furniture...).
+-- `keys`: one Placements key, or several that share `root` (the workplace and its furniture).
+function WorldSkin.context(keys: string | { string }, base: CFrame, root: Instance)
 	if not WorldSkin.ENABLED then
 		return
 	end
-	local list = Placements[key]
-	if not list then
+	local lists = {}
+	for _, key in (if type(keys) == "table" then keys else { keys }) do
+		local list = Placements[key]
+		if list then
+			for _, p in list do
+				if not hasKit(p.template) then
+					return -- keep the whole old look here, so nothing goes missing
+				end
+			end
+			table.insert(lists, list)
+		end
+	end
+	if #lists == 0 then
 		return
 	end
 	hideOld(root)
-	for _, p in list do
-		WorldSkin.add(root, p.template, base * p.frame, p.scale)
+	for _, list in lists do
+		for _, p in list do
+			WorldSkin.add(root, p.template, base * p.frame, p.scale)
+		end
 	end
 end
 
--- one named object (Kid, Money Maker, dream, tree): the kit model replaces its look
-function WorldSkin.object(model: Instance, template: string, base: CFrame)
-	if not WorldSkin.ENABLED then
+-- one named object (kid, Money Maker, dream): the kit model replaces its look
+function WorldSkin.object(model: Instance, template: string?, base: CFrame)
+	if not WorldSkin.ENABLED or not hasKit(template) then
 		return
 	end
 	hideOld(model)
-	WorldSkin.add(model, template, base)
+	WorldSkin.add(model, template :: string, base)
 end
 
 -- a debt: the code sizes it by the amount, so the kit model is stretched to the old parts' box
 -- (all kit meshes are axis-aligned with `base`, so a per-axis stretch is exact)
-function WorldSkin.stretched(model: Model, template: string, base: CFrame)
-	if not WorldSkin.ENABLED then
+function WorldSkin.stretched(model: Model, template: string?, base: CFrame)
+	if not WorldSkin.ENABLED or not hasKit(template) then
 		return
 	end
-	local kit = Kit:FindFirstChild(template)
-	if not kit then
+	local kit = (Kit :: Instance):FindFirstChild(template :: string)
+	local kitLo, kitHi = kit:GetAttribute("BoxMin"), kit:GetAttribute("BoxMax") -- set in step 4
+	if not kitLo or not kitHi then
+		warn("WorldSkin: kit model " .. tostring(template) .. " has no BoxMin/BoxMax (step 4) - the old look stays")
 		return
 	end
 	-- the old box in base space
@@ -214,9 +347,8 @@ function WorldSkin.stretched(model: Model, template: string, base: CFrame)
 			end
 		end
 	end
-	local kitLo, kitHi = kit:GetAttribute("BoxMin"), kit:GetAttribute("BoxMax") -- set in step 4
-	local copy = cloneKit(template)
-	if not copy or not kitLo then
+	local copy = cloneKit(template :: string)
+	if not copy then
 		return
 	end
 	hideOld(model)
@@ -238,11 +370,12 @@ end
 -- Dream_Padlock. Works for any dream size, because it follows the bars the game actually made.
 local SEGMENT_LENGTH = 3
 function WorldSkin.chains(folder: Instance)
-	if not WorldSkin.ENABLED then
+	if not WorldSkin.ENABLED or not hasKit("Dream_ChainSegment") or not hasKit("Dream_Padlock") then
 		return
 	end
 	for _, part in folder:GetChildren() do
-		if part:IsA("BasePart") and not part:GetAttribute("WorldSkinNew") then
+		-- "WorldSkinDone": this bar already has its pieces (a second call adds nothing)
+		if part:IsA("BasePart") and not part:GetAttribute("WorldSkinNew") and not part:GetAttribute("WorldSkinDone") then
 			if part.Name == "Chain" then
 				local length = part.Size.Z
 				local count = math.max(1, math.round(length / SEGMENT_LENGTH))
@@ -251,9 +384,11 @@ function WorldSkin.chains(folder: Instance)
 					WorldSkin.add(folder, "Dream_ChainSegment", part.CFrame * CFrame.new(0, 0, -length / 2 + index * step),
 						step / SEGMENT_LENGTH)
 				end
+				part:SetAttribute("WorldSkinDone", true)
 				hideOld(part)
 			elseif part.Name == "PadlockBody" then
 				WorldSkin.add(folder, "Dream_Padlock", part.CFrame)
+				part:SetAttribute("WorldSkinDone", true)
 				hideOld(part)
 			elseif part.Name == "PadlockHole" or part.Name == "PadlockShackle" then
 				hideOld(part)
@@ -262,17 +397,118 @@ function WorldSkin.chains(folder: Instance)
 	end
 end
 
--- shows/hides the new look of an object whose old part the game shows/hides (e.g. the podium board)
-function WorldSkin.setVisible(root: Instance, visible: boolean)
-	for _, item in root:GetDescendants() do
-		if item:IsA("BasePart") and item:GetAttribute("WorldSkinNew") then
-			item.Transparency = if visible then (item:GetAttribute("BaseTransparency") or 0) else 1
+-- shows/hides the whole new look of an object whose old part the game shows/hides (the podium board).
+-- `root`: the kit copy (a Model) or one of its parts; nil (no kit copy, e.g. WorldSkin off) does nothing.
+function WorldSkin.setVisible(root: Instance?, visible: boolean)
+	if not root then
+		return
+	end
+	for _, item in newParts(root) do
+		item.Transparency = if visible then (item:GetAttribute("WorldSkinShown") or 0) else 1
+	end
+end
+
+-- turns the hidden glow shell (`_Glow_<COLOR>_T100`) of a kit copy on/off; the rest of the copy stays as it is
+function WorldSkin.setGlow(root: Instance?, on: boolean)
+	if not root then
+		return
+	end
+	for _, item in newParts(root) do
+		if item:GetAttribute("WorldSkinShell") then
+			item.Transparency = if on then SHELL_SHOWN else 1
 		end
 	end
 end
 
+-- an object the game shows/hides (the podium board, PodiumRoom:fillBoard): shows/hides the kit copy named
+-- `template` under `root` and keeps the old part hidden; without a kit copy (WorldSkin off) the old part as before
+function WorldSkin.show(oldPart: BasePart, root: Instance, template: string, visible: boolean)
+	local copy = root:FindFirstChild(template)
+	if copy and copy:IsA("Model") then
+		oldPart.Transparency = 1
+		WorldSkin.setVisible(copy, visible)
+	else
+		oldPart.Transparency = if visible then 0 else 1
+	end
+end
+
+-- the kit copy named `template` under `root` whose pivot is closest to `position` (e.g. the desk of podium i)
+function WorldSkin.nearest(root: Instance, template: string, position: Vector3): Model?
+	local best, bestDistance = nil, math.huge
+	for _, item in root:GetChildren() do
+		if item:IsA("Model") and item.Name == template then
+			local distance = (item:GetPivot().Position - position).Magnitude
+			if distance < bestDistance then
+				best, bestDistance = item, distance
+			end
+		end
+	end
+	return best
+end
+
+-- the kit model for a Money Maker / investment (Props.moneyMaker): PokeBlox cards by their case (value)
+function WorldSkin.makerTemplate(name: string, value: number?): string
+	local cases = CARD_CASES[name]
+	if cases then
+		local worth = value or CARD_DEFAULT_VALUE[name] -- the builders' own default (Props.luau makerBuilders)
+		for index, case in Config.Investments.CardCases do
+			if worth < case.below then
+				return cases[index]
+			end
+		end
+		return cases[#cases]
+	end
+	return MAKERS[name] or "Maker_UnknownMaker" -- unknown names get the golden box (Props.moneyMaker)
+end
+
+-- the kit model for a debt (Props.debtModel); School Loan: one model per number of books
+function WorldSkin.debtTemplate(debtName: string, amount: number): string
+	if debtName == "School Loan" then
+		local books = math.clamp(2 + math.floor(amount / 15000), 2, 7) -- Props.luau debtBuilders["School Loan"]
+		return if books == 3 then "Debt_SchoolLoan" else "Debt_SchoolLoan_books" .. books
+	end
+	return DEBTS[debtName] or "Debt_OtherDebt" -- unknown names get the debt crate (Props.debtCrate)
+end
+
+-- the kit model for a kid (Props.kid), by shirt color (Plots.luau KID_SHIRTS)
+function WorldSkin.kidTemplate(shirtColor: Color3): string
+	local key = string.format("%d,%d,%d", math.round(shirtColor.R * 255), math.round(shirtColor.G * 255),
+		math.round(shirtColor.B * 255))
+	return KIDS[key] or "Kid"
+end
+
 return WorldSkin
 '''
+
+
+def name_tables(templates, status):
+    """Luau tables: game name -> kit model, for the builder calls (makers, debts, kids, PokeBlox cases)."""
+    makers, debts = {}, {}
+    for name, t in sorted(templates.items()):
+        if "_v" in name or name not in status:
+            continue
+        if name.startswith("Maker_"):
+            makers[t["roblox_name"]] = name
+        elif name.startswith("Debt_"):
+            debts[t["roblox_name"]] = name
+    for game_name in CARD_CASES:
+        makers.pop(game_name, None)
+    for needed in [n for c in CARD_CASES.values() for n in c] + list(KID_SHIRTS.values()):
+        if needed not in status:
+            raise SystemExit("name table: no kit model " + needed)
+    L = ["local MAKERS = {"]
+    L += ['\t["%s"] = "%s",' % kv for kv in sorted(makers.items())]
+    L += ["}", "local DEBTS = {"]
+    L += ['\t["%s"] = "%s",' % kv for kv in sorted(debts.items()) if kv[0] != "School Loan"]
+    L += ["}", "-- in Config.Investments.CardCases order: COMMON, RARE, EPIC, LEGENDARY", "local CARD_CASES = {"]
+    for game_name, names in CARD_CASES.items():
+        L.append('\t["%s"] = { %s },' % (game_name, ", ".join('"%s"' % n for n in names)))
+    L += ["}", "local CARD_DEFAULT_VALUE = {"]
+    L += ['\t["%s"] = %d,' % kv for kv in CARD_DEFAULT_VALUE.items()]
+    L += ["}", "local KIDS = {"]
+    L += ['\t["%s"] = "%s",' % kv for kv in KID_SHIRTS.items()]
+    L.append("}")
+    return "\n".join(L)
 
 
 def main():
@@ -283,7 +519,7 @@ def main():
     plan = load("data", "plan.json")
     aliases = plan["aliases"]
 
-    places = placements(objects, templates)
+    places = placements(objects, templates, aliases, status, world_parts())
     os.makedirs(os.path.join(ROOT, "export", "roblox"), exist_ok=True)
     json.dump(places, open(os.path.join(ROOT, "export", "placements.json"), "w"), indent=1)
     lua = ["-- generated by world_overhaul/tools/write_import_plan.py: every kit model placement,",
@@ -296,7 +532,8 @@ def main():
         lua.append("\t},")
     lua.append("}")
     open(os.path.join(ROOT, "export", "roblox", "WorldSkinPlacements.luau"), "w").write("\n".join(lua) + "\n")
-    open(os.path.join(ROOT, "export", "roblox", "WorldSkin.luau"), "w").write(SKIN_MODULE)
+    open(os.path.join(ROOT, "export", "roblox", "WorldSkin.luau"), "w").write(
+        SKIN_MODULE.replace("--@NAME_TABLES@", name_tables(templates, status)))
 
     L = []
     w = L.append
@@ -317,7 +554,8 @@ def main():
     w("")
     w("1. Make a git branch in the game repo (e.g. `new-look`). Do the steps below in a copy of the place, not the "
       "live game.")
-    w("2. You will add 2 files to `src/` and ~12 one-line calls; everything else happens in Studio.")
+    w("2. You will add 2 files to `src/`, a `require` line in 6 files and %d one-line calls (Step 6; one of them "
+      "replaces a line); everything else happens in Studio." % len(STEP6))
     w("")
     w("## Step 2 - upload the palette (2 images)")
     w("")
@@ -326,7 +564,10 @@ def main():
     w("")
     w("## Step 3 - import the meshes")
     w("")
-    w("Import every file in `world_overhaul/export/<category>/*.fbx` with the 3D Importer (File > Import 3D). "
+    fbx_count = sum(1 for n, e in status.items() if e.get("fbx") and n not in LINK_BY_LINK)
+    w("Import every file in `world_overhaul/export/<category>/*.fbx` - %d files: all of them except "
+      "`export/props/Dream_Chains.fbx`, the one-piece chains that your link-by-link decision replaced - "
+      "with the 3D Importer (File > Import 3D). " % fbx_count +
       "Settings ([Roblox: Blender to Studio settings](https://github.com/Roblox/creator-docs/blob/main/content/en-us/art/blender.md)):")
     w("")
     w("| section | setting | value | why |")
@@ -368,11 +609,12 @@ def main():
     w("\t\t\tp.CollisionFidelity = Enum.CollisionFidelity.Box")
     w("\t\t\tp.Massless = true")
     w("\t\t\tp.CastShadow = p.Size.X * p.Size.Y * p.Size.Z > 6 -- tiny details cast no shadow")
-    w("\t\t\tlocal glow = p.Name:match(\"_Glow_([A-Z_]+)\")")
+    w("\t\t\tlocal glow = p.Name:match(\"_Glow_([%w_]+)$\")")
     w("\t\t\tif glow then")
     w("\t\t\t\tlocal color, t = glow:match(\"^(.-)_T(%d+)$\")")
     w("\t\t\t\tp.Material = Enum.Material.Neon")
-    w("\t\t\t\tp.Color = GLOW[color or glow]")
+    w("\t\t\t\tlocal c = GLOW[color or glow]")
+    w("\t\t\t\tif c then p.Color = c else warn(\"no glow color for \" .. p:GetFullName()) end")
     w("\t\t\t\tp.Transparency = if t then tonumber(t) / 100 else 0.35 -- the game's NEON_SOFTNESS")
     w("\t\t\t\tp.CastShadow = false")
     w("\t\t\telseif p.Name:match(\"_Glass$\") then")
@@ -396,35 +638,43 @@ def main():
     w("")
     w("## Step 5 - add the two modules")
     w("")
+    from verify_placements import verify  # here: it imports this file
+    check = verify(places, quiet=True)
+    if check["mismatches"]:
+        raise SystemExit("verify_placements: %d mismatches - fix the placements first" % check["mismatches"])
+    kinds = check["instances"]
     w("Copy `world_overhaul/export/roblox/WorldSkin.luau` and `WorldSkinPlacements.luau` to "
       "`src/server/World/`. `WorldSkinPlacements` is generated from the world data: every kit model's frame "
-      "relative to the base CFrame of the code that builds it. Checked with `tools/verify_placements.py`: for all 35 "
-      "places the game builds (4 plazas, 9 workplaces, 4 auction rooms, 4 podium rooms, the lobby, furniture, "
-      "showcases), the list puts exactly the objects that are there, at exactly their frames (0 mismatches).")
+      "relative to the base CFrame of the code that builds it (one built copy of each context is the pattern). "
+      "Checked with `tools/verify_placements.py`, independently: it takes each place's base CFrame from the world "
+      "dump and checks, in world space, that the list puts exactly the objects that are there, turned the same way, "
+      "with the kit's box on the object's box. All %d places the snapshot built pass (0 mismatches): %s. The chains "
+      "are not in this check: `WorldSkin.chains` follows the chain bars the game makes (tested in "
+      "`tools/luau/test_worldskin_chains.luau`)." % (check["checked"], ", ".join(
+          "%d %s" % (n, label) for n, label in [
+              (kinds["Workplace"], "workplaces"),
+              (kinds["Furnish"], "furniture sets"), (kinds["Plaza"], "plazas"),
+              (kinds["AuctionRoom"], "auction rooms"), (kinds["PodiumRoom"], "podium rooms"),
+              (kinds["Collection"], "showcases"), (kinds["DreamArea"], "dream pedestals"),
+              (kinds["Lobby"], "lobby")])))
+    w("")
+    w("`WorldSkin` never hides anything without its replacement: if a kit model is missing from `WorldKit`, it warns "
+      "in the output and leaves that object (or that whole context) in the old look. Without a `WorldKit` folder it "
+      "switches itself off.")
     w("")
     w("## Step 6 - the calls (one line each)")
     w("")
-    w("`local WorldSkin = require(script.Parent.WorldSkin)` at the top of each file (path as needed), then:")
+    w("`local WorldSkin = require(script.Parent.WorldSkin)` at the top of `Plaza.luau`, `AuctionRoom.luau`, "
+      "`PodiumRoom.luau`, `Plots.luau` and `Props.luau` (all in `World/`), and "
+      "`local WorldSkin = require(script.Parent.World.WorldSkin)` in `Lobby.luau` (adjust to your Rojo tree), then:")
     w("")
-    w("| file / function | where | add |")
+    w("| file / function | where | line |")
     w("|---|---|---|")
-    w("| `Lobby.luau` `buildHall()` | at the end | `WorldSkin.context(\"Lobby\", <hall origin CFrame>, <hall folder>)` |")
-    w("| `World/Plaza.luau` `Plaza.new` | at the end | `WorldSkin.context(\"Plaza\", <city base>, <city plaza folder>)` |")
-    w("| `World/AuctionRoom.luau` `AuctionRoom.new` | at the end | `WorldSkin.context(\"AuctionRoom\", self.base, <room folder>)` |")
-    w("| `World/PodiumRoom.luau` `PodiumRoom.new` | at the end | `WorldSkin.context(\"PodiumRoom\", self.base, <room folder>)` |")
-    w("| `World/Plots.luau` `Plots:buildWorkplace(theme)` | at the end | `WorldSkin.context(\"Workplace:\" .. theme.title, self.base, self.workplaceFolder)` and `WorldSkin.context(\"Furnish:\" .. theme.title, self.base, self.workplaceFolder)` (the keys use the sign title, e.g. `Workplace:BUS DEPOT`) |")
-    w("| `World/Plots.luau` `Plots:syncCollection` | after the showcase table is made | `WorldSkin.context(\"Collection\", self.base, <showcase part or folder>)` |")
-    w("| `World/Plots.luau` `syncDream` (Fast Track: locked or won dream) | at the end of the `else` branch (after the pedestal, the dream and its label) | `WorldSkin.context(\"DreamArea\", self.base, self.dreamFolder)` (the marble pedestal) |")
-    w("| `World/Plots.luau` `addChains(folder, model)` | at the end | `WorldSkin.chains(folder)`: the chains **link by link** (your decision): `Dream_ChainSegment` pieces tiled along every chain bar + `Dream_Padlock` |")
-    w("| `World/Props.luau` `Props.kid` | before `return model` | `WorldSkin.object(model, <Kid / Kid_v2 / Kid_v3 by shirt color>, base)` |")
-    w("| `World/Props.luau` `Props.moneyMaker` | before `model.Parent = parent` | `WorldSkin.object(model, <template for name>, base)` (game name -> template in the table below; Rare PokeBlox Card: `_v2`..`_v4` by its case color, `Props.cardCase(value)`) |")
-    w("| `World/Props.luau` `Props.debtModel` | before `model.Parent = parent` | `WorldSkin.stretched(model, <template for debtName>, base)` (School Loan: `Debt_SchoolLoan_books<n>`) |")
-    w("| `World/Props.luau` `Props.dream` | right after `builder.build()` | `WorldSkin.object(model, \"Dream_\" .. <name>, model:GetPivot())` |")
-    w("| `World/AuctionRoom.luau` `AuctionRoom:highlight` | inside the loop | `WorldSkin.setVisible(<desk glow shell>, isTop)`: the old desk turns gold Neon, the new desk has a hidden gold shell (`_Glow_GOLD_T100`) for that |")
-    w("| `World/PodiumRoom.luau` `fillBoard` (line 158) | next to `self.board.Transparency = ...` | `WorldSkin.setVisible(<board kit copy>, #standings > 3)` |")
+    for row in STEP6:
+        w("| %s | %s | %s |" % row)
     w("")
     w("Trees need no call of their own: `Props.tree` puts its parts straight into the plaza folder, so the "
-      "`Plaza` context hides them and places the `Tree` models with the rest of the plaza.")
+      "`Plaza` context hides them and places the 8 `Tree` models around the plaza with the rest of it.")
     w("")
     w("Why these places: the ghost FOR SALE copies (`Props.makeGhost`), the 0.4x collection minis "
       "(`model:ScaleTo(0.4)`), the floating dreams (`ScaleTo` + `PivotTo`), the kids' hop and the dream spin "
@@ -440,10 +690,13 @@ def main():
         "Buy a Money Maker: it stands on the lot, the next one stacks on top at the same height as before "
         "(`GetBoundingBox`), its label floats at the same spot.",
         "The FOR SALE copy looks see-through (ForceField) - also the new meshes.",
-        "Add investments: the minis in the showcase are 0.4x and sit on the table.",
+        "Add investments: the minis in the showcase are 0.4x and sit on the table; a PokeBlox card whose value "
+        "crosses a case boundary (1000 / 10000 / 30000) changes its case color.",
+        "Have 4 kids: all 4 have the new look (red, blue, yellow, green shirts) and still hop.",
         "Your dream floats and spins; it fades in/out as before (the old parts must stay hidden while it fades).",
         "Escape: the workplace turns into the Fast Track version (new look too), pedestal + chains.",
-        "Auction: the top bidder's desk glows gold. Podium: the board shows only with more than 3 players.",
+        "Auction: only the top bidder's desk glows gold. Podium: the board shows only with more than 3 players.",
+        "Output: no `WorldSkin:` warnings (a warning names a kit model that is missing from `WorldKit`).",
         "Text: every sign still shows its text (prices, names, job names) in front of the new boards.",
         "Performance: open the MicroProfiler / Stats on a phone-sized client: triangles and draw calls.",
     ]:
@@ -503,8 +756,10 @@ def main():
     if extra:
         w("")
         w("Extra kit meshes: " + ", ".join("`%s` (`%s`)" % (n, status[n].get("fbx", "")) for n in extra) + ". "
-          "`Dream_ChainSegment` and `Dream_Padlock` are used by `WorldSkin.chains`; the `Debt_SchoolLoan_books<n>` "
-          "meshes are picked by `Props.debtModel` by the number of books.")
+          "`Dream_ChainSegment` and `Dream_Padlock` are used by `WorldSkin.chains`; `WorldSkin.debtTemplate` picks "
+          "the `Debt_SchoolLoan_books<n>` meshes by the number of books, `WorldSkin.makerTemplate` the "
+          "`..._case<n>` PokeBlox cards by the case color of the card's value, `WorldSkin.kidTemplate` `Kid_v4` "
+          "for the 4th (green) shirt. These were not in the snapshot, but the game makes them.")
     w("")
     open(os.path.join(ROOT, "IMPORT_PLAN.md"), "w").write("\n".join(L) + "\n")
     print("IMPORT_PLAN.md written,", sum(len(v) for v in places.values()), "context placements in", len(places),

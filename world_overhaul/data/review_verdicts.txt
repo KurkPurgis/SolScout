@@ -6,14 +6,21 @@ Maker_GoldCoin|done|icon coin on a stand
 Maker_GoldBar|done|icon gold bars stacked 3-2-1
 Maker_GoldTreasureChest|done|lock moved inside the box
 Maker_PokeBloxCard|done|icon card in a glass case
-Maker_ShinyPokeBloxCard|done|glowing pink case
+Maker_ShinyPokeBloxCard|done|glowing card, purple (EPIC) case
 Maker_RarePokeBloxCard|done|same model, case color per rarity
 Maker_RarePokeBloxCard_v2|done|same model, case color per rarity
 Maker_RarePokeBloxCard_v3|done|same model, case color per rarity
 Maker_RarePokeBloxCard_v4|done|same model, case color per rarity
+Maker_PokeBloxCard_case2|done|RARE (blue) case: the card's value moves with the market, so the case color changes
+Maker_PokeBloxCard_case3|done|EPIC (purple, glowing) case
+Maker_PokeBloxCard_case4|done|LEGENDARY (gold, glowing) case
+Maker_ShinyPokeBloxCard_case1|done|COMMON (steel) case
+Maker_ShinyPokeBloxCard_case2|done|RARE (blue) case
+Maker_ShinyPokeBloxCard_case4|done|LEGENDARY (gold, glowing) case
 Kid|done|hair fixed (was z-fighting), smaller eyes
 Kid_v2|done|blue shirt variant
 Kid_v3|done|yellow shirt variant
+Kid_v4|done|green shirt: the 4th kid (KID_SHIRTS[4], not in the snapshot)
 Debt_CreditCard|done|rebuilt at the copy's size (amount scale)
 Debt_CarLoan|done|grey toy car with red LOAN tag
 Debt_SchoolLoan|done|cap lowered to the original height
@@ -73,7 +80,7 @@ Collection_Showcase|done|wooden table with drawers and gold knobs, gold top at 2
 AuctionRoom_Stage|done|wooden stage with a glowing gold edge and stars
 AuctionRoom_BidderDesk|done|wooden desk with a gold line; hidden gold glow shell for the top bidder
 PodiumRoom_Block|done|gold / white / bronze blocks with stars, tops at 9, 7, 5.5
-Dream_Chains|done|chunky chain links along every original bar, icon padlock; how to import is question 2
+Dream_Chains|done|reference look only, not imported: your decision (2026-10-05) is link by link (Dream_ChainSegment + Dream_Padlock, WorldSkin.chains)
 Lobby_Walls|done|navy walls, gold caps, dark wainscot and a gold rail; corners without overlaps
 Lobby_Window|done|white frame, glass, cross bars in non-overlapping pieces
 AuctionRoom_Shell|done|wood plank floor, dark red walls, slate ceiling

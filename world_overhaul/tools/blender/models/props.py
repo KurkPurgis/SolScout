@@ -249,11 +249,15 @@ def card_case_color(name):
     return ("STEEL", False)
 
 
-def pokeblox_card(m, front, shiny, template):
+CARD_CASES = [("STEEL", False), ("BLUE", False), ("PURPLE", True), ("GOLD", True)]  # Config CardCases 1..4
+
+
+def pokeblox_card(m, front, shiny, template, case_index=None):
     """Props.luau pokeBloxCard(): a big card on a stand in a glass case, tilted back 8 degrees.
     The card is the icon card (orange card, picture window with a white ball). The title and the rarity word
-    stay on the old sign parts (SurfaceGui text)."""
-    case, glow = card_case_color(template)
+    stay on the old sign parts (SurfaceGui text). case_index (1..4) overrides the case of the template: the
+    game colors the case by the card's value (Props.cardCase), so every card has a model per case."""
+    case, glow = CARD_CASES[case_index - 1] if case_index else card_case_color(template)
     m.box((3.6, 0.4, 1.4), (0, 0, 0), "CHARCOAL", bevel="S", bottom=True)
     with m.at((0, 2.6, 0), pitch=-8):
         m.box((2.8, 4.0, 0.3), (0, 0, 0), "GOLD", bevel="S")
@@ -345,6 +349,14 @@ for _t, _front, _shiny, _export in (("Maker_PokeBloxCard", "SKY", False, "PokeBl
                                     ("Maker_ShinyPokeBloxCard", "GLOW_COOL", True, "Shiny PokeBlox Card")):
     MODELS[_t] = {"build": (lambda f, s, t: (lambda m: pokeblox_card(m, f, s, t)))(_front, _shiny, _t),
                   "export": _export}
+# the cases the snapshot did not show (a card's value moves with the market, so its case color changes)
+for _t, _front, _shiny, _export, _cases in (("Maker_PokeBloxCard", "SKY", False, "PokeBlox Card", (2, 3, 4)),
+                                            ("Maker_ShinyPokeBloxCard", "GLOW_COOL", True, "Shiny PokeBlox Card",
+                                             (1, 2, 4))):
+    for _c in _cases:
+        MODELS["%s_case%d" % (_t, _c)] = {
+            "build": (lambda f, s, t, c: (lambda m: pokeblox_card(m, f, s, t, c)))(_front, _shiny, _t, _c),
+            "export": "%s (case %d)" % (_export, _c), "template": _t}
 
 BUILDING_MAKERS = {
     "Maker_Apartment": (apartment, "Apartment"), "Maker_CarWash": (car_wash, "Car Wash"),
@@ -565,6 +577,8 @@ MODELS.update({
     "Kid": {"build": lambda m: kid(m, kid_shirt("Kid")), "export": "Kid"},
     "Kid_v2": {"build": lambda m: kid(m, kid_shirt("Kid_v2")), "export": "Kid (blue)"},
     "Kid_v3": {"build": lambda m: kid(m, kid_shirt("Kid_v3")), "export": "Kid (yellow)"},
+    # the 4th kid (Plots.luau KID_SHIRTS[4], green): not in the snapshot, but Config.MaxChildren = 4 makes it
+    "Kid_v4": {"build": lambda m: kid(m, "GREEN"), "export": "Kid (green)", "template": "Kid"},
     "Debt_CreditCard": {"build": debt_credit_card, "export": "Credit Card"},
     "Debt_CarLoan": {"build": debt_car_loan, "export": "Car Loan"},
     "Debt_SchoolLoan": {"build": debt_school_loan, "export": "School Loan"},

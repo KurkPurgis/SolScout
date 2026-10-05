@@ -11,10 +11,15 @@ The fixed text (decisions for you, what could not be done) is in this file.
 import glob
 import json
 import os
+import sys
 import time
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.normpath(os.path.join(HERE, ".."))
+sys.path.insert(0, HERE)
+
+from verify_placements import verify  # noqa: E402
+from write_import_plan import LINK_BY_LINK  # noqa: E402
 
 
 def load(*p):
@@ -38,15 +43,16 @@ ANSWERS = {
        "piece along every chain bar the game makes and puts `Dream_Padlock` on the padlock; the one-piece "
        "`Dream_Chains` model is not imported (IMPORT_PLAN step 6).",
     3: "Keep the warm glow. No change.",
-    5: "Close enough. The listed exceptions stay as they are.",
+    5: "Close enough. The %(n_exceptions)d exceptions stay as they are: %(exception_names)s.",
 }
 
 QUESTIONS = [
     "**Outline or no outline?** The world has no outline (the icons have one). One building with and without an "
     "outline is in `renders/outline_comparison.png`. An outline doubles the triangles of every model and Roblox has "
     "no cheap way to draw it, so I recommend: no outline.",
-    "**Chains on the locked dream.** The game builds them link by link in code. I made one finished chain model "
-    "AND two kit pieces (one link, the padlock) - see DECISIONS #15. Which one do you want to use?",
+    "**Chains on the locked dream.** The game builds them bar by bar in code. I made one finished chain model "
+    "AND two kit pieces (a chain segment of 2 links, the padlock) - see DECISIONS #15. Which one do you want "
+    "to use?",
     "**Lit windows.** Workplace and Money Maker windows that were Neon in the game are still Neon (warm yellow). "
     "In bright daylight they look almost white. Keep them glowing, or switch them to the shiny blue WINDOW color "
     "(the icon look)?",
@@ -78,9 +84,11 @@ NOT_DONE = [
     "**Particle effects, sounds, UI and the players' avatars** are not part of this overhaul. The ball and chain "
     "on a player's leg (`DebtChain.luau`) is a physics object attached to the character during a match; it is "
     "not part of the world and was left as it is.",
-    "**The swap itself was not run** (not allowed tonight). What I could check without Studio: the generated "
-    "`WorldSkin` modules compile with the Luau compiler, and the placement lists reproduce all 35 places the game "
-    "builds exactly (`tools/verify_placements.py`).",
+    "**The swap itself was not run** (not allowed tonight). What I could check without Studio: the placement "
+    "list puts exactly the right objects in all %(places)d places the snapshot built "
+    "(`tools/verify_placements.py`, world space, independent of the generator), and `WorldSkin` and the Step 4 "
+    "script run correctly on the Roblox copy (`tools/luau/test_worldskin_chains.luau`, "
+    "`tools/luau/test_worldskin_helpers.luau`).",
 ]
 
 
@@ -101,6 +109,8 @@ def table_rows(status, templates, refs, plan):
         else:
             st = {"done": "done", "needs_review": "**NEEDS REVIEW**", "built": "built (not reviewed)"}.get(
                 e.get("status"), e.get("status"))
+            if name in LINK_BY_LINK:
+                st += ", **not imported** (replaced link by link, question 2)"
             tris = "%s / %s" % (e.get("triangles", ""), e.get("budget", ""))
             fbx = e.get("fbx", "")
         sref = "yes" if name in refs["script_referenced"] else ""
@@ -122,7 +132,13 @@ def main():
     built = [n for n, e in status.items() if e.get("fbx")]
     done = [n for n, e in status.items() if e.get("status") == "done"]
     review = [n for n, e in status.items() if e.get("status") == "needs_review"]
-    total_tris = sum(e.get("triangles", 0) for e in status.values())
+    imported = {n: e for n, e in status.items() if e.get("fbx") and n not in LINK_BY_LINK}
+    total_tris = sum(e.get("triangles", 0) for e in imported.values())
+    biggest = max(imported, key=lambda n: imported[n].get("triangles", 0))
+    places = verify(load("export", "placements.json"), quiet=True)
+    if places["mismatches"]:
+        raise SystemExit("verify_placements: %d mismatches" % places["mismatches"])
+    open_questions = [i for i in range(1, len(QUESTIONS) + 1) if i not in ANSWERS]
     lines = []
     w = lines.append
     w("# Rags to Riches - new look for the whole world (report)")
@@ -136,18 +152,28 @@ def main():
     own = sum(1 for n in plan["order"] if n in status and status[n].get("fbx"))
     copies = sum(1 for n in plan["order"] if n not in status and n in plan["aliases"])
     w("- All **%d object types** are covered: %d have their own model and %d are size or color copies that reuse "
-      "one. With %d extra pieces (book-stack sizes, chain link, padlock) that is **%d FBX models**; %d are "
-      "reviewed and done%s." % (own + copies, own, copies, len(built) - own, len(built), len(done),
-                                (", %d need your review (listed below)" % len(review)) if review else
-                                ", none is left waiting for review"))
-    w("- Counted once each, the models have %d triangles together; the biggest single model has %d (Roblox "
-      "allows 20,000 per mesh)." % (total_tris, max(e.get("triangles", 0) for e in status.values())))
+      "one. With %d extra kit models (book-stack sizes, chain segment, padlock, PokeBlox card cases, the 4th kid) "
+      "that is **%d FBX models**; %d are reviewed and done%s. %d of them are imported: all but the one-piece "
+      "`Dream_Chains`, which your answer to question 2 replaced link by link." % (
+          own + copies, own, copies, len(built) - own, len(built), len(done),
+          (", %d need your review (listed below)" % len(review)) if review else ", none is left waiting for review",
+          len(imported)))
+    w("- Counted once each, the %d imported models have %d triangles together; the biggest single model "
+      "(`%s`) has %d (Roblox allows 20,000 per mesh)." % (len(imported), total_tris, biggest,
+                                                        imported[biggest].get("triangles", 0)))
     w("- **Nothing in the game was changed.** Every new model has the same name, position and rotation as the "
       "original object and the same size (within 0.15 studs, exceptions in question 5), so swapping it in is "
       "mechanical (`IMPORT_PLAN.md`, not executed).")
     w("- The whole world uses **one small texture** (`palette/palette_color.png`, 32 colors). See `STYLE_GUIDE.md`.")
-    w("- %d decisions I took on my own are in `DECISIONS.md` (one line of reasoning each); the ones I need you "
-      "for are below." % n_decisions)
+    if open_questions:
+        listed = ", ".join(str(i) for i in open_questions[:-1]) + (" and " if len(open_questions) > 1 else "") + \
+            str(open_questions[-1])
+        still = "question%s %s %s still open (a look in Studio or a choice from you)" % (
+            "s" if len(open_questions) > 1 else "", listed, "are" if len(open_questions) > 1 else "is")
+    else:
+        still = "no question is open"
+    w("- %d decisions I took on my own are in `DECISIONS.md` (one line of reasoning each). Your answers of "
+      "2026-10-05 are recorded below; %s." % (n_decisions, still))
     w("")
     w("## Before and after (same cameras)")
     w("")
@@ -181,14 +207,19 @@ def main():
     w("")
     w("Answered on 2026-10-05 (recorded in `DECISIONS.md`); the ones without an answer are still open.")
     w("")
-    why = {"Dream_BeachVilla": "0.22 shallower at the front", "Dream_Chains": "chunky links, up to 0.48 out",
+    why = {"Dream_BeachVilla": "0.22 shallower at the front",
+           "Dream_Chains": "chunky links, up to 0.48 out; not imported",
            "Lobby_Carpet": "0.2 deeper, hidden in the floor"}
     exc = ["`%s` (%s)" % (n, why.get(n, "wall board, details stand up to %.2f out from the wall" % e["bbox_max_dev"]))
            for n, e in sorted(status.items()) if (e.get("bbox_max_dev") or 0) > 0.15]
+    exc_names = [n for n, e in sorted(status.items()) if (e.get("bbox_max_dev") or 0) > 0.15]
+    fill = {"bbox_exceptions": ", ".join(exc) or "none", "n_exceptions": len(exc_names),
+            "exception_names": ", ".join("`%s`" % n for n in exc_names) or "none"}
     for i, q in enumerate(QUESTIONS, 1):
-        text = q % {"bbox_exceptions": ", ".join(exc) or "none"} if "%(" in q else q
+        text = q % fill if "%(" in q else q
         if i in ANSWERS:
-            w("%d. ~~%s~~  \n   **Your answer: %s**" % (i, text.split("**")[1] if "**" in text else text, ANSWERS[i]))
+            w("%d. ~~%s~~  \n   **Your answer: %s**" % (i, text.split("**")[1] if "**" in text else text,
+                                                      ANSWERS[i] % fill if "%(" in ANSWERS[i] else ANSWERS[i]))
         else:
             w("%d. **Still open.** %s" % (i, text))
     if review:
@@ -198,7 +229,7 @@ def main():
     w("## What I could not do")
     w("")
     for item in NOT_DONE:
-        w("- " + item)
+        w("- " + (item % {"places": places["checked"]} if "%(" in item else item))
     w("")
     w("## Every object type")
     w("")
@@ -212,7 +243,7 @@ def main():
     extra = sorted(n for n in status if n not in plan["order"])
     if extra:
         w("")
-        w("Extra meshes (kit pieces and size steps the game builds in code): " + ", ".join(
+        w("Extra kit models (pieces, size steps and variants the game builds in code): " + ", ".join(
             "`%s` (%s tris)" % (n, status[n].get("triangles")) for n in extra) + ".")
     w("")
     w("## Where things are")

@@ -1,11 +1,11 @@
 # Progress
 
 If you (or I after a restart) pick this up: read this file and STYLE_GUIDE.md first.
-Updated: 2026-10-04 23:59
+Updated: 2026-10-05 08:52
 
 ## Current step
 
-Done. All 125 object types are covered (115 own models + 10 copies; 122 FBX incl. 7 extra pieces), all reviewed. AFTER scene, renders, comparisons, contact sheets, REPORT.md and IMPORT_PLAN.md are final. Open questions for the owner are in REPORT.md (Decisions I need from you).
+Done. All 125 object types are covered (115 own models + 10 copies), plus 14 extra kit models (chain segment, padlock, School Loan sizes, PokeBlox card cases, the 4th kid): 129 kit models, all reviewed. Your answers of 2026-10-05 are in (no outline, chains link by link, warm glow kept, bbox exceptions accepted); questions 4, 6 and 7 in REPORT.md are still open. The import plan was fixed after a review (tree frames, Fast Track duplicates, glow script, missing-kit safety) and is checked by tools/verify_placements.py and the two Luau tests in tools/luau/.
 
 ## How to continue
 
@@ -16,7 +16,7 @@ Done. All 125 object types are covered (115 own models + 10 copies; 122 FBX incl
 
 ## Summary
 
-alias: 10, done: 115
+alias: 10, done: 115, extra done: 14 (129 kit models in all, 129 FBX files)
 
 ## Phases
 
@@ -79,7 +79,7 @@ alias: 10, done: 115
 | 47 | Maker_RarePokeBloxCard_v2 | props | done | 936 | 0.043 | same model, case color per rarity |
 | 48 | Maker_RarePokeBloxCard_v3 | props | done | 936 | 0.043 | same model, case color per rarity |
 | 49 | Maker_RarePokeBloxCard_v4 | props | done | 936 | 0.043 | same model, case color per rarity |
-| 50 | Maker_ShinyPokeBloxCard | props | done | 936 | 0.043 | glowing pink case |
+| 50 | Maker_ShinyPokeBloxCard | props | done | 936 | 0.043 | glowing card, purple (EPIC) case |
 | 51 | Maker_GoldCoin | props | done | 580 | 0.0 | icon coin on a stand |
 | 52 | Maker_GoldBar | props | done | 648 | 0.029 | icon gold bars stacked 3-2-1 |
 | 53 | Maker_GoldTreasureChest | props | done | 856 | 0.077 | lock moved inside the box |
@@ -130,7 +130,7 @@ alias: 10, done: 115
 | 98 | Lux_Piano | props | done | 344 | 0.1 | upright piano inside the original block: cabinet, keys, gold ledge and pedals |
 | 99 | Lux_Chandelier | decoration | done | 600 | 0.03 | glowing ball with a gold ring, small bulbs and a drop finial |
 | 100 | Dream_Pedestal | props | done | 408 | 0.083 | marble pedestal with a gold top (the dream stands at 1.8) |
-| 101 | Dream_Chains | props | done | 6916 | 0.476 | chunky chain links along every original bar, icon padlock; how to import is question 2 |
+| 101 | Dream_Chains | props | done | 6916 | 0.476 | reference look only, not imported: your decision (2026-10-05) is link by link (Dream_ChainSegment + Dream_Padlock, WorldSkin.chains) |
 | 102 | Collection_Showcase | props | done | 488 | 0.12 | wooden table with drawers and gold knobs, gold top at 2.6 |
 | 103 | AuctionRoom_Shell | buildings | done | 1752 | 0.0 | wood plank floor, dark red walls, slate ceiling |
 | 104 | AuctionRoom_Stage | props | done | 336 | 0.15 | wooden stage with a glowing gold edge and stars |
@@ -155,3 +155,22 @@ alias: 10, done: 115
 | 123 | Debt_SchoolLoan_v2 | props | uses Debt_SchoolLoan |  |  |  |
 | 124 | Debt_SchoolLoan_v3 | props | uses Debt_SchoolLoan |  |  |  |
 | 125 | Lobby_PottedPalm_v2 | nature | uses Lobby_PottedPalm |  |  |  |
+
+## Extra kit models (pieces and variants the game makes, not object types of their own)
+
+| template | category | status | triangles | bbox dev | note |
+|---|---|---|---|---|---|
+| Debt_SchoolLoan_books2 | props | done | 392 |  | size step: 2 books + cap |
+| Debt_SchoolLoan_books4 | props | done | 632 |  | size step: 4 books + cap |
+| Debt_SchoolLoan_books5 | props | done | 752 |  | size step: 5 books + cap |
+| Debt_SchoolLoan_books6 | props | done | 872 |  | size step: 6 books + cap |
+| Debt_SchoolLoan_books7 | props | done | 992 |  | size step: 7 books + cap |
+| Dream_ChainSegment | props | done | 144 |  | kit piece: two chunky links (3 studs) |
+| Dream_Padlock | props | done | 292 |  | kit piece: icon padlock |
+| Kid_v4 | props | done | 538 | 0.113 | green shirt: the 4th kid (KID_SHIRTS[4], not in the snapshot) |
+| Maker_PokeBloxCard_case2 | props | done | 936 | 0.043 | RARE (blue) case: the card's value moves with the market, so the case color changes |
+| Maker_PokeBloxCard_case3 | props | done | 936 | 0.043 | EPIC (purple, glowing) case |
+| Maker_PokeBloxCard_case4 | props | done | 936 | 0.043 | LEGENDARY (gold, glowing) case |
+| Maker_ShinyPokeBloxCard_case1 | props | done | 936 | 0.043 | COMMON (steel) case |
+| Maker_ShinyPokeBloxCard_case2 | props | done | 936 | 0.043 | RARE (blue) case |
+| Maker_ShinyPokeBloxCard_case4 | props | done | 936 | 0.043 | LEGENDARY (gold, glowing) case |

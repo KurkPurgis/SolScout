@@ -1,15 +1,15 @@
 # Rags to Riches - new look for the whole world (report)
 
-Written 2026-10-05 08:15. Start here; everything else is linked from this page.
+Written 2026-10-05 08:52. Start here; everything else is linked from this page.
 
 ## In short
 
 - I rebuilt **every visible object** of the world in the style of the 3D icons: chunky, rounded, bright, one palette, the same bevels and parts everywhere.
-- All **125 object types** are covered: 115 have their own model and 10 are size or color copies that reuse one. With 7 extra pieces (book-stack sizes, chain link, padlock) that is **122 FBX models**; 122 are reviewed and done, none is left waiting for review.
-- Counted once each, the models have 161072 triangles together; the biggest single model has 6916 (Roblox allows 20,000 per mesh).
+- All **125 object types** are covered: 115 have their own model and 10 are size or color copies that reuse one. With 14 extra kit models (book-stack sizes, chain segment, padlock, PokeBlox card cases, the 4th kid) that is **129 FBX models**; 129 are reviewed and done, none is left waiting for review. 128 of them are imported: all but the one-piece `Dream_Chains`, which your answer to question 2 replaced link by link.
+- Counted once each, the 128 imported models have 160310 triangles together; the biggest single model (`Dream_PrivateIsland`) has 5608 (Roblox allows 20,000 per mesh).
 - **Nothing in the game was changed.** Every new model has the same name, position and rotation as the original object and the same size (within 0.15 studs, exceptions in question 5), so swapping it in is mechanical (`IMPORT_PLAN.md`, not executed).
 - The whole world uses **one small texture** (`palette/palette_color.png`, 32 colors). See `STYLE_GUIDE.md`.
-- 21 decisions I took on my own are in `DECISIONS.md` (one line of reasoning each); the ones I need you for are below.
+- 24 decisions I took on my own are in `DECISIONS.md` (one line of reasoning each). Your answers of 2026-10-05 are recorded below; questions 4, 6 and 7 are still open (a look in Studio or a choice from you).
 
 ## Before and after (same cameras)
 
@@ -88,7 +88,7 @@ Answered on 2026-10-05 (recorded in `DECISIONS.md`); the ones without an answer 
    **Your answer: Keep the warm glow. No change.**
 4. **Still open.** **FOR SALE copies.** The game makes every part of a FOR SALE Money Maker see-through ForceField. The new meshes will get the same treatment automatically (they are BaseParts inside the same Model). Check in Studio that the ForceField look on a textured mesh is what you want (it shows the texture's colors, not one flat color).
 5. ~~Bounding boxes.~~  
-   **Your answer: Close enough. The listed exceptions stay as they are.**
+   **Your answer: Close enough. The 7 exceptions stay as they are: `Clinic_WallScreen`, `Dream_BeachVilla`, `Dream_Chains`, `Garage_ToolBoard`, `Lobby_Carpet`, `Office_Screen`, `School_Blackboard`.**
 6. **Still open.** **Text.** All words stay on the old parts (now invisible), so prices and names still update. The new sign boards were made to sit right behind that text. Please look at one sign in Studio to check the text is not hidden or floating.
 7. **Still open.** **Texture size.** The whole world uses ONE 256 x 128 palette texture (32 flat color swatches; every face samples the middle of one swatch). If the colors bleed into each other on low-end phones, use the same image scaled 4x with nearest-neighbour (1024 x 512): the UVs stay the same. Keep it small, or go 4x?
 
@@ -99,7 +99,7 @@ Answered on 2026-10-05 (recorded in `DECISIONS.md`); the ones without an answer 
 - **Nothing was tested inside Roblox Studio** (no Studio here, and I was not allowed to upload). Renders are from Blender with lighting similar to the game; Studio's Future lighting will look a bit different.
 - **Words on signs** are drawn in the renders as simple 3D text so the pictures make sense; in the game the real SurfaceGui text stays on the old parts.
 - **Particle effects, sounds, UI and the players' avatars** are not part of this overhaul. The ball and chain on a player's leg (`DebtChain.luau`) is a physics object attached to the character during a match; it is not part of the world and was left as it is.
-- **The swap itself was not run** (not allowed tonight). What I could check without Studio: the generated `WorldSkin` modules compile with the Luau compiler, and the placement lists reproduce all 35 places the game builds exactly (`tools/verify_placements.py`).
+- **The swap itself was not run** (not allowed tonight). What I could check without Studio: the placement list puts exactly the right objects in all 38 places the snapshot built (`tools/verify_placements.py`, world space, independent of the generator), and `WorldSkin` and the Step 4 script run correctly on the Roblox copy (`tools/luau/test_worldskin_chains.luau`, `tools/luau/test_worldskin_helpers.luau`).
 
 ## Every object type
 
@@ -207,7 +207,7 @@ Answered on 2026-10-05 (recorded in `DECISIONS.md`); the ones without an answer 
 | 98 | Lux_Piano | props | 2 | done | 344 / 1500 |  | [fbx](export/props/Lux_Piano.fbx) |
 | 99 | Lux_Chandelier | decoration | 2 | done | 600 / 1500 |  | [fbx](export/decoration/Lux_Chandelier.fbx) |
 | 100 | Dream_Pedestal | props | 2 | done | 408 / 1500 |  | [fbx](export/props/Dream_Pedestal.fbx) |
-| 101 | Dream_Chains | props | 1 | done | 6916 / 8000 |  | [fbx](export/props/Dream_Chains.fbx) |
+| 101 | Dream_Chains | props | 1 | done, **not imported** (replaced link by link, question 2) | 6916 / 8000 |  | [fbx](export/props/Dream_Chains.fbx) |
 | 102 | Collection_Showcase | props | 3 | done | 488 / 1500 |  | [fbx](export/props/Collection_Showcase.fbx) |
 | 103 | AuctionRoom_Shell | buildings | 4 | done | 1752 / 6000 |  | [fbx](export/buildings/AuctionRoom_Shell.fbx) |
 | 104 | AuctionRoom_Stage | props | 4 | done | 336 / 1500 |  | [fbx](export/props/AuctionRoom_Stage.fbx) |
@@ -233,7 +233,7 @@ Answered on 2026-10-05 (recorded in `DECISIONS.md`); the ones without an answer 
 | 124 | Debt_SchoolLoan_v3 | props | 1 | uses Debt_SchoolLoan | 512 |  | [fbx](export/props/School%20Loan.fbx) |
 | 125 | Lobby_PottedPalm_v2 | nature | 2 | uses Lobby_PottedPalm | 1176 |  | [fbx](export/nature/Lobby_PottedPalm.fbx) |
 
-Extra meshes (kit pieces and size steps the game builds in code): `Debt_SchoolLoan_books2` (392 tris), `Debt_SchoolLoan_books4` (632 tris), `Debt_SchoolLoan_books5` (752 tris), `Debt_SchoolLoan_books6` (872 tris), `Debt_SchoolLoan_books7` (992 tris), `Dream_ChainSegment` (144 tris), `Dream_Padlock` (292 tris).
+Extra kit models (pieces, size steps and variants the game builds in code): `Debt_SchoolLoan_books2` (392 tris), `Debt_SchoolLoan_books4` (632 tris), `Debt_SchoolLoan_books5` (752 tris), `Debt_SchoolLoan_books6` (872 tris), `Debt_SchoolLoan_books7` (992 tris), `Dream_ChainSegment` (144 tris), `Dream_Padlock` (292 tris), `Kid_v4` (538 tris), `Maker_PokeBloxCard_case2` (936 tris), `Maker_PokeBloxCard_case3` (936 tris), `Maker_PokeBloxCard_case4` (936 tris), `Maker_ShinyPokeBloxCard_case1` (936 tris), `Maker_ShinyPokeBloxCard_case2` (936 tris), `Maker_ShinyPokeBloxCard_case4` (936 tris).
 
 ## Where things are
 
