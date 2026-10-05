@@ -127,6 +127,37 @@ function WorldSkin.stretched(model: Model, template: string, base: CFrame)
 	copy.Parent = model
 end
 
+-- The locked dream's chains, LINK BY LINK (owner decision): Plots.luau addChains() makes "Chain" bars
+-- (ModelKit.bar: Size = (0.35, 0.35, length), the length along the bar's local Z) and a padlock
+-- ("PadlockBody", "PadlockHole", "PadlockShackle"). Every bar gets Dream_ChainSegment kit pieces
+-- (2 links, 3 studs long along their local +Z, origin at one end) tiled end to end; the padlock gets
+-- Dream_Padlock. Works for any dream size, because it follows the bars the game actually made.
+local SEGMENT_LENGTH = 3
+function WorldSkin.chains(folder: Instance)
+	if not WorldSkin.ENABLED then
+		return
+	end
+	for _, part in folder:GetChildren() do
+		if part:IsA("BasePart") and not part:GetAttribute("WorldSkinNew") then
+			if part.Name == "Chain" then
+				local length = part.Size.Z
+				local count = math.max(1, math.round(length / SEGMENT_LENGTH))
+				local step = length / count -- each piece is scaled a little so the pieces fill the bar exactly
+				for index = 0, count - 1 do
+					WorldSkin.add(folder, "Dream_ChainSegment", part.CFrame * CFrame.new(0, 0, -length / 2 + index * step),
+						step / SEGMENT_LENGTH)
+				end
+				hideOld(part)
+			elseif part.Name == "PadlockBody" then
+				WorldSkin.add(folder, "Dream_Padlock", part.CFrame)
+				hideOld(part)
+			elseif part.Name == "PadlockHole" or part.Name == "PadlockShackle" then
+				hideOld(part)
+			end
+		end
+	end
+end
+
 -- shows/hides the new look of an object whose old part the game shows/hides (e.g. the podium board)
 function WorldSkin.setVisible(root: Instance, visible: boolean)
 	for _, item in root:GetDescendants() do

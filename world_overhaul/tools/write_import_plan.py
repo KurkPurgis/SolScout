@@ -71,6 +71,10 @@ def cf_lua(c):
                                        for v in c)
 
 
+# owner decision 2026-10-05: the locked dream's chains are swapped link by link (kit pieces), not as one mesh
+LINK_BY_LINK = {"Dream_Chains"}
+
+
 def placements(objects, templates):
     """context key -> list of {template, frame (12 numbers), scale}"""
     out, first = {}, {}
@@ -80,6 +84,8 @@ def placements(objects, templates):
             continue
         if builder_of(o["template"]):
             continue  # made by a builder function: swapped there, not by context
+        if o["template"] in LINK_BY_LINK:
+            continue  # the chains are swapped link by link (WorldSkin.chains), not as one model
         base = ctx.split(":")[0]
         area = o["area"].split(".")[0]
         want = CANONICAL_AREA.get(base)
@@ -223,6 +229,37 @@ function WorldSkin.stretched(model: Model, template: string, base: CFrame)
 		end
 	end
 	copy.Parent = model
+end
+
+-- The locked dream's chains, LINK BY LINK (owner decision): Plots.luau addChains() makes "Chain" bars
+-- (ModelKit.bar: Size = (0.35, 0.35, length), the length along the bar's local Z) and a padlock
+-- ("PadlockBody", "PadlockHole", "PadlockShackle"). Every bar gets Dream_ChainSegment kit pieces
+-- (2 links, 3 studs long along their local +Z, origin at one end) tiled end to end; the padlock gets
+-- Dream_Padlock. Works for any dream size, because it follows the bars the game actually made.
+local SEGMENT_LENGTH = 3
+function WorldSkin.chains(folder: Instance)
+	if not WorldSkin.ENABLED then
+		return
+	end
+	for _, part in folder:GetChildren() do
+		if part:IsA("BasePart") and not part:GetAttribute("WorldSkinNew") then
+			if part.Name == "Chain" then
+				local length = part.Size.Z
+				local count = math.max(1, math.round(length / SEGMENT_LENGTH))
+				local step = length / count -- each piece is scaled a little so the pieces fill the bar exactly
+				for index = 0, count - 1 do
+					WorldSkin.add(folder, "Dream_ChainSegment", part.CFrame * CFrame.new(0, 0, -length / 2 + index * step),
+						step / SEGMENT_LENGTH)
+				end
+				hideOld(part)
+			elseif part.Name == "PadlockBody" then
+				WorldSkin.add(folder, "Dream_Padlock", part.CFrame)
+				hideOld(part)
+			elseif part.Name == "PadlockHole" or part.Name == "PadlockShackle" then
+				hideOld(part)
+			end
+		end
+	end
 end
 
 -- shows/hides the new look of an object whose old part the game shows/hides (e.g. the podium board)
@@ -377,7 +414,8 @@ def main():
     w("| `World/PodiumRoom.luau` `PodiumRoom.new` | at the end | `WorldSkin.context(\"PodiumRoom\", self.base, <room folder>)` |")
     w("| `World/Plots.luau` `Plots:buildWorkplace(theme)` | at the end | `WorldSkin.context(\"Workplace:\" .. theme.title, self.base, self.workplaceFolder)` and `WorldSkin.context(\"Furnish:\" .. theme.title, self.base, self.workplaceFolder)` (the keys use the sign title, e.g. `Workplace:BUS DEPOT`) |")
     w("| `World/Plots.luau` `Plots:syncCollection` | after the showcase table is made | `WorldSkin.context(\"Collection\", self.base, <showcase part or folder>)` |")
-    w("| `World/Plots.luau` `syncDream` / `addChains` (Fast Track) | after the pedestal / chains are made | `WorldSkin.context(\"DreamArea\", self.base, <pedestal + chains>)` |")
+    w("| `World/Plots.luau` `syncDream` (Fast Track: locked or won dream) | at the end of the `else` branch (after the pedestal, the dream and its label) | `WorldSkin.context(\"DreamArea\", self.base, self.dreamFolder)` (the marble pedestal) |")
+    w("| `World/Plots.luau` `addChains(folder, model)` | at the end | `WorldSkin.chains(folder)`: the chains **link by link** (your decision): `Dream_ChainSegment` pieces tiled along every chain bar + `Dream_Padlock` |")
     w("| `World/Props.luau` `Props.kid` | before `return model` | `WorldSkin.object(model, <Kid / Kid_v2 / Kid_v3 by shirt color>, base)` |")
     w("| `World/Props.luau` `Props.moneyMaker` | before `model.Parent = parent` | `WorldSkin.object(model, <template for name>, base)` (game name -> template in the table below; Rare PokeBlox Card: `_v2`..`_v4` by its case color, `Props.cardCase(value)`) |")
     w("| `World/Props.luau` `Props.debtModel` | before `model.Parent = parent` | `WorldSkin.stretched(model, <template for debtName>, base)` (School Loan: `Debt_SchoolLoan_books<n>`) |")
@@ -453,6 +491,9 @@ def main():
             else:
                 label = ", ".join(keys)
             how = "`WorldSkin.context` in %s" % label if keys else "(by hand: one object)"
+            if name in LINK_BY_LINK:
+                how = ("**not imported**: replaced link by link by `Dream_ChainSegment` + `Dream_Padlock` "
+                       "(`WorldSkin.chains`, your decision)")
             src = source_of(t.get("type", name)) or {"Tree": "Props.tree (Props.luau:352), called by Plaza.new"}.get(name, "")
         fbx = e.get("fbx", "")
         meshes = ", ".join("`%s`" % m for m in e.get("meshes", []))
@@ -461,7 +502,9 @@ def main():
     extra = sorted(n for n in status if n not in plan["order"])
     if extra:
         w("")
-        w("Extra kit meshes: " + ", ".join("`%s` (`%s`)" % (n, status[n].get("fbx", "")) for n in extra) + ".")
+        w("Extra kit meshes: " + ", ".join("`%s` (`%s`)" % (n, status[n].get("fbx", "")) for n in extra) + ". "
+          "`Dream_ChainSegment` and `Dream_Padlock` are used by `WorldSkin.chains`; the `Debt_SchoolLoan_books<n>` "
+          "meshes are picked by `Props.debtModel` by the number of books.")
     w("")
     open(os.path.join(ROOT, "IMPORT_PLAN.md"), "w").write("\n".join(L) + "\n")
     print("IMPORT_PLAN.md written,", sum(len(v) for v in places.values()), "context placements in", len(places),

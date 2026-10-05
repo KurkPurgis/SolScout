@@ -13,7 +13,7 @@ from collections import defaultdict
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.normpath(os.path.join(HERE, ".."))
 sys.path.insert(0, HERE)
-from write_import_plan import builder_of  # noqa: E402
+from write_import_plan import LINK_BY_LINK, builder_of  # noqa: E402
 
 objects = json.load(open(os.path.join(ROOT, "data", "objects.json")))
 places = json.load(open(os.path.join(ROOT, "export", "placements.json")))
@@ -26,7 +26,8 @@ def norm(frame):
 inst = defaultdict(list)
 for o in objects:
     ctx = o["context"]
-    if not ctx or ctx in ("Kids", "Debts", "MoneyMakers", "ForSale", "Catalog") or builder_of(o["template"]):
+    if not ctx or ctx in ("Kids", "Debts", "MoneyMakers", "ForSale", "Catalog") or builder_of(o["template"]) \
+            or o["template"] in LINK_BY_LINK:
         continue
     key = ctx.split(":")[0] if ctx.startswith(("Collection", "DreamArea")) else ctx
     where = o["key"].split("/")[0]  # e.g. City_2 or City_1.Plots.Plot_Player3 or AuctionRoom_4

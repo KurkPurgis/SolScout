@@ -5627,24 +5627,6 @@
    "scale": 1.0
   },
   {
-   "template": "Dream_Chains",
-   "frame": [
-    0.0,
-    1.432,
-    -9.939,
-    1.0,
-    0.0,
-    0.0,
-    0.0,
-    1.0,
-    0.0,
-    0.0,
-    0.0,
-    1.0
-   ],
-   "scale": 1.0
-  },
-  {
    "template": "Dream_Pedestal",
    "frame": [
     0.0,

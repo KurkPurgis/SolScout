@@ -31,6 +31,16 @@ WORLD_SHOTS = [
     ("overview_world", "The whole world (lobby + 4 cities)"),
 ]
 
+# the owner's answers (2026-10-05); questions without an answer stay open
+ANSWERS = {
+    1: "No outline. Nothing to build; the comparison render stays as a record.",
+    2: "Link by link. `WorldSkin.chains` (called at the end of `addChains`) tiles the `Dream_ChainSegment` "
+       "piece along every chain bar the game makes and puts `Dream_Padlock` on the padlock; the one-piece "
+       "`Dream_Chains` model is not imported (IMPORT_PLAN step 6).",
+    3: "Keep the warm glow. No change.",
+    5: "Close enough. The listed exceptions stay as they are.",
+}
+
 QUESTIONS = [
     "**Outline or no outline?** The world has no outline (the icons have one). One building with and without an "
     "outline is in `renders/outline_comparison.png`. An outline doubles the triangles of every model and Roblox has "
@@ -167,14 +177,20 @@ def main():
         w("Each model also has 3 renders (front 3/4, back 3/4, eye level with a 5-stud player) in "
           "`renders/objects/<name>/`.")
         w("")
-    w("## Decisions I need from you")
+    w("## Your decisions")
+    w("")
+    w("Answered on 2026-10-05 (recorded in `DECISIONS.md`); the ones without an answer are still open.")
     w("")
     why = {"Dream_BeachVilla": "0.22 shallower at the front", "Dream_Chains": "chunky links, up to 0.48 out",
            "Lobby_Carpet": "0.2 deeper, hidden in the floor"}
     exc = ["`%s` (%s)" % (n, why.get(n, "wall board, details stand up to %.2f out from the wall" % e["bbox_max_dev"]))
            for n, e in sorted(status.items()) if (e.get("bbox_max_dev") or 0) > 0.15]
     for i, q in enumerate(QUESTIONS, 1):
-        w("%d. %s" % (i, q % {"bbox_exceptions": ", ".join(exc) or "none"} if "%(" in q else q))
+        text = q % {"bbox_exceptions": ", ".join(exc) or "none"} if "%(" in q else q
+        if i in ANSWERS:
+            w("%d. ~~%s~~  \n   **Your answer: %s**" % (i, text.split("**")[1] if "**" in text else text, ANSWERS[i]))
+        else:
+            w("%d. **Still open.** %s" % (i, text))
     if review:
         w("%d. **Models marked NEEDS REVIEW:** %s." % (len(QUESTIONS) + 1, ", ".join(
             "%s (%s)" % (n, "; ".join(status[n].get("notes", [])[-1:])) for n in sorted(review))))

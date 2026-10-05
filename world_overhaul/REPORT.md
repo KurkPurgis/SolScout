@@ -1,6 +1,6 @@
 # Rags to Riches - new look for the whole world (report)
 
-Written 2026-10-04 23:59. Start here; everything else is linked from this page.
+Written 2026-10-05 08:15. Start here; everything else is linked from this page.
 
 ## In short
 
@@ -76,15 +76,21 @@ Written 2026-10-04 23:59. Start here; everything else is linked from this page.
 
 Each model also has 3 renders (front 3/4, back 3/4, eye level with a 5-stud player) in `renders/objects/<name>/`.
 
-## Decisions I need from you
+## Your decisions
 
-1. **Outline or no outline?** The world has no outline (the icons have one). One building with and without an outline is in `renders/outline_comparison.png`. An outline doubles the triangles of every model and Roblox has no cheap way to draw it, so I recommend: no outline.
-2. **Chains on the locked dream.** The game builds them link by link in code. I made one finished chain model AND two kit pieces (one link, the padlock) - see DECISIONS #15. Which one do you want to use?
-3. **Lit windows.** Workplace and Money Maker windows that were Neon in the game are still Neon (warm yellow). In bright daylight they look almost white. Keep them glowing, or switch them to the shiny blue WINDOW color (the icon look)?
-4. **FOR SALE copies.** The game makes every part of a FOR SALE Money Maker see-through ForceField. The new meshes will get the same treatment automatically (they are BaseParts inside the same Model). Check in Studio that the ForceField look on a textured mesh is what you want (it shows the texture's colors, not one flat color).
-5. **Bounding boxes.** Every new mesh stays within 0.15 studs of the original box, except: `Clinic_WallScreen` (wall board, details stand up to 0.24 out from the wall), `Dream_BeachVilla` (0.22 shallower at the front), `Dream_Chains` (chunky links, up to 0.48 out), `Garage_ToolBoard` (wall board, details stand up to 0.30 out from the wall), `Lobby_Carpet` (0.2 deeper, hidden in the floor), `Office_Screen` (wall board, details stand up to 0.25 out from the wall), `School_Blackboard` (wall board, details stand up to 0.28 out from the wall). The game measures some models with `GetBoundingBox` (Money Maker stacking, labels, tutorial arrow), so a 0.1 stud difference can move a label by 0.1 stud. Is that close enough, or do you want those exact?
-6. **Text.** All words stay on the old parts (now invisible), so prices and names still update. The new sign boards were made to sit right behind that text. Please look at one sign in Studio to check the text is not hidden or floating.
-7. **Texture size.** The whole world uses ONE 256 x 128 palette texture (32 flat color swatches; every face samples the middle of one swatch). If the colors bleed into each other on low-end phones, use the same image scaled 4x with nearest-neighbour (1024 x 512): the UVs stay the same. Keep it small, or go 4x?
+Answered on 2026-10-05 (recorded in `DECISIONS.md`); the ones without an answer are still open.
+
+1. ~~Outline or no outline?~~  
+   **Your answer: No outline. Nothing to build; the comparison render stays as a record.**
+2. ~~Chains on the locked dream.~~  
+   **Your answer: Link by link. `WorldSkin.chains` (called at the end of `addChains`) tiles the `Dream_ChainSegment` piece along every chain bar the game makes and puts `Dream_Padlock` on the padlock; the one-piece `Dream_Chains` model is not imported (IMPORT_PLAN step 6).**
+3. ~~Lit windows.~~  
+   **Your answer: Keep the warm glow. No change.**
+4. **Still open.** **FOR SALE copies.** The game makes every part of a FOR SALE Money Maker see-through ForceField. The new meshes will get the same treatment automatically (they are BaseParts inside the same Model). Check in Studio that the ForceField look on a textured mesh is what you want (it shows the texture's colors, not one flat color).
+5. ~~Bounding boxes.~~  
+   **Your answer: Close enough. The listed exceptions stay as they are.**
+6. **Still open.** **Text.** All words stay on the old parts (now invisible), so prices and names still update. The new sign boards were made to sit right behind that text. Please look at one sign in Studio to check the text is not hidden or floating.
+7. **Still open.** **Texture size.** The whole world uses ONE 256 x 128 palette texture (32 flat color swatches; every face samples the middle of one swatch). If the colors bleed into each other on low-end phones, use the same image scaled 4x with nearest-neighbour (1024 x 512): the UVs stay the same. Keep it small, or go 4x?
 
 ## What I could not do
 

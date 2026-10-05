@@ -1,6 +1,6 @@
 # Import plan - how to swap the new look into the game (NOT executed)
 
-Written 2026-10-04 23:59. Nothing here has been done: nothing was uploaded, published or changed in `src/`.
+Written 2026-10-05 08:15. Nothing here has been done: nothing was uploaded, published or changed in `src/`.
 
 ## The idea in one paragraph
 
@@ -121,7 +121,8 @@ Copy `world_overhaul/export/roblox/WorldSkin.luau` and `WorldSkinPlacements.luau
 | `World/PodiumRoom.luau` `PodiumRoom.new` | at the end | `WorldSkin.context("PodiumRoom", self.base, <room folder>)` |
 | `World/Plots.luau` `Plots:buildWorkplace(theme)` | at the end | `WorldSkin.context("Workplace:" .. theme.title, self.base, self.workplaceFolder)` and `WorldSkin.context("Furnish:" .. theme.title, self.base, self.workplaceFolder)` (the keys use the sign title, e.g. `Workplace:BUS DEPOT`) |
 | `World/Plots.luau` `Plots:syncCollection` | after the showcase table is made | `WorldSkin.context("Collection", self.base, <showcase part or folder>)` |
-| `World/Plots.luau` `syncDream` / `addChains` (Fast Track) | after the pedestal / chains are made | `WorldSkin.context("DreamArea", self.base, <pedestal + chains>)` |
+| `World/Plots.luau` `syncDream` (Fast Track: locked or won dream) | at the end of the `else` branch (after the pedestal, the dream and its label) | `WorldSkin.context("DreamArea", self.base, self.dreamFolder)` (the marble pedestal) |
+| `World/Plots.luau` `addChains(folder, model)` | at the end | `WorldSkin.chains(folder)`: the chains **link by link** (your decision): `Dream_ChainSegment` pieces tiled along every chain bar + `Dream_Padlock` |
 | `World/Props.luau` `Props.kid` | before `return model` | `WorldSkin.object(model, <Kid / Kid_v2 / Kid_v3 by shirt color>, base)` |
 | `World/Props.luau` `Props.moneyMaker` | before `model.Parent = parent` | `WorldSkin.object(model, <template for name>, base)` (game name -> template in the table below; Rare PokeBlox Card: `_v2`..`_v4` by its case color, `Props.cardCase(value)`) |
 | `World/Props.luau` `Props.debtModel` | before `model.Parent = parent` | `WorldSkin.stretched(model, <template for debtName>, base)` (School Loan: `Debt_SchoolLoan_books<n>`) |
@@ -264,7 +265,7 @@ Set `WorldSkin.ENABLED = false` (or remove the calls): nothing is hidden and no 
 | Lux_Piano | Lux_Piano | `export/props/Lux_Piano.fbx` | `Lux_Piano` | `WorldSkin.context` in Furnish:FAST TRACK | Themes.luau:211,212 |  |
 | Lux_Chandelier | Lux_Chandelier | `export/decoration/Lux_Chandelier.fbx` | `Lux_Chandelier`, `Lux_Chandelier_Glow_GLOW_WARM` | `WorldSkin.context` in Furnish:FAST TRACK | Themes.luau:214,219 |  |
 | Dream_Pedestal | Dream_Pedestal | `export/props/Dream_Pedestal.fbx` | `Dream_Pedestal` | `WorldSkin.context` in DreamArea | Plots.luau:490,491 |  |
-| Dream_Chains | Dream_Chains | `export/props/Dream_Chains.fbx` | `Dream_Chains` | `WorldSkin.context` in DreamArea | Plots.luau:460,461,462,466,467,469,471 |  |
+| Dream_Chains | Dream_Chains | `export/props/Dream_Chains.fbx` | `Dream_Chains` | **not imported**: replaced link by link by `Dream_ChainSegment` + `Dream_Padlock` (`WorldSkin.chains`, your decision) | Plots.luau:460,461,462,466,467,469,471 |  |
 | Collection_Showcase | Collection_Showcase | `export/props/Collection_Showcase.fbx` | `Collection_Showcase` | `WorldSkin.context` in Collection | Plots.luau:556,557 |  |
 | AuctionRoom_Shell | AuctionRoom_Shell | `export/buildings/AuctionRoom_Shell.fbx` | `AuctionRoom_Shell` | `WorldSkin.context` in AuctionRoom | AuctionRoom.luau:44,45,46,47,48,49 |  |
 | AuctionRoom_Stage | AuctionRoom_Stage | `export/props/AuctionRoom_Stage.fbx` | `AuctionRoom_Stage`, `AuctionRoom_Stage_Glow_GOLD` | `WorldSkin.context` in AuctionRoom | AuctionRoom.luau:63,64 |  |
@@ -290,5 +291,5 @@ Set `WorldSkin.ENABLED = false` (or remove the calls): nothing is hidden and no 
 | Debt_SchoolLoan_v3 | School Loan | uses `Debt_SchoolLoan` | | stretched to its own size | Props.debtModel (Props.luau:325) |  |
 | Lobby_PottedPalm_v2 | Lobby_PottedPalm | uses `Lobby_PottedPalm` | | stretched to its own size |  |  |
 
-Extra kit meshes: `Debt_SchoolLoan_books2` (`export/props/School Loan (2 books).fbx`), `Debt_SchoolLoan_books4` (`export/props/School Loan (4 books).fbx`), `Debt_SchoolLoan_books5` (`export/props/School Loan (5 books).fbx`), `Debt_SchoolLoan_books6` (`export/props/School Loan (6 books).fbx`), `Debt_SchoolLoan_books7` (`export/props/School Loan (7 books).fbx`), `Dream_ChainSegment` (`export/props/ChainSegment.fbx`), `Dream_Padlock` (`export/props/Padlock.fbx`).
+Extra kit meshes: `Debt_SchoolLoan_books2` (`export/props/School Loan (2 books).fbx`), `Debt_SchoolLoan_books4` (`export/props/School Loan (4 books).fbx`), `Debt_SchoolLoan_books5` (`export/props/School Loan (5 books).fbx`), `Debt_SchoolLoan_books6` (`export/props/School Loan (6 books).fbx`), `Debt_SchoolLoan_books7` (`export/props/School Loan (7 books).fbx`), `Dream_ChainSegment` (`export/props/ChainSegment.fbx`), `Dream_Padlock` (`export/props/Padlock.fbx`). `Dream_ChainSegment` and `Dream_Padlock` are used by `WorldSkin.chains`; the `Debt_SchoolLoan_books<n>` meshes are picked by `Props.debtModel` by the number of books.
 

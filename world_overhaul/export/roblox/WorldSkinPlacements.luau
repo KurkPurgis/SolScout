@@ -31,7 +31,6 @@ return {
 	},
 	["DreamArea"] = {
 		{ template = "Dream_Pedestal", frame = CFrame.new(0, 0, -9, 1, 0, 0, 0, 1, 0, 0, 0, 1), scale = 1.0 },
-		{ template = "Dream_Chains", frame = CFrame.new(0, 1.432, -9.939, 1, 0, 0, 0, 1, 0, 0, 0, 1), scale = 1.0 },
 		{ template = "Dream_Pedestal", frame = CFrame.new(0, 0, -9, 1, 0, 0, 0, 1, 0, 0, 0, 1), scale = 1.0 },
 	},
 	["Furnish:BUS DEPOT"] = {

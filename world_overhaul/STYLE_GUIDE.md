@@ -144,6 +144,8 @@ Our targets are far below the limits, because the game must run on phones:
 
 ## 8. Outline
 
+**Decided (2026-10-05): no outline.**
+
 No outline in the world by default (the icons have one, but in 3D a black hull doubles triangles and looks
 noisy at distance). One comparison render of one building WITH an inverted-hull outline (INK, 0.14 studs) is in
 `renders/outline_comparison.png` so you can choose.
@@ -209,3 +211,7 @@ collision, trigger and prompt exactly as it is today and makes switching back on
 
 | kit | sign_board | `frame_back`: how far the frame sits behind the board (0.1 for the thin room signs) | signs keep their original depth |
 | check | z-fighting | every model is checked for coplanar overlapping box faces (`check_models.py`) | black specks and flicker |
+| owner decision | outline | no outline (decided) | 2026-10-05 |
+| owner decision | lit windows | keep the warm Neon glow (decided) | 2026-10-05 |
+| owner decision | dream chains | swapped link by link with the ChainSegment and Padlock kit pieces | 2026-10-05 |
+

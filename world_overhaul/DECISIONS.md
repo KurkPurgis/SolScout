@@ -25,3 +25,13 @@ Every time something was unclear I made the most reasonable choice and wrote it 
 | 19 | Overlapping boxes of the same color on the same plane (red crosses) are now built from non-overlapping pieces (`parts.plus_sign`). | Coplanar overlaps z-fight and render as black specks (seen in the first cabinet render). |
 | 20 | Every model is checked automatically for z-fighting (two boxes with faces on the same plane that overlap, ignoring the curved bevel strips; same color too, because it still renders black specks and can flicker; also the flat caps of upright cylinders, and the undersides of the floating dreams, which players see from below) and for parts thinner than 0.3 studs (`tools/blender/check_models.py`, also run by `make_models.py`). All 122 models pass. | Z-fighting showed up as black specks/flicker in several first renders; a check catches every case, not only the ones I happen to see. |
 | 21 | The closed auction room is rendered with a soft ceiling fill light, in BOTH the before and the after picture. | The game lights closed rooms with `Lighting.Ambient` (0.16, 0.16, 0.18), which Blender does not have; without the fill both pictures were almost black. Same light on both sides keeps the comparison fair. |
+
+## Your decisions (2026-10-05)
+
+| # | question (REPORT.md) | your answer | what changed |
+|---|---|---|---|
+| A | Outline? | no outline | nothing to build; the outline comparison stays as a record (STYLE_GUIDE section 8) |
+| B | Chains on the locked dream | link by link | `WorldSkin.chains(folder)` (called at the end of `addChains`) tiles `Dream_ChainSegment` along every chain bar the game makes and puts `Dream_Padlock` on the padlock; the one-piece `Dream_Chains` model is not imported |
+| C | Lit windows | keep the warm glow | no change (Neon GLOW_WARM, as in the game) |
+| D | FOR SALE look | no answer yet | still to check in Studio during the swap (IMPORT_PLAN step 7) |
+| E | Bounding-box exceptions | close enough | the 7 listed exceptions stay as they are |
