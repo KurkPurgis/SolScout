@@ -181,7 +181,7 @@ collision, trigger and prompt exactly as it is today and makes switching back on
 - One FBX per model: `export/<category>/<name>.fbx`. `<name>` = the original Roblox name when the object is a
   named Model in the game (Money Makers, debts, dreams, `Kid`), otherwise the template name from `INVENTORY.md`.
   Variants add a word in brackets (`Kid (green).fbx`, `School Loan (4 books).fbx`, `PokeBlox Card (case 2).fbx`).
-  Exceptions: the debt crate (`Other Debt` in the game) is `Debt Crate.fbx`; the two chain pieces, which are no
+  Exceptions: the fallback crate the game makes for a debt name without a builder (`Other Debt` in the world dump) is `Debt Crate.fbx`; the two chain pieces, which are no
   game Model, are `ChainSegment.fbx` and `Padlock.fbx`. IMPORT_PLAN.md lists every file with its template.
 - The FBX origin (0, 0, 0) **is the original object's frame** (`data/objects.json` -> `frame`): the model drops
   into the old position with the same rotation and no offset. Front = -Z in Roblox (+Y in Blender).
@@ -212,7 +212,7 @@ collision, trigger and prompt exactly as it is today and makes switching back on
 | modelling | round parts | the number of segments follows the size (small round things use fewer) | saves triangles where nobody can see them |
 | modelling | min thickness | the 0.3 stud minimum also applies to round parts (cylinders, tori, spheres) | thin spokes flickered at distance |
 | palette | STONE / STONE_DARK | darker and warmer than first drafted | the plaza and yards looked white and flat in the renders |
-| modelling | windows | workplace and Money Maker window panes are opaque shiny WINDOW color; real glass (glass cases, the lobby windows, the Fast Track glass table, the villa's glass wall and railing) and water (fountain, car wash) are `_Glass` meshes | see-through panes on closed buildings show empty boxes behind them |
+| modelling | windows | workplace and Money Maker window panes are opaque shiny WINDOW color; real glass (glass cases, the lobby windows, the Fast Track glass table, the beach villa's balcony glass railing) and water (fountain, car wash) are `_Glass` meshes | see-through panes on closed buildings show empty boxes behind them |
 | bbox | wall boards | tolerance 0.3 instead of 0.15 (DECISIONS #13) | 0.3 minimum thickness on 0.2 thick boards |
 | kit | wheel | hub and cap stand out at most 0.13 from the tire | wheels stay inside the original wheel box |
 | kit | plus_sign | crosses are built from non-overlapping pieces | coplanar overlaps z-fight |

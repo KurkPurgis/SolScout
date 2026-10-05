@@ -1,6 +1,6 @@
 # Rags to Riches - new look for the whole world (report)
 
-Written 2026-10-05 09:33. Start here; everything else is linked from this page.
+Written 2026-10-05 09:41. Start here; everything else is linked from this page.
 
 ## In short
 
@@ -101,7 +101,7 @@ Answered on 2026-10-05 (recorded in `DECISIONS.md`); the ones without an answer 
 - **Particle effects, sounds, UI and the players' avatars** are not part of this overhaul. The ball and chain on a player's leg (`DebtChain.luau`) is a physics object attached to the character during a match; it is not part of the world and was left as it is.
 - **The swap itself was not run** (not allowed tonight). What I could check without Studio: the placement list puts exactly the right objects in all 38 places the snapshot built (`tools/verify_placements.py`, world space, independent of the generator), and `WorldSkin` and the Step 4 script run correctly on the Roblox copy (`tools/luau/test_worldskin_chains.luau`, `tools/luau/test_worldskin_helpers.luau`).
 
-## Every object type
+## Every template (every model the world needs)
 
 `template` = one model (variants in color or size count separately, see INVENTORY.md). *Script-referenced* = some game script finds the object type by name, measures it or changes it; those keep the original names and boxes exactly, see `data/script_refs.json` for the evidence.
 

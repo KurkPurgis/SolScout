@@ -235,7 +235,7 @@ def main():
     for item in NOT_DONE:
         w("- " + (item % {"places": places["checked"]} if "%(" in item else item))
     w("")
-    w("## Every object type")
+    w("## Every template (every model the world needs)")
     w("")
     w("`template` = one model (variants in color or size count separately, see INVENTORY.md). "
       "*Script-referenced* = some game script finds the object type by name, measures it or changes it; those "

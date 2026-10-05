@@ -50,7 +50,7 @@ STEP6 = [
     ("`World/PodiumRoom.luau` `PodiumRoom.new`", "before `return self`",
      "`WorldSkin.context(\"PodiumRoom\", base, folder)`"),
     ("`World/Plots.luau` `Plots:buildWorkplace(theme)`", "at the very end of the function: after the "
-     "`if theme.luxury ... else ... end` block (sandbox, Fast Track gate / debt pad), just before its `end`",
+     "sandbox and the `if theme.luxury ... else ... end` block (Fast Track gate / debt pad), just before its `end`",
      "`WorldSkin.context({ \"Workplace:\" .. theme.title, \"Furnish:\" .. theme.title }, self.base, "
      "self.workplaceFolder)` (one call for both: they share the folder; the keys use the sign title, e.g. "
      "`Workplace:BUS DEPOT`)"),
@@ -764,7 +764,9 @@ def main():
     w("")
     w("*name in the game*: the Model name for objects the game makes as a named Model (Money Makers, debts, "
       "dreams, `Kid`; the kit goes inside that Model, so the name stays); otherwise the inventory name of a group "
-      "of plain `Part`s (`INVENTORY.md`), which keep their own names. *script-referenced*: some game script finds "
+      "of plain `Part`s (`INVENTORY.md`), which keep their own names. `Other Debt` and `Unknown Maker` are "
+      "stand-in names the world dump used to make the game build its fallback debt crate and golden box. "
+      "*script-referenced*: some game script finds "
       "the object type by name, measures it or changes it (`data/script_refs.json`).")
     w("")
     w("| template (= WorldKit name) | name in the game | FBX | meshes | how it is placed | built by (game code) | script-referenced |")

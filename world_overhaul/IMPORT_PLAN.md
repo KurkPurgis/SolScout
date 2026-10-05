@@ -1,6 +1,6 @@
 # Import plan - how to swap the new look into the game (NOT executed)
 
-Written 2026-10-05 09:33. Nothing here has been done: nothing was uploaded, published or changed in `src/`.
+Written 2026-10-05 09:41. Nothing here has been done: nothing was uploaded, published or changed in `src/`.
 
 ## The idea in one paragraph
 
@@ -123,7 +123,7 @@ Copy `world_overhaul/export/roblox/WorldSkin.luau` and `WorldSkinPlacements.luau
 | `World/Plaza.luau` `Plaza.new` | before `return self` | `WorldSkin.context("Plaza", base, folder)` |
 | `World/AuctionRoom.luau` `AuctionRoom.new` | before `return self` | `WorldSkin.context("AuctionRoom", BASE, folder)` |
 | `World/PodiumRoom.luau` `PodiumRoom.new` | before `return self` | `WorldSkin.context("PodiumRoom", base, folder)` |
-| `World/Plots.luau` `Plots:buildWorkplace(theme)` | at the very end of the function: after the `if theme.luxury ... else ... end` block (sandbox, Fast Track gate / debt pad), just before its `end` | `WorldSkin.context({ "Workplace:" .. theme.title, "Furnish:" .. theme.title }, self.base, self.workplaceFolder)` (one call for both: they share the folder; the keys use the sign title, e.g. `Workplace:BUS DEPOT`) |
+| `World/Plots.luau` `Plots:buildWorkplace(theme)` | at the very end of the function: after the sandbox and the `if theme.luxury ... else ... end` block (Fast Track gate / debt pad), just before its `end` | `WorldSkin.context({ "Workplace:" .. theme.title, "Furnish:" .. theme.title }, self.base, self.workplaceFolder)` (one call for both: they share the folder; the keys use the sign title, e.g. `Workplace:BUS DEPOT`) |
 | `World/Plots.luau` `Plots:syncCollection` | right after the two `Props.box` lines of the showcase table (before the loop) | `WorldSkin.context("Collection", self.base, self.collectionFolder)` |
 | `World/Plots.luau` `Plots:syncDream` | in the `else` branch (locked or won dream), right after the two `Props.box` lines of the marble pedestal (before `Props.dream`) | `WorldSkin.context("DreamArea", self.base, self.dreamFolder)` |
 | `World/Plots.luau` `addChains(folder, model)` | at the end | `WorldSkin.chains(folder)`: the chains **link by link** (your decision): `Dream_ChainSegment` pieces tiled along every chain bar + `Dream_Padlock` |
@@ -169,7 +169,7 @@ Set `WorldSkin.ENABLED = false` (or remove the calls): nothing is hidden and no 
 
 ## Every model: file, name and where it goes
 
-*name in the game*: the Model name for objects the game makes as a named Model (Money Makers, debts, dreams, `Kid`; the kit goes inside that Model, so the name stays); otherwise the inventory name of a group of plain `Part`s (`INVENTORY.md`), which keep their own names. *script-referenced*: some game script finds the object type by name, measures it or changes it (`data/script_refs.json`).
+*name in the game*: the Model name for objects the game makes as a named Model (Money Makers, debts, dreams, `Kid`; the kit goes inside that Model, so the name stays); otherwise the inventory name of a group of plain `Part`s (`INVENTORY.md`), which keep their own names. `Other Debt` and `Unknown Maker` are stand-in names the world dump used to make the game build its fallback debt crate and golden box. *script-referenced*: some game script finds the object type by name, measures it or changes it (`data/script_refs.json`).
 
 | template (= WorldKit name) | name in the game | FBX | meshes | how it is placed | built by (game code) | script-referenced |
 |---|---|---|---|---|---|---|
