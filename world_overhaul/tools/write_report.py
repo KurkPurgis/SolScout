@@ -19,7 +19,7 @@ ROOT = os.path.normpath(os.path.join(HERE, ".."))
 sys.path.insert(0, HERE)
 
 from verify_placements import verify  # noqa: E402
-from write_import_plan import LINK_BY_LINK  # noqa: E402
+from write_import_plan import LINK_BY_LINK, alias_model, is_script_referenced  # noqa: E402
 
 
 def load(*p):
@@ -101,9 +101,10 @@ def table_rows(status, templates, refs, plan):
         e = status.get(name)
         alias = aliases.get(name)
         if e is None and alias:
-            st = "uses %s" % alias
-            tris = status.get(alias, {}).get("triangles", "")
-            fbx = status.get(alias, {}).get("fbx", "")
+            model, _ = alias_model(name, templates, aliases)
+            st = "uses %s" % model
+            tris = status.get(model, {}).get("triangles", "")
+            fbx = status.get(model, {}).get("fbx", "")
         elif e is None:
             st, tris, fbx = "not modelled", "", ""
         else:
@@ -113,9 +114,9 @@ def table_rows(status, templates, refs, plan):
                 st += ", **not imported** (replaced link by link, question 2)"
             tris = "%s / %s" % (e.get("triangles", ""), e.get("budget", ""))
             fbx = e.get("fbx", "")
-        sref = "yes" if name in refs["script_referenced"] else ""
+        sref = "yes" if is_script_referenced(name, templates, refs) else ""
         count = t.get("instances", "")
-        fbx_link = "[fbx](%s)" % fbx.replace(" ", "%20") if fbx else ""
+        fbx_link = "[fbx](%s)" % fbx.replace(" ", "%20").replace("(", "%28").replace(")", "%29") if fbx else ""
         rows.append("| %d | %s | %s | %s | %s | %s | %s | %s |" % (
             i, name, t.get("category", ""), count, st, tris, sref, fbx_link))
     return rows
@@ -151,19 +152,22 @@ def main():
       "one palette, the same bevels and parts everywhere.")
     own = sum(1 for n in plan["order"] if n in status and status[n].get("fbx"))
     copies = sum(1 for n in plan["order"] if n not in status and n in plan["aliases"])
-    w("- All **%d object types** are covered: %d have their own model and %d are size or color copies that reuse "
-      "one. With %d extra kit models (book-stack sizes, chain segment, padlock, PokeBlox card cases, the 4th kid) "
+    n_types = len({t.get("type", n) for n, t in templates.items()})
+    w("- All **%d templates** (the different models the world needs; %d object types, see `INVENTORY.md`) are "
+      "covered: %d have their own model and %d reuse another kit model (debts at another size, the 4- and 7-book "
+      "School Loans, the mirrored lobby palm). With %d extra kit models (book-stack sizes, chain segment, padlock, PokeBlox card cases, the 4th kid) "
       "that is **%d FBX models**; %d are reviewed and done%s. %d of them are imported: all but the one-piece "
       "`Dream_Chains`, which your answer to question 2 replaced link by link." % (
-          own + copies, own, copies, len(built) - own, len(built), len(done),
+          own + copies, n_types, own, copies, len(built) - own, len(built), len(done),
           (", %d need your review (listed below)" % len(review)) if review else ", none is left waiting for review",
           len(imported)))
     w("- Counted once each, the %d imported models have %d triangles together; the biggest single model "
       "(`%s`) has %d (Roblox allows 20,000 per mesh)." % (len(imported), total_tris, biggest,
                                                         imported[biggest].get("triangles", 0)))
-    w("- **Nothing in the game was changed.** Every new model has the same name, position and rotation as the "
-      "original object and the same size (within 0.15 studs, exceptions in question 5), so swapping it in is "
-      "mechanical (`IMPORT_PLAN.md`, not executed).")
+    w("- **Nothing in the game was changed.** Every new model sits at the same position and rotation as the "
+      "original object, with the same size (within 0.15 studs, exceptions in question 5). The old parts and "
+      "Models keep their names and jobs (the new meshes go inside or next to them), so swapping is mechanical "
+      "(`IMPORT_PLAN.md`, not executed).")
     w("- The whole world uses **one small texture** (`palette/palette_color.png`, 32 colors). See `STYLE_GUIDE.md`.")
     if open_questions:
         listed = ", ".join(str(i) for i in open_questions[:-1]) + (" and " if len(open_questions) > 1 else "") + \
@@ -234,8 +238,8 @@ def main():
     w("## Every object type")
     w("")
     w("`template` = one model (variants in color or size count separately, see INVENTORY.md). "
-      "*Script-referenced* = some game script finds it by name, measures it or changes it; those keep the "
-      "original names and boxes exactly, see `data/script_refs.json` for the evidence.")
+      "*Script-referenced* = some game script finds the object type by name, measures it or changes it; those "
+      "keep the original names and boxes exactly, see `data/script_refs.json` for the evidence.")
     w("")
     w("| # | template | category | copies | status | triangles / budget | script-referenced | file |")
     w("|---|---|---|---|---|---|---|---|")

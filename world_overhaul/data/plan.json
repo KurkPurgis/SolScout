@@ -1,5 +1,5 @@
 {
- "current_step": "Done. All 125 object types are covered (115 own models + 10 copies), plus 14 extra kit models (chain segment, padlock, School Loan sizes, PokeBlox card cases, the 4th kid): 129 kit models, all reviewed. Your answers of 2026-10-05 are in (no outline, chains link by link, warm glow kept, bbox exceptions accepted); questions 4, 6 and 7 in REPORT.md are still open. The import plan was fixed after a review (tree frames, Fast Track duplicates, glow script, missing-kit safety) and is checked by tools/verify_placements.py and the two Luau tests in tools/luau/.",
+ "current_step": "Done. All 125 templates (98 object types) are covered (115 own models + 10 that reuse another kit model), plus 14 extra kit models (chain segment, padlock, School Loan sizes, PokeBlox card cases, the 4th kid): 129 kit models, all reviewed. Your answers of 2026-10-05 are in (no outline, chains link by link, warm glow kept, bbox exceptions accepted); questions 4, 6 and 7 in REPORT.md are still open. The import plan was fixed after a review (tree frames, Fast Track duplicates, glow script, missing-kit safety) and is checked by tools/verify_placements.py and the two Luau tests in tools/luau/.",
  "phases": [
   {
    "name": "Phase 1 - inventory (world extracted, INVENTORY.md, BEFORE renders)",

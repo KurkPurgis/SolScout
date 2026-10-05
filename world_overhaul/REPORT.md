@@ -1,15 +1,15 @@
 # Rags to Riches - new look for the whole world (report)
 
-Written 2026-10-05 08:52. Start here; everything else is linked from this page.
+Written 2026-10-05 09:33. Start here; everything else is linked from this page.
 
 ## In short
 
 - I rebuilt **every visible object** of the world in the style of the 3D icons: chunky, rounded, bright, one palette, the same bevels and parts everywhere.
-- All **125 object types** are covered: 115 have their own model and 10 are size or color copies that reuse one. With 14 extra kit models (book-stack sizes, chain segment, padlock, PokeBlox card cases, the 4th kid) that is **129 FBX models**; 129 are reviewed and done, none is left waiting for review. 128 of them are imported: all but the one-piece `Dream_Chains`, which your answer to question 2 replaced link by link.
+- All **125 templates** (the different models the world needs; 98 object types, see `INVENTORY.md`) are covered: 115 have their own model and 10 reuse another kit model (debts at another size, the 4- and 7-book School Loans, the mirrored lobby palm). With 14 extra kit models (book-stack sizes, chain segment, padlock, PokeBlox card cases, the 4th kid) that is **129 FBX models**; 129 are reviewed and done, none is left waiting for review. 128 of them are imported: all but the one-piece `Dream_Chains`, which your answer to question 2 replaced link by link.
 - Counted once each, the 128 imported models have 160310 triangles together; the biggest single model (`Dream_PrivateIsland`) has 5608 (Roblox allows 20,000 per mesh).
-- **Nothing in the game was changed.** Every new model has the same name, position and rotation as the original object and the same size (within 0.15 studs, exceptions in question 5), so swapping it in is mechanical (`IMPORT_PLAN.md`, not executed).
+- **Nothing in the game was changed.** Every new model sits at the same position and rotation as the original object, with the same size (within 0.15 studs, exceptions in question 5). The old parts and Models keep their names and jobs (the new meshes go inside or next to them), so swapping is mechanical (`IMPORT_PLAN.md`, not executed).
 - The whole world uses **one small texture** (`palette/palette_color.png`, 32 colors). See `STYLE_GUIDE.md`.
-- 24 decisions I took on my own are in `DECISIONS.md` (one line of reasoning each). Your answers of 2026-10-05 are recorded below; questions 4, 6 and 7 are still open (a look in Studio or a choice from you).
+- 25 decisions I took on my own are in `DECISIONS.md` (one line of reasoning each). Your answers of 2026-10-05 are recorded below; questions 4, 6 and 7 are still open (a look in Studio or a choice from you).
 
 ## Before and after (same cameras)
 
@@ -103,20 +103,20 @@ Answered on 2026-10-05 (recorded in `DECISIONS.md`); the ones without an answer 
 
 ## Every object type
 
-`template` = one model (variants in color or size count separately, see INVENTORY.md). *Script-referenced* = some game script finds it by name, measures it or changes it; those keep the original names and boxes exactly, see `data/script_refs.json` for the evidence.
+`template` = one model (variants in color or size count separately, see INVENTORY.md). *Script-referenced* = some game script finds the object type by name, measures it or changes it; those keep the original names and boxes exactly, see `data/script_refs.json` for the evidence.
 
 | # | template | category | copies | status | triangles / budget | script-referenced | file |
 |---|---|---|---|---|---|---|---|
-| 1 | Workplace_Building_PIZZERIA | buildings | 1 | done | 5188 / 6000 |  | [fbx](export/buildings/Workplace_Building_PIZZERIA.fbx) |
-| 2 | Workplace_Building_BUSDEPOT | buildings | 1 | done | 5076 / 6000 |  | [fbx](export/buildings/Workplace_Building_BUSDEPOT.fbx) |
-| 3 | Workplace_Building_HOSPITAL | buildings | 1 | done | 5252 / 6000 |  | [fbx](export/buildings/Workplace_Building_HOSPITAL.fbx) |
-| 4 | Workplace_Building_CLINIC | buildings | 1 | done | 5076 / 6000 |  | [fbx](export/buildings/Workplace_Building_CLINIC.fbx) |
-| 5 | Workplace_Building_SCHOOL | buildings | 1 | done | 5164 / 6000 |  | [fbx](export/buildings/Workplace_Building_SCHOOL.fbx) |
-| 6 | Workplace_Building_POLICE | buildings | 1 | done | 5184 / 6000 |  | [fbx](export/buildings/Workplace_Building_POLICE.fbx) |
-| 7 | Workplace_Building_OFFICE | buildings | 1 | done | 5076 / 6000 |  | [fbx](export/buildings/Workplace_Building_OFFICE.fbx) |
-| 8 | Workplace_Building_GARAGE | buildings | 1 | done | 5076 / 6000 |  | [fbx](export/buildings/Workplace_Building_GARAGE.fbx) |
-| 9 | Workplace_Building_FASTTRACK | buildings | 2 | done | 5260 / 6000 |  | [fbx](export/buildings/Workplace_Building_FASTTRACK.fbx) |
-| 10 | Workplace_Yard_v2 | ground | 8 | done | 716 / 1500 |  | [fbx](export/ground/Workplace_Yard_v2.fbx) |
+| 1 | Workplace_Building_PIZZERIA | buildings | 1 | done | 5188 / 6000 | yes | [fbx](export/buildings/Workplace_Building_PIZZERIA.fbx) |
+| 2 | Workplace_Building_BUSDEPOT | buildings | 1 | done | 5076 / 6000 | yes | [fbx](export/buildings/Workplace_Building_BUSDEPOT.fbx) |
+| 3 | Workplace_Building_HOSPITAL | buildings | 1 | done | 5252 / 6000 | yes | [fbx](export/buildings/Workplace_Building_HOSPITAL.fbx) |
+| 4 | Workplace_Building_CLINIC | buildings | 1 | done | 5076 / 6000 | yes | [fbx](export/buildings/Workplace_Building_CLINIC.fbx) |
+| 5 | Workplace_Building_SCHOOL | buildings | 1 | done | 5164 / 6000 | yes | [fbx](export/buildings/Workplace_Building_SCHOOL.fbx) |
+| 6 | Workplace_Building_POLICE | buildings | 1 | done | 5184 / 6000 | yes | [fbx](export/buildings/Workplace_Building_POLICE.fbx) |
+| 7 | Workplace_Building_OFFICE | buildings | 1 | done | 5076 / 6000 | yes | [fbx](export/buildings/Workplace_Building_OFFICE.fbx) |
+| 8 | Workplace_Building_GARAGE | buildings | 1 | done | 5076 / 6000 | yes | [fbx](export/buildings/Workplace_Building_GARAGE.fbx) |
+| 9 | Workplace_Building_FASTTRACK | buildings | 2 | done | 5260 / 6000 | yes | [fbx](export/buildings/Workplace_Building_FASTTRACK.fbx) |
+| 10 | Workplace_Yard_v2 | ground | 8 | done | 716 / 1500 | yes | [fbx](export/ground/Workplace_Yard_v2.fbx) |
 | 11 | Workplace_Yard | ground | 2 | done | 256 / 1500 | yes | [fbx](export/ground/Workplace_Yard.fbx) |
 | 12 | Workplace_MakerLot | ground | 80 | done | 188 / 1500 | yes | [fbx](export/ground/Workplace_MakerLot.fbx) |
 | 13 | Workplace_Fence | decoration | 20 | done | 912 / 1500 | yes | [fbx](export/decoration/Workplace_Fence.fbx) |
@@ -153,17 +153,17 @@ Answered on 2026-10-05 (recorded in `DECISIONS.md`); the ones without an answer 
 | 44 | Maker_ThemePark | props | 2 | done | 1136 / 3000 | yes | [fbx](export/props/Theme%20Park.fbx) |
 | 45 | Maker_PokeBloxCard | props | 4 | done | 936 / 1500 | yes | [fbx](export/props/PokeBlox%20Card.fbx) |
 | 46 | Maker_RarePokeBloxCard | props | 2 | done | 936 / 1500 | yes | [fbx](export/props/Rare%20PokeBlox%20Card.fbx) |
-| 47 | Maker_RarePokeBloxCard_v2 | props | 3 | done | 936 / 1500 |  | [fbx](export/props/Rare%20PokeBlox%20Card%20(case%202).fbx) |
-| 48 | Maker_RarePokeBloxCard_v3 | props | 1 | done | 936 / 1500 |  | [fbx](export/props/Rare%20PokeBlox%20Card%20(case%203).fbx) |
-| 49 | Maker_RarePokeBloxCard_v4 | props | 1 | done | 936 / 1500 |  | [fbx](export/props/Rare%20PokeBlox%20Card%20(case%204).fbx) |
+| 47 | Maker_RarePokeBloxCard_v2 | props | 3 | done | 936 / 1500 | yes | [fbx](export/props/Rare%20PokeBlox%20Card%20%28case%202%29.fbx) |
+| 48 | Maker_RarePokeBloxCard_v3 | props | 1 | done | 936 / 1500 | yes | [fbx](export/props/Rare%20PokeBlox%20Card%20%28case%203%29.fbx) |
+| 49 | Maker_RarePokeBloxCard_v4 | props | 1 | done | 936 / 1500 | yes | [fbx](export/props/Rare%20PokeBlox%20Card%20%28case%204%29.fbx) |
 | 50 | Maker_ShinyPokeBloxCard | props | 3 | done | 936 / 1500 | yes | [fbx](export/props/Shiny%20PokeBlox%20Card.fbx) |
 | 51 | Maker_GoldCoin | props | 5 | done | 580 / 1500 | yes | [fbx](export/props/Gold%20Coin.fbx) |
 | 52 | Maker_GoldBar | props | 3 | done | 648 / 1500 | yes | [fbx](export/props/Gold%20Bar.fbx) |
 | 53 | Maker_GoldTreasureChest | props | 3 | done | 856 / 1500 | yes | [fbx](export/props/Gold%20Treasure%20Chest.fbx) |
 | 54 | Maker_UnknownMaker | props | 1 | done | 752 / 1500 | yes | [fbx](export/props/Unknown%20Maker.fbx) |
 | 55 | Kid | props | 8 | done | 538 / 1500 | yes | [fbx](export/props/Kid.fbx) |
-| 56 | Kid_v2 | props | 4 | done | 538 / 1500 |  | [fbx](export/props/Kid%20(blue).fbx) |
-| 57 | Kid_v3 | props | 1 | done | 538 / 1500 |  | [fbx](export/props/Kid%20(yellow).fbx) |
+| 56 | Kid_v2 | props | 4 | done | 538 / 1500 | yes | [fbx](export/props/Kid%20%28blue%29.fbx) |
+| 57 | Kid_v3 | props | 1 | done | 538 / 1500 | yes | [fbx](export/props/Kid%20%28yellow%29.fbx) |
 | 58 | Debt_CreditCard | props | 2 | done | 320 / 1500 | yes | [fbx](export/props/Credit%20Card.fbx) |
 | 59 | Debt_CarLoan | props | 2 | done | 1052 / 1500 | yes | [fbx](export/props/Car%20Loan.fbx) |
 | 60 | Debt_SchoolLoan | props | 2 | done | 512 / 1500 | yes | [fbx](export/props/School%20Loan.fbx) |
@@ -187,9 +187,9 @@ Answered on 2026-10-05 (recorded in `DECISIONS.md`); the ones without an answer 
 | 78 | Garage_ToolBoard | decoration | 1 | done | 372 / 1500 |  | [fbx](export/decoration/Garage_ToolBoard.fbx) |
 | 79 | Garage_TireStack | props | 1 | done | 1052 / 1500 |  | [fbx](export/props/Garage_TireStack.fbx) |
 | 80 | Lobby_RoomBooth | buildings | 1 | done | 1440 / 6000 | yes | [fbx](export/buildings/Lobby_RoomBooth.fbx) |
-| 81 | Lobby_RoomBooth_v2 | buildings | 1 | done | 1440 / 6000 |  | [fbx](export/buildings/Lobby_RoomBooth_v2.fbx) |
-| 82 | Lobby_RoomBooth_v3 | buildings | 1 | done | 1440 / 6000 |  | [fbx](export/buildings/Lobby_RoomBooth_v3.fbx) |
-| 83 | Lobby_RoomBooth_v4 | buildings | 1 | done | 1440 / 6000 |  | [fbx](export/buildings/Lobby_RoomBooth_v4.fbx) |
+| 81 | Lobby_RoomBooth_v2 | buildings | 1 | done | 1440 / 6000 | yes | [fbx](export/buildings/Lobby_RoomBooth_v2.fbx) |
+| 82 | Lobby_RoomBooth_v3 | buildings | 1 | done | 1440 / 6000 | yes | [fbx](export/buildings/Lobby_RoomBooth_v3.fbx) |
+| 83 | Lobby_RoomBooth_v4 | buildings | 1 | done | 1440 / 6000 | yes | [fbx](export/buildings/Lobby_RoomBooth_v4.fbx) |
 | 84 | Lobby_Pillar | decoration | 8 | done | 628 / 1500 |  | [fbx](export/decoration/Lobby_Pillar.fbx) |
 | 85 | Lobby_Trophy | props | 1 | done | 1040 / 1500 |  | [fbx](export/props/Lobby_Trophy.fbx) |
 | 86 | Lobby_PottedPalm | nature | 2 | done | 1176 / 1500 |  | [fbx](export/nature/Lobby_PottedPalm.fbx) |
@@ -222,15 +222,15 @@ Answered on 2026-10-05 (recorded in `DECISIONS.md`); the ones without an answer 
 | 113 | PodiumRoom_TitleSign | signs | 4 | done | 360 / 1500 | yes | [fbx](export/signs/PodiumRoom_TitleSign.fbx) |
 | 114 | PodiumRoom_Board | signs | 4 | done | 216 / 1500 | yes | [fbx](export/signs/PodiumRoom_Board.fbx) |
 | 115 | Baseplate | ground | 1 | done | 76 / 1500 | yes | [fbx](export/ground/Baseplate.fbx) |
-| 116 | Debt_BankLoan_v2 | props | 1 | uses Debt_BankLoan | 384 |  | [fbx](export/props/Bank%20Loan.fbx) |
-| 117 | Debt_CarLoan_v2 | props | 1 | uses Debt_CarLoan | 1052 |  | [fbx](export/props/Car%20Loan.fbx) |
-| 118 | Debt_CarLoan_v3 | props | 1 | uses Debt_CarLoan | 1052 |  | [fbx](export/props/Car%20Loan.fbx) |
-| 119 | Debt_CarLoan_v4 | props | 1 | uses Debt_CarLoan | 1052 |  | [fbx](export/props/Car%20Loan.fbx) |
-| 120 | Debt_CreditCard_v2 | props | 1 | uses Debt_CreditCard | 320 |  | [fbx](export/props/Credit%20Card.fbx) |
-| 121 | Debt_CreditCard_v3 | props | 1 | uses Debt_CreditCard | 320 |  | [fbx](export/props/Credit%20Card.fbx) |
-| 122 | Debt_OtherDebt_v2 | props | 1 | uses Debt_OtherDebt | 336 |  | [fbx](export/props/Debt%20Crate.fbx) |
-| 123 | Debt_SchoolLoan_v2 | props | 2 | uses Debt_SchoolLoan | 512 |  | [fbx](export/props/School%20Loan.fbx) |
-| 124 | Debt_SchoolLoan_v3 | props | 1 | uses Debt_SchoolLoan | 512 |  | [fbx](export/props/School%20Loan.fbx) |
+| 116 | Debt_BankLoan_v2 | props | 1 | uses Debt_BankLoan | 384 | yes | [fbx](export/props/Bank%20Loan.fbx) |
+| 117 | Debt_CarLoan_v2 | props | 1 | uses Debt_CarLoan | 1052 | yes | [fbx](export/props/Car%20Loan.fbx) |
+| 118 | Debt_CarLoan_v3 | props | 1 | uses Debt_CarLoan | 1052 | yes | [fbx](export/props/Car%20Loan.fbx) |
+| 119 | Debt_CarLoan_v4 | props | 1 | uses Debt_CarLoan | 1052 | yes | [fbx](export/props/Car%20Loan.fbx) |
+| 120 | Debt_CreditCard_v2 | props | 1 | uses Debt_CreditCard | 320 | yes | [fbx](export/props/Credit%20Card.fbx) |
+| 121 | Debt_CreditCard_v3 | props | 1 | uses Debt_CreditCard | 320 | yes | [fbx](export/props/Credit%20Card.fbx) |
+| 122 | Debt_OtherDebt_v2 | props | 1 | uses Debt_OtherDebt | 336 | yes | [fbx](export/props/Debt%20Crate.fbx) |
+| 123 | Debt_SchoolLoan_v2 | props | 2 | uses Debt_SchoolLoan_books7 | 992 | yes | [fbx](export/props/School%20Loan%20%287%20books%29.fbx) |
+| 124 | Debt_SchoolLoan_v3 | props | 1 | uses Debt_SchoolLoan_books4 | 632 | yes | [fbx](export/props/School%20Loan%20%284%20books%29.fbx) |
 | 125 | Lobby_PottedPalm_v2 | nature | 2 | uses Lobby_PottedPalm | 1176 |  | [fbx](export/nature/Lobby_PottedPalm.fbx) |
 
 Extra kit models (pieces, size steps and variants the game builds in code): `Debt_SchoolLoan_books2` (392 tris), `Debt_SchoolLoan_books4` (632 tris), `Debt_SchoolLoan_books5` (752 tris), `Debt_SchoolLoan_books6` (872 tris), `Debt_SchoolLoan_books7` (992 tris), `Dream_ChainSegment` (144 tris), `Dream_Padlock` (292 tris), `Kid_v4` (538 tris), `Maker_PokeBloxCard_case2` (936 tris), `Maker_PokeBloxCard_case3` (936 tris), `Maker_PokeBloxCard_case4` (936 tris), `Maker_ShinyPokeBloxCard_case1` (936 tris), `Maker_ShinyPokeBloxCard_case2` (936 tris), `Maker_ShinyPokeBloxCard_case4` (936 tris).

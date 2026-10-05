@@ -1,11 +1,11 @@
 # Progress
 
 If you (or I after a restart) pick this up: read this file and STYLE_GUIDE.md first.
-Updated: 2026-10-05 08:52
+Updated: 2026-10-05 09:33
 
 ## Current step
 
-Done. All 125 object types are covered (115 own models + 10 copies), plus 14 extra kit models (chain segment, padlock, School Loan sizes, PokeBlox card cases, the 4th kid): 129 kit models, all reviewed. Your answers of 2026-10-05 are in (no outline, chains link by link, warm glow kept, bbox exceptions accepted); questions 4, 6 and 7 in REPORT.md are still open. The import plan was fixed after a review (tree frames, Fast Track duplicates, glow script, missing-kit safety) and is checked by tools/verify_placements.py and the two Luau tests in tools/luau/.
+Done. All 125 templates (98 object types) are covered (115 own models + 10 that reuse another kit model), plus 14 extra kit models (chain segment, padlock, School Loan sizes, PokeBlox card cases, the 4th kid): 129 kit models, all reviewed. Your answers of 2026-10-05 are in (no outline, chains link by link, warm glow kept, bbox exceptions accepted); questions 4, 6 and 7 in REPORT.md are still open. The import plan was fixed after a review (tree frames, Fast Track duplicates, glow script, missing-kit safety) and is checked by tools/verify_placements.py and the two Luau tests in tools/luau/.
 
 ## How to continue
 
@@ -152,8 +152,8 @@ alias: 10, done: 115, extra done: 14 (129 kit models in all, 129 FBX files)
 | 120 | Debt_CreditCard_v2 | props | uses Debt_CreditCard |  |  |  |
 | 121 | Debt_CreditCard_v3 | props | uses Debt_CreditCard |  |  |  |
 | 122 | Debt_OtherDebt_v2 | props | uses Debt_OtherDebt |  |  |  |
-| 123 | Debt_SchoolLoan_v2 | props | uses Debt_SchoolLoan |  |  |  |
-| 124 | Debt_SchoolLoan_v3 | props | uses Debt_SchoolLoan |  |  |  |
+| 123 | Debt_SchoolLoan_v2 | props | uses Debt_SchoolLoan_books7 |  |  |  |
+| 124 | Debt_SchoolLoan_v3 | props | uses Debt_SchoolLoan_books4 |  |  |  |
 | 125 | Lobby_PottedPalm_v2 | nature | uses Lobby_PottedPalm |  |  |  |
 
 ## Extra kit models (pieces and variants the game makes, not object types of their own)

@@ -12,7 +12,8 @@
 	              builder name has its own kit model, PokeBlox cards pick the case of Props.cardCase(value),
 	              School Loan the number of books of debtBuilders["School Loan"], the 4 KID_SHIRTS 4 kids;
 	              every name returned is a model that was built (data/model_status.json)
-	3. missing    a missing kit model hides nothing (object, stretched, context, chains)
+	3. missing    a missing kit model hides nothing (object, stretched, context, chains); object() on a BasePart
+	              (the baseplate) and on nil (no baseplate)
 	4. context    one call with two keys (workplace + furniture): both lists placed, old parts hidden
 	5. glow       setGlow(nearest(...)) turns on only that desk's glow shell, the desk body stays as it is
 	6. show       show(): the podium board's kit copy shows/hides, the old board stays hidden;
@@ -365,6 +366,14 @@ do
 	-- the kit is there: object() works and the old parts hide
 	WorldSkin.object(m, "Kid", CFrame.new(3, 0, 0))
 	expect("object with kit", not allVisible(m) and m:FindFirstChild("Kid") ~= nil, "")
+	-- the baseplate row: a BasePart root, and a place without a Baseplate (nil)
+	local plate = part(R.workspace, "Baseplate", Vector3.new(512, 20, 512), CFrame.new(0, -10, 0))
+	WorldSkin.object(R.workspace:FindFirstChild("Baseplate"), "Kid", CFrame.new())
+	expect("object on a BasePart", plate.Transparency == 1 and plate.CanCollide == true and plate:FindFirstChild("Kid") ~= nil,
+		string.format("T %s", tostring(plate.Transparency)))
+	local okNil = pcall(WorldSkin.object, R.workspace:FindFirstChild("NoSuchPart"), "Kid", CFrame.new())
+	expect("object nil model", okNil, "error on a nil model")
+	plate:Destroy()
 	local w = 0
 	for _, text in warnings do
 		if string.find(text, "NotInTheKit", 1, true) then

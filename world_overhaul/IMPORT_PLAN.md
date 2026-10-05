@@ -1,6 +1,6 @@
 # Import plan - how to swap the new look into the game (NOT executed)
 
-Written 2026-10-05 08:52. Nothing here has been done: nothing was uploaded, published or changed in `src/`.
+Written 2026-10-05 09:33. Nothing here has been done: nothing was uploaded, published or changed in `src/`.
 
 ## The idea in one paragraph
 
@@ -9,7 +9,7 @@ The world is built by Luau code when the server starts (and while a game runs), 
 ## Step 1 - safety first
 
 1. Make a git branch in the game repo (e.g. `new-look`). Do the steps below in a copy of the place, not the live game.
-2. You will add 2 files to `src/`, a `require` line in 6 files and 14 one-line calls (Step 6; one of them replaces a line); everything else happens in Studio.
+2. You will add 2 files to `src/`, a `require` line in 6 files and 15 one-line calls (Step 6; one of them replaces a line); everything else happens in Studio.
 
 ## Step 2 - upload the palette (2 images)
 
@@ -27,7 +27,7 @@ Import every file in `world_overhaul/export/<category>/*.fbx` - 128 files: all o
 | File Transform | World Forward / World Up | Front / Top | (see the check below) |
 | File Geometry | Scale Unit | **Stud** | 1 Blender unit = 1 stud |
 
-**Check on the first model before importing the rest:** import `export/buildings/Workplace_Building_PIZZERIA.fbx` at the origin. Its box must span x -24.8..24.8, y -1.0..18.5, z 2.5..24.8 (from `data/model_status.json` -> `bbox_new`), with the open front and the big sign on the low-z side (z 2.5). If it comes in turned 180 degrees (sign at z 24.8), set World Forward to **Back** for every import. The FBX files were exported with Blender's default axes (forward -Z, up Y), so the coordinates in the files already are Roblox coordinates.
+**Check on the first model before importing the rest:** import `export/buildings/Workplace_Building_PIZZERIA.fbx` at the origin. Its box must span x -24.8..24.8, y -1.0..18.5, z 2.5..24.8 (from `data/model_status.json` -> `bbox_new`): the open front (awning edge at z 2.5) and the big sign (near z 6.5) on the low-z side. If the box spans z -24.8..-2.5 instead (and x -24.8..24.8), the file came in turned 180 degrees about the origin: set World Forward to **Back** for every import. The FBX files were exported with Blender's default axes (forward -Z, up Y), so the coordinates in the files already are Roblox coordinates.
 
 ## Step 4 - the WorldKit folder
 
@@ -118,11 +118,12 @@ Copy `world_overhaul/export/roblox/WorldSkin.luau` and `WorldSkinPlacements.luau
 
 | file / function | where | line |
 |---|---|---|
+| `Lobby.luau` (start-up) | right before `buildHall()` is called (line 476) | `WorldSkin.object(workspace:FindFirstChild("Baseplate"), "Baseplate", CFrame.new())`: the grass baseplate of the place (Rojo `default.project.json`); the old Part stays, invisible, so `Props.groundY` still raycasts against it |
 | `Lobby.luau` `buildHall()` | at the end | `WorldSkin.context("Lobby", hallBase, folder)` |
 | `World/Plaza.luau` `Plaza.new` | before `return self` | `WorldSkin.context("Plaza", base, folder)` |
 | `World/AuctionRoom.luau` `AuctionRoom.new` | before `return self` | `WorldSkin.context("AuctionRoom", BASE, folder)` |
 | `World/PodiumRoom.luau` `PodiumRoom.new` | before `return self` | `WorldSkin.context("PodiumRoom", base, folder)` |
-| `World/Plots.luau` `Plots:buildWorkplace(theme)` | at the end of the function (after the flower boxes) | `WorldSkin.context({ "Workplace:" .. theme.title, "Furnish:" .. theme.title }, self.base, self.workplaceFolder)` (one call for both: they share the folder; the keys use the sign title, e.g. `Workplace:BUS DEPOT`) |
+| `World/Plots.luau` `Plots:buildWorkplace(theme)` | at the very end of the function: after the `if theme.luxury ... else ... end` block (sandbox, Fast Track gate / debt pad), just before its `end` | `WorldSkin.context({ "Workplace:" .. theme.title, "Furnish:" .. theme.title }, self.base, self.workplaceFolder)` (one call for both: they share the folder; the keys use the sign title, e.g. `Workplace:BUS DEPOT`) |
 | `World/Plots.luau` `Plots:syncCollection` | right after the two `Props.box` lines of the showcase table (before the loop) | `WorldSkin.context("Collection", self.base, self.collectionFolder)` |
 | `World/Plots.luau` `Plots:syncDream` | in the `else` branch (locked or won dream), right after the two `Props.box` lines of the marble pedestal (before `Props.dream`) | `WorldSkin.context("DreamArea", self.base, self.dreamFolder)` |
 | `World/Plots.luau` `addChains(folder, model)` | at the end | `WorldSkin.chains(folder)`: the chains **link by link** (your decision): `Dream_ChainSegment` pieces tiled along every chain bar + `Dream_Padlock` |
@@ -139,7 +140,7 @@ Why these places: the ghost FOR SALE copies (`Props.makeGhost`), the 0.4x collec
 
 ## Step 7 - test in Studio (Play Solo, then 2-4 players)
 
-- [ ] Lobby: walk around, the room booths still open, the spawn still works, the trophy and palms look right.
+- [ ] Lobby: walk around, the room booths still open, the spawn still works, the trophy and palms look right; the grass baseplate has the new look and you still stand on it.
 - [ ] Start a game: your workplace appears with the new building, furniture, fence, lamps and yard; you still walk on the same floor heights, the Pay/Buy prompts still appear on the debts and the FOR SALE item.
 - [ ] Buy a Money Maker: it stands on the lot, the next one stacks on top at the same height as before (`GetBoundingBox`), its label floats at the same spot.
 - [ ] The FOR SALE copy looks see-through (ForceField) - also the new meshes.
@@ -168,18 +169,20 @@ Set `WorldSkin.ENABLED = false` (or remove the calls): nothing is hidden and no 
 
 ## Every model: file, name and where it goes
 
+*name in the game*: the Model name for objects the game makes as a named Model (Money Makers, debts, dreams, `Kid`; the kit goes inside that Model, so the name stays); otherwise the inventory name of a group of plain `Part`s (`INVENTORY.md`), which keep their own names. *script-referenced*: some game script finds the object type by name, measures it or changes it (`data/script_refs.json`).
+
 | template (= WorldKit name) | name in the game | FBX | meshes | how it is placed | built by (game code) | script-referenced |
 |---|---|---|---|---|---|---|
-| Workplace_Building_PIZZERIA | Workplace_Building | `export/buildings/Workplace_Building_PIZZERIA.fbx` | `Workplace_Building_PIZZERIA`, `Workplace_Building_PIZZERIA_Glow_GLOW_WARM` | `WorldSkin.context` in Workplace:PIZZERIA | Plots.luau:131,135,136,137,138,143,144,147,148,153,154,155,162,166,167,169 |  |
-| Workplace_Building_BUSDEPOT | Workplace_Building | `export/buildings/Workplace_Building_BUSDEPOT.fbx` | `Workplace_Building_BUSDEPOT`, `Workplace_Building_BUSDEPOT_Glow_GLOW_WARM` | `WorldSkin.context` in Workplace:BUS DEPOT | Plots.luau:131,135,136,137,138,143,144,147,148,153,154,155,162,166,167,169 |  |
-| Workplace_Building_HOSPITAL | Workplace_Building | `export/buildings/Workplace_Building_HOSPITAL.fbx` | `Workplace_Building_HOSPITAL`, `Workplace_Building_HOSPITAL_Glow_GLOW_WARM` | `WorldSkin.context` in Workplace:HOSPITAL | Plots.luau:131,135,136,137,138,143,144,147,148,153,154,155,162,166,167,169 |  |
-| Workplace_Building_CLINIC | Workplace_Building | `export/buildings/Workplace_Building_CLINIC.fbx` | `Workplace_Building_CLINIC`, `Workplace_Building_CLINIC_Glow_GLOW_WARM` | `WorldSkin.context` in Workplace:CLINIC | Plots.luau:131,135,136,137,138,143,144,147,148,153,154,155,162,166,167,169 |  |
-| Workplace_Building_SCHOOL | Workplace_Building | `export/buildings/Workplace_Building_SCHOOL.fbx` | `Workplace_Building_SCHOOL`, `Workplace_Building_SCHOOL_Glow_GLOW_WARM` | `WorldSkin.context` in Workplace:SCHOOL | Plots.luau:131,135,136,137,138,143,144,147,148,153,154,155,162,166,167,169 |  |
-| Workplace_Building_POLICE | Workplace_Building | `export/buildings/Workplace_Building_POLICE.fbx` | `Workplace_Building_POLICE`, `Workplace_Building_POLICE_Glow_GLOW_WARM` | `WorldSkin.context` in Workplace:POLICE | Plots.luau:131,135,136,137,138,143,144,147,148,153,154,155,162,166,167,169 |  |
-| Workplace_Building_OFFICE | Workplace_Building | `export/buildings/Workplace_Building_OFFICE.fbx` | `Workplace_Building_OFFICE`, `Workplace_Building_OFFICE_Glow_GLOW_WARM` | `WorldSkin.context` in Workplace:OFFICE | Plots.luau:131,135,136,137,138,143,144,147,148,153,154,155,162,166,167,169 |  |
-| Workplace_Building_GARAGE | Workplace_Building | `export/buildings/Workplace_Building_GARAGE.fbx` | `Workplace_Building_GARAGE`, `Workplace_Building_GARAGE_Glow_GLOW_WARM` | `WorldSkin.context` in Workplace:GARAGE | Plots.luau:131,135,136,137,138,143,144,147,148,153,154,155,162,166,167,169 |  |
-| Workplace_Building_FASTTRACK | Workplace_Building | `export/buildings/Workplace_Building_FASTTRACK.fbx` | `Workplace_Building_FASTTRACK`, `Workplace_Building_FASTTRACK_Glow_GLOW_WARM` | `WorldSkin.context` in Workplace:FAST TRACK | Plots.luau:131,135,136,137,138,143,144,147,148,153,154,155,162,166,167,169 |  |
-| Workplace_Yard_v2 | Workplace_Yard | `export/ground/Workplace_Yard_v2.fbx` | `Workplace_Yard_v2` | `WorldSkin.context` in Workplace:* (8) | Plots.luau:130,132 |  |
+| Workplace_Building_PIZZERIA | Workplace_Building | `export/buildings/Workplace_Building_PIZZERIA.fbx` | `Workplace_Building_PIZZERIA`, `Workplace_Building_PIZZERIA_Glow_GLOW_WARM` | `WorldSkin.context` in Workplace:PIZZERIA | Plots.luau:131,135,136,137,138,143,144,147,148,153,154,155,162,166,167,169 | yes |
+| Workplace_Building_BUSDEPOT | Workplace_Building | `export/buildings/Workplace_Building_BUSDEPOT.fbx` | `Workplace_Building_BUSDEPOT`, `Workplace_Building_BUSDEPOT_Glow_GLOW_WARM` | `WorldSkin.context` in Workplace:BUS DEPOT | Plots.luau:131,135,136,137,138,143,144,147,148,153,154,155,162,166,167,169 | yes |
+| Workplace_Building_HOSPITAL | Workplace_Building | `export/buildings/Workplace_Building_HOSPITAL.fbx` | `Workplace_Building_HOSPITAL`, `Workplace_Building_HOSPITAL_Glow_GLOW_WARM` | `WorldSkin.context` in Workplace:HOSPITAL | Plots.luau:131,135,136,137,138,143,144,147,148,153,154,155,162,166,167,169 | yes |
+| Workplace_Building_CLINIC | Workplace_Building | `export/buildings/Workplace_Building_CLINIC.fbx` | `Workplace_Building_CLINIC`, `Workplace_Building_CLINIC_Glow_GLOW_WARM` | `WorldSkin.context` in Workplace:CLINIC | Plots.luau:131,135,136,137,138,143,144,147,148,153,154,155,162,166,167,169 | yes |
+| Workplace_Building_SCHOOL | Workplace_Building | `export/buildings/Workplace_Building_SCHOOL.fbx` | `Workplace_Building_SCHOOL`, `Workplace_Building_SCHOOL_Glow_GLOW_WARM` | `WorldSkin.context` in Workplace:SCHOOL | Plots.luau:131,135,136,137,138,143,144,147,148,153,154,155,162,166,167,169 | yes |
+| Workplace_Building_POLICE | Workplace_Building | `export/buildings/Workplace_Building_POLICE.fbx` | `Workplace_Building_POLICE`, `Workplace_Building_POLICE_Glow_GLOW_WARM` | `WorldSkin.context` in Workplace:POLICE | Plots.luau:131,135,136,137,138,143,144,147,148,153,154,155,162,166,167,169 | yes |
+| Workplace_Building_OFFICE | Workplace_Building | `export/buildings/Workplace_Building_OFFICE.fbx` | `Workplace_Building_OFFICE`, `Workplace_Building_OFFICE_Glow_GLOW_WARM` | `WorldSkin.context` in Workplace:OFFICE | Plots.luau:131,135,136,137,138,143,144,147,148,153,154,155,162,166,167,169 | yes |
+| Workplace_Building_GARAGE | Workplace_Building | `export/buildings/Workplace_Building_GARAGE.fbx` | `Workplace_Building_GARAGE`, `Workplace_Building_GARAGE_Glow_GLOW_WARM` | `WorldSkin.context` in Workplace:GARAGE | Plots.luau:131,135,136,137,138,143,144,147,148,153,154,155,162,166,167,169 | yes |
+| Workplace_Building_FASTTRACK | Workplace_Building | `export/buildings/Workplace_Building_FASTTRACK.fbx` | `Workplace_Building_FASTTRACK`, `Workplace_Building_FASTTRACK_Glow_GLOW_WARM` | `WorldSkin.context` in Workplace:FAST TRACK | Plots.luau:131,135,136,137,138,143,144,147,148,153,154,155,162,166,167,169 | yes |
+| Workplace_Yard_v2 | Workplace_Yard | `export/ground/Workplace_Yard_v2.fbx` | `Workplace_Yard_v2` | `WorldSkin.context` in Workplace:* (8) | Plots.luau:130,132 | yes |
 | Workplace_Yard | Workplace_Yard | `export/ground/Workplace_Yard.fbx` | `Workplace_Yard` | `WorldSkin.context` in Workplace:FAST TRACK | Plots.luau:130,132 | yes |
 | Workplace_MakerLot | Workplace_MakerLot | `export/ground/Workplace_MakerLot.fbx` | `Workplace_MakerLot` | `WorldSkin.context` in Workplace:* (9) | Plots.luau:176 | yes |
 | Workplace_Fence | Workplace_Fence | `export/decoration/Workplace_Fence.fbx` | `Workplace_Fence` | `WorldSkin.context` in Workplace:* (9) | Plots.luau:183,186 | yes |
@@ -188,7 +191,7 @@ Set `WorldSkin.ENABLED = false` (or remove the calls): nothing is hidden and no 
 | Workplace_Sandbox | Workplace_Sandbox | `export/props/Workplace_Sandbox.fbx` | `Workplace_Sandbox` | `WorldSkin.context` in Workplace:* (9) | Plots.luau:207,209 | yes |
 | Workplace_DebtPad | Workplace_DebtPad | `export/ground/Workplace_DebtPad.fbx` | `Workplace_DebtPad` | `WorldSkin.context` in Workplace:* (8) | Plots.luau:218 | yes |
 | Plaza_Fountain | Plaza_Fountain | `export/decoration/Plaza_Fountain.fbx` | `Plaza_Fountain`, `Plaza_Fountain_Glass`, `Plaza_Fountain_Glow_GLOW_COOL` | `WorldSkin.context` in Plaza | Plaza.luau:69,70,71,72 |  |
-| Tree | Tree | `export/nature/Tree.fbx` | `Tree` | `WorldSkin.context` in Plaza | Props.tree (Props.luau:352), called by Plaza.new |  |
+| Tree | Tree | `export/nature/Tree.fbx` | `Tree` | `WorldSkin.context` in Plaza | Plaza.luau:65 |  |
 | Plaza_Disc | Plaza_Disc | `export/ground/Plaza_Disc.fbx` | `Plaza_Disc` | `WorldSkin.context` in Plaza | Plaza.luau:52 |  |
 | Plaza_Path | Plaza_Path | `export/ground/Plaza_Path.fbx` | `Plaza_Path` | `WorldSkin.context` in Plaza | Plaza.luau:58 |  |
 | City_Ground | City_Ground | `export/ground/City_Ground.fbx` | `City_Ground` | `WorldSkin.context` in Plaza | Plaza.luau:35 |  |
@@ -216,25 +219,25 @@ Set `WorldSkin.ENABLED = false` (or remove the calls): nothing is hidden and no 
 | Maker_ThemePark | Theme Park | `export/props/Theme Park.fbx` | `Maker_ThemePark` | `WorldSkin.object` | Props.moneyMaker (Props.luau:583) | yes |
 | Maker_PokeBloxCard | PokeBlox Card | `export/props/PokeBlox Card.fbx` | `Maker_PokeBloxCard`, `Maker_PokeBloxCard_Glass` | `WorldSkin.object` | Props.moneyMaker (Props.luau:583) | yes |
 | Maker_RarePokeBloxCard | Rare PokeBlox Card | `export/props/Rare PokeBlox Card.fbx` | `Maker_RarePokeBloxCard`, `Maker_RarePokeBloxCard_Glass` | `WorldSkin.object` | Props.moneyMaker (Props.luau:583) | yes |
-| Maker_RarePokeBloxCard_v2 | Rare PokeBlox Card | `export/props/Rare PokeBlox Card (case 2).fbx` | `Maker_RarePokeBloxCard_v2`, `Maker_RarePokeBloxCard_v2_Glass` | `WorldSkin.object` | Props.moneyMaker (Props.luau:583) |  |
-| Maker_RarePokeBloxCard_v3 | Rare PokeBlox Card | `export/props/Rare PokeBlox Card (case 3).fbx` | `Maker_RarePokeBloxCard_v3`, `Maker_RarePokeBloxCard_v3_Glass`, `Maker_RarePokeBloxCard_v3_Glow_PURPLE` | `WorldSkin.object` | Props.moneyMaker (Props.luau:583) |  |
-| Maker_RarePokeBloxCard_v4 | Rare PokeBlox Card | `export/props/Rare PokeBlox Card (case 4).fbx` | `Maker_RarePokeBloxCard_v4`, `Maker_RarePokeBloxCard_v4_Glass`, `Maker_RarePokeBloxCard_v4_Glow_GOLD` | `WorldSkin.object` | Props.moneyMaker (Props.luau:583) |  |
+| Maker_RarePokeBloxCard_v2 | Rare PokeBlox Card | `export/props/Rare PokeBlox Card (case 2).fbx` | `Maker_RarePokeBloxCard_v2`, `Maker_RarePokeBloxCard_v2_Glass` | `WorldSkin.object` | Props.moneyMaker (Props.luau:583) | yes |
+| Maker_RarePokeBloxCard_v3 | Rare PokeBlox Card | `export/props/Rare PokeBlox Card (case 3).fbx` | `Maker_RarePokeBloxCard_v3`, `Maker_RarePokeBloxCard_v3_Glass`, `Maker_RarePokeBloxCard_v3_Glow_PURPLE` | `WorldSkin.object` | Props.moneyMaker (Props.luau:583) | yes |
+| Maker_RarePokeBloxCard_v4 | Rare PokeBlox Card | `export/props/Rare PokeBlox Card (case 4).fbx` | `Maker_RarePokeBloxCard_v4`, `Maker_RarePokeBloxCard_v4_Glass`, `Maker_RarePokeBloxCard_v4_Glow_GOLD` | `WorldSkin.object` | Props.moneyMaker (Props.luau:583) | yes |
 | Maker_ShinyPokeBloxCard | Shiny PokeBlox Card | `export/props/Shiny PokeBlox Card.fbx` | `Maker_ShinyPokeBloxCard`, `Maker_ShinyPokeBloxCard_Glass`, `Maker_ShinyPokeBloxCard_Glow_GLOW_COOL`, `Maker_ShinyPokeBloxCard_Glow_PURPLE` | `WorldSkin.object` | Props.moneyMaker (Props.luau:583) | yes |
 | Maker_GoldCoin | Gold Coin | `export/props/Gold Coin.fbx` | `Maker_GoldCoin` | `WorldSkin.object` | Props.moneyMaker (Props.luau:583) | yes |
 | Maker_GoldBar | Gold Bar | `export/props/Gold Bar.fbx` | `Maker_GoldBar` | `WorldSkin.object` | Props.moneyMaker (Props.luau:583) | yes |
 | Maker_GoldTreasureChest | Gold Treasure Chest | `export/props/Gold Treasure Chest.fbx` | `Maker_GoldTreasureChest` | `WorldSkin.object` | Props.moneyMaker (Props.luau:583) | yes |
 | Maker_UnknownMaker | Unknown Maker | `export/props/Unknown Maker.fbx` | `Maker_UnknownMaker` | `WorldSkin.object` | Props.moneyMaker (Props.luau:583) | yes |
 | Kid | Kid | `export/props/Kid.fbx` | `Kid` | `WorldSkin.object` | Props.kid (Props.luau:220) | yes |
-| Kid_v2 | Kid | `export/props/Kid (blue).fbx` | `Kid_v2` | `WorldSkin.object` | Props.kid (Props.luau:220) |  |
-| Kid_v3 | Kid | `export/props/Kid (yellow).fbx` | `Kid_v3` | `WorldSkin.object` | Props.kid (Props.luau:220) |  |
+| Kid_v2 | Kid | `export/props/Kid (blue).fbx` | `Kid_v2` | `WorldSkin.object` | Props.kid (Props.luau:220) | yes |
+| Kid_v3 | Kid | `export/props/Kid (yellow).fbx` | `Kid_v3` | `WorldSkin.object` | Props.kid (Props.luau:220) | yes |
 | Debt_CreditCard | Credit Card | `export/props/Credit Card.fbx` | `Debt_CreditCard` | `WorldSkin.stretched` | Props.debtModel (Props.luau:325) | yes |
 | Debt_CarLoan | Car Loan | `export/props/Car Loan.fbx` | `Debt_CarLoan` | `WorldSkin.stretched` | Props.debtModel (Props.luau:325) | yes |
 | Debt_SchoolLoan | School Loan | `export/props/School Loan.fbx` | `Debt_SchoolLoan` | `WorldSkin.stretched` | Props.debtModel (Props.luau:325) | yes |
 | Debt_BankLoan | Bank Loan | `export/props/Bank Loan.fbx` | `Debt_BankLoan` | `WorldSkin.stretched` | Props.debtModel (Props.luau:325) | yes |
 | Debt_OtherDebt | Other Debt | `export/props/Debt Crate.fbx` | `Debt_OtherDebt` | `WorldSkin.stretched` | Props.debtModel (Props.luau:325) | yes |
 | Depot_Bus | Depot_Bus | `export/vehicles/Depot_Bus.fbx` | `Depot_Bus`, `Depot_Bus_Glow_GLOW_WARM` | `WorldSkin.context` in Furnish:BUS DEPOT | Themes.luau:71,73,77 |  |
-| Police_Car | Police_Car | `export/vehicles/Police_Car.fbx` | `Police_Car`, `Police_Car_Glow_BLUE`, `Police_Car_Glow_GLOW_WARM`, `Police_Car_Glow_RED` | `WorldSkin.context` in Furnish:POLICE | Themes.luau:144,145 |  |
-| Garage_CarLift | Garage_CarLift | `export/vehicles/Garage_CarLift.fbx` | `Garage_CarLift`, `Garage_CarLift_Glow_GLOW_WARM` | `WorldSkin.context` in Furnish:GARAGE | Themes.luau:175,176 |  |
+| Police_Car | Police_Car | `export/vehicles/Police_Car.fbx` | `Police_Car`, `Police_Car_Glow_BLUE`, `Police_Car_Glow_GLOW_WARM`, `Police_Car_Glow_RED` | `WorldSkin.context` in Furnish:POLICE | Themes.luau:143,144,145 |  |
+| Garage_CarLift | Garage_CarLift | `export/vehicles/Garage_CarLift.fbx` | `Garage_CarLift`, `Garage_CarLift_Glow_GLOW_WARM` | `WorldSkin.context` in Furnish:GARAGE | Themes.luau:175,176,177 |  |
 | Computer | Computer | `export/props/Computer.fbx` | `Computer`, `Computer_Glow_GLOW_COOL` | `WorldSkin.context` in Furnish:* (3) | Themes.luau:31,36,37 |  |
 | HospitalBed | HospitalBed | `export/props/HospitalBed.fbx` | `HospitalBed` | `WorldSkin.context` in Furnish:CLINIC, Furnish:HOSPITAL | Themes.luau:41,42,43 |  |
 | Pizzeria_Counter | Pizzeria_Counter | `export/props/Pizzeria_Counter.fbx` | `Pizzeria_Counter` | `WorldSkin.context` in Furnish:PIZZERIA | Themes.luau:54,55,58 |  |
@@ -250,12 +253,12 @@ Set `WorldSkin.ENABLED = false` (or remove the calls): nothing is hidden and no 
 | Garage_ToolBoard | Garage_ToolBoard | `export/decoration/Garage_ToolBoard.fbx` | `Garage_ToolBoard` | `WorldSkin.context` in Furnish:GARAGE | Themes.luau:178 |  |
 | Garage_TireStack | Garage_TireStack | `export/props/Garage_TireStack.fbx` | `Garage_TireStack` | `WorldSkin.context` in Furnish:GARAGE | Themes.luau:180 |  |
 | Lobby_RoomBooth | Lobby_RoomBooth | `export/buildings/Lobby_RoomBooth.fbx` | `Lobby_RoomBooth`, `Lobby_RoomBooth_Glow_GOLD`, `Lobby_RoomBooth_Glow_RED_T45`, `Lobby_RoomBooth_Glow_RED_T70` | `WorldSkin.context` in Lobby | Lobby.luau:420,421,426,427,429,430,432,433 | yes |
-| Lobby_RoomBooth_v2 | Lobby_RoomBooth | `export/buildings/Lobby_RoomBooth_v2.fbx` | `Lobby_RoomBooth_v2`, `Lobby_RoomBooth_v2_Glow_BLUE_T45`, `Lobby_RoomBooth_v2_Glow_BLUE_T70`, `Lobby_RoomBooth_v2_Glow_GOLD` | `WorldSkin.context` in Lobby | Lobby.luau:420,421,426,427,429,430,432,433 |  |
-| Lobby_RoomBooth_v3 | Lobby_RoomBooth | `export/buildings/Lobby_RoomBooth_v3.fbx` | `Lobby_RoomBooth_v3`, `Lobby_RoomBooth_v3_Glow_GOLD`, `Lobby_RoomBooth_v3_Glow_GREEN_T45`, `Lobby_RoomBooth_v3_Glow_GREEN_T70` | `WorldSkin.context` in Lobby | Lobby.luau:420,421,426,427,429,430,432,433 |  |
-| Lobby_RoomBooth_v4 | Lobby_RoomBooth | `export/buildings/Lobby_RoomBooth_v4.fbx` | `Lobby_RoomBooth_v4`, `Lobby_RoomBooth_v4_Glow_GOLD`, `Lobby_RoomBooth_v4_Glow_GOLD_T45`, `Lobby_RoomBooth_v4_Glow_GOLD_T70` | `WorldSkin.context` in Lobby | Lobby.luau:420,421,426,427,429,430,432,433 |  |
+| Lobby_RoomBooth_v2 | Lobby_RoomBooth | `export/buildings/Lobby_RoomBooth_v2.fbx` | `Lobby_RoomBooth_v2`, `Lobby_RoomBooth_v2_Glow_BLUE_T45`, `Lobby_RoomBooth_v2_Glow_BLUE_T70`, `Lobby_RoomBooth_v2_Glow_GOLD` | `WorldSkin.context` in Lobby | Lobby.luau:420,421,426,427,429,430,432,433 | yes |
+| Lobby_RoomBooth_v3 | Lobby_RoomBooth | `export/buildings/Lobby_RoomBooth_v3.fbx` | `Lobby_RoomBooth_v3`, `Lobby_RoomBooth_v3_Glow_GOLD`, `Lobby_RoomBooth_v3_Glow_GREEN_T45`, `Lobby_RoomBooth_v3_Glow_GREEN_T70` | `WorldSkin.context` in Lobby | Lobby.luau:420,421,426,427,429,430,432,433 | yes |
+| Lobby_RoomBooth_v4 | Lobby_RoomBooth | `export/buildings/Lobby_RoomBooth_v4.fbx` | `Lobby_RoomBooth_v4`, `Lobby_RoomBooth_v4_Glow_GOLD`, `Lobby_RoomBooth_v4_Glow_GOLD_T45`, `Lobby_RoomBooth_v4_Glow_GOLD_T70` | `WorldSkin.context` in Lobby | Lobby.luau:420,421,426,427,429,430,432,433 | yes |
 | Lobby_Pillar | Lobby_Pillar | `export/decoration/Lobby_Pillar.fbx` | `Lobby_Pillar`, `Lobby_Pillar_Glow_GLOW_WARM` | `WorldSkin.context` in Lobby | Lobby.luau:358,359,360 |  |
 | Lobby_Trophy | Lobby_Trophy | `export/props/Lobby_Trophy.fbx` | `Lobby_Trophy`, `Lobby_Trophy_Glow_GOLD_LIGHT` | `WorldSkin.context` in Lobby | Lobby.luau:393,394,395,396,397,398 |  |
-| Lobby_PottedPalm | Lobby_PottedPalm | `export/nature/Lobby_PottedPalm.fbx` | `Lobby_PottedPalm` | `WorldSkin.context` in Lobby | Lobby.luau:386 |  |
+| Lobby_PottedPalm | Lobby_PottedPalm | `export/nature/Lobby_PottedPalm.fbx` | `Lobby_PottedPalm` | `WorldSkin.context` in Lobby | Lobby.luau:386,387 |  |
 | Lobby_Bench | Lobby_Bench | `export/props/Lobby_Bench.fbx` | `Lobby_Bench` | `WorldSkin.context` in Lobby | Lobby.luau:373,374,375 |  |
 | Lobby_Walls | Lobby_Walls | `export/buildings/Lobby_Walls.fbx` | `Lobby_Walls` | `WorldSkin.context` in Lobby | Lobby.luau:345,346 |  |
 | Lobby_Floor | Lobby_Floor | `export/ground/Lobby_Floor.fbx` | `Lobby_Floor` | `WorldSkin.context` in Lobby | Lobby.luau:332 |  |
@@ -284,17 +287,17 @@ Set `WorldSkin.ENABLED = false` (or remove the calls): nothing is hidden and no 
 | PodiumRoom_LightStrip | PodiumRoom_LightStrip | `export/decoration/PodiumRoom_LightStrip.fbx` | `PodiumRoom_LightStrip`, `PodiumRoom_LightStrip_Glow_GOLD_T55` | `WorldSkin.context` in PodiumRoom | PodiumRoom.luau:69 |  |
 | PodiumRoom_TitleSign | PodiumRoom_TitleSign | `export/signs/PodiumRoom_TitleSign.fbx` | `PodiumRoom_TitleSign` | `WorldSkin.context` in PodiumRoom | PodiumRoom.luau:72 | yes |
 | PodiumRoom_Board | PodiumRoom_Board | `export/signs/PodiumRoom_Board.fbx` | `PodiumRoom_Board` | `WorldSkin.context` in PodiumRoom | PodiumRoom.luau:90 | yes |
-| Baseplate | Baseplate | `export/ground/Baseplate.fbx` | `Baseplate` | (by hand: one object) |  | yes |
-| Debt_BankLoan_v2 | Bank Loan | uses `Debt_BankLoan` | | stretched to its own size | Props.debtModel (Props.luau:325) |  |
-| Debt_CarLoan_v2 | Car Loan | uses `Debt_CarLoan` | | stretched to its own size | Props.debtModel (Props.luau:325) |  |
-| Debt_CarLoan_v3 | Car Loan | uses `Debt_CarLoan` | | stretched to its own size | Props.debtModel (Props.luau:325) |  |
-| Debt_CarLoan_v4 | Car Loan | uses `Debt_CarLoan` | | stretched to its own size | Props.debtModel (Props.luau:325) |  |
-| Debt_CreditCard_v2 | Credit Card | uses `Debt_CreditCard` | | stretched to its own size | Props.debtModel (Props.luau:325) |  |
-| Debt_CreditCard_v3 | Credit Card | uses `Debt_CreditCard` | | stretched to its own size | Props.debtModel (Props.luau:325) |  |
-| Debt_OtherDebt_v2 | Other Debt | uses `Debt_OtherDebt` | | stretched to its own size | Props.debtModel (Props.luau:325) |  |
-| Debt_SchoolLoan_v2 | School Loan | uses `Debt_SchoolLoan` | | stretched to its own size | Props.debtModel (Props.luau:325) |  |
-| Debt_SchoolLoan_v3 | School Loan | uses `Debt_SchoolLoan` | | stretched to its own size | Props.debtModel (Props.luau:325) |  |
-| Lobby_PottedPalm_v2 | Lobby_PottedPalm | uses `Lobby_PottedPalm` | | stretched to its own size |  |  |
+| Baseplate | Baseplate | `export/ground/Baseplate.fbx` | `Baseplate` | `WorldSkin.object` (Step 6, `Lobby.luau`) | the place (Rojo `default.project.json`) | yes |
+| Debt_BankLoan_v2 | Bank Loan | uses `Debt_BankLoan` (`export/props/Bank Loan.fbx`) | | `Debt_BankLoan`, stretched to its size by `WorldSkin.stretched` | Props.debtModel (Props.luau:325) | yes |
+| Debt_CarLoan_v2 | Car Loan | uses `Debt_CarLoan` (`export/props/Car Loan.fbx`) | | `Debt_CarLoan`, stretched to its size by `WorldSkin.stretched` | Props.debtModel (Props.luau:325) | yes |
+| Debt_CarLoan_v3 | Car Loan | uses `Debt_CarLoan` (`export/props/Car Loan.fbx`) | | `Debt_CarLoan`, stretched to its size by `WorldSkin.stretched` | Props.debtModel (Props.luau:325) | yes |
+| Debt_CarLoan_v4 | Car Loan | uses `Debt_CarLoan` (`export/props/Car Loan.fbx`) | | `Debt_CarLoan`, stretched to its size by `WorldSkin.stretched` | Props.debtModel (Props.luau:325) | yes |
+| Debt_CreditCard_v2 | Credit Card | uses `Debt_CreditCard` (`export/props/Credit Card.fbx`) | | `Debt_CreditCard`, stretched to its size by `WorldSkin.stretched` | Props.debtModel (Props.luau:325) | yes |
+| Debt_CreditCard_v3 | Credit Card | uses `Debt_CreditCard` (`export/props/Credit Card.fbx`) | | `Debt_CreditCard`, stretched to its size by `WorldSkin.stretched` | Props.debtModel (Props.luau:325) | yes |
+| Debt_OtherDebt_v2 | Other Debt | uses `Debt_OtherDebt` (`export/props/Debt Crate.fbx`) | | `Debt_OtherDebt`, stretched to its size by `WorldSkin.stretched` | Props.debtModel (Props.luau:325) | yes |
+| Debt_SchoolLoan_v2 | School Loan | uses `Debt_SchoolLoan_books7` (`export/props/School Loan (7 books).fbx`) | | its own 7-book model, picked by `WorldSkin.debtTemplate` | Props.debtModel (Props.luau:325) | yes |
+| Debt_SchoolLoan_v3 | School Loan | uses `Debt_SchoolLoan_books4` (`export/props/School Loan (4 books).fbx`) | | its own 4-book model, picked by `WorldSkin.debtTemplate` | Props.debtModel (Props.luau:325) | yes |
+| Lobby_PottedPalm_v2 | Lobby_PottedPalm | uses `Lobby_PottedPalm` (`export/nature/Lobby_PottedPalm.fbx`) | | `Lobby_PottedPalm`, placed turned / moved by `WorldSkin.context` (same size) | Lobby.luau:386,387 |  |
 
-Extra kit meshes: `Debt_SchoolLoan_books2` (`export/props/School Loan (2 books).fbx`), `Debt_SchoolLoan_books4` (`export/props/School Loan (4 books).fbx`), `Debt_SchoolLoan_books5` (`export/props/School Loan (5 books).fbx`), `Debt_SchoolLoan_books6` (`export/props/School Loan (6 books).fbx`), `Debt_SchoolLoan_books7` (`export/props/School Loan (7 books).fbx`), `Dream_ChainSegment` (`export/props/ChainSegment.fbx`), `Dream_Padlock` (`export/props/Padlock.fbx`), `Kid_v4` (`export/props/Kid (green).fbx`), `Maker_PokeBloxCard_case2` (`export/props/PokeBlox Card (case 2).fbx`), `Maker_PokeBloxCard_case3` (`export/props/PokeBlox Card (case 3).fbx`), `Maker_PokeBloxCard_case4` (`export/props/PokeBlox Card (case 4).fbx`), `Maker_ShinyPokeBloxCard_case1` (`export/props/Shiny PokeBlox Card (case 1).fbx`), `Maker_ShinyPokeBloxCard_case2` (`export/props/Shiny PokeBlox Card (case 2).fbx`), `Maker_ShinyPokeBloxCard_case4` (`export/props/Shiny PokeBlox Card (case 4).fbx`). `Dream_ChainSegment` and `Dream_Padlock` are used by `WorldSkin.chains`; `WorldSkin.debtTemplate` picks the `Debt_SchoolLoan_books<n>` meshes by the number of books, `WorldSkin.makerTemplate` the `..._case<n>` PokeBlox cards by the case color of the card's value, `WorldSkin.kidTemplate` `Kid_v4` for the 4th (green) shirt. These were not in the snapshot, but the game makes them.
+Extra kit meshes: `Debt_SchoolLoan_books2` (`export/props/School Loan (2 books).fbx`), `Debt_SchoolLoan_books4` (`export/props/School Loan (4 books).fbx`), `Debt_SchoolLoan_books5` (`export/props/School Loan (5 books).fbx`), `Debt_SchoolLoan_books6` (`export/props/School Loan (6 books).fbx`), `Debt_SchoolLoan_books7` (`export/props/School Loan (7 books).fbx`), `Dream_ChainSegment` (`export/props/ChainSegment.fbx`), `Dream_Padlock` (`export/props/Padlock.fbx`), `Kid_v4` (`export/props/Kid (green).fbx`), `Maker_PokeBloxCard_case2` (`export/props/PokeBlox Card (case 2).fbx`), `Maker_PokeBloxCard_case3` (`export/props/PokeBlox Card (case 3).fbx`), `Maker_PokeBloxCard_case4` (`export/props/PokeBlox Card (case 4).fbx`), `Maker_ShinyPokeBloxCard_case1` (`export/props/Shiny PokeBlox Card (case 1).fbx`), `Maker_ShinyPokeBloxCard_case2` (`export/props/Shiny PokeBlox Card (case 2).fbx`), `Maker_ShinyPokeBloxCard_case4` (`export/props/Shiny PokeBlox Card (case 4).fbx`). `Dream_ChainSegment` and `Dream_Padlock` are used by `WorldSkin.chains`; `WorldSkin.debtTemplate` picks the `Debt_SchoolLoan_books<n>` meshes by the number of books, `WorldSkin.makerTemplate` the `..._case<n>` PokeBlox cards by the case color of the card's value, `WorldSkin.kidTemplate` `Kid_v4` for the 4th (green) shirt. The card cases and `Kid_v4` were not in the snapshot, but the game makes them; the 4- and 7-book School Loans were (`Debt_SchoolLoan_v3`, `_v2`).
 

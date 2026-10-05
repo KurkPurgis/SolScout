@@ -24,7 +24,7 @@ One artist, one rulebook: the same window, door, wheel, lamp and plant everywher
   GOLD_ORANGE, RED, SIGN_RED, SKY, BOOK_BLUE, NAVY, LEAF_GREEN, GREEN, GREEN_DARK, SAND, WOOD, WOOD_DARK,
   STEEL, TYRE/DARK, OUTLINE, WATER, WINDOW_LIGHT...) plus a few the world needs (GRASS, STONE, STONE_DARK, TEAL,
   PURPLE, CREAM). The brief said "about 24"; I needed 30 because the 9 workplaces must each have their own
-  clearly different wall color (that is how players find each other) - see DECISIONS.md.
+  clearly different wall color (that is how players find each other) - see DECISIONS #25.
 - **No other colors. No default grey.** A color that is not in `palette.json` makes the build fail.
 - Glow colors (`GLOW_WARM`, `GLOW_COOL`) are only used on glowing parts, which are separate meshes with
   `Material = Neon` in Roblox (Neon ignores textures).
@@ -180,12 +180,17 @@ collision, trigger and prompt exactly as it is today and makes switching back on
 
 - One FBX per model: `export/<category>/<name>.fbx`. `<name>` = the original Roblox name when the object is a
   named Model in the game (Money Makers, debts, dreams, `Kid`), otherwise the template name from `INVENTORY.md`.
+  Variants add a word in brackets (`Kid (green).fbx`, `School Loan (4 books).fbx`, `PokeBlox Card (case 2).fbx`).
+  Exceptions: the debt crate (`Other Debt` in the game) is `Debt Crate.fbx`; the two chain pieces, which are no
+  game Model, are `ChainSegment.fbx` and `Padlock.fbx`. IMPORT_PLAN.md lists every file with its template.
 - The FBX origin (0, 0, 0) **is the original object's frame** (`data/objects.json` -> `frame`): the model drops
   into the old position with the same rotation and no offset. Front = -Z in Roblox (+Y in Blender).
 - Inside each FBX the meshes are named after the **template**, not the file: `<template>` (body), optional
   `<template>_Glow_<COLOR>` (or `_Glow_<COLOR>_T<transparency %>`), optional `<template>_Glass`. Example:
   `export/props/Lemonade Stand.fbx` holds `Maker_LemonadeStand` (+ its glow/glass meshes). The `WorldKit` model
-  is renamed to the template name (IMPORT_PLAN step 4).
+  is renamed to the template name (IMPORT_PLAN step 4). Exception: the meshes of the five dreams carry the game's
+  model name (`Supercar`, `Supercar_Glow_GLOW_WARM`, `BeachVilla_Glass`...), like the dream Models in the game.
+  The import only reads the `_Glow_...` / `_Glass` endings, so the prefix does not matter there.
 - One `.blend` per category in `blend/`, saved after every finished model.
 
 ## 12. Review checklist (every model, max 3 fix rounds)
@@ -207,7 +212,7 @@ collision, trigger and prompt exactly as it is today and makes switching back on
 | modelling | round parts | the number of segments follows the size (small round things use fewer) | saves triangles where nobody can see them |
 | modelling | min thickness | the 0.3 stud minimum also applies to round parts (cylinders, tori, spheres) | thin spokes flickered at distance |
 | palette | STONE / STONE_DARK | darker and warmer than first drafted | the plaza and yards looked white and flat in the renders |
-| modelling | windows | window panes are opaque shiny WINDOW color; only real glass cases are `_Glass` | see-through panes show empty boxes behind them |
+| modelling | windows | workplace and Money Maker window panes are opaque shiny WINDOW color; real glass (glass cases, the lobby windows, the Fast Track glass table, the villa's glass wall and railing) and water (fountain, car wash) are `_Glass` meshes | see-through panes on closed buildings show empty boxes behind them |
 | bbox | wall boards | tolerance 0.3 instead of 0.15 (DECISIONS #13) | 0.3 minimum thickness on 0.2 thick boards |
 | kit | wheel | hub and cap stand out at most 0.13 from the tire | wheels stay inside the original wheel box |
 | kit | plus_sign | crosses are built from non-overlapping pieces | coplanar overlaps z-fight |

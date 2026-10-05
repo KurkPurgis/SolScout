@@ -3,6 +3,7 @@ write_progress.py - PROGRESS.md from data/model_status.json + data/plan.json (th
 """
 import json
 import os
+import sys
 import time
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -10,6 +11,8 @@ ROOT = os.path.normpath(os.path.join(HERE, ".."))
 status = json.load(open(os.path.join(ROOT, "data", "model_status.json")))
 plan = json.load(open(os.path.join(ROOT, "data", "plan.json")))
 templates = json.load(open(os.path.join(ROOT, "data", "templates.json")))
+sys.path.insert(0, HERE)
+from write_import_plan import alias_model  # noqa: E402
 
 lines = ["# Progress", "",
          "If you (or I after a restart) pick this up: read this file and STYLE_GUIDE.md first.",
@@ -33,8 +36,8 @@ for i, name in enumerate(plan["order"], 1):
     st = e.get("status", "not_started")
     note = e.get("review_note") or (e.get("notes") or [""])[-1]
     alias = plan.get("aliases", {}).get(name)
-    if alias:  # a size/color copy of another template: no model of its own
-        st = "uses " + alias
+    if alias:  # a copy of another template (size, book count, mirrored): no model of its own
+        st = "uses " + alias_model(name, templates, plan["aliases"])[0]
         counts["alias"] = counts.get("alias", 0) + 1
     else:
         counts[st] = counts.get(st, 0) + 1

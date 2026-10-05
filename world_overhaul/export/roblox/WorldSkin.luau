@@ -175,13 +175,13 @@ function WorldSkin.context(keys: string | { string }, base: CFrame, root: Instan
 	end
 end
 
--- one named object (kid, Money Maker, dream): the kit model replaces its look
-function WorldSkin.object(model: Instance, template: string?, base: CFrame)
-	if not WorldSkin.ENABLED or not hasKit(template) then
+-- one named object (kid, Money Maker, dream, the baseplate): the kit model replaces its look
+function WorldSkin.object(model: Instance?, template: string?, base: CFrame)
+	if not WorldSkin.ENABLED or not model or not hasKit(template) then
 		return
 	end
-	hideOld(model)
-	WorldSkin.add(model, template :: string, base)
+	hideOld(model :: Instance)
+	WorldSkin.add(model :: Instance, template :: string, base)
 end
 
 -- a debt: the code sizes it by the amount, so the kit model is stretched to the old parts' box

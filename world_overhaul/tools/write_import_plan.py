@@ -12,6 +12,7 @@ Outputs:
 
 import json
 import os
+import re
 import sys
 import time
 
@@ -36,6 +37,10 @@ BUILDER = [
 
 # Step 6 of IMPORT_PLAN.md: (file / function, where, the line)
 STEP6 = [
+    ("`Lobby.luau` (start-up)", "right before `buildHall()` is called (line 476)",
+     "`WorldSkin.object(workspace:FindFirstChild(\"Baseplate\"), \"Baseplate\", CFrame.new())`: the grass "
+     "baseplate of the place (Rojo `default.project.json`); the old Part stays, invisible, so `Props.groundY` "
+     "still raycasts against it"),
     ("`Lobby.luau` `buildHall()`", "at the end",
      "`WorldSkin.context(\"Lobby\", hallBase, folder)`"),
     ("`World/Plaza.luau` `Plaza.new`", "before `return self`",
@@ -44,7 +49,8 @@ STEP6 = [
      "`WorldSkin.context(\"AuctionRoom\", BASE, folder)`"),
     ("`World/PodiumRoom.luau` `PodiumRoom.new`", "before `return self`",
      "`WorldSkin.context(\"PodiumRoom\", base, folder)`"),
-    ("`World/Plots.luau` `Plots:buildWorkplace(theme)`", "at the end of the function (after the flower boxes)",
+    ("`World/Plots.luau` `Plots:buildWorkplace(theme)`", "at the very end of the function: after the "
+     "`if theme.luxury ... else ... end` block (sandbox, Fast Track gate / debt pad), just before its `end`",
      "`WorldSkin.context({ \"Workplace:\" .. theme.title, \"Furnish:\" .. theme.title }, self.base, "
      "self.workplaceFolder)` (one call for both: they share the folder; the keys use the sign title, e.g. "
      "`Workplace:BUS DEPOT`)"),
@@ -95,6 +101,41 @@ def source_of(template_type):
         if typ == template_type:
             out.append("%s:%s" % (f, ",".join(str(n) for n in sorted(lines))))
     return "; ".join(sorted(set(out)))
+
+
+HELPER_FILES = ("Props.luau", "ModelKit.luau", "dump_world.luau")
+
+
+def built_by(template, objects, parts):
+    """The game-code lines that build an object (file:line), from the world dump: for every part, the first
+    frame of its call chain that is not a helper (Props / ModelKit), e.g. Themes.luau:143 for Props.car."""
+    lines = {}
+    for o in objects:
+        if o["template"] != template:
+            continue
+        for pid in o["part_ids"]:
+            for frame in parts[pid].get("chain") or []:
+                file, _, line = re.sub(r"\(.*\)$", "", frame).partition(":")
+                if file not in HELPER_FILES and line.isdigit():
+                    lines.setdefault(file, set()).add(int(line))
+                    break
+    return "; ".join("%s:%s" % (f, ",".join(str(n) for n in sorted(v))) for f, v in sorted(lines.items()))
+
+
+def alias_model(name, templates, aliases):
+    """-> (kit model, how) for a template without a model of its own (data/plan.json aliases)."""
+    base = aliases[name]
+    if name.startswith("Debt_SchoolLoan"):
+        books = int(round((templates[name]["size"][1] - 0.62) / 0.8))  # 0.8 per book on a 0.62 base
+        model = "Debt_SchoolLoan" if books == 3 else "Debt_SchoolLoan_books%d" % books
+        return model, "its own %d-book model, picked by `WorldSkin.debtTemplate`" % books
+    if name.startswith("Debt_"):
+        return base, "`%s`, stretched to its size by `WorldSkin.stretched`" % base
+    return base, "`%s`, placed turned / moved by `WorldSkin.context` (same size)" % base
+
+
+def is_script_referenced(name, templates, refs):
+    return templates.get(name, {}).get("type", name) in refs["script_referenced"]
 
 
 def cf_lua(c):
@@ -311,13 +352,13 @@ function WorldSkin.context(keys: string | { string }, base: CFrame, root: Instan
 	end
 end
 
--- one named object (kid, Money Maker, dream): the kit model replaces its look
-function WorldSkin.object(model: Instance, template: string?, base: CFrame)
-	if not WorldSkin.ENABLED or not hasKit(template) then
+-- one named object (kid, Money Maker, dream, the baseplate): the kit model replaces its look
+function WorldSkin.object(model: Instance?, template: string?, base: CFrame)
+	if not WorldSkin.ENABLED or not model or not hasKit(template) then
 		return
 	end
-	hideOld(model)
-	WorldSkin.add(model, template :: string, base)
+	hideOld(model :: Instance)
+	WorldSkin.add(model :: Instance, template :: string, base)
 end
 
 -- a debt: the code sizes it by the amount, so the kit model is stretched to the old parts' box
@@ -581,10 +622,11 @@ def main():
     (lx, ly, lz), (hx, hy, hz) = status["Workplace_Building_PIZZERIA"]["bbox_new"]
     w("**Check on the first model before importing the rest:** import `export/buildings/Workplace_Building_PIZZERIA.fbx` "
       "at the origin. Its box must span x %.1f..%.1f, y %.1f..%.1f, z %.1f..%.1f (from `data/model_status.json` -> "
-      "`bbox_new`), with the open front and the big sign on the low-z side (z %.1f). If it comes in turned 180 "
-      "degrees (sign at z %.1f), set World Forward to **Back** for every import. The FBX files were exported with "
-      "Blender's default axes (forward -Z, up Y), so the coordinates in the files already are Roblox coordinates."
-      % (lx, hx, ly, hy, lz, hz, lz, hz))
+      "`bbox_new`): the open front (awning edge at z %.1f) and the big sign (near z 6.5) on the low-z side. If "
+      "the box spans z %.1f..%.1f instead (and x %.1f..%.1f), the file came in turned 180 degrees about the "
+      "origin: set World Forward to **Back** for every import. The FBX files were exported with Blender's default "
+      "axes (forward -Z, up Y), so the coordinates in the files already are Roblox coordinates."
+      % (lx, hx, ly, hy, lz, hz, lz, -hz, -lz, -hx, -lx))
     w("")
     w("## Step 4 - the WorldKit folder")
     w("")
@@ -684,7 +726,8 @@ def main():
     w("## Step 7 - test in Studio (Play Solo, then 2-4 players)")
     w("")
     for item in [
-        "Lobby: walk around, the room booths still open, the spawn still works, the trophy and palms look right.",
+        "Lobby: walk around, the room booths still open, the spawn still works, the trophy and palms look right; "
+        "the grass baseplate has the new look and you still stand on it.",
         "Start a game: your workplace appears with the new building, furniture, fence, lamps and yard; you still "
         "walk on the same floor heights, the Pay/Buy prompts still appear on the debts and the FOR SALE item.",
         "Buy a Money Maker: it stands on the lot, the next one stacks on top at the same height as before "
@@ -719,15 +762,23 @@ def main():
     w("")
     w("## Every model: file, name and where it goes")
     w("")
+    w("*name in the game*: the Model name for objects the game makes as a named Model (Money Makers, debts, "
+      "dreams, `Kid`; the kit goes inside that Model, so the name stays); otherwise the inventory name of a group "
+      "of plain `Part`s (`INVENTORY.md`), which keep their own names. *script-referenced*: some game script finds "
+      "the object type by name, measures it or changes it (`data/script_refs.json`).")
+    w("")
     w("| template (= WorldKit name) | name in the game | FBX | meshes | how it is placed | built by (game code) | script-referenced |")
     w("|---|---|---|---|---|---|---|")
+    parts = world_parts()
     for name in plan["order"]:
         t = templates.get(name, {})
         e = status.get(name)
+        sref = "yes" if is_script_referenced(name, templates, refs) else ""
         if e is None and name in aliases:
-            w("| %s | %s | uses `%s` | | stretched to its own size | %s | %s |" % (
-                name, t.get("roblox_name", ""), aliases[name], (builder_of(name) or ("",))[0],
-                "yes" if name in refs["script_referenced"] else ""))
+            model, how = alias_model(name, templates, aliases)
+            src = (builder_of(name) or (built_by(name, objects, parts),))[0]
+            w("| %s | %s | uses `%s` (`%s`) | | %s | %s | %s |" % (
+                name, t.get("roblox_name", ""), model, status[model].get("fbx", ""), how, src, sref))
             continue
         if e is None:
             w("| %s | %s | (not modelled) | | | | |" % (name, t.get("roblox_name", "")))
@@ -743,15 +794,18 @@ def main():
                 label = ", ".join("%s:* (%d)" % (g, sum(1 for k in keys if k.startswith(g + ":"))) for g in groups)
             else:
                 label = ", ".join(keys)
-            how = "`WorldSkin.context` in %s" % label if keys else "(by hand: one object)"
+            how = "`WorldSkin.context` in %s" % label
+            src = built_by(name, objects, parts)
             if name in LINK_BY_LINK:
                 how = ("**not imported**: replaced link by link by `Dream_ChainSegment` + `Dream_Padlock` "
                        "(`WorldSkin.chains`, your decision)")
-            src = source_of(t.get("type", name)) or {"Tree": "Props.tree (Props.luau:352), called by Plaza.new"}.get(name, "")
+            elif name == "Baseplate":
+                how, src = "`WorldSkin.object` (Step 6, `Lobby.luau`)", "the place (Rojo `default.project.json`)"
+            elif not keys:
+                raise SystemExit("model table: no way to place " + name)
         fbx = e.get("fbx", "")
         meshes = ", ".join("`%s`" % m for m in e.get("meshes", []))
-        w("| %s | %s | `%s` | %s | %s | %s | %s |" % (name, t.get("roblox_name", ""), fbx, meshes, how, src,
-                                               "yes" if name in refs["script_referenced"] else ""))
+        w("| %s | %s | `%s` | %s | %s | %s | %s |" % (name, t.get("roblox_name", ""), fbx, meshes, how, src, sref))
     extra = sorted(n for n in status if n not in plan["order"])
     if extra:
         w("")
@@ -759,7 +813,8 @@ def main():
           "`Dream_ChainSegment` and `Dream_Padlock` are used by `WorldSkin.chains`; `WorldSkin.debtTemplate` picks "
           "the `Debt_SchoolLoan_books<n>` meshes by the number of books, `WorldSkin.makerTemplate` the "
           "`..._case<n>` PokeBlox cards by the case color of the card's value, `WorldSkin.kidTemplate` `Kid_v4` "
-          "for the 4th (green) shirt. These were not in the snapshot, but the game makes them.")
+          "for the 4th (green) shirt. The card cases and `Kid_v4` were not in the snapshot, but the game makes "
+          "them; the 4- and 7-book School Loans were (`Debt_SchoolLoan_v3`, `_v2`).")
     w("")
     open(os.path.join(ROOT, "IMPORT_PLAN.md"), "w").write("\n".join(L) + "\n")
     print("IMPORT_PLAN.md written,", sum(len(v) for v in places.values()), "context placements in", len(places),
