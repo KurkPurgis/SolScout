@@ -77,6 +77,8 @@ def outline(img, matte, depth, width, colour=INK, softness=1.0, front_only=True,
     not over anything nearer to the camera than the object at that spot. `close` (px) first fills
     small gaps (between chain links, railings) so the line follows the overall silhouette."""
     solid = matte > 0.5
+    if not solid.any():                               # nothing of this group in frame (e.g. the icon)
+        return img, np.zeros(matte.shape, np.float32)
     if close >= 1:
         r = int(round(close))
         yy, xx = np.mgrid[-r:r + 1, -r:r + 1]

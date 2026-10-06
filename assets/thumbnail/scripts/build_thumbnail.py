@@ -703,6 +703,13 @@ for k in ("head", "hair", "yacht+chains", "padlock", "price tag"):
 scn.render.resolution_x, scn.render.resolution_y = keep_res
 
 # ====================================================================== save + passes
+# one copy of each palette image (every model library brought its own), then drop orphans
+for base in ("palette_color.png", "palette_roughness.png"):
+    imgs = sorted((i for i in bpy.data.images if i.name.split(".png")[0] + ".png" == base), key=lambda i: i.name)
+    for dup in imgs[1:]:
+        dup.user_remap(imgs[0])
+        bpy.data.images.remove(dup)
+bpy.data.orphans_purge(do_recursive=True)
 bpy.ops.file.pack_all()
 bpy.ops.wm.save_as_mainfile(filepath=os.path.join(A.out, "thumbnail.blend"))
 if A.no_render:
