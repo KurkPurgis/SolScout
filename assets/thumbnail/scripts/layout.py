@@ -86,7 +86,7 @@ F_AVATAR = dict(loc=(-0.55, 8.35, 0.0), body_turn=15.0, waist=(4.0, 0.0, 9.0), n
 F_BALL = dict(side=-1.75, toward=0.35, radius=0.55)
 # The debt number floats just above the ball. cap: height of the digits as a fraction of the
 # frame height (0.066 = 9.5 px in a 256x144 thumbnail); dx, dy: screen offset from the ball's top.
-F_DEBT_TEXT = dict(text="-$20,000", dx=-0.06, dy=0.08, cap=0.076, tilt=7.0, depth=0.62)
+F_DEBT_TEXT = dict(text="-$20,000", dx=-0.06, dy=0.08, cap=0.073, tilt=7.0, depth=0.62)
 # Debt pile right of his feet: (kind, side, toward, yaw, scale) from his left foot. Cash stacks are
 # built with the game's model kit (the game has no cash model); the card is the real Debt_CreditCard.
 F_PILE = [
@@ -111,7 +111,7 @@ F_TREES = [(-70.0, 175.0, 0.9), (-20.0, 135.0, 0.8), (36.0, 150.0, 0.85), (60.0,
 F_LAMPS = [(-8.0, 118.0), (22.0, 122.0)]
 F_SHOPS = [("Maker_CoffeeShop", (-130.0, 280.0), 15.0), ("Maker_ToyShop", (-6.0, 270.0), -10.0),
            ("Maker_PizzaRestaurant", (90.0, 300.0), -25.0)]
-F_SUPERCAR = dict(loc=(185.0, 430.0, 0.0), yaw=70.0)
+F_SUPERCAR = dict(screen_x=0.835, distance=260.0, yaw=70.0)   # far out on the open right-hand horizon
 F_JET = dict(loc=(-430.0, 900.0, 640.0), yaw=-60.0, roll=-12.0)
 F_CLOUDS = [(-430.0, 700.0, 300.0, 34.0), (-640.0, 900.0, 600.0, 30.0), (980.0, 900.0, 720.0, 40.0),
             (520.0, 1200.0, 210.0, 46.0)]

@@ -146,6 +146,8 @@ def on_ground(sx, sy, h=0.0, c=None):
     c = c or cam
     o = c.matrix_world.translation
     d = ray(sx, sy, 1.0, c) - o
+    if d.z >= 0:
+        raise ValueError(f"screen point {(sx, sy)} is above the horizon")
     return o + d * ((h - o.z) / d.z)
 
 
@@ -220,7 +222,11 @@ set_material(mg_objs, "WO_Palette", lib.distant_palette(sat=0.8, value=0.9, mix=
 
 # background dreams
 S = LY.F_SUPERCAR
-lib.place("vehicles", "Supercar", C_BG, Matrix.Translation(S["loc"]) @ rot(z=S["yaw"]))
+_g = on_ground(S["screen_x"], 0.1, h=0.0)                      # a ground point in that screen column
+_o = cam.matrix_world.translation
+_dir = Vector((_g.x - _o.x, _g.y - _o.y, 0)).normalized()
+car_p = Vector((_o.x, _o.y, 0)) + _dir * S["distance"]
+lib.place("vehicles", "Supercar", C_BG, Matrix.Translation(car_p) @ rot(z=S["yaw"]))
 J = LY.F_JET
 lib.place("vehicles", "PrivateJet", C_BG, Matrix.Translation(J["loc"]) @ rot(z=J["yaw"], y=J["roll"]))
 cloud_mat = bpy.data.materials.new("CloudWhite")
@@ -475,7 +481,6 @@ ball_c = ankle + ground_side * BL["side"] + to_cam * BL["toward"]
 ball_c.z = BL["radius"]
 bm_ = kit.Model("IronBall")
 bm_.sphere(BL["radius"], (0, 0, 0), "CHARCOAL", segs=28, rings=16)
-bm_.torus(0.2, 0.13, (0, 0.05, -(BL["radius"] + 0.1)), "STEEL", axis="X")
 ball_objs = kit_build(bm_, C_FG)
 face_dir = math.degrees(math.atan2(-(ankle - ball_c).x, (ankle - ball_c).y))
 for o in ball_objs:
@@ -486,12 +491,14 @@ leg_axis = (rig.world("RightKnee") - rig.world("RightAnkle")).normalized()
 for o in kit_build(cuff, C_FG):
     o.matrix_world = (Matrix.Translation(ankle + leg_axis * 0.05) @ Vector((0, 0, 1)).rotation_difference(leg_axis)
                       .to_matrix().to_4x4() @ o.matrix_world)
-ring = ball_c + (ankle - ball_c).normalized() * (BL["radius"] + 0.12)
-ring.z = ball_c.z + 0.05
-mid1 = ankle.lerp(ring, 0.3)
-mid1.z = 0.09
-mid2 = ankle.lerp(ring, 0.78)
-mid2.z = 0.09
+to_ankle = Vector(((ankle - ball_c).x, (ankle - ball_c).y, 0)).normalized()
+ring = ball_c + to_ankle * (BL["radius"] * 0.92)            # the chain ends on the ball's side
+ring.z = BL["radius"] * 0.75
+# slack: the chain drapes on the ground in an arc toward the camera, so it shows
+mid1 = ankle.lerp(ring, 0.3) + to_cam * 0.35
+mid1.z = 0.12
+mid2 = ankle.lerp(ring, 0.72) + to_cam * 0.35
+mid2.z = 0.12
 small_seg = seg_mesh.copy()
 small_seg.name = "BallChainSegment"
 small_seg.materials.clear()
@@ -501,7 +508,7 @@ b.inputs["Base Color"].default_value = srgb("STEEL")
 b.inputs["Metallic"].default_value = 0.8
 b.inputs["Roughness"].default_value = 0.35
 small_seg.materials.append(iron)
-ball_chain = tile_chain(small_seg, [ankle + leg_axis * 0.05, mid1, mid2, ring], False, C_FG, 0.2,
+ball_chain = tile_chain(small_seg, [ankle + leg_axis * 0.05, mid1, mid2, ring], False, C_FG, 0.28,
                         lambda p, t: Vector((0, 0, 1)), name="BallChain")
 
 # "-$20,000" above the ball, facing the camera
@@ -509,6 +516,7 @@ DT = LY.F_DEBT_TEXT
 bt = screen(ball_c + Vector((0, 0, BL["radius"] + 0.3)))
 dpos = ray(bt.x + DT["dx"], bt.y + DT["dy"], depth_of(ball_c) * DT["depth"])
 debt_text = text_obj("DebtText", DT["text"], size_for_cap(DT["cap"], dpos), srgb("RED"), C_NUM, emit=1.1)
+debt_text.data.space_character = 1.12          # room for the outline between the minus and the $
 debt_text.matrix_world = Matrix.Translation(dpos) @ face_camera(dpos, DT["tilt"])
 
 
