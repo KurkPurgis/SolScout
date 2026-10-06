@@ -5,8 +5,10 @@ Run (Blender as a Python module, `pip install bpy`):
     python build_thumbnail.py --wo /tmp/wo/world_overhaul --out <dir> [--quick] [--no-render]
 
 Writes <dir>/thumbnail.blend (everything packed) and EXR passes for finish.py:
-    main_beauty.exr  main_matte.exr  main_depth.exr  main_near.exr  main_title.exr
-    icon_beauty.exr  icon_matte.exr  icon_depth.exr
+    main_beauty.exr  main_matte.exr  main_depth.exr  main_near.exr
+    iconA_beauty.exr iconA_matte.exr iconA_depth.exr   (his head in the corner)
+    iconB_beauty.exr iconB_matte.exr iconB_depth.exr   (the dream alone, centred)
+The title of the text version is drawn flat by finish.py.
 """
 import argparse
 import math
@@ -59,7 +61,7 @@ def coll(name, parent=None):
 
 C_CHAR, C_DREAM, C_NUM = coll("Character"), coll("Dream"), coll("Numbers")
 C_FG, C_MG, C_BG = coll("Foreground"), coll("Middleground"), coll("Background")
-C_SKY, C_NEAR, C_TITLE = coll("SkyGlow"), coll("NearCoins"), coll("Title")
+C_SKY, C_NEAR, C_GROUND = coll("SkyGlow"), coll("NearCoins"), coll("Ground")
 C_COINS = coll("Coins")
 C_CLOUDS = coll("Clouds")
 C_LIGHTS = coll("Lights")
@@ -151,6 +153,42 @@ def on_ground(sx, sy, h=0.0, c=None):
     return o + d * ((h - o.z) / d.z)
 
 
+def ground_at(sx, dist, c=None):
+    """Point on the ground in screen column sx, `dist` studs from the camera (horizontally)."""
+    c = c or cam
+    o = c.matrix_world.translation
+    g_ = on_ground(sx, 0.02, 0.0, c)
+    d_ = Vector((g_.x - o.x, g_.y - o.y, 0)).normalized()
+    return Vector((o.x, o.y, 0)) + d_ * dist
+
+
+def facing_camera_yaw(p, c=None):
+    """Yaw (deg) that turns a model's front (+Y) toward the camera."""
+    c = c or cam
+    v = c.matrix_world.translation - Vector(p)
+    return math.degrees(math.atan2(-v.x, v.y))
+
+
+def frame_box(objs, c=None):
+    """Screen bounds (x0, x1, y0, y1) of objects, as fractions of the frame."""
+    uv = [screen(p, c) for p in bounds(objs)]
+    uv = [u for u in uv if u.z > 0]
+    return (min(u.x for u in uv), max(u.x for u in uv), min(u.y for u in uv), max(u.y for u in uv))
+
+
+def flat_material(name, rgb255):
+    """Unlit flat colour (emission only): reads the same everywhere on the object."""
+    m = bpy.data.materials.new(name)
+    nt = m.node_tree
+    nt.nodes.clear()
+    em = nt.nodes.new("ShaderNodeEmission")
+    em.inputs["Color"].default_value = kit.lin(rgb255)
+    em.inputs["Strength"].default_value = 1.0
+    out = nt.nodes.new("ShaderNodeOutputMaterial")
+    nt.links.new(em.outputs[0], out.inputs["Surface"])
+    return m
+
+
 def text_obj(name, body, size, colour, collection, extrude=0.11, bevel=0.035, emit=0.35, align=('CENTER', 'CENTER')):
     cu = bpy.data.curves.new(name, 'FONT')
     cu.body = body
@@ -197,7 +235,7 @@ def size_for_cap(cap_frac, p):
 
 
 # ====================================================================== ground + middle ground
-g = lib.place("ground", "City_Ground", C_BG, Matrix.Diagonal((16, 16, 1, 1)))
+g = lib.place("ground", "City_Ground", C_GROUND, Matrix.Diagonal((16, 16, 1, 1)))
 gp = bounds(g)
 top = max(p.z for p in gp)
 for o in g:
@@ -205,27 +243,27 @@ for o in g:
 
 mg_objs = []
 P = LY.F_PIZZERIA
+pz = ground_at(P["screen_x"], P["distance"])
 mg_objs += lib.place("buildings", "Workplace_Building_PIZZERIA", C_MG,
-                     Matrix.Translation(P["loc"]) @ rot(z=P["yaw"]) @ Matrix.Scale(P["scale"], 4))
+                     Matrix.Translation(pz) @ rot(z=facing_camera_yaw(pz) + P["turn"]) @ Matrix.Scale(P["scale"], 4))
 PL = LY.F_PLAZA
-mg_objs += lib.place("ground", "Plaza_Disc", C_MG, Matrix.Translation(PL["loc"]) @ Matrix.Scale(PL["scale"], 4))
+plz = ground_at(PL["screen_x"], PL["distance"])
+mg_objs += lib.place("ground", "Plaza_Disc", C_MG, Matrix.Translation(plz) @ Matrix.Scale(PL["scale"], 4))
 mg_objs += lib.place("decoration", "Plaza_Fountain", C_MG,
-                     Matrix.Translation(Vector(PL["loc"]) + Vector((0, 0, 0.2))) @ Matrix.Scale(PL["scale"] * 1.4, 4))
-for x, y, s in LY.F_TREES:
-    mg_objs += lib.place("nature", "Tree", C_MG, Matrix.Translation((x, y, 0)) @ rot(z=random.uniform(0, 360))
-                         @ Matrix.Scale(s, 4))
-for x, y in LY.F_LAMPS:
-    mg_objs += lib.place("decoration", "Workplace_LampPost", C_MG, Matrix.Translation((x, y, 0)))
+                     Matrix.Translation(plz + Vector((0, 0, 0.1))) @ Matrix.Scale(PL["scale"] * 1.4, 4))
+for sx, dist, sc in LY.F_TREES:
+    mg_objs += lib.place("nature", "Tree", C_MG, Matrix.Translation(ground_at(sx, dist))
+                         @ rot(z=random.uniform(0, 360)) @ Matrix.Scale(sc, 4))
+for sx, dist in LY.F_LAMPS:
+    lp = ground_at(sx, dist)
+    mg_objs += lib.place("decoration", "Workplace_LampPost", C_MG, Matrix.Translation(lp) @ rot(z=facing_camera_yaw(lp)))
 for name, (x, y), yaw in LY.F_SHOPS:
     mg_objs += lib.place("buildings", name, C_MG, Matrix.Translation((x, y, 0)) @ rot(z=180 + yaw))
-set_material(mg_objs, "WO_Palette", lib.distant_palette(sat=0.8, value=0.9, mix=0.18))
+set_material(mg_objs, "WO_Palette", lib.distant_palette(sat=0.9, value=1.0, mix=0.17))
 
 # background dreams
 S = LY.F_SUPERCAR
-_g = on_ground(S["screen_x"], 0.1, h=0.0)                      # a ground point in that screen column
-_o = cam.matrix_world.translation
-_dir = Vector((_g.x - _o.x, _g.y - _o.y, 0)).normalized()
-car_p = Vector((_o.x, _o.y, 0)) + _dir * S["distance"]
+car_p = ground_at(S["screen_x"], S["distance"])
 lib.place("vehicles", "Supercar", C_BG, Matrix.Translation(car_p) @ rot(z=S["yaw"]))
 J = LY.F_JET
 lib.place("vehicles", "PrivateJet", C_BG, Matrix.Translation(J["loc"]) @ rot(z=J["yaw"], y=J["roll"]))
@@ -348,6 +386,7 @@ for o in kit_build(sm, C_DREAM):
                       .to_matrix().to_4x4() @ Matrix.Diagonal((td * 0.22, td * 0.22, d.length, 1)))
 tag_size = size_for_cap(T["cap"], tag_centre)
 tag_text = text_obj("PriceTagText", T["text"], tag_size, srgb("INK"), C_DREAM, extrude=0.05, bevel=0.015, emit=0.0)
+tag_text.data.materials[0] = flat_material("PriceTagDigits", T["colour"])
 x0, x1, y0, y1 = local_box(tag_text)
 room = tw - th * 0.55                     # right of the hole
 if x1 - x0 > room * 0.9:                  # never wider than the tag
@@ -450,7 +489,10 @@ to_cam.normalize()
 t = math.radians(AVL["body_turn"])
 rig.place(loc, to_cam * math.cos(t) + ground_side * math.sin(t))
 rig.rot("Waist", *AVL["waist"])
-rig.rot("Neck", *AVL["neck"])
+hc0 = rig.centre("Head")
+_d2h = screen(dc) - screen(hc0)
+_ah = max(math.atan2(_d2h.y * 9, _d2h.x * 16), math.radians(AVL["look_min_up"]))
+rig.aim_head(cam_right * math.cos(_ah) + cam_up * math.sin(_ah) - cam_fwd * AVL["face_cam"])
 rig.rot("RightHip", 0, -5, 0)
 rig.rot("LeftHip", 5, 6, 0)
 # reaching arm (his left, screen right): toward the dream on screen, at least reach_min_angle up
@@ -477,7 +519,7 @@ bpy.context.view_layer.update()
 # ball and chain on his right ankle (screen left)
 BL = LY.F_BALL
 ankle = rig.world("RightAnkle")
-ball_c = ankle + ground_side * BL["side"] + to_cam * BL["toward"]
+ball_c = ground_at(BL["screen_x"], BL["distance"])
 ball_c.z = BL["radius"]
 bm_ = kit.Model("IronBall")
 bm_.sphere(BL["radius"], (0, 0, 0), "CHARCOAL", segs=28, rings=16)
@@ -511,35 +553,50 @@ small_seg.materials.append(iron)
 ball_chain = tile_chain(small_seg, [ankle + leg_axis * 0.05, mid1, mid2, ring], False, C_FG, 0.28,
                         lambda p, t: Vector((0, 0, 1)), name="BallChain")
 
-# "-$20,000" above the ball, facing the camera
+# "-$20,000" above the ball and chain, clear of the character (sized to fit beside him)
 DT = LY.F_DEBT_TEXT
-bt = screen(ball_c + Vector((0, 0, BL["radius"] + 0.3)))
-dpos = ray(bt.x + DT["dx"], bt.y + DT["dy"], depth_of(ball_c) * DT["depth"])
-debt_text = text_obj("DebtText", DT["text"], size_for_cap(DT["cap"], dpos), srgb("RED"), C_NUM, emit=1.1)
-debt_text.data.space_character = 1.12          # room for the outline between the minus and the $
-debt_text.matrix_world = Matrix.Translation(dpos) @ face_camera(dpos, DT["tilt"])
+ball_top = screen(ball_c + Vector((0, 0, BL["radius"])))
+ball_mid = screen(ball_c)
+d_depth = depth_of(ball_c) * DT["depth"]
+char_uv = [screen(p) for p in rig.bounds()]
 
 
-def keep_in_safe(o, tilt, margin=LY.SAFE + 0.005):
-    """Slides a camera-facing object sideways/up until its frame bounds sit inside the safe area
-    (re-aimed at the camera after every step, so perspective does not skew it)."""
-    for _ in range(6):
+def char_left(y0, y1):
+    xs = [u.x for u in char_uv if y0 <= u.y <= y1]
+    return min(xs) if xs else 1.0
+
+
+debt_text = text_obj("DebtText", DT["text"], 1.0, srgb("RED"), C_NUM, extrude=0.012, bevel=0.0)
+debt_text.data.materials[0] = flat_material("DebtDigits", PAL["RED"]["rgb"])   # the palette red, unlit
+debt_text.data.space_character = DT["spacing"]
+
+
+def place_debt(cap):
+    p = ray(ball_mid.x, ball_top.y + 0.08, d_depth)
+    debt_text.data.size = size_for_cap(cap, p)
+    debt_text.matrix_world = Matrix.Translation(p) @ face_camera(p, DT["tilt"])
+    for _ in range(8):
         bpy.context.view_layer.update()
-        pts = bounds([o])
-        uv = [screen(p) for p in pts]
-        x0, x1 = min(u.x for u in uv), max(u.x for u in uv)
-        y0, y1 = min(u.y for u in uv), max(u.y for u in uv)
-        dx = max(0.0, margin - x0) - max(0.0, x1 - (1 - margin))
-        dy = max(0.0, margin - y0) - max(0.0, y1 - (1 - margin))
-        if abs(dx) < 1e-4 and abs(dy) < 1e-4:
-            return
-        p = o.matrix_world.translation
+        x0, x1, y0, y1 = frame_box([debt_text])
+        want_x0 = max(LY.SAFE + 0.006, min(ball_mid.x - (x1 - x0) / 2, char_left(y0 - 0.03, y1 + 0.03) - DT["gap"] - (x1 - x0)))
+        dx, dy = want_x0 - x0, (ball_top.y + DT["dy"]) - y0
+        if abs(dx) < 5e-4 and abs(dy) < 5e-4:
+            break
         q = screen(p)
-        np_ = ray(q.x + dx * 0.9, q.y + dy * 0.9, depth_of(p))
-        o.matrix_world = Matrix.Translation(np_) @ face_camera(np_, tilt)
+        p = ray(q.x + dx * 0.9, q.y + dy * 0.9, d_depth)
+        debt_text.matrix_world = Matrix.Translation(p) @ face_camera(p, DT["tilt"])
+    bpy.context.view_layer.update()
+    b_ = frame_box([debt_text])
+    return b_, char_left(b_[2] - 0.03, b_[3] + 0.03) - DT["gap"]
 
 
-keep_in_safe(debt_text, DT["tilt"])
+cap = DT["cap"]
+while True:
+    b_, limit = place_debt(cap)
+    if b_[1] <= limit or cap <= DT["min_cap"]:
+        break
+    cap -= 0.002
+print(f"debt number: cap {cap:.3f}, x {b_[0]:.3f}-{b_[1]:.3f}, character starts at {limit + DT['gap']:.3f}")
 
 # debt pile right of his feet: real Credit Card debt + cash stacks built with the game's kit
 lfoot = rig.world("LeftAnkle")
@@ -562,26 +619,6 @@ for kind, side, toward, yaw, s in LY.F_PILE:
         for o in objs:
             o.matrix_world = base @ Matrix.Scale(s, 4) @ o.matrix_world
         pile += objs
-
-# ====================================================================== title (text version only)
-TI = LY.F_TITLE
-dist = 6.0
-pivot_p = ray(TI["left"], TI["top"], dist)
-pivot = bpy.data.objects.new("Title", None)
-C_TITLE.objects.link(pivot)
-pivot.matrix_world = Matrix.Translation(pivot_p) @ face_camera(pivot_p, TI["tilt"])
-title_objs = []
-fh_t = frame_h(pivot_p)
-y_cursor = 0.0
-for body, cap in TI["lines"]:
-    o = text_obj("Title_" + body.split()[0], body, cap * fh_t / CAP, srgb("WHITE"), C_TITLE, extrude=0.12,
-                 bevel=0.03, emit=0.25)
-    x0, x1, y0, y1 = local_box(o)
-    o.parent = pivot
-    o.matrix_parent_inverse = Matrix.Identity(4)
-    o.location = (-x0, y_cursor - y1, 0)
-    y_cursor -= (y1 - y0) + cap * fh_t * 0.22
-    title_objs.append(o)
 
 # ====================================================================== lights
 world = bpy.data.worlds.new("Sky")
@@ -615,7 +652,7 @@ def light(name, kind, energy, colour, pos=None, target=None, size=1.0, receivers
 
 
 lit_fg = bpy.data.collections.new("SunLit")          # the sun lights only the foreground layer
-for c_ in (C_CHAR, C_FG, C_NUM, C_NEAR, C_TITLE, C_COINS, C_CLOUDS):
+for c_ in (C_CHAR, C_FG, C_NUM, C_NEAR, C_COINS, C_CLOUDS, C_GROUND, C_MG):
     lit_fg.children.link(c_)
 lit_dream = bpy.data.collections.new("DreamLit")     # the warm dream lights: yacht group and coins
 for c_ in (C_DREAM, C_COINS):
@@ -633,30 +670,58 @@ light("FaceFill", 'AREA', 260, (1.0, 0.86, 0.66), pos=head_c + Vector((3.0, -5.0
       receivers=C_CHAR)
 light("DreamWarmKey", 'AREA', 9.0e5, (1.0, 0.74, 0.4), pos=dc + Vector((-55, -90, -60)), target=dc, size=80,
       receivers=lit_dream)
+for o in C_NEAR.objects:                                    # the near coin: bright gold
+    p_ = o.matrix_world.translation
+    light("NearCoinKey_" + o.name, 'AREA', 160, (1.0, 0.86, 0.6),
+          pos=p_ - cam_right * 1.2 + cam_up * 1.4 - cam_fwd * 1.6, target=p_, size=1.5, receivers=C_NEAR)
 light("DreamTop", 'AREA', 2.5e5, (1.0, 0.85, 0.6), pos=dc + Vector((0, -40, 90)), target=dc, size=80, receivers=lit_dream)
 
-# ====================================================================== icon camera
-IC = LY.F_ICON
-icam = bpy.data.objects.new("IconCamera", bpy.data.cameras.new("IconCamera"))
-scn.collection.objects.link(icam)
-icam.data.lens, icam.data.sensor_width, icam.data.sensor_fit = IC["lens"], 36.0, 'HORIZONTAL'
-icam.data.clip_start, icam.data.clip_end = 0.05, 8000
-ipos = cam.matrix_world.translation + Vector((0, 0, IC["lift"])) + ground_side * IC["side"]
-# aim: put the dream centre at yacht_at on a square frame (solved by shifting the look-at point)
-look = dc.copy()
-for _ in range(6):
-    fwd = (look - ipos).normalized()
-    icam.matrix_world = (Matrix.Translation(ipos) @ fwd.to_track_quat('-Z', 'Y').to_matrix().to_4x4()
-                         @ Matrix.Rotation(math.radians(IC["roll"]), 4, 'Z'))
-    bpy.context.view_layer.update()
+# ====================================================================== icon cameras
+def square_view(c, points, at, lens=None, fill=None, iters=8):
+    """Aim camera c (fixed position) so `points` centre at screen `at` on a square frame; with
+    `fill`, also set the lens so they span that fraction of the frame."""
     keep_res = (scn.render.resolution_x, scn.render.resolution_y)
     scn.render.resolution_x = scn.render.resolution_y = 512
-    q = world_to_camera_view(scn, icam, dc)
+    pos = c.matrix_world.translation.copy()
+    look = sum(points, Vector()) / len(points)
+    if lens:
+        c.data.lens = lens
+    for _ in range(iters):
+        fwd = (look - pos).normalized()
+        c.matrix_world = (Matrix.Translation(pos) @ fwd.to_track_quat('-Z', 'Y').to_matrix().to_4x4()
+                          @ Matrix.Rotation(math.radians(c["roll"]), 4, 'Z'))
+        bpy.context.view_layer.update()
+        uv = [world_to_camera_view(scn, c, p) for p in points]
+        x0, x1 = min(u.x for u in uv), max(u.x for u in uv)
+        y0, y1 = min(u.y for u in uv), max(u.y for u in uv)
+        cx, cy = (x0 + x1) / 2, (y0 + y1) / 2
+        R_ = c.matrix_world.to_3x3()
+        tan = (c.data.sensor_width / 2) / c.data.lens
+        dist = (look - pos).length
+        look = look + (R_ @ Vector(((cx - at[0]) * 2 * tan, (cy - at[1]) * 2 * tan, 0))) * dist
+        if fill:
+            c.data.lens = min(max(c.data.lens * fill / max(x1 - x0, y1 - y0), 12.0), 400.0)
     scn.render.resolution_x, scn.render.resolution_y = keep_res
-    R_ = icam.matrix_world.to_3x3()
-    tan = (icam.data.sensor_width / 2) / icam.data.lens
-    dist = (dc - ipos).length
-    look = look + (R_ @ Vector(((q.x - IC["yacht_at"][0]) * 2 * tan, (q.y - IC["yacht_at"][1]) * 2 * tan, 0))) * dist
+
+
+def new_camera(name, pos, roll):
+    c = bpy.data.objects.new(name, bpy.data.cameras.new(name))
+    scn.collection.objects.link(c)
+    c.data.sensor_width, c.data.sensor_fit = 36.0, 'HORIZONTAL'
+    c.data.clip_start, c.data.clip_end = 0.05, 8000
+    c.matrix_world = Matrix.Translation(pos)
+    c["roll"] = roll
+    return c
+
+
+dream_pts = bounds([o for o in C_DREAM.objects if o.type in ('MESH', 'FONT')])
+IC = LY.F_ICON                    # A: his whole head in the bottom-left corner, the dream up right
+icam = new_camera("IconCamera", cam.matrix_world.translation + Vector((0, 0, IC["lift"])) + ground_side * IC["side"],
+                  IC["roll"])
+square_view(icam, [dc], IC["yacht_at"], lens=IC["lens"])
+IB = LY.F_ICON_B                  # B: no character, the yacht, padlock and tag centred
+icam_b = new_camera("IconCameraB", cam.matrix_world.translation + Vector((0, 0, IB["lift"])), IB["roll"])
+square_view(icam_b, dream_pts, (0.5, 0.5), lens=40.0, fill=IB["fill"])
 
 # ====================================================================== render settings
 r = scn.render
@@ -685,7 +750,6 @@ report = {
     "yacht+chains": [o for o in C_DREAM.objects if o.type == 'MESH' and not o.name.startswith("PriceTag")],
     "padlock": padlock, "price tag": [tag, tag_text], "debt text": [debt_text],
     "ball": ball_objs, "debt pile": pile, "pizzeria": [o for o in C_MG.objects if "PIZZERIA" in o.name],
-    "title": title_objs,
     "supercar": [o for o in C_BG.objects if o.get("model") == "Supercar"],
     "jet": [o for o in C_BG.objects if o.get("model") == "PrivateJet"],
 }
@@ -696,10 +760,14 @@ for k, v in report.items():
 
 keep_res = (scn.render.resolution_x, scn.render.resolution_y)
 scn.render.resolution_x = scn.render.resolution_y = 512
-print("ICON FRAME")
-for k in ("head", "hair", "yacht+chains", "padlock", "price tag"):
-    b_ = frame(report[k], icam)
-    print(f"  {k:13s} x {b_[0]:.2f}-{b_[1]:.2f}  y {b_[2]:.2f}-{b_[3]:.2f}")
+for label, c_ in (("ICON A FRAME", icam), ("ICON B FRAME", icam_b)):
+    print(label)
+    for k in ("head", "hair", "yacht+chains", "padlock", "price tag"):
+        try:
+            b_ = frame(report[k], c_)
+            print(f"  {k:13s} x {b_[0]:.2f}-{b_[1]:.2f}  y {b_[2]:.2f}-{b_[3]:.2f}")
+        except ValueError:
+            print(f"  {k:13s} (out of view)")
 scn.render.resolution_x, scn.render.resolution_y = keep_res
 
 # ====================================================================== save + passes
@@ -718,10 +786,11 @@ if A.no_render:
 GROUPS = {C_CHAR: (1, 0, 0, 1), C_DREAM: (0, 1, 0, 1), C_NUM: (0, 0, 1, 1)}
 
 
+ALL = (C_CHAR, C_DREAM, C_NUM, C_FG, C_MG, C_BG, C_GROUND, C_SKY, C_COINS, C_CLOUDS, C_NEAR)
+
+
 def set_visible(hide):
-    for c_ in (C_NEAR, C_TITLE):
-        c_.hide_render = c_ in hide
-    for c_ in (C_CHAR, C_DREAM, C_NUM, C_FG, C_MG, C_BG, C_SKY, C_COINS, C_CLOUDS):
+    for c_ in ALL:
         c_.hide_render = c_ in hide
 
 
@@ -741,10 +810,10 @@ def override(kind):
     return m
 
 
-def render(path, kind, c):
+def render(path, kind, c, extra_hide=()):
     scn.camera = c
     vl = bpy.context.view_layer
-    r.film_transparent = kind in ("near", "title")
+    r.film_transparent = kind == "near"
     r.image_settings.file_format = 'OPEN_EXR'
     r.image_settings.color_depth = '32'
     r.image_settings.color_mode = 'RGBA'
@@ -758,13 +827,11 @@ def render(path, kind, c):
         vl.material_override = override(kind)
         scn.cycles.samples, scn.cycles.use_denoising = (24 if kind == "matte" else 4), False
         scn.world = None
-        set_visible({C_NEAR, C_TITLE, C_SKY})
+        set_visible({C_NEAR, C_SKY} | set(extra_hide))
     elif kind == "beauty":
-        set_visible({C_NEAR, C_TITLE})
+        set_visible({C_NEAR} | set(extra_hide))
     elif kind == "near":
-        set_visible({C_CHAR, C_DREAM, C_NUM, C_FG, C_MG, C_BG, C_SKY, C_COINS, C_CLOUDS, C_TITLE})
-    elif kind == "title":
-        set_visible({C_CHAR, C_DREAM, C_NUM, C_FG, C_MG, C_BG, C_SKY, C_COINS, C_CLOUDS, C_NEAR})
+        set_visible(set(ALL) - {C_NEAR})
     r.filepath = path
     bpy.ops.render.render(write_still=True)
     vl.material_override = None
@@ -774,16 +841,17 @@ def render(path, kind, c):
 
 only = set(A.only.split(",")) if A.only else None
 main_res = (r.resolution_x, r.resolution_y)
-for kind in ("beauty", "matte", "depth", "near", "title"):
-    if only and kind not in only:
+for kind in ("beauty", "matte", "depth", "near"):
+    if only and kind not in only and "main" not in only:
         continue
     r.resolution_x, r.resolution_y = main_res
     render(os.path.join(A.out, f"main_{kind}.exr"), kind, cam)
-for kind in ("beauty", "matte", "depth"):
-    if only and ("icon_" + kind) not in only and "icon" not in only:
+for prefix, c_, hide in (("iconA", icam, ()), ("iconB", icam_b, (C_CHAR, C_FG, C_NUM))):
+    if only and prefix not in only:
         continue
-    r.resolution_x = r.resolution_y = 512 if A.quick else IC["res"]
-    render(os.path.join(A.out, f"icon_{kind}.exr"), kind, icam)
+    for kind in ("beauty", "matte", "depth"):
+        r.resolution_x = r.resolution_y = 512 if A.quick else IC["res"]
+        render(os.path.join(A.out, f"{prefix}_{kind}.exr"), kind, c_, hide)
 r.resolution_x, r.resolution_y = main_res
 scn.camera = cam
 bpy.ops.wm.save_as_mainfile(filepath=os.path.join(A.out, "thumbnail.blend"))

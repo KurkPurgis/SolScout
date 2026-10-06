@@ -4,9 +4,10 @@
 |---|---|
 | `thumbnail_1920x1080.png` | Main thumbnail, no text |
 | `thumbnail_text.png` | Same image with "CAN YOU ESCAPE?" top left |
-| `icon_512x512.png` | Square icon: the chained yacht and padlock, the player's head in the corner |
+| `icon_512x512.png` | Square icon, option A: the chained yacht, padlock and tag, the player's whole head in the bottom-left corner |
+| `icon_512x512_yacht_only.png` | Square icon, option B: the yacht, padlock and tag centred, no character |
 | `thumbnail.blend` | The scene, every model and texture packed (Blender 5.2) |
-| `check_256x144.png`, `check_text_256x144.png`, `check_icon.png` | Readability checks: full size next to the small size |
+| `check_256x144.png`, `check_text_256x144.png`, `check_icon.png`, `check_icon_yacht_only.png` | Readability checks: full size next to the small size |
 | `blockout/` | Step 1 composition blockouts (boxes only) |
 | `thumbnail/` | The player's avatar as exported from Roblox Studio (`avatar.obj`, `.mtl`, textures) |
 | `scripts/` | Everything that builds and renders the images |
@@ -48,10 +49,12 @@ mkdir -p /tmp/wo && git archive origin/claude/rags-to-riches-visual-overhaul-dey
 cd assets/thumbnail/scripts
 python build_thumbnail.py --wo /tmp/wo/world_overhaul --out /tmp/passes      # scene + EXR passes
 python finish.py --passes /tmp/passes --out ..                               # main + text version
-python finish.py --passes /tmp/passes --out .. --prefix icon --name icon_512x512.png --text-name "" --size 512x512
+python finish.py --passes /tmp/passes --out .. --prefix iconA --name icon_512x512.png --text-name "" --size 512x512
+python finish.py --passes /tmp/passes --out .. --prefix iconB --name icon_512x512_yacht_only.png --text-name "" --size 512x512
 python check_small.py ../thumbnail_1920x1080.png ../check_256x144.png
 python check_small.py ../thumbnail_text.png ../check_text_256x144.png
 python check_small.py --icon ../icon_512x512.png ../check_icon.png
+python check_small.py --icon ../icon_512x512_yacht_only.png ../check_icon_yacht_only.png
 ```
 
 Add `--quick` to `build_thumbnail.py` for a 960x540 preview in about 30 seconds.
@@ -69,5 +72,6 @@ Add `--quick` to `build_thumbnail.py` for a 960x540 preview in about 30 seconds.
 - a contrast and saturation grade
 - the INK outline (palette colour `#281A3A`, the icon outline colour) around the character, the
   dream and the debt number, kept off anything in front of them using the depth pass
-- the blurred near coins
-- the title
+- the blurred near coin
+- the title of the text version, drawn flat: white letters with a dark navy outline grown from the
+  letter shapes (letters never overlap) and a soft drop shadow

@@ -10,16 +10,21 @@ Steps, on the linear HDR passes:
   4. INK outline (the palette's icon-outline colour) around the character, the dream (yacht,
      chains, padlock, price tag) and the debt number: grown from the matte pass, skipped where
      something nearer than the outlined object covers the pixel (depth pass)
-  5. near coins (own pass) blurred and laid on top
-  6. text version: the title pass with its own outline on top
+  5. the near coin (own pass), lightly blurred and laid on top
+  6. text version: the title drawn flat on top - white letters, a dark navy outline grown from
+     the letter shapes (so letters never overlap), a soft drop shadow, tracked spacing
 """
 import argparse
 import os
 import sys
 
 import numpy as np
-from PIL import Image
+from PIL import Image, ImageDraw, ImageFont
 from scipy import ndimage
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, HERE)
+import layout as LY
 
 ap = argparse.ArgumentParser()
 ap.add_argument("--passes", required=True)
@@ -90,7 +95,7 @@ def outline(img, matte, depth, width, colour=INK, softness=1.0, front_only=True,
         own = depth[iy, ix]                                        # depth of the nearest object pixel
         a = a * (depth >= own - 0.05 * own).astype(np.float32)     # skip what is in front of it
     # stays behind the object, but covers its half-transparent edge pixels (no light seam)
-    m = np.clip((np.maximum(matte, solid * 0.0) - 0.55) / 0.45, 0, 1)
+    m = np.clip((matte - 0.55) / 0.45, 0, 1)
     a = a * (1 - m * m * (3 - 2 * m))
     return img * (1 - a[..., None]) + colour * a[..., None], a
 
@@ -120,17 +125,17 @@ lin = lin + bloom * np.array([1.0, 0.8, 0.5], np.float32) * 0.7
 img = grade(to_display(lin * 1.05))
 
 # 4. outlines (character, dream, debt number), thickness in px at 1920 wide
-for ch, wpx, cl in ((0, 9.0, 2), (1, 8.0, 6), (2, 12.0, 0)):
+for ch, wpx, cl in ((0, 9.0, 2), (1, 8.0, 6), (2, 13.5, 0)):
     img, _ = outline(img, matte[..., ch], depth, wpx * scale, close=cl * scale)
 
-# 5. near coins, blurred (shallow depth of field)
+# 5. the near coin, lightly blurred (shallow depth of field)
 near_path = P("near")
 if os.path.exists(near_path):
     near = load_exr(near_path)
     rgb = to_display(near[..., :3] / np.maximum(near[..., 3:4], 1e-4)) * (near[..., 3:4] > 0)
     rgb = grade(rgb, vignette=0.0)
     prem = np.concatenate([rgb * near[..., 3:4], near[..., 3:4]], -1)
-    prem = blur(prem, 5.5 * scale)
+    prem = blur(prem, 2.6 * scale)
     a = prem[..., 3:4]
     img = img * (1 - a) + prem[..., :3]
 img = np.clip(img, 0, 1)
@@ -146,13 +151,49 @@ def save(arr, name):
 
 out_plain = save(img, A.name)
 
-# 6. text version: title with a thick outline on top
-title_path = P("title")
-if os.path.exists(title_path) and A.text_name:
-    t = load_exr(title_path)
-    ta = t[..., 3]
-    rgb = to_display(t[..., :3] / np.maximum(t[..., 3:4], 1e-4))
-    timg, _ = outline(img.copy(), ta, None, 11 * scale, front_only=False)
-    timg = timg * (1 - ta[..., None]) + np.clip(rgb, 0, 1) * ta[..., None]
-    save(timg, A.text_name)
+# 6. text version: the title, drawn flat
+def draw_title(base):
+    TI = LY.F_TITLE
+    h, w = base.shape[:2]
+    font_path = os.path.join(HERE, "fonts", "Fredoka-Bold.ttf")
+    probe = ImageFont.truetype(font_path, 200)
+    _, t_, _, b_ = probe.getbbox("H")
+    cap_ratio = (b_ - t_) / 200.0                       # cap height per unit of font size
+    layer = Image.new("L", (w, h), 0)
+    d = ImageDraw.Draw(layer)
+    y = h * 0.2
+    for text, cap in TI["lines"]:
+        size = cap * h / cap_ratio
+        f = ImageFont.truetype(font_path, int(round(size)))
+        top_off = f.getbbox("H")[1]
+        x = w * 0.2
+        for ch in text:                                 # tracked: room for the outline between letters
+            d.text((x, y - top_off), ch, font=f, fill=255)
+            x += f.getlength(ch) + TI["tracking"] * size
+        y += cap * h * 1.36
+    layer = layer.rotate(TI["tilt"], resample=Image.BICUBIC, center=(w * 0.2, h * 0.2))
+    fill = np.asarray(layer).astype(np.float32) / 255.0
+    stroke = TI["stroke"] * h
+    solid = fill > 0.5
+    rim = np.clip(stroke + 0.5 - ndimage.distance_transform_edt(~solid), 0, 1)
+    rim = np.maximum(rim, fill)
+    # move the block so its outline's top-left sits on the safe-area corner
+    ys, xs = np.nonzero(rim > 0.02)
+    sy = int(round((1 - TI["top"]) * h - ys.min()))
+    sx = int(round(TI["left"] * w - xs.min()))
+    fill = np.roll(np.roll(fill, sy, 0), sx, 1)
+    rim = np.roll(np.roll(rim, sy, 0), sx, 1)
+    dx, dy, sb, so = TI["shadow"]
+    shadow = ndimage.shift(rim, (dy * h, dx * h), order=1)
+    shadow = ndimage.gaussian_filter(shadow, sb * h) * so
+    navy = np.array(TI["outline"], np.float32) / 255.0
+    white = np.array(TI["fill"], np.float32) / 255.0
+    out = base * (1 - shadow[..., None]) + navy * shadow[..., None]
+    out = out * (1 - rim[..., None]) + navy * rim[..., None]
+    out = out * (1 - fill[..., None]) + white * fill[..., None]
+    return out
+
+
+if A.text_name:
+    save(draw_title(img), A.text_name)
 print("wrote", out_plain)

@@ -224,6 +224,15 @@ class Rig:
     def aim_bone(self, joint, child_joint, target_dir):
         self._aim(joint, child_joint, target_dir)
 
+    def aim_head(self, direction):
+        """Turn the neck so his face (the head's +Y) points along `direction` (world)."""
+        e = self.j["Neck"]
+        cur = (e.matrix_world.to_3x3() @ Vector((0, 1, 0))).normalized()
+        delta = cur.rotation_difference(Vector(direction).normalized())
+        pw = e.parent.matrix_world.to_quaternion()
+        e.rotation_quaternion = pw.inverted() @ (delta @ e.matrix_world.to_quaternion())
+        bpy.context.view_layer.update()
+
     def centre(self, part):
         o = self.parts[part]
         pts = [o.matrix_world @ v.co for v in o.data.vertices]
